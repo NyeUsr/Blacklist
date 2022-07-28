@@ -1,0 +1,56 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Kape
+! Description: Block all known Kape Technologies domains as well as block any subsidiaries.
+! Expires: 1 day
+!
+! https://restoreprivacy.com/kape-technologies-owns-expressvpn-cyberghost-pia-zenmate-vpn-review-sites/
+! https://www.technadu.com/which-vpns-are-owned-by-kape-technologies/304917/
+! https://www.crunchbase.com/organization/crossrider/company_financials
+!
+!------------------------
+! Start Domain Blacklist |
+!------------------------
+!
+!#if (!adguard)
+!#if false
+!
+||cyberghostvpn.com^
+||zenmate.com^
+||privateinternetaccess.com^
+||expressvpn.com^
+||vpnmentor.com^
+||wizcase.com^
+||ajillion.com^
+||definitimedia.com^
+||reimageplus.com^
+||driveragent.com^
+||intego.com^
+||webselenese.com^
+!
+!#endif
+!#endif
+!
+!----------------------
+! End Domain Blacklist |
+!----------------------
+!
+!--------------------------
+! Start AdBlocker Warnings |
+!--------------------------
+!
+||cyberghostvpn.com^$document,domain=~This-VPN-is-owned-by-Kape-Technologies
+||zenmate.com^$document,domain=~This-VPN-is-owned-by-Kape-Technologies
+||privateinternetaccess.com^$document,domain=~This-VPN-is-owned-by-Kape-Technologies
+||expressvpn.com^$document,domain=~This-VPN-is-owned-by-Kape-Technologies
+||vpnmentor.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+||wizcase.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+||ajillion.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+||definitimedia.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+||reimageplus.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+||driveragent.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+||intego.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+||webselenese.com^$document,domain=~This-website-is-owned-by-Kape-Technologies
+!
+!------------------------
+! End AdBlocker Warnings |
+!------------------------
