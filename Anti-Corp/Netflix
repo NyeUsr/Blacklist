@@ -1,0 +1,25 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Netflix
+! Description: Block all known Netflix domains as well as block any subsidiaries.
+! Expires: 1 day
+!
+! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
+!
+!------------------------
+! Start Domain Blacklist |
+!------------------------
+!
+||netflix.com^
+||netflix.co.uk^
+||netflix.net^
+||nflxext.com^
+||netflixanimation.com^
+||millarworld.tv^
+||abqstudios.com^
+||storybots.com^
+||dvd.com^
+||fast.com^
+!
+!----------------------
+! End Domain Blacklist |
+!----------------------
