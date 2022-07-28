@@ -1,0 +1,1125 @@
+! Whitelist
+@@||sourceforge.net$generichide,genericblock
+@@||googlevideo.com^$stealth
+@@||chrome.google.com^$stealth
+@@||addons.cdn.mozilla.net^$stealth
+@@||proprofs.com^$cookie
+@@||blueforcegear.com$cookie
+@@||linkedin.com$cookie
+@@||snowflake.freehaven.net^$stealth
+@@||snowflake-broker.freehaven.net^$stealth
+@@||snowflake-broker.torproject.net^$stealth
+@@||snowflake.torproject.org^$stealth
+@@||txxx.tube^$stealth
+@@||*.ahcdn.com^$stealth
+@@||filepicker.io^$stealth
+@@||classroom.google.com^$stealth
+@@||googleapis.com^$stealth
+@@||kamiaccessfiles.com^$stealth
+@@||accounts.google.*^$cookie
+@@||accounts.google.*^$stealth
+@@||accounts.youtube.com^$stealth
+@@||myaccount.google.com^$stealth
+@@||accounts.google.com^$stealth
+@@||nextdns.io^$stealth
+@@||login.bitdefender.com^$stealth
+@@||fidelity.com^$stealth
+@@||i.4cdn.org^$stealth
+@@||calendar.google.com^$stealth
+
+! HTML/script filtering
+$$amp-ad
+$$script[tag-content="exdynsrv.com"]
+$$script[tag-content="window['gtag']"]
+$$script[tag-content="'clickTrackerInit',"]
+$$script[tag-content="'adblockTracker',"]
+$$script[tag-content="juicyads.rocks"]
+$$script[tag-content=".isAdblock"]
+$$script[tag-content="adver('preroll',"]
+$$script[tag-content="adver('interstitial', "]
+$$script[tag-content="analytics.plugins."]
+$$script[tag-content="vads.viewport_width"]
+$$script[tag-content="('track', 'PageView')"]
+$$script[tag-content="_gaq.push(['_trackPageview'])"]
+$$script[tag-content="NREUM.info={"beacon"]
+$$script[tag-content="InterstitialTsAd"]
+$$script[tag-content="screen.pixelDepth"]
+$$script[tag-content="ad_popup_force"]
+$$script[tag-content="var PREROLL_SCROLL_DOWN_URL"]
+$$script[tag-content="EmbeddedAdsDuration"]
+$$script[tag-content="window.open(url, "", windowprops);"]
+$$script[tag-content="var ad_idzone"]
+$$script[tag-content="var thPop ="]
+$$script[tag-content="(clickInfo).track"]
+$$script[tag-content="TiaraTracker.getInstance()"]
+$$script[tag-content="pixelUrl"]
+$$script[tag-content="eulerian_"]
+$$script[tag-content="sendAnalytic"]
+$$script[tag-content="pixelFor"]
+$$script[tag-content="get_country"]
+$$script[tag-content="gascroll"]
+$$script[tag-content="scrollEventTag"]
+$$script[tag-content="popMagic.url"]
+$$script[tag-content="adver.detect"]
+$$script[tag-content=".isAdBlock"]
+$$script[tag-content=".isAB"]
+!$$script[tag-content="adblock_"]
+$$script[tag-content="atppop"]
+$$script[tag-content="trackerCountry"]
+$$script[tag-content="track_hits"]
+$$script[tag-content="lastPageName"]
+$$script[tag-content="clickPixels"]
+$$script[tag-content="trackCustClick"]
+$$script[tag-content="userABMessage"]
+$$script[tag-content="enableLinkTracking"]
+$$script[tag-content="'trackPageView'"]
+$$script[tag-content="preloadAds"]
+$$script[tag-content="PreloadAds"]
+$$script[tag-content="window.localStorage.setItem(test, test);"]
+$$script[tag-content="ExoLoader"]
+$$script[tag-content="exoloader"]
+$$script[tag-content="ExoVideoSlider"]
+$$script[tag-content="exo_div"]
+$$script[tag-content="exoUrl"]
+$$script[tag-content="exoclick"]
+$$script[tag-content="PopUnder"]
+$$script[tag-content="zfgloaded"]
+$$script[tag-content="AntiAdblock"]
+$$script[tag-content="adblock.html"]
+$$script[tag-content="You're using an AdBlocker"]
+$$script[src="popads.net"]
+$$script[src="tsyndicate.com"]
+$$script[wildcard="*const pop*'pop',*url: '*"]
+$$script[wildcard="*oneClicks = true;*iCanPop*"]
+$$script[wildcard="*setCookie*countVisit();*"]
+$$script[wildcard="**window.onbeforeunload*popit == true*"]
+$$script[wildcard="*navigator.plugins[i].name*screen.width*window.location.href*"]
+$$noscript[tag-content="exosrv"]
+
+! Block tracking cookies
+!+ NOT_OPTIMIZED
+*$cookie=/(kt_referer|AkaSTrackingID|optimizelyEndUserId|_pageviews|landing_page|orig_referrer|adCounter|_client_tz|popupData|first_visit|first_visit_src_cpvisit|_cvisit|__cfruid|inHouseAds|_mooc_sso|_normandy_session|log_session_id|hmb_source|exo_zones|smarter-navigation\[|nb-no-req-|splashWeb-|LastVisited|LocationTaxonomiesCookie|ReferrerCookie|SubjectTaxonomiesCookie|s_visit|ab_test_stickiness|OptanonConsent|wordpress_last_visit|wpdiscuz_last_visit|_landing_page|http_referrer|_parsely_visitor|slimstat_tracking_code|view_count|played_games_ids|ABTEST|KinjaSession|country|visited|counter|countrycode|cookies.js|location-data|smpush_safari_device_token|smpush_device_token|_gcl_au|gup_clientid|floodlightPixelTimer|geo|IPLOC|browerV|__utmz|__utma|__utmc|__utmb|__utmt|__gads|ASP.NET_SessionId|anj|__atuvc|adaptv_unique_user_cookie|put_1185|__auc|__asc|KRTBCOOKIE_22|everest_g_v2|TapAd_TS|TapAd_DID|icu|everest_session_v2|Gdyn|is_unique|TMP_X1ID|__unam|X1ID|matchgoogle|KADUSERCOOKIE|ServedBy|optimizelyEndUserId|optimizelyBuckets|optimizelySegments|optimizelyPendingLogEvents|KTPCACOOKIE|KRTBCOOKIE_27|SERVERID|KRTBCOOKIE_57|KRTBCOOKIE_80|put_2249|__utmv|_ljtrtb_1|SyncRTB|SYNCUPPIX_ON|put_2313|_ym_uid|_ym_isad|put_2132|PUBRETARGET|KRTBCOOKIE_148|__zlcmid|taboola_session_id|taboola_upci|end_user_id|__adroll|OAGEO|_ljtrtb_2|mako_uid|ANON_ID|_rxuuid|_chartbeat2|sc_is_visitor_unique|BizoData|ads_prefs|personalization_id|ghostmonitor_session_id|_orig_referrer|gup_clientid|utag_main|gup_clientid|utag_main|_uv3_session|has_recent_activity|click_id_time|LOCATION_FROM_IP|IP_COUNTRY|_wamtcstandards|com.tree.widgets\$IGoogleAdServingTest|com.yahoo.\$IB|i10c.referrer|[a-zA-Z0-9]+.uservisit|i10c3C|i10c.SIBC|i10c.ss|i10c.uid|morphi10c|m0r9h.route|m0r9h.salt|m0r9h.bsalt|_chartbeat[0-9]|MUID|_EDGE_V|_EDGE_S|net.media.contextual\$Nhbcm_sd|i10cTS|i10cTC|SRCHUSR|SRCHUID|SRCHD|com.linkedin.\$Ilidc|com.linkedin.ads.\$Nlang|com.linkedin.\$Ili_sugr|com.scorecardresearch.\$IUIDR|com.scorecardresearch.\$IUID|net.media.\$Idata-nms|net.media.\$Ivisitor-id|msaOptout|_cb_svref|session_tracker|PLAY_FLASH|PLAY_SESSION|AkaSTrackingID|comment_author_|_snow_id.|_snow_ses.|sucuri_cloudproxy_uuid_|popups_session_duration|_referrer|ReturningSession|CurrentSession|_youtube_session|ad_group|_dmp_uid|G_ENABLED_IDPS|xf_id|melody_device|ufp2|ezoab_|ezoadgid_|ezopvc_|ezoref_|ezux_et_|ezux_lpl_|ezux_tos_|ezux_ifep_|ezCMPCCS|VISITOR|csm-hit|pxvid|akavpau_p.|com.wm.reflector|PAIDCONTENT|adsense|pgv_pvid|lv_play_indexl|psessiontime|psessionid|appuser|visid_|_ses_|tagit_params|tagit_session|cf_clearance|previous_detail|search_list|playwirePageViews|user_var|xtag|_views|xv_nbview|html5_networkspeed|sqvisitor|yt-campaign-coo|yt-referrer-coo|kt_ips|pmpro_visit|AdBlockerState|show_only_once_per_day6|laravel_session|ips4_IPSSessionFront|ips4_hasJS|ips4_ipsTimezone|IMGURUIDJAFO|amplitude_cookie_test|amplitude_id_|amplitude_|ads_count|ASPSESSIONIDQUABAQSB|remix_adbook|__uts1|0ae10|_subid|bilginpro|itools_session|BAIDUID|s_ht_pageid|tnwhiteft|CraftSessionId|opref|ASPSESSIONIDASCSQTSA|wpml_browser_redirect_test|PixelDensity|_px2|bbhive|disco_client_id|arxiv_browse|visits|platform|platform_cookie_reset|atatusScript|areviwes_session|_previous_pathname|areviwes_session|_viewhistroy|crak|40AdobeOrg|_gid|_gtm_|AWSELBCORS|articleViews|Country_Code|browser_width|active_template::|ezCMPCCS|ezepvv|ezoab_|ezoadgid_|ezopvc_|ezoref_|ezovid_|ezovuuid_|ezovuuidtime_|__cf_bm|ab_uuid|AspNetCore.Antiforgery|metrika|page_count|session_id|fly_geo|fly_zip|fly_device|SessionStarted|SessionCount|X-CSRF-TOKEN|GeoIP|WMF-Last-Access-Global)/
+
+! The cookie doesn't need to be stored for 4 months - this sets it to one
+amiunique.org$cookie=AmIUniqueId;maxAge=43200
+
+! Google cookies on third-party sites only last 3 days
+google.$third-party,cookie=/.+/;maxAge=4320,domain=~youtube.com|~accounts.google.com
+
+! These cookies track all around the web
+youtube.com$cookie=/.+/;samesite=strict,domain=~accounts.google.com|~google.com|~youtube.com
+
+! Can Get You Unlimited Free Answers
+brainly.com$cookie=/Zadanepl_cookie.{0,}/
+
+! Taken From AdGuard's "Base filter"
+youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', '0.playerResponse.adPlacements 0.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds')
+
+! Android specifics
+!#if (adguard_app_android)
+
+! Whitelist
+@@||img.samsungapps.com
+
+! Hard Facebook Blocking
+! https://adguard.com/en/blog/one-does-not-simply-delete-facebook.html
+!+ NOT_OPTIMIZED
+||graph.facebook.com^$app=~com.facebook.katana|~com.facebook.orca|~com.facebook.lite|~com.facebook.mlite|~com.facebook.talk|~com.facebook.pages.app|~com.facebook.work|~com.facebook.games|~com.facebook.workchat|~com.facebook.lasso|~com.facebook.Socal|~com.facebook.bishop|~com.freebasics|~com.facebook.adsmanager|~me.msqrd.android|~com.facebook.study|~com.facebook.arstudio.player|~com.facebook.analytics|~com.facebook.viewpoints|~com.expresswifi.customer|~com.oculus.twilight|~com.nbapstudio.facebooklite|~io.friendly|~com.sunshine.makilite|~com.jesture.phoenix|~com.creativetrends.simple.app|~it.rignanese.leo.slimfacebook|~hfast.facebook.lite|~com.happening.studios.swipeforfacebookfree|~com.asama.portafolio|~com.pitchedapps.frost|~me.jakelane.wrapperforfacebook|~com.danvelazco.fbwrapper|~me.zeeroooo.materialfb|~org.indywidualni.fblite|~com.instagram.android|~com.instander.android
+!+ NOT_OPTIMIZED
+||b-graph.facebook.com^$app=~com.facebook.katana|~com.facebook.orca|~com.facebook.lite|~com.facebook.mlite|~com.facebook.talk|~com.facebook.pages.app|~com.facebook.work|~com.facebook.games|~com.facebook.workchat|~com.facebook.lasso|~com.facebook.Socal|~com.facebook.bishop|~com.freebasics|~com.facebook.adsmanager|~me.msqrd.android|~com.facebook.study|~com.facebook.arstudio.player|~com.facebook.analytics|~com.facebook.viewpoints|~com.expresswifi.customer|~com.oculus.twilight|~com.nbapstudio.facebooklite|~io.friendly|~com.sunshine.makilite|~com.jesture.phoenix|~com.creativetrends.simple.app|~it.rignanese.leo.slimfacebook|~hfast.facebook.lite|~com.happening.studios.swipeforfacebookfree|~com.asama.portafolio|~com.pitchedapps.frost|~me.jakelane.wrapperforfacebook|~com.danvelazco.fbwrapper|~me.zeeroooo.materialfb|~org.indywidualni.fblite|~com.instagram.android|~com.instander.android
+!+ NOT_OPTIMIZED
+||fbcdn.net^$app=~com.facebook.katana|~com.facebook.orca|~com.facebook.lite|~com.facebook.mlite|~com.facebook.talk|~com.facebook.pages.app|~com.facebook.work|~com.facebook.games|~com.facebook.workchat|~com.facebook.lasso|~com.facebook.Socal|~com.facebook.bishop|~com.freebasics|~com.facebook.adsmanager|~me.msqrd.android|~com.facebook.study|~com.facebook.arstudio.player|~com.facebook.analytics|~com.facebook.viewpoints|~com.expresswifi.customer|~com.oculus.twilight|~com.nbapstudio.facebooklite|~io.friendly|~com.sunshine.makilite|~com.jesture.phoenix|~com.creativetrends.simple.app|~it.rignanese.leo.slimfacebook|~hfast.facebook.lite|~com.happening.studios.swipeforfacebookfree|~com.asama.portafolio|~com.pitchedapps.frost|~me.jakelane.wrapperforfacebook|~com.danvelazco.fbwrapper|~me.zeeroooo.materialfb|~org.indywidualni.fblite|~com.instagram.android|~com.instander.android
+
+!#endif
+
+! Generic hiding for mobile devices using AdGuard
+!#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
+
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advertising-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.rightAd_BG_fmt:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.leftAd_BG_fmt:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###bannerAd_fmt:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adTopWrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.stickyAd:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.widget-ad-sidebar-footer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.widget-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advertisement-text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.topads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.openAppPopupAd:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.AdHolder:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.glacier-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ad-header-mobile:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ad-header-mobile-contener:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.remove-ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.native-ad-item:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.gemini-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.sticky-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###js-abContainterMain:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-footer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-label:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##display-ad-widget:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-notice:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##div.ad-spacer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.c-ad--728x90:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.c-ad--desktop-header:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wireframe-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wireframe-wrapper--nostick:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wireframe-wrapper--awareness:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##div.related-articles:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.related-title:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.related-border:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###klicked-poll-box:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.klicked-poll-continues:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###dfp-ad-top-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###topad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###right1ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.klicked-ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.tpd-box-ad-a:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###NR-Ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.NR-Ads-content:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###eu-cookie-law:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###oupcookiepolicy_message:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##div.gdpr-msg:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookies-alert-box-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.zd-privacy-content:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.r-width.boxy-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.m-ad-minh:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.m-ad-brick:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-bar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###fixed-ad-bottom:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.gdpr-privacy-bar.gdpr:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.gdpr-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pmc-adm-boomerang-pub-div:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.boomerang.adma:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.dfp-leaderboard-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.dtads-slot-atn:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.dtads-slot:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.sqs-cookie-banner-v2:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ccpa-cookie:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pea_cook_topcenter:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pea_cook_wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.AdContainer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##._has-ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.AdContainer-Sidebar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###_cpmt-iframe:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-cookie-info__panel:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.m-in-content-ad-row:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ocn-cookie-wrap:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.active.cookie-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.gdpr-default:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.gdpr-banner.gdpr:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.full-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.in-content-ad-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.in-content-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.full-ad__text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.gdpr_infobar_postion_bottom:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.moove-gdpr-dark-scheme:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.moove-gdpr-align-center:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.jeg_ad_module:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.jeg_ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ads-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ads-text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.m-header-ad--slot:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.active.cookie_toolbar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-300x250:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pb-ad-prod:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pb-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-panel:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##* > .ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.no-ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookienotif:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad300x250:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad_adc:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad970x250:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad300x600:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.promobox:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advertisement-widget:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-banner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.popup-wrapper__overlay:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##popup-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.snigel-cmp-framework:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.remodal-is-opened:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.remodal-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.analytics-banner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###analytics-consent:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.analytics-consent:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-consent-banner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert-wrapper--placeholder:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert-wrapper--leaderboard:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert-wrapper__placeholder-inner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.dfp-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie--visible:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-pos-top:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-content:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-block:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###exposeMask:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.overlay-promo:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.header-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.modal__overlay:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.-show.related-bar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adslot:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###v2campaignmidpage:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.promotedlink:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-slot:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.sidebar-subscribe-box:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.tibrr-cookie-consent-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-agreement:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adtester-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ezoic-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ezmobfooter:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ezmob-footer-desktop:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ezo_ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ezoic-floating-bottom:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ezmob-footer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.membership-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.inline-donation:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###banner300x100:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.banner300x100:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ad_300X250:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.banner300x250:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###banner_240x400:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.banner_240x400:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adModule:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-underplayerAd:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.underplayerAd:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-announce:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-notify:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.aff-item-list-aside:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.aff-item-list:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adv-aside:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###spot_video_ntv_a:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###spot_video_ntv_b:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###spot_video_ntv_c:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.puFloatDiv:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.puFloatLine:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.porndoecams-popup:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.fly-in-popup:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###adWrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###adHeadBanner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###Adfox_Banner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.tjads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-engage:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.topbannerad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adHeaderAdbanner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adsenseBox:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.billboard-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.recirc--outbrain:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.outbrain-enabled:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###section-leaderboard:not(body):not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adContainer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adsbygoogle:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-unit:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-small:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-large:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adsbytrafficjunky:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.removeAdLink:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adunit-wrap:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##adunit-purch:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.sponsor:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.sponsored:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.inlinead:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.in-article-promo:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.in-article-promo-title:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ad_text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-scroll:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-bottom:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###static-ad-right-alt:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookies-background:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-iframe-wrap:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad_box_small:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ccpaCookieBanner_container-custom:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ccpaCookieBanner_container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-consent:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-law-info-bar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-cookie-consent:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-notification:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-policy-info:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookies-message:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###consent:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.full-ad-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pane-st-dfp-ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pane-st-dfp-ads-st-dfp-ads-med-rec:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.st-ad-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.panel-dfp-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.region-top-ad-block:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ag-cookiePolicy:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.privacyPolicyPopup:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wrapper--flexibleportrait:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wrapper--articletop:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wrapper--flexiblepushdown:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wrapper--mid_article_inject:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wrapper--ad-unit-wrap:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-wrapper__ad-slug:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.newsletter-signup__container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advertorial-header__paid:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.notice--cookie:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###header_leaderboard:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###catapult-cookie-bar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad__mapping1:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad__wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-message:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie_wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.Container_ATF_970:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.Container_ATFR_300:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###quads-ad1:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookieinfo:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.email-drawer-pop-up:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.modal-container--open:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookielaw-bottom:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookielaw-banner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.tco-content-dock-on.left:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.hurrytimer-sticky:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.sign-up-footer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.post_detail_right_advert:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-footer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-popup-modal:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-cookiewall:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookiewall:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pane-bean-email-capture:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.htlad-Top_Leaderboard:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.top_ad_banner_sticky:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.top_ad_banner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.Footer-whitelist:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.takeover-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-bar-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.top-ad-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.santaana-campaign:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.consent-banner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.consentPopup:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.c-cookie-consent:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-bar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cadre_inner_alert_cookies:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookieBanner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.google-dfp-ad-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad--inArticleBanner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad--desktopOnly:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.slate-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.PageTopAd:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-message:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad_cls_fix:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad_content_below:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad_push:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.mod_ad_container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ads-336x280:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##div.adun:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.jnews-cookie-law-policy:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-zone:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.machete_cookie_bar:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-notice-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###branda-cookie-notice:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.home-bottom-ad-wrap:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adv > div:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##div.adv:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adv-caption:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.top-advert:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###topAdv:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adModule--outer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.persistent-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.AdHdrTop:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad_728_90:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.spot_disclaimer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.square-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-risingstar-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.privacyNotification:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.sideAd:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pageRichAd:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.smg-zone-widget-ads-placement:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###site-footer_alert_cookie:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.taboola-recos.recommended-content:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ads_float_left_ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert_container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ad-absolute-160:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pt-ad-show-text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.pt-ad--container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##pt-ad--text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.center > .ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-accept-footer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-responsive-slot.p-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.active.footer_cookie_alert:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.top-ads-container:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-slot-placeholder:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.listing-page-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###feature_arcad_520:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adHolder:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###under-ad-text:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.u-lazy-ad-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert-inner:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advert-label:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adsense:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.responsive-ad-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-nav-ad-plus-leader:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.mntl-gpt-adunit:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.mntl-flexible-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.container--ads-leaderboard-atf:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.container--ads:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-desktop__sticky:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.js-ad-desktop:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-desktop:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###notificationAllowPrompt:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.leaderboard-ad-component:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.adph--border:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-warning:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.below-progress-bar-ad:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.horizontal-ad-wrapper--desktop:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.horizontal-ad-wrapper:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookieNotice:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###div-gpt-com-300x250:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ad300:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.idgGoogleAdTag:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="spt-initial-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="karmaadunit"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="htlad-SM_300x250"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="CookieBannerstyle"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="CookieBannerWrapper"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="AdvertisementSlot"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="PageGameAdvertismen"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="AdvertisementContainer"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="AdvertisementInnerContainer"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ad_placeholder_"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ad-blog-entry-300x600"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="cookieConsentUR"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src*=".-newspromotion-2-300 x 250.jpg"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ad-zone-container"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="dfpSlot-"]:has-text(/(advert)/i):not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="leaderboard-0-"].Leaderboard:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="adTitle"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="onetrust-consent"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="VideoAdvert"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="top-ad-wrapper"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="-adDisplay"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="adSkyBox"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="AdThrive_Content"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="snhb-mid_content-"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="bunyad-social"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="subscribe-form"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="incontent-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="gpt-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id^="advbroker_place_"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id^="google_ads_"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="my-ads"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="strm-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="notif_asker_"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="ROS_728x90"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="floor-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="inline-article-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="ad_widget"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="dfp-ad-right"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="ad-lazyads"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="ad-bottom-wrapper"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="popup-modal"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="mailpoet_form"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="-banner-ad-"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="CookiePopup"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="SidebarAdView"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="SiteAd-"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ad_fullWidth"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ImgAdv"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="hide-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ad-confirmation"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="RectAd"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="Ad__Container"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="InartAd"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="AdWrapper"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="show-Popup-"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="spot_header"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="subscribe-form"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="Advert_align"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="Advert_placement"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="SidebarNewsletter"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="BlockLogin_container"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="FeaturedContributors"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ExitModal"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="exitModal"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="ArticleNewsletter"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="inner-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="gdpr-cookie"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="adsense_"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="adsense-"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class^="infeedAd"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="sidebar-ad"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class$="ad__placeholder"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##iframe[src*="/ads-iframe"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src^="/local_su.js"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src*="scfsdvc.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src*="/ai/a/ex/ab.php?"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src*="/adver/index."]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src*="nichedlinks.com/hop/"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src*="/_ad"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[src*="/cats/meow"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[onclick*="track"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[onclick*="adclick"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[onclick*="/ping_url"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[onclick="closeMyAd()"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="ads.cdn.live"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="raznoeporno.info"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="?ad_provider"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="blacklivesmatters."]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="libedgolart.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="ads.livepromotools.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="frtyz.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="go.schjmp.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[src*="go.schjmp.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/ads/click"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/services/AdsRedirect."]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="imlive.com/wmaster.ashx?"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="securedatingconnection.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="clickstoclaim.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="getyoursnow.info"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="engine.eroge.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="6i4uibyg0c82.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="actiondesk.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="strpjmp.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="adtng.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/ads?zone_id="]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="trafficjunky.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="trafficjunky.net"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="adultfriendfinder.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="orange2258.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="crazylead.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="outbrain.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="trcklks.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="advertising.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="adult.xyz"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="panokaverit.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="panotreffit.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="wpadkigwiazd.pl"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="strefa18.pl"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="xnylfcp.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="bingads.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="revsharecash.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="clickadilla.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="hrtya.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="gg.gg"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="adinfo."]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="chaturbate.com/in/"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/out.php?l=http://"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/_clicktracker.php"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/adclicksTag.php"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/adclick.php"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/adredir.php"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/affiliates."]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/affiliates/"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/trackhit/"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/adClick/"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="tai789.net"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="doubleclick.net"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="googleadservices.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="rs-stripe.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="bytesignal.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*=".searchiq.co"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="carbonads.net"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="buysellads.net"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="dianomi.com/click.epl"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="cartoontube.com/hit.php"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="admitad.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="onelink.me"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="clickbank.net"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="fourchan.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="feed111.me"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="dynsrvbaa.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="adtracks.biz"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="grtyv.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="mobtyb.com"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/adrotate-out.php?"]
+!+ NOT_OPTIMIZED
+com,co,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##a[href*="/adServe/"]
+
+!#endif
