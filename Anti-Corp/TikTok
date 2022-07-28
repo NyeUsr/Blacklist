@@ -1,0 +1,30 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti TikTok
+! Description: Block all known TikTok domains as well as block any subsidiaries.
+! Expires: 1 day
+!
+! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
+!
+! Special thanks to DandelionSprout for multiple entries in this list (https://github.com/DandelionSprout)
+!
+!------------------------
+! Start Domain Blacklist |
+!------------------------
+!
+||tiktok.com^
+||tiktok.com.edgesuite.net^
+||musical.ly^
+||musically.ly^
+||tiktokcdn.com^
+||tiktokcdn-com.akamaized.net^
+||*-tiktokcdn-com.akamaized.net^
+||tiktokcdn.liveplay.myqcloud.com^
+||byteoversea.com^
+||byteoversea.net^
+||bytedance.com^
+||ibytedtos.com^
+||tiktokv.com^
+!
+!----------------------
+! End Domain Blacklist |
+!----------------------
