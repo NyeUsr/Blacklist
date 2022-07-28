@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 0N-1563
+! Version: 1N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -36,6 +36,12 @@
 !-----------
 
 !#safari_cb_affinity(all)
+
+! Unblock things which commonly break TV's
+@@||theplatform.com^$ctag=device_tv
+@@||samba.tv^$ctag=device_tv
+@@||doubleclick.net^$ctag=device_tv
+@@||nativesdks.mparticle.com^$ctag=device_tv
 
 ! Local Domains
 @@||192.168.*.*^$~third-party
