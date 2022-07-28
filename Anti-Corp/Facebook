@@ -1,0 +1,52 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Facebook
+! Description: Block all known connections to Facebook as well as block any subsidiaries.
+! Expires: 1 day
+!
+! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
+!
+!------------------------
+! Start Domain Blacklist |
+!------------------------
+!
+||facebook.net^
+||instafeed.codev.wixapps.net^
+||fbpigeon.com^
+||fbcdn-video-*.akamaihd.net^
+||fbcdn-vthumb-*.akamaihd.net^
+||fbexternal-*.akamaihd.net^
+||fbstatic-*.akamaihd.net^
+||fbcdn.net^
+||fb.me^
+||fbsbx.com^
+||fbcdn-photos-*.*^
+||fbcdn-sphotos-*.*^
+||fbcdn-profile-*.*^
+||fbexternal-*.*^
+||facebook.com^
+||instagram.com^
+||whatsapp.net^
+||workplace.com^
+||crowdtangle.com^
+||internet.org^
+||sanzaru.com^
+||redkix.com^
+||scape.io^
+||mapillary.com^
+||readyatdawn.com^
+||crowdtangle.com^
+||privatecore.com^
+||oculus.com^
+||onavo.com^
+||parseplatform.org^
+||lightbox.com^
+||face.com^
+||getspool.com^
+||atlassolutions.com^
+||cdninstagram.com^
+||expresswifi.com^
+||giphy.com^
+!
+!----------------------
+! End Domain Blacklist |
+!----------------------
