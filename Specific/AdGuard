@@ -138,6 +138,14 @@ youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', '0.playerResponse.a
 !#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
 
 !+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.rightAdsSection:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advertisementContainer:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.s-left-ads-item:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.ad-background-image:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.advertising-container:not(html):not(body):not(button):not(input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.rightAd_BG_fmt:not(html):not(body):not(button):not(input)
@@ -540,8 +548,6 @@ com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookie-notification:not(html):not(body):not(button):not(input)
 !+ NOT_OPTIMIZED
-com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###cookie-policy-info:not(html):not(body):not(button):not(input)
-!+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.cookies-message:not(html):not(body):not(button):not(input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###consent:not(html):not(body):not(button):not(input)
@@ -811,6 +817,12 @@ com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn###ad300:not(html):not(body):not(button):not(input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##.idgGoogleAdTag:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="_adPlacements"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="bottom-advertising-"]:not(html):not(body):not(button):not(input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[id*="-ad-center-"]:not(html):not(body):not(button):not(input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,xxx,porn##[class*="AdvertisingSlot"]:not(html):not(body):not(button):not(input)
 !+ NOT_OPTIMIZED

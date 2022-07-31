@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 4N-1563
+! Version: 5N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -12182,6 +12182,10 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+##.rightAdsSection:not(html):not(body):not(button):not(input)
+##.advertisementContainer:not(html):not(body):not(button):not(input)
+##.s-left-ads-item:not(html):not(body):not(button):not(input)
+##.ad-background-image:not(html):not(body):not(button):not(input)
 ##.advertising-container:not(html):not(body):not(button):not(input)
 ##.rightAd_BG_fmt:not(html):not(body):not(button):not(input)
 ##.leftAd_BG_fmt:not(html):not(body):not(button):not(input)
@@ -12383,7 +12387,6 @@ _statsonlineinfo
 ###cookie-law-info-bar:not(html):not(body):not(button):not(input)
 ##.js-cookie-consent:not(html):not(body):not(button):not(input)
 ##.cookie-notification:not(html):not(body):not(button):not(input)
-###cookie-policy-info:not(html):not(body):not(button):not(input)
 ##.cookies-message:not(html):not(body):not(button):not(input)
 ###consent:not(html):not(body):not(button):not(input)
 ##.full-ad-wrapper:not(html):not(body):not(button):not(input)
@@ -12518,6 +12521,9 @@ _statsonlineinfo
 ###div-gpt-com-300x250:not(html):not(body):not(button):not(input)
 ###ad300:not(html):not(body):not(button):not(input)
 ##.idgGoogleAdTag:not(html):not(body):not(button):not(input)
+##[class*="_adPlacements"]:not(html):not(body):not(button):not(input)
+##[id*="bottom-advertising-"]:not(html):not(body):not(button):not(input)
+##[id*="-ad-center-"]:not(html):not(body):not(button):not(input)
 ##[class*="AdvertisingSlot"]:not(html):not(body):not(button):not(input)
 ##[id*="spt-initial-ad"]:not(html):not(body):not(button):not(input)
 ##[class*="karmaadunit"]:not(html):not(body):not(button):not(input)
