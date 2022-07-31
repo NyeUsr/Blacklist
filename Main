@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 2N-1563
+! Version: 4N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -12518,6 +12518,7 @@ _statsonlineinfo
 ###div-gpt-com-300x250:not(html):not(body):not(button):not(input)
 ###ad300:not(html):not(body):not(button):not(input)
 ##.idgGoogleAdTag:not(html):not(body):not(button):not(input)
+##[class*="AdvertisingSlot"]:not(html):not(body):not(button):not(input)
 ##[id*="spt-initial-ad"]:not(html):not(body):not(button):not(input)
 ##[class*="karmaadunit"]:not(html):not(body):not(button):not(input)
 ##[class*="htlad-SM_300x250"]:not(html):not(body):not(button):not(input)
@@ -12730,9 +12731,6 @@ _statsonlineinfo
 ||pandora.com/*/ad/getAdList
 ||github.com/_private/browser/
 ||github.com/*/used_by_count
-||https://cf-st.sc-cdn.net/c/*?uc=*
-||https://bolt-gcdn.sc-cdn.net/2/*&uc=*
-||https://cf-st.sc-cdn.net/d/*
 ||coccoc.com/log
 ||o2.pl/*/adPlaceholder.png
 ||localgxp.gamexp.com
