@@ -2,20 +2,18 @@
 ! Title: NyeUsr's Anti Alphabet
 ! Description: Block all known Alphabet/Google domains as well as block any subsidiaries.
 ! Expires: 1 day
-!
-! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
-!
+
 ! https://android.googlesource.com/device/moto/shamu/+/master/gps.conf
 ! https://wwws.nightwatchcybersecurity.com/tag/gps/
 ! http://whois.domaintools.com/izatcloud.net
 ! http://whois.domaintools.com/izatcloud.com
 ! http://whois.domaintools.com/gpsonextra.net
 ! http://whois.domaintools.com/gpsonextra.com
-!
+
 !------------------------
 ! Start Domain Blacklist |
 !------------------------
-!
+
 ||google.*^
 ||run.app^
 ||v8.dev^
@@ -78,28 +76,18 @@
 ||izatcloud.com^
 ||gpsonextra.net^
 ||gpsonextra.com^
-!
+
 !----------------------
 ! End Domain Blacklist |
 !----------------------
-!
+
 !--------------------
 ! Begin IP Blacklist |
 !--------------------
-!
-||172.217.*.*^
-||216.58.*.*^
-||216.56.*.*^
-||216.239.*.*^
-||64.233.160.0^
-||121.121.121.121^
-||35.201.97.85^
-||34.83.64.96^
+
 ||8.8.8.8^
 ||8.8.4.4^
-[2001:4860:4860::8888]$network
-[2001:4860:4860::8844]$network
-!
+
 !------------------
 ! End IP Blacklist |
 !------------------

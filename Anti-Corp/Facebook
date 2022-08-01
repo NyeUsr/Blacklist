@@ -2,13 +2,11 @@
 ! Title: NyeUsr's Anti Facebook
 ! Description: Block all known connections to Facebook as well as block any subsidiaries.
 ! Expires: 1 day
-!
-! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
-!
+
 !------------------------
 ! Start Domain Blacklist |
 !------------------------
-!
+
 ||facebook.net^
 ||instafeed.codev.wixapps.net^
 ||fbpigeon.com^
@@ -46,7 +44,7 @@
 ||cdninstagram.com^
 ||expresswifi.com^
 ||giphy.com^
-!
+
 !----------------------
 ! End Domain Blacklist |
 !----------------------

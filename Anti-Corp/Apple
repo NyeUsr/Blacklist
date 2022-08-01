@@ -2,15 +2,13 @@
 ! Title: NyeUsr's Anti Apple
 ! Description: Block all known connections to Apple as well as block any subsidiaries.
 ! Expires: 1 day
-!
-! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
-!
+
 ! https://youtu.be/y8SjmcVJOjw
-!
+
 !------------------------
 ! Start Domain Blacklist |
 !------------------------
-!
+
 ||apple.com^
 ||apple.net^
 ||apple.com.edgekey.net^
@@ -32,7 +30,7 @@
 ||icloud.com.akadns.net^
 ||mzstatic.com^
 ||webkit.org^
-!
+
 !----------------------
 ! End Domain Blacklist |
 !----------------------

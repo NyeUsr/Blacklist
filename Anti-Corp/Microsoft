@@ -2,15 +2,13 @@
 ! Title: NyeUsr's Anti Microsoft
 ! Description: Block all known Microsoft domains as well as block any subsidiaries.
 ! Expires: 1 day
-!
-! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
-!
+
 ! https://bgp.he.net/ip/204.79.197.200#_dns
-!
+
 !------------------------
 ! Start Domain Blacklist |
 !------------------------
-!
+
 ||microsoft.com^
 ||msftconnecttest.com^
 ||microsoft.net^
@@ -183,7 +181,7 @@
 ||zyhcxzs.com^
 ||xboxlive.com^
 ||signalr.net^
-!
+
 !----------------------
 ! End Domain Blacklist |
 !----------------------

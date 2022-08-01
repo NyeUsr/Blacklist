@@ -2,17 +2,15 @@
 ! Title: NyeUsr's Anti Disqus
 ! Description: Block all known Disqus domains as well as block any subsidiaries.
 ! Expires: 1 day
-!
-! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
-!
+
 !------------------------
 ! Start Domain Blacklist |
 !------------------------
-!
+
 ||disqus.com^
 ||disquscdn.com^
 ||disqus.map.fastlylb.net^
-!
+
 !----------------------
 ! End Domain Blacklist |
 !----------------------

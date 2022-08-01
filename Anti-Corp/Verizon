@@ -2,13 +2,11 @@
 ! Title: NyeUsr's Anti Verizon
 ! Description: Block all known Verizon domains as well as block any subsidiaries.
 ! Expires: 1 day
-!
-! This blacklist is meant to be used with a DNS sinkhole such as AdGuard Home
-!
+
 !------------------------
 ! Start Domain Blacklist |
 !------------------------
-!
+
 ||imsvm.com^
 ||verizondigitalmedia.com^
 ||uplynk.com^
@@ -60,24 +58,7 @@
 ||yahooapis.com^
 ||aol.com^
 ||vzwdomain.com^
-!
+
 !----------------------
 ! End Domain Blacklist |
 !----------------------
-!
-!--------------------
-! Begin IP Blacklist |
-!--------------------
-!
-||69.78.235.114^
-||74.6.231.21^
-||74.6.143.26^
-||74.6.231.20^
-||98.137.11.163^
-||98.137.11.164^
-||74.6.143.25^
-||141.207.0.0^
-!
-!------------------
-! End IP Blacklist |
-!------------------
