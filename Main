@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 6N-1563
+! Version: 7N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -12954,7 +12954,8 @@ _statsonlineinfo
 
 ! This list will only cover more popular sites: it's more focused on generic hiding
 google.*##.c, .commercial-unit-desktop-top, #tadsb, #tads, #rhs, #tvcap, #taw
-youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope, #clarify-box, .ytd-rich-item-renderer.style-scope > .ytd-ad-slot-renderer.style-scope:upward(3)
+youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
+youtube.com##.ytd-rich-item-renderer.style-scope > .ytd-ad-slot-renderer.style-scope:upward(3)
 m.youtube.com###YtSparklesVisibilityIdentifier
 bhphotovideo.com##[href*="/promotion"]
 genius.com##.dfp_unit, [class*="Leaderboard-"]
