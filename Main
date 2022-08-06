@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 7N-1563
+! Version: 8N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -315,6 +315,35 @@ www.bizpacreview.com$badfilter
 ||www.bizpacreview.com^$badfilter
 
 !#safari_cb_affinity
+
+!-------------------
+! TLD Restrictions |
+!-------------------
+
+! https://www.spamhaus.org/statistics/tlds/
+! As of 06 August 2022
+
+! 88.7% malicious
+.surf^$third-party
+.surf^$popunder
+.surf^$csp=default-src 'self'
+
+! 55.2% malicious
+.tt^$third-party
+.tt^$popunder
+
+! 40.4% malicious
+.cam^$third-party
+.cam^$popunder
+
+! 38.9% malicious
+.best^$third-party
+.best^$popunder
+
+! 37.6% malicious
+.icu^$third-party
+.icu^$popunder
+
 
 !------------------
 ! Domain Blacklist |
