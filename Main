@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 8N-1563
+! Version: 9N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -18,6 +18,11 @@
 !                                                                      |
 ! Adblock Plus Filter Syntaxes                                         |
 ! https://help.eyeo.com/adblockplus/how-to-write-filters               |
+!-----------------------------------------------------------------------
+
+! Notes ----------------------------------------------------------------
+! uBo automatically converts 0.0.0.0 and 127.0.0.1 rules to a          |
+! filterlist syntax                                                    |
 !-----------------------------------------------------------------------
 
 !#if (adguard)
@@ -151,6 +156,13 @@
 ! https://github.com/lightswitch05/hosts/issues/277
 @@||posteitalianespa.sc.omtrdc.net^
 
+! https://github.com/nextdns/metadata/issues/1043
+!#if !ext_ublock
+0.0.0.0 s.youtube.com$badfilter
+127.0.0.1 s.youtube.com$badfilter
+!#endif
+||s.youtube.com$badfilter
+
 ! Fix hub.docker.com
 @@||d36jcksde1wxzq.cloudfront.net^
 
@@ -220,99 +232,133 @@ foxnews.com#@#.cookies
 @@||github.com$generichide
 @@||niagarawater.com^$generichide
 
-! Disagreeing with a publication-especially when it's user published content-based on politics or opinions doesn't make the site fake news
-! Blocked in Steven Black's Hosts for either political or censorship reasons which is NOT okay - include all the formats I know as these may be added to other lists due to the size of Steven Black's Hosts
+! Prevent commonly censored domains from being blocked
 
-! Global Research CA (Just publishes research stuffs)
-www.globalresearch.ca$badfilter
-0.0.0.0 www.globalresearch.ca$badfilter
+!#if !ext_ublock
+127.0.0.1 globalresearch.ca$badfilter
 127.0.0.1 www.globalresearch.ca$badfilter
 0.0.0.0 globalresearch.ca$badfilter
-127.0.0.1 globalresearch.ca$badfilter
-||www.globalresearch.ca$badfilter
-||globalresearch.ca$badfilter
+0.0.0.0 www.globalresearch.ca$badfilter
+!#endif
 ||www.globalresearch.ca^$badfilter
 ||globalresearch.ca^$badfilter
 
-! American Military News is very centered absolutely no reason to be blocked
-americanmilitarynews.com$badfilter
-0.0.0.0 americanmilitarynews.com$badfilter
+!#if !ext_ublock
 127.0.0.1 americanmilitarynews.com$badfilter
-||americanmilitarynews.com$badfilter
+127.0.0.1 www.americanmilitarynews.com$badfilter
+0.0.0.0 americanmilitarynews.com$badfilter
+0.0.0.0 www.americanmilitarynews.com$badfilter
+!#endif
+||www.americanmilitarynews.com^$badfilter
 ||americanmilitarynews.com^$badfilter
 
-! NewsMax is a Right leaning news source
-www.newsmax.com$badfilter
-0.0.0.0 www.newsmax.com$badfilter
+!#if !ext_ublock
+127.0.0.1 newsmax.com$badfilter
 127.0.0.1 www.newsmax.com$badfilter
-||www.newsmax.com$badfilter
+0.0.0.0 newsmax.com$badfilter
+0.0.0.0 www.newsmax.com$badfilter
+!#endif
 ||www.newsmax.com^$badfilter
+||newsmax.com^$badfilter
 
-! MRC's News Busters is a Right leaning news source
-www.newsbusters.org$badfilter
-0.0.0.0 www.newsbusters.org$badfilter
+!#if !ext_ublock
+127.0.0.1 newsbusters.org$badfilter
 127.0.0.1 www.newsbusters.org$badfilter
-||www.newsbusters.org$badfilter
+0.0.0.0 newsbusters.org$badfilter
+0.0.0.0 www.newsbusters.org$badfilter
+!#endif
 ||www.newsbusters.org^$badfilter
+||newsbusters.org^$badfilter
 
-! Project Veritas is investigative journalism and exposes corruption from both parties
-projectveritas.com$badfilter
-0.0.0.0 projectveritas.com$badfilter
+!#if !ext_ublock
 127.0.0.1 projectveritas.com$badfilter
-||projectveritas.com$badfilter
+127.0.0.1 www.projectveritas.com$badfilter
+0.0.0.0 projectveritas.com$badfilter
+0.0.0.0 www.projectveritas.com$badfilter
+!#endif
+||www.projectveritas.com^$badfilter
 ||projectveritas.com^$badfilter
 
-! Hard Right but by no means fake news
-www.zerohedge.com$badfilter
-0.0.0.0 www.zerohedge.com$badfilter
+!#if !ext_ublock
+127.0.0.1 zerohedge.com$badfilter
 127.0.0.1 www.zerohedge.com$badfilter
-||zerohedge.com$badfilter
+0.0.0.0 zerohedge.com$badfilter
+0.0.0.0 www.zerohedge.com$badfilter
+!#endif
+||www.zerohedge.com^$badfilter
 ||zerohedge.com^$badfilter
-www.breitbart.com$badfilter
-0.0.0.0 www.breitbart.com$badfilter
+
+!#if !ext_ublock
+127.0.0.1 breitbart.com$badfilter
 127.0.0.1 www.breitbart.com$badfilter
-||www.breitbart.com$badfilter
+0.0.0.0 breitbart.com$badfilter
+0.0.0.0 www.breitbart.com$badfilter
+!#endif
 ||www.breitbart.com^$badfilter
-www.thegatewaypundit.com$badfilter
-0.0.0.0 www.thegatewaypundit.com$badfilter
+||breitbart.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 thegatewaypundit.com$badfilter
 127.0.0.1 www.thegatewaypundit.com$badfilter
-||www.thegatewaypundit.com$badfilter
+0.0.0.0 thegatewaypundit.com$badfilter
+0.0.0.0 www.thegatewaypundit.com$badfilter
+!#endif
 ||www.thegatewaypundit.com^$badfilter
-www.theblaze.com$badfilter
-0.0.0.0 www.theblaze.com$badfilter
+||thegatewaypundit.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 theblaze.com$badfilter
 127.0.0.1 www.theblaze.com$badfilter
-||www.theblaze.com$badfilter
+0.0.0.0 theblaze.com$badfilter
+0.0.0.0 www.theblaze.com$badfilter
+!#endif
 ||www.theblaze.com^$badfilter
-www.redstate.com$badfilter
-0.0.0.0 www.redstate.com$badfilter
+||theblaze.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 redstate.com$badfilter
 127.0.0.1 www.redstate.com$badfilter
-||www.redstate.com$badfilter
+0.0.0.0 redstate.com$badfilter
+0.0.0.0 www.redstate.com$badfilter
+!#endif
 ||www.redstate.com^$badfilter
-www.prisonplanet.com$badfilter
-0.0.0.0 www.prisonplanet.com$badfilter
+||redstate.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 prisonplanet.com$badfilter
 127.0.0.1 www.prisonplanet.com$badfilter
-||www.prisonplanet.com$badfilter
+0.0.0.0 prisonplanet.com$badfilter
+0.0.0.0 www.prisonplanet.com$badfilter
+!#endif
 ||www.prisonplanet.com^$badfilter
-www.infowars.com$badfilter
-0.0.0.0 www.infowars.com$badfilter
-127.0.0.1 www.infowars.com$badfilter
-||www.infowars.com$badfilter
-||www.infowars.com^$badfilter
-infowars.com$badfilter
-0.0.0.0 infowars.com$badfilter
+||prisonplanet.com^$badfilter
+
+!#if !ext_ublock
 127.0.0.1 infowars.com$badfilter
-||infowars.com$badfilter
+127.0.0.1 www.infowars.com$badfilter
+0.0.0.0 infowars.com$badfilter
+0.0.0.0 www.infowars.com$badfilter
+!#endif
+||www.infowars.com^$badfilter
 ||infowars.com^$badfilter
-tv.infowars.com$badfilter
-0.0.0.0 tv.infowars.com$badfilter
+
+!#if !ext_ublock
 127.0.0.1 tv.infowars.com$badfilter
-||tv.infowars.com$badfilter
+127.0.0.1 www.tv.infowars.com$badfilter
+0.0.0.0 tv.infowars.com$badfilter
+0.0.0.0 www.tv.infowars.com$badfilter
+!#endif
+||www.tv.infowars.com^$badfilter
 ||tv.infowars.com^$badfilter
-www.bizpacreview.com$badfilter
-0.0.0.0 www.bizpacreview.com$badfilter
+
+!#if !ext_ublock
+127.0.0.1 bizpacreview.com$badfilter
 127.0.0.1 www.bizpacreview.com$badfilter
-||www.bizpacreview.com$badfilter
+0.0.0.0 bizpacreview.com$badfilter
+0.0.0.0 www.bizpacreview.com$badfilter
+!#endif
 ||www.bizpacreview.com^$badfilter
+||bizpacreview.com^$badfilter
 
 !#safari_cb_affinity
 
@@ -325,30 +371,41 @@ www.bizpacreview.com$badfilter
 
 ! 88.7% malicious
 .surf^$third-party
+!#if (!adguard)
 .surf^$popunder
+!#endif
 .surf^$csp=default-src 'self'
 
 ! 55.2% malicious
 .tt^$third-party
+!#if (!adguard)
 .tt^$popunder
+!#endif
 
 ! 40.4% malicious
 .cam^$third-party
+!#if (!adguard)
 .cam^$popunder
+!#endif
 
 ! 38.9% malicious
 .best^$third-party
+!#if (!adguard)
 .best^$popunder
+!#endif
 
 ! 37.6% malicious
 .icu^$third-party
+!#if (!adguard)
 .icu^$popunder
+!#endif
 
 
 !------------------
 ! Domain Blacklist |
 !------------------
 
+||analytics.regex101.com^
 ||adsessionserv.com^
 ||fancifuidates.net^
 ||free-burning-software.com^
@@ -1621,7 +1678,6 @@ www.bizpacreview.com$badfilter
 ||pixel.barion.com^
 ||ads.yahoosmallbusiness.com^
 ||airbud.io^
-||variations.brave.com^
 ||xandr.com^
 ||liveintent.com^
 ||liveramp.com^
@@ -11102,6 +11158,7 @@ http://gmpg.org$third-party
 /\/(cdn|js)\/(fb)\.[0-9a-z]{8,}\.(min\.)?(js)/
 /\/[0-9]{3,}\.(metrics|Taboola|PrivacyDataNotice|PromoDriver)\.[0-9a-z]{10,}\.js/$domain=~torproject.org
 /^(amazongift)[0-9]{1,2}\..+/
+/^http(s)?:\/\/.+\/domain_views$/
 
 ! Harder blocking of facebook tracking
 ||graph.facebook.com^$domain=~facebook.com|~fb.com
@@ -12992,6 +13049,7 @@ pubmed.ncbi.nlm.nih.gov###ncov-alert-from-server
 ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
 easybib.com##.ucf-upload-widget-modal-root, [class*="styled__ModalWrapper-sc-"]
 finance.yahoo.com##.MAST-status-ok, .LREC-status-ok
+amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal, .text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
 org,gov##.js-notification-banner:has-text(vaccine or booster)
 org,gov##.notification-banner:has-text(vaccine or booster)
 org,gov##.critical-alert-banner:has-text(COVID-19)
