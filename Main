@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 10N-1563
+! Version: 11N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -10889,7 +10889,6 @@ foxnews.com#@#.cookies
 ||71360.com^
 ||50bang.org^
 ||1phads.com^
-||0.beta.facebook.com^
 ||2-dot-mod-ads-dot-house-ads-server.appspot.com^
 ||1-se.com^
 ||7adpower.com^
@@ -11172,10 +11171,11 @@ http://gmpg.org$third-party
 /^http(s)?:\/\/.+\/domain_views$/
 
 ! Harder blocking of facebook tracking
-||graph.facebook.com^$domain=~facebook.com|~fb.com
-||b-graph.facebook.com^$domain=~facebook.com|~fb.com
-||fbcdn.net^$domain=~facebook.com|~fb.com
-||facebook.net^$domain=printcloud.dremel.com
+! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
+||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
+||facebook.net^$third-party,domain=~facebook.com|~fb.com|~instagram.com
 *##[onclick*="facebook.com/sharer.php?"]
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
