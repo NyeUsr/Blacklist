@@ -399,6 +399,17 @@ foxnews.com#@#.cookies
 ! Domain Blacklist |
 !------------------
 
+||driptfrancs.com^
+||notifmart.com^
+||adblockultra.com^
+||lassampy.com^
+||koocoofy.com^
+||arzanphearse.com^
+||beenoper.com^
+||optyruntchan.com^
+||sngwhfeap.com^
+||tobaltoyon.com^
+||waredscots.casa^
 ||analytics.regex101.com^
 ||adsessionserv.com^
 ||fancifuidates.net^
@@ -10872,7 +10883,6 @@ foxnews.com#@#.cookies
 ||71360.com^
 ||50bang.org^
 ||1phads.com^
-||0.beta.facebook.com^
 ||2-dot-mod-ads-dot-house-ads-server.appspot.com^
 ||1-se.com^
 ||7adpower.com^
@@ -11155,10 +11165,11 @@ http://gmpg.org$third-party
 /^http(s)?:\/\/.+\/domain_views$/
 
 ! Harder blocking of facebook tracking
-||graph.facebook.com^$domain=~facebook.com|~fb.com
-||b-graph.facebook.com^$domain=~facebook.com|~fb.com
-||fbcdn.net^$domain=~facebook.com|~fb.com
-||facebook.net^$domain=printcloud.dremel.com
+! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
+||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
+||facebook.net^$third-party,domain=~facebook.com|~fb.com|~instagram.com
 *##[onclick*="facebook.com/sharer.php?"]
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
