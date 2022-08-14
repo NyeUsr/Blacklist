@@ -26,6 +26,11 @@
 @@||fidelity.com^$stealth
 @@||i.4cdn.org^$stealth
 @@||calendar.google.com^$stealth
+! Unblock things which commonly break TV's
+@@||theplatform.com^$ctag=device_tv
+@@||samba.tv^$ctag=device_tv
+@@||doubleclick.net^$ctag=device_tv
+@@||nativesdks.mparticle.com^$ctag=device_tv
 
 ! HTML/script filtering
 $$amp-ad
@@ -63,7 +68,6 @@ $$script[tag-content="popMagic.url"]
 $$script[tag-content="adver.detect"]
 $$script[tag-content=".isAdBlock"]
 $$script[tag-content=".isAB"]
-!$$script[tag-content="adblock_"]
 $$script[tag-content="atppop"]
 $$script[tag-content="trackerCountry"]
 $$script[tag-content="track_hits"]
@@ -75,7 +79,6 @@ $$script[tag-content="enableLinkTracking"]
 $$script[tag-content="'trackPageView'"]
 $$script[tag-content="preloadAds"]
 $$script[tag-content="PreloadAds"]
-$$script[tag-content="window.localStorage.setItem(test, test);"]
 $$script[tag-content="ExoLoader"]
 $$script[tag-content="exoloader"]
 $$script[tag-content="ExoVideoSlider"]

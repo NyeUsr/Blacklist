@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 9N-1563
+! Version: 12N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -41,12 +41,6 @@
 !-----------
 
 !#safari_cb_affinity(all)
-
-! Unblock things which commonly break TV's
-@@||theplatform.com^$ctag=device_tv
-@@||samba.tv^$ctag=device_tv
-@@||doubleclick.net^$ctag=device_tv
-@@||nativesdks.mparticle.com^$ctag=device_tv
 
 ! Local Domains
 @@||192.168.*.$~third-party
@@ -12811,7 +12805,7 @@ _statsonlineinfo
 ||mail.yahoo.com/d/log
 ||s3.amazonaws.com/ssl-intgr-net/prebid/
 ||coin.amazonpay.com/rb/checkStatus
-*.amazonaws.com/ssl-intgr-net/tags/
+.amazonaws.com/ssl-intgr-net/tags/
 ||pandora.com/web-client-assets/displayAdFrame/
 ||pandora.com/util/mediaserverPublicRedirect.jsp?type=file&file=ads
 ||mediaserver-cont-*.pandora.com/*/*/devicead
@@ -12891,12 +12885,12 @@ _statsonlineinfo
 ||fedscoop.com/advertising/
 ||s.yimg.com/aaq/vzm/
 ||brave.com/promo/
-*.cloudfront.net/?qngud=
+.cloudfront.net/?qngud=
 ||hooligapps.com/s/f.php
 ||api.pinterest.com/*/count.json?callback=WPCOMSharing.
 ||i.bcicdn.com/promotions/
 ||gofundme.com/track
-*.s3.amazonaws.com/domainConfig/
+.s3.amazonaws.com/domainConfig/
 ||amazon.com/gp/*/log?
 ||search.yahoo.com/cbclk/
 ||washingtonpost.com/pwapiv2/article
@@ -12913,7 +12907,6 @@ _statsonlineinfo
 ||gravatar.com/js/gprofiles.js
 *cloudfront.net/p.js
 ||api.parler.com/*/promotionNetwork/promoter
-!||roblox.com/game/report-event (Breaks login)
 ||roblox.com/user-sponsorship/
 ||discordapp.com/api/v*/activities
 ||discordapp.com/api/v*/science
@@ -12987,7 +12980,7 @@ _statsonlineinfo
 ||apkpure.com/analytics
 ||trustpilot.com/stats/
 ||z-dn.net/action?platform=*
-*.droidhen.com/game/Sub.php?
+.droidhen.com/game/Sub.php?
 ||lebo3.live/images/banner/*.$image
 ||asianclub.tv/asset/bann.js
 ||guilded.gg/api/presence
