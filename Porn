@@ -1,0 +1,75 @@
+[Adblock Plus]
+! Title: NyeUsr's Porn Blacklist
+! Description: A simple porn blacklist written in AdBlock syntax.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 8 hours
+! Version: 1
+
+/(xnxx|xvideo|pornhub|-porn|porn-|allporn|pornsites|stripper|jerkmate|javh(d|ub)).+\./
+/^https?:\/\/.+\.(sexy|xxx)\//
+
+!------------------
+! Domain Blacklist |
+!------------------
+
+||sex.com^
+||porn.com^
+||phncdn.com^
+||ypncdn.com^
+||youporn.com^
+||youjizz.com^
+||red-tube.video^
+||chaturbate.com^
+||highwebmedia.com^
+||camsoda.com^
+||streamate.com^
+||livejasmin.com^
+||bongacams.com^
+||bcicdn.com^
+||myfreecams.com^
+||cherry.tv^
+||imlive.com^
+||cams.com^
+||streamray.com^
+||xlovecam.com^
+||flirt4free.com^
+||videosecrets.com^
+||luckycrush.live^
+||babestation.tv^
+||bimbim.com^
+||slutroulette.com^
+||flingster.com^
+||datingcam.org^
+||firecams.com^
+||camster.com^
+||sexier.com^
+||jizzbunker.com^
+||hclips.com^
+||recurbate.com^
+||datingsitespot.com^
+||camwhores.tv^
+||upornia.com^
+||eroprofile.com^
+||xhamster.com^
+||faphouse.com^
+||flixcdn.com^
+||xhcdn.com^
+||homemoviestube.com^
+||motherless.com^
+||motherlessmedia.com^
+||faphdporn.com^
+||txxx.com^
+||txxx.tube^
+||porndoe.com^
+||deflowered.net^
+||beeg.com^
+||spankbang.com^
+||sb-cd.com^
+||pornhd.com^
+||eporner.com^
+||porntrex.com^
+||cdntrex.com^
+||pornhd8k.net^
+||daftsex.com^
+||porndroids.com^
+||pump-cdn.com^
