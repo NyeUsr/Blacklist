@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 12N-1563
+! Version: 13N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -399,6 +399,17 @@ foxnews.com#@#.cookies
 ! Domain Blacklist |
 !------------------
 
+||sufficientretiredbunker.com^
+||xxxjmp.com^
+||getdeviceinf.com^
+||cuddlethehyena.com^
+||go6shde9nj2itle.com^
+||levelbash.com^
+||gamingstone.com^
+||grantgame.com^
+||gamehata.net^
+||hackersgroup.net^
+||mastersminecraft.com^
 ||driptfrancs.com^
 ||notifmart.com^
 ||adblockultra.com^
