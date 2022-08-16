@@ -3,10 +3,19 @@
 ! Description: A simple porn blacklist written in AdBlock syntax.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 1
+! Version: 2-Alpha
 
-/(xnxx|xvideo|pornhub|-porn|porn-|allporn|pornsites|stripper|jerkmate|javh(d|ub)).+\./
-/^https?:\/\/.+\.(sexy|xxx)\//
+! https://www.youtube.com/watch?v=Vtp31feyTfM
+
+! 𝘍𝘭𝘺 𝘧𝘰𝘳𝘯𝘪𝘤𝘢𝘵𝘪𝘰𝘯. 𝘌𝘷𝘦𝘳𝘺 𝘴𝘪𝘯 𝘵𝘩𝘢𝘵 𝘢 𝘮𝘢𝘯 𝘥𝘰𝘵𝘩, 𝘪𝘴 𝘸𝘪𝘵𝘩𝘰𝘶𝘵 𝘵𝘩𝘦 𝘣𝘰𝘥𝘺; 𝘣𝘶𝘵 𝘩𝘦 𝘵𝘩𝘢𝘵 𝘤𝘰𝘮𝘮𝘪𝘵𝘵𝘦𝘵𝘩 𝘧𝘰𝘳𝘯𝘪𝘤𝘢𝘵𝘪𝘰𝘯, 𝘴𝘪𝘯𝘯𝘦𝘵𝘩 𝘢𝘨𝘢𝘪𝘯𝘴𝘵 𝘩𝘪𝘴 𝘰𝘸𝘯 𝘣𝘰𝘥𝘺.
+
+! 𝘖𝘳 𝘬𝘯𝘰𝘸 𝘺𝘰𝘶 𝘯𝘰𝘵, 𝘵𝘩𝘢𝘵 𝘺𝘰𝘶𝘳 𝘮𝘦𝘮𝘣𝘦𝘳𝘴 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘵𝘦𝘮𝘱𝘭𝘦 𝘰𝘧 𝘵𝘩𝘦 𝘏𝘰𝘭𝘺 𝘎𝘩𝘰𝘴𝘵, 𝘸𝘩𝘰 𝘪𝘴 𝘪𝘯 𝘺𝘰𝘶, 𝘸𝘩𝘰𝘮 𝘺𝘰𝘶 𝘩𝘢𝘷𝘦 𝘧𝘳𝘰𝘮 𝘎𝘰𝘥; 𝘢𝘯𝘥 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘺𝘰𝘶𝘳 𝘰𝘸𝘯?
+
+! 𝘍𝘰𝘳 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘣𝘰𝘶𝘨𝘩𝘵 𝘸𝘪𝘵𝘩 𝘢 𝘨𝘳𝘦𝘢𝘵 𝘱𝘳𝘪𝘤𝘦. 𝘎𝘭𝘰𝘳𝘪𝘧𝘺 𝘢𝘯𝘥 𝘣𝘦𝘢𝘳 𝘎𝘰𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳 𝘣𝘰𝘥𝘺.
+! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
+
+/(xnxx|xvideo|pornhub|-porn|porn-|porns|porntube|porntv|-xxx|xxx-|allporn|pornsites|stripper|jerkmate|javh(d|ub)|xxxvid).+\./$all
+/^https?:\/\/.+\.(sexy|xxx)\//$all
 
 !------------------
 ! Domain Blacklist |
@@ -73,3 +82,65 @@
 ||daftsex.com^
 ||porndroids.com^
 ||pump-cdn.com^
+||xnxx.com^
+||pornkai.com^
+||find-my-girl.com^
+||cosxplay.com^
+||stfucdn.com^
+||tubedupe.com^
+||ahcdn.com^
+||ahacdn.me^
+||anysex.com^
+||hdzog.com^
+||porntop.com^
+||videosection.com^
+||hdsex.org^
+||vrcosplayx.com^
+||cosplayporn.org^
+||freeuseporn.com^
+||roloxxx.com^
+||trytits.com^
+||analdin.com^
+||hqboobs.com^
+||pornhat.com^
+||uiporn.com^
+||stripchat.com^
+||strpst.com^
+||drtuber.com^
+||tubesafari.com^
+||pornmd.com^
+||tube8.com^
+||t8cdn.com^
+||onlinehentai.tv^
+||hentaisea.com^
+||hentai-img.com^
+||pichunter.com^
+||pornpics.com^
+||blogvporn.com^
+||vporn.com^
+||komrep.com^
+||anyxxx.com^
+||evicdn.com^
+||tubecj.com^
+||runporn.com^
+||fuqqt.com^
+||ebaumsworld.com^
+||thelittleslush.com^
+||xxxbios.com^
+||erohut.com^
+||amp3.co^
+||rdtcdn.com^
+||redtube.com^
+||brattysis.com^
+||brattysisters.com^
+||xxxme.com^
+||redheadhaven.com^
+||xvideos1.mx^
+||povaddict.com^
+||watchmygf.me^
+||family-strokes.me^
+||familylust.com^
+||xnxbang.com^
+||sexteachermom.com^
+||momsteachsex.com^
+||gizmoxxx.com^
