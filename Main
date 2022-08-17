@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 13N-1563
+! Version: 14N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -399,6 +399,32 @@ foxnews.com#@#.cookies
 ! Domain Blacklist |
 !------------------
 
+||6fe24753fb.com^
+||85a0b34a22.com^
+||bande2az.com^
+||sexahah.com^
+||generashionvd.com^
+||objectdressed.com^
+||xlrdr.com^
+||mixandfun.com^
+||easyads29.pro^
+||drtladv.com^
+||ticaframeofm.xyz^
+||wfordsgoo.xyz^
+||pdices.com^
+||ganalytics.live^
+||videoscdn.online^
+||pokazuwka.com^
+||519e29cfed.com^
+||3c92e2040f.com^
+||nan46ysangt28eec.com^
+||cashewsforlife208.com^
+||ap3lorf0il.com^
+||comalonger.com^
+||amavalet.com^
+||xedo.me^
+||cdngain.com^
+||9v58v.com^
 ||sufficientretiredbunker.com^
 ||xxxjmp.com^
 ||getdeviceinf.com^
