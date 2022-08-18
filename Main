@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 14N-1563
+! Version: 15N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -399,6 +399,7 @@ foxnews.com#@#.cookies
 ! Domain Blacklist |
 !------------------
 
+||satisfyingdate.com^
 ||6fe24753fb.com^
 ||85a0b34a22.com^
 ||bande2az.com^
@@ -2079,7 +2080,6 @@ foxnews.com#@#.cookies
 ||selfserveapps.vzw.com^
 ||ximad.com^
 ||wrinkads.com^
-||gos-gsp.io^
 ||roq.ad^
 ||airserve.net^
 ||sinaapp.com^
