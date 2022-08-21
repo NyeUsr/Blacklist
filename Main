@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 15N-1563
+! Version: 16N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -196,6 +196,33 @@ foxnews.com#@#.cookies
 
 ! Fix broken payments on imperiumpress.org
 @@||js.stripe.com/v*/fingerprinted
+
+! Attempt to make sure bills can always be paid without issue
+! Whitelist banks and third-party payment services
+@@||fiserv.com^$third-party
+@@||firstdata.com^
+@@||credit.kohls.com^$first-party
+@@||mysynchrony.com^$first-party
+@@||synchronybank.com^$first-party
+@@||synchrony.com^$first-party
+@@||secureinternetbank.com^$first-party
+@@||midamericanenergy.com^$first-party
+@@||fidelity.com^$first-party
+@@||current.com^$first-party
+@@||chime.com^$first-party
+@@||paymentech.net^
+@@||jpmorgan.com^$first-party
+@@||chase.com^$first-party
+@@||chasecdn.com^
+@@||bankofamerica.com^$domain=bac-assets.com
+@@||bac-assets.com^
+@@||wellsfargo.com^$first-party
+@@||wellsfargomedia.com^$domain=wellsfargo.com
+@@||citi.com^$first-party
+@@||goldmansachs.com^$first-party
+@@||marcus.com^$first-party
+@@||capitalone.com^$first-party
+@@||usbank.com^$first-party
 
 ! Uncategorized
 @@||auth-*.tinypass.com^
@@ -399,6 +426,15 @@ foxnews.com#@#.cookies
 ! Domain Blacklist |
 !------------------
 
+! https://www.youtube.com/watch?v=-SBj0bJ_1f8
+! gurume.screenconnect.com
+! The service altogether could be considered malicious
+||screenconnect.com^
+
+||carrentalcrew.com^
+||track.vcdc.com^
+||lysim-lre.com^
+||ogoogle.com^
 ||satisfyingdate.com^
 ||6fe24753fb.com^
 ||85a0b34a22.com^
@@ -11156,9 +11192,11 @@ foxnews.com#@#.cookies
 ||bit.ly^$popunder
 ||parkcircularpearl.com^$popup,popunder
 ||nessainy.net^$popup,popunder
+||optnx.com^$popup,popunder
+||trafficjunky.net^$popup,popunder
 
 ! Administrator blocked pages - hopefully prevent from loading and pinging them
-*.meraki.com:*/blocked.cgi*$domain=~_Administrator_Blocked_This_Site,document
+.meraki.com:*/blocked.cgi*$domain=~_Administrator_Blocked_This_Site,document
 ||localhost:*/block_screen.html*$domain=~_Administrator_Blocked_This_Site,document
 ||securly.com/blocked?$domain=~_Administrator_Blocked_This_Site,document
 
@@ -11210,6 +11248,7 @@ http://gmpg.org$third-party
 *##[onclick*="facebook.com/sharer.php?"]
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
+/static/bg-ad.png
 /*advertising*.swf
 /*_ads_*.swf
 /*_banner.swf
@@ -11926,8 +11965,7 @@ ext.track.scripts*
 /reportsuites.js
 /*.gif?&ads
 /logger.js
-/log?format
-/log?format=json
+/log?format$domain=~google.com
 /sponsored.php
 /js/v0Min.js
 /add_search.php
@@ -12818,6 +12856,7 @@ _statsonlineinfo
 ! Content Blocking |
 !------------------
 
+||track.*/beam.php?
 ||youtube.com/set_awesome
 ||youtube.com/ad_data
 ||youtube.com/imgbin/www-hitchhiker.webp
