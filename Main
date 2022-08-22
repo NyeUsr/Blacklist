@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 16N-1563
+! Version: 17N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -23,6 +23,9 @@
 ! Notes ----------------------------------------------------------------
 ! uBo automatically converts 0.0.0.0 and 127.0.0.1 rules to a          |
 ! filterlist syntax                                                    |
+!                                                                      |
+! AdGuard sees opening links with middle mouse-click as popunder       |
+! so exclude all $popunder rules from AdGuard                          |
 !-----------------------------------------------------------------------
 
 !#if (adguard)
@@ -35,10 +38,6 @@
 !#include Specific/uBo
 !#endif
 !#endif
-
-!-----------
-! Whitelist |
-!-----------
 
 !#safari_cb_affinity(all)
 
@@ -383,10 +382,6 @@ foxnews.com#@#.cookies
 
 !#safari_cb_affinity
 
-!-------------------
-! TLD Restrictions |
-!-------------------
-
 ! https://www.spamhaus.org/statistics/tlds/
 ! As of 06 August 2022
 
@@ -421,16 +416,48 @@ foxnews.com#@#.cookies
 .icu^$popunder
 !#endif
 
+! Unnecessary HTTP
+http://yourjavascript.com$third-party
+http://gmpg.org$third-party
 
-!------------------
-! Domain Blacklist |
-!------------------
+! Harder blocking of facebook tracking
+! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
+||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
+||facebook.net^$third-party,domain=~facebook.com|~fb.com|~instagram.com
+
+! Administrator blocked pages - hopefully prevent from loading and pinging them
+.meraki.com:*/blocked.cgi*$domain=~_Administrator_Blocked_This_Site,document
+||localhost:*/block_screen.html*$domain=~_Administrator_Blocked_This_Site,document
+||securly.com/blocked?$domain=~_Administrator_Blocked_This_Site,document
 
 ! https://www.youtube.com/watch?v=-SBj0bJ_1f8
 ! gurume.screenconnect.com
 ! The service altogether could be considered malicious
 ||screenconnect.com^
 
+! coveryourtracks.eff.org
+||trackersimulator.org^$subdocument
+||eviltracker.net^$subdocument
+||do-not-tracker.org^$subdocument
+
+! Popunder AdGuard exclusions
+!#if (!adguard)
+||bitly.com^$popunder
+||bit.ly^$popunder
+/out.php$popunder
+/outback.php$popunder
+/play.php$popunder
+/lander.php$third-party,popup,popunder
+!#endif
+
+||dmca.com^$third-party
+||seal.thawte.com^$third-party
+||parkcircularpearl.com^$popup,popunder
+||nessainy.net^$popup,popunder
+||optnx.com^$popup,popunder
+||trafficjunky.net^$popup,popunder
 ||carrentalcrew.com^
 ||track.vcdc.com^
 ||lysim-lre.com^
@@ -2758,8 +2785,6 @@ foxnews.com#@#.cookies
 ||knotch.it^
 ||sgndrp.online^
 ||popmechanic.io^
-||reporting.family.microsoft.com.akadns.net^
-||reporting.familysafety.microsoft.com.akadns.net^
 ||quicinc.com^
 ||samsungacr.com^
 ||2020mustang.com^
@@ -5891,7 +5916,6 @@ foxnews.com#@#.cookies
 ||dap.digitalgov.gov^
 ||dwin1.com^
 ||dfltweb1.onamae.com^
-||dm3p.wns.notify.windows.com.akadns.net^
 ||d.href.asia^
 ||digital-ads.s3.amazonaws.com^
 ||donkeymails.com^
@@ -6054,7 +6078,6 @@ foxnews.com#@#.cookies
 ||reson8.com^
 ||demandbase.com^
 ||di-dtaectolog-us-prod-1.appspot.com^
-||do-not-tracker.org^
 ||admixer.co.kr^
 ||dynamicyield.com^
 ||survata.com^
@@ -6276,7 +6299,6 @@ foxnews.com#@#.cookies
 ||etahub.com^
 ||events.evie.com^
 ||sexlist.com^
-||eviltracker.net^
 ||edigitalsurvey.com^
 ||exelator.com^
 ||edw.edmunds.com^
@@ -10163,7 +10185,6 @@ foxnews.com#@#.cookies
 ||track.visitorpath.com^
 ||tracker.nbcuas.com^
 ||tracking.callmeasurement.com^
-||trackersimulator.org^
 ||trck.at^
 ||tracking-opi.fonpit.de^
 ||tqlkg.com^
@@ -11181,71 +11202,256 @@ foxnews.com#@#.cookies
 ||novads.co^
 ||igadget24.com^
 
-!-----------------------------
-! Ad/Content Blocker Specific |
-!-----------------------------
-
-! Generic
-||dmca.com^$third-party
-||seal.thawte.com^$third-party
-||bitly.com^$popunder
-||bit.ly^$popunder
-||parkcircularpearl.com^$popup,popunder
-||nessainy.net^$popup,popunder
-||optnx.com^$popup,popunder
-||trafficjunky.net^$popup,popunder
-
-! Administrator blocked pages - hopefully prevent from loading and pinging them
-.meraki.com:*/blocked.cgi*$domain=~_Administrator_Blocked_This_Site,document
-||localhost:*/block_screen.html*$domain=~_Administrator_Blocked_This_Site,document
-||securly.com/blocked?$domain=~_Administrator_Blocked_This_Site,document
-
-! Unnecessary HTTP
-http://yourjavascript.com$third-party
-http://gmpg.org$third-party
-
-/[&]s(screen)?[=][0-9]{3,4}x[0-9]{3,4}[&]/$domain=~istockphoto.com
-/[&]platform[=][a-zA-Z]/$domain=~spotify.com|~translate.yandex.com|~voicetech.yandex.net|~addons.mozilla.org|~github.com|~gitlab.com|~login.live.com|~rewards.brave.com|~mapquest.com
-/[?o=][0-9]{2,}[&][a-z][=][0-9]{3,}[&][a-z][=][0-9]{1,}[&][a-z][=][0-9]{10,}[&][a-z][=][0-9]{3,}[&][a-z][=][A-Z]/$domain=reutersmedia.net|reuters.com
-/\/[a-zA-Z0-9].{133,}/$domain=blesk.cz|zive.cz|osobnosti.cz
-/^http(s)?:\/\/[0-9]{5,}\..+$/$all,domain=~cdnbay.com|~cdn77.org
-/^http:\/\/(www\.)?([0-9]{1,3}\.){3,4}(:*)?/$third-party
-/\/lander\.php(\?|&).+(\?|&).+(\?|&).+(\?|&).+(\?|&).+(\?|&).+(\?|&).+/$all
-/[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
-/\/collect(ion|or)?\/v[0-9]{1,2}/$script
-/(auth)[0-9]{2,3}\.(dns|ns|roc)\..+/$all
-/.+(tracking-website|telemetry-|datarouter-).+\.(amazonaws)\..+/$all
-/^http(s)?:\/\/(clickio).{3,6}\.(com)/$all
-/(google\..{1,}\/js\/bg\/)[a-zA-Z0-9]{43,}\.(js)/$all
-/\/[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{4,4}[a-z]{2,2}[0-9]{1,1}\.(js)$/$all
-/.{0,}(canvas)[!"#$%&'()*+.,:;<=>?@\^_`{|}~-](ping|usage|track|tracking)[!"#$%&'()*+.,:;<=>?@\^_`{|}~-]?.+/$all
-/^http(s)?:\/\/(ppcnt)\..{2,3}/$third-party,popup,popunder
-/(affiliate)s?\..+\..+$/$popup,popunder
-/.+\/popup[0-9]{1,}\.html$/$third-party,popup,popunder
-/(bit\.ly)\/[a-zA-Z0-9]{7,7}#[a-zA-Z0-9]{13,13}_[a-zA-Z0-9]{7,7}_[a-zA-Z0-9]{8,8}_[a-zA-Z0-9]{7,7}/$all
-/^https(s)?:\/\/.+\/click(s)?\/.{75,}$/$all
-/^http(s)?:\/\/ww[4-9][0-9]?\..+/$third-party,popup,popunder
-/^http:\/\/.+\/home\.php#[0-9a-z_]{16,}/$all
-/.{0,}(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[0-9]{4,}.{0,}/$popup,popunder
-/^(applog|adservice|adsdk|ad(-)?img|ad-beacon|activetracker|analytic(s)?-tracker|ad(s)?-resources|telemetry|adslog|advertica-cdn).+/$all
-/^http:\/\/.+\..{2,4}\/(outback\.php|play\.php)/$popup,popunder
-/^zg9tywlubmftzw5ldz.+\.com$/$all
-/.+(offer|prize|win|[0-9]{2,3}game).+\.(live|life|info|xyz|surf|solar)$/$all
-/^notification-[a-z0-9]{30,}\..+\.(live|life|info|xyz|surf|solar)/$all
-/\?(resource=)(pubJS)/
-/^http(s)?:\/\/(cdn)[0-9]{1,2}(s-ref)\..{0,}(cdn)\..+/
-/\/(cdn|js)\/(fb)\.[0-9a-z]{8,}\.(min\.)?(js)/
-/\/[0-9]{3,}\.(metrics|Taboola|PrivacyDataNotice|PromoDriver)\.[0-9a-z]{10,}\.js/$domain=~torproject.org
-/^(amazongift)[0-9]{1,2}\..+/
-/^http(s)?:\/\/.+\/domain_views$/
-
-! Harder blocking of facebook tracking
-! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
-||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
-||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
-||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
-||facebook.net^$third-party,domain=~facebook.com|~fb.com|~instagram.com
-*##[onclick*="facebook.com/sharer.php?"]
+||track.*/beam.php?
+||youtube.com/set_awesome
+||youtube.com/ad_data
+||youtube.com/imgbin/www-hitchhiker.webp
+||youtube.com/yts/jsbin/www-prepopulator-*$script
+||chrome.google.com/webstore/ajax/logreferrerchain
+||chrome.google.com/webstore/ajax/eventlog
+||google.com/dfp/
+||news.google.com/_/DotsSplashUi/jserror
+||news.google.com/_/DotsSplashUi/browserinfo
+||google.com/maps/preview/vp
+||google.com/maps/preview/log204
+||google.com/maps/preview/lp
+||translate.google.com/gen204
+||google.com/adsense/
+||google.com/imgevent?
+||google.com/async/irc
+||clients4.google.com/invalidation/lcs/request
+||clients4.google.com/chrome-sync/experimentstatus
+||google.com/insights/
+||google.com/analytics/
+||google.com/intl/*/ads
+||apis.google.com/js/additnow.js
+||gsuite.google.com/_/AdditnowStoreUi/browserinfo
+||pay.google.com*/gen204/
+||gstatic.com/*/f/p/
+||google.com/cspreport
+||google.com/*/lvz?
+||microsoft.com/fp/
+||yandex.*/metrika/
+||yandex.*/clck/
+||browser.yandex.com/goodbye
+||mail.yahoo.com/d/video_api/getVideos
+||mail.yahoo.com/d/log
+||s3.amazonaws.com/ssl-intgr-net/prebid/
+||coin.amazonpay.com/rb/checkStatus
+.amazonaws.com/ssl-intgr-net/tags/
+||pandora.com/web-client-assets/displayAdFrame/
+||pandora.com/util/mediaserverPublicRedirect.jsp?type=file&file=ads
+||mediaserver-cont-*.pandora.com/*/*/devicead
+||mediaserver-cont-*.pandora.com/public/ads
+||pandora.com/util/mediaserverPublicRedirect.jsp?*type=audio
+||pandora.com/web-client-assets/ads.json
+||pandora.com/api/v1/ad/registerImpression
+||pandora.com/static/promo
+||pandora.com/*/ad/getAdList
+||github.com/_private/browser/
+||github.com/*/used_by_count
+||coccoc.com/log
+||o2.pl/*/adPlaceholder.png
+||localgxp.gamexp.com
+||js.stripe.com/*/fingerprinted/
+||pelcro.com/*/analytics/
+||phoenixnewtimes.com/ads/
+||duba.com/*/ad/
+||sevenonemedia.de/combo/?browserId
+||myfreecams.com/webrtc-session.json
+||netflix.com/personalization
+||static1.ddigest.com/*/header_ads
+||support.brave.com/hc/tracking/
+||open2.bmob.cn/*/collect
+||open2.bmob.cn/*/phone_ci
+||open2.bmob.cn/*/init
+||open2.bmob.cn/*/secret
+||support.startpage.com/cron/index.php?
+||startpage.com/assets/js/index.js?
+||startpage.com/*/jserr
+||startpage.com/english/pics/?
+||startpage.com/do/showimage?
+||startpage.com/english/web/?
+||startpage.com/do/get_map_info
+||startpage.com/assets/js/util.js?
+||startpage.com/do/smt?
+||startpage.com/js/abp.js
+||startpage.com/sp/tst2/english/?
+||startpage.com/do/instantanswers/iaservice
+||startpage.com/do/avtc?
+||startpage.com/elp?
+||startpage.com/sp/adsense
+||startpage.com/elt.gif
+||startpage.com/pelp?
+||snopes.com/dist/images/template/icon-sources.gif
+||pingwest.com/api/news_ad
+||mautic.nextcloud.com/mtc/event
+||spotify.com/log/
+||spotify.com/metrics-backend/
+||spotify.com/*/logging/
+||open.spotify.com/blank
+||spotify.com/ads/
+||jsapi.login.yahoo.com/w/device_users?.crumb=
+||mail.yahoo.com/astra/v1/user/sources/quotient/retailers?
+||yahoo.com/admax/
+||mail.yahoo.com/psearch/v*/recentSearches?&
+||github.com/notifications/beacon/
+||macromedia.com/images/pixel.gif
+||duckduckgo.com/t/
+||a.wattpad.com/js/tracker/
+||wattpad.com/*/metrics
+||blesk.cz/*/events.php
+||bisko.mall.tv/tp/?
+||images.ok.ee/*/ads/
+||allure.com/user-context?referrer
+||allure.com/hotzones/src/pixelpropagate.js
+||i.quotev.com/t.gif
+||omegle.com/typing
+||ding.wix.com/asdk/dispatcher.js
+||imgur.com/lumbar.gif
+||imgur.com/albumview.gif?
+||imgur.com/imageview.gif?
+||duckduckgo.com/y.js?ifu=
+||ettoday.net/ad/
+||ettoday.net/events/
+||ettoday.net/dfp/
+||fedscoop.com/advertising/
+||s.yimg.com/aaq/vzm/
+||brave.com/promo/
+.cloudfront.net/?qngud=
+||hooligapps.com/s/f.php
+||api.pinterest.com/*/count.json?callback=WPCOMSharing.
+||i.bcicdn.com/promotions/
+||gofundme.com/track
+.s3.amazonaws.com/domainConfig/
+||amazon.com/gp/*/log?
+||search.yahoo.com/cbclk/
+||washingtonpost.com/pwapiv2/article
+||washingtonpost.com/pwapi-proxy/pwproxy/?pwapi_contentsection
+||washingtonpost.com/subscribe/logging/logInfo
+||washingtonpost.com/*/pwapi-proxy.min.js
+||cdnjs.cloudflare.com/ajax/libs/fastclick/
+||pelcro.com/api/*/sdk/site?site_id=*
+||paypalobjects.com/upstream/bizcomponents/js/messaging.js
+||paypal.com/webapps/mch/cmd/?v=*%3DCLIENT_IMPRESSION
+||cdn-image.com/__media__/
+||archive.org/includes/analytics
+||swiftypecdn.com/cc/
+||gravatar.com/js/gprofiles.js
+*cloudfront.net/p.js
+||api.parler.com/*/promotionNetwork/promoter
+||roblox.com/user-sponsorship/
+||discordapp.com/api/v*/activities
+||discordapp.com/api/v*/science
+||spclient.wg.spotify.com/presence-view/v1/buddylist
+||spclient.wg.spotify.com/ad-logic/
+||mcloud.to/log/
+||mozilla.org/set_hsts.gif
+||tradecraft.s.llnwi.net/v*/pub/
+||bing.com/rp/*.br.js$third-party
+||platform.twitter.com/anywhere.js
+||linkedin.com/*/*WidgetImpression*
+||linkedin.com/*/dtag
+||linkedin.com/li/track
+||linkedin.com/sensorCollect/
+||images-na.ssl-images-amazon.com/images/*/blm_*$image
+||yahoo.com/bidRequest
+||yimg.com/*/ads
+||kinopoisk.ru/film/*/empty/
+||yandex.ru/beacon
+||k12.com/etc/segmentation.segment.js
+||ff.search.yahoo.com/gossip
+||lilithgame.com/log
+||livelyvideo.tv/*/logger
+||graph.facebook.com/*/activities?access_token=&event=
+||graph.facebook.com/*?fields=supports_implicit_sdk_logging
+||brave.com/*/usage*$~document
+||google.com/aclk
+||static.india.com/*/images/*-banner.jpg
+||wikipedia.org/beacon
+||qhimg.com/*_monitor.$script
+||cdn.flipboard.com/web/buttons/js/flbuttons$script
+||reddit.com/sw-stats/
+||google.com/mail/u/0/logstreamz
+||bigo.sg/stats
+||r.i.ua/s?
+||yimg.com/oa/guce.js
+||s.yimg.com/cx/vzm/cs.js
+||bluestacks.com/*/stats
+||bluestacks.com/*/promotions
+||bluestacks.com/*/*_promotions
+||weby.aaas.org/donation_banner.html$subdocument
+||facebook.com/tr
+||vikiporn.com/js/customscript.js
+||iubenda.com/cookie-solution/
+||disqus.com/count
+||facebook.com/rsrc.php$third-party
+||media.altpress.com/uploads/*/*_WEB-SKIN
+||ixl.com/liveMessage/checkIfWatched
+||ixl.com/practice/logRenderTime
+||wakelet.com/cookify
+||pubnub.com/time/*?uuid
+||pltw.read.inkling.com/read/report-collector
+||pltw.read.inkling.com/read/events
+||techscammersunited.com/clicks/
+||tapatalk.com/groups/*/app.php/buy/vip_plus?$subdocument
+||startlap.hu/feed_campaigns/
+||erofus.com/loader
+||yastatic.net/es5-shims/*/es5-shims.$script
+||adult-empire.com/rs.php
+||rexxx.org/banner?
+||linkedin.com/countserv/
+||graph.facebook.com/?id=http$third-party
+||pinterest.com/*/count.json$third-party
+||amazonaws.com/bitsound.*.
+||facebook.net/*/fbevents.js
+||combo.staticflickr.com/*/hermes-template-photo-ad-page/
+||pornhub.com/svvt/add?
+||animeporn.xxx/wp-content/uploads/*/ad*.gif
+||google.com/log$domain=~google.com|~googleapis.com
+||aoeapps.com/api/screens.php?do=
+||apkpure.com/analytics
+||trustpilot.com/stats/
+||z-dn.net/action?platform=*
+.droidhen.com/game/Sub.php?
+||lebo3.live/images/banner/*.$image
+||asianclub.tv/asset/bann.js
+||guilded.gg/api/presence
+||guilded.gg/api/data/event
+||i.imgur.com/hUZx1CF.gif
+||javlove.*/asset/bann.js
+||wpncdn.com/pn.php
+||wpncdn.com/worker.php
+||javtiful.com/jtmoney/jtmoney
+||yahoo.com/_td_api/beacon/
+||yahoo.com/_td_api?_appletType=viewer
+||porn.com/*&action=visit
+||achcdn.com/script/chrome.js
+||tnaflix.com/azUhsbtsuzm
+||txxx.com/ofdjks/galleryn*.awemdia.com
+||hypnohub.net/assets/hub.php
+||youtube.com/app_shell
+||gstatic.com/*/promos/
+||phncdn.com/*/pb_block.js
+||rackcdn.com/stf.js$third-party
+||bdstatic.com/linksubmit/
+||xlovecam.com/js/ads.js
+||pinterest.com/js/pinit_main.js$third-party
+||pinterest.com/js/pinit.js$third-party
+||apis.google.com/js/plusone.js$third-party
+||reddit.com/counters/client-screenview
+||alexa.com/mixpanel/
+||smart.link/imp/$third-party
+||spotify.com/storage-resolve/files/audio/interactive/
+||100widgets.com/stat.js.php
+||100widgets.com/js_data.php
+||platform.twitter.com/widgets/follow_button.$third-party
+||platform.twitter.com/js/button.$third-party
+||google.com/domainreliability/upload
+||storage.ape.yandex.net/get/browser/experiments-mobile/
+||pubsub.googleapis.com/v*/projects/gopher-buddy-prod/
+||s.yimg.com/rq/darla/$subdocument
+||yahoo.com/f/track/tgt/imp?
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
 /static/bg-ad.png
@@ -11272,10 +11478,6 @@ http://gmpg.org$third-party
 /grey-pix.gif
 /rcs_tracking-service/v1/distro
 /gdpr/native-message
-/ad_loader.js$rewrite=abp-resource:blank-js
-/jscripts/popup-window.js$rewrite=abp-resource:blank-js
-/exoSubId.min.js$rewrite=abp-resource:blank-js
-/exoSubId.js$rewrite=abp-resource:blank-js
 /js/current_country.php
 /js_lo.php
 /td_bl.php$~third-party,script
@@ -11345,34 +11547,7 @@ http://gmpg.org$third-party
 /rcs_data-tracking
 /utag.sync.js
 /ad-blocker.gif
-/ads_detect.js$rewrite=abp-resource:blank-js
-/cleardot.gif$rewrite=abp-resource:1x1-transparent-gif,domain=~google.com
-/netcheck.gif$rewrite=abp-resource:1x1-transparent-gif,domain=~google.com
-/metrics.$rewrite=abp-resource:blank-js,domain=~torproject.org
-.com/be_fl.js$rewrite=abp-resource:blank-js
-/sensorsdata.$rewrite=abp-resource:blank-js
-/prebid*$rewrite=abp-resource:blank-js
-/adScript*$rewrite=abp-resource:blank-js
-/*gpt_*$rewrite=abp-resource:blank-js
-/*prebid_*$rewrite=abp-resource:blank-js
-/pubads_$rewrite=abp-resource:blank-js
-/ads_prebid$rewrite=abp-resource:blank-js
-/atmedia_ms_v*$rewrite=abp-resource:blank-js,third-party
-/google_tag-$rewrite=abp-resource:blank-js
-/google_tag.$rewrite=abp-resource:blank-js
-.gif?pingver=$rewrite=abp-resource:1x1-transparent-gif
-/ua-parser-$rewrite=abp-resource:blank-js
-/ua-parser.$rewrite=abp-resource:blank-js
-*/gtag/$rewrite=abp-resource:blank-js
-/gtag.$rewrite=abp-resource:blank-js
-/gtm.$rewrite=abp-resource:blank-js,domain=~spotify.com
-/show-ads.$rewrite=abp-resource:blank-js
-/analytics.min.js$rewrite=abp-resource:blank-js
-/PhoenixGoogleAnalytics.min.js$rewrite=abp-resource:blank-js
-/adManager$rewrite=abp-resource:blank-js
-~ads.$rewrite=abp-resource:blank-js
 /affiliateplayerV2
-/videojs.ads.js$rewrite=abp-resource:blank-js
 /doubleclick
 /setAdsTestVariant
 /uncookied-treatment
@@ -11393,7 +11568,6 @@ http://gmpg.org$third-party
 /adpost
 /api/v*/collector
 /virtuous.tracker
-/js/xads.js$rewrite=abp-resource:blank-js
 /sidebar_ads?
 /*TimingPixel$image
 /gtm?$frame
@@ -12348,6 +12522,22 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+! This list will only cover more popular sites: it's more focused on generic hiding
+google.*##.c, .commercial-unit-desktop-top, #tadsb, #tads, #rhs, #tvcap, #taw
+youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
+youtube.com##.ytd-rich-item-renderer.style-scope > .ytd-ad-slot-renderer.style-scope:upward(3)
+m.youtube.com###YtSparklesVisibilityIdentifier
+bhphotovideo.com##[href*="/promotion"]
+genius.com##.dfp_unit, [class*="Leaderboard-"]
+pubmed.ncbi.nlm.nih.gov###ncov-alert-from-server
+ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
+easybib.com##.ucf-upload-widget-modal-root, [class*="styled__ModalWrapper-sc-"]
+finance.yahoo.com##.MAST-status-ok, .LREC-status-ok
+amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal, .text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
+org,gov##.js-notification-banner:has-text(vaccine or booster)
+org,gov##.notification-banner:has-text(vaccine or booster)
+org,gov##.critical-alert-banner:has-text(COVID-19)
+! Generic
 ##.rightAdsSection:not(html, body, button, input)
 ##.advertisementContainer:not(html, body, button, input)
 ##.s-left-ads-item:not(html, body, button, input)
@@ -12847,298 +13037,8 @@ _statsonlineinfo
 ##a[href*="mobtyb.com"]
 ##a[href*="/adrotate-out.php?"]
 ##a[href*="/adServe/"]
-
-! Begin Removeparam (AdGuard & uBlock Origin)
-*$removeparam=/^__cf_chl_jschl_tk__$|^utm_*|_visid_|tracelog|affiliate_ref|publisherid|os_version|os_name|package_name|app_version_name|app_version_code|orientation_lock|CLIENT_IMPRESSION|page-ref|browser-info|referrer|browserver|foxref|is_first_visit|refccid|__twitter_impression|guce_referrer|guce_referrer_sig|adCount|wmlspartner|clickid|guccounter|tj_url|so_rec|int_cmpgn|^uclick|uclickhash|^ref_src|^ref_url|_trkparms|^yclid|^gclid|^fbclid|^fb_ref|^fb_source/
-||search.brave.com^$removeparam=source
-
-!------------------
-! Content Blocking |
-!------------------
-
-||track.*/beam.php?
-||youtube.com/set_awesome
-||youtube.com/ad_data
-||youtube.com/imgbin/www-hitchhiker.webp
-||youtube.com/yts/jsbin/www-prepopulator-*$script
-||chrome.google.com/webstore/ajax/logreferrerchain
-||chrome.google.com/webstore/ajax/eventlog
-||google.com/dfp/
-||news.google.com/_/DotsSplashUi/jserror
-||news.google.com/_/DotsSplashUi/browserinfo
-||google.com/maps/preview/vp
-||google.com/maps/preview/log204
-||google.com/maps/preview/lp
-||translate.google.com/gen204
-||google.com/adsense/
-||google.com/imgevent?
-||google.com/async/irc
-||clients4.google.com/invalidation/lcs/request
-||clients4.google.com/chrome-sync/experimentstatus
-||google.com/insights/
-||google.com/analytics/
-||google.com/intl/*/ads
-||apis.google.com/js/additnow.js
-||gsuite.google.com/_/AdditnowStoreUi/browserinfo
-||pay.google.com*/gen204/
-||gstatic.com/*/f/p/
-||google.com/cspreport
-||google.com/*/lvz?
-||microsoft.com/fp/
-||yandex.*/metrika/
-||yandex.*/clck/
-||browser.yandex.com/goodbye
-||mail.yahoo.com/d/video_api/getVideos
-||mail.yahoo.com/d/log
-||s3.amazonaws.com/ssl-intgr-net/prebid/
-||coin.amazonpay.com/rb/checkStatus
-.amazonaws.com/ssl-intgr-net/tags/
-||pandora.com/web-client-assets/displayAdFrame/
-||pandora.com/util/mediaserverPublicRedirect.jsp?type=file&file=ads
-||mediaserver-cont-*.pandora.com/*/*/devicead
-||mediaserver-cont-*.pandora.com/public/ads
-||pandora.com/util/mediaserverPublicRedirect.jsp?*type=audio
-||pandora.com/web-client-assets/ads.json
-||pandora.com/api/v1/ad/registerImpression
-||pandora.com/static/promo
-||pandora.com/*/ad/getAdList
-||github.com/_private/browser/
-||github.com/*/used_by_count
-||coccoc.com/log
-||o2.pl/*/adPlaceholder.png
-||localgxp.gamexp.com
-||js.stripe.com/*/fingerprinted/
-||pelcro.com/*/analytics/
-||phoenixnewtimes.com/ads/
-||duba.com/*/ad/
-||sevenonemedia.de/combo/?browserId
-||myfreecams.com/webrtc-session.json
-||netflix.com/personalization
-||static1.ddigest.com/*/header_ads
-||support.brave.com/hc/tracking/
-||open2.bmob.cn/*/collect
-||open2.bmob.cn/*/phone_ci
-||open2.bmob.cn/*/init
-||open2.bmob.cn/*/secret
-||support.startpage.com/cron/index.php?
-||startpage.com/assets/js/index.js?
-||startpage.com/*/jserr
-||startpage.com/english/pics/?
-||startpage.com/do/showimage?
-||startpage.com/english/web/?
-||startpage.com/do/get_map_info
-||startpage.com/assets/js/util.js?
-||startpage.com/do/smt?
-||startpage.com/js/abp.js
-||startpage.com/sp/tst2/english/?
-||startpage.com/do/instantanswers/iaservice
-||startpage.com/do/avtc?
-||startpage.com/elp?
-||startpage.com/sp/adsense
-||startpage.com/elt.gif
-||startpage.com/pelp?
-||snopes.com/dist/images/template/icon-sources.gif
-||pingwest.com/api/news_ad
-||mautic.nextcloud.com/mtc/event
-||spotify.com/log/
-||spotify.com/metrics-backend/
-||spotify.com/*/logging/
-||open.spotify.com/blank
-||spotify.com/ads/
-||jsapi.login.yahoo.com/w/device_users?.crumb=
-||mail.yahoo.com/astra/v1/user/sources/quotient/retailers?
-||yahoo.com/admax/
-||mail.yahoo.com/psearch/v*/recentSearches?&
-||github.com/notifications/beacon/
-||macromedia.com/images/pixel.gif
-||duckduckgo.com/t/
-||a.wattpad.com/js/tracker/
-||wattpad.com/*/metrics
-||blesk.cz/*/events.php
-||bisko.mall.tv/tp/?
-||images.ok.ee/*/ads/
-||allure.com/user-context?referrer
-||allure.com/hotzones/src/pixelpropagate.js
-||i.quotev.com/t.gif
-||omegle.com/typing
-||ding.wix.com/asdk/dispatcher.js
-||imgur.com/lumbar.gif
-||imgur.com/albumview.gif?
-||imgur.com/imageview.gif?
-||duckduckgo.com/y.js?ifu=
-||ettoday.net/ad/
-||ettoday.net/events/
-||ettoday.net/dfp/
-||fedscoop.com/advertising/
-||s.yimg.com/aaq/vzm/
-||brave.com/promo/
-.cloudfront.net/?qngud=
-||hooligapps.com/s/f.php
-||api.pinterest.com/*/count.json?callback=WPCOMSharing.
-||i.bcicdn.com/promotions/
-||gofundme.com/track
-.s3.amazonaws.com/domainConfig/
-||amazon.com/gp/*/log?
-||search.yahoo.com/cbclk/
-||washingtonpost.com/pwapiv2/article
-||washingtonpost.com/pwapi-proxy/pwproxy/?pwapi_contentsection
-||washingtonpost.com/subscribe/logging/logInfo
-||washingtonpost.com/*/pwapi-proxy.min.js
-||cdnjs.cloudflare.com/ajax/libs/fastclick/
-||pelcro.com/api/*/sdk/site?site_id=*
-||paypalobjects.com/upstream/bizcomponents/js/messaging.js
-||paypal.com/webapps/mch/cmd/?v=*%3DCLIENT_IMPRESSION
-||cdn-image.com/__media__/
-||archive.org/includes/analytics
-||swiftypecdn.com/cc/
-||gravatar.com/js/gprofiles.js
-*cloudfront.net/p.js
-||api.parler.com/*/promotionNetwork/promoter
-||roblox.com/user-sponsorship/
-||discordapp.com/api/v*/activities
-||discordapp.com/api/v*/science
-||spclient.wg.spotify.com/presence-view/v1/buddylist
-||spclient.wg.spotify.com/ad-logic/
-||mcloud.to/log/
-||mozilla.org/set_hsts.gif
-||tradecraft.s.llnwi.net/v*/pub/
-||bing.com/rp/*.br.js$third-party
-||platform.twitter.com/anywhere.js
-||linkedin.com/*/*WidgetImpression*
-||linkedin.com/*/dtag
-||linkedin.com/li/track
-||linkedin.com/sensorCollect/
-||images-na.ssl-images-amazon.com/images/*/blm_*$image
-||yahoo.com/bidRequest
-||yimg.com/*/ads
-||kinopoisk.ru/film/*/empty/
-||yandex.ru/beacon
-||k12.com/etc/segmentation.segment.js
-||ff.search.yahoo.com/gossip
-||lilithgame.com/log
-||livelyvideo.tv/*/logger
-||graph.facebook.com/*/activities?access_token=&event=
-||graph.facebook.com/*?fields=supports_implicit_sdk_logging
-||brave.com/*/usage*$~document
-||google.com/aclk
-||static.india.com/*/images/*-banner.jpg
-||wikipedia.org/beacon
-||qhimg.com/*_monitor.$script
-||cdn.flipboard.com/web/buttons/js/flbuttons$script
-||reddit.com/sw-stats/
-||google.com/mail/u/0/logstreamz
-||bigo.sg/stats
-||r.i.ua/s?
-||yimg.com/oa/guce.js
-||s.yimg.com/cx/vzm/cs.js
-||bluestacks.com/*/stats
-||bluestacks.com/*/promotions
-||bluestacks.com/*/*_promotions
-||weby.aaas.org/donation_banner.html$subdocument
-||facebook.com/tr
-||vikiporn.com/js/customscript.js
-||iubenda.com/cookie-solution/
-||disqus.com/count
-||facebook.com/rsrc.php$third-party
-||media.altpress.com/uploads/*/*_WEB-SKIN
-||ixl.com/liveMessage/checkIfWatched
-||ixl.com/practice/logRenderTime
-||wakelet.com/cookify
-||pubnub.com/time/*?uuid
-||pltw.read.inkling.com/read/report-collector
-||pltw.read.inkling.com/read/events
-||techscammersunited.com/clicks/
-||tapatalk.com/groups/*/app.php/buy/vip_plus?$subdocument
-||startlap.hu/feed_campaigns/
-||erofus.com/loader
-||yastatic.net/es5-shims/*/es5-shims.$script
-||adult-empire.com/rs.php
-||rexxx.org/banner?
-||linkedin.com/countserv/
-||graph.facebook.com/?id=http$third-party
-||pinterest.com/*/count.json$third-party
-||amazonaws.com/bitsound.*.
-||facebook.net/*/fbevents.js
-||combo.staticflickr.com/*/hermes-template-photo-ad-page/
-||pornhub.com/svvt/add?
-||animeporn.xxx/wp-content/uploads/*/ad*.gif
-||google.com/log$domain=~google.com|~googleapis.com
-||aoeapps.com/api/screens.php?do=
-||apkpure.com/analytics
-||trustpilot.com/stats/
-||z-dn.net/action?platform=*
-.droidhen.com/game/Sub.php?
-||lebo3.live/images/banner/*.$image
-||asianclub.tv/asset/bann.js
-||guilded.gg/api/presence
-||guilded.gg/api/data/event
-||i.imgur.com/hUZx1CF.gif
-||javlove.*/asset/bann.js
-||wpncdn.com/pn.php
-||wpncdn.com/worker.php
-||javtiful.com/jtmoney/jtmoney
-||yahoo.com/_td_api/beacon/
-||yahoo.com/_td_api?_appletType=viewer
-||porn.com/*&action=visit
-||achcdn.com/script/chrome.js
-||tnaflix.com/azUhsbtsuzm
-||txxx.com/ofdjks/galleryn*.awemdia.com
-||hypnohub.net/assets/hub.php
-||youtube.com/app_shell
-||gstatic.com/*/promos/
-||phncdn.com/*/pb_block.js
-||rackcdn.com/stf.js$third-party
-||bdstatic.com/linksubmit/
-||xlovecam.com/js/ads.js
-||pinterest.com/js/pinit_main.js$third-party
-||pinterest.com/js/pinit.js$third-party
-||apis.google.com/js/plusone.js$third-party
-||reddit.com/counters/client-screenview
-||alexa.com/mixpanel/
-||smart.link/imp/$third-party
-||spotify.com/storage-resolve/files/audio/interactive/
-||assetshuluimcom-a.akamaihd.net/*.mp3$rewrite=abp-resource:blank-mp3,domain=hulu.com
-||audio-sp-sea.spotifycdn.net$rewrite=abp-resource:blank-mp3
-||heads-ak-spotify-com.akamaized.net$rewrite=abp-resource:blank-mp3
-||audio-akp-bbr-spotify-com.akamaized.net$rewrite=abp-resource:blank-mp3
-||video-fa.scdn.co$rewrite=abp-resource:blank-mp3
-||video-ak.cdn.spotify.com.akahost.net$rewrite=abp-resource:blank-mp3
-||video-ak.cdn.spotify.com.eip.akadns.net$rewrite=abp-resource:blank-mp3
-||doubleclick.net/instream/ad_status.js$rewrite=abp-resource:blank-js
-||tags.tiqcdn.com/utag/*/utag.js$rewrite=abp-resource:blank-js
-||googleapis.com/generate_204
-||100widgets.com/stat.js.php
-||100widgets.com/js_data.php
-||platform.twitter.com/widgets/follow_button.$third-party
-||platform.twitter.com/js/button.$third-party
-||google.com/domainreliability/upload
-||storage.ape.yandex.net/get/browser/experiments-mobile/
-||pubsub.googleapis.com/v*/projects/gopher-buddy-prod/
-||s.yimg.com/rq/darla/$subdocument
-||yahoo.com/f/track/tgt/imp?
-||static.ads-twitter.com/uwt.js$rewrite=abp-resource:blank-js
-
-! This list will only cover more popular sites: it's more focused on generic hiding
-google.*##.c, .commercial-unit-desktop-top, #tadsb, #tads, #rhs, #tvcap, #taw
-youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
-youtube.com##.ytd-rich-item-renderer.style-scope > .ytd-ad-slot-renderer.style-scope:upward(3)
-m.youtube.com###YtSparklesVisibilityIdentifier
-bhphotovideo.com##[href*="/promotion"]
-genius.com##.dfp_unit, [class*="Leaderboard-"]
-pubmed.ncbi.nlm.nih.gov###ncov-alert-from-server
-ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
-easybib.com##.ucf-upload-widget-modal-root, [class*="styled__ModalWrapper-sc-"]
-finance.yahoo.com##.MAST-status-ok, .LREC-status-ok
-amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal, .text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
-org,gov##.js-notification-banner:has-text(vaccine or booster)
-org,gov##.notification-banner:has-text(vaccine or booster)
-org,gov##.critical-alert-banner:has-text(COVID-19)
-
-!---------------------------
-! Hide Malicious/Fake Sites |
-!---------------------------
+! Hide malicious/fake sites
 ! Generated with https://letsblock.it/filters/search-results
-
 bing.com###b_content a[href*="skidrowreloadedtorrents.com"]:upward(li)
 google.*##.g:has(a[href*="skidrowreloadedtorrents.com"])
 google.*##a[href*="skidrowreloadedtorrents.com"]:upward(1)
@@ -13709,3 +13609,62 @@ kagi.com##.sri-group:has(a.__sri-url[href*="gbitdefendercentral.com"])
 kagi.com##._0_image_item[data-host_url*="gbitdefendercentral.com"]
 startpage.com##.w-gl__result:has(a[href*="gbitdefendercentral.com"])
 startpage.com##.image-container:has(div.image-quick-details span:has-text(gbitdefendercentral.com))
+
+! Rewrite in ABP syntax for better compatability
+||assetshuluimcom-a.akamaihd.net/*.mp3$rewrite=abp-resource:blank-mp3,domain=hulu.com
+||audio-sp-sea.spotifycdn.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
+||heads-ak-spotify-com.akamaized.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
+||audio-akp-bbr-spotify-com.akamaized.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
+||video-fa.scdn.co$rewrite=abp-resource:blank-mp3,domain=spotify.com
+||video-ak.cdn.spotify.com.akahost.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
+||video-ak.cdn.spotify.com.eip.akadns.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
+||doubleclick.net/instream/ad_status.js$rewrite=abp-resource:blank-js
+||tags.tiqcdn.com/utag/*/utag.js$rewrite=abp-resource:blank-js
+||static.ads-twitter.com/uwt.js$rewrite=abp-resource:blank-js
+/videojs.ads.js$rewrite=abp-resource:blank-js
+/js/xads.js$rewrite=abp-resource:blank-js
+/ad_loader.js$rewrite=abp-resource:blank-js
+/jscripts/popup-window.js$rewrite=abp-resource:blank-js
+/exoSubId.min.js$rewrite=abp-resource:blank-js
+/exoSubId.js$rewrite=abp-resource:blank-js
+/ads_detect.js$rewrite=abp-resource:blank-js
+/cleardot.gif$rewrite=abp-resource:1x1-transparent-gif,domain=~google.com
+/netcheck.gif$rewrite=abp-resource:1x1-transparent-gif,domain=~google.com
+/metrics.$rewrite=abp-resource:blank-js,domain=~torproject.org
+.com/be_fl.js$rewrite=abp-resource:blank-js
+/sensorsdata.$rewrite=abp-resource:blank-js
+/prebid*$rewrite=abp-resource:blank-js
+/adScript*$rewrite=abp-resource:blank-js
+/*gpt_*$rewrite=abp-resource:blank-js
+/*prebid_*$rewrite=abp-resource:blank-js
+/pubads_$rewrite=abp-resource:blank-js
+/ads_prebid$rewrite=abp-resource:blank-js
+/atmedia_ms_v*$rewrite=abp-resource:blank-js,third-party
+/google_tag-$rewrite=abp-resource:blank-js
+/google_tag.$rewrite=abp-resource:blank-js
+.gif?pingver=$rewrite=abp-resource:1x1-transparent-gif
+/ua-parser-$rewrite=abp-resource:blank-js
+/ua-parser.$rewrite=abp-resource:blank-js
+*/gtag/$rewrite=abp-resource:blank-js
+/gtag.$rewrite=abp-resource:blank-js
+/gtm.$rewrite=abp-resource:blank-js,domain=~spotify.com
+/show-ads.$rewrite=abp-resource:blank-js
+/analytics.min.js$rewrite=abp-resource:blank-js
+/PhoenixGoogleAnalytics.min.js$rewrite=abp-resource:blank-js
+/adManager$rewrite=abp-resource:blank-js
+~ads.$rewrite=abp-resource:blank-js
+
+! Removeparam (AdGuard & uBlock Origin)
+*$removeparam=/^__cf_chl_jschl_tk__$|^utm_*|_visid_|tracelog|affiliate_ref|publisherid|os_version|os_name|package_name|app_version_name|app_version_code|orientation_lock|CLIENT_IMPRESSION|page-ref|browser-info|referrer|browserver|foxref|is_first_visit|refccid|__twitter_impression|guce_referrer|guce_referrer_sig|adCount|wmlspartner|clickid|guccounter|tj_url|so_rec|int_cmpgn|^uclick|uclickhash|^ref_src|^ref_url|_trkparms|^yclid|^gclid|^fbclid|^fb_ref|^fb_source/
+||search.brave.com^$removeparam=source
+
+/[&]s(screen)?[=][0-9]{3,4}x[0-9]{3,4}[&]/$domain=~istockphoto.com
+/^http(s)?:\/\/[0-9]{5,}\..+$/$all,domain=~cdnbay.com|~cdn77.org
+/[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
+/\/collect(ion|or)?\/v[0-9]{1,2}/$script
+/.+(tracking-website|telemetry-).+\.(amazonaws)\..+/$all
+/^http(s)?:\/\/(clickio).{3,6}\.(com)/$all
+/\/[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{4,4}[a-z]{2,2}[0-9]{1,1}\.(js)$/$all
+/(bit\.ly)\/[a-zA-Z0-9]{7,7}#[a-zA-Z0-9]{13,13}_[a-zA-Z0-9]{7,7}_[a-zA-Z0-9]{8,8}_[a-zA-Z0-9]{7,7}/$all
+/^(applog|adservice|adsdk|ad(-)?img|ad-beacon|activetracker|analytic(s)?|ad(s)?|telemetry|adslog|advertica-cdn).+/$subdocument,xhr
+/^http(s)?:\/\/.+\/domain_views$/$first-party
