@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist written in AdBlock syntax.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 3-Alpha
+! Version: 4-Alpha
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 
@@ -14,8 +14,8 @@
 ! 𝘍𝘰𝘳 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘣𝘰𝘶𝘨𝘩𝘵 𝘸𝘪𝘵𝘩 𝘢 𝘨𝘳𝘦𝘢𝘵 𝘱𝘳𝘪𝘤𝘦. 𝘎𝘭𝘰𝘳𝘪𝘧𝘺 𝘢𝘯𝘥 𝘣𝘦𝘢𝘳 𝘎𝘰𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳 𝘣𝘰𝘥𝘺.
 ! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
 
-/(xnxx|xvideo|pornhub|-porn|porn-|porns|porntube|porntv|-xxx|xxx-|allporn|pornsites|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes).+\./
-/^https?:\/\/.+\.(sexy|xxx)\//
+/(xnxx|xvideo|pornhub|-porn|porn-|porns|porntube|porntv|-xxx|xxx-|allporn|pornsites|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale).+\./
+/^https?:\/\/.+\.(sexy|xxx|porn)\//
 /^(porn|xxx)[a-z0-9]{3,}\..{2,}/
 /^[a-z0-9]{3,}(porn|xxx)\..{2,}/
 
@@ -23,6 +23,50 @@
 ! Domain Blacklist |
 !------------------
 
+||nonktube.com^
+||luxuretv.com^
+||kawaii-porn.com^
+||nudostar.com^
+||fappinghd.com^
+||snapchatleak.com^
+||javhdbest.com^
+||girl102.com^
+||fappedia.com^
+||epornlink.com^
+||pornearth.com^
+||fapster.xxx^
+||xpornsitex.com^
+||thesexscene.com^
+||thefappeningblog.com^
+||bigporn.com^
+||hotzxgirl.com^
+||sexoro.com^
+||sexdolltube.com^
+||adultwebmasters.org^
+||twerk.porn^
+||xvideos.es^
+||hotntubes.com^
+||pornsos.com^
+||ps0z.com^
+||ok.xxx^
+||anybunny.com^
+||porntube.com^
+||bravotube.net^
+||titsx.com^
+||anyporn.org^
+||coedcherry.com^
+||sexvid.xxx^
+||nubiles.net^
+||ashemaletube.com^
+||femefun.com^
+||findfree.xxx^
+||namethatporn.com^
+||hellcdn.net^
+||xbabe.com^
+||shesfreaky.com^
+||pornid.xxx^
+||awemdia.com^
+||gotporn.com^
 ||privatehomeclips.com^
 ||pornzog.com^
 ||myzpics.com^
