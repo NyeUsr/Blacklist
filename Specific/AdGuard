@@ -141,6 +141,8 @@ youtube-nocookie.com,youtube.com#%#//scriptlet('json-prune', '0.playerResponse.a
 !#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
 
 !+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.js-privacy-banner.privacy-banner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.rightAdsSection:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.advertisementContainer:not(html, body, button, input)
@@ -821,6 +823,12 @@ com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###ad300:no
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.idgGoogleAdTag:not(html, body, button, input)
 !+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="ad_promoted"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="image_ad"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="ad_image"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="_adPlacements"]:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[id*="bottom-advertising-"]:not(html, body, button, input)
@@ -996,6 +1004,10 @@ com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##a[onclick
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##a[onclick*="/ping_url"]
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##a[onclick="closeMyAd()"]
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##a[href*="ourgoldguy.com/"]
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##a[href*="avantlink.com"]
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##a[href*="ads.cdn.live"]
 !+ NOT_OPTIMIZED

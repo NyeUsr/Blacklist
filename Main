@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 17N-1563
+! Version: 18N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -446,6 +446,10 @@ http://gmpg.org$third-party
 !#if (!adguard)
 ||bitly.com^$popunder
 ||bit.ly^$popunder
+||balaraofixes.website^$popunder
+||kougloar.com^$popunder
+||bipedhematin.website^$popunder
+||adswelcome.xyz^$popunder
 /out.php$popunder
 /outback.php$popunder
 /play.php$popunder
@@ -458,6 +462,25 @@ http://gmpg.org$third-party
 ||nessainy.net^$popup,popunder
 ||optnx.com^$popup,popunder
 ||trafficjunky.net^$popup,popunder
+||placeholder.com^$third-party
+||balaraofixes.website^$popup
+||kougloar.com^$popup
+||bipedhematin.website^$popup
+||adswelcome.xyz^$popup
+
+||snplow.net^
+||platform-lookaside.fbsbx.com^
+||collect.tealiumiq.com^
+||browser-intake-datadoghq.com^
+||propel.ai^
+||balaraofixes.website^
+||kougloar.com^
+||lephaush.net^
+||lptargultsi.com^
+||collenwhr.website^
+||muzarabeponym.website^
+||bipedhematin.website^
+||thereddustour.com^
 ||carrentalcrew.com^
 ||track.vcdc.com^
 ||lysim-lre.com^
@@ -7691,7 +7714,6 @@ http://gmpg.org$third-party
 ||luckyads.tech^
 ||powerapp.download^
 ||lightstep-collector.api.ua.com^
-||list-manage.com^
 ||lkqd.net^
 ||lotame.com^
 ||driftem.com^
@@ -12538,6 +12560,7 @@ org,gov##.js-notification-banner:has-text(vaccine or booster)
 org,gov##.notification-banner:has-text(vaccine or booster)
 org,gov##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+##.js-privacy-banner.privacy-banner:not(html, body, button, input)
 ##.rightAdsSection:not(html, body, button, input)
 ##.advertisementContainer:not(html, body, button, input)
 ##.s-left-ads-item:not(html, body, button, input)
@@ -12877,6 +12900,9 @@ org,gov##.critical-alert-banner:has-text(COVID-19)
 ###div-gpt-com-300x250:not(html, body, button, input)
 ###ad300:not(html, body, button, input)
 ##.idgGoogleAdTag:not(html, body, button, input)
+##[class*="ad_promoted"]:not(html, body, button, input)
+##[class*="image_ad"]:not(html, body, button, input)
+##[class*="ad_image"]:not(html, body, button, input)
 ##[class*="_adPlacements"]:not(html, body, button, input)
 ##[id*="bottom-advertising-"]:not(html, body, button, input)
 ##[id*="-ad-center-"]:not(html, body, button, input)
@@ -12965,6 +12991,8 @@ org,gov##.critical-alert-banner:has-text(COVID-19)
 ##a[onclick*="adclick"]
 ##a[onclick*="/ping_url"]
 ##a[onclick="closeMyAd()"]
+##a[href*="ourgoldguy.com/"]
+##a[href*="avantlink.com"]
 ##a[href*="ads.cdn.live"]
 ##a[href*="raznoeporno.info"]
 ##a[href*="?ad_provider"]
@@ -13655,16 +13683,140 @@ startpage.com##.image-container:has(div.image-quick-details span:has-text(gbitde
 ~ads.$rewrite=abp-resource:blank-js
 
 ! Removeparam (AdGuard & uBlock Origin)
-*$removeparam=/^__cf_chl_jschl_tk__$|^utm_*|_visid_|tracelog|affiliate_ref|publisherid|os_version|os_name|package_name|app_version_name|app_version_code|orientation_lock|CLIENT_IMPRESSION|page-ref|browser-info|referrer|browserver|foxref|is_first_visit|refccid|__twitter_impression|guce_referrer|guce_referrer_sig|adCount|wmlspartner|clickid|guccounter|tj_url|so_rec|int_cmpgn|^uclick|uclickhash|^ref_src|^ref_url|_trkparms|^yclid|^gclid|^fbclid|^fb_ref|^fb_source/
+$removeparam=/^(u|m)tm_*/
+$removeparam=/adjust_*/
+$removeparam=/^guce_referrer(_.+)?/
+$removeparam=/^uclick(.+)?/
+$removeparam=/^__s=.+$/
+$removeparam=/^(g|w)braid=.+$/
+$removeparam=/hsa_.{2,3}/
+$removeparam=/^awc=.+$/
+$removeparam=/(itm|dpg)_.{4,8}/
+$removeparam=__cf_chl_jschl_tk__
+$removeparam=tracelog
+$removeparam=affiliate_ref
+$removeparam=CLIENT_IMPRESSION
+$removeparam=page-ref
+$removeparam=browser-info
+$removeparam=referrer
+$removeparam=browserver
+$removeparam=foxref
+$removeparam=is_first_visit
+$removeparam=refccid
+$removeparam=__twitter_impresion
+$removeparam=adCount
+$removeparam=wmlspartner
+$removeparam=clickid
+$removeparam=guccounter
+$removeparam=tj_url
+$removeparam=so_rec
+$removeparam=int_cmpgn
+$removeparam=ref_src
+$removeparam=ref_url
+$removeparam=yclid
+$removeparam=gclid
+$removeparam=fbclid
+$removeparam=_zucks_suid
+$removeparam=fb_action_ids
+$removeparam=fb_action_types
+$removeparam=fb_ref
+$removeparam=fb_source
+$removeparam=msclkid
+$removeparam=mc_eid
+$removeparam=dclid
+$removeparam=oly_anon_id
+$removeparam=oly_enc_id
+$removeparam=vero_conv
+$removeparam=vero_id
+$removeparam=wickedid
+$removeparam=rb_clickid
+$removeparam=s_cid
+$removeparam=ml_subscriber
+$removeparam=ml_subscriber_hash
+$removeparam=twclid
+$removeparam=_hsenc
+$removeparam=__hssc
+$removeparam=__hstc
+$removeparam=__hsfp
+$removeparam=hsCtaTracking
+$removeparam=oft_id
+$removeparam=oft_k
+$removeparam=oft_lk
+$removeparam=oft_d
+$removeparam=oft_c
+$removeparam=oft_ck
+$removeparam=oft_ids
+$removeparam=oft_sk
+$removeparam=ss_email_id
+$removeparam=igshid
+$removeparam=ysclid
+$removeparam=aiad_clid
+$removeparam=_sgm_campaign
+$removeparam=_sgm_source
+$removeparam=_sgm_action
+$removeparam=_clde
+$removeparam=_cldee
+$removeparam=wt_mc
+$removeparam=oprtrack
+$removeparam=gclsrc
+$removeparam=admitad_uid
+$removeparam=unicorn_click_id
+$removeparam=bsft_clkid
+$removeparam=bsft_eid
+$removeparam=bsft_mid
+$removeparam=bsft_uid
+$removeparam=bsft_aaid
+$removeparam=bsft_ek
+$removeparam=pk_campaign
+$removeparam=pk_medium
+$removeparam=pk_source
+$removeparam=_branch_match_id
+$removeparam=vc_lpp
+$removeparam=ebisAdID
+$removeparam=irgwc
+$removeparam=adfrom
+$removeparam=nx_source
+$removeparam=cmpid
+$removeparam=asgtbndr
+$removeparam=action_object_map
+$removeparam=action_ref_map
+$removeparam=action_type_map
+$removeparam=campaignId
+$removeparam=realDomain
+$removeparam=clickref
+$removeparam=_branch_referrer
+$removeparam=playeranalytics
+$removeparam=targetedlink
+$removeparam=telemetry-client-id
+$removeparam=aff_trace_key
+$removeparam=aff_platform
+$removeparam=aff_short_key
+$removeparam=aff_trace_key
+$removeparam=aff_fcid
+$removeparam=correlation_id
+$removeparam=ref_campaign
+$removeparam=ref_source
+$removeparam=pcampaignid
+$removeparam=afftrack
+$removeparam=aff_model
+$removeparam=_trkparms
+$removeparam=_openstat
+$removeparam=gps_adid
+$removeparam=ns_source
+$removeparam=ns_campaign
+$removeparam=ns_linkname
+$removeparam=at_campaign
+$removeparam=ocid
+$removeparam=share_source
+$removeparam=share_medium
+$removeparam=share_session_id
+$removeparam=from_source
 ||search.brave.com^$removeparam=source
 
-/[&]s(screen)?[=][0-9]{3,4}x[0-9]{3,4}[&]/$domain=~istockphoto.com
-/^http(s)?:\/\/[0-9]{5,}\..+$/$all,domain=~cdnbay.com|~cdn77.org
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
 /\/collect(ion|or)?\/v[0-9]{1,2}/$script
 /.+(tracking-website|telemetry-).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/(clickio).{3,6}\.(com)/$all
 /\/[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{4,4}[a-z]{2,2}[0-9]{1,1}\.(js)$/$all
 /(bit\.ly)\/[a-zA-Z0-9]{7,7}#[a-zA-Z0-9]{13,13}_[a-zA-Z0-9]{7,7}_[a-zA-Z0-9]{8,8}_[a-zA-Z0-9]{7,7}/$all
-/^(applog|adservice|adsdk|ad(-)?img|ad-beacon|activetracker|analytic(s)?|ad(s)?|telemetry|adslog|advertica-cdn).+/$subdocument,xhr
 /^http(s)?:\/\/.+\/domain_views$/$first-party
