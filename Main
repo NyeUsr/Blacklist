@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 18N-1563
+! Version: 19N-1563
 ! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -442,6 +442,17 @@ http://gmpg.org$third-party
 ||eviltracker.net^$subdocument
 ||do-not-tracker.org^$subdocument
 
+! https://www.mcafee.com/blogs/other-blogs/mcafee-labs/malicious-cookie-stuffing-chrome-extensions-with-1-4-million-users/
+||langhort.com^
+||smartredirect.de^
+||bestbuy.7tiv.net^
+||unscart.in^
+||netflixpartyplus.com^
+||netflixparty1.com^
+||flipshope.com^
+||goscreenshotting.com^
+||autobuyapp.com^
+
 ! Popunder AdGuard exclusions
 !#if (!adguard)
 ||bitly.com^$popunder
@@ -450,12 +461,15 @@ http://gmpg.org$third-party
 ||kougloar.com^$popunder
 ||bipedhematin.website^$popunder
 ||adswelcome.xyz^$popunder
+||dartsearch.net^$popunder
 /out.php$popunder
 /outback.php$popunder
 /play.php$popunder
 /lander.php$third-party,popup,popunder
 !#endif
 
+||ip-api.com^$third-party
+||dartsearch.net^$popup
 ||dmca.com^$third-party
 ||seal.thawte.com^$third-party
 ||parkcircularpearl.com^$popup,popunder
@@ -468,6 +482,20 @@ http://gmpg.org$third-party
 ||bipedhematin.website^$popup
 ||adswelcome.xyz^$popup
 
+||usps.name^
+||smileylocksmith.com^
+||tierracalientebakery.com^
+||splayer-store.com^
+||icrsetup365.com^
+||mpromo365setup.com^
+||setms365.ink^
+||keeppcsafe.com^
+||digitronixllc.com^
+||infosayz.com^
+||yootube.com^
+||adviceexperts.net^
+||itsgenieassistant.com^
+||functionads.com^
 ||snplow.net^
 ||platform-lookaside.fbsbx.com^
 ||collect.tealiumiq.com^
@@ -11476,6 +11504,7 @@ http://gmpg.org$third-party
 ||yahoo.com/f/track/tgt/imp?
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
+/clickGate.php
 /static/bg-ad.png
 /*advertising*.swf
 /*_ads_*.swf
@@ -13813,10 +13842,12 @@ $removeparam=share_session_id
 $removeparam=from_source
 ||search.brave.com^$removeparam=source
 
+! Heuristic-like scam/phishing protection
+/-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
+/bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$all
+! Domain generated tracking urls
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
-/\/collect(ion|or)?\/v[0-9]{1,2}/$script
-/.+(tracking-website|telemetry-).+\.(amazonaws)\..+/$all
-/^http(s)?:\/\/(clickio).{3,6}\.(com)/$all
-/\/[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{1,1}[a-z]{1,1}[0-9]{4,4}[a-z]{2,2}[0-9]{1,1}\.(js)$/$all
-/(bit\.ly)\/[a-zA-Z0-9]{7,7}#[a-zA-Z0-9]{13,13}_[a-zA-Z0-9]{7,7}_[a-zA-Z0-9]{8,8}_[a-zA-Z0-9]{7,7}/$all
+! Traking scripts
+/\/collect(ion|or)?\/v[0-9]{1,2}/$third-party,script
+/.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$first-party
