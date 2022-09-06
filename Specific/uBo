@@ -97,9 +97,6 @@
 ||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch.com/beacon.js
 ||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js
 ||widgets.outbrain.com/outbrain.js$script,redirect=widgets.outbrain.com/outbrain.js
-youtube.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
-youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 !-----------------------------
 
 ! click2load

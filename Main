@@ -3,8 +3,8 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 19N-1563
-! Approximate number of ad services, trackers, malware, etc. blocked: 13.5K
+! Version: 20N-1563
+! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
 ! Ublock Origin Static Filter Syntax                                   |
@@ -23,11 +23,12 @@
 ! Notes ----------------------------------------------------------------
 ! uBo automatically converts 0.0.0.0 and 127.0.0.1 rules to a          |
 ! filterlist syntax                                                    |
-!                                                                      |
-! AdGuard sees opening links with middle mouse-click as popunder       |
-! so exclude all $popunder rules from AdGuard                          |
+!  ------------------------------------------------------------------  |
+! AdGuard sees opening links with middle mouse-click/open in           |
+! new tab as popunder so exclude all $popunder rules from AdGuard      |
 !-----------------------------------------------------------------------
 
+! Include adblocker specific rules
 !#if (adguard)
 !#if adguard
 !#include Specific/AdGuard
@@ -39,6 +40,8 @@
 !#endif
 !#endif
 
+! Include whitelisted rules in ALL Safari content blockers to prevent
+! as many page breaks as possible
 !#safari_cb_affinity(all)
 
 ! Local Domains
@@ -46,7 +49,7 @@
 @@||127.0.0.$~third-party
 
 ! Prevent breaking PDFs
-@@/.+\.pdf$/
+@@/\.pdf$/$document
 
 ! Lead/redirect tracking - required for usability
 @@||tkqlhce.com^
@@ -60,6 +63,8 @@
 @@||bridgetrack.com^
 @@||apiservices.krxd.net^
 @@||amazon.partners.tremorhub.com^
+@@||clkuk.tradedoubler.com/click?*url(http
+@@||redirects.tradedoubler.com/projectr/*_td_deeplink=http
 ! https://github.com/notracking/hosts-blocklists/issues/763
 ! https://github.com/nextdns/metadata/issues/988
 @@||wl.spotify.com^$~third-party
@@ -70,19 +75,29 @@
 @@||grant.rewards.brave.com^
 @@||ads-static.brave.com^
 
-! Breaks stuff in some android apps
-@@||api.revenuecat.com^
-@@||launches.appsflyer.com^
-@@||api2.branch.io^
-
 ! Required for some B&H functions to work
 @@||mpsnare.iesnare.com^
 
 ! Breaks TikTok Login
-@@||log2.musical.ly^
+||log2.musical.ly^$badfilter
+!#if !ext_ublock
+0.0.0.0 log2.musical.ly$badfilter
+127.0.0.1 log2.musical.ly$badfilter
+!#endif
 
 ! Local News Station - Blocked Under "Malware domains"
-@@||ksibradio.com^
+||ksibradio.com^$badfilter
+!#if !ext_ublock
+0.0.0.0 ksibradio.com$badfilter
+127.0.0.1 ksibradio.com$badfilter
+!#endif
+
+! Fix Videos Not Loading (TVs, Paramount, NBC)
+||theplatform.com^$badfilter
+!#if !ext_ublock
+0.0.0.0 theplatform.com$badfilter
+127.0.0.1 theplatform.com$badfilter
+!#endif
 
 ! Some Filters Incorrectly Block This - This Is The Link To Track Your Package
 @@||fedex.com/Tracking
@@ -101,9 +116,6 @@
 @@||yospace-directv.akamaized.net^
 @@-sponsored.dfw.vcdn.att-idns.net^
 
-! Prevent breaking icons
-@@||ssl-images-amazon.com/images/*/sprites/nav-sprite-global_
-
 ! If blocked it breaks DuckDuckGo's site
 @@||duckduckgo.com/t/$stylesheet
 
@@ -113,14 +125,8 @@
 ! Unbreak Delta Dental Login
 @@||login-wsprod.deltadental.com^$~third-party,script
 
-! Unbreak Some Apps (Such as HP Printer Control on Android)
-@@||remote-data.urbanairship.com^
-
 ! Not ads, just trying to bait adblockers into breaking embeded content
 @@||static-cdn.spot.im/production/conversation/*/ad-container-bundle.js
-
-! Fix Videos Not Loading (TV's and Paramount)
-@@||link.theplatform.com^
 
 ! Unbreak Apps Not Loading on Roku TV
 @@||scribe.logs.roku.com^
@@ -144,7 +150,7 @@
 @@||cl.exct.net^
 
 ! https://github.com/Cybo1927/Hosts/issues/84
-@@||assets.adobedtm.com^
+!@@||assets.adobedtm.com^
 
 ! https://github.com/lightswitch05/hosts/issues/277
 @@||posteitalianespa.sc.omtrdc.net^
@@ -156,14 +162,15 @@
 !#endif
 ||s.youtube.com$badfilter
 
-! Fix hub.docker.com
-@@||d36jcksde1wxzq.cloudfront.net^
-
-! Unbreak loading replies on Twitter
-@@||twitter.com/i/*$removeparam
-
-! Whitelist this to prevent page breaks
-foxnews.com#@#.cookies
+! https://github.com/nextdns/metadata/issues/1058
+!#if !ext_ublock
+0.0.0.0 learn.cisecurity.org$badfilter
+127.0.0.1 learn.cisecurity.org$badfilter
+0.0.0.0 cisecurity.org$badfilter
+127.0.0.1 cisecurity.org$badfilter
+!#endif
+||learn.cisecurity.org^$badfilter
+||cisecurity.org^$badfilter
 
 ! Unbreak some Google services
 @@*/viewerimpressions$~third-party,domain=google.com
@@ -173,7 +180,7 @@ foxnews.com#@#.cookies
 @@||video.google.com/api/stats/
 @@||youtube.com/ptracking
 @@||youtube.com/youtubei/*/log_event
-@@|youtube.com^$removeparam
+!@@|youtube.com^$removeparam
 
 ! Unbreak testing software used by schools
 @@||kinesis.*.amazonaws.com^$domain=masteryconnect.com
@@ -183,9 +190,6 @@ foxnews.com#@#.cookies
 
 ! Unbreak some Snapchat features
 @@||app-analytics-v*.snapchat.com^
-
-! Required for some Android/iOS apps to work
-@@||config.inmobi.com^
 
 ! Info about Microsoft/Bing ads, not an adserver
 @@||about.ads.microsoft.com^
@@ -198,30 +202,33 @@ foxnews.com#@#.cookies
 
 ! Attempt to make sure bills can always be paid without issue
 ! Whitelist banks and third-party payment services
-@@||fiserv.com^$third-party
+@@||fiserv.com^$~third-party
 @@||firstdata.com^
-@@||credit.kohls.com^$first-party
-@@||mysynchrony.com^$first-party
-@@||synchronybank.com^$first-party
-@@||synchrony.com^$first-party
-@@||secureinternetbank.com^$first-party
-@@||midamericanenergy.com^$first-party
-@@||fidelity.com^$first-party
-@@||current.com^$first-party
-@@||chime.com^$first-party
+@@||credit.kohls.com^$~third-party
+@@||mysynchrony.com^$~third-party
+@@||synchronybank.com^$~third-party
+@@||synchrony.com^$~third-party
+@@||secureinternetbank.com^$~third-party
+@@||midamericanenergy.com^$~third-party
+@@||fidelity.com^$~third-party
+@@||current.com^$~third-party
+@@||chime.com^$~third-party
 @@||paymentech.net^
-@@||jpmorgan.com^$first-party
-@@||chase.com^$first-party
+@@||jpmorgan.com^$~third-party
+@@||chase.com^$~third-party
 @@||chasecdn.com^
 @@||bankofamerica.com^$domain=bac-assets.com
 @@||bac-assets.com^
-@@||wellsfargo.com^$first-party
+@@||wellsfargo.com^$~third-party
 @@||wellsfargomedia.com^$domain=wellsfargo.com
-@@||citi.com^$first-party
-@@||goldmansachs.com^$first-party
-@@||marcus.com^$first-party
-@@||capitalone.com^$first-party
-@@||usbank.com^$first-party
+@@||citi.com^$~third-party
+@@||goldmansachs.com^$~third-party
+@@||marcus.com^$~third-party
+@@||capitalone.com^$~third-party
+@@||usbank.com^$~third-party
+@@||mint.com^$~third-party
+@@||windstream.com^$~third-party
+@@||gokinetic.com^$~third-party
 
 ! Uncategorized
 @@||auth-*.tinypass.com^
@@ -420,7 +427,7 @@ foxnews.com#@#.cookies
 http://yourjavascript.com$third-party
 http://gmpg.org$third-party
 
-! Harder blocking of facebook tracking
+! Harder blocking of Facebook tracking
 ! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
 ||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
 ||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
@@ -482,6 +489,19 @@ http://gmpg.org$third-party
 ||bipedhematin.website^$popup
 ||adswelcome.xyz^$popup
 
+! Heuristic-like scam/phishing protection
+/-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
+/bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$popup,popunder,domain=mail.google.com|mail.yahoo.com|outlook.com|protonmail.com|proton.me
+
+! Domain generated tracking urls
+/[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
+
+! Traking scripts
+/\/collect(ion|or)?\/v[0-9]{1,2}/$third-party,script
+/.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
+/^http(s)?:\/\/.+\/domain_views$/$~third-party
+
+||lr-in.com^
 ||usps.name^
 ||smileylocksmith.com^
 ||tierracalientebakery.com^
@@ -10071,7 +10091,6 @@ http://gmpg.org$third-party
 ||tagbucket.cc^
 ||tubeplus.me^
 ||turngrind.com^
-||theplatform.com^
 ||tamgrt.com^
 ||tail.digital^
 ||tracking.epicgames.com^
@@ -11252,6 +11271,7 @@ http://gmpg.org$third-party
 ||novads.co^
 ||igadget24.com^
 
+||nbc.com/tags/
 ||track.*/beam.php?
 ||youtube.com/set_awesome
 ||youtube.com/ad_data
@@ -11504,6 +11524,8 @@ http://gmpg.org$third-party
 ||yahoo.com/f/track/tgt/imp?
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
+/MPS-STATISTIC-REPORTING.png
+/startSSO.ping
 /clickGate.php
 /static/bg-ad.png
 /*advertising*.swf
@@ -12576,18 +12598,17 @@ _statsonlineinfo
 ! This list will only cover more popular sites: it's more focused on generic hiding
 google.*##.c, .commercial-unit-desktop-top, #tadsb, #tads, #rhs, #tvcap, #taw
 youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
-youtube.com##.ytd-rich-item-renderer.style-scope > .ytd-ad-slot-renderer.style-scope:upward(3)
+youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
 m.youtube.com###YtSparklesVisibilityIdentifier
-bhphotovideo.com##[href*="/promotion"]
 genius.com##.dfp_unit, [class*="Leaderboard-"]
 pubmed.ncbi.nlm.nih.gov###ncov-alert-from-server
 ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
 easybib.com##.ucf-upload-widget-modal-root, [class*="styled__ModalWrapper-sc-"]
 finance.yahoo.com##.MAST-status-ok, .LREC-status-ok
 amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal, .text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
-org,gov##.js-notification-banner:has-text(vaccine or booster)
-org,gov##.notification-banner:has-text(vaccine or booster)
-org,gov##.critical-alert-banner:has-text(COVID-19)
+org,gov,info##.js-notification-banner:has-text(vaccine or booster)
+org,gov,info##.notification-banner:has-text(vaccine or booster)
+org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
 ##.js-privacy-banner.privacy-banner:not(html, body, button, input)
 ##.rightAdsSection:not(html, body, button, input)
@@ -13721,6 +13742,7 @@ $removeparam=/^(g|w)braid=.+$/
 $removeparam=/hsa_.{2,3}/
 $removeparam=/^awc=.+$/
 $removeparam=/(itm|dpg)_.{4,8}/
+$removeparam=/aff_defaultcampaign*/
 $removeparam=__cf_chl_jschl_tk__
 $removeparam=tracelog
 $removeparam=affiliate_ref
@@ -13840,14 +13862,12 @@ $removeparam=share_source
 $removeparam=share_medium
 $removeparam=share_session_id
 $removeparam=from_source
+$removeparam=cjevent
+$removeparam=c3nid
 ||search.brave.com^$removeparam=source
+||tradedoubler.com^$removeparam=tduid
 
-! Heuristic-like scam/phishing protection
-/-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
-/bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$all
-! Domain generated tracking urls
-/[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
-! Traking scripts
-/\/collect(ion|or)?\/v[0-9]{1,2}/$third-party,script
-/.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
-/^http(s)?:\/\/.+\/domain_views$/$first-party
+! Json Prune (uBo & AdGuard)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)

@@ -26,11 +26,21 @@
 @@||fidelity.com^$stealth
 @@||i.4cdn.org^$stealth
 @@||calendar.google.com^$stealth
-! Unblock things which commonly break TV's
+
+! Unblock things which commonly break TVs
 @@||theplatform.com^$ctag=device_tv
 @@||samba.tv^$ctag=device_tv
 @@||doubleclick.net^$ctag=device_tv
 @@||nativesdks.mparticle.com^$ctag=device_tv
+
+! Breaks stuff in/for some mobile apps
+!#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
+@@||api.revenuecat.com^
+@@||launches.appsflyer.com^
+@@||api2.branch.io^
+@@||remote-data.urbanairship.com^
+@@||config.inmobi.com^
+!#endif
 
 ! HTML/script filtering
 $$amp-ad
