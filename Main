@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 20N-1563
+! Version: 21N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -171,6 +171,10 @@
 !#endif
 ||learn.cisecurity.org^$badfilter
 ||cisecurity.org^$badfilter
+
+! https://github.com/nextdns/metadata/issues/1061
+@@||s3.ll.videorolls.row.aiv-cdn.net^
+@@||s3-iad-ww.cf.videorolls.row.aiv^
 
 ! Unbreak some Google services
 @@*/viewerimpressions$~third-party,domain=google.com
@@ -451,7 +455,7 @@ http://gmpg.org$third-party
 
 ! https://www.mcafee.com/blogs/other-blogs/mcafee-labs/malicious-cookie-stuffing-chrome-extensions-with-1-4-million-users/
 ||langhort.com^
-||smartredirect.de^
+!||smartredirect.de^
 ||bestbuy.7tiv.net^
 ||unscart.in^
 ||netflixpartyplus.com^
@@ -501,6 +505,17 @@ http://gmpg.org$third-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||rtphit.com^
+||wnpladv.com^
+||vptadv.com^
+||potpourrichordataoscilloscope.com^
+||icpadv.com^
+||fortdaukthw.hair^
+||mentxviewsi.one^
+||papcorwye.live^
+||adtrk18.com^
+||nvidiacenter.com^
+||luckypatcher.co^
 ||lr-in.com^
 ||usps.name^
 ||smileylocksmith.com^
@@ -5370,7 +5385,6 @@ http://gmpg.org$third-party
 ||crptgate.com^
 ||clean.gg^
 ||consent.api.ua.com^
-||chelpus.com^
 ||clkservice.youdao.com^
 ||cirrusinsight.com^
 ||cmail20.com^
@@ -11271,6 +11285,7 @@ http://gmpg.org$third-party
 ||novads.co^
 ||igadget24.com^
 
+||netgear.com/open.aspx
 ||nbc.com/tags/
 ||track.*/beam.php?
 ||youtube.com/set_awesome
