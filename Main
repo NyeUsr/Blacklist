@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 21N-1563
+! Version: 22N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -505,6 +505,24 @@ http://gmpg.org$third-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||luckypatcherlab.yolasite.com^
+||eternaltechdl.blogspot.com^
+||everindustrial293.weebly.com^
+||evttestrrtv.blogspot.com^
+||amptesters.blogspot.com^
+||nihuguri.wixsite.com^
+||andoridworld.blogspot.com^
+||potenziawifiproapk.blogspot.com^
+||dahakoga.wixsite.com^
+||shapelcounset.xyz^
+||renhadmasandbab.info^
+||giftinthebox.online^
+||sslrt1.com^
+||induskwetrusts.shop^
+||clearedproceed.com^
+||top-conttent.com^
+||glbltraffic.com^
+||unityads.unitychina.cn^
 ||rtphit.com^
 ||wnpladv.com^
 ||vptadv.com^
@@ -5520,11 +5538,8 @@ http://gmpg.org$third-party
 ||clixtell.com^
 ||conde.io^
 ||connexity.net^
-||coxmediagroup.com^
 ||creativecdn.com^
 ||colossusssp.com^
-||client.messaging.adobe.com^
-||client.teamviewer.com^
 ||trafficmanager.com^
 ||contentive.com^
 ||cdin.me^
@@ -5836,11 +5851,6 @@ http://gmpg.org$third-party
 ||countess.twitch.tv^
 ||client-event-reporter.twitch.tv^
 ||criteo.com^
-||cache.datamart.windows.com^
-||cdpcs.microsoft.com^
-||client-office365-tas.msedge.net^
-||crl.microsoft.com^
-||config.office.microsoft.com^
 ||cbox.ws^
 ||cnt.sup.com^
 ||cpabuild.com^
@@ -11304,8 +11314,6 @@ http://gmpg.org$third-party
 ||google.com/adsense/
 ||google.com/imgevent?
 ||google.com/async/irc
-||clients4.google.com/invalidation/lcs/request
-||clients4.google.com/chrome-sync/experimentstatus
 ||google.com/insights/
 ||google.com/analytics/
 ||google.com/intl/*/ads
@@ -11418,7 +11426,6 @@ http://gmpg.org$third-party
 ||cdnjs.cloudflare.com/ajax/libs/fastclick/
 ||pelcro.com/api/*/sdk/site?site_id=*
 ||paypalobjects.com/upstream/bizcomponents/js/messaging.js
-||paypal.com/webapps/mch/cmd/?v=*%3DCLIENT_IMPRESSION
 ||cdn-image.com/__media__/
 ||archive.org/includes/analytics
 ||swiftypecdn.com/cc/
@@ -12355,9 +12362,7 @@ ext.track.scripts*
 /js/ga.js
 /TOIBNews/breakingnews.html
 /clear1x1.$image
-/1.1/promoted_content/log.json
-/1.1/jot/client_event.json
-/1.1/jot/error_log.json
+/promoted_content/log
 /ac/qzfl/stat.js
 /barclays-monitoring/
 /visit.json
@@ -13758,6 +13763,7 @@ $removeparam=/hsa_.{2,3}/
 $removeparam=/^awc=.+$/
 $removeparam=/(itm|dpg)_.{4,8}/
 $removeparam=/aff_defaultcampaign*/
+$removeparam=ttorigin
 $removeparam=__cf_chl_jschl_tk__
 $removeparam=tracelog
 $removeparam=affiliate_ref

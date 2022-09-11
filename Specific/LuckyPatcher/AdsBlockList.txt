@@ -8,6 +8,12 @@ com.google.android.gms.ads.identifier.service.START
 com.google.android.gms.ads.interstitial
 com.google.android.gms.ads.AdView
 com.google.android.gms.ads
+com.google.android.gms.analytics.AnalyticsService 
+com.google.android.gms.analytics.AnalyticsJobService
+com.unity3d.services.ads.adunit.AdUnitActivity 
+com.unity3d.services.ads.adunit.AdUnitTransparentActivity 
+com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity 
+com.unity3d.services.ads.adunit.AdUnitSoftwareActivity
 
 screenconnect.com
 
@@ -20,6 +26,24 @@ flipshope.com
 goscreenshotting.com
 autobuyapp.com
 
+luckypatcherlab.yolasite.com
+eternaltechdl.blogspot.com
+everindustrial293.weebly.com
+evttestrrtv.blogspot.com
+amptesters.blogspot.com
+nihuguri.wixsite.com
+andoridworld.blogspot.com
+potenziawifiproapk.blogspot.com
+dahakoga.wixsite.com
+shapelcounset.xyz
+renhadmasandbab.info
+giftinthebox.online
+sslrt1.com
+induskwetrusts.shop
+clearedproceed.com
+top-conttent.com
+glbltraffic.com
+unityads.unitychina.cn
 rtphit.com
 wnpladv.com
 vptadv.com
@@ -5035,11 +5059,8 @@ counter.ukr.net
 clixtell.com
 conde.io
 connexity.net
-coxmediagroup.com
 creativecdn.com
 colossusssp.com
-client.messaging.adobe.com
-client.teamviewer.com
 trafficmanager.com
 contentive.com
 cdin.me
@@ -5351,11 +5372,6 @@ clientmetrics-pa.googleapis.com
 countess.twitch.tv
 client-event-reporter.twitch.tv
 criteo.com
-cache.datamart.windows.com
-cdpcs.microsoft.com
-client-office365-tas.msedge.net
-crl.microsoft.com
-config.office.microsoft.com
 cbox.ws
 cnt.sup.com
 cpabuild.com
@@ -11523,9 +11539,7 @@ ext.track.scripts*
 /js/experiment.js?
 /js/ga.js
 /TOIBNews/breakingnews.html
-/1.1/promoted_content/log.json
-/1.1/jot/client_event.json
-/1.1/jot/error_log.json
+/promoted_content/log
 /ac/qzfl/stat.js
 /barclays-monitoring/
 /visit.json
