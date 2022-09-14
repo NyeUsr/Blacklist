@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 22N-1563
+! Version: 23N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -50,6 +50,37 @@
 
 ! Prevent breaking PDFs
 @@/\.pdf$/$document
+
+! Attempt to make sure bills can always be paid without issue
+! Whitelist banks and third-party payment services
+@@||fiserv.com^$~third-party
+@@||firstdata.com^
+@@||credit.kohls.com^$~third-party
+@@||mysynchrony.com^$~third-party
+@@||synchronybank.com^$~third-party
+@@||synchrony.com^$~third-party
+@@||secureinternetbank.com^$~third-party
+@@||midamericanenergy.com^$~third-party
+@@||fidelity.com^$~third-party
+@@||current.com^$~third-party
+@@||chime.com^$~third-party
+@@||paymentech.net^
+@@||jpmorgan.com^$~third-party
+@@||chase.com^$~third-party
+@@||chasecdn.com^
+@@||bankofamerica.com^$domain=bac-assets.com
+@@||bac-assets.com^
+@@||wellsfargo.com^$~third-party
+@@||wellsfargomedia.com^$domain=wellsfargo.com
+@@||citi.com^$~third-party
+@@||goldmansachs.com^$~third-party
+@@||marcus.com^$~third-party
+@@||capitalone.com^$~third-party
+@@||usbank.com^$~third-party
+@@||mint.com^$~third-party
+@@||plugin.intuitcdn.net^
+@@||windstream.com^$~third-party
+@@||gokinetic.com^$~third-party
 
 ! Lead/redirect tracking - required for usability
 @@||tkqlhce.com^
@@ -131,29 +162,49 @@
 ! Unbreak Apps Not Loading on Roku TV
 @@||scribe.logs.roku.com^
 
-! https://github.com/nextdns/metadata/issues/1006
-@@||api.townsq.io^
-
-! https://github.com/nextdns/metadata/issues/632
-@@||nv-sdk.jumio.com^
-
-! https://github.com/nextdns/metadata/issues/638#issuecomment-823537069
-@@||r20.rs6.net^
-
-! https://github.com/notracking/hosts-blocklists/issues/779
-||beacon.shazam.com^$badfilter
+! Anti adblock message
+@@||pagead2.googlesyndication.com^$domain=crast.net
 
 ! Required for updates
 @@||data.mistat.intl.xiaomi.com^
 
+! https://github.com/nextdns/metadata/issues/1006
+@@||api.townsq.io^
+
+! https://github.com/nextdns/metadata/issues/632
+!#if !ext_ublock
+0.0.0.0 jumio.com$badfilter
+127.0.0.1 jumio.com$badfilter
+0.0.0.0 nv-sdk.jumio.com$badfilter
+127.0.0.1 nv-sdk.jumio.com$badfilter
+!#endif
+||jumio.com^$badfilter
+||nv-sdk.jumio.com^$badfilter
+
+! https://github.com/nextdns/metadata/issues/638#issuecomment-823537069
+!#if !ext_ublock
+0.0.0.0 r20.rs6.net$badfilter
+127.0.0.1 r20.rs6.net$badfilter
+!#endif
+||r20.rs6.net^$badfilter
+
+! https://github.com/notracking/hosts-blocklists/issues/779
+!#if !ext_ublock
+0.0.0.0 beacon.shazam.com$badfilter
+127.0.0.1 beacon.shazam.com$badfilter
+!#endif
+||beacon.shazam.com^$badfilter
+
 ! https://github.com/nextdns/metadata/issues/605
-@@||cl.exct.net^
+!#if !ext_ublock
+0.0.0.0 cl.exct.net$badfilter
+127.0.0.1 cl.exct.net$badfilter
+!#endif
+||cl.exct.net^$bdafilter
 
 ! https://github.com/Cybo1927/Hosts/issues/84
+! https://github.com/lightswitch05/hosts/issues/295
 !@@||assets.adobedtm.com^
-
-! https://github.com/lightswitch05/hosts/issues/277
-@@||posteitalianespa.sc.omtrdc.net^
 
 ! https://github.com/nextdns/metadata/issues/1043
 !#if !ext_ublock
@@ -203,36 +254,6 @@
 
 ! Fix broken payments on imperiumpress.org
 @@||js.stripe.com/v*/fingerprinted
-
-! Attempt to make sure bills can always be paid without issue
-! Whitelist banks and third-party payment services
-@@||fiserv.com^$~third-party
-@@||firstdata.com^
-@@||credit.kohls.com^$~third-party
-@@||mysynchrony.com^$~third-party
-@@||synchronybank.com^$~third-party
-@@||synchrony.com^$~third-party
-@@||secureinternetbank.com^$~third-party
-@@||midamericanenergy.com^$~third-party
-@@||fidelity.com^$~third-party
-@@||current.com^$~third-party
-@@||chime.com^$~third-party
-@@||paymentech.net^
-@@||jpmorgan.com^$~third-party
-@@||chase.com^$~third-party
-@@||chasecdn.com^
-@@||bankofamerica.com^$domain=bac-assets.com
-@@||bac-assets.com^
-@@||wellsfargo.com^$~third-party
-@@||wellsfargomedia.com^$domain=wellsfargo.com
-@@||citi.com^$~third-party
-@@||goldmansachs.com^$~third-party
-@@||marcus.com^$~third-party
-@@||capitalone.com^$~third-party
-@@||usbank.com^$~third-party
-@@||mint.com^$~third-party
-@@||windstream.com^$~third-party
-@@||gokinetic.com^$~third-party
 
 ! Uncategorized
 @@||auth-*.tinypass.com^
@@ -505,6 +526,8 @@ http://gmpg.org$third-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||steessay.com^
+||airlytics.airlock.twcmobile.weather.com^
 ||luckypatcherlab.yolasite.com^
 ||eternaltechdl.blogspot.com^
 ||everindustrial293.weebly.com^
@@ -8178,7 +8201,6 @@ http://gmpg.org$third-party
 ||maxymiser.net^
 ||marketing-mojo.com^
 ||mylivechat.com^
-||stripe.network^
 ||mavencoalition.io^
 ||mergeagency.com^
 ||maxgetmore.com^
