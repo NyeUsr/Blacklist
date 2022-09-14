@@ -1,0 +1,10 @@
+||google.com^$script,xhr,domain=~m.youtube.com
+||gstatic.com^$script,xhr,domain=~m.youtube.com
+||googleapis.com^$script,xhr,domain=~m.youtube.com
+||googleusercontent.com^$third-party,domain=~m.youtube.com
+||googlevideo.com^$third-party,domain=~m.youtube.com
+||youtube.com^$third-party,domain=~m.youtube.com
+||ytimg.com^$third-party,domain=~m.youtube.com
+||ggpht.com^$third-party,domain=~m.youtube.com
+||cloudflare.com^$script,xhr
+||arc.io^
