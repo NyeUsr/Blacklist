@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 23N-1563
+! Version: 24N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -526,6 +526,7 @@ http://gmpg.org$third-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||parking.godaddy.com^
 ||steessay.com^
 ||airlytics.airlock.twcmobile.weather.com^
 ||luckypatcherlab.yolasite.com^
@@ -10335,9 +10336,7 @@ http://gmpg.org$third-party
 ||utarget.ru^
 ||urldata.net^
 ||usefathom.com^
-||ustatik.com^
 ||ublockerext.com^
-||us-chi-anx-r001.teamviewer.com^
 ||ping.teamviewer.com^
 ||usemaxserver.de^
 ||usercollection.chinadaily.com.cn^
@@ -11317,6 +11316,7 @@ http://gmpg.org$third-party
 ||novads.co^
 ||igadget24.com^
 
+||gstatic.com/youtube/img/promos/growth/
 ||netgear.com/open.aspx
 ||nbc.com/tags/
 ||track.*/beam.php?
@@ -11568,6 +11568,8 @@ http://gmpg.org$third-party
 ||yahoo.com/f/track/tgt/imp?
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
+/img/supporters/*-vpn-banner.png
+/v*/parkingEvents
 /MPS-STATISTIC-REPORTING.png
 /startSSO.ping
 /clickGate.php
@@ -12648,6 +12650,7 @@ ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
 easybib.com##.ucf-upload-widget-modal-root, [class*="styled__ModalWrapper-sc-"]
 finance.yahoo.com##.MAST-status-ok, .LREC-status-ok
 amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal, .text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
+techradar.com##.hawk-deal-widget-hero
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)

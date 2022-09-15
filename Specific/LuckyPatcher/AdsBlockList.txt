@@ -26,6 +26,9 @@ flipshope.com
 goscreenshotting.com
 autobuyapp.com
 
+parking.godaddy.com
+steessay.com
+airlytics.airlock.twcmobile.weather.com
 luckypatcherlab.yolasite.com
 eternaltechdl.blogspot.com
 everindustrial293.weebly.com
@@ -9834,9 +9837,7 @@ utv.co
 utarget.ru
 urldata.net
 usefathom.com
-ustatik.com
 ublockerext.com
-us-chi-anx-r001.teamviewer.com
 ping.teamviewer.com
 usemaxserver.de
 usercollection.chinadaily.com.cn
@@ -10817,6 +10818,8 @@ novads.co
 igadget24.com
 
 
+/img/supporters/*-vpn-banner.png
+/v*/parkingEvents
 /MPS-STATISTIC-REPORTING.png
 /startSSO.ping
 /clickGate.php
