@@ -8,3 +8,5 @@
 ||ggpht.com^$third-party,domain=~m.youtube.com
 ||cloudflare.com^$script,xhr
 ||arc.io^
+
+*$third-party,font
