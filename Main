@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 24N-1563
+! Version: 25N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -500,6 +500,7 @@ http://gmpg.org$third-party
 /lander.php$third-party,popup,popunder
 !#endif
 
+||itnuzleafan.com^$popup,popunder
 ||ip-api.com^$third-party
 ||dartsearch.net^$popup
 ||dmca.com^$third-party
@@ -526,6 +527,22 @@ http://gmpg.org$third-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||vionito.com^
+||tierrandalucia.org^
+||10tips4trips.info^
+||whatsupp25.biz^
+||brocode3s.com^
+||gloogletag.com^
+||ufapassion.com^
+||orxa.top^
+||themedianews.top^
+||zaglushkaaa.com^
+||untropiuson.com^
+||bngpop.com^
+||sentry.insops.net^
+||pxl.qccerttest.com^
+||blueconic.net^
+||hitwebcounter.com^
 ||parking.godaddy.com^
 ||steessay.com^
 ||airlytics.airlock.twcmobile.weather.com^
@@ -5561,7 +5578,6 @@ http://gmpg.org$third-party
 ||counter.ukr.net^
 ||clixtell.com^
 ||conde.io^
-||connexity.net^
 ||creativecdn.com^
 ||colossusssp.com^
 ||trafficmanager.com^
@@ -6179,8 +6195,6 @@ http://gmpg.org$third-party
 ||pstatp.com^
 ||dcs.wtlive.com^
 ||ligatus.com^
-||data.mozilla.com^
-||dynatrace.com^
 ||visualwebsiteoptimizer.com^
 ||dsparking.com^
 ||gameplaylabs.com^
