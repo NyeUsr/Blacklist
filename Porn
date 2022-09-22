@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 8-Alpha
+! Version: 9-Alpha
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 
@@ -14,15 +14,134 @@
 ! 𝘍𝘰𝘳 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘣𝘰𝘶𝘨𝘩𝘵 𝘸𝘪𝘵𝘩 𝘢 𝘨𝘳𝘦𝘢𝘵 𝘱𝘳𝘪𝘤𝘦. 𝘎𝘭𝘰𝘳𝘪𝘧𝘺 𝘢𝘯𝘥 𝘣𝘦𝘢𝘳 𝘎𝘰𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳 𝘣𝘰𝘥𝘺.
 ! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
 
-/(xnxx|xvideo|pornhub|-porn|porn-|porns|watchporn|pornwatch|porntube|porntv|-xxx|xxx-|allporn|pornsites|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls).+\./
+/(xnxx|xvideo|pornhub|-porn|porn-|porns|watchporn|pornwatch|porntube|porntv|-xxx|xxx-|allporn|pornsites|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls).+\./
 /^https?:\/\/.+\.(sexy|xxx|porn)\//
 /^(porn|xxx)[a-z0-9]{3,}\..{2,}/
 /^[a-z0-9]{3,}(porn|xxx)\..{2,}/
+/porn[0-9]{1,3}\.com/
+/[0-9]{1,3}porn\.com/
+
+*onlyfans
+*/thots/$document
 
 !------------------
 ! Domain Blacklist |
 !------------------
 
+biqle.ru
+gelbooru.com
+rule34.xxx
+donmai.us
+8muses.com
+hentai-foundry.com
+blueporn.mobi
+xnxxv.mobi
+sexwomenchat.com
+sumoporn.mobi
+fotospornolatino.com
+twofinechaps.com
+analporntrends.com
+pornus.org
+xpool.net
+fukvids.com
+collectionofporn.mobi
+firetube.mobi
+handjobpornhd.com
+1bengaliporn.com
+tubepatrolporn.com
+nuporn.mobi
+gratispornogirls.com
+moreporn.org
+likeporn.mobi
+bestxxxzone.com
+sex18xxx.com
+mygfpornvideos.com
+porn88.top
+sex4k.icu
+pornorodeo.com
+konachan.com
+allthefallen.moe
+loliclubscorp.com
+hentai-cosplays.com
+tuyetnhan.com
+jizzbunker.com
+porn.biz
+freedirtygame.com
+onlyfans.com
+movieazza.com
+sextapeplus.com
+fuckcelebrity.com
+porn-leak.com
+sexysextape.com
+thothub.vip
+celebsnews.org
+scandalplanet.com
+kanakox.com
+xnxx06.com
+forcedporn.xyz
+nudohub.com
+leakhive.com
+kingdesi.com
+thestartrial.com
+xxxarabgirls.com
+xsanp69.com
+thefappeningstars.com
+picture-porn.com
+celxxx.com
+xvideos.online
+addictedtocelebrities.com
+viraltags.xyz
+nudeswebsite.com
+youtucam.com
+scandalpost.com
+nucelebs.com
+nude-and-famous.com
+dni-tango.eu
+thefappening2021.com
+thisisnude.com
+sexdug.com
+porngrounds.com
+sexclipx.com
+bofbporn.com
+fotorgia.com
+fuckble.com
+sexynudestars.com
+xxk.mobi
+fetlifeblog.com
+scuw.org
+thehotstars.com
+fappeninghd.com
+xnudecelebrities.com
+upicsz.com
+gayhub.mobi
+iloopit.net
+fappingxxx.com
+boobpedia.com
+onlylesbiantube.com
+porn300.com
+taboozoo.com
+jacksonunityfestival.org
+kleinerhase-stempelnase.com
+innatcrestedbutte.com
+leakpornpics.com
+xblognetwork.com
+celebrityleakednudes.com
+selfiedump.com
+famousinternetgirlsgalleries.com
+100pussy.com
+fappening100.com
+asiantiktokgirl.com
+youngteenpussy.com
+fappingnow.com
+cutefans.win
+onlyfansleaks.tv
+pulsedating.top
+displayadtech.com
+banquetunarmedgrater.com
+iicsxxkdcy.com
+inadequateinadmissibleoblige.com
+plainmarshyaltered.com
+pornpic.biz
 leakedindiancelebs.com
 porn-party.com
 ohfree.net
