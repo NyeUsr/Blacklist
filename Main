@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 25N-1563
+! Version: 26N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -527,6 +527,17 @@ http://gmpg.org$third-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||showmeyouradsnow.com^
+||seizedpenholdercranny.com^
+||contagiousantagonizequarry.com^
+||mypoweroffer.com^
+||adsxyz.com^
+||ru6sapasgs8tror.com^
+||pssy.xyz^
+||limurol.com^
+||a2nn5eri7ce.com^
+||displayadtech.com^
+||medietall.no^
 ||vionito.com^
 ||tierrandalucia.org^
 ||10tips4trips.info^
@@ -9470,7 +9481,6 @@ http://gmpg.org$third-party
 ||supporttool-shasta-rrs.symantec.com^
 ||stage31.net^
 ||serverbid.com^
-||schibsted.media^
 ||szn.cz^
 ||smartemailing.cz^
 ||spotxchange.com^
@@ -12669,6 +12679,9 @@ org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+###pre-block.advertising:not(html, body, button, input)
+##.pre-spots:not(html, body, button, input)
+###pre-spots:not(html, body, button, input)
 ##.js-privacy-banner.privacy-banner:not(html, body, button, input)
 ##.rightAdsSection:not(html, body, button, input)
 ##.advertisementContainer:not(html, body, button, input)
@@ -13009,6 +13022,7 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ###div-gpt-com-300x250:not(html, body, button, input)
 ###ad300:not(html, body, button, input)
 ##.idgGoogleAdTag:not(html, body, button, input)
+##[class*="AdBreak"]:not(html, body, button, input)
 ##[class*="ad_promoted"]:not(html, body, button, input)
 ##[class*="image_ad"]:not(html, body, button, input)
 ##[class*="ad_image"]:not(html, body, button, input)
@@ -13100,6 +13114,7 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ##a[onclick*="adclick"]
 ##a[onclick*="/ping_url"]
 ##a[onclick="closeMyAd()"]
+##a[href*="VpnHideMe"]
 ##a[href*="ourgoldguy.com/"]
 ##a[href*="avantlink.com"]
 ##a[href*="ads.cdn.live"]
@@ -13174,6 +13189,7 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ##a[href*="mobtyb.com"]
 ##a[href*="/adrotate-out.php?"]
 ##a[href*="/adServe/"]
+##[data-track="ad-iframe-top"]
 ! Hide malicious/fake sites
 ! Generated with https://letsblock.it/filters/search-results
 bing.com###b_content a[href*="skidrowreloadedtorrents.com"]:upward(li)
@@ -13758,6 +13774,7 @@ startpage.com##.image-container:has(div.image-quick-details span:has-text(gbitde
 ||doubleclick.net/instream/ad_status.js$rewrite=abp-resource:blank-js
 ||tags.tiqcdn.com/utag/*/utag.js$rewrite=abp-resource:blank-js
 ||static.ads-twitter.com/uwt.js$rewrite=abp-resource:blank-js
+/analytics.v2.js$rewrite=abp-resource:blank-js
 /videojs.ads.js$rewrite=abp-resource:blank-js
 /js/xads.js$rewrite=abp-resource:blank-js
 /ad_loader.js$rewrite=abp-resource:blank-js
