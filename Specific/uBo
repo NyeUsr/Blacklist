@@ -36,8 +36,6 @@
 *##^script:has-text(adver('interstitial', )
 *##^script:has-text(analytics.plugins.)
 *##^script:has-text(vads.viewport_width)
-*##^script:has-text(('track', 'PageView'))
-*##^script:has-text(_gaq.push(['_trackPageview']))
 *##^script:has-text(NREUM.info={"beacon)
 *##^script:has-text(InterstitialTsAd)
 *##^script:has-text(screen.pixelDepth)

@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 26N-1563
+! Version: 27N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -497,7 +497,12 @@ http://gmpg.org$third-party
 /out.php$popunder
 /outback.php$popunder
 /play.php$popunder
-/lander.php$third-party,popup,popunder
+/adServe/sa?$popunder
+/lander.php$third-party,popunder
+*/api/click/$popunder
+*/track/click/$popunder
+?spot_id=*&ct=*$popunder
+?zoneid=$popup
 !#endif
 
 ||itnuzleafan.com^$popup,popunder
@@ -514,6 +519,10 @@ http://gmpg.org$third-party
 ||kougloar.com^$popup
 ||bipedhematin.website^$popup
 ||adswelcome.xyz^$popup
+||alleviatepracticableaddicted.com^$popup,popunder
+||mybetterck.com^$popup,popunder
+||americascardroom.eu/ads/$popup,popunder
+%3DPOPUNDER$popup,popunder
 
 ! Heuristic-like scam/phishing protection
 /-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
@@ -527,6 +536,78 @@ http://gmpg.org$third-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||stats.jordemort.dev^
+||cuevana.fm^
+||superduperproduct.net^
+||gamegenius.club^
+||join-puretap.com^
+||fbmedia-ckl.com^
+||sehtjv.com^
+||qjudpxkisv.xyz^
+||tr5ckr.co^
+||nnects.com^
+||repappcloud.com^
+||yabumship.live^
+||mybetterck.com^
+||rhetoricalloss.com^
+||musicsearchapp.net^
+||websocket-visitors.smartsupp.com^
+||mypoweroffer.com^
+||thetchaixoo.com^
+||alleviatepracticableaddicted.com^
+||astonishedmule.com^
+||feuingcrche.com^
+||loathepimpery.com^
+||testingmetriksbre.ru^
+||jugatism.com^
+||ulqhnilwbrsjxq.com^
+||toromclick.com^
+||1731d04ba1.com^
+||49a08a426c.com^
+||64134c91b6.com^
+||349c3c0859.com^
+||b7d0df7d47.com^
+||e02fe0d0c1.com^
+||tubecup.net^
+||wasp-182b.com^
+||effectivedisplayformat.com^
+||eabids.com^
+||biptolyla.com^
+||tubecorp.com^
+||zothucypti.pro^
+||nbaklaerno.com^
+||adforprocessor.com^
+||mfcewkrob.com^
+||2download.online^
+||ozwvd.com^
+||acdcdn.com^
+||havanese.top^
+||jstrack1.club^
+||profitablegatetocontent.com^
+||puscomosca.com^
+||specificationheadless.com^
+||visariomedia.com^
+||trk.dirtbox.host^
+||onerunner.online^
+||dfile.su^
+||youhavewon.net^
+||funuzai.ru^
+||ohsatum.info^
+||effectiveperformancenetwork.com^
+||ambiliarcarwin.com^
+||wpnetwork.eu^
+||pentatonic.cyou^
+||downloadfilearea.com^
+||crystal-blocker.com^
+||shield-ads.net^
+||agabreloomr.com^
+||watchadsfree.com^
+||fallstring.website^
+||download-portal.net^
+||adz-skip.net^
+||rh3msg.online^
+||chromnius.download^
+||chromnius.com^
 ||showmeyouradsnow.com^
 ||seizedpenholdercranny.com^
 ||contagiousantagonizequarry.com^
@@ -6945,7 +7026,6 @@ http://gmpg.org$third-party
 ||hit2hit.com^
 ||houchosi.net^
 ||reckintersupwas.info^
-||hqq.tv^
 ||hsadspixel.net^
 ||harmonypsa.com^
 ||hiro-media.com^
@@ -11775,7 +11855,6 @@ _ads_$image,xhr
 /geoip.php
 /click.json
 /track-view
-*/api/click/$popup,popunder
 /retarget/add?
 /js/popper.js
 */api/spots/
@@ -11814,11 +11893,9 @@ _ads_$image,xhr
 .pagespeed.$image,domain=~leadstories.com
 /player/html.php?aid=pause_html&video_id=$subdocument
 /player/html.php?aid=start_html&video_id=$subdocument
-*/track/click/$popup,popunder
 /appclickstats
 /ip_detect
 /ip_geo
-?spot_id=*&ct=*$popup,popunder
 /whalecash.php?
 /ads/_popup
 /*-social-justice$image
@@ -11981,7 +12058,6 @@ pageHeartbeat*$image
 /heartbeat.*.com$image
 beacon*$image
 /VisitorAPI.orig.$script
-/gtm.js$popup,popunder
 /promos/iframe
 /popin-min.js
 /ads.txt
@@ -12636,7 +12712,6 @@ adobe.target*$script
 ?adname=
 ?ga_action
 ?tracker=
-?zoneid=$popup
 ?*odb.outbrain.com
 ?affclick
 ?promoCampaigns
