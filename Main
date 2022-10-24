@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 27N-1563
+! Version: 28N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -167,6 +167,9 @@
 
 ! Required for updates
 @@||data.mistat.intl.xiaomi.com^
+
+! CNAME *.sc.en25.com is blocked
+@@||images.edu.imaginelearning.com^
 
 ! https://github.com/nextdns/metadata/issues/1006
 @@||api.townsq.io^
@@ -418,46 +421,47 @@
 ! As of 06 August 2022
 
 ! 88.7% malicious
-.surf^$third-party
+.surf^$~first-party
 !#if (!adguard)
 .surf^$popunder
 !#endif
 .surf^$csp=default-src 'self'
 
 ! 55.2% malicious
-.tt^$third-party
+.tt^$~first-party
 !#if (!adguard)
 .tt^$popunder
 !#endif
 
 ! 40.4% malicious
-.cam^$third-party
+.cam^$~first-party
 !#if (!adguard)
 .cam^$popunder
 !#endif
 
 ! 38.9% malicious
-.best^$third-party
+.best^$~first-party
 !#if (!adguard)
 .best^$popunder
 !#endif
 
 ! 37.6% malicious
-.icu^$third-party
+.icu^$~first-party
 !#if (!adguard)
 .icu^$popunder
 !#endif
 
 ! Unnecessary HTTP
-http://yourjavascript.com$third-party
-http://gmpg.org$third-party
+http://yourjavascript.com$~first-party
+http://gmpg.org$~first-party
+http://twitcount.com$~first-party
 
 ! Harder blocking of Facebook tracking
 ! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
 ||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
 ||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
 ||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
-||facebook.net^$third-party,domain=~facebook.com|~fb.com|~instagram.com
+||facebook.net^$~first-party,domain=~facebook.com|~fb.com|~instagram.com
 
 ! Administrator blocked pages - hopefully prevent from loading and pinging them
 .meraki.com:*/blocked.cgi*$domain=~_Administrator_Blocked_This_Site,document
@@ -498,23 +502,24 @@ http://gmpg.org$third-party
 /outback.php$popunder
 /play.php$popunder
 /adServe/sa?$popunder
-/lander.php$third-party,popunder
+/lander.php$~first-party,popunder
 */api/click/$popunder
 */track/click/$popunder
 ?spot_id=*&ct=*$popunder
 ?zoneid=$popup
 !#endif
 
+||logs.datadoghq.com^$~first-party
 ||itnuzleafan.com^$popup,popunder
-||ip-api.com^$third-party
+||ip-api.com^$~first-party
 ||dartsearch.net^$popup
-||dmca.com^$third-party
-||seal.thawte.com^$third-party
+||dmca.com^$~first-party
+||seal.thawte.com^$~first-party
 ||parkcircularpearl.com^$popup,popunder
 ||nessainy.net^$popup,popunder
 ||optnx.com^$popup,popunder
 ||trafficjunky.net^$popup,popunder
-||placeholder.com^$third-party
+||placeholder.com^$~first-party
 ||balaraofixes.website^$popup
 ||kougloar.com^$popup
 ||bipedhematin.website^$popup
@@ -532,10 +537,50 @@ http://gmpg.org$third-party
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
 
 ! Traking scripts
-/\/collect(ion|or)?\/v[0-9]{1,2}/$third-party,script
+/\/collect(ion|or)?\/v[0-9]{1,2}/$~first-party,script
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||pixel.archive.ph^
+||femetrics.grammarly.io^
+||pxchk.net^
+||ping.yuka.io^
+||beacon.sftoaa.com^
+||willhouse1.ru^
+||wavebrowser.co^
+||getexceptional.com^
+||adjust.io^
+||rufusbootable.com^
+||rufus-app.com^
+||rufuswin.com^
+||sysdriverupdater.com^
+||perimeterx.net^
+||rsa-alsterdorf.de^
+||matiwstronemorza.pl^
+||fileonline.shop^
+||luxury-lighting.pl^
+||stavbydomu.info^
+||calkieminna.pl^
+||tatlihikayeler.info^
+||highperformancegate.com^
+||alfamall.shop^
+||icanhazip.com^
+||kektds.com^
+||prombid.com^
+||8708f2b29c.com^
+||edbc0469bd.com^
+||awpya.com^
+||21c4844ee8.com^
+||shopmonthtravel.com^
+||whoami.akamai.net^
+||logs-api.shoprunner.com^
+||stats.darkreader.app^
+||report-api.alireviews.io^
+||wiser.expertvillagemedia.com^
+||upsale.app^
+||sentry.wixpress.com^
+||tronixtower.com^
+||collector.github.com^
 ||stats.jordemort.dev^
 ||cuevana.fm^
 ||superduperproduct.net^
@@ -6815,7 +6860,6 @@ http://gmpg.org$third-party
 ||gsacollections-pa.googleapis.com^
 ||padst.com^
 ||grahamdigital.com^
-||geotrust.com^
 ||padsdel.com^
 ||tagtic.cn^
 ||geoservice.curse.com^
@@ -7954,7 +7998,6 @@ http://gmpg.org$third-party
 ||landingi.com^
 ||landingtrack.com^
 ||limelightplatform.com^
-||leadpages.net^
 ||leadrock.com^
 ||lospollos.com^
 ||ladsup.com^
@@ -11566,7 +11609,7 @@ http://gmpg.org$third-party
 ||mcloud.to/log/
 ||mozilla.org/set_hsts.gif
 ||tradecraft.s.llnwi.net/v*/pub/
-||bing.com/rp/*.br.js$third-party
+||bing.com/rp/*.br.js$~first-party
 ||platform.twitter.com/anywhere.js
 ||linkedin.com/*/*WidgetImpression*
 ||linkedin.com/*/dtag
@@ -11603,7 +11646,7 @@ http://gmpg.org$third-party
 ||vikiporn.com/js/customscript.js
 ||iubenda.com/cookie-solution/
 ||disqus.com/count
-||facebook.com/rsrc.php$third-party
+||facebook.com/rsrc.php$~first-party
 ||media.altpress.com/uploads/*/*_WEB-SKIN
 ||ixl.com/liveMessage/checkIfWatched
 ||ixl.com/practice/logRenderTime
@@ -11619,8 +11662,8 @@ http://gmpg.org$third-party
 ||adult-empire.com/rs.php
 ||rexxx.org/banner?
 ||linkedin.com/countserv/
-||graph.facebook.com/?id=http$third-party
-||pinterest.com/*/count.json$third-party
+||graph.facebook.com/?id=http$~first-party
+||pinterest.com/*/count.json$~first-party
 ||amazonaws.com/bitsound.*.
 ||facebook.net/*/fbevents.js
 ||combo.staticflickr.com/*/hermes-template-photo-ad-page/
@@ -11651,20 +11694,20 @@ http://gmpg.org$third-party
 ||youtube.com/app_shell
 ||gstatic.com/*/promos/
 ||phncdn.com/*/pb_block.js
-||rackcdn.com/stf.js$third-party
+||rackcdn.com/stf.js$~first-party
 ||bdstatic.com/linksubmit/
 ||xlovecam.com/js/ads.js
-||pinterest.com/js/pinit_main.js$third-party
-||pinterest.com/js/pinit.js$third-party
-||apis.google.com/js/plusone.js$third-party
+||pinterest.com/js/pinit_main.js$~first-party
+||pinterest.com/js/pinit.js$~first-party
+||apis.google.com/js/plusone.js$~first-party
 ||reddit.com/counters/client-screenview
 ||alexa.com/mixpanel/
-||smart.link/imp/$third-party
+||smart.link/imp/$~first-party
 ||spotify.com/storage-resolve/files/audio/interactive/
 ||100widgets.com/stat.js.php
 ||100widgets.com/js_data.php
-||platform.twitter.com/widgets/follow_button.$third-party
-||platform.twitter.com/js/button.$third-party
+||platform.twitter.com/widgets/follow_button.$~first-party
+||platform.twitter.com/js/button.$~first-party
 ||google.com/domainreliability/upload
 ||storage.ape.yandex.net/get/browser/experiments-mobile/
 ||pubsub.googleapis.com/v*/projects/gopher-buddy-prod/
@@ -11694,7 +11737,7 @@ http://gmpg.org$third-party
 ?AdSDKJS=*
 /fallback/*.html?campaignUrl=http$frame
 /adfallback.js$script,redirect-rule=abp-resource:blank-js
-/write?db=hits1$third-party
+/write?db=hits1$~first-party
 /uiApi/log
 /segment.js$~third-party
 /images/no.gif?
@@ -11727,13 +11770,13 @@ http://gmpg.org$third-party
 /newrelic.browser.$~third-party,script
 /otBannerSdk.js
 /jssdk_playback_stats
-/liveView.php$third-party
+/liveView.php$~first-party
 /link-tracker-$script
 /wp-power-stats.
 /wp-content/plugins/wp-power-stats
 /v1/data-tracking$~third-party,xhr
 -header-ads.
-/like.php?href=$third-party
+/like.php?href=$~first-party
 /retargeting-pixels.
 %2FSponsors
 /assets/js/tracking.js
@@ -11868,7 +11911,7 @@ _ads_$image,xhr
 /get/*?zoneid=$script,media,other
 /visitor?domain_name=
 /ads?zone_id=
-?ad_sub$third-party,~document
+?ad_sub$~first-party,~document
 /pixel.gif?
 /pixel2.gif?
 /s/s/sur.php?
@@ -12144,7 +12187,7 @@ beacon*$image
 *_adv/
 /gofd_fl.
 /gofd_bl.
-/serve?*$third-party,image
+/serve?*$~first-party,image
 /clickPerformance
 /smarttag
 */criteo/
@@ -12337,7 +12380,7 @@ ext.track.scripts*
 /advertise
 /_pa.facebookPixelId
 /trg.gif
-/blank.gif$third-party,domain=~slickdealscdn.com
+/blank.gif$~first-party,domain=~slickdealscdn.com
 /adServer.bs
 /digitalfirstmedia.js
 /com.snowplowanalytics
@@ -12402,7 +12445,7 @@ ext.track.scripts*
 /fp.min.jsp
 /fingerprint2.min.js
 /bsredirect5.js
-/ad.js$third-party
+/ad.js$~first-party
 /wp-content/plugins/sorry-adblocker/js/sab.js$script
 */ad-blocking-detector/
 /adb_detector.
@@ -12426,7 +12469,7 @@ ext.track.scripts*
 /mtiFontTrackingCode.js
 /__utm.gif
 /_utm.gif
-*/generate_204/$third-party
+*/generate_204/$~first-party
 /images/BottomCol2Back2.gif
 /aboutadtextonline.php.html
 /getadpack.html
@@ -12504,7 +12547,7 @@ ext.track.scripts*
 /tracker?domain
 /fbi-gov/production/gateway.min.js
 /prebid-$script,third-party
-*/api/stats/$third-party
+*/api/stats/$~first-party
 /play?pub_id=
 /tr?id
 /~/st/af.js
@@ -12568,7 +12611,7 @@ ext.track.scripts*
 */cookie-notice/
 /global/metrics
 /pixel.html
-/pixel.$third-party,script
+/pixel.$~first-party,script
 /affirm.js
 /UpsellTracker.js
 /v6exp3/iframe.html
@@ -12641,9 +12684,9 @@ ext.track.scripts*
 /NNAnalyticsWPSites
 */linktrack/
 /marketing/mail-
-*/appserve/mkt/$third-party
+*/appserve/mkt/$~first-party
 /email_trackers
-/email/tracking/$third-party
+/email/tracking/$~first-party
 /mail/track-open
 /ads-config.min.js
 /ads-async
@@ -12665,7 +12708,7 @@ _advertising_*.swf
 /ad-third-party
 /newrelic-gpt.
 /get_ad_config
-/api/tracking$third-party
+/api/tracking$~first-party
 /prebid.$script,third-party
 /AntiAdblock
 /adclick
