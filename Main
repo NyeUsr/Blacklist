@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 28N-1563
+! Version: 29N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -238,7 +238,6 @@
 @@||video.google.com/api/stats/
 @@||youtube.com/ptracking
 @@||youtube.com/youtubei/*/log_event
-!@@|youtube.com^$removeparam
 
 ! Unbreak testing software used by schools
 @@||kinesis.*.amazonaws.com^$domain=masteryconnect.com
@@ -596,7 +595,6 @@ http://twitcount.com$~first-party
 ||mybetterck.com^
 ||rhetoricalloss.com^
 ||musicsearchapp.net^
-||websocket-visitors.smartsupp.com^
 ||mypoweroffer.com^
 ||thetchaixoo.com^
 ||alleviatepracticableaddicted.com^
@@ -656,7 +654,6 @@ http://twitcount.com$~first-party
 ||showmeyouradsnow.com^
 ||seizedpenholdercranny.com^
 ||contagiousantagonizequarry.com^
-||mypoweroffer.com^
 ||adsxyz.com^
 ||ru6sapasgs8tror.com^
 ||pssy.xyz^
@@ -843,7 +840,6 @@ http://twitcount.com$~first-party
 ||eopsex.net^
 ||safemet.fun^
 ||meetme2n212.gq^
-||webstats.eb.com^
 ||alvashowcase.com^
 ||stat.dns.sb^
 ||bedsberry.com^
@@ -854,7 +850,6 @@ http://twitcount.com$~first-party
 ||homedepot.*.qualtrics.com^
 ||confiant-integrations.global.ssl.fastly.net^
 ||uptracs.com^
-||smetrics.nfl.com^
 ||tracking.listhub.net^
 ||airlytics-web.airlock.twcmobile.weather.com^
 ||waisheph.com^
@@ -882,8 +877,6 @@ http://twitcount.com$~first-party
 ||wafvertizing.crazygames.com^
 ||ultimateaderaser.com^
 ||customlightworks.com^
-||viral782.com^
-||nessainy.net^
 ||linksynergy.com^
 ||genoo.com^
 ||rafvertizing.crazygames.com^
@@ -4679,7 +4672,6 @@ http://twitcount.com$~first-party
 ||engagetosell.com^
 ||adserver.pandora.com^
 ||analytics.io^
-||analytics.dwebsite.com^
 ||analytics.query.yahoo.com^
 ||ad-survey.com^
 ||analytics.meituan.net^
@@ -4805,7 +4797,6 @@ http://twitcount.com$~first-party
 ||adbutler.com^
 ||adcash.com^
 ||adcast.deviantart.com^
-||adbuyer.com^
 ||adcell.de^
 ||adcenter.net^
 ||adcept.net^
@@ -5171,7 +5162,6 @@ http://twitcount.com$~first-party
 ||bestgethsksl.pro^
 ||baconaces.pro^
 ||batnstrk.com^
-||blueconic.net^
 ||beacon.cracked.com^
 ||bnrdom.com^
 ||betwinner.com^
@@ -11463,7 +11453,6 @@ http://twitcount.com$~first-party
 ||novads.co^
 ||igadget24.com^
 
-||gstatic.com/youtube/img/promos/growth/
 ||netgear.com/open.aspx
 ||nbc.com/tags/
 ||track.*/beam.php?
@@ -11723,7 +11712,6 @@ http://twitcount.com$~first-party
 /static/bg-ad.png
 /*advertising*.swf
 /*_ads_*.swf
-/*_banner.swf
 /dwell-log?
 &domContentLoadedEventStart*
 /getPageVisits
@@ -11761,7 +11749,6 @@ http://twitcount.com$~first-party
 /components/ads_blox
 /fixed-big-ad-middle
 /fixed-big-ad-top
-/fixed-big-ad-top-asset
 /tncms/ads/settings.js
 /ads/traffic.js
 /ads/impressions.js
@@ -11790,7 +11777,6 @@ http://twitcount.com$~first-party
 /scripts/ads/build-ad-tag.js
 /ads/js/dfp/profads2.js
 /production/launcher/tags
-/s/s/suo.php
 /*-native-exo*.php
 /s/adhs.php
 /adframe.js
@@ -11914,7 +11900,6 @@ _ads_$image,xhr
 ?ad_sub$~first-party,~document
 /pixel.gif?
 /pixel2.gif?
-/s/s/sur.php?
 /a/ex/ab.php?
 /pics/promobanner
 /ga.php?
@@ -12055,7 +12040,6 @@ __trkn.us
 /dot.asp?id=
 /amp-auto-ads
 /amp-ad-
-/advanced-ads-pro
 /advanced-ads
 /plugins/add-to-any
 /adfreebanner.$image
@@ -12313,7 +12297,6 @@ ext.track.scripts*
 /ibd-block-adblocker
 /noadblock-nice-message
 /jquery.adblock-detector.js
-/adblock-detector.js
 /ad-blocking-advisor
 /ad-block-defender
 /deadblocker
@@ -12504,7 +12487,6 @@ ext.track.scripts*
 /manageads/47191571.jsons?
 */jsAds/
 /xgemius.js
-/cookie-law-info-bar
 /attachment-tracking
 /email-link-tracking
 /census/RecordHit
@@ -12533,7 +12515,6 @@ ext.track.scripts*
 /ac/qzfl/stat.js
 /barclays-monitoring/
 /visit.json
-/cookie-law-info-public.css
 */audiencenetwork/token/
 /AC_ad_*_*.$image
 /html2canvas.min.js
@@ -13308,578 +13289,6 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ##a[href*="/adrotate-out.php?"]
 ##a[href*="/adServe/"]
 ##[data-track="ad-iframe-top"]
-! Hide malicious/fake sites
-! Generated with https://letsblock.it/filters/search-results
-bing.com###b_content a[href*="skidrowreloadedtorrents.com"]:upward(li)
-google.*##.g:has(a[href*="skidrowreloadedtorrents.com"])
-google.*##a[href*="skidrowreloadedtorrents.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="skidrowreloadedtorrents.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="skidrowreloadedtorrents.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="skidrowreloadedtorrents.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="skidrowreloadedtorrents.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="skidrowreloadedtorrents.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="skidrowreloadedtorrents.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="skidrowreloadedtorrents.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="skidrowreloadedtorrents.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="skidrowreloadedtorrents.com"])
-kagi.com##._0_image_item[data-host_url*="skidrowreloadedtorrents.com"]
-startpage.com##.w-gl__result:has(a[href*="skidrowreloadedtorrents.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(skidrowreloadedtorrents.com))
-bing.com###b_content a[href*="skidrowreloaded.fun"]:upward(li)
-google.*##.g:has(a[href*="skidrowreloaded.fun"])
-google.*##a[href*="skidrowreloaded.fun"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="skidrowreloaded.fun"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="skidrowreloaded.fun"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="skidrowreloaded.fun"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.fun"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.fun"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.fun"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.fun"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="skidrowreloaded.fun"])
-kagi.com##.sri-group:has(a.__sri-url[href*="skidrowreloaded.fun"])
-kagi.com##._0_image_item[data-host_url*="skidrowreloaded.fun"]
-startpage.com##.w-gl__result:has(a[href*="skidrowreloaded.fun"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(skidrowreloaded.fun))
-bing.com###b_content a[href*="skidrow-games.com"]:upward(li)
-google.*##.g:has(a[href*="skidrow-games.com"])
-google.*##a[href*="skidrow-games.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="skidrow-games.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="skidrow-games.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="skidrow-games.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="skidrow-games.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="skidrow-games.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="skidrow-games.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="skidrow-games.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="skidrow-games.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="skidrow-games.com"])
-kagi.com##._0_image_item[data-host_url*="skidrow-games.com"]
-startpage.com##.w-gl__result:has(a[href*="skidrow-games.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(skidrow-games.com))
-bing.com###b_content a[href*="skidrowreloaded.nl"]:upward(li)
-google.*##.g:has(a[href*="skidrowreloaded.nl"])
-google.*##a[href*="skidrowreloaded.nl"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="skidrowreloaded.nl"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="skidrowreloaded.nl"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="skidrowreloaded.nl"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.nl"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.nl"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.nl"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="skidrowreloaded.nl"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="skidrowreloaded.nl"])
-kagi.com##.sri-group:has(a.__sri-url[href*="skidrowreloaded.nl"])
-kagi.com##._0_image_item[data-host_url*="skidrowreloaded.nl"]
-startpage.com##.w-gl__result:has(a[href*="skidrowreloaded.nl"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(skidrowreloaded.nl))
-bing.com###b_content a[href*="ipcgames.com"]:upward(li)
-google.*##.g:has(a[href*="ipcgames.com"])
-google.*##a[href*="ipcgames.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="ipcgames.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="ipcgames.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="ipcgames.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="ipcgames.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="ipcgames.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="ipcgames.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="ipcgames.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="ipcgames.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="ipcgames.com"])
-kagi.com##._0_image_item[data-host_url*="ipcgames.com"]
-startpage.com##.w-gl__result:has(a[href*="ipcgames.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(ipcgames.com))
-bing.com###b_content a[href*="igg-games.xyz"]:upward(li)
-google.*##.g:has(a[href*="igg-games.xyz"])
-google.*##a[href*="igg-games.xyz"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="igg-games.xyz"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="igg-games.xyz"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="igg-games.xyz"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="igg-games.xyz"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="igg-games.xyz"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="igg-games.xyz"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="igg-games.xyz"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="igg-games.xyz"])
-kagi.com##.sri-group:has(a.__sri-url[href*="igg-games.xyz"])
-kagi.com##._0_image_item[data-host_url*="igg-games.xyz"]
-startpage.com##.w-gl__result:has(a[href*="igg-games.xyz"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(igg-games.xyz))
-bing.com###b_content a[href*="igg-gamestorrent.com"]:upward(li)
-google.*##.g:has(a[href*="igg-gamestorrent.com"])
-google.*##a[href*="igg-gamestorrent.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="igg-gamestorrent.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="igg-gamestorrent.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="igg-gamestorrent.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="igg-gamestorrent.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="igg-gamestorrent.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="igg-gamestorrent.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="igg-gamestorrent.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="igg-gamestorrent.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="igg-gamestorrent.com"])
-kagi.com##._0_image_item[data-host_url*="igg-gamestorrent.com"]
-startpage.com##.w-gl__result:has(a[href*="igg-gamestorrent.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(igg-gamestorrent.com))
-bing.com###b_content a[href*="igg-games.co"]:upward(li)
-google.*##.g:has(a[href*="igg-games.co"])
-google.*##a[href*="igg-games.co"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="igg-games.co"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="igg-games.co"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="igg-games.co"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="igg-games.co"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="igg-games.co"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="igg-games.co"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="igg-games.co"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="igg-games.co"])
-kagi.com##.sri-group:has(a.__sri-url[href*="igg-games.co"])
-kagi.com##._0_image_item[data-host_url*="igg-games.co"]
-startpage.com##.w-gl__result:has(a[href*="igg-games.co"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(igg-games.co))
-bing.com###b_content a[href*="iigggames.com"]:upward(li)
-google.*##.g:has(a[href*="iigggames.com"])
-google.*##a[href*="iigggames.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="iigggames.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="iigggames.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="iigggames.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="iigggames.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="iigggames.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="iigggames.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="iigggames.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="iigggames.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="iigggames.com"])
-kagi.com##._0_image_item[data-host_url*="iigggames.com"]
-startpage.com##.w-gl__result:has(a[href*="iigggames.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(iigggames.com))
-bing.com###b_content a[href*="nosteam.ro"]:upward(li)
-google.*##.g:has(a[href*="nosteam.ro"])
-google.*##a[href*="nosteam.ro"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="nosteam.ro"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="nosteam.ro"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="nosteam.ro"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="nosteam.ro"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="nosteam.ro"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="nosteam.ro"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="nosteam.ro"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="nosteam.ro"])
-kagi.com##.sri-group:has(a.__sri-url[href*="nosteam.ro"])
-kagi.com##._0_image_item[data-host_url*="nosteam.ro"]
-startpage.com##.w-gl__result:has(a[href*="nosteam.ro"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(nosteam.ro))
-bing.com###b_content a[href*="oceanoftgames.blogspot.com"]:upward(li)
-google.*##.g:has(a[href*="oceanoftgames.blogspot.com"])
-google.*##a[href*="oceanoftgames.blogspot.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanoftgames.blogspot.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanoftgames.blogspot.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanoftgames.blogspot.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanoftgames.blogspot.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanoftgames.blogspot.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanoftgames.blogspot.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanoftgames.blogspot.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanoftgames.blogspot.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanoftgames.blogspot.com"])
-kagi.com##._0_image_item[data-host_url*="oceanoftgames.blogspot.com"]
-startpage.com##.w-gl__result:has(a[href*="oceanoftgames.blogspot.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanoftgames.blogspot.com))
-bing.com###b_content a[href*="oceanofgames.co.in"]:upward(li)
-google.*##.g:has(a[href*="oceanofgames.co.in"])
-google.*##a[href*="oceanofgames.co.in"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanofgames.co.in"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanofgames.co.in"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanofgames.co.in"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanofgames.co.in"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanofgames.co.in"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames.co.in"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames.co.in"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanofgames.co.in"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanofgames.co.in"])
-kagi.com##._0_image_item[data-host_url*="oceanofgames.co.in"]
-startpage.com##.w-gl__result:has(a[href*="oceanofgames.co.in"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanofgames.co.in))
-bing.com###b_content a[href*="ooceanofgames.com"]:upward(li)
-google.*##.g:has(a[href*="ooceanofgames.com"])
-google.*##a[href*="ooceanofgames.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="ooceanofgames.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="ooceanofgames.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="ooceanofgames.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="ooceanofgames.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="ooceanofgames.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="ooceanofgames.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="ooceanofgames.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="ooceanofgames.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="ooceanofgames.com"])
-kagi.com##._0_image_item[data-host_url*="ooceanofgames.com"]
-startpage.com##.w-gl__result:has(a[href*="ooceanofgames.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(ooceanofgames.com))
-bing.com###b_content a[href*="oceanofgames4u.com"]:upward(li)
-google.*##.g:has(a[href*="oceanofgames4u.com"])
-google.*##a[href*="oceanofgames4u.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanofgames4u.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanofgames4u.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanofgames4u.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanofgames4u.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanofgames4u.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames4u.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames4u.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanofgames4u.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanofgames4u.com"])
-kagi.com##._0_image_item[data-host_url*="oceanofgames4u.com"]
-startpage.com##.w-gl__result:has(a[href*="oceanofgames4u.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanofgames4u.com))
-bing.com###b_content a[href*="ofoceansgames.org"]:upward(li)
-google.*##.g:has(a[href*="ofoceansgames.org"])
-google.*##a[href*="ofoceansgames.org"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="ofoceansgames.org"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="ofoceansgames.org"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="ofoceansgames.org"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="ofoceansgames.org"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="ofoceansgames.org"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="ofoceansgames.org"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="ofoceansgames.org"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="ofoceansgames.org"])
-kagi.com##.sri-group:has(a.__sri-url[href*="ofoceansgames.org"])
-kagi.com##._0_image_item[data-host_url*="ofoceansgames.org"]
-startpage.com##.w-gl__result:has(a[href*="ofoceansgames.org"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(ofoceansgames.org))
-bing.com###b_content a[href*="oceanofgamese.net"]:upward(li)
-google.*##.g:has(a[href*="oceanofgamese.net"])
-google.*##a[href*="oceanofgamese.net"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanofgamese.net"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanofgamese.net"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanofgamese.net"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.net"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.net"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.net"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.net"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanofgamese.net"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanofgamese.net"])
-kagi.com##._0_image_item[data-host_url*="oceanofgamese.net"]
-startpage.com##.w-gl__result:has(a[href*="oceanofgamese.net"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanofgamese.net))
-bing.com###b_content a[href*="oceanof.games"]:upward(li)
-google.*##.g:has(a[href*="oceanof.games"])
-google.*##a[href*="oceanof.games"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanof.games"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanof.games"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanof.games"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanof.games"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanof.games"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanof.games"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanof.games"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanof.games"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanof.games"])
-kagi.com##._0_image_item[data-host_url*="oceanof.games"]
-startpage.com##.w-gl__result:has(a[href*="oceanof.games"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanof.games))
-bing.com###b_content a[href*="freedownloadmanager.org"]:upward(li)
-google.*##.g:has(a[href*="freedownloadmanager.org"])
-google.*##a[href*="freedownloadmanager.org"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="freedownloadmanager.org"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="freedownloadmanager.org"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="freedownloadmanager.org"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="freedownloadmanager.org"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="freedownloadmanager.org"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="freedownloadmanager.org"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="freedownloadmanager.org"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="freedownloadmanager.org"])
-kagi.com##.sri-group:has(a.__sri-url[href*="freedownloadmanager.org"])
-kagi.com##._0_image_item[data-host_url*="freedownloadmanager.org"]
-startpage.com##.w-gl__result:has(a[href*="freedownloadmanager.org"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(freedownloadmanager.org))
-bing.com###b_content a[href*="gamesfree26.wixsite.com"]:upward(li)
-google.*##.g:has(a[href*="gamesfree26.wixsite.com"])
-google.*##a[href*="gamesfree26.wixsite.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="gamesfree26.wixsite.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="gamesfree26.wixsite.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="gamesfree26.wixsite.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="gamesfree26.wixsite.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="gamesfree26.wixsite.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="gamesfree26.wixsite.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="gamesfree26.wixsite.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="gamesfree26.wixsite.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="gamesfree26.wixsite.com"])
-kagi.com##._0_image_item[data-host_url*="gamesfree26.wixsite.com"]
-startpage.com##.w-gl__result:has(a[href*="gamesfree26.wixsite.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(gamesfree26.wixsite.com))
-bing.com###b_content a[href*="qpdownload.com"]:upward(li)
-google.*##.g:has(a[href*="qpdownload.com"])
-google.*##a[href*="qpdownload.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="qpdownload.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="qpdownload.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="qpdownload.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="qpdownload.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="qpdownload.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="qpdownload.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="qpdownload.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="qpdownload.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="qpdownload.com"])
-kagi.com##._0_image_item[data-host_url*="qpdownload.com"]
-startpage.com##.w-gl__result:has(a[href*="qpdownload.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(qpdownload.com))
-bing.com###b_content a[href*="oceansofgamess.com"]:upward(li)
-google.*##.g:has(a[href*="oceansofgamess.com"])
-google.*##a[href*="oceansofgamess.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceansofgamess.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceansofgamess.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceansofgamess.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceansofgamess.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceansofgamess.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceansofgamess.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceansofgamess.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceansofgamess.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceansofgamess.com"])
-kagi.com##._0_image_item[data-host_url*="oceansofgamess.com"]
-startpage.com##.w-gl__result:has(a[href*="oceansofgamess.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceansofgamess.com))
-bing.com###b_content a[href*="oceanofgamese.com"]:upward(li)
-google.*##.g:has(a[href*="oceanofgamese.com"])
-google.*##a[href*="oceanofgamese.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanofgamese.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanofgamese.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanofgamese.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgamese.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanofgamese.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanofgamese.com"])
-kagi.com##._0_image_item[data-host_url*="oceanofgamese.com"]
-startpage.com##.w-gl__result:has(a[href*="oceanofgamese.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanofgamese.com))
-bing.com###b_content a[href*="oceanofgamesu.com"]:upward(li)
-google.*##.g:has(a[href*="oceanofgamesu.com"])
-google.*##a[href*="oceanofgamesu.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanofgamesu.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanofgamesu.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanofgamesu.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanofgamesu.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanofgamesu.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgamesu.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgamesu.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanofgamesu.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanofgamesu.com"])
-kagi.com##._0_image_item[data-host_url*="oceanofgamesu.com"]
-startpage.com##.w-gl__result:has(a[href*="oceanofgamesu.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanofgamesu.com))
-bing.com###b_content a[href*="oceanof-games.com"]:upward(li)
-google.*##.g:has(a[href*="oceanof-games.com"])
-google.*##a[href*="oceanof-games.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanof-games.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanof-games.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanof-games.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanof-games.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanof-games.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanof-games.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanof-games.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanof-games.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanof-games.com"])
-kagi.com##._0_image_item[data-host_url*="oceanof-games.com"]
-startpage.com##.w-gl__result:has(a[href*="oceanof-games.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanof-games.com))
-bing.com###b_content a[href*="oceanofgames.live"]:upward(li)
-google.*##.g:has(a[href*="oceanofgames.live"])
-google.*##a[href*="oceanofgames.live"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanofgames.live"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanofgames.live"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanofgames.live"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanofgames.live"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanofgames.live"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames.live"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames.live"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanofgames.live"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanofgames.live"])
-kagi.com##._0_image_item[data-host_url*="oceanofgames.live"]
-startpage.com##.w-gl__result:has(a[href*="oceanofgames.live"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanofgames.live))
-bing.com###b_content a[href*="oceantogames.com"]:upward(li)
-google.*##.g:has(a[href*="oceantogames.com"])
-google.*##a[href*="oceantogames.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceantogames.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceantogames.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceantogames.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceantogames.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceantogames.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceantogames.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceantogames.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceantogames.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceantogames.com"])
-kagi.com##._0_image_item[data-host_url*="oceantogames.com"]
-startpage.com##.w-gl__result:has(a[href*="oceantogames.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceantogames.com))
-bing.com###b_content a[href*="oceanofgames.com"]:upward(li)
-google.*##.g:has(a[href*="oceanofgames.com"])
-google.*##a[href*="oceanofgames.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="oceanofgames.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="oceanofgames.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="oceanofgames.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="oceanofgames.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="oceanofgames.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="oceanofgames.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="oceanofgames.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="oceanofgames.com"])
-kagi.com##._0_image_item[data-host_url*="oceanofgames.com"]
-startpage.com##.w-gl__result:has(a[href*="oceanofgames.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(oceanofgames.com))
-bing.com###b_content a[href*="fitgirlrepacks.co"]:upward(li)
-google.*##.g:has(a[href*="fitgirlrepacks.co"])
-google.*##a[href*="fitgirlrepacks.co"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="fitgirlrepacks.co"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="fitgirlrepacks.co"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="fitgirlrepacks.co"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.co"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.co"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.co"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.co"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="fitgirlrepacks.co"])
-kagi.com##.sri-group:has(a.__sri-url[href*="fitgirlrepacks.co"])
-kagi.com##._0_image_item[data-host_url*="fitgirlrepacks.co"]
-startpage.com##.w-gl__result:has(a[href*="fitgirlrepacks.co"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(fitgirlrepacks.co))
-bing.com###b_content a[href*="fitgirl-repacks.cc"]:upward(li)
-google.*##.g:has(a[href*="fitgirl-repacks.cc"])
-google.*##a[href*="fitgirl-repacks.cc"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="fitgirl-repacks.cc"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="fitgirl-repacks.cc"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="fitgirl-repacks.cc"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.cc"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.cc"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.cc"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.cc"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="fitgirl-repacks.cc"])
-kagi.com##.sri-group:has(a.__sri-url[href*="fitgirl-repacks.cc"])
-kagi.com##._0_image_item[data-host_url*="fitgirl-repacks.cc"]
-startpage.com##.w-gl__result:has(a[href*="fitgirl-repacks.cc"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(fitgirl-repacks.cc))
-bing.com###b_content a[href*="fitgirl-repacks.com"]:upward(li)
-google.*##.g:has(a[href*="fitgirl-repacks.com"])
-google.*##a[href*="fitgirl-repacks.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="fitgirl-repacks.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="fitgirl-repacks.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="fitgirl-repacks.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="fitgirl-repacks.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="fitgirl-repacks.com"])
-kagi.com##._0_image_item[data-host_url*="fitgirl-repacks.com"]
-startpage.com##.w-gl__result:has(a[href*="fitgirl-repacks.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(fitgirl-repacks.com))
-bing.com###b_content a[href*="fitgirlrepacks.in"]:upward(li)
-google.*##.g:has(a[href*="fitgirlrepacks.in"])
-google.*##a[href*="fitgirlrepacks.in"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="fitgirlrepacks.in"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="fitgirlrepacks.in"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="fitgirlrepacks.in"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.in"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.in"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.in"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="fitgirlrepacks.in"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="fitgirlrepacks.in"])
-kagi.com##.sri-group:has(a.__sri-url[href*="fitgirlrepacks.in"])
-kagi.com##._0_image_item[data-host_url*="fitgirlrepacks.in"]
-startpage.com##.w-gl__result:has(a[href*="fitgirlrepacks.in"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(fitgirlrepacks.in))
-bing.com###b_content a[href*="fitgirl-repacks.to"]:upward(li)
-google.*##.g:has(a[href*="fitgirl-repacks.to"])
-google.*##a[href*="fitgirl-repacks.to"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="fitgirl-repacks.to"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="fitgirl-repacks.to"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="fitgirl-repacks.to"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.to"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.to"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.to"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.to"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="fitgirl-repacks.to"])
-kagi.com##.sri-group:has(a.__sri-url[href*="fitgirl-repacks.to"])
-kagi.com##._0_image_item[data-host_url*="fitgirl-repacks.to"]
-startpage.com##.w-gl__result:has(a[href*="fitgirl-repacks.to"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(fitgirl-repacks.to))
-bing.com###b_content a[href*="fitgirl-repacks.website"]:upward(li)
-google.*##.g:has(a[href*="fitgirl-repacks.website"])
-google.*##a[href*="fitgirl-repacks.website"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="fitgirl-repacks.website"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="fitgirl-repacks.website"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="fitgirl-repacks.website"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.website"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.website"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.website"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="fitgirl-repacks.website"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="fitgirl-repacks.website"])
-kagi.com##.sri-group:has(a.__sri-url[href*="fitgirl-repacks.website"])
-kagi.com##._0_image_item[data-host_url*="fitgirl-repacks.website"]
-startpage.com##.w-gl__result:has(a[href*="fitgirl-repacks.website"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(fitgirl-repacks.website))
-bing.com###b_content a[href*="helpavast.com"]:upward(li)
-google.*##.g:has(a[href*="helpavast.com"])
-google.*##a[href*="helpavast.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="helpavast.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="helpavast.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="helpavast.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="helpavast.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="helpavast.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="helpavast.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="helpavast.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="helpavast.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="helpavast.com"])
-kagi.com##._0_image_item[data-host_url*="helpavast.com"]
-startpage.com##.w-gl__result:has(a[href*="helpavast.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(helpavast.com))
-bing.com###b_content a[href*="-eset.com"]:upward(li)
-google.*##.g:has(a[href*="-eset.com"])
-google.*##a[href*="-eset.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="-eset.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="-eset.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="-eset.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="-eset.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="-eset.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="-eset.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="-eset.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="-eset.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="-eset.com"])
-kagi.com##._0_image_item[data-host_url*="-eset.com"]
-startpage.com##.w-gl__result:has(a[href*="-eset.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(-eset.com))
-bing.com###b_content a[href*="-trendmicro.com"]:upward(li)
-google.*##.g:has(a[href*="-trendmicro.com"])
-google.*##a[href*="-trendmicro.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="-trendmicro.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="-trendmicro.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="-trendmicro.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="-trendmicro.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="-trendmicro.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="-trendmicro.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="-trendmicro.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="-trendmicro.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="-trendmicro.com"])
-kagi.com##._0_image_item[data-host_url*="-trendmicro.com"]
-startpage.com##.w-gl__result:has(a[href*="-trendmicro.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(-trendmicro.com))
-bing.com###b_content a[href*="-bitdefender.com"]:upward(li)
-google.*##.g:has(a[href*="-bitdefender.com"])
-google.*##a[href*="-bitdefender.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="-bitdefender.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="-bitdefender.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="-bitdefender.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="-bitdefender.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="-bitdefender.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="-bitdefender.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="-bitdefender.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="-bitdefender.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="-bitdefender.com"])
-kagi.com##._0_image_item[data-host_url*="-bitdefender.com"]
-startpage.com##.w-gl__result:has(a[href*="-bitdefender.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(-bitdefender.com))
-bing.com###b_content a[href*="gbitdefendercentral.com"]:upward(li)
-google.*##.g:has(a[href*="gbitdefendercentral.com"])
-google.*##a[href*="gbitdefendercentral.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="gbitdefendercentral.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="gbitdefendercentral.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="gbitdefendercentral.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="gbitdefendercentral.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="gbitdefendercentral.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="gbitdefendercentral.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="gbitdefendercentral.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="gbitdefendercentral.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="gbitdefendercentral.com"])
-kagi.com##._0_image_item[data-host_url*="gbitdefendercentral.com"]
-startpage.com##.w-gl__result:has(a[href*="gbitdefendercentral.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(gbitdefendercentral.com))
 
 ! Rewrite in ABP syntax for better compatability
 ||assetshuluimcom-a.akamaihd.net/*.mp3$rewrite=abp-resource:blank-mp3,domain=hulu.com
@@ -14034,7 +13443,6 @@ $removeparam=_branch_referrer
 $removeparam=playeranalytics
 $removeparam=targetedlink
 $removeparam=telemetry-client-id
-$removeparam=aff_trace_key
 $removeparam=aff_platform
 $removeparam=aff_short_key
 $removeparam=aff_trace_key
