@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 29N-1563
+! Version: 30N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -540,10 +540,11 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||somberscarecrow.com^
+||bugs2022.com^
 ||pixel.archive.ph^
 ||femetrics.grammarly.io^
 ||pxchk.net^
-||ping.yuka.io^
 ||beacon.sftoaa.com^
 ||willhouse1.ru^
 ||wavebrowser.co^
