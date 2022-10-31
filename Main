@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 30N-1563
+! Version: 31N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -170,6 +170,10 @@
 
 ! CNAME *.sc.en25.com is blocked
 @@||images.edu.imaginelearning.com^
+
+! Just docs & status page, nothing else
+@@||docs.bugsnag.com^
+@@||status.bugsnag.com^
 
 ! https://github.com/nextdns/metadata/issues/1006
 @@||api.townsq.io^
@@ -540,6 +544,26 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||ablesasmetotr.monster^
+||cognitionmesmerize.com^
+||crrepo.com^
+||friendshipmale.com^
+||latinmpatoio.xyz^
+||ludicroussignify.com^
+||maxonclick.com^
+||nthaitingsh.buzz^
+||onsequentlys.xyz^
+||pearanceofam.xyz^
+||pogothere.xyz^
+||slieemem.xyz^
+||subsectivexe.xyz^
+||touchcliquidoversight.com^
+||anwhocam.xyz^
+||elooksjustli.one^
+||ksehinkitw.hair^
+||ughtcallmeoo.xyz^
+||ds88pc0kw6cvc.cloudfront.net^
+||d10lumateci472.cloudfront.net^
 ||somberscarecrow.com^
 ||bugs2022.com^
 ||pixel.archive.ph^
