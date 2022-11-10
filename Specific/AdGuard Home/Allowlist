@@ -1,0 +1,3 @@
+! Don't block on DNS level as it blocks the analytics pannel people use
+! Blocking may also cause decreased performance on some phones that constantly query it
+google-analytics.com
