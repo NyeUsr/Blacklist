@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 31N-1563
+! Version: 32N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -544,6 +544,12 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||telemetry.mozilla.org^
+||tracking.digitalocean.com^
+||ezyenrwcmo.com^
+||alas4kanmfa6a4mubte.com^
+||hmafhczsos.com^
+||pixel.epik.com^
 ||ablesasmetotr.monster^
 ||cognitionmesmerize.com^
 ||crrepo.com^
@@ -908,7 +914,6 @@ http://twitcount.com$~first-party
 ||huntersandprops.tk^
 ||tunefindforfans.com^
 ||bacon.getcarro.com^
-||kxcdn.com^
 ||pages08.net^
 ||adbutler.costco.com^
 ||p7nvu5it0k.execute-api.*.amazonaws.com^
@@ -1174,7 +1179,6 @@ http://twitcount.com$~first-party
 ||adxcel-ec2.com^
 ||streetmetrics.io^
 ||webpushr.com^
-||metric.gstatic.com^
 ||cms-clickmap-prod-*.*.^
 ||analytics.audioeye.com^
 ||instiengage.com^
@@ -8967,7 +8971,6 @@ http://twitcount.com$~first-party
 ||polldaddy.com^
 ||pushmejs.com^
 ||poplink.io^
-||perfdrive.com^
 ||powerad.ai^
 ||pingfore.qq.com^
 ||premiumdownloads.info^
