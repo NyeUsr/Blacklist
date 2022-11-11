@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 12-Alpha
+! Version: 13-Alpha
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -16,8 +16,8 @@
 ! 𝘍𝘰𝘳 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘣𝘰𝘶𝘨𝘩𝘵 𝘸𝘪𝘵𝘩 𝘢 𝘨𝘳𝘦𝘢𝘵 𝘱𝘳𝘪𝘤𝘦. 𝘎𝘭𝘰𝘳𝘪𝘧𝘺 𝘢𝘯𝘥 𝘣𝘦𝘢𝘳 𝘎𝘰𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳 𝘣𝘰𝘥𝘺.
 ! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
 
-/(xnxx|xvideo|pornhub|-porn|porn-|porns|porn|pornwatch|porntube|porntv|-xxx|xxx-|allporn|pornsites|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube).+\./
-/(cams\.|txxx\.|pornstar\.|pornstars\.|\.watchporn|sex\.).+/
+/(xnxx|xvideo|porn|-xxx|xxx-|allporn|pornsites|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube|sissy).+\./
+/(cams|txxx|pornstar|pornstars|watchporn|sex|porngame(s)?)\..+/
 /^https?:\/\/.+\.(sexy|xxx|porn)\//
 /^(porn|xxx)[a-z0-9]{3,}\..{2,}/
 /^[a-z0-9]{3,}(porn|xxx)\..{2,}/
@@ -31,6 +31,43 @@
 ! Domain Blacklist |
 !------------------
 
+youporngay.com
+eroticaingif.com
+xxxshemaleporn.com
+dirtytube.com
+datawav.club
+redgifs.com
+peekvids.com
+transsexualporn.net
+machotube.tv
+lbhardcore.com
+xxxvideos247.com
+homepornking.com
+nesaporn.com
+boy18tube.com
+tubev.pro
+toroporno.com
+xhamster2.com
+sexadept.com
+xvidzz.com
+icegay.tv
+cuteboytube.com
+verytranny.com
+sissyhypno.com
+icetranny.com
+iamsissy.com
+ph-static.com
+xxxbule.com
+toppornsites.com
+megapornfreehd.com
+freepornhdonlinegay.com
+pornohd.porn
+perdos.de
+onlineporno.cc
+nenehub.com
+porngames.games
+porngameshub.com
+pornboss.me
 bikespumps.info
 asianxxxmovs.com
 classymomsex.com
