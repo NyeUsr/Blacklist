@@ -1329,7 +1329,6 @@ infoboom.life
 analitycs.net
 dzubavstal.com
 notify6.com
-clientstream-ga.launchdarkly.com
 track.mp3vizor.com
 t.icebns.com
 neuro-id.com
@@ -2972,10 +2971,6 @@ searchads.apple.com
 securemetrics.apple.com
 advertising.apple.com
 apsu.apple.com
-xp.apple.com
-geo.itunes.apple.com
-xp.itunes-apple.com.akadns.net
-zeusmedia.apple.com
 adnxtr.com
 adrunnr.com
 adserver.com
@@ -6744,7 +6739,6 @@ ipromote.com
 ipfingerprint.com
 in.o2o.api.xiaomi.com
 interactiveone.com
-in.appcenter.ms
 ionedigital.com
 inside.flipboard.com
 impactradius.com
@@ -10180,7 +10174,6 @@ wbd.ms
 whiteboard.ms
 wh.ip-adress.com
 wildxxxhardcore.com
-wshifen.com
 webtraxs.com
 windowssearch-exp.com
 wep.wf
@@ -10248,7 +10241,6 @@ ttnrd.com
 proasdf.com
 searchcapitol.com
 winfixer.com
-world-gen.g.aaplimg.com
 webcompanion.com
 winsite.com
 zohosalesiq.com

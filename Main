@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 32N-1563
+! Version: 33N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -1841,7 +1841,6 @@ http://twitcount.com$~first-party
 ||analitycs.net^
 ||dzubavstal.com^
 ||notify6.com^
-||clientstream-ga.launchdarkly.com^
 ||track.mp3vizor.com^
 ||t.icebns.com^
 ||neuro-id.com^
@@ -3484,10 +3483,6 @@ http://twitcount.com$~first-party
 ||securemetrics.apple.com^
 ||advertising.apple.com^
 ||apsu.apple.com^
-||xp.apple.com^
-||geo.itunes.apple.com^
-||xp.itunes-apple.com.akadns.net^
-||zeusmedia.apple.com^
 ||adnxtr.com^
 ||adrunnr.com^
 ||adserver.com^
@@ -7252,7 +7247,6 @@ http://twitcount.com$~first-party
 ||ipfingerprint.com^
 ||in.o2o.api.xiaomi.com^
 ||interactiveone.com^
-||in.appcenter.ms^
 ||ionedigital.com^
 ||inside.flipboard.com^
 ||impactradius.com^
@@ -10686,7 +10680,6 @@ http://twitcount.com$~first-party
 ||whiteboard.ms^
 ||wh.ip-adress.com^
 ||wildxxxhardcore.com^
-||wshifen.com^
 ||webtraxs.com^
 ||windowssearch-exp.com^
 ||wep.wf^
@@ -10754,7 +10747,6 @@ http://twitcount.com$~first-party
 ||proasdf.com^
 ||searchcapitol.com^
 ||winfixer.com^
-||world-gen.g.aaplimg.com^
 ||webcompanion.com^
 ||winsite.com^
 ||zohosalesiq.com^
