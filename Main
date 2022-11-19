@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 34N-1563
+! Version: 35N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -96,6 +96,8 @@
 @@||amazon.partners.tremorhub.com^
 @@||clkuk.tradedoubler.com/click?*url(http
 @@||redirects.tradedoubler.com/projectr/*_td_deeplink=http
+@@||shareasale.com/r.cfm?
+@@||shareasale-analytics.com/r.cfm?
 ! https://github.com/notracking/hosts-blocklists/issues/763
 ! https://github.com/nextdns/metadata/issues/988
 @@||wl.spotify.com^$~third-party
@@ -5427,7 +5429,6 @@ http://twitcount.com$~first-party
 ||buysellads.com^
 ||baypops.com^
 ||bazingandroid.com^
-||btstatic.com^
 ||b2c.com^
 ||bizographics.com^
 ||betgenius.com^
@@ -8620,7 +8621,6 @@ http://twitcount.com$~first-party
 ||recognified.com^
 ||nprapps.org^
 ||ninthdecimal.com^
-||salesforce.com^
 ||nitropay.com^
 ||nmhfiles.com^
 ||ntv.io^
@@ -9625,7 +9625,6 @@ http://twitcount.com$~first-party
 ||seaofads.com^
 ||sophi.io^
 ||stomy.eklablog.com^
-||shareasale.com^
 ||small.chat^
 ||stats.norton.com^
 ||shasta-sfg.norton.com^
@@ -9725,7 +9724,6 @@ http://twitcount.com$~first-party
 ||steadfastsystem.com^
 ||special-offers.online^
 ||stats.net^
-||sfdcstatic.com^
 ||streak.com^
 ||securybrowse.com^
 ||staticset.com^
@@ -10143,7 +10141,6 @@ http://twitcount.com$~first-party
 ||huvlemobile.com^
 ||tncrun.net^
 ||toolkits.mobi^
-||tvpage.com^
 ||tracker-api.my.com^
 ||titpus.com^
 ||tracksrv.zdf.de^

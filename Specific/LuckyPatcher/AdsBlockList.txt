@@ -4918,7 +4918,6 @@ bugherd.com
 buysellads.com
 baypops.com
 bazingandroid.com
-btstatic.com
 b2c.com
 bizographics.com
 betgenius.com
@@ -8113,7 +8112,6 @@ novanet.vn
 recognified.com
 nprapps.org
 ninthdecimal.com
-salesforce.com
 nitropay.com
 nmhfiles.com
 ntv.io
@@ -9118,7 +9116,6 @@ soflopxl.com
 seaofads.com
 sophi.io
 stomy.eklablog.com
-shareasale.com
 small.chat
 stats.norton.com
 shasta-sfg.norton.com
@@ -9219,7 +9216,6 @@ skypegrab.net
 steadfastsystem.com
 special-offers.online
 stats.net
-sfdcstatic.com
 streak.com
 securybrowse.com
 staticset.com
@@ -9637,7 +9633,6 @@ track.berliner-kurier.de
 huvlemobile.com
 tncrun.net
 toolkits.mobi
-tvpage.com
 tracker-api.my.com
 titpus.com
 tracksrv.zdf.de
