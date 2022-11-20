@@ -1,5 +1,5 @@
 ! Don't block on DNS level as it blocks the analytics pannel people use
 ! Blocking may also cause decreased performance on some phones that constantly query it
-google-analytics.com
+@@||google-analytics.com^
 ! Redirect tracking, needs to be whitelisted at for usability
-shareasale-analytics.com
+@@||shareasale-analytics.com^

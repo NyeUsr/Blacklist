@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 35N-1563
+! Version: 36N-1563
 ! Approximate amount of entries: 13.7K
 
 ! Resources to help you better understand filter lists -----------------
@@ -53,34 +53,39 @@
 
 ! Attempt to make sure bills can always be paid without issue
 ! Whitelist banks and third-party payment services
-@@||fiserv.com^$~third-party
+@@||fiserv.com^
 @@||firstdata.com^
-@@||credit.kohls.com^$~third-party
-@@||mysynchrony.com^$~third-party
-@@||synchronybank.com^$~third-party
-@@||synchrony.com^$~third-party
-@@||secureinternetbank.com^$~third-party
-@@||midamericanenergy.com^$~third-party
-@@||fidelity.com^$~third-party
-@@||current.com^$~third-party
-@@||chime.com^$~third-party
+@@||credit.kohls.com^
+@@||mysynchrony.com^
+@@||synchronybank.com^
+@@||synchrony.com^
+@@||synchronycredit.com^
+@@||syf.com^
+@@||municipalonlinepayments.com^
+@@||synchronysurvey.siteintercept.qualtrics.com^
+@@||b2clogin.com^
+@@||secureinternetbank.com^
+@@||midamericanenergy.com^
+@@||fidelity.com^
+@@||current.com^
+@@||chime.com^
 @@||paymentech.net^
-@@||jpmorgan.com^$~third-party
-@@||chase.com^$~third-party
+@@||jpmorgan.com^
+@@||chase.com^
 @@||chasecdn.com^
-@@||bankofamerica.com^$domain=bac-assets.com
+@@||bankofamerica.com^
 @@||bac-assets.com^
-@@||wellsfargo.com^$~third-party
-@@||wellsfargomedia.com^$domain=wellsfargo.com
-@@||citi.com^$~third-party
-@@||goldmansachs.com^$~third-party
-@@||marcus.com^$~third-party
-@@||capitalone.com^$~third-party
-@@||usbank.com^$~third-party
-@@||mint.com^$~third-party
+@@||wellsfargo.com^
+@@||wellsfargomedia.com^
+@@||citi.com^
+@@||goldmansachs.com^
+@@||marcus.com^
+@@||capitalone.com^
+@@||usbank.com^
+@@||mint.com^
 @@||plugin.intuitcdn.net^
-@@||windstream.com^$~third-party
-@@||gokinetic.com^$~third-party
+@@||windstream.com^
+@@||gokinetic.com^
 
 ! Lead/redirect tracking - required for usability
 @@||tkqlhce.com^
