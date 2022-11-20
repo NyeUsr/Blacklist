@@ -181,6 +181,14 @@
 ||www.searxs.eu^$ctag=device_other
 ||zoek.anchel.nl^$ctag=device_other
 
+! Mixed content blocking
+||preview.redd.it^$ctag=device_other
+||i.redd.it^$ctag=device_other
+||external-preview.redd.it^$ctag=device_other
+||thumbs.redditmedia.com^$ctag=device_other
+||imgur.com^$ctag=device_other
+||proxy.duckduckgo.com^$ctag=device_other
+
 /(xnxx|xvideo|porn|-xxx|xxx-|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube|sissy).+\./$ctag=user_child|device_other
 /(cams|txxx|pornstar|pornstars|watchporn|sex)\..+/$ctag=user_child|device_other
 /^https?:\/\/.+\.(sexy|xxx|porn)\//$ctag=user_child|device_other
