@@ -3,8 +3,8 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 36N-1563
-! Approximate amount of entries: 13.7K
+! Version: 37N-1563
+! Approximate amount of entries: 13.4K
 
 ! Resources to help you better understand filter lists -----------------
 ! Ublock Origin Static Filter Syntax                                   |
@@ -519,6 +519,9 @@ http://twitcount.com$~first-party
 ?zoneid=$popup
 !#endif
 
+||trackints.com^$popup,popunder
+||rndskittytor.com^$popup,popunder
+||thaudray.com^$popup,popunder
 ||logs.datadoghq.com^$~first-party
 ||itnuzleafan.com^$popup,popunder
 ||ip-api.com^$~first-party
@@ -551,6 +554,20 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||willhouse1.ru^
+||wavebrowser.co^
+||apathylahuli.website^
+||pervialinagile.com^
+||pubfuture.com^
+||syenitetatler.tech^
+||vidcrunch.com^
+||uponelectabuzzor.club^
+||rndskittytor.com^
+||thaudray.com^
+||tzegilo.com^
+||fleraprt.com^
+||decide.dev^
+||decide.co^
 ||czechcash.com^
 ||pmc1201.com^
 ||adsb4track.com^
@@ -11492,6 +11509,7 @@ http://twitcount.com$~first-party
 ||novads.co^
 ||igadget24.com^
 
+||img.*/house-ad/$image
 ||netgear.com/open.aspx
 ||nbc.com/tags/
 ||track.*/beam.php?
@@ -12788,6 +12806,7 @@ _WebBannerAd
 _fingerprint
 .fingerprint-
 .adi.$script
+.png?adview
 -action/fingerprint
 -sponsored-outbrain-
 -ad-powerinbox-inline-
@@ -12817,6 +12836,20 @@ org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+###headerad:not(html, body, button, input)
+##.ads-in-page:not(html, body, button, input)
+##.njt-gdpr-full_width:not(html, body, button, input)
+##.njt-gdpr:not(html, body, button, input)
+###cookiebarBox:not(html, body, button, input)
+##.header-banner-ads:not(html, body, button, input)
+##.header-banner-advertising:not(html, body, button, input)
+###gdpr_notice:not(html, body, button, input)
+##.redhat-cookie-banner-wrapper:not(html, body, button, input)
+##.CookieBanner_cookieBanner__R_BOh:not(html, body, button, input)
+###sticky-top-advertisement:not(html, body, button, input)
+##.ukraine-yellow:has-text(support):not(html, body, button, input)
+##.ukraine-blue:has-text(war):not(html, body, button, input)
+##.ad-box:not(html, body, button, input)
 ###pre-block.advertising:not(html, body, button, input)
 ##.pre-spots:not(html, body, button, input)
 ###pre-spots:not(html, body, button, input)
@@ -13160,6 +13193,11 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ###div-gpt-com-300x250:not(html, body, button, input)
 ###ad300:not(html, body, button, input)
 ##.idgGoogleAdTag:not(html, body, button, input)
+##[class*="_AdContainer"]:not(html, body, button, input)
+##[class*="common-ad"]:not(html, body, button, input)
+##[id*="adngin"]:not(html, body, button, input)
+##[id*="ad_label"]:not(html, body, button, input)
+##div > [href="/appdownload"]:not(html, body, button, input)
 ##[class*="AdBreak"]:not(html, body, button, input)
 ##[class*="ad_promoted"]:not(html, body, button, input)
 ##[class*="image_ad"]:not(html, body, button, input)
