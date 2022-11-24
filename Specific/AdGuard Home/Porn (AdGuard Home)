@@ -182,10 +182,10 @@
 ||zoek.anchel.nl^$ctag=device_other
 
 ! Mixed content blocking
-||preview.redd.it^$ctag=device_other
-||i.redd.it^$ctag=device_other
-||external-preview.redd.it^$ctag=device_other
-||thumbs.redditmedia.com^$ctag=device_other
+!||preview.redd.it^$ctag=device_other
+!||i.redd.it^$ctag=device_other
+!||external-preview.redd.it^$ctag=device_other
+!||thumbs.redditmedia.com^$ctag=device_other
 ||imgur.com^$ctag=device_other
 ||proxy.duckduckgo.com^$ctag=device_other
 
