@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 38N-1563
+! Version: 39N-1563
 ! Approximate amount of entries: 13.4K
 
 ! Resources to help you better understand filter lists -----------------
@@ -525,6 +525,11 @@ http://twitcount.com$~first-party
 ?zoneid=$popup
 !#endif
 
+||nessainy.net^$popup,popunder
+||awpya.com^$popup,popunder
+||voluumtlkrnarketing.com^$popup,popunder
+||kektds.com^$popup,popunder
+||onclickperformance.com^$popup,popunder
 ||ozobsaib.com^$popup,popunder
 ||trackints.com^$popup,popunder
 ||rndskittytor.com^$popup,popunder
@@ -553,7 +558,7 @@ http://twitcount.com$~first-party
 /-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
 /bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$popup,popunder,domain=mail.google.com|mail.yahoo.com|outlook.com|protonmail.com|proton.me
 
-! Domain generated tracking urls
+! Randomly generated tracking urls
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
 
 ! Traking scripts
@@ -561,6 +566,10 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||xsvwvyewrlqdgw.com^
+||gtbcaavxq.com^
+||adschill.com^
+||matomo.taltech.ee^
 ||thaudray.com^
 ||ozobsaib.com^
 ||willhouse1.ru^
@@ -896,7 +905,6 @@ http://twitcount.com$~first-party
 ||restorationbowelsunflower.com^
 ||mandatorycaptaincountless.com^
 ||simplewebanalysis.com^
-||tkr.arc.io^
 ||owewary.com^
 ||unseenreport.com^
 ||kaurouby.net^
@@ -3010,7 +3018,6 @@ http://twitcount.com$~first-party
 ||dotmailer.com^
 ||trackedlink.net^
 ||litmuscdn.com^
-||exct.net^
 ||weserv.nl^
 ||partnercash.de^
 ||browsers.support^
@@ -11770,6 +11777,7 @@ http://twitcount.com$~first-party
 ||yahoo.com/f/track/tgt/imp?
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
+/1x1.jpg?id=
 /img/supporters/*-vpn-banner.png
 /v*/parkingEvents
 /MPS-STATISTIC-REPORTING.png
@@ -12845,6 +12853,7 @@ org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+###single > .adkiss:not(html, body, button, input)
 ###headerad:not(html, body, button, input)
 ##.ads-in-page:not(html, body, button, input)
 ##.njt-gdpr-full_width:not(html, body, button, input)

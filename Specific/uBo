@@ -26,6 +26,8 @@
 
 ! HTML/script filtering (Firefox 57+)
 !#if env_firefox
+*##^script:has-text(detectAdBlock1)
+*##^script:has-text(detectAdBlockAll)
 *##^script:has-text(exdynsrv.com)
 *##^script:has-text(window['gtag'])
 *##^script:has-text('clickTrackerInit',)
