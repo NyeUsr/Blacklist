@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 39N-1563
+! Version: 40N-1563
 ! Approximate amount of entries: 13.4K
 
 ! Resources to help you better understand filter lists -----------------
@@ -187,6 +187,16 @@
 @@||tmx.bestbuy.com^
 @@||dpm.demdex.net^
 @@||bestbuy.demdex.net^
+
+! Unbreak DRM management in TubiTV
+@@||license.adrise.tv^
+@@||uapi.adrise.tv^
+
+! Never blocked queries, whitelist to allow easier filtering from logs
+@@||tiktokv.com^
+@@||tiktokcdn.com^
+@@||ttlivecdn.com^
+@@||tiktokcdn-us.com^
 
 ! https://github.com/nextdns/metadata/issues/1006
 @@||api.townsq.io^
@@ -566,6 +576,35 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||hsrve.com^
+||hyenadata.com^
+||lfjack.com^
+||montmena.top^
+||onesocialimpactnow.com^
+||lesbosdream.biz^
+||endream.buzz^
+||sorrythatth.fun^
+||plus18ads.com^
+||advertica-cdn2.com^
+||loverevenue.com^
+||protectionsoftwarepc.site^
+||androidnotice.com^
+||topnewsfeeds.net^
+||apphomeforbests.com^
+||athitmontopon.com^
+||consumersteer.com^
+||formarshtompchan.com^
+||hetapus.com^
+||readerseek.co^
+||gonow2022.com^
+||goodforcustoms.shop^
+||adtonos.com^
+||mobiletelemetry.ebay.com^
+||pixel.production-public.tubi.io^
+||adrise.tv^
+||mmi360.net^
+||ark.tubi.video^
+||rainmaker.production-public.tubi.io^
 ||xsvwvyewrlqdgw.com^
 ||gtbcaavxq.com^
 ||adschill.com^
@@ -13569,3 +13608,13 @@ $removeparam=c3nid
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+
+! AdGuard Home
+! "Relay" on school devices
+! Respond with NXDOMAIN code as this allows unblocking school Chromebooks
+lsfilter.com$dnsrewrite=NXDOMAIN;;
+lsrelay-extensions-production.s3.amazonaws.com$dnsrewrite=NXDOMAIN;;
+ably.io$dnsrewrite=NXDOMAIN;;
+relay.school$dnsrewrite=NXDOMAIN;;
+ably-realtime.com$dnsrewrite=NXDOMAIN;;
+p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NXDOMAIN;;
