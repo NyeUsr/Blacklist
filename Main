@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 40N-1563
+! Version: 41N-1563
 ! Approximate amount of entries: 13.4K
 
 ! Resources to help you better understand filter lists -----------------
@@ -576,6 +576,23 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||ad-tech.nbcuni.com^
+||originmedia.tv^
+||fouanalytics.com^
+||warp90.com^
+||getpublica.com^
+||collector-ipv6.pabs.comcast.com^
+||k.pluto.tv^
+||conduit-beacon*.aws.viacbs.cloud^
+||truoptik.com^
+||pr.ybp.yahoo.com^
+||udinugoo.com^
+||dsapkqsrsmeykew.com^
+||rvmessages.site^
+||rvmessage.online^
+||drtladv.cc^
+||bonertraffic13.info^
+||fujejo.xyz^
 ||hsrve.com^
 ||hyenadata.com^
 ||lfjack.com^
@@ -5038,7 +5055,6 @@ http://twitcount.com$~first-party
 ||ads.alt.com^
 ||ads.amigos.com^
 ||admagnet.net^
-||fwmrm.net^
 ||ads.amdmb.com^
 ||ads.appsgeyser.com^
 ||ads.aol.co.uk^
@@ -13618,3 +13634,6 @@ ably.io$dnsrewrite=NXDOMAIN;;
 relay.school$dnsrewrite=NXDOMAIN;;
 ably-realtime.com$dnsrewrite=NXDOMAIN;;
 p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NXDOMAIN;;
+! Return this one with the e.foundation wifi check ip
+! This prevents the kill switch from being activated
+lsrelayaccess.com$dnsrewrite=NOERROR;A;157.90.154.178
