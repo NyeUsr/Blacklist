@@ -2,6 +2,11 @@
 ! TLS/QUIC: prn.privdns.org
 ! HTTPS: https://privdns.org/dns-query/prn
 
+! Block some DNS servers which may be enabled by default and preventing blocking
+||mozilla.cloudflare-dns.com^$ctag=user_child
+||chrome.cloudflare-dns.com^$ctag=user_child
+||dns.google.com^$ctag=user_child
+
 ! Force safe search without toggle (to not restrict YouTube)
 ! https://help.duckduckgo.com/duckduckgo-help-pages/features/safe-search/
 ||duckduckgo.com^$ctag=user_child,dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
@@ -12,8 +17,18 @@
 ||www.google.*^$ctag=user_child,dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
 ! https://support.microsoft.com/en-us/topic/block-adult-content-with-safesearch-946059ed-992b-46a0-944a-28e8fb8f1814
 ||www.bing.com^$ctag=user_child,dnsrewrite=NOERROR;CNAME;strict.bing.com
+! https://github.com/nextdns/metadata/issues/529#issuecomment-757531008
+! https://community.cleanbrowsing.org/topic/forcing-qwant-safesearch/
+||api.qwant.com^$ctag=user_child,dnsrewrite=NOERROR;CNAME;safeapi.qwant.com
 ! https://yandex.com/support/search/schoolsearch.html#schoolsearch__hosts
 /^yandex\..{2,3}$/$ctag=device_child,dnsrewrite=NOERROR;A;213.180.193.56
+
+! Block Mixed Content sites' images
+||i.redd.it^$ctag=user_child
+||preview.redd.it^$ctag=user_child
+||external-preview.redd.it^$ctag=user_child
+||redditmedia.com^$ctag=user_child
+||i.imgur.com^$ctag=user_child
 
 ! Restrict engines that don't support safe search at DNS level
 ||explicit.bing.net^$ctag=user_child
