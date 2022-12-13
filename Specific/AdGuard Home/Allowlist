@@ -2,4 +2,7 @@
 ! Blocking may also cause decreased performance on some phones that constantly query it
 @@||google-analytics.com^
 ! Redirect tracking, needs to be whitelisted at for usability
+! https://github.com/NyeUsr/Blacklist/blob/main/Main#L105
 @@||shareasale-analytics.com^
+! Self-hosted analytics
+@@||analytics.ecosia.org^
