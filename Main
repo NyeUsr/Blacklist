@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 41N-1563
+! Version: 42N-1563
 ! Approximate amount of entries: 13.4K
 
 ! Resources to help you better understand filter lists -----------------
@@ -570,12 +570,40 @@ http://twitcount.com$~first-party
 
 ! Randomly generated tracking urls
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
+/^[0-9a-z]{10}\.[0-9a-z]{10}\.com$/
 
 ! Traking scripts
 /\/collect(ion|or)?\/v[0-9]{1,2}/$~first-party,script
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||snigelweb.com^
+||snigel.com^
+||digitalinsight.com^
+||disneyadvertising.com^
+||disneyadsales.com^
+||bstream.hzmklvdieo.com^
+||analytics.*.nianticlabs.com^
+||visitgate.com^
+||anorrecenturybr.com^
+||everefor.buzz^
+||bngprm.com^
+||mustbehand.com^
+||tikbblove.com^
+||1ts09.top^
+||e255347009.com^
+||f3a173b897.com^
+||8543630cf1.com^
+||e255347009.com^
+||revive-adserver.com^
+||taptapnetworks.com^
+||playground.xyz^
+||truffle.bid^
+||cognitivlabs.com^
+||dotomi.com^
+||mrtnsvr.com^
+||gomoxie.solutions^
+||adstk.io^
 ||ad-tech.nbcuni.com^
 ||originmedia.tv^
 ||fouanalytics.com^
@@ -2988,7 +3016,6 @@ http://twitcount.com$~first-party
 ||direct-stats.com^
 ||worldofwonder.net^
 ||ecliks.com^
-||bold360.com^
 ||cp7gyw5w94c7.com^
 ||eisenstein.dk^
 ||gogoel.com^
@@ -5645,7 +5672,6 @@ http://twitcount.com$~first-party
 ||boingdragon.com^
 ||boards2go.com^
 ||bms.zeptolab.com^
-||boldchat.com^
 ||bokilora.com^
 ||bomek.com^
 ||boldcenter.com^
@@ -13637,3 +13663,5 @@ p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NXDOMAIN;;
 ! Return this one with the e.foundation wifi check ip
 ! This prevents the kill switch from being activated
 lsrelayaccess.com$dnsrewrite=NOERROR;A;157.90.154.178
+! Fix in Brave Browser when using DNS-over-HTTPS
+||www.uscellular.com^$dnstype=AAAA
