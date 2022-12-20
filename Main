@@ -3,8 +3,8 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 42N-1563
-! Approximate amount of entries: 13.4K
+! Version: 43N-1563
+! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
 ! Ublock Origin Static Filter Syntax                                   |
@@ -100,6 +100,7 @@
 @@||apiservices.krxd.net^
 @@||amazon.partners.tremorhub.com^
 @@||refer.ccbill.com^
+@@||link.swansonvitamins.com^
 @@||clkuk.tradedoubler.com/click?*url(http
 @@||redirects.tradedoubler.com/projectr/*_td_deeplink=http
 @@||shareasale.com/r.cfm?
@@ -577,6 +578,32 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||applog.*.easebar.com^
+||applogsg.matrix.netease.com^
+||pinterest.gw-dv.net^
+||arttrk.com^
+||funnelytics.io^
+||sstats.fdown.net^
+||blueh.in^
+||hawkemedia.org^
+||download-beststream.live^
+||ebookytz.xyz^
+||bluelinknow.com^
+||secureanalytic.com^
+||notifications.vip^
+||balkscaked.com^
+||dukicationa.xyz^
+||ranopportun.buzz^
+||operarymishear.store^
+||rdtk.io^
+||polyserbdom.com^
+||youthycouthe.uno^
+||flyblowfilippi.com^
+||lovejojoy.com^
+||happymod.cool^
+||syndetstermine.com^
+||pandalboranes.tech^
+||jerridlarded.com^
 ||snigelweb.com^
 ||snigel.com^
 ||digitalinsight.com^
@@ -1333,7 +1360,6 @@ http://twitcount.com$~first-party
 ||sharedid.org^
 ||fadedsnow.com^
 ||hit.amazon.dev^
-||easebar.com^
 ||ads-sdk.mattel163.com^
 ||tc-log.mattel163.com^
 ||ad.particlenews.com^
@@ -7063,7 +7089,6 @@ http://twitcount.com$~first-party
 ||gopher-buddy-prod.appspot.com^
 ||good.alibaba.com^
 ||mmstat.com^
-||geolocation.onetrust.com^
 ||revenuewire.net^
 ||googlecommerce.com^
 ||geoip.tnt-ea.com^
@@ -8733,7 +8758,6 @@ http://twitcount.com$~first-party
 ||nt-cdn.coccoc.com^
 ||nowlifestyle.com^
 ||nachoanalytics.com^
-||netease.com^
 ||stats.noblogs.org^
 ||notifydomain.com^
 ||novanet.vn^
@@ -12885,6 +12909,7 @@ analytics-events
 &url=https://tracking.musixmatch.com/*
 :*/amp.gif
 :*/clear.gif
+:3000/hook.js
 trackemailout*
 adobe.target*$script
 ?adCount
@@ -12909,7 +12934,7 @@ _fingerprint
 -sponsored-outbrain-
 -ad-powerinbox-inline-
 -ad-display.z-ad-
--analytics-$domain=~flickr.com
+!-analytics-$domain=~flickr.com|~github.com|~walmart.com
 videoiq-*
 tds_campaign=
 mas_jump_
@@ -12920,7 +12945,7 @@ _statsonlineinfo
 
 ! This list will only cover more popular sites: it's more focused on generic hiding
 google.*##.c, .commercial-unit-desktop-top, #tadsb, #tads, #rhs, #tvcap, #taw
-youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope, .ytd-in-feed-ad-layout-renderer
+youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope, .ytd-in-feed-ad-layout-renderer, .vidiq-social-stats-upsell
 youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
 m.youtube.com###YtSparklesVisibilityIdentifier
 genius.com##.dfp_unit, [class*="Leaderboard-"]
@@ -12930,6 +12955,12 @@ easybib.com##.ucf-upload-widget-modal-root, [class*="styled__ModalWrapper-sc-"]
 finance.yahoo.com##.MAST-status-ok, .LREC-status-ok
 amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal, .text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
 techradar.com##.hawk-deal-widget-hero
+target.com##div.h-display-inline-block:has-text(sponsored)
+target.com##.h-text-center.h-margin-b-jumbo.h-margin-t-default.h-margin-h-default, #pageBodyContainer > div > h3:has-text(Featured Products)
+audiobookbay.li##[href^="/high-download"]:upward(2)
+audiobookbay.li##[href="/dl-14-days-trial"]
+audiobookbay.li##td:has-text(Secured Download:)
+audiobookbay.li##h2:has-text(AD)
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
@@ -13645,6 +13676,8 @@ $removeparam=cjevent
 $removeparam=c3nid
 ||search.brave.com^$removeparam=source
 ||tradedoubler.com^$removeparam=tduid
+||adguard-dns.io^$removeparam=clid
+||qwant.com^$removeparam=client
 
 ! Json Prune (uBo & AdGuard)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
