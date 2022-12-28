@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 43N-1563
+! Version: 44N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -101,6 +101,7 @@
 @@||amazon.partners.tremorhub.com^
 @@||refer.ccbill.com^
 @@||link.swansonvitamins.com^
+@@||onelink.me^
 @@||clkuk.tradedoubler.com/click?*url(http
 @@||redirects.tradedoubler.com/projectr/*_td_deeplink=http
 @@||shareasale.com/r.cfm?
@@ -571,13 +572,31 @@ http://twitcount.com$~first-party
 
 ! Randomly generated tracking urls
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
-/^[0-9a-z]{10}\.[0-9a-z]{10}\.com$/
 
 ! Traking scripts
 /\/collect(ion|or)?\/v[0-9]{1,2}/$~first-party,script
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||happy-mods.online^
+||happymod.co.in^
+||happymodpc.com^
+||happymod.cc^
+||happymodapk.mobi^
+||happymod.info^
+||happymodpro.com^
+||happymod.pro^
+||happymodapkdl.com^
+||happymodapkunduh.com^
+||happymod.ru^
+||happymodapk.net^
+||happymodapk.ru^
+||holdsoutset.com^
+||panda-helper.org^
+||repentbits.com^
+||marvelselectedheron.com^
+||heartachegrabbedlaunching.com^
+||pstmrk.it^
 ||applog.*.easebar.com^
 ||applogsg.matrix.netease.com^
 ||pinterest.gw-dv.net^
@@ -8865,7 +8884,6 @@ http://twitcount.com$~first-party
 ||ogrfi3uyt7.com^
 ||o3sndvzo25.com^
 ||optinmonster.com^
-||onelink.me^
 ||constantcontact.com^
 ||offerseven.com^
 ||offers-tracking.com^
@@ -13485,7 +13503,6 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ##a[href*="dianomi.com/click.epl"]
 ##a[href*="cartoontube.com/hit.php"]
 ##a[href*="admitad.com"]
-##a[href*="onelink.me"]
 ##a[href*="clickbank.net"]
 ##a[href*="fourchan.com"]
 ##a[href*="feed111.me"]
