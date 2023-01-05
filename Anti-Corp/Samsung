@@ -15,6 +15,8 @@
 ! Start Domain Blacklist |
 !------------------------
 
+||samsungrs.com^
+||samsunggeopush.com^
 ||secb2b.com^
 ||samsungvisioncloud.com^
 ||ospserver.net^
