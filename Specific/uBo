@@ -100,7 +100,7 @@
 !-----------------------------
 
 ! click2load
-||youtube.com^$frame,redirect=click2load.html,third-party,domain=~google.com|~duckudckgo.com
+!||youtube.com^$frame,redirect=click2load.html,third-party,domain=~google.com|~duckudckgo.com
 ||embedly.com^$frame,redirect=click2load.html
 
 ! Warn user about IP grabing links
