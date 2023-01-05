@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 44N-1563
+! Version: 45N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -578,6 +578,24 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||tag.wknd.ai^
+||loteamentobuonavitaitu.fun^
+||1up.com^
+||4cinsights.com^
+||adhaven.com^
+||adtechjp.com^
+||dotomi.com^
+||entravision.com^
+||havasedge.com^
+||knorex.com^
+||rkdms.com^
+||iqm.com^
+||furiousfar.com^
+||exclamationresound.com^
+||onautcatholi.xyz^
+||ricewaterhou.xyz^
+||kibrol.de^
+||seecontentdelivery.info^
 ||happy-mods.online^
 ||happymod.co.in^
 ||happymodpc.com^
@@ -10042,7 +10060,6 @@ http://twitcount.com$~first-party
 ||sugarcurtain.com^
 ||swordgoose.com^
 ||stats.avast.com^
-||tidiochat.com^
 ||trustx.org^
 ||summerhamster.com^
 ||saber.srvcs.tumblr.com^
@@ -11900,6 +11917,7 @@ http://twitcount.com$~first-party
 ||yahoo.com/f/track/tgt/imp?
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
+*/web-pixels-manager/
 /1x1.jpg?id=
 /img/supporters/*-vpn-banner.png
 /v*/parkingEvents
@@ -12979,6 +12997,8 @@ audiobookbay.li##[href^="/high-download"]:upward(2)
 audiobookbay.li##[href="/dl-14-days-trial"]
 audiobookbay.li##td:has-text(Secured Download:)
 audiobookbay.li##h2:has-text(AD)
+wikipedia.org##.frb-layout, [class*="frb-inline-"], [class*="frb-country"]
+
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
@@ -13715,3 +13735,6 @@ p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NXDOMAIN;;
 lsrelayaccess.com$dnsrewrite=NOERROR;A;157.90.154.178
 ! Fix in Brave Browser when using DNS-over-HTTPS
 ||www.uscellular.com^$dnstype=AAAA
+!
+||privdns.org^$dnstype=HTTPS,dnsrewrite=NOERROR;HTTPS;30 privdns.org alpn=h3 ipv4hint=45.76.226.232 ipv6hint=2001:19f0:5c01:196:5400:4ff:fe39:c6ef
+||privdns.org^$dnstype=HTTPS,dnsrewrite=NOERROR;SVCB;1 privdns.org alpn=h3
