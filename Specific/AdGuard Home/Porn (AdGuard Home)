@@ -201,6 +201,7 @@
 /(xnxx|xvideo|porn|-xxx|xxx-|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube|sissy).+\./$ctag=user_child
 /(cams|txxx|pornstar|pornstars|watchporn|sex)\..+/$ctag=user_child
 /^https?:\/\/.+\.(sexy|xxx|porn)\//$ctag=user_child
+/.+\.(sex|sexy|xxx|porn|adult)$/$ctag=user_child
 /^(porn|xxx)[a-z0-9]{3,}\..{2,}/$ctag=user_child
 /^[a-z0-9]{3,}(porn|xxx)\..{2,}/$ctag=user_child
 /porn[0-9]{1,3}\.com/$ctag=user_child
@@ -208,6 +209,8 @@
 /^[0-9]{1,2}plus/$ctag=user_child
 /^jav.+/$ctag=user_child
 /.+jav$/$ctag=user_child
+/^thot/$ctag=user_child
+/thot(s)?$/$ctag=user_child
 
 *onlyfans$ctag=user_child
 lewd$ctag=user_child
