@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 45N-1563
+! Version: 46N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -563,6 +563,8 @@ http://twitcount.com$~first-party
 ||adswelcome.xyz^$popup
 ||alleviatepracticableaddicted.com^$popup,popunder
 ||mybetterck.com^$popup,popunder
+||tumultmarten.com^$popup,popunder
+||nimrute.com^$popup,popunder
 ||americascardroom.eu/ads/$popup,popunder
 %3DPOPUNDER$popup,popunder
 
@@ -578,6 +580,11 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||itech-security.com^
+||tumultmarten.com^
+||ewaighee.xyz^
+||nimrute.com^
+||phdwxsui.xyz^
 ||tag.wknd.ai^
 ||loteamentobuonavitaitu.fun^
 ||1up.com^
@@ -13723,16 +13730,14 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlac
 
 ! AdGuard Home
 ! "Relay" on school devices
-! Respond with NXDOMAIN code as this allows unblocking school Chromebooks
-lsfilter.com$dnsrewrite=NXDOMAIN;;
-lsrelay-extensions-production.s3.amazonaws.com$dnsrewrite=NXDOMAIN;;
-ably.io$dnsrewrite=NXDOMAIN;;
-relay.school$dnsrewrite=NXDOMAIN;;
-ably-realtime.com$dnsrewrite=NXDOMAIN;;
-p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NXDOMAIN;;
-! Return this one with the e.foundation wifi check ip
-! This prevents the kill switch from being activated
+! Return with the e.foundation wifi check ip
 lsrelayaccess.com$dnsrewrite=NOERROR;A;157.90.154.178
+lsfilter.com$dnsrewrite=NOERROR;A;157.90.154.178
+lsrelay-extensions-production.s3.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
+ably.io$dnsrewrite=NOERROR;A;157.90.154.178
+relay.school$dnsrewrite=NOERROR;A;157.90.154.178
+ably-realtime.com$dnsrewrite=NOERROR;A;157.90.154.178
+p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
 ! Fix in Brave Browser when using DNS-over-HTTPS
 ||www.uscellular.com^$dnstype=AAAA
 !
