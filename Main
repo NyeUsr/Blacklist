@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 46N-1563
+! Version: 47N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -322,6 +322,8 @@
 127.0.0.1 www.globalresearch.ca$badfilter
 0.0.0.0 globalresearch.ca$badfilter
 0.0.0.0 www.globalresearch.ca$badfilter
+::1 globalresearch.ca$badfilter
+::1 www.globalresearch.ca$badfilter
 !#endif
 ||www.globalresearch.ca^$badfilter
 ||globalresearch.ca^$badfilter
@@ -331,6 +333,8 @@
 127.0.0.1 www.americanmilitarynews.com$badfilter
 0.0.0.0 americanmilitarynews.com$badfilter
 0.0.0.0 www.americanmilitarynews.com$badfilter
+::1 americanmilitarynews.com$badfilter
+::1 www.americanmilitarynews.com$badfilter
 !#endif
 ||www.americanmilitarynews.com^$badfilter
 ||americanmilitarynews.com^$badfilter
@@ -340,6 +344,8 @@
 127.0.0.1 www.newsmax.com$badfilter
 0.0.0.0 newsmax.com$badfilter
 0.0.0.0 www.newsmax.com$badfilter
+::1 newsmax.com$badfilter
+::1 www.newsmax.com$badfilter
 !#endif
 ||www.newsmax.com^$badfilter
 ||newsmax.com^$badfilter
@@ -349,6 +355,8 @@
 127.0.0.1 www.newsbusters.org$badfilter
 0.0.0.0 newsbusters.org$badfilter
 0.0.0.0 www.newsbusters.org$badfilter
+::1 newsbusters.org$badfilter
+::1 www.newsbusters.org$badfilter
 !#endif
 ||www.newsbusters.org^$badfilter
 ||newsbusters.org^$badfilter
@@ -358,6 +366,8 @@
 127.0.0.1 www.projectveritas.com$badfilter
 0.0.0.0 projectveritas.com$badfilter
 0.0.0.0 www.projectveritas.com$badfilter
+::1 projectveritas.com$badfilter
+::1 www.projectveritas.com$badfilter
 !#endif
 ||www.projectveritas.com^$badfilter
 ||projectveritas.com^$badfilter
@@ -367,6 +377,8 @@
 127.0.0.1 www.zerohedge.com$badfilter
 0.0.0.0 zerohedge.com$badfilter
 0.0.0.0 www.zerohedge.com$badfilter
+::1 zerohedge.com$badfilter
+::1 www.zerohedge.com$badfilter
 !#endif
 ||www.zerohedge.com^$badfilter
 ||zerohedge.com^$badfilter
@@ -376,6 +388,8 @@
 127.0.0.1 www.breitbart.com$badfilter
 0.0.0.0 breitbart.com$badfilter
 0.0.0.0 www.breitbart.com$badfilter
+::1 breitbart.com$badfilter
+::1 www.breitbart.com$badfilter
 !#endif
 ||www.breitbart.com^$badfilter
 ||breitbart.com^$badfilter
@@ -385,6 +399,8 @@
 127.0.0.1 www.thegatewaypundit.com$badfilter
 0.0.0.0 thegatewaypundit.com$badfilter
 0.0.0.0 www.thegatewaypundit.com$badfilter
+::1 thegatewaypundit.com$badfilter
+::1 www.thegatewaypundit.com$badfilter
 !#endif
 ||www.thegatewaypundit.com^$badfilter
 ||thegatewaypundit.com^$badfilter
@@ -394,6 +410,8 @@
 127.0.0.1 www.theblaze.com$badfilter
 0.0.0.0 theblaze.com$badfilter
 0.0.0.0 www.theblaze.com$badfilter
+::1 theblaze.com$badfilter
+::1 www.theblaze.com$badfilter
 !#endif
 ||www.theblaze.com^$badfilter
 ||theblaze.com^$badfilter
@@ -403,35 +421,25 @@
 127.0.0.1 www.redstate.com$badfilter
 0.0.0.0 redstate.com$badfilter
 0.0.0.0 www.redstate.com$badfilter
+::1 redstate.com$badfilter
+::1 www.redstate.com$badfilter
 !#endif
 ||www.redstate.com^$badfilter
 ||redstate.com^$badfilter
-
-!#if !ext_ublock
-127.0.0.1 prisonplanet.com$badfilter
-127.0.0.1 www.prisonplanet.com$badfilter
-0.0.0.0 prisonplanet.com$badfilter
-0.0.0.0 www.prisonplanet.com$badfilter
-!#endif
-||www.prisonplanet.com^$badfilter
-||prisonplanet.com^$badfilter
 
 !#if !ext_ublock
 127.0.0.1 infowars.com$badfilter
 127.0.0.1 www.infowars.com$badfilter
 0.0.0.0 infowars.com$badfilter
 0.0.0.0 www.infowars.com$badfilter
+::1 infowars.com$badfilter
+::1 www.infowars.com$badfilter
+127.0.0.1 tv.infowars.com$badfilter
+0.0.0.0 tv.infowars.com$badfilter
+::1 tv.infowars.com$badfilter
 !#endif
 ||www.infowars.com^$badfilter
 ||infowars.com^$badfilter
-
-!#if !ext_ublock
-127.0.0.1 tv.infowars.com$badfilter
-127.0.0.1 www.tv.infowars.com$badfilter
-0.0.0.0 tv.infowars.com$badfilter
-0.0.0.0 www.tv.infowars.com$badfilter
-!#endif
-||www.tv.infowars.com^$badfilter
 ||tv.infowars.com^$badfilter
 
 !#if !ext_ublock
@@ -439,9 +447,40 @@
 127.0.0.1 www.bizpacreview.com$badfilter
 0.0.0.0 bizpacreview.com$badfilter
 0.0.0.0 www.bizpacreview.com$badfilter
+::1 bizpacreview.com$badfilter
+::1 www.bizpacreview.com$badfilter
 !#endif
 ||www.bizpacreview.com^$badfilter
 ||bizpacreview.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 revolver.news$badfilter
+127.0.0.1 www.revolver.news$badfilter
+0.0.0.0 revolver.news$badfilter
+0.0.0.0 www.revolver.news$badfilter
+::1 revolver.news$badfilter
+::1 www.revolver.news$badfilter
+!#endif
+||www.revolver.news^$badfilter
+||revolver.news^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 lifesitenews.com$badfilter
+127.0.0.1 www.lifesitenews.com$badfilter
+0.0.0.0 lifesitenews.com$badfilter
+0.0.0.0 www.lifesitenews.com$badfilter
+::1 lifesitenews.com$badfilter
+::1 www.lifesitenews.com$badfilter
+!#endif
+||www.lifesitenews.com^$badfilter
+||lifesitenews.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 gab.com$badfilter
+0.0.0.0 gab.com$badfilter
+::1 gab.com$badfilter
+!#endif
+||gab.com^$badfilter
 
 !#safari_cb_affinity
 
@@ -580,6 +619,15 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||prototypewailrubber.com^
+||dolefulasachasing.com^
+||feignthat.com^
+||frolicbrook.com^
+||msgose.com^
+||ndroip.com^
+||nudgeworry.com^
+||tgpsew.com^
+||wmgtr.com^
 ||itech-security.com^
 ||tumultmarten.com^
 ||ewaighee.xyz^
@@ -11922,6 +11970,7 @@ http://twitcount.com$~first-party
 ||pubsub.googleapis.com/v*/projects/gopher-buddy-prod/
 ||s.yimg.com/rq/darla/$subdocument
 ||yahoo.com/f/track/tgt/imp?
+||apis.google.com/js/client.js
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
 */web-pixels-manager/
@@ -13722,6 +13771,21 @@ $removeparam=c3nid
 ||tradedoubler.com^$removeparam=tduid
 ||adguard-dns.io^$removeparam=clid
 ||qwant.com^$removeparam=client
+||amazon.com^$removeparam=keywords
+||amazon.com^$removeparam=ref
+||amazon.com^$removeparam=qid
+||amazon.com^$removeparam=sr
+||google.^$removeparam=ei
+||google.^$removeparam=iflsig
+||google.^$removeparam=ved
+||google.^$removeparam=uact
+||google.^$removeparam=oq
+||google.^$removeparam=gs_lcp
+||google.^$removeparam=sclient
+||google.^$removeparam=biw
+||google.^$removeparam=bih
+||google.^$removeparam=sa
+||google.^$removeparam=dpr
 
 ! Json Prune (uBo & AdGuard)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
