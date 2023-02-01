@@ -6,7 +6,6 @@
 *##+js(ra, ping, stay)
 *##+js(ra, real-href, stay)
 *##+js(ra, onmouseup, a[onmouseup="setRealHref(event)"], stay)
-*##+js(ra, referrerpolicy, stay)
 *##+js(ra, rel, link[rel*="pingback"], stay)
 *##+js(ra, onclick, a[onclick*="ga"], stay)
 *##+js(ra, onclick, a[onclick*="_gaq.push"], stay)
@@ -16,11 +15,8 @@
 *##+js(ra, data-obtrack, a[data-obtrack], stay)
 *##+js(ra, data-oburl, a[data-oburl], stay)
 *##+js(ra, rel, link[rel*="next"], stay)
-*##+js(ra, rel, link[rel*="preconnect"], stay)
-*##+js(ra, rel, link[rel*="dns-prefetch"], stay)
 *##+js(ra, rel, link[rel*="subresource"], stay)
 *##+js(ra, rel, link[rel*="prev"], stay)
-*##+js(ra, rel, link[rel*="prerender"], stay)
 
 !#endif
 
