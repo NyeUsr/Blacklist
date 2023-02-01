@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 47N-1563
+! Version: 48N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -11973,6 +11973,7 @@ http://twitcount.com$~first-party
 ||apis.google.com/js/client.js
 
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
+*/advertisement/iframe/
 */web-pixels-manager/
 /1x1.jpg?id=
 /img/supporters/*-vpn-banner.png
@@ -13054,11 +13055,18 @@ audiobookbay.li##[href="/dl-14-days-trial"]
 audiobookbay.li##td:has-text(Secured Download:)
 audiobookbay.li##h2:has-text(AD)
 wikipedia.org##.frb-layout, [class*="frb-inline-"], [class*="frb-country"]
-
+reclaimthenet.org##.elementor-top-section.elementor-section:has-text(Defend free speech and individual liberty online.)
+reclaimthenet.org##.code-block:has-text(subscribe to Reclaim The Net.)
+luscious.net###modal-root
+luscious.net#$#body { overflow:visible !important; }
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+###privacy-notice:not(html, body, button, input)
+##.cookieAcceptBar:not(html, body, button, input)
+##[class*="adDisplay"]:not(html, body, button, input)
+##[class*="module__ad"]:not(html, body, button, input)
 ###single > .adkiss:not(html, body, button, input)
 ###headerad:not(html, body, button, input)
 ##.ads-in-page:not(html, body, button, input)
