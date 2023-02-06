@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 48N-1563
+! Version: 49N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists -----------------
@@ -619,6 +619,13 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||catchingnow.com^
+||baladap.com^
+||3one6.ru^
+||audiosales.ru^
+||dct-profi.ru^
+||bitfinbon.site^
+||asgard-cup.ru^
 ||prototypewailrubber.com^
 ||dolefulasachasing.com^
 ||feignthat.com^
@@ -6098,7 +6105,6 @@ http://twitcount.com$~first-party
 ||learbit.com^
 ||ce.akamaiedge.net^
 ||lixmarketing.com^
-||createsend1.com^
 ||cqcounter.com^
 ||cmp-cdn.ghostery.com^
 ||cootlogix.com^
@@ -13059,6 +13065,10 @@ reclaimthenet.org##.elementor-top-section.elementor-section:has-text(Defend free
 reclaimthenet.org##.code-block:has-text(subscribe to Reclaim The Net.)
 luscious.net###modal-root
 luscious.net#$#body { overflow:visible !important; }
+weatherbug.com##notification-footer
+enago.com###fixed-form-container
+goodreads.com##.Header:style(max-height: 8%)
+goodreads.com##img[alt*="Celebrate Black History Month"]
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
@@ -13813,5 +13823,3 @@ p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
 ! Fix in Brave Browser when using DNS-over-HTTPS
 ||www.uscellular.com^$dnstype=AAAA
 !
-||privdns.org^$dnstype=HTTPS,dnsrewrite=NOERROR;HTTPS;30 privdns.org alpn=h3 ipv4hint=45.76.226.232 ipv6hint=2001:19f0:5c01:196:5400:4ff:fe39:c6ef
-||privdns.org^$dnstype=HTTPS,dnsrewrite=NOERROR;SVCB;1 privdns.org alpn=h3
