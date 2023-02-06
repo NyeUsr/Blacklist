@@ -2,3 +2,9 @@
 ||safebrowsing.googleapis.com^
 ||hyvor.com^
 ||arc.io^
+
+mega.nz##.gallery-btn
+
+*$app=com.camerasideas.trimmer
+*$app=com.catchingnow.icebox
+*$app=com.verizon.mips.services
