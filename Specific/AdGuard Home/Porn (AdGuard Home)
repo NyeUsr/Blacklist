@@ -1,6 +1,4 @@
 ! Basic porn blocking
-! TLS/QUIC: prn.privdns.org
-! HTTPS: https://privdns.org/dns-query/prn
 
 ! Block some DNS servers which may be enabled by default and preventing blocking
 ||mozilla.cloudflare-dns.com^$ctag=user_child
