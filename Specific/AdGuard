@@ -146,6 +146,80 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 !#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
 
 !+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.carbonAdsContainer:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad-banner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cc-banner__content:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookiesBanner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.rmp-container:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.content-aside .remove-spots:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##div.spot-holder:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.spot_large--pad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###gdpr-banner-component:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###cookie-overlay:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###cookie_banner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.inline-newsletter-content:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###gdpr.show:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.rg-us-cookie-banner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.verticalAdContainer:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.leader-ad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookiePolicy-popup:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###cookie-popup:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cc-cookies:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.button_right_ad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookie-policy:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.signup-alert-ad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad728:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad468:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad120:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="Subscribe-sidebar"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="AdsenseAd"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="ddc-im-container"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="Ad__topBanner"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[id*="next-tv"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[id*="_cookie_box"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[id*="pushdown-ad"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="_cookie-footer"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="_adDiv"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="ad-position-"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="-ad-position"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="subnav-ad"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###privacy-notice:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookieAcceptBar:not(html, body, button, input)
