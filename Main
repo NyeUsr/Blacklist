@@ -3,8 +3,8 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 49N-1563
-! Approximate amount of entries: 13.5K
+! Version: 50N-1563
+! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
 ! Ublock Origin Static Filter Syntax                                   |
@@ -324,6 +324,7 @@
 0.0.0.0 www.globalresearch.ca$badfilter
 ::1 globalresearch.ca$badfilter
 ::1 www.globalresearch.ca$badfilter
+*://*.globalresearch.ca/*$badfilter
 !#endif
 ||www.globalresearch.ca^$badfilter
 ||globalresearch.ca^$badfilter
@@ -335,6 +336,7 @@
 0.0.0.0 www.americanmilitarynews.com$badfilter
 ::1 americanmilitarynews.com$badfilter
 ::1 www.americanmilitarynews.com$badfilter
+*://*.americanmilitarynews.com/*$badfilter
 !#endif
 ||www.americanmilitarynews.com^$badfilter
 ||americanmilitarynews.com^$badfilter
@@ -346,6 +348,7 @@
 0.0.0.0 www.newsmax.com$badfilter
 ::1 newsmax.com$badfilter
 ::1 www.newsmax.com$badfilter
+*://*.newsmax.com/*$badfilter
 !#endif
 ||www.newsmax.com^$badfilter
 ||newsmax.com^$badfilter
@@ -357,6 +360,7 @@
 0.0.0.0 www.newsbusters.org$badfilter
 ::1 newsbusters.org$badfilter
 ::1 www.newsbusters.org$badfilter
+*://*.newsbusters.com/*$badfilter
 !#endif
 ||www.newsbusters.org^$badfilter
 ||newsbusters.org^$badfilter
@@ -368,6 +372,7 @@
 0.0.0.0 www.projectveritas.com$badfilter
 ::1 projectveritas.com$badfilter
 ::1 www.projectveritas.com$badfilter
+*://*.projectveritas.com/*$badfilter
 !#endif
 ||www.projectveritas.com^$badfilter
 ||projectveritas.com^$badfilter
@@ -379,6 +384,7 @@
 0.0.0.0 www.zerohedge.com$badfilter
 ::1 zerohedge.com$badfilter
 ::1 www.zerohedge.com$badfilter
+*://*.zerohedge.com/*$badfilter
 !#endif
 ||www.zerohedge.com^$badfilter
 ||zerohedge.com^$badfilter
@@ -390,6 +396,7 @@
 0.0.0.0 www.breitbart.com$badfilter
 ::1 breitbart.com$badfilter
 ::1 www.breitbart.com$badfilter
+*://*.breitbart.com/*$badfilter
 !#endif
 ||www.breitbart.com^$badfilter
 ||breitbart.com^$badfilter
@@ -401,6 +408,7 @@
 0.0.0.0 www.thegatewaypundit.com$badfilter
 ::1 thegatewaypundit.com$badfilter
 ::1 www.thegatewaypundit.com$badfilter
+*://*.thegatewaypundit.com/*$badfilter
 !#endif
 ||www.thegatewaypundit.com^$badfilter
 ||thegatewaypundit.com^$badfilter
@@ -412,6 +420,7 @@
 0.0.0.0 www.theblaze.com$badfilter
 ::1 theblaze.com$badfilter
 ::1 www.theblaze.com$badfilter
+*://*.theblaze.com/*$badfilter
 !#endif
 ||www.theblaze.com^$badfilter
 ||theblaze.com^$badfilter
@@ -423,6 +432,7 @@
 0.0.0.0 www.redstate.com$badfilter
 ::1 redstate.com$badfilter
 ::1 www.redstate.com$badfilter
+*://*.redstate.com/*$badfilter
 !#endif
 ||www.redstate.com^$badfilter
 ||redstate.com^$badfilter
@@ -437,6 +447,7 @@
 127.0.0.1 tv.infowars.com$badfilter
 0.0.0.0 tv.infowars.com$badfilter
 ::1 tv.infowars.com$badfilter
+*://*.infowars.com/*$badfilter
 !#endif
 ||www.infowars.com^$badfilter
 ||infowars.com^$badfilter
@@ -449,6 +460,7 @@
 0.0.0.0 www.bizpacreview.com$badfilter
 ::1 bizpacreview.com$badfilter
 ::1 www.bizpacreview.com$badfilter
+*://*.bizpacreview.com/*$badfilter
 !#endif
 ||www.bizpacreview.com^$badfilter
 ||bizpacreview.com^$badfilter
@@ -460,6 +472,7 @@
 0.0.0.0 www.revolver.news$badfilter
 ::1 revolver.news$badfilter
 ::1 www.revolver.news$badfilter
+*://*.revolver.news/*$badfilter
 !#endif
 ||www.revolver.news^$badfilter
 ||revolver.news^$badfilter
@@ -471,6 +484,7 @@
 0.0.0.0 www.lifesitenews.com$badfilter
 ::1 lifesitenews.com$badfilter
 ::1 www.lifesitenews.com$badfilter
+*://*.lifesitenews.com/*$badfilter
 !#endif
 ||www.lifesitenews.com^$badfilter
 ||lifesitenews.com^$badfilter
@@ -479,8 +493,34 @@
 127.0.0.1 gab.com$badfilter
 0.0.0.0 gab.com$badfilter
 ::1 gab.com$badfilter
+*://*.gab.com/*$badfilter
 !#endif
 ||gab.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 dailystormer.in$badfilter
+0.0.0.0 dailystormer.in$badfilter
+::1 dailystormer.in$badfilter
+*://*.dailystormer.in/*$badfilter
+!#endif
+||dailystormer.in^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 freespeech.group$badfilter
+0.0.0.0 freespeech.group$badfilter
+::1 freespeech.group$badfilter
+*://*.freespeech.group/*$badfilter
+!#endif
+||freespeech.group^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 www.ar15.com$badfilter
+0.0.0.0 www.ar15.com$badfilter
+::1 www.ar15.com$badfilter
+*://*.ar15.com/*$badfilter
+!#endif
+||ar15.com^$badfilter
+||www.ar15.com^$badfilter
 
 !#safari_cb_affinity
 
@@ -619,6 +659,8 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+||italarizege.xyz^
+||d11zevc9a5598r.cloudfront.net^
 ||catchingnow.com^
 ||baladap.com^
 ||3one6.ru^
@@ -11726,6 +11768,9 @@ http://twitcount.com$~first-party
 ||novads.co^
 ||igadget24.com^
 
+||ethereum.org^$domain=thepiratebay.org
+||litecoin.org^$domain=thepiratebay.org
+||bitcoin.org^$domain=thepiratebay.org
 ||img.*/house-ad/$image
 ||netgear.com/open.aspx
 ||nbc.com/tags/
@@ -11761,7 +11806,6 @@ http://twitcount.com$~first-party
 ||browser.yandex.com/goodbye
 ||mail.yahoo.com/d/video_api/getVideos
 ||mail.yahoo.com/d/log
-||s3.amazonaws.com/ssl-intgr-net/prebid/
 ||coin.amazonpay.com/rb/checkStatus
 .amazonaws.com/ssl-intgr-net/tags/
 ||pandora.com/web-client-assets/displayAdFrame/
@@ -12241,7 +12285,6 @@ _ads_$image,xhr
 */AdServer/$image
 /adzone.
 */adunit/
-/prebidlink
 /adzone-io
 /email/counter
 /widgetAd
@@ -12283,7 +12326,6 @@ _ads_$image,xhr
 /counter.php?
 /cookie-law-info
 /ads/?rotator_all=*
-/?prebid=*
 */static/ads/
 /ads/creative
 /player/stats.php
@@ -12805,7 +12847,6 @@ ext.track.scripts*
 /_/items/newswars_ads
 /tracker?domain
 /fbi-gov/production/gateway.min.js
-/prebid-$script,third-party
 */api/stats/$~first-party
 /play?pub_id=
 /tr?id
@@ -12852,7 +12893,6 @@ ext.track.scripts*
 /visit.jpg
 /pub_lyricsmode.gif
 /adstream
-/prebid2.$script,third-party
 */clientprofiler/
 */tracking/fingerprint/
 /rpFingerprint
@@ -12968,7 +13008,6 @@ _advertising_*.swf
 /newrelic-gpt.
 /get_ad_config
 /api/tracking$~first-party
-/prebid.$script,third-party
 /AntiAdblock
 /adclick
 /mobAdverSSL.html
@@ -13068,11 +13107,49 @@ luscious.net#$#body { overflow:visible !important; }
 weatherbug.com##notification-footer
 enago.com###fixed-form-container
 goodreads.com##.Header:style(max-height: 8%)
+science.org##.show.js-transitioned.js-sticky.pop-after-passed.pop-notification.related-content.show-recommended, .alert-donation
 goodreads.com##img[alt*="Celebrate Black History Month"]
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+##.carbonAdsContainer:not(html, body, button, input)
+##.ad-banner:not(html, body, button, input)
+##.cc-banner__content:not(html, body, button, input)
+##.cookiesBanner:not(html, body, button, input)
+##.rmp-container:not(html, body, button, input)
+##.content-aside .remove-spots:not(html, body, button, input)
+##div.spot-holder:not(html, body, button, input)
+##.spot_large--pad:not(html, body, button, input)
+###gdpr-banner-component:not(html, body, button, input)
+###cookie-overlay:not(html, body, button, input)
+###cookie_banner:not(html, body, button, input)
+##.inline-newsletter-content:not(html, body, button, input)
+###gdpr.show:not(html, body, button, input)
+##.rg-us-cookie-banner:not(html, body, button, input)
+##.verticalAdContainer:not(html, body, button, input)
+##.leader-ad:not(html, body, button, input)
+##.cookiePolicy-popup:not(html, body, button, input)
+###cookie-popup:not(html, body, button, input)
+##.cc-cookies:not(html, body, button, input)
+##.button_right_ad:not(html, body, button, input)
+##.cookie-policy:not(html, body, button, input)
+##.signup-alert-ad:not(html, body, button, input)
+##.ad728:not(html, body, button, input)
+##.ad468:not(html, body, button, input)
+##.ad120:not(html, body, button, input)
+##[class*="Subscribe-sidebar"]:not(html, body, button, input)
+##[class*="AdsenseAd"]:not(html, body, button, input)
+##[class*="ddc-im-container"]:not(html, body, button, input)
+##[class*="Ad__topBanner"]:not(html, body, button, input)
+##[id*="next-tv"]:not(html, body, button, input)
+##[id*="_cookie_box"]:not(html, body, button, input)
+##[id*="pushdown-ad"]:not(html, body, button, input)
+##[class*="_cookie-footer"]:not(html, body, button, input)
+##[class*="_adDiv"]:not(html, body, button, input)
+##[class*="ad-position-"]:not(html, body, button, input)
+##[class*="-ad-position"]:not(html, body, button, input)
+##[class*="subnav-ad"]:not(html, body, button, input)
 ###privacy-notice:not(html, body, button, input)
 ##.cookieAcceptBar:not(html, body, button, input)
 ##[class*="adDisplay"]:not(html, body, button, input)
@@ -13632,10 +13709,8 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 /metrics.$rewrite=abp-resource:blank-js,domain=~torproject.org
 .com/be_fl.js$rewrite=abp-resource:blank-js
 /sensorsdata.$rewrite=abp-resource:blank-js
-/prebid*$rewrite=abp-resource:blank-js
 /adScript*$rewrite=abp-resource:blank-js
 /*gpt_*$rewrite=abp-resource:blank-js
-/*prebid_*$rewrite=abp-resource:blank-js
 /pubads_$rewrite=abp-resource:blank-js
 /ads_prebid$rewrite=abp-resource:blank-js
 /atmedia_ms_v*$rewrite=abp-resource:blank-js,third-party
