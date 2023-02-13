@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 50N-1563
+! Version: 51N-1563
 ! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
@@ -13103,12 +13103,14 @@ wikipedia.org##.frb-layout, [class*="frb-inline-"], [class*="frb-country"]
 reclaimthenet.org##.elementor-top-section.elementor-section:has-text(Defend free speech and individual liberty online.)
 reclaimthenet.org##.code-block:has-text(subscribe to Reclaim The Net.)
 luscious.net###modal-root
-luscious.net#$#body { overflow:visible !important; }
+!luscious.net#$#body { overflow: unset !important; }
 weatherbug.com##notification-footer
 enago.com###fixed-form-container
 goodreads.com##.Header:style(max-height: 8%)
 science.org##.show.js-transitioned.js-sticky.pop-after-passed.pop-notification.related-content.show-recommended, .alert-donation
 goodreads.com##img[alt*="Celebrate Black History Month"]
+pcmag.com##.zmgad-full-width, .zmgad-right-rail, .flex-shrink-0.xl\:block.hidden.upper-sidebar.container-right-rail
+w3schools.com###tryitLeaderboard
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
@@ -13884,6 +13886,9 @@ $removeparam=c3nid
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+
+! Test Scroll Bar Unblocking
+*#$#body, html { overflow: unset !important; }
 
 ! AdGuard Home
 ! "Relay" on school devices
