@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 51N-1563
+! Version: 52N-1563
 ! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
@@ -13888,7 +13888,7 @@ youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerRespon
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 
 ! Test Scroll Bar Unblocking
-*#$#body, html { overflow: unset !important; }
+*##html:style(overflow-x: unset !important;)
 
 ! AdGuard Home
 ! "Relay" on school devices
