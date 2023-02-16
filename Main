@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 52N-1563
+! Version: 53N-1563
 ! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
@@ -616,6 +616,8 @@ http://twitcount.com$~first-party
 ?zoneid=$popup
 !#endif
 
+||servgeorg.com^$popup,popunder
+||bravetense.com^$popup,popunder
 ||nessainy.net^$popup,popunder
 ||awpya.com^$popup,popunder
 ||voluumtlkrnarketing.com^$popup,popunder
@@ -659,6 +661,11 @@ http://twitcount.com$~first-party
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
+! Third-party
+||stand-with-ukraine.pp.ua^$third-party
+
+||servgeorg.com^
+||bravetense.com^
 ||italarizege.xyz^
 ||d11zevc9a5598r.cloudfront.net^
 ||catchingnow.com^
@@ -4331,7 +4338,6 @@ http://twitcount.com$~first-party
 ||adserver-pro.net^
 ||adwidecenter.com^
 ||adxcel.com^
-||acgnxtracker.com^
 ||adleave.com^
 ||adsafety.net^
 ||adpop.club^
@@ -6683,7 +6689,6 @@ http://twitcount.com$~first-party
 ||emditpison.asus.com^
 ||eulerian.mathon.fr^
 ||eulerian.sarenza.com^
-||explodie.org^
 ||eulerian.officiel-des-vacances.com^
 ||eulerian.splendia.com^
 ||eum-appdynamics.com^
@@ -8921,7 +8926,6 @@ http://twitcount.com$~first-party
 ||ngineered.co.uk^
 ||statisticsmanager.com^
 ||nanohexstudio.com^
-||npmcdn.com^
 ||nextyourcontent.com^
 ||nomanatif.net^
 ||nui.media^
@@ -11768,6 +11772,8 @@ http://twitcount.com$~first-party
 ||novads.co^
 ||igadget24.com^
 
+||raw.githubusercontent.com/*/StandWithUkraine/*.svg
+||rawcdn.githack.com/*/StandWithUkraine/*.svg
 ||ethereum.org^$domain=thepiratebay.org
 ||litecoin.org^$domain=thepiratebay.org
 ||bitcoin.org^$domain=thepiratebay.org
@@ -13111,10 +13117,16 @@ science.org##.show.js-transitioned.js-sticky.pop-after-passed.pop-notification.r
 goodreads.com##img[alt*="Celebrate Black History Month"]
 pcmag.com##.zmgad-full-width, .zmgad-right-rail, .flex-shrink-0.xl\:block.hidden.upper-sidebar.container-right-rail
 w3schools.com###tryitLeaderboard
+musixmatch.com##.upselling-message
+bromite.org##.ribbon-ua
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+##[href="https://stand-with-ukraine.pp.ua/"]
+##.ad-leaderboard-flex:not(html, body, button, input)
+##.js-cet-unit-top-ad:not(html, body, button, input)
+##.top-ad-recirc:not(html, body, button, input)
 ##.carbonAdsContainer:not(html, body, button, input)
 ##.ad-banner:not(html, body, button, input)
 ##.cc-banner__content:not(html, body, button, input)
