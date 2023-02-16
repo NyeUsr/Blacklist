@@ -146,6 +146,14 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 !#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
 
 !+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href="https://stand-with-ukraine.pp.ua/"]
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad-leaderboard-flex:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.js-cet-unit-top-ad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.top-ad-recirc:not(html, body, button, input)
+!+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.carbonAdsContainer:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad-banner:not(html, body, button, input)
