@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 53N-1563
+! Version: 54N-1563
 ! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
@@ -491,11 +491,16 @@
 
 !#if !ext_ublock
 127.0.0.1 gab.com$badfilter
+127.0.0.1 gabpay.live$badfilter
 0.0.0.0 gab.com$badfilter
+0.0.0.0 gabpay.live$badfilter
 ::1 gab.com$badfilter
+::1 gabpay.live$badfilter
 *://*.gab.com/*$badfilter
+*://*.gabpay.live/*$badfilter
 !#endif
 ||gab.com^$badfilter
+||gabpay.live^$badfilter
 
 !#if !ext_ublock
 127.0.0.1 dailystormer.in$badfilter
@@ -521,6 +526,106 @@
 !#endif
 ||ar15.com^$badfilter
 ||www.ar15.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 rumble.com$badfilter
+0.0.0.0 rumble.com$badfilter
+::1 rumble.com$badfilter
+*://*.rumble.com/*$badfilter
+!#endif
+||rumble.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 chuckbaldwinlive.com$badfilter
+0.0.0.0 chuckbaldwinlive.com$badfilter
+::1 chuckbaldwinlive.com$badfilter
+*://*.chuckbaldwinlive.com/*$badfilter
+!#endif
+||chuckbaldwinlive.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 libertyfellowshipmt.com$badfilter
+0.0.0.0 libertyfellowshipmt.com$badfilter
+::1 libertyfellowshipmt.com$badfilter
+*://*.libertyfellowshipmt.com/*$badfilter
+!#endif
+||libertyfellowshipmt.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 jgminternational.org$badfilter
+127.0.0.1 www.jgminternational.org$badfilter
+0.0.0.0 jgminternational.org$badfilter
+0.0.0.0 www.jgminternational.org$badfilter
+::1 jgminternational.org$badfilter
+::1 www.jgminternational.org$badfilter
+*://*.jgminternational.org/*$badfilter
+!#endif
+||www.jgminternational.org^$badfilter
+||jgminternational.org^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 prophecyclub.sermon.net$badfilter
+0.0.0.0 prophecyclub.sermon.net$badfilter
+::1 prophecyclub.sermon.net$badfilter
+*://*.prophecyclub.sermon.net/*$badfilter
+!#endif
+||prophecyclub.sermon.net^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 prophecyclub.com$badfilter
+127.0.0.1 www.prophecyclub.com$badfilter
+0.0.0.0 prophecyclub.com$badfilter
+0.0.0.0 www.prophecyclub.com$badfilter
+::1 prophecyclub.com$badfilter
+::1 www.prophecyclub.com$badfilter
+*://*.prophecyclub.com/*$badfilter
+!#endif
+||www.prophecyclub.com^$badfilter
+||prophecyclub.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 watchprophecyclub.com$badfilter
+127.0.0.1 www.watchprophecyclub.com$badfilter
+0.0.0.0 watchprophecyclub.com$badfilter
+0.0.0.0 www.watchprophecyclub.com$badfilter
+::1 watchprophecyclub.com$badfilter
+::1 www.watchprophecyclub.com$badfilter
+*://*.watchprophecyclub.com/*$badfilter
+!#endif
+||www.watchprophecyclub.com^$badfilter
+||watchprophecyclub.com^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 qintel.pro$badfilter
+0.0.0.0 qintel.pro$badfilter
+::1 qintel.pro$badfilter
+*://*.qintel.pro/*$badfilter
+!#endif
+||qintel.pro^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 stormfront.org$badfilter
+127.0.0.1 www.stormfront.org$badfilter
+0.0.0.0 stormfront.org$badfilter
+0.0.0.0 www.stormfront.org$badfilter
+::1 stormfront.org$badfilter
+::1 www.stormfront.org$badfilter
+*://*.stormfront.org/*$badfilter
+!#endif
+||www.stormfront.org^$badfilter
+||stormfront.org^$badfilter
+
+!#if !ext_ublock
+127.0.0.1 americannaziparty.com$badfilter
+127.0.0.1 www.americannaziparty.com$badfilter
+0.0.0.0 americannaziparty.com$badfilter
+0.0.0.0 www.americannaziparty.com$badfilter
+::1 americannaziparty.com$badfilter
+::1 www.americannaziparty.com$badfilter
+*://*.americannaziparty.com/*$badfilter
+!#endif
+||www.americannaziparty.com^$badfilter
+||americannaziparty.com^$badfilter
 
 !#safari_cb_affinity
 
@@ -664,6 +769,7 @@ http://twitcount.com$~first-party
 ! Third-party
 ||stand-with-ukraine.pp.ua^$third-party
 
+||collect.nature.com^
 ||servgeorg.com^
 ||bravetense.com^
 ||italarizege.xyz^
@@ -4438,7 +4544,6 @@ http://twitcount.com$~first-party
 ||salesfeed.com^
 ||adsymptotic.com^
 ||anonymous.com^
-||adj.st^
 ||ads.everquote.com^
 ||applied-statistics.at^
 ||aam.cz^
@@ -9115,7 +9220,6 @@ http://twitcount.com$~first-party
 ||one-count.com^
 ||rxthdr.com^
 ||optmnstr.com^
-||townsquaremedia.com^
 ||onscroll.com^
 ||pushrase.com^
 ||picanalysis.vivo.com.cn^
@@ -13119,6 +13223,7 @@ pcmag.com##.zmgad-full-width, .zmgad-right-rail, .flex-shrink-0.xl\:block.hidden
 w3schools.com###tryitLeaderboard
 musixmatch.com##.upselling-message
 bromite.org##.ribbon-ua
+lifesitenews.com##.art-share-nav, .lsn-petitions
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
