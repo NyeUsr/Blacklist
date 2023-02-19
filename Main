@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 55N-1563
+! Version: 56N-1563
 ! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
@@ -124,6 +124,8 @@
 @@||gokinetic.com^
 
 ! Lead/redirect tracking - required for usability
+!+ NOT_OPTIMIZED
+@@||cj.dotomi.com
 !+ NOT_OPTIMIZED
 @@||tkqlhce.com^
 !+ NOT_OPTIMIZED
@@ -12729,7 +12731,6 @@ _ads_$image,xhr
 /uploads/ad_inc
 /advert.php?type=$subdocument
 /redis/uniq?domain=
-/pixel.png
 /monitoring/metrics
 /blueKai.$script
 /cookieconsent.min.css
