@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 57N-1563
+! Version: 58N-1563
 ! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
@@ -297,6 +297,10 @@
 @@||ttlivecdn.com^
 !+ NOT_OPTIMIZED
 @@||tiktokcdn-us.com^
+
+! Going to assume this URL doesn't change
+! https://github.com/nextdns/blocklists/issues/95
+@@||mcpwgrxj4n94hv1pvdyqw0zwdxyq.device.marketingcloudapis.com^
 
 ! https://github.com/nextdns/metadata/issues/1006
 !+ NOT_OPTIMIZED
@@ -1159,7 +1163,18 @@ http://twitcount.com$~first-party
 ! Third-party
 ||stand-with-ukraine.pp.ua^$third-party
 ||bam-x.com^$third-party
+||moengage.com^$third-party
 
+||counter.lifesitenews.com^
+||zohotagmanager.cdn.pagesense.io^
+||logsapi.zoho.com^
+||optimizely.techtarget.com^
+||optimizely.bitpipe.com^
+||trueaudience.io^
+||hearst3pcc.com^
+||sentry.gitlab.net^
+||new-sentry.gitlab.net^
+||t.arcade.show^
 ||operate-sdk-telemetry.unity3d.com^
 ||omoidentizess.com^
 ||dustdebeige.com^
@@ -9081,7 +9096,6 @@ http://twitcount.com$~first-party
 ||mixadvert.com^
 ||mads.amazon.com^
 ||mybestdc.com^
-||moengage.com^
 ||metrics.roblox.com^
 ||mppglobal.com^
 ||mateti.net^
@@ -11132,7 +11146,6 @@ http://twitcount.com$~first-party
 ||t.freelancer.com^
 ||t-ipnet.de^
 ||trafficg.com^
-||ttgtmedia.com^
 ||t-online.hu^
 ||textadsgoldmine.com^
 ||textlinksads.com^
@@ -13630,6 +13643,7 @@ musixmatch.com##.upselling-message
 bromite.org##.ribbon-ua
 lifesitenews.com##.art-share-nav, .lsn-petitions
 androidauthority.com##[class*="-__2b"]:has-text(Join our most passionate readers)
+mapquest.com##div.adWrapper, .infosheet-sponsored-topics, .mq-bizLocs-container
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
