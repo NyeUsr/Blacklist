@@ -346,7 +346,7 @@
 127.0.0.1 cl.exct.net$badfilter,important
 !#endif
 !+ NOT_OPTIMIZED
-||cl.exct.net^$bdafilter
+||cl.exct.net^$badfilter
 
 ! https://github.com/Cybo1927/Hosts/issues/84
 ! https://github.com/lightswitch05/hosts/issues/295
