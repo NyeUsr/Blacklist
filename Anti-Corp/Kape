@@ -1,29 +1,18 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti Kape
 ! Description: Block all known Kape Technologies domains as well as block any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
-! https://restoreprivacy.com/kape-technologies-owns-expressvpn-cyberghost-pia-zenmate-vpn-review-sites/
-! https://www.technadu.com/which-vpns-are-owned-by-kape-technologies/304917/
-! https://www.crunchbase.com/organization/crossrider/company_financials
-
-!------------------------
-! Start Domain Blacklist |
-!------------------------
-
-||cyberghostvpn.com^
-||zenmate.com^
-||privateinternetaccess.com^
-||expressvpn.com^
-||vpnmentor.com^
-||wizcase.com^
 ||ajillion.com^
+||cyberghostvpn.com^
 ||definitimedia.com^
-||reimageplus.com^
 ||driveragent.com^
+||expressvpn.com^
 ||intego.com^
+||privateinternetaccess.com^
+||reimageplus.com^
+||vpnmentor.com^
 ||webselenese.com^
-
-!----------------------
-! End Domain Blacklist |
-!----------------------
+||wizcase.com^
+||zenmate.com^
