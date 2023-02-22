@@ -1,16 +1,9 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti Disqus
 ! Description: Block all known Disqus domains as well as block any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
-!------------------------
-! Start Domain Blacklist |
-!------------------------
-
 ||disqus.com^
-||disquscdn.com^
 ||disqus.map.fastlylb.net^
-
-!----------------------
-! End Domain Blacklist |
-!----------------------
+||disquscdn.com^
