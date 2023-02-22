@@ -1,36 +1,51 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti Apple
 ! Description: Block all known connections to Apple as well as block any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
-! https://youtu.be/y8SjmcVJOjw
-
-!------------------------
-! Start Domain Blacklist |
-!------------------------
-
-||apple.com^
-||apple.net^
+||aaplimg.com^
+||apple-dns.net^
+||apple.com.akadns.net^
+||apple.com.cn^
+||apple.com.edgekey.net.globalredir.akadns.net^
 ||apple.com.edgekey.net^
 ||apple.com.edgesuite.net^
-||apple.com.akadns.net^
-||ls-apple.com.akadns.net^
-||itunes-apple.com.akadns.net^
-||icloud.com.edgekey.net^
-||apple.com.edgekey.net.globalredir.akadns.net^
-||origin-apple.com.akadns.net^
-||push-apple.com.akadns.net^
+||apple.com^
+||apple.com^
+||apple.net^
+||apple.news^
+||apple.pa^
+||applecard.apple^
+||applemusic.com^
+||applimg.com^
+||beatsbydre.com^
+||cdn-apple.com.akadns.net^
+||cdn-apple.com^
+||darksky.net^
 ||e673.dsce9.akamaiedge.net^
 ||e6987.a.akamaiedge.net^
-||applimg.com^
-||cdn-apple.com^
-||apple-dns.net^
-||itunes.apple.com^
-||icloud.com^
+||ess-apple.com.akadns.net^
+||gc-apple.com.akadns.net^
+||gcsis-apple.com.akadns.net^
+||icloud-content.com^
 ||icloud.com.akadns.net^
+||icloud.com.edgekey.net^
+||icloud.com^
+||itunes-apple.com.akadns.net^
+||itunes-nocookie.com^
+||itunes.apple.com^
+||itunes.com.edgekey.net^
+||ls-apple.com.akadns.net^
+||ls2-apple.com.akadns.net^
+||ls3-apple.com.akadns.net^
+||me.com.akadns.net^
+||me.com^
+||mzstatic.com.edgekey.net^
 ||mzstatic.com^
+||nic.beats^
+||origin-apple.com.akadns.net^
+||push-apple.com.akadns.net^
+||shazam.com^
+||swift.org^
 ||webkit.org^
-
-!----------------------
-! End Domain Blacklist |
-!----------------------
