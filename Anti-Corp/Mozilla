@@ -1,24 +1,15 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti Mozilla
 ! Description: Block all known Mozilla domains as well as block any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
-! Important note: Give them less data on you because of trash political takes such as https://blog.mozilla.org/blog/2021/01/08/we-need-more-than-deplatforming/
-
-!------------------------
-! Start Domain Blacklist |
-!------------------------
-
+||d2k03kvdk5cku0.cloudfront.net^
+||detectportal.firefox.com-v2.edgesuite.net^
+||firefox.com^
+||mozaws.net^
 ||mozilla.com^
 ||mozilla.net^
 ||mozilla.org^
-||mozaws.net^
-||firefox.com^
-||thunderbird.net^
-||d2k03kvdk5cku0.cloudfront.net^
-||detectportal.firefox.com-v2.edgesuite.net^
 ||mozilla.wpengine.com^
-
-!----------------------
-! End Domain Blacklist |
-!----------------------
+||thunderbird.net^
