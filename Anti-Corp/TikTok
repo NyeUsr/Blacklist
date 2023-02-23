@@ -1,28 +1,21 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti TikTok
 ! Description: Block all known TikTok domains as well as block any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
 ! Special thanks to DandelionSprout for multiple entries in this list (https://github.com/DandelionSprout)
 
-!------------------------
-! Start Domain Blacklist |
-!------------------------
-
-||tiktok.com^
-||tiktok.com.edgesuite.net^
-||musical.ly^
-||musically.ly^
-||tiktokcdn.com^
-||tiktokcdn-com.akamaized.net^
 ||*-tiktokcdn-com.akamaized.net^
-||tiktokcdn.liveplay.myqcloud.com^
+||bytedance.com^
 ||byteoversea.com^
 ||byteoversea.net^
-||bytedance.com^
 ||ibytedtos.com^
+||musical.ly^
+||musically.ly^
+||tiktok.com.edgesuite.net^
+||tiktok.com^
+||tiktokcdn-com.akamaized.net^
+||tiktokcdn.com^
+||tiktokcdn.liveplay.myqcloud.com^
 ||tiktokv.com^
-
-!----------------------
-! End Domain Blacklist |
-!----------------------
