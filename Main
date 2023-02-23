@@ -3,7 +3,7 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 59N-1563
+! Version: 60N-1563
 ! Approximate amount of entries: 13.6K
 
 ! Resources to help you better understand filter lists -----------------
@@ -1023,38 +1023,47 @@
 
 !#safari_cb_affinity
 
-! https://www.spamhaus.org/statistics/tlds/
-! As of 06 August 2022
+! Top abused TLDs
 
-! 88.7% malicious
 .surf^$~first-party
 !#if (!adguard)
 .surf^$popunder
 !#endif
 .surf^$csp=default-src 'self'
 
-! 55.2% malicious
+.rest^$~first-party
+!#if (!adguard)
+.rest^$popunder
+!#endif
+
+.okinawa^$~first-party
+!#if (!adguard)
+.okinawa^$popunder
+!#endif
+
 .tt^$~first-party
 !#if (!adguard)
 .tt^$popunder
 !#endif
 
-! 40.4% malicious
 .cam^$~first-party
 !#if (!adguard)
 .cam^$popunder
 !#endif
 
-! 38.9% malicious
 .best^$~first-party
 !#if (!adguard)
 .best^$popunder
 !#endif
 
-! 37.6% malicious
 .icu^$~first-party
 !#if (!adguard)
 .icu^$popunder
+!#endif
+
+.tk^$~first-party
+!#if (!adguard)
+.tk^$popunder
 !#endif
 
 ! Unnecessary HTTP
@@ -1161,15 +1170,15 @@ http://twitcount.com$~first-party
 /^http(s)?:\/\/.+\/domain_views$/$~third-party
 
 ! Block third-party IP addresses from connecting
-/https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$third-party
+/https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$~first-party
 
 ! Third-party
-||stand-with-ukraine.pp.ua^$third-party
-||bam-x.com^$third-party
-||moengage.com^$third-party
-||baidu.com^$third-party,ping
-||hm.baidu.com^$third-party
-||vk.com/rtrg$third-party
+||stand-with-ukraine.pp.ua^$~first-party
+||bam-x.com^$~first-party
+||moengage.com^$~first-party
+||baidu.com^$~first-party,ping
+||hm.baidu.com^$~first-party
+||vk.com/rtrg$~first-party
 
 ||1134555.com^
 ||1368999.com^
