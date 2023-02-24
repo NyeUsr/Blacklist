@@ -4,13 +4,16 @@
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
+2001:4860:4860::8844
+2001:4860:4860::8888
+8.8.4.4
+8.8.8.8
 ||.goog^
 ||.google^
 ||1e100.net^
-||8.8.4.4^
-||8.8.8.8^
 ||abc.xyz^
 ||about.google^
+||adgoogle.net^
 ||admob.com^
 ||adsense.com^
 ||adwords.com^
@@ -23,6 +26,7 @@
 ||angulardart.dev^
 ||app-measurement.com^
 ||appspot.com^
+||area120.com^
 ||autodraw.com^
 ||blog.google^
 ||blogblog.com^
@@ -85,6 +89,7 @@
 ||googlehosts.org^
 ||googlemail.com^
 ||googlemaps.com^
+||googleoptimize.com^
 ||googlescholar.com^
 ||googlesource.com^
 ||googlesyndication.com^
@@ -109,6 +114,7 @@
 ||kaggle.com^
 ||keep.new^
 ||keyhole.com^
+||kormo.com^
 ||load.com^
 ||loon.com^
 ||madewithcode.com^
@@ -127,7 +133,10 @@
 ||slide.new^
 ||slides.new^
 ||stackdriver.com^
+||statsgoogle.appsflyer.com^
+||staykeen.com^
 ||sustainability.google^
+||tangi.co^
 ||teachfromhome.google^
 ||tenor.com^
 ||tensorflow.org^
