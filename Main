@@ -29,7 +29,7 @@
 !-----------------------------------------------------------------------
 
 ! Include adblocker specific rules
-!#if (adguard)
+!#if (adguard && adguard_ext_safari)
 !#if adguard
 !#include Specific/AdGuard
 !#endif
