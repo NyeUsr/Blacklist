@@ -3,22 +3,22 @@
 ! Description: A multilingual blacklist of ads, trackers, annoyances, malware, IP grabbers, fake sites, tracking cookies, etc.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 61N-1563
-! Approximate amount of entries: 13.6K
+! Version: 62N-1563
+! Approximate amount of entries: 12.3K
 
-! Resources to help you better understand filter lists -----------------
-! Ublock Origin Static Filter Syntax                                   |
-! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax          |
-!                                                                      |
-! Ublock Origin Redirect Resources Library                             |
-! https://github.com/gorhill/uBlock/wiki/Resources-Library             |
-!                                                                      |
-! AdGuard Filter Syntaxes                                              |
-! https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters  |
-!                                                                      |
-! Adblock Plus Filter Syntaxes                                         |
-! https://help.eyeo.com/adblockplus/how-to-write-filters               |
-!-----------------------------------------------------------------------
+! Resources to help you better understand filter lists --------------
+! Ublock Origin Static Filter Syntax                                |
+! https://github.com/gorhill/uBlock/wiki/Static-filter-syntax       |
+!                                                                   |
+! Ublock Origin Redirect Resources Library                          |
+! https://github.com/gorhill/uBlock/wiki/Resources-Library          |
+!                                                                   |
+! AdGuard Filter Syntaxes                                           |
+! https://adguard.com/kb/general/ad-filtering/create-own-filters/   |
+!                                                                   |
+! Adblock Plus Filter Syntaxes                                      |
+! https://help.eyeo.com/adblockplus/how-to-write-filters            |
+!--------------------------------------------------------------------
 
 ! Notes ----------------------------------------------------------------
 ! uBo automatically converts 0.0.0.0 and 127.0.0.1 rules to a          |
@@ -45,257 +45,161 @@
 !#safari_cb_affinity(all)
 
 ! Local Domains
-!+ NOT_OPTIMIZED
 @@||192.168.*.$~third-party
-!+ NOT_OPTIMIZED
 @@||127.0.0.$~third-party
 
 ! Prevent breaking PDFs
-!+ NOT_OPTIMIZED
 @@/\.pdf$/$document
 
 ! Attempt to make sure bills can always be paid without issue
 ! Whitelist banks and third-party payment services
-!+ NOT_OPTIMIZED
 @@||fiserv.com^
-!+ NOT_OPTIMIZED
 @@||firstdata.com^
-!+ NOT_OPTIMIZED
 @@||credit.kohls.com^
-!+ NOT_OPTIMIZED
 @@||mysynchrony.com^
-!+ NOT_OPTIMIZED
 @@||synchronybank.com^
-!+ NOT_OPTIMIZED
 @@||synchrony.com^
-!+ NOT_OPTIMIZED
 @@||synchronycredit.com^
-!+ NOT_OPTIMIZED
 @@||syf.com^
-!+ NOT_OPTIMIZED
 @@||municipalonlinepayments.com^
-!+ NOT_OPTIMIZED
 @@||synchronysurvey.siteintercept.qualtrics.com^
-!+ NOT_OPTIMIZED
 @@||b2clogin.com^
-!+ NOT_OPTIMIZED
 @@||secureinternetbank.com^
-!+ NOT_OPTIMIZED
 @@||midamericanenergy.com^
-!+ NOT_OPTIMIZED
 @@||fidelity.com^
-!+ NOT_OPTIMIZED
 @@||current.com^
-!+ NOT_OPTIMIZED
 @@||chime.com^
-!+ NOT_OPTIMIZED
 @@||paymentech.net^
-!+ NOT_OPTIMIZED
 @@||jpmorgan.com^
-!+ NOT_OPTIMIZED
 @@||chase.com^
-!+ NOT_OPTIMIZED
 @@||chasecdn.com^
-!+ NOT_OPTIMIZED
 @@||bankofamerica.com^
-!+ NOT_OPTIMIZED
 @@||bac-assets.com^
-!+ NOT_OPTIMIZED
 @@||wellsfargo.com^
-!+ NOT_OPTIMIZED
 @@||wellsfargomedia.com^
-!+ NOT_OPTIMIZED
 @@||citi.com^
-!+ NOT_OPTIMIZED
 @@||goldmansachs.com^
-!+ NOT_OPTIMIZED
 @@||marcus.com^
-!+ NOT_OPTIMIZED
 @@||capitalone.com^
-!+ NOT_OPTIMIZED
 @@||usbank.com^
-!+ NOT_OPTIMIZED
 @@||mint.com^
-!+ NOT_OPTIMIZED
 @@||plugin.intuitcdn.net^
-!+ NOT_OPTIMIZED
 @@||windstream.com^
-!+ NOT_OPTIMIZED
 @@||gokinetic.com^
 
 ! Lead/redirect tracking - required for usability
 @@||events.release.narrativ.com^
-!+ NOT_OPTIMIZED
 @@||cj.dotomi.com
-!+ NOT_OPTIMIZED
 @@||tkqlhce.com^
-!+ NOT_OPTIMIZED
 @@||click.linksynergy.com^
-!+ NOT_OPTIMIZED
 @@||goto.americanexpress.com^
-!+ NOT_OPTIMIZED
 @@||goto.discover.com^
-!+ NOT_OPTIMIZED
 @@||refer.sofi.com^
-!+ NOT_OPTIMIZED
 @@||current.pxf.io^
-!+ NOT_OPTIMIZED
 @@||sable.pxf.io^
-!+ NOT_OPTIMIZED
 @@||ojrq.net^
-!+ NOT_OPTIMIZED
 @@||bridgetrack.com^
-!+ NOT_OPTIMIZED
 @@||apiservices.krxd.net^
-!+ NOT_OPTIMIZED
 @@||amazon.partners.tremorhub.com^
-!+ NOT_OPTIMIZED
 @@||refer.ccbill.com^
-!+ NOT_OPTIMIZED
 @@||link.swansonvitamins.com^
-!+ NOT_OPTIMIZED
 @@||onelink.me^
-!+ NOT_OPTIMIZED
 @@||clkuk.tradedoubler.com/click?*url(http
-!+ NOT_OPTIMIZED
 @@||redirects.tradedoubler.com/projectr/*_td_deeplink=http
-!+ NOT_OPTIMIZED
 @@||shareasale.com/r.cfm?
-!+ NOT_OPTIMIZED
 @@||shareasale-analytics.com/r.cfm?
 ! https://github.com/notracking/hosts-blocklists/issues/763
 ! https://github.com/nextdns/metadata/issues/988
-!+ NOT_OPTIMIZED
 @@||wl.spotify.com^$~third-party
 
 ! These Ads are opt-in and shouldn't be blocked
-!+ NOT_OPTIMIZED
 @@||ads.brave.com^
-!+ NOT_OPTIMIZED
 @@||ads-serve.brave.com^
-!+ NOT_OPTIMIZED
 @@||grant.rewards.brave.com^
-!+ NOT_OPTIMIZED
 @@||ads-static.brave.com^
 
 ! Required for some B&H functions to work
-!+ NOT_OPTIMIZED
 @@||mpsnare.iesnare.com^
 
 ! Breaks TikTok Login
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 log2.musical.ly$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 log2.musical.ly$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
 ||log2.musical.ly^$badfilter,important
 
 ! Local News Station - Blocked Under "Malware domains"
-!+ NOT_OPTIMIZED
 ||ksibradio.com^$badfilter,important
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 ksibradio.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 ksibradio.com$badfilter,important
 !#endif
 
 ! Fix Videos Not Loading (TVs, Paramount, NBC)
-!+ NOT_OPTIMIZED
 ||theplatform.com^$badfilter,important
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 theplatform.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 theplatform.com$badfilter,important
 !#endif
 
 ! Some Filters Incorrectly Block This - This Is The Link To Track Your Package
-!+ NOT_OPTIMIZED
 @@||fedex.com/Tracking
 
 ! Required to download music from some apps
-!+ NOT_OPTIMIZED
 @@||music.126.net^
 
 ! Delivers legit content
-!+ NOT_OPTIMIZED
 @@||cdn.tsyndicate.com^
 
 ! When blocked Hulu breaks
-!+ NOT_OPTIMIZED
 @@||ads-*-darwin.hulustream.com^
-!+ NOT_OPTIMIZED
 @@||http-*-darwin.hulustream.com^
 
 ! When blocked Direct TV breaks
-!+ NOT_OPTIMIZED
 @@||yospace-directv.akamaized.net^
-!+ NOT_OPTIMIZED
 @@-sponsored.dfw.vcdn.att-idns.net^
 
 ! If blocked it breaks DuckDuckGo's site
-!+ NOT_OPTIMIZED
 @@||duckduckgo.com/t/$stylesheet
 
 ! Unbreak paying for things on Ebay with PayPal
-!+ NOT_OPTIMIZED
 @@||paypal.com/webapps/helios/api/log?event=IC*$domain=pay.ebay.com
 
 ! Unbreak Delta Dental Login
-!+ NOT_OPTIMIZED
 @@||login-wsprod.deltadental.com^$~third-party,script
 
 ! Not ads, just trying to bait adblockers into breaking embeded content
-!+ NOT_OPTIMIZED
 @@||static-cdn.spot.im/production/conversation/*/ad-container-bundle.js
 
 ! Unbreak Apps Not Loading on Roku TV
-!+ NOT_OPTIMIZED
 @@||scribe.logs.roku.com^
 
 ! Anti adblock message
-!+ NOT_OPTIMIZED
 @@||pagead2.googlesyndication.com^$domain=crast.net
 
 ! Required for updates
-!+ NOT_OPTIMIZED
 @@||data.mistat.intl.xiaomi.com^
 
 ! CNAME *.sc.en25.com is blocked
-!+ NOT_OPTIMIZED
 @@||images.edu.imaginelearning.com^
 
 ! Just docs & status page, nothing else
-!+ NOT_OPTIMIZED
 @@||docs.bugsnag.com^
-!+ NOT_OPTIMIZED
 @@||status.bugsnag.com^
 
 ! Unblock to allow creation of BestBuy account
-!+ NOT_OPTIMIZED
 @@||tmx.bestbuy.com^
-!+ NOT_OPTIMIZED
 @@||dpm.demdex.net^
-!+ NOT_OPTIMIZED
 @@||bestbuy.demdex.net^
 
 ! Unbreak DRM management in TubiTV
-!+ NOT_OPTIMIZED
 @@||license.adrise.tv^
-!+ NOT_OPTIMIZED
 @@||uapi.adrise.tv^
 
 ! Never blocked queries, whitelist to allow easier filtering from logs
-!+ NOT_OPTIMIZED
 @@||tiktokv.com^
-!+ NOT_OPTIMIZED
 @@||tiktokcdn.com^
-!+ NOT_OPTIMIZED
 @@||ttlivecdn.com^
-!+ NOT_OPTIMIZED
 @@||tiktokcdn-us.com^
 
 ! Going to assume this URL doesn't change
@@ -303,53 +207,37 @@
 @@||mcpwgrxj4n94hv1pvdyqw0zwdxyq.device.marketingcloudapis.com^
 
 ! https://github.com/nextdns/metadata/issues/1006
-!+ NOT_OPTIMIZED
 @@||api.townsq.io^
 
 ! https://github.com/nextdns/metadata/issues/632
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 jumio.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 jumio.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 nv-sdk.jumio.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 nv-sdk.jumio.com$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
 ||jumio.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||nv-sdk.jumio.com^$badfilter,important
 
 ! https://github.com/nextdns/metadata/issues/638#issuecomment-823537069
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 r20.rs6.net$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 r20.rs6.net$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
 ||r20.rs6.net^$badfilter,important
 
 ! https://github.com/notracking/hosts-blocklists/issues/779
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 beacon.shazam.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 beacon.shazam.com$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
 ||beacon.shazam.com^$badfilter,important
 
 ! https://github.com/nextdns/metadata/issues/605
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 cl.exct.net$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 cl.exct.net$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
 ||cl.exct.net^$badfilter
 
 ! https://github.com/Cybo1927/Hosts/issues/84
@@ -358,668 +246,332 @@
 
 ! https://github.com/nextdns/metadata/issues/1043
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 s.youtube.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 s.youtube.com$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
 ||s.youtube.com$badfilter,important
 
 ! https://github.com/nextdns/metadata/issues/1058
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 0.0.0.0 learn.cisecurity.org$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 learn.cisecurity.org$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 cisecurity.org$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 cisecurity.org$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
 ||learn.cisecurity.org^$badfilter,important
-!+ NOT_OPTIMIZED
 ||cisecurity.org^$badfilter,important
 
 ! https://github.com/nextdns/metadata/issues/1061
-!+ NOT_OPTIMIZED
 @@||s3.ll.videorolls.row.aiv-cdn.net^
-!+ NOT_OPTIMIZED
 @@||s3-iad-ww.cf.videorolls.row.aiv^
 
 ! Unbreak some Google services
-!+ NOT_OPTIMIZED
 @@*/viewerimpressions$~third-party,domain=google.com
-!+ NOT_OPTIMIZED
 @@*/logImpressions$~third-party,domain=google.com
-!+ NOT_OPTIMIZED
 @@*/logstreamz$~third-party,domain=google.com
-!+ NOT_OPTIMIZED
 @@||youtube.com/api/stats/
-!+ NOT_OPTIMIZED
 @@||video.google.com/api/stats/
-!+ NOT_OPTIMIZED
 @@||youtube.com/ptracking
-!+ NOT_OPTIMIZED
 @@||youtube.com/youtubei/*/log_event
 
 ! Unbreak testing software used by schools
-!+ NOT_OPTIMIZED
 @@||kinesis.*.amazonaws.com^$domain=masteryconnect.com
 
 ! Unbreak referal links to Walmart
-!+ NOT_OPTIMIZED
 @@||goto-walmart-com.ct.impactradius.com^
 
 ! Unbreak some Snapchat features
-!+ NOT_OPTIMIZED
 @@||app-analytics-v*.snapchat.com^
 
 ! Info about Microsoft/Bing ads, not an adserver
-!+ NOT_OPTIMIZED
 @@||about.ads.microsoft.com^
 
 ! Fix mainly for ABP in Samsung Internet Browser - nothing here to block anyways
-!+ NOT_OPTIMIZED
 @@||my.nextdns.io^
 
-! Fix broken payments on imperiumpress.org
-!+ NOT_OPTIMIZED
-@@||js.stripe.com/v*/fingerprinted
-
 ! Uncategorized
-!+ NOT_OPTIMIZED
 @@||auth-*.tinypass.com^
-!+ NOT_OPTIMIZED
 @@||directory-prod.lb.ownlocal.com^
-!+ NOT_OPTIMIZED
 @@-www.cdn.advance.net^
-!+ NOT_OPTIMIZED
 @@||uid.mavencoalition.io^
-!+ NOT_OPTIMIZED
 @@||yandex.*/clck/$domain=kinopoisk.ru
-!+ NOT_OPTIMIZED
 @@||api-auth-mobile.hootsuite.com^
-!+ NOT_OPTIMIZED
 @@||2o7.net^$domain=totaljobs.com
-!+ NOT_OPTIMIZED
 @@||inmotion-hosting.evyy.net^$image,domain=techradar.com
-!+ NOT_OPTIMIZED
 @@||haberler.com^$image
-!+ NOT_OPTIMIZED
 @@||api.nextdns.io/configuration/*/analytics/*$domain=my.nextdns.io
-!+ NOT_OPTIMIZED
 @@||api.emsicc.com/sites/*
-!+ NOT_OPTIMIZED
 @@||static.hotjar.com/$domain=emsicc.com
-!+ NOT_OPTIMIZED
 @@||pandora.com/web-version/*/ads.json?
-!+ NOT_OPTIMIZED
 @@||external-preview.redd.it/*.gif
-!+ NOT_OPTIMIZED
 @@||dailycaller.com/files/images/1x1.trans.gif^$image
-!+ NOT_OPTIMIZED
 @@||pandora.com/web-client-assets/d_*.
-!+ NOT_OPTIMIZED
 @@||pandora.com/*/adserver
-!+ NOT_OPTIMIZED
 @@||content-images.p-cdn.com/images^$image
-!+ NOT_OPTIMIZED
 @@||maps.gstatic.com^$image
-!+ NOT_OPTIMIZED
 @@||zdnet.com^$generichide
-!+ NOT_OPTIMIZED
 @@||kershaw.kaiusa.com^$generichide
-!+ NOT_OPTIMIZED
 @@||youtube.com$generichide
-!+ NOT_OPTIMIZED
 @@||duckduckgo.com$generichide
-!+ NOT_OPTIMIZED
 @@||foxnews.com$generichide
-!+ NOT_OPTIMIZED
 @@||sfgate.com^$generichide
-!+ NOT_OPTIMIZED
 @@||github.com$generichide
-!+ NOT_OPTIMIZED
 @@||niagarawater.com^$generichide
 
 ! Prevent commonly censored domains from being blocked
 
 !#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 globalresearch.ca$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.globalresearch.ca$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 globalresearch.ca$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.globalresearch.ca$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 globalresearch.ca$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.globalresearch.ca$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.globalresearch.ca/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.globalresearch.ca^$badfilter,important
-!+ NOT_OPTIMIZED
-||globalresearch.ca^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 americanmilitarynews.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.americanmilitarynews.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 americanmilitarynews.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.americanmilitarynews.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 americanmilitarynews.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.americanmilitarynews.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.americanmilitarynews.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.americanmilitarynews.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||americanmilitarynews.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 newsmax.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.newsmax.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 newsmax.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.newsmax.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 newsmax.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.newsmax.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.newsmax.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.newsmax.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||newsmax.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 newsbusters.org$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.newsbusters.org$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 newsbusters.org$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.newsbusters.org$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 newsbusters.org$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.newsbusters.org$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.newsbusters.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.newsbusters.org^$badfilter,important
-!+ NOT_OPTIMIZED
-||newsbusters.org^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 projectveritas.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.projectveritas.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 projectveritas.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.projectveritas.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 projectveritas.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.projectveritas.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.projectveritas.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.projectveritas.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||projectveritas.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 zerohedge.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.zerohedge.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 zerohedge.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.zerohedge.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 zerohedge.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.zerohedge.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.zerohedge.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.zerohedge.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||zerohedge.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 breitbart.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.breitbart.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 breitbart.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.breitbart.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 breitbart.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.breitbart.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.breitbart.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.breitbart.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||breitbart.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 thegatewaypundit.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.thegatewaypundit.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 thegatewaypundit.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.thegatewaypundit.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 thegatewaypundit.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.thegatewaypundit.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.thegatewaypundit.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.thegatewaypundit.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||thegatewaypundit.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 theblaze.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.theblaze.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 theblaze.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.theblaze.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 theblaze.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.theblaze.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.theblaze.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.theblaze.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||theblaze.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 redstate.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.redstate.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 redstate.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.redstate.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 redstate.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.redstate.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.redstate.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
-||www.redstate.com^$badfilter,important
-!+ NOT_OPTIMIZED
-||redstate.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
 127.0.0.1 infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 www.infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 www.infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 www.infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 127.0.0.1 tv.infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 0.0.0.0 tv.infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 ::1 tv.infowars.com$badfilter,important
-!+ NOT_OPTIMIZED
 *://*.infowars.com/*$badfilter,important
+127.0.0.1 bizpacreview.com$badfilter,important
+127.0.0.1 www.bizpacreview.com$badfilter,important
+0.0.0.0 bizpacreview.com$badfilter,important
+0.0.0.0 www.bizpacreview.com$badfilter,important
+::1 bizpacreview.com$badfilter,important
+::1 www.bizpacreview.com$badfilter,important
+*://*.bizpacreview.com/*$badfilter,important
+127.0.0.1 revolver.news$badfilter,important
+127.0.0.1 www.revolver.news$badfilter,important
+0.0.0.0 revolver.news$badfilter,important
+0.0.0.0 www.revolver.news$badfilter,important
+::1 revolver.news$badfilter,important
+::1 www.revolver.news$badfilter,important
+*://*.revolver.news/*$badfilter,important
+127.0.0.1 lifesitenews.com$badfilter,important
+127.0.0.1 www.lifesitenews.com$badfilter,important
+0.0.0.0 lifesitenews.com$badfilter,important
+0.0.0.0 www.lifesitenews.com$badfilter,important
+::1 lifesitenews.com$badfilter,important
+::1 www.lifesitenews.com$badfilter,important
+*://*.lifesitenews.com/*$badfilter,important
+127.0.0.1 gab.com$badfilter,important
+127.0.0.1 gabpay.live$badfilter,important
+0.0.0.0 gab.com$badfilter,important
+0.0.0.0 gabpay.live$badfilter,important
+::1 gab.com$badfilter,important
+::1 gabpay.live$badfilter,important
+*://*.gab.com/*$badfilter,important
+*://*.gabpay.live/*$badfilter,important
+127.0.0.1 dailystormer.in$badfilter,important
+0.0.0.0 dailystormer.in$badfilter,important
+::1 dailystormer.in$badfilter,important
+*://*.dailystormer.in/*$badfilter,important
+127.0.0.1 freespeech.group$badfilter,important
+0.0.0.0 freespeech.group$badfilter,important
+::1 freespeech.group$badfilter,important
+*://*.freespeech.group/*$badfilter,important
+127.0.0.1 www.ar15.com$badfilter,important
+0.0.0.0 www.ar15.com$badfilter,important
+::1 www.ar15.com$badfilter,important
+*://*.ar15.com/*$badfilter,important
+127.0.0.1 rumble.com$badfilter,important
+0.0.0.0 rumble.com$badfilter,important
+::1 rumble.com$badfilter,important
+*://*.rumble.com/*$badfilter,important
+127.0.0.1 chuckbaldwinlive.com$badfilter,important
+0.0.0.0 chuckbaldwinlive.com$badfilter,important
+::1 chuckbaldwinlive.com$badfilter,important
+*://*.chuckbaldwinlive.com/*$badfilter,important
+127.0.0.1 libertyfellowshipmt.com$badfilter,important
+0.0.0.0 libertyfellowshipmt.com$badfilter,important
+::1 libertyfellowshipmt.com$badfilter,important
+*://*.libertyfellowshipmt.com/*$badfilter,important
+127.0.0.1 jgminternational.org$badfilter,important
+127.0.0.1 www.jgminternational.org$badfilter,important
+0.0.0.0 jgminternational.org$badfilter,important
+0.0.0.0 www.jgminternational.org$badfilter,important
+::1 jgminternational.org$badfilter,important
+::1 www.jgminternational.org$badfilter,important
+*://*.jgminternational.org/*$badfilter,important
+127.0.0.1 prophecyclub.sermon.net$badfilter,important
+0.0.0.0 prophecyclub.sermon.net$badfilter,important
+::1 prophecyclub.sermon.net$badfilter,important
+*://*.prophecyclub.sermon.net/*$badfilter,important
+127.0.0.1 prophecyclub.com$badfilter,important
+127.0.0.1 www.prophecyclub.com$badfilter,important
+0.0.0.0 prophecyclub.com$badfilter,important
+0.0.0.0 www.prophecyclub.com$badfilter,important
+::1 prophecyclub.com$badfilter,important
+::1 www.prophecyclub.com$badfilter,important
+*://*.prophecyclub.com/*$badfilter,important
+127.0.0.1 watchprophecyclub.com$badfilter,important
+127.0.0.1 www.watchprophecyclub.com$badfilter,important
+0.0.0.0 watchprophecyclub.com$badfilter,important
+0.0.0.0 www.watchprophecyclub.com$badfilter,important
+::1 watchprophecyclub.com$badfilter,important
+::1 www.watchprophecyclub.com$badfilter,important
+*://*.watchprophecyclub.com/*$badfilter,important
+127.0.0.1 qintel.pro$badfilter,important
+0.0.0.0 qintel.pro$badfilter,important
+::1 qintel.pro$badfilter,important
+*://*.qintel.pro/*$badfilter,important
+127.0.0.1 stormfront.org$badfilter,important
+127.0.0.1 www.stormfront.org$badfilter,important
+0.0.0.0 stormfront.org$badfilter,important
+0.0.0.0 www.stormfront.org$badfilter,important
+::1 stormfront.org$badfilter,important
+::1 www.stormfront.org$badfilter,important
+*://*.stormfront.org/*$badfilter,important
+127.0.0.1 americannaziparty.com$badfilter,important
+127.0.0.1 www.americannaziparty.com$badfilter,important
+0.0.0.0 americannaziparty.com$badfilter,important
+0.0.0.0 www.americannaziparty.com$badfilter,important
+::1 americannaziparty.com$badfilter,important
+::1 www.americannaziparty.com$badfilter,important
+*://*.americannaziparty.com/*$badfilter,important
+127.0.0.1 petersantilli.com$badfilter,important
+0.0.0.0 petersantilli.com$badfilter,important
+::1 petersantilli.com$badfilter,important
+*://*.petersantilli.com/*$badfilter,important
+127.0.0.1 citizensforresponsiblesolar.org$badfilter,important
+127.0.0.1 www.citizensforresponsiblesolar.org$badfilter,important
+0.0.0.0 citizensforresponsiblesolar.org$badfilter,important
+0.0.0.0 www.citizensforresponsiblesolar.org$badfilter,important
+::1 citizensforresponsiblesolar.org$badfilter,important
+::1 www.citizensforresponsiblesolar.org$badfilter,important
+*://*.citizensforresponsiblesolar.org/*$badfilter,important
+127.0.0.1 toresays.com$badfilter,important
+0.0.0.0 toresays.com$badfilter,important
+::1 toresays.com$badfilter,important
+*://*.toresays.com/*$badfilter,important
+127.0.0.1 toresaid.com$badfilter,important
+0.0.0.0 toresaid.com$badfilter,important
+::1 toresaid.com$badfilter,important
+*://*.toresaid.com/*$badfilter,important
 !#endif
-!+ NOT_OPTIMIZED
+||www.globalresearch.ca^$badfilter,important
+||globalresearch.ca^$badfilter,important
+||www.americanmilitarynews.com^$badfilter,important
+||americanmilitarynews.com^$badfilter,important
+||www.newsmax.com^$badfilter,important
+||newsmax.com^$badfilter,important
+||www.newsbusters.org^$badfilter,important
+||newsbusters.org^$badfilter,important
+||www.projectveritas.com^$badfilter,important
+||projectveritas.com^$badfilter,important
+||www.zerohedge.com^$badfilter,important
+||zerohedge.com^$badfilter,important
+||www.breitbart.com^$badfilter,important
+||breitbart.com^$badfilter,important
+||www.thegatewaypundit.com^$badfilter,important
+||thegatewaypundit.com^$badfilter,important
+||www.theblaze.com^$badfilter,important
+||theblaze.com^$badfilter,important
+||www.redstate.com^$badfilter,important
+||redstate.com^$badfilter,important
 ||www.infowars.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||infowars.com^$badfilter,important
 ||tv.infowars.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 bizpacreview.com$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.bizpacreview.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 bizpacreview.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.bizpacreview.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 bizpacreview.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.bizpacreview.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.bizpacreview.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.bizpacreview.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||bizpacreview.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 revolver.news$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.revolver.news$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 revolver.news$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.revolver.news$badfilter,important
-!+ NOT_OPTIMIZED
-::1 revolver.news$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.revolver.news$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.revolver.news/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.revolver.news^$badfilter,important
-!+ NOT_OPTIMIZED
 ||revolver.news^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 lifesitenews.com$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.lifesitenews.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 lifesitenews.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.lifesitenews.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 lifesitenews.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.lifesitenews.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.lifesitenews.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.lifesitenews.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||lifesitenews.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 gab.com$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 gabpay.live$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 gab.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 gabpay.live$badfilter,important
-!+ NOT_OPTIMIZED
-::1 gab.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 gabpay.live$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.gab.com/*$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.gabpay.live/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||gab.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||gabpay.live^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 dailystormer.in$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 dailystormer.in$badfilter,important
-!+ NOT_OPTIMIZED
-::1 dailystormer.in$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.dailystormer.in/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||dailystormer.in^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 freespeech.group$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 freespeech.group$badfilter,important
-!+ NOT_OPTIMIZED
-::1 freespeech.group$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.freespeech.group/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||freespeech.group^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 www.ar15.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.ar15.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.ar15.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.ar15.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||ar15.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||www.ar15.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 rumble.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 rumble.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 rumble.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.rumble.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||rumble.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 chuckbaldwinlive.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 chuckbaldwinlive.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 chuckbaldwinlive.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.chuckbaldwinlive.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||chuckbaldwinlive.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 libertyfellowshipmt.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 libertyfellowshipmt.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 libertyfellowshipmt.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.libertyfellowshipmt.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||libertyfellowshipmt.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 jgminternational.org$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.jgminternational.org$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 jgminternational.org$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.jgminternational.org$badfilter,important
-!+ NOT_OPTIMIZED
-::1 jgminternational.org$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.jgminternational.org$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.jgminternational.org/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.jgminternational.org^$badfilter,important
-!+ NOT_OPTIMIZED
 ||jgminternational.org^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 prophecyclub.sermon.net$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 prophecyclub.sermon.net$badfilter,important
-!+ NOT_OPTIMIZED
-::1 prophecyclub.sermon.net$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.prophecyclub.sermon.net/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||prophecyclub.sermon.net^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 prophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.prophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 prophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.prophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 prophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.prophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.prophecyclub.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.prophecyclub.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||prophecyclub.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 watchprophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.watchprophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 watchprophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.watchprophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 watchprophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.watchprophecyclub.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.watchprophecyclub.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.watchprophecyclub.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||watchprophecyclub.com^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 qintel.pro$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 qintel.pro$badfilter,important
-!+ NOT_OPTIMIZED
-::1 qintel.pro$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.qintel.pro/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||qintel.pro^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 stormfront.org$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.stormfront.org$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 stormfront.org$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.stormfront.org$badfilter,important
-!+ NOT_OPTIMIZED
-::1 stormfront.org$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.stormfront.org$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.stormfront.org/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.stormfront.org^$badfilter,important
-!+ NOT_OPTIMIZED
 ||stormfront.org^$badfilter,important
-
-!#if !ext_ublock
-!+ NOT_OPTIMIZED
-127.0.0.1 americannaziparty.com$badfilter,important
-!+ NOT_OPTIMIZED
-127.0.0.1 www.americannaziparty.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 americannaziparty.com$badfilter,important
-!+ NOT_OPTIMIZED
-0.0.0.0 www.americannaziparty.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 americannaziparty.com$badfilter,important
-!+ NOT_OPTIMIZED
-::1 www.americannaziparty.com$badfilter,important
-!+ NOT_OPTIMIZED
-*://*.americannaziparty.com/*$badfilter,important
-!#endif
-!+ NOT_OPTIMIZED
 ||www.americannaziparty.com^$badfilter,important
-!+ NOT_OPTIMIZED
 ||americannaziparty.com^$badfilter,important
+||petersantilli.com^$badfilter,important
+||www.citizensforresponsiblesolar.org^$badfilter,important
+||citizensforresponsiblesolar.org^$badfilter,important
+||toresays.com^$badfilter,important
+||toresaid.com^$badfilter,important
 
 !#safari_cb_affinity
 
@@ -1173,6 +725,7 @@ http://twitcount.com$~first-party
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$~first-party
 
 ! Third-party
+||analytics.google.com^$~first-party
 ||stand-with-ukraine.pp.ua^$~first-party
 ||bam-x.com^$~first-party
 ||moengage.com^$~first-party
@@ -1391,6 +944,9 @@ http://twitcount.com$~first-party
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||pixel.wp.com^
+||analytics-tcp.mintegral.net^
+||plausible.safing.io^
 ||0.moikrug.ru^
 ||000free.us^
 ||00fun.com^
@@ -11093,6 +10649,7 @@ http://twitcount.com$~first-party
 ||zzhengre.com^
 ||zzword.com^
 
+||info.vercel.com/trk
 ||yandex.*/ads/
 ||raw.githubusercontent.com/*/StandWithUkraine/*.svg
 ||rawcdn.githack.com/*/StandWithUkraine/*.svg
@@ -11150,7 +10707,7 @@ http://twitcount.com$~first-party
 ||coccoc.com/log
 ||o2.pl/*/adPlaceholder.png
 ||localgxp.gamexp.com
-||js.stripe.com/*/fingerprinted/
+||js.stripe.com/*/fingerprinted/$domain=~imperiumpress.org
 ||pelcro.com/*/analytics/
 ||phoenixnewtimes.com/ads/
 ||duba.com/*/ad/
@@ -11905,8 +11462,8 @@ ext.track.scripts*
 /browserfp.min.js
 /sk-logabpstatus.php
 /px.js?ch=
-/fingerprint2.js
-/fingerprintjs2
+/fingerprint2.js$script,redirect=fingerprint2.js
+/fingerprintjs2$script,redirect=fingerprint2.js
 /cookie-prompt
 /geo/get
 */public/ads/
@@ -12074,7 +11631,7 @@ ext.track.scripts*
 /fingerprint/figp.js
 /smeadvert-intermediate-ad.js
 /fp.min.jsp
-/fingerprint2.min.js
+/fingerprint2.min.js$script,redirect=fingerprint2.js
 /bsredirect5.js
 /ad.js$~first-party
 /wp-content/plugins/sorry-adblocker/js/sab.js$script
@@ -12444,11 +12001,23 @@ bromite.org##.ribbon-ua
 lifesitenews.com##.art-share-nav, .lsn-petitions
 androidauthority.com##[class*="-__2b"]:has-text(Join our most passionate readers)
 mapquest.com##div.adWrapper, .infosheet-sponsored-topics, .mq-bizLocs-container
+petersantilli.com##.main-header > .container-wrapper > .af-flex-container.af-container-row
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
 ##[href="https://stand-with-ukraine.pp.ua/"]
+##[class*="-adlabel"]:not(html, body, button, input)
+##[id*="golin-"]:not(html, body, button, input)
+###cookies-approval-popup-inner:not(html, body, button, input)
+##.fancybox-overlay-fixed.fancybox-overlay:not(html, body, button, input)
+##div.adBanner--outer:not(html, body, button, input)
+##.full.adBanner:not(html, body, button, input)
+##.belowMastheadChannel.belowMastheadWrapper:not(html, body, button, input)
+###cookie-consent:not(html, body, button, input)
+##.cookie-notic:not(html, body, button, input)
+##.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window:not(html, body, button, input)
+##.adsbyvli:not(html, body, button, input)
 ##.ad-leaderboard-flex:not(html, body, button, input)
 ##.js-cet-unit-top-ad:not(html, body, button, input)
 ##.top-ad-recirc:not(html, body, button, input)

@@ -16,9 +16,6 @@
 @@||classroom.google.com^$stealth
 @@||googleapis.com^$stealth
 @@||kamiaccessfiles.com^$stealth
-@@||accounts.google.com^
-@@||accounts.youtube.com^
-@@||myaccount.google.com^
 @@||nextdns.io^$stealth
 @@||login.bitdefender.com^$stealth
 @@||fidelity.com^$stealth
@@ -46,19 +43,13 @@ $$script[tag-content="detectAdBlock1"]
 $$script[tag-content="detectAdBlockAll"]
 $$script[tag-content="exdynsrv.com"]
 $$script[tag-content="window['gtag']"]
-$$script[tag-content="'clickTrackerInit',"]
-$$script[tag-content="'adblockTracker',"]
 $$script[tag-content="juicyads.rocks"]
 $$script[tag-content=".isAdblock"]
-$$script[tag-content="adver('preroll',"]
-$$script[tag-content="adver('interstitial', "]
 $$script[tag-content="analytics.plugins."]
 $$script[tag-content="vads.viewport_width"]
-$$script[tag-content="NREUM.info={"beacon"]
 $$script[tag-content="InterstitialTsAd"]
 $$script[tag-content="screen.pixelDepth"]
 $$script[tag-content="ad_popup_force"]
-$$script[tag-content="var PREROLL_SCROLL_DOWN_URL"]
 $$script[tag-content="EmbeddedAdsDuration"]
 $$script[tag-content="window.open(url, "", windowprops);"]
 $$script[tag-content="var ad_idzone"]
@@ -97,7 +88,7 @@ $$script[tag-content="PopUnder"]
 $$script[tag-content="zfgloaded"]
 $$script[tag-content="AntiAdblock"]
 $$script[tag-content="adblock.html"]
-$$script[tag-content="You're using an AdBlocker"]
+$$script[tag-content="You\'re using an AdBlocker"]
 $$script[src="popads.net"]
 $$script[src="tsyndicate.com"]
 $$script[wildcard="*const pop*'pop',*url: '*"]
@@ -147,6 +138,28 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href="https://stand-with-ukraine.pp.ua/"]
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="-adlabel"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[id*="golin-"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###cookies-approval-popup-inner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.fancybox-overlay-fixed.fancybox-overlay:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##div.adBanner--outer:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.full.adBanner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.belowMastheadChannel.belowMastheadWrapper:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###cookie-consent:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookie-notic:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.adsbyvli:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad-leaderboard-flex:not(html, body, button, input)
 !+ NOT_OPTIMIZED

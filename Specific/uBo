@@ -1,7 +1,3 @@
-! Disable FLOC by default in Chromium browsers
-!#if env_chromium
-*##+js(no-floc)
-
 ! Remove attribute
 *##+js(ra, ping, stay)
 *##+js(ra, real-href, stay)
@@ -18,27 +14,19 @@
 *##+js(ra, rel, link[rel*="subresource"], stay)
 *##+js(ra, rel, link[rel*="prev"], stay)
 
-!#endif
-
 ! HTML/script filtering (Firefox 57+)
 !#if env_firefox
 *##^script:has-text(detectAdBlock1)
 *##^script:has-text(detectAdBlockAll)
 *##^script:has-text(exdynsrv.com)
 *##^script:has-text(window['gtag'])
-*##^script:has-text('clickTrackerInit',)
-*##^script:has-text('adblockTracker',)
 *##^script:has-text(juicyads.rocks)
 *##^script:has-text(.isAdblock)
-*##^script:has-text(adver('preroll',)
-*##^script:has-text(adver('interstitial', )
 *##^script:has-text(analytics.plugins.)
 *##^script:has-text(vads.viewport_width)
-*##^script:has-text(NREUM.info={"beacon)
 *##^script:has-text(InterstitialTsAd)
 *##^script:has-text(screen.pixelDepth)
 *##^script:has-text(ad_popup_force)
-*##^script:has-text(var PREROLL_SCROLL_DOWN_URL)
 *##^script:has-text(EmbeddedAdsDuration)
 *##^script:has-text(window.open(url, "", windowprops);)
 *##^script:has-text(var ad_idzone)
@@ -77,99 +65,21 @@
 *##^script:has-text(zfgloaded)
 *##^script:has-text(AntiAdblock)
 *##^script:has-text(adblock.html)
-*##^script:has-text(You're using an AdBlocker)
+*##^script:has-text(You\'re using an AdBlocker)
 !#endif
 
 !----------------------------
 ! Important from uBo filters |
 !----------------------------
-||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js
-||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js
-||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js
-||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js
-||googletagmanager.com/gtm.js$script,redirect=googletagmanager.com/gtm.js
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js
-||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices_gpt.js
-||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch.com/beacon.js
+||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
+||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
+||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js:5
+||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js:5
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js:5
+||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices_gpt.js:5
+||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch.com/beacon.js:5
 ||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js
-||widgets.outbrain.com/outbrain.js$script,redirect=widgets.outbrain.com/outbrain.js
+||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js:5
+||amazon-adsystem.com/aax2/amzn_ads.js$script,redirect=amazon-adsystem.com/aax2/amzn_ads.js
+||amazon-adsystem.com/*/apstag.js$script,redirect-rule=amazon_apstag.js
 !-----------------------------
-
-! click2load
-!||youtube.com^$frame,redirect=click2load.html,third-party,domain=~google.com|~duckudckgo.com
-!||embedly.com^$frame,redirect=click2load.html
-
-! Warn user about IP grabing links
-*##a[href*="grabify.link/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="bmwforum.co/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="leancoding.co/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="spottyfly.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="stopify.co/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="yoütu.be/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="discörd.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="minecräft.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="freegiftcards.co/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="disçordapp.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="quickmessage.us/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="fortnight.space/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="fortnitechat.site/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="youshouldclick.us/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="joinmy.site/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="crabrave.pw/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="ajc1.cn/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="hwhssc.cn/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="mjzssc.cn/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="catsnthing.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="lovebird.guru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="trulove.guru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="dateing.club/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="otherhalf.life/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="shrekis.life/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="datasig.io/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="datauth.io/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="headshot.monster/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="gaming-at-my.best/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="progaming.monster/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="yourmy.monster/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="screenshare.host/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="imageshare.best/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="screenshot.best/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="gamingfun.me/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="catsnthings.fun/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="curiouscat.club/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="rëddït.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="särahah.eu/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="särahah.pl/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="alanlindsay.net/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="asianrbtrade.net/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="iplogger.org/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="iplogger.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="iplogger.ru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="2no.co/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="yip.su/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="mapper.info/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="ezstat.ru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="02ip.ru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="iplo.ru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="iplis.ru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="iplogger.info/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="ipgrabber.ru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="ipgraber.ru/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="skypegrab.net/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="booter.icu/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="gyazo.nl/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="yȯutube.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="linkify.me/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="bitly-bot.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="adfly-bot.online/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="grabify.icu/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="blasze.tk/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="blasze.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="ikwyd.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="ps3cfw.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="postimage.co/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="spötify.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="quickmessage.io/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="yoütübe.co/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="yoütübe.com/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
-*##a[href*="mypic.icu/"]:before:style(content: "WARNING: This link has been identified as an IP grabber : " !important; color: #E6000D !important; visibility: visible)
