@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 63N-1563
+! Version: 64N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -654,6 +654,9 @@ http://twitcount.com$3p
 ?zoneid=$popup
 !#endif
 
+||dorogokupimnoutbuk.online^$popup,popunder
+||cdsmart-dt.com^$popup,popunder
+||traffichunt.com^$popup,popunder
 ||servgeorg.com^$popup,popunder
 ||bravetense.com^$popup,popunder
 ||awpya.com^$popup,popunder
@@ -683,6 +686,7 @@ http://twitcount.com$3p
 ||mybetterck.com^$popup,popunder
 ||tumultmarten.com^$popup,popunder
 ||nimrute.com^$popup,popunder
+||syndication.realsrv.com/splash.php?$popup,popunder
 ||americascardroom.eu/ads/$popup,popunder
 %3DPOPUNDER$popup,popunder
 
@@ -920,6 +924,36 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||fouanalytics.com^
+||midas-tracker.hellay.net^
+||pushadvert.bid^
+||qa24ljic4i.com^
+||utubepwhml.com^
+||34e224a3bf.com^
+||dorogokupimnoutbuk.online^
+||cdsmart-dt.com^
+||prosecutionsocktrap.com^
+||txzaazmdhtw.com^
+||1redird.com^
+||yqmxfz.com^
+||fchay.top^
+||epilepsy-brain-mind2014.eu^
+||adsexo.com^
+||adsxyz.com^
+||562i7aqkxu.com^
+||xxxtraffcdn.com^
+||rtbsuperhub.com^
+||nonotro.name^
+||mndsrv.com^
+||mothersleep.com^
+||sb89347.com^
+||ajjtfysen.com^
+||yzqjaltdhlv.com^
+||aphycolourses.info^
+||godpvqnszo.com^
+||ssqyuvavse.com^
+||xwqvytuiko.com^
+||profitablegatetocontent.com^
 ||pixel.wp.com^
 ||analytics-tcp.mintegral.net^
 ||plausible.safing.io^
@@ -11974,6 +12008,12 @@ lifesitenews.com##.art-share-nav, .lsn-petitions
 androidauthority.com##[class*="-__2b"]:has-text(Join our most passionate readers)
 mapquest.com##div.adWrapper, .infosheet-sponsored-topics, .mq-bizLocs-container
 petersantilli.com##.main-header > .container-wrapper > .af-flex-container.af-container-row
+techacrobat.com##[class*="adblock"]:upward(5)
+nypost.com##.nyp-zephr-flyout--left, .nyp-zephr-flyout, .recirc--enabled.recirc--trending, .d-block-lg.d-none.billboard-overlay
+nypost.com##.inline-module__inner:has-text(More On:)
+nypost.com##.comments-inline-cta:has-text(What do you think?)
+nationalfile.com##.jnews_inline_related_post
+nationalfile.com##[href*="http:"]
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
