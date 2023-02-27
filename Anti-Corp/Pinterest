@@ -1,0 +1,14 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Pinterest
+! Description: Block all known Pinterest domains as well as block any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+||curator.co^
+||instapaper.com^
+||pin.it^
+||pinimg.com^
+||pinterest.*^
+||theyes.com^
+||vochi.app^
+||vochi.com^
