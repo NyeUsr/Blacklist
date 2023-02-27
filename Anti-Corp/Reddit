@@ -1,0 +1,11 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Reddit
+! Description: Block all known connections to Reddit as well as block any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+||redd.it^
+||reddit.com^
+||reddit.map.fastly.net^
+||redditmedia.com^
+||redditstatic.com^
