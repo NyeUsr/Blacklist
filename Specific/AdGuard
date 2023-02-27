@@ -108,7 +108,7 @@ $$noscript[tag-content="exosrv"]
 amiunique.org$cookie=AmIUniqueId;maxAge=43200
 
 ! Google cookies on third-party sites only last 3 days
-google.$third-party,cookie=/.+/;maxAge=4320,domain=~youtube.com|~accounts.google.com
+google.$3p,cookie=/.+/;maxAge=4320,domain=~youtube.com|~accounts.google.com
 
 ! These cookies track all around the web
 youtube.com$cookie=/.+/;samesite=strict,domain=~accounts.google.com|~google.com|~youtube.com
