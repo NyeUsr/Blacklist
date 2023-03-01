@@ -77,7 +77,6 @@
 ||goo.gl^
 ||googl.com^
 ||google-analytics.com^
-||google-public-dns-*.google.com^
 ||google.*^
 ||googleadservices.com^
 ||googleapis.com^
@@ -221,14 +220,12 @@ search.brave.com##.snippet:has-text(get.app)
 search.brave.com##.snippet:has-text(get.dev)
 search.brave.com##.snippet:has-text(get.page)
 search.brave.com##.snippet:has-text(getmdl.io)
-search.brave.com##.snippet:has-text(ggpht.com)
 search.brave.com##.snippet:has-text(global-dealer-ssl.spotify.com)
 search.brave.com##.snippet:has-text(gmail.com)
 search.brave.com##.snippet:has-text(goo.gl)
 search.brave.com##.snippet:has-text(googl.com)
 search.brave.com##.snippet:has-text(google-analytics.com)
 search.brave.com##.snippet:has-text(googleadservices.com)
-search.brave.com##.snippet:has-text(googleapis.com)
 search.brave.com##.snippet:has-text(googleapps.com)
 search.brave.com##.snippet:has-text(googleblog.com)
 search.brave.com##.snippet:has-text(googledrive.com)
