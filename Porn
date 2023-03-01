@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 22-Alpha
+! Version: 23-Alpha
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -16,16 +16,16 @@
 ! 𝘍𝘰𝘳 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘣𝘰𝘶𝘨𝘩𝘵 𝘸𝘪𝘵𝘩 𝘢 𝘨𝘳𝘦𝘢𝘵 𝘱𝘳𝘪𝘤𝘦. 𝘎𝘭𝘰𝘳𝘪𝘧𝘺 𝘢𝘯𝘥 𝘣𝘦𝘢𝘳 𝘎𝘰𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳 𝘣𝘰𝘥𝘺.
 ! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
 
-/(xnxx|xvideo|porn|-xxx|xxx-|freexxx|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube|sissy).+\./
-/(cams|txxx|pornstar|pornstars|watchporn|sex)\..+/
+/(xnxx|xvideo|porn|-xxx|xxx-|freexxx|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|livesex|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube|sissy|rule34|fetish|mature|webcams|hentai).+\./
+/(cams|txxx|pornstar|pornstars|watchporn|erotic|porno|boobs|tits|pussy|vagina|dick|penis|masturbation|bondage|gangbang|swinger|orgy|threesome|blowjob|handjob|cumshot|facial|squirting|bukkake|barely legal)\..+/
 /^https?:\/\/.+\.(sexy|xxx|porn)\//
 /^(porn|xxx)[a-z0-9]{3,}\..{2,}/
 /^[a-z0-9]{3,}(porn|xxx)\..{2,}/
 /porn[0-9]{1,3}\.com/
 /[0-9]{1,3}porn\.com/
 
-*onlyfans
-*/thots/$document
+*onlyfans*$doc
+*/thots/$doc
 
 youjizz.sex
 hotixsexy.com
