@@ -14,3 +14,13 @@
 ||netflixanimation.com^
 ||nflxext.com^
 ||storybots.com^
+
+search.brave.com##.snippet:has-text(abqstudios.com)
+search.brave.com##.snippet:has-text(dvd.com)
+search.brave.com##.snippet:has-text(fast.com)
+search.brave.com##.snippet:has-text(millarworld.tv)
+search.brave.com##.snippet:has-text(netflix.co.uk)
+search.brave.com##.snippet:has-text(netflix.com)
+search.brave.com##.snippet:has-text(netflix.net)
+search.brave.com##.snippet:has-text(netflixanimation.com)
+search.brave.com##.snippet:has-text(storybots.com)

@@ -16,3 +16,16 @@
 ||webselenese.com^
 ||wizcase.com^
 ||zenmate.com^
+
+search.brave.com##.snippet:has-text(ajillion.com)
+search.brave.com##.snippet:has-text(cyberghostvpn.com)
+search.brave.com##.snippet:has-text(definitimedia.com)
+search.brave.com##.snippet:has-text(driveragent.com)
+search.brave.com##.snippet:has-text(expressvpn.com)
+search.brave.com##.snippet:has-text(intego.com)
+search.brave.com##.snippet:has-text(privateinternetaccess.com)
+search.brave.com##.snippet:has-text(reimageplus.com)
+search.brave.com##.snippet:has-text(vpnmentor.com)
+search.brave.com##.snippet:has-text(webselenese.com)
+search.brave.com##.snippet:has-text(wizcase.com)
+search.brave.com##.snippet:has-text(zenmate.com)

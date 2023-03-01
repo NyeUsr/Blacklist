@@ -9,3 +9,11 @@
 ||reddit.map.fastly.net^
 ||redditmedia.com^
 ||redditstatic.com^
+
+##.jeg_btn-reddit
+##.jeg_reddit
+
+search.brave.com##.snippet:has-text(redd.it)
+search.brave.com##.snippet:has-text(reddit.com)
+search.brave.com##.snippet:has-text(redditmedia.com)
+search.brave.com##.snippet:has-text(redditstatic.com)

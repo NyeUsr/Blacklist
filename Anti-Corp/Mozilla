@@ -13,3 +13,10 @@
 ||mozilla.org^
 ||mozilla.wpengine.com^
 ||thunderbird.net^
+
+search.brave.com##.snippet:has-text(firefox.com)
+search.brave.com##.snippet:has-text(mozaws.net)
+search.brave.com##.snippet:has-text(mozilla.com)
+search.brave.com##.snippet:has-text(mozilla.net)
+search.brave.com##.snippet:has-text(mozilla.org)
+search.brave.com##.snippet:has-text(thunderbird.net)

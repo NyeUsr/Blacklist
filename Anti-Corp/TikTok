@@ -19,3 +19,13 @@
 ||tiktokcdn.com^
 ||tiktokcdn.liveplay.myqcloud.com^
 ||tiktokv.com^
+
+search.brave.com##.snippet:has-text(bytedance.com)
+search.brave.com##.snippet:has-text(byteoversea.com)
+search.brave.com##.snippet:has-text(byteoversea.net)
+search.brave.com##.snippet:has-text(ibytedtos.com)
+search.brave.com##.snippet:has-text(musical.ly)
+search.brave.com##.snippet:has-text(musically.ly)
+search.brave.com##.snippet:has-text(tiktok.com)
+search.brave.com##.snippet:has-text(tiktokcdn.com)
+search.brave.com##.snippet:has-text(tiktokv.com)

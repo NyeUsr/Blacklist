@@ -19,3 +19,16 @@
 ||cloudflarestatus.com^
 ||one.one.one.one^
 ||pacloudflare.com^
+
+search.brave.com##.snippet:has-text(1.1.1.1)
+search.brave.com##.snippet:has-text(cloudflare-dns.com)
+search.brave.com##.snippet:has-text(cloudflare.com)
+search.brave.com##.snippet:has-text(cloudflare.net)
+search.brave.com##.snippet:has-text(cloudflare.steamstatic.com)
+search.brave.com##.snippet:has-text(cloudflarebolt.com)
+search.brave.com##.snippet:has-text(cloudflareclient.com)
+search.brave.com##.snippet:has-text(cloudflareinsights.com)
+search.brave.com##.snippet:has-text(cloudflareresolve.com)
+search.brave.com##.snippet:has-text(cloudflarestatus.com)
+search.brave.com##.snippet:has-text(one.one.one.one)
+search.brave.com##.snippet:has-text(pacloudflare.com)

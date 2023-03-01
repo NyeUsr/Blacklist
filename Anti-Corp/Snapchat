@@ -28,3 +28,16 @@
 ||snapchat.com^
 ||snapkit.com^
 ||snapnet-cdn.storage.googleapis.com^
+
+search.brave.com##.snippet:has-text(bitmoji.com)
+search.brave.com##.snippet:has-text(feelinsonice.com)
+search.brave.com##.snippet:has-text(sc-cdn.net)
+search.brave.com##.snippet:has-text(sc-gw.com)
+search.brave.com##.snippet:has-text(sc-jpl.com)
+search.brave.com##.snippet:has-text(sc-prod.ne)
+search.brave.com##.snippet:has-text(sc-prod.net)
+search.brave.com##.snippet:has-text(sc-static.net)
+search.brave.com##.snippet:has-text(snap.com)
+search.brave.com##.snippet:has-text(snapads.com)
+search.brave.com##.snippet:has-text(snapchat.com)
+search.brave.com##.snippet:has-text(snapkit.com)
