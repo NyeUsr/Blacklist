@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 23-Alpha
+! Version: 24-Alpha
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -16,16 +16,76 @@
 ! 𝘍𝘰𝘳 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘣𝘰𝘶𝘨𝘩𝘵 𝘸𝘪𝘵𝘩 𝘢 𝘨𝘳𝘦𝘢𝘵 𝘱𝘳𝘪𝘤𝘦. 𝘎𝘭𝘰𝘳𝘪𝘧𝘺 𝘢𝘯𝘥 𝘣𝘦𝘢𝘳 𝘎𝘰𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳 𝘣𝘰𝘥𝘺.
 ! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
 
-/(xnxx|xvideo|porn|-xxx|xxx-|freexxx|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|livesex|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube|sissy|rule34|fetish|mature|webcams|hentai).+\./
-/(cams|txxx|pornstar|pornstars|watchporn|erotic|porno|boobs|tits|pussy|vagina|dick|penis|masturbation|bondage|gangbang|swinger|orgy|threesome|blowjob|handjob|cumshot|facial|squirting|bukkake|barely legal)\..+/
 /^https?:\/\/.+\.(sexy|xxx|porn)\//
 /^(porn|xxx)[a-z0-9]{3,}\..{2,}/
 /^[a-z0-9]{3,}(porn|xxx)\..{2,}/
 /porn[0-9]{1,3}\.com/
 /[0-9]{1,3}porn\.com/
 
-*onlyfans*$doc
-*/thots/$doc
+*onlyfans*$all
+*jizz*$all
+*xnxx*$all
+*xvideo*$all
+*-xxx*$all
+*xxx-*$all
+*freexxx*$all
+*stripper*$all
+*jerkmate*$all
+*xxxvid*$all
+*voyeur*$all
+*nudes*$all
+*fappening*$all
+*sexdoll*$all
+*shemale*$all
+*sexon*$all
+*adultproxy*$all
+*hookup-girls*$all
+*sexy-*$all
+*-sexy*$all
+*livesex*$all
+*fappening*$all
+*fapping*$all
+*nudeceleb*$all
+*leaked-sexy*$all
+*sexy-leak*$all
+*horny*$all
+*teencum*$all
+*youngteen*$all
+*pornpic*$all
+*xgirls*$all
+*xtube*$all
+*sissy*$all
+*rule34*$all
+*fetish*$all
+*webcams*$all
+*hentai*$all
+*javhd*$all
+*javhub*$all
+*porn*$all
+*cams*$all
+*txxx*$all
+*pornstar*$all
+*watchporn*$all
+*erotic*$all
+*boobs*$all
+*tits*$all
+*pussy*$all
+*vagina*$all
+*penis*$all
+*masturbation*$all
+*bondage*$all
+*gangbang*$all
+*swinger*$all
+*orgy*$all
+*threesome*$all
+*blowjob*$all
+*handjob*$all
+*cumshot*$all
+*facial*$all
+*squirting*$all
+*bukkake*$all
+*barely%20legal*$all
+*/thots/$all
 
 youjizz.sex
 hotixsexy.com
