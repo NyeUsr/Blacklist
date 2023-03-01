@@ -17,13 +17,13 @@
 ||fb.com^
 ||fb.gg^
 ||fb.me^
-||fbcdn-photos-*.^
-||fbcdn-profile-*.^
-||fbcdn-sphotos-*.^
+||fbcdn-photos-*.*^
+||fbcdn-profile-*.*^
+||fbcdn-sphotos-*.*^
 ||fbcdn-video-*.akamaihd.net^
 ||fbcdn-vthumb-*.akamaihd.net^
 ||fbcdn.net^
-||fbexternal-*.^
+||fbexternal-*.*^
 ||fbexternal-*.akamaihd.net^
 ||fbpigeon.com^
 ||fbsbx.com^

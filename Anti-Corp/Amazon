@@ -8,7 +8,7 @@
 ||abebooks.com^
 ||abebookscdn.com^
 ||amazon-adsystem.com^
-||amazon.^
+||amazon.*^
 ||amazonaws.com^
 ||audible.com^
 ||aws.dev^

@@ -78,7 +78,7 @@
 ||googl.com^
 ||google-analytics.com^
 ||google-public-dns-*.google.com^
-||google.^
+||google.*^
 ||googleadservices.com^
 ||googleapis.com^
 ||googleapps.com^
