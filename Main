@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 64N-1563
+! Version: 65N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -654,6 +654,8 @@ http://twitcount.com$3p
 ?zoneid=$popup
 !#endif
 
+||trustyfine.com^$popup,popunder
+||sughthroies.com^$popup,popunder
 ||dorogokupimnoutbuk.online^$popup,popunder
 ||cdsmart-dt.com^$popup,popunder
 ||traffichunt.com^$popup,popunder
@@ -924,6 +926,21 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||gpt-ai-chat.com^
+||chatgpt-pc.com^
+||f4235693e4.com^
+||e2955a474a.com^
+||omzylhvhwp.com^
+||sughthroies.com^
+||xfwblpomxc.com^
+||prowimoniser.com^
+||kiynew.com^
+||prhzxq.com^
+||xdiwbc.com^
+||zatnoh.com^
+||yourgoads.com^
+||meganime.co^
+||thiem-csl.com^
 ||fouanalytics.com^
 ||midas-tracker.hellay.net^
 ||pushadvert.bid^
