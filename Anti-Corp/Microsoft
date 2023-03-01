@@ -140,6 +140,7 @@
 ||getmicsoft.com^
 ||gfx.ms^
 ||gist.new^
+||github.blog^
 ||github.com^
 ||github.dev^
 ||github.map.fastly.net^
@@ -372,6 +373,7 @@ search.brave.com##.snippet:has-text(getbingrewards.com)
 search.brave.com##.snippet:has-text(getmicsoft.com)
 search.brave.com##.snippet:has-text(gfx.ms)
 search.brave.com##.snippet:has-text(gist.new)
+search.brave.com##.snippet:has-text(github.blog)
 search.brave.com##.snippet:has-text(github.com)
 search.brave.com##.snippet:has-text(github.dev)
 search.brave.com##.snippet:has-text(github.map.fastly.net)
