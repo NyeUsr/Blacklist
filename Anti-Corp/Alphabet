@@ -159,6 +159,7 @@
 ||youtubeeducation.com^
 ||ytimg.com^
 
+search.brave.com##a.chip:has-text(YouTube)
 search.brave.com##.snippet:has-text(1e100.net)
 search.brave.com##.snippet:has-text(abc.xyz)
 search.brave.com##.snippet:has-text(about.google)

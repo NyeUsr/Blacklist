@@ -237,6 +237,7 @@
 
 ##.fa-linkedin
 
+search.brave.com##a.chip:has-text(GitHub)
 search.brave.com##.snippet:has-text(1drv.com)
 search.brave.com##.snippet:has-text(1drv.ms)
 search.brave.com##.snippet:has-text(22pai.com)

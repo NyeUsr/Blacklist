@@ -22,6 +22,7 @@
 ###share-to-twitter-btn
 ##[href*="twitter.com"]
 
+search.brave.com##a.chip:has-text(Twitter)
 search.brave.com##.snippet:has-text(mopub.com)
 search.brave.com##.snippet:has-text(periscope.tv)
 search.brave.com##.snippet:has-text(pscp.tv)

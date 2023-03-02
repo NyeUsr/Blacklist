@@ -13,6 +13,7 @@
 ##.jeg_btn-reddit
 ##.jeg_reddit
 
+search.brave.com##a.chip:has-text(Reddit)
 search.brave.com##.snippet:has-text(redd.it)
 search.brave.com##.snippet:has-text(reddit.com)
 search.brave.com##.snippet:has-text(redditmedia.com)

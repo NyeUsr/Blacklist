@@ -80,6 +80,7 @@
 ##[href*="facebook.com"]
 ##[href*="instagram.com"]
 
+search.brave.com##a.chip:has-text(Instagram)
 search.brave.com##.snippet:has-text(atlassolutions.com)
 search.brave.com##.snippet:has-text(crowdtangle.com)
 search.brave.com##.snippet:has-text(crowdtangle.com)

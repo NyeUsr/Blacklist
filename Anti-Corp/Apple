@@ -50,6 +50,7 @@
 ||swift.org^
 ||webkit.org^
 
+search.brave.com##.text-xs.attribution > [href*="apple.com"]
 search.brave.com##.snippet:has-text(aaplimg.com)
 search.brave.com##.snippet:has-text(apple-dns.net)
 search.brave.com##.snippet:has-text(apple.com.akadns.net)
