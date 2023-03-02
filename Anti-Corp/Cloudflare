@@ -20,15 +20,238 @@
 ||one.one.one.one^
 ||pacloudflare.com^
 
-search.brave.com##.snippet:has-text(1.1.1.1)
-search.brave.com##.snippet:has-text(cloudflare-dns.com)
-search.brave.com##.snippet:has-text(cloudflare.com)
-search.brave.com##.snippet:has-text(cloudflare.net)
-search.brave.com##.snippet:has-text(cloudflare.steamstatic.com)
-search.brave.com##.snippet:has-text(cloudflarebolt.com)
-search.brave.com##.snippet:has-text(cloudflareclient.com)
-search.brave.com##.snippet:has-text(cloudflareinsights.com)
-search.brave.com##.snippet:has-text(cloudflareresolve.com)
-search.brave.com##.snippet:has-text(cloudflarestatus.com)
-search.brave.com##.snippet:has-text(one.one.one.one)
-search.brave.com##.snippet:has-text(pacloudflare.com)
+! Generated using https://letsblock.it/filters/search-results
+bing.com###b_content a[href*="1.0.0.1"]:upward(li)
+www.google.*##.g:has(a[href*="1.0.0.1"])
+www.google.*##a[href*="1.0.0.1"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="1.0.0.1"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="1.0.0.1"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="1.0.0.1"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="1.0.0.1"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="1.0.0.1"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="1.0.0.1"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="1.0.0.1"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="1.0.0.1"])
+kagi.com##.sri-group:has(a.__sri-url[href*="1.0.0.1"])
+kagi.com##._0_image_item[data-host_url*="1.0.0.1"]
+startpage.com##.w-gl__result:has(a[href*="1.0.0.1"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(1.0.0.1))
+search.brave.com###results a[href*="1.0.0.1"]:upward(.snippet)
+search.brave.com###img-results a[href*="1.0.0.1"]:upward([id^="img"])
+search.brave.com###results a[href*="1.0.0.1"]:upward(.card)
+bing.com###b_content a[href*="1.0.0.3"]:upward(li)
+www.google.*##.g:has(a[href*="1.0.0.3"])
+www.google.*##a[href*="1.0.0.3"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="1.0.0.3"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="1.0.0.3"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="1.0.0.3"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="1.0.0.3"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="1.0.0.3"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="1.0.0.3"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="1.0.0.3"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="1.0.0.3"])
+kagi.com##.sri-group:has(a.__sri-url[href*="1.0.0.3"])
+kagi.com##._0_image_item[data-host_url*="1.0.0.3"]
+startpage.com##.w-gl__result:has(a[href*="1.0.0.3"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(1.0.0.3))
+search.brave.com###results a[href*="1.0.0.3"]:upward(.snippet)
+search.brave.com###img-results a[href*="1.0.0.3"]:upward([id^="img"])
+search.brave.com###results a[href*="1.0.0.3"]:upward(.card)
+bing.com###b_content a[href*="1.1.1.1"]:upward(li)
+www.google.*##.g:has(a[href*="1.1.1.1"])
+www.google.*##a[href*="1.1.1.1"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="1.1.1.1"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="1.1.1.1"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="1.1.1.1"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="1.1.1.1"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="1.1.1.1"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="1.1.1.1"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="1.1.1.1"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="1.1.1.1"])
+kagi.com##.sri-group:has(a.__sri-url[href*="1.1.1.1"])
+kagi.com##._0_image_item[data-host_url*="1.1.1.1"]
+startpage.com##.w-gl__result:has(a[href*="1.1.1.1"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(1.1.1.1))
+search.brave.com###results a[href*="1.1.1.1"]:upward(.snippet)
+search.brave.com###img-results a[href*="1.1.1.1"]:upward([id^="img"])
+search.brave.com###results a[href*="1.1.1.1"]:upward(.card)
+bing.com###b_content a[href*="1.1.1.3"]:upward(li)
+www.google.*##.g:has(a[href*="1.1.1.3"])
+www.google.*##a[href*="1.1.1.3"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="1.1.1.3"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="1.1.1.3"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="1.1.1.3"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="1.1.1.3"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="1.1.1.3"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="1.1.1.3"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="1.1.1.3"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="1.1.1.3"])
+kagi.com##.sri-group:has(a.__sri-url[href*="1.1.1.3"])
+kagi.com##._0_image_item[data-host_url*="1.1.1.3"]
+startpage.com##.w-gl__result:has(a[href*="1.1.1.3"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(1.1.1.3))
+search.brave.com###results a[href*="1.1.1.3"]:upward(.snippet)
+search.brave.com###img-results a[href*="1.1.1.3"]:upward([id^="img"])
+search.brave.com###results a[href*="1.1.1.3"]:upward(.card)
+bing.com###b_content a[href*="cloudflare-dns.com"]:upward(li)
+www.google.*##.g:has(a[href*="cloudflare-dns.com"])
+www.google.*##a[href*="cloudflare-dns.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudflare-dns.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudflare-dns.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudflare-dns.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudflare-dns.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudflare-dns.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudflare-dns.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudflare-dns.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudflare-dns.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudflare-dns.com"])
+kagi.com##._0_image_item[data-host_url*="cloudflare-dns.com"]
+startpage.com##.w-gl__result:has(a[href*="cloudflare-dns.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudflare-dns.com))
+search.brave.com###results a[href*="cloudflare-dns.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudflare-dns.com"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudflare-dns.com"]:upward(.card)
+bing.com###b_content a[href*="cloudflare.com"]:upward(li)
+www.google.*##.g:has(a[href*="cloudflare.com"])
+www.google.*##a[href*="cloudflare.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudflare.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudflare.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudflare.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudflare.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudflare.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudflare.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudflare.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudflare.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudflare.com"])
+kagi.com##._0_image_item[data-host_url*="cloudflare.com"]
+startpage.com##.w-gl__result:has(a[href*="cloudflare.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudflare.com))
+search.brave.com###results a[href*="cloudflare.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudflare.com"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudflare.com"]:upward(.card)
+bing.com###b_content a[href*="cloudflare.net"]:upward(li)
+www.google.*##.g:has(a[href*="cloudflare.net"])
+www.google.*##a[href*="cloudflare.net"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudflare.net"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudflare.net"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudflare.net"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudflare.net"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudflare.net"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudflare.net"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudflare.net"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudflare.net"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudflare.net"])
+kagi.com##._0_image_item[data-host_url*="cloudflare.net"]
+startpage.com##.w-gl__result:has(a[href*="cloudflare.net"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudflare.net))
+search.brave.com###results a[href*="cloudflare.net"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudflare.net"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudflare.net"]:upward(.card)
+bing.com###b_content a[href*="cloudflarebolt.com"]:upward(li)
+www.google.*##.g:has(a[href*="cloudflarebolt.com"])
+www.google.*##a[href*="cloudflarebolt.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudflarebolt.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudflarebolt.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudflarebolt.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudflarebolt.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudflarebolt.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudflarebolt.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudflarebolt.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudflarebolt.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudflarebolt.com"])
+kagi.com##._0_image_item[data-host_url*="cloudflarebolt.com"]
+startpage.com##.w-gl__result:has(a[href*="cloudflarebolt.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudflarebolt.com))
+search.brave.com###results a[href*="cloudflarebolt.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudflarebolt.com"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudflarebolt.com"]:upward(.card)
+bing.com###b_content a[href*="cloudflareclient.com"]:upward(li)
+www.google.*##.g:has(a[href*="cloudflareclient.com"])
+www.google.*##a[href*="cloudflareclient.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudflareclient.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudflareclient.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudflareclient.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudflareclient.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudflareclient.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudflareclient.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudflareclient.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudflareclient.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudflareclient.com"])
+kagi.com##._0_image_item[data-host_url*="cloudflareclient.com"]
+startpage.com##.w-gl__result:has(a[href*="cloudflareclient.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudflareclient.com))
+search.brave.com###results a[href*="cloudflareclient.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudflareclient.com"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudflareclient.com"]:upward(.card)
+bing.com###b_content a[href*="cloudflareresolve.com"]:upward(li)
+www.google.*##.g:has(a[href*="cloudflareresolve.com"])
+www.google.*##a[href*="cloudflareresolve.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudflareresolve.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudflareresolve.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudflareresolve.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudflareresolve.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudflareresolve.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudflareresolve.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudflareresolve.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudflareresolve.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudflareresolve.com"])
+kagi.com##._0_image_item[data-host_url*="cloudflareresolve.com"]
+startpage.com##.w-gl__result:has(a[href*="cloudflareresolve.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudflareresolve.com))
+search.brave.com###results a[href*="cloudflareresolve.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudflareresolve.com"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudflareresolve.com"]:upward(.card)
+bing.com###b_content a[href*="cloudflarestatus.com"]:upward(li)
+www.google.*##.g:has(a[href*="cloudflarestatus.com"])
+www.google.*##a[href*="cloudflarestatus.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudflarestatus.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudflarestatus.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudflarestatus.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudflarestatus.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudflarestatus.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudflarestatus.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudflarestatus.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudflarestatus.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudflarestatus.com"])
+kagi.com##._0_image_item[data-host_url*="cloudflarestatus.com"]
+startpage.com##.w-gl__result:has(a[href*="cloudflarestatus.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudflarestatus.com))
+search.brave.com###results a[href*="cloudflarestatus.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudflarestatus.com"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudflarestatus.com"]:upward(.card)
+bing.com###b_content a[href*="one.one.one.one"]:upward(li)
+www.google.*##.g:has(a[href*="one.one.one.one"])
+www.google.*##a[href*="one.one.one.one"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="one.one.one.one"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="one.one.one.one"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="one.one.one.one"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="one.one.one.one"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="one.one.one.one"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="one.one.one.one"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="one.one.one.one"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="one.one.one.one"])
+kagi.com##.sri-group:has(a.__sri-url[href*="one.one.one.one"])
+kagi.com##._0_image_item[data-host_url*="one.one.one.one"]
+startpage.com##.w-gl__result:has(a[href*="one.one.one.one"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(one.one.one.one))
+search.brave.com###results a[href*="one.one.one.one"]:upward(.snippet)
+search.brave.com###img-results a[href*="one.one.one.one"]:upward([id^="img"])
+search.brave.com###results a[href*="one.one.one.one"]:upward(.card)
+bing.com###b_content a[href*="pacloudflare.com"]:upward(li)
+www.google.*##.g:has(a[href*="pacloudflare.com"])
+www.google.*##a[href*="pacloudflare.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="pacloudflare.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="pacloudflare.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="pacloudflare.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="pacloudflare.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="pacloudflare.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="pacloudflare.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="pacloudflare.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="pacloudflare.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="pacloudflare.com"])
+kagi.com##._0_image_item[data-host_url*="pacloudflare.com"]
+startpage.com##.w-gl__result:has(a[href*="pacloudflare.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(pacloudflare.com))
+search.brave.com###results a[href*="pacloudflare.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="pacloudflare.com"]:upward([id^="img"])
+search.brave.com###results a[href*="pacloudflare.com"]:upward(.card)

@@ -20,12 +20,22 @@
 ||tiktokcdn.liveplay.myqcloud.com^
 ||tiktokv.com^
 
-search.brave.com##.snippet:has-text(bytedance.com)
-search.brave.com##.snippet:has-text(byteoversea.com)
-search.brave.com##.snippet:has-text(byteoversea.net)
-search.brave.com##.snippet:has-text(ibytedtos.com)
-search.brave.com##.snippet:has-text(musical.ly)
-search.brave.com##.snippet:has-text(musically.ly)
-search.brave.com##.snippet:has-text(tiktok.com)
-search.brave.com##.snippet:has-text(tiktokcdn.com)
-search.brave.com##.snippet:has-text(tiktokv.com)
+! Generated using https://letsblock.it/filters/search-results
+bing.com###b_content a[href*="tiktok.com"]:upward(li)
+www.google.*##.g:has(a[href*="tiktok.com"])
+www.google.*##a[href*="tiktok.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="tiktok.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="tiktok.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="tiktok.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="tiktok.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="tiktok.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="tiktok.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="tiktok.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="tiktok.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="tiktok.com"])
+kagi.com##._0_image_item[data-host_url*="tiktok.com"]
+startpage.com##.w-gl__result:has(a[href*="tiktok.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(tiktok.com))
+search.brave.com###results a[href*="tiktok.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="tiktok.com"]:upward([id^="img"])
+search.brave.com###results a[href*="tiktok.com"]:upward(.card)

@@ -14,9 +14,94 @@
 ||mozilla.wpengine.com^
 ||thunderbird.net^
 
-search.brave.com##.snippet:has-text(firefox.com)
-search.brave.com##.snippet:has-text(mozaws.net)
-search.brave.com##.snippet:has-text(mozilla.com)
-search.brave.com##.snippet:has-text(mozilla.net)
-search.brave.com##.snippet:has-text(mozilla.org)
-search.brave.com##.snippet:has-text(thunderbird.net)
+! Generated using https://letsblock.it/filters/search-results
+bing.com###b_content a[href*="firefox.com"]:upward(li)
+www.google.*##.g:has(a[href*="firefox.com"])
+www.google.*##a[href*="firefox.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="firefox.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="firefox.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="firefox.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="firefox.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="firefox.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="firefox.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="firefox.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="firefox.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="firefox.com"])
+kagi.com##._0_image_item[data-host_url*="firefox.com"]
+startpage.com##.w-gl__result:has(a[href*="firefox.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(firefox.com))
+search.brave.com###results a[href*="firefox.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="firefox.com"]:upward([id^="img"])
+search.brave.com###results a[href*="firefox.com"]:upward(.card)
+bing.com###b_content a[href*="mozilla.com"]:upward(li)
+www.google.*##.g:has(a[href*="mozilla.com"])
+www.google.*##a[href*="mozilla.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="mozilla.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="mozilla.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="mozilla.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="mozilla.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="mozilla.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="mozilla.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="mozilla.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="mozilla.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="mozilla.com"])
+kagi.com##._0_image_item[data-host_url*="mozilla.com"]
+startpage.com##.w-gl__result:has(a[href*="mozilla.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(mozilla.com))
+search.brave.com###results a[href*="mozilla.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="mozilla.com"]:upward([id^="img"])
+search.brave.com###results a[href*="mozilla.com"]:upward(.card)
+bing.com###b_content a[href*="mozilla.net"]:upward(li)
+www.google.*##.g:has(a[href*="mozilla.net"])
+www.google.*##a[href*="mozilla.net"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="mozilla.net"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="mozilla.net"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="mozilla.net"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="mozilla.net"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="mozilla.net"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="mozilla.net"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="mozilla.net"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="mozilla.net"])
+kagi.com##.sri-group:has(a.__sri-url[href*="mozilla.net"])
+kagi.com##._0_image_item[data-host_url*="mozilla.net"]
+startpage.com##.w-gl__result:has(a[href*="mozilla.net"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(mozilla.net))
+search.brave.com###results a[href*="mozilla.net"]:upward(.snippet)
+search.brave.com###img-results a[href*="mozilla.net"]:upward([id^="img"])
+search.brave.com###results a[href*="mozilla.net"]:upward(.card)
+bing.com###b_content a[href*="mozilla.org"]:upward(li)
+www.google.*##.g:has(a[href*="mozilla.org"])
+www.google.*##a[href*="mozilla.org"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="mozilla.org"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="mozilla.org"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="mozilla.org"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="mozilla.org"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="mozilla.org"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="mozilla.org"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="mozilla.org"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="mozilla.org"])
+kagi.com##.sri-group:has(a.__sri-url[href*="mozilla.org"])
+kagi.com##._0_image_item[data-host_url*="mozilla.org"]
+startpage.com##.w-gl__result:has(a[href*="mozilla.org"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(mozilla.org))
+search.brave.com###results a[href*="mozilla.org"]:upward(.snippet)
+search.brave.com###img-results a[href*="mozilla.org"]:upward([id^="img"])
+search.brave.com###results a[href*="mozilla.org"]:upward(.card)
+bing.com###b_content a[href*="thunderbird.net"]:upward(li)
+www.google.*##.g:has(a[href*="thunderbird.net"])
+www.google.*##a[href*="thunderbird.net"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="thunderbird.net"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="thunderbird.net"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="thunderbird.net"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="thunderbird.net"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="thunderbird.net"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="thunderbird.net"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="thunderbird.net"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="thunderbird.net"])
+kagi.com##.sri-group:has(a.__sri-url[href*="thunderbird.net"])
+kagi.com##._0_image_item[data-host_url*="thunderbird.net"]
+startpage.com##.w-gl__result:has(a[href*="thunderbird.net"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(thunderbird.net))
+search.brave.com###results a[href*="thunderbird.net"]:upward(.snippet)
+search.brave.com###img-results a[href*="thunderbird.net"]:upward([id^="img"])
+search.brave.com###results a[href*="thunderbird.net"]:upward(.card)

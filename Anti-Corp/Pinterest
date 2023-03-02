@@ -9,17 +9,192 @@
 ||pin.it^
 ||pinimg.com^
 ||pinterest.*^
+||pinterestcareers.com^
+||pinterestinc.com^
 ||theyes.com^
 ||vochi.app^
 ||vochi.com^
 
 ##.fa-pinterest
 
-search.brave.com##.snippet:has-text(curator.co)
-search.brave.com##.snippet:has-text(instapaper.com)
-search.brave.com##.snippet:has-text(pin.it)
-search.brave.com##.snippet:has-text(pinimg.com)
-search.brave.com##.snippet:has-text(pinterest.*)
-search.brave.com##.snippet:has-text(theyes.com)
-search.brave.com##.snippet:has-text(vochi.app)
-search.brave.com##.snippet:has-text(vochi.com)
+! Generated using https://letsblock.it/filters/search-results
+bing.com###b_content a[href*="curator.co"]:upward(li)
+www.google.*##.g:has(a[href*="curator.co"])
+www.google.*##a[href*="curator.co"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="curator.co"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="curator.co"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="curator.co"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="curator.co"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="curator.co"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="curator.co"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="curator.co"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="curator.co"])
+kagi.com##.sri-group:has(a.__sri-url[href*="curator.co"])
+kagi.com##._0_image_item[data-host_url*="curator.co"]
+startpage.com##.w-gl__result:has(a[href*="curator.co"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(curator.co))
+search.brave.com###results a[href*="curator.co"]:upward(.snippet)
+search.brave.com###img-results a[href*="curator.co"]:upward([id^="img"])
+search.brave.com###results a[href*="curator.co"]:upward(.card)
+bing.com###b_content a[href*="instapaper.com"]:upward(li)
+www.google.*##.g:has(a[href*="instapaper.com"])
+www.google.*##a[href*="instapaper.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="instapaper.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="instapaper.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="instapaper.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="instapaper.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="instapaper.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="instapaper.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="instapaper.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="instapaper.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="instapaper.com"])
+kagi.com##._0_image_item[data-host_url*="instapaper.com"]
+startpage.com##.w-gl__result:has(a[href*="instapaper.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(instapaper.com))
+search.brave.com###results a[href*="instapaper.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="instapaper.com"]:upward([id^="img"])
+search.brave.com###results a[href*="instapaper.com"]:upward(.card)
+bing.com###b_content a[href*="pin.it"]:upward(li)
+www.google.*##.g:has(a[href*="pin.it"])
+www.google.*##a[href*="pin.it"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="pin.it"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="pin.it"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="pin.it"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="pin.it"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="pin.it"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="pin.it"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="pin.it"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="pin.it"])
+kagi.com##.sri-group:has(a.__sri-url[href*="pin.it"])
+kagi.com##._0_image_item[data-host_url*="pin.it"]
+startpage.com##.w-gl__result:has(a[href*="pin.it"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(pin.it))
+search.brave.com###results a[href*="pin.it"]:upward(.snippet)
+search.brave.com###img-results a[href*="pin.it"]:upward([id^="img"])
+search.brave.com###results a[href*="pin.it"]:upward(.card)
+bing.com###b_content a[href*="pinimg.com"]:upward(li)
+www.google.*##.g:has(a[href*="pinimg.com"])
+www.google.*##a[href*="pinimg.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="pinimg.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="pinimg.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="pinimg.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="pinimg.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="pinimg.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="pinimg.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="pinimg.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="pinimg.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="pinimg.com"])
+kagi.com##._0_image_item[data-host_url*="pinimg.com"]
+startpage.com##.w-gl__result:has(a[href*="pinimg.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(pinimg.com))
+search.brave.com###results a[href*="pinimg.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="pinimg.com"]:upward([id^="img"])
+search.brave.com###results a[href*="pinimg.com"]:upward(.card)
+bing.com###b_content a[href*="pinterest."]:upward(li)
+www.google.*##.g:has(a[href*="pinterest."])
+www.google.*##a[href*="pinterest."]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="pinterest."]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="pinterest."]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="pinterest."]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="pinterest."]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="pinterest."]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="pinterest."]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="pinterest."]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="pinterest."])
+kagi.com##.sri-group:has(a.__sri-url[href*="pinterest."])
+kagi.com##._0_image_item[data-host_url*="pinterest."]
+startpage.com##.w-gl__result:has(a[href*="pinterest."])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(pinterest.))
+search.brave.com###results a[href*="pinterest."]:upward(.snippet)
+search.brave.com###img-results a[href*="pinterest."]:upward([id^="img"])
+search.brave.com###results a[href*="pinterest."]:upward(.card)
+bing.com###b_content a[href*="pinterestcareers.com"]:upward(li)
+www.google.*##.g:has(a[href*="pinterestcareers.com"])
+www.google.*##a[href*="pinterestcareers.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="pinterestcareers.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="pinterestcareers.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="pinterestcareers.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="pinterestcareers.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="pinterestcareers.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="pinterestcareers.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="pinterestcareers.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="pinterestcareers.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="pinterestcareers.com"])
+kagi.com##._0_image_item[data-host_url*="pinterestcareers.com"]
+startpage.com##.w-gl__result:has(a[href*="pinterestcareers.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(pinterestcareers.com))
+search.brave.com###results a[href*="pinterestcareers.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="pinterestcareers.com"]:upward([id^="img"])
+search.brave.com###results a[href*="pinterestcareers.com"]:upward(.card)
+bing.com###b_content a[href*="pinterestinc.com"]:upward(li)
+www.google.*##.g:has(a[href*="pinterestinc.com"])
+www.google.*##a[href*="pinterestinc.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="pinterestinc.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="pinterestinc.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="pinterestinc.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="pinterestinc.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="pinterestinc.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="pinterestinc.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="pinterestinc.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="pinterestinc.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="pinterestinc.com"])
+kagi.com##._0_image_item[data-host_url*="pinterestinc.com"]
+startpage.com##.w-gl__result:has(a[href*="pinterestinc.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(pinterestinc.com))
+search.brave.com###results a[href*="pinterestinc.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="pinterestinc.com"]:upward([id^="img"])
+search.brave.com###results a[href*="pinterestinc.com"]:upward(.card)
+bing.com###b_content a[href*="theyes.com"]:upward(li)
+www.google.*##.g:has(a[href*="theyes.com"])
+www.google.*##a[href*="theyes.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="theyes.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="theyes.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="theyes.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="theyes.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="theyes.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="theyes.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="theyes.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="theyes.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="theyes.com"])
+kagi.com##._0_image_item[data-host_url*="theyes.com"]
+startpage.com##.w-gl__result:has(a[href*="theyes.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(theyes.com))
+search.brave.com###results a[href*="theyes.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="theyes.com"]:upward([id^="img"])
+search.brave.com###results a[href*="theyes.com"]:upward(.card)
+bing.com###b_content a[href*="vochi.app"]:upward(li)
+www.google.*##.g:has(a[href*="vochi.app"])
+www.google.*##a[href*="vochi.app"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="vochi.app"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="vochi.app"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="vochi.app"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="vochi.app"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="vochi.app"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="vochi.app"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="vochi.app"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="vochi.app"])
+kagi.com##.sri-group:has(a.__sri-url[href*="vochi.app"])
+kagi.com##._0_image_item[data-host_url*="vochi.app"]
+startpage.com##.w-gl__result:has(a[href*="vochi.app"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(vochi.app))
+search.brave.com###results a[href*="vochi.app"]:upward(.snippet)
+search.brave.com###img-results a[href*="vochi.app"]:upward([id^="img"])
+search.brave.com###results a[href*="vochi.app"]:upward(.card)
+bing.com###b_content a[href*="vochi.com"]:upward(li)
+www.google.*##.g:has(a[href*="vochi.com"])
+www.google.*##a[href*="vochi.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="vochi.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="vochi.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="vochi.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="vochi.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="vochi.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="vochi.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="vochi.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="vochi.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="vochi.com"])
+kagi.com##._0_image_item[data-host_url*="vochi.com"]
+startpage.com##.w-gl__result:has(a[href*="vochi.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(vochi.com))
+search.brave.com###results a[href*="vochi.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="vochi.com"]:upward([id^="img"])
+search.brave.com###results a[href*="vochi.com"]:upward(.card)

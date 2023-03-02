@@ -13,8 +13,58 @@
 ##.jeg_btn-reddit
 ##.jeg_reddit
 
-search.brave.com##a.chip:has-text(Reddit)
-search.brave.com##.snippet:has-text(redd.it)
-search.brave.com##.snippet:has-text(reddit.com)
-search.brave.com##.snippet:has-text(redditmedia.com)
-search.brave.com##.snippet:has-text(redditstatic.com)
+! Generated using https://letsblock.it/filters/search-results
+bing.com###b_content a[href*="redd.it"]:upward(li)
+www.google.*##.g:has(a[href*="redd.it"])
+www.google.*##a[href*="redd.it"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="redd.it"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="redd.it"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="redd.it"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="redd.it"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="redd.it"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="redd.it"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="redd.it"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="redd.it"])
+kagi.com##.sri-group:has(a.__sri-url[href*="redd.it"])
+kagi.com##._0_image_item[data-host_url*="redd.it"]
+startpage.com##.w-gl__result:has(a[href*="redd.it"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(redd.it))
+search.brave.com###results a[href*="redd.it"]:upward(.snippet)
+search.brave.com###img-results a[href*="redd.it"]:upward([id^="img"])
+search.brave.com###results a[href*="redd.it"]:upward(.card)
+bing.com###b_content a[href*="reddit.com"]:upward(li)
+www.google.*##.g:has(a[href*="reddit.com"])
+www.google.*##a[href*="reddit.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="reddit.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="reddit.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="reddit.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="reddit.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="reddit.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="reddit.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="reddit.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="reddit.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="reddit.com"])
+kagi.com##._0_image_item[data-host_url*="reddit.com"]
+startpage.com##.w-gl__result:has(a[href*="reddit.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(reddit.com))
+search.brave.com###results a[href*="reddit.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="reddit.com"]:upward([id^="img"])
+search.brave.com###results a[href*="reddit.com"]:upward(.card)
+bing.com###b_content a[href*="redditmedia.com"]:upward(li)
+www.google.*##.g:has(a[href*="redditmedia.com"])
+www.google.*##a[href*="redditmedia.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="redditmedia.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="redditmedia.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="redditmedia.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="redditmedia.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="redditmedia.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="redditmedia.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="redditmedia.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="redditmedia.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="redditmedia.com"])
+kagi.com##._0_image_item[data-host_url*="redditmedia.com"]
+startpage.com##.w-gl__result:has(a[href*="redditmedia.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(redditmedia.com))
+search.brave.com###results a[href*="redditmedia.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="redditmedia.com"]:upward([id^="img"])
+search.brave.com###results a[href*="redditmedia.com"]:upward(.card)

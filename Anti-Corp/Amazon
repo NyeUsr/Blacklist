@@ -48,44 +48,526 @@
 ||zappos.com^
 ||zoox.com^
 
-search.brave.com##.snippet:has-text(a2z.com)
-search.brave.com##.snippet:has-text(abebooks.com)
-search.brave.com##.snippet:has-text(abebookscdn.com)
-search.brave.com##.snippet:has-text(amazon-adsystem.com)
-search.brave.com##.snippet:has-text(amazon.)
-search.brave.com##.snippet:has-text(amazonaws.com)
-search.brave.com##.snippet:has-text(audible.com)
-search.brave.com##.snippet:has-text(aws.dev)
-search.brave.com##.snippet:has-text(awsstatic.com)
-search.brave.com##.snippet:has-text(bookdepository.com)
-search.brave.com##.snippet:has-text(boxofficemojo.com)
-search.brave.com##.snippet:has-text(cloudfront.net)
-search.brave.com##.snippet:has-text(comixology.com)
-search.brave.com##.snippet:has-text(ctfassets.net)
-search.brave.com##.snippet:has-text(dpreview.com)
-search.brave.com##.snippet:has-text(eero-dev.myshopify.com)
-search.brave.com##.snippet:has-text(eero.com)
-search.brave.com##.snippet:has-text(glowroad.com)
-search.brave.com##.snippet:has-text(goodreads.com)
-search.brave.com##.snippet:has-text(graphiq.com)
-search.brave.com##.snippet:has-text(imdb.com)
-search.brave.com##.snippet:has-text(img-dpreview.com)
-search.brave.com##.snippet:has-text(irobot.com)
-search.brave.com##.snippet:has-text(media-amazon.com)
-search.brave.com##.snippet:has-text(media-imdb.com)
-search.brave.com##.snippet:has-text(mgm.com)
-search.brave.com##.snippet:has-text(onemedical.com)
-search.brave.com##.snippet:has-text(ring.com)
-search.brave.com##.snippet:has-text(ring.net)
-search.brave.com##.snippet:has-text(rings.solutions)
-search.brave.com##.snippet:has-text(siege-amazon.com)
-search.brave.com##.snippet:has-text(ssl-images-amazon.com)
-search.brave.com##.snippet:has-text(ttvnw.net)
-search.brave.com##.snippet:has-text(twitch.tv)
-search.brave.com##.snippet:has-text(twitchcdn.net)
-search.brave.com##.snippet:has-text(veeqo.com)
-search.brave.com##.snippet:has-text(watasale.com)
-search.brave.com##.snippet:has-text(wholefoodsmarket.com)
-search.brave.com##.snippet:has-text(woot.com)
-search.brave.com##.snippet:has-text(zappos.com)
-search.brave.com##.snippet:has-text(zoox.com)
+! Generated using https://letsblock.it/filters/search-results
+bing.com###b_content a[href*="a2z.com"]:upward(li)
+www.google.*##.g:has(a[href*="a2z.com"])
+www.google.*##a[href*="a2z.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="a2z.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="a2z.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="a2z.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="a2z.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="a2z.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="a2z.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="a2z.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="a2z.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="a2z.com"])
+kagi.com##._0_image_item[data-host_url*="a2z.com"]
+startpage.com##.w-gl__result:has(a[href*="a2z.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(a2z.com))
+search.brave.com###results a[href*="a2z.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="a2z.com"]:upward([id^="img"])
+search.brave.com###results a[href*="a2z.com"]:upward(.card)
+bing.com###b_content a[href*="abebooks.com"]:upward(li)
+www.google.*##.g:has(a[href*="abebooks.com"])
+www.google.*##a[href*="abebooks.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="abebooks.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="abebooks.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="abebooks.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="abebooks.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="abebooks.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="abebooks.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="abebooks.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="abebooks.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="abebooks.com"])
+kagi.com##._0_image_item[data-host_url*="abebooks.com"]
+startpage.com##.w-gl__result:has(a[href*="abebooks.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(abebooks.com))
+search.brave.com###results a[href*="abebooks.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="abebooks.com"]:upward([id^="img"])
+search.brave.com###results a[href*="abebooks.com"]:upward(.card)
+bing.com###b_content a[href*="amazon-adsystem.com"]:upward(li)
+www.google.*##.g:has(a[href*="amazon-adsystem.com"])
+www.google.*##a[href*="amazon-adsystem.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="amazon-adsystem.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="amazon-adsystem.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="amazon-adsystem.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="amazon-adsystem.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="amazon-adsystem.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="amazon-adsystem.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="amazon-adsystem.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="amazon-adsystem.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="amazon-adsystem.com"])
+kagi.com##._0_image_item[data-host_url*="amazon-adsystem.com"]
+startpage.com##.w-gl__result:has(a[href*="amazon-adsystem.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(amazon-adsystem.com))
+search.brave.com###results a[href*="amazon-adsystem.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="amazon-adsystem.com"]:upward([id^="img"])
+search.brave.com###results a[href*="amazon-adsystem.com"]:upward(.card)
+bing.com###b_content a[href*="amazon."]:upward(li)
+www.google.*##.g:has(a[href*="amazon."])
+www.google.*##a[href*="amazon."]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="amazon."]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="amazon."]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="amazon."]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="amazon."]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="amazon."]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="amazon."]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="amazon."]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="amazon."])
+kagi.com##.sri-group:has(a.__sri-url[href*="amazon."])
+kagi.com##._0_image_item[data-host_url*="amazon."]
+startpage.com##.w-gl__result:has(a[href*="amazon."])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(amazon.))
+search.brave.com###results a[href*="amazon."]:upward(.snippet)
+search.brave.com###img-results a[href*="amazon."]:upward([id^="img"])
+search.brave.com###results a[href*="amazon."]:upward(.card)
+bing.com###b_content a[href*="amazonaws.com"]:upward(li)
+www.google.*##.g:has(a[href*="amazonaws.com"])
+www.google.*##a[href*="amazonaws.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="amazonaws.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="amazonaws.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="amazonaws.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="amazonaws.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="amazonaws.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="amazonaws.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="amazonaws.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="amazonaws.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="amazonaws.com"])
+kagi.com##._0_image_item[data-host_url*="amazonaws.com"]
+startpage.com##.w-gl__result:has(a[href*="amazonaws.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(amazonaws.com))
+search.brave.com###results a[href*="amazonaws.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="amazonaws.com"]:upward([id^="img"])
+search.brave.com###results a[href*="amazonaws.com"]:upward(.card)
+bing.com###b_content a[href*="audible.com"]:upward(li)
+www.google.*##.g:has(a[href*="audible.com"])
+www.google.*##a[href*="audible.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="audible.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="audible.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="audible.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="audible.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="audible.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="audible.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="audible.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="audible.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="audible.com"])
+kagi.com##._0_image_item[data-host_url*="audible.com"]
+startpage.com##.w-gl__result:has(a[href*="audible.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(audible.com))
+search.brave.com###results a[href*="audible.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="audible.com"]:upward([id^="img"])
+search.brave.com###results a[href*="audible.com"]:upward(.card)
+bing.com###b_content a[href*="aws.dev"]:upward(li)
+www.google.*##.g:has(a[href*="aws.dev"])
+www.google.*##a[href*="aws.dev"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="aws.dev"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="aws.dev"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="aws.dev"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="aws.dev"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="aws.dev"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="aws.dev"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="aws.dev"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="aws.dev"])
+kagi.com##.sri-group:has(a.__sri-url[href*="aws.dev"])
+kagi.com##._0_image_item[data-host_url*="aws.dev"]
+startpage.com##.w-gl__result:has(a[href*="aws.dev"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(aws.dev))
+search.brave.com###results a[href*="aws.dev"]:upward(.snippet)
+search.brave.com###img-results a[href*="aws.dev"]:upward([id^="img"])
+search.brave.com###results a[href*="aws.dev"]:upward(.card)
+bing.com###b_content a[href*="bookdepository.com"]:upward(li)
+www.google.*##.g:has(a[href*="bookdepository.com"])
+www.google.*##a[href*="bookdepository.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="bookdepository.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="bookdepository.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="bookdepository.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="bookdepository.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="bookdepository.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="bookdepository.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="bookdepository.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="bookdepository.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="bookdepository.com"])
+kagi.com##._0_image_item[data-host_url*="bookdepository.com"]
+startpage.com##.w-gl__result:has(a[href*="bookdepository.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(bookdepository.com))
+search.brave.com###results a[href*="bookdepository.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="bookdepository.com"]:upward([id^="img"])
+search.brave.com###results a[href*="bookdepository.com"]:upward(.card)
+bing.com###b_content a[href*="boxofficemojo.com"]:upward(li)
+www.google.*##.g:has(a[href*="boxofficemojo.com"])
+www.google.*##a[href*="boxofficemojo.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="boxofficemojo.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="boxofficemojo.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="boxofficemojo.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="boxofficemojo.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="boxofficemojo.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="boxofficemojo.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="boxofficemojo.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="boxofficemojo.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="boxofficemojo.com"])
+kagi.com##._0_image_item[data-host_url*="boxofficemojo.com"]
+startpage.com##.w-gl__result:has(a[href*="boxofficemojo.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(boxofficemojo.com))
+search.brave.com###results a[href*="boxofficemojo.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="boxofficemojo.com"]:upward([id^="img"])
+search.brave.com###results a[href*="boxofficemojo.com"]:upward(.card)
+bing.com###b_content a[href*="cloudfront.net"]:upward(li)
+www.google.*##.g:has(a[href*="cloudfront.net"])
+www.google.*##a[href*="cloudfront.net"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="cloudfront.net"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="cloudfront.net"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="cloudfront.net"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="cloudfront.net"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="cloudfront.net"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="cloudfront.net"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="cloudfront.net"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="cloudfront.net"])
+kagi.com##.sri-group:has(a.__sri-url[href*="cloudfront.net"])
+kagi.com##._0_image_item[data-host_url*="cloudfront.net"]
+startpage.com##.w-gl__result:has(a[href*="cloudfront.net"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(cloudfront.net))
+search.brave.com###results a[href*="cloudfront.net"]:upward(.snippet)
+search.brave.com###img-results a[href*="cloudfront.net"]:upward([id^="img"])
+search.brave.com###results a[href*="cloudfront.net"]:upward(.card)
+bing.com###b_content a[href*="comixology.com"]:upward(li)
+www.google.*##.g:has(a[href*="comixology.com"])
+www.google.*##a[href*="comixology.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="comixology.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="comixology.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="comixology.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="comixology.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="comixology.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="comixology.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="comixology.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="comixology.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="comixology.com"])
+kagi.com##._0_image_item[data-host_url*="comixology.com"]
+startpage.com##.w-gl__result:has(a[href*="comixology.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(comixology.com))
+search.brave.com###results a[href*="comixology.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="comixology.com"]:upward([id^="img"])
+search.brave.com###results a[href*="comixology.com"]:upward(.card)
+bing.com###b_content a[href*="dpreview.com"]:upward(li)
+www.google.*##.g:has(a[href*="dpreview.com"])
+www.google.*##a[href*="dpreview.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="dpreview.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="dpreview.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="dpreview.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="dpreview.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="dpreview.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="dpreview.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="dpreview.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="dpreview.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="dpreview.com"])
+kagi.com##._0_image_item[data-host_url*="dpreview.com"]
+startpage.com##.w-gl__result:has(a[href*="dpreview.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(dpreview.com))
+search.brave.com###results a[href*="dpreview.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="dpreview.com"]:upward([id^="img"])
+search.brave.com###results a[href*="dpreview.com"]:upward(.card)
+bing.com###b_content a[href*="eero.com"]:upward(li)
+www.google.*##.g:has(a[href*="eero.com"])
+www.google.*##a[href*="eero.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="eero.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="eero.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="eero.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="eero.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="eero.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="eero.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="eero.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="eero.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="eero.com"])
+kagi.com##._0_image_item[data-host_url*="eero.com"]
+startpage.com##.w-gl__result:has(a[href*="eero.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(eero.com))
+search.brave.com###results a[href*="eero.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="eero.com"]:upward([id^="img"])
+search.brave.com###results a[href*="eero.com"]:upward(.card)
+bing.com###b_content a[href*="glowroad.com"]:upward(li)
+www.google.*##.g:has(a[href*="glowroad.com"])
+www.google.*##a[href*="glowroad.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="glowroad.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="glowroad.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="glowroad.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="glowroad.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="glowroad.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="glowroad.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="glowroad.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="glowroad.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="glowroad.com"])
+kagi.com##._0_image_item[data-host_url*="glowroad.com"]
+startpage.com##.w-gl__result:has(a[href*="glowroad.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(glowroad.com))
+search.brave.com###results a[href*="glowroad.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="glowroad.com"]:upward([id^="img"])
+search.brave.com###results a[href*="glowroad.com"]:upward(.card)
+bing.com###b_content a[href*="goodreads.com"]:upward(li)
+www.google.*##.g:has(a[href*="goodreads.com"])
+www.google.*##a[href*="goodreads.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="goodreads.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="goodreads.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="goodreads.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="goodreads.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="goodreads.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="goodreads.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="goodreads.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="goodreads.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="goodreads.com"])
+kagi.com##._0_image_item[data-host_url*="goodreads.com"]
+startpage.com##.w-gl__result:has(a[href*="goodreads.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(goodreads.com))
+search.brave.com###results a[href*="goodreads.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="goodreads.com"]:upward([id^="img"])
+search.brave.com###results a[href*="goodreads.com"]:upward(.card)
+bing.com###b_content a[href*="graphiq.com"]:upward(li)
+www.google.*##.g:has(a[href*="graphiq.com"])
+www.google.*##a[href*="graphiq.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="graphiq.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="graphiq.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="graphiq.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="graphiq.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="graphiq.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="graphiq.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="graphiq.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="graphiq.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="graphiq.com"])
+kagi.com##._0_image_item[data-host_url*="graphiq.com"]
+startpage.com##.w-gl__result:has(a[href*="graphiq.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(graphiq.com))
+search.brave.com###results a[href*="graphiq.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="graphiq.com"]:upward([id^="img"])
+search.brave.com###results a[href*="graphiq.com"]:upward(.card)
+bing.com###b_content a[href*="imdb.com"]:upward(li)
+www.google.*##.g:has(a[href*="imdb.com"])
+www.google.*##a[href*="imdb.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="imdb.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="imdb.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="imdb.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="imdb.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="imdb.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="imdb.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="imdb.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="imdb.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="imdb.com"])
+kagi.com##._0_image_item[data-host_url*="imdb.com"]
+startpage.com##.w-gl__result:has(a[href*="imdb.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(imdb.com))
+search.brave.com###results a[href*="imdb.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="imdb.com"]:upward([id^="img"])
+search.brave.com###results a[href*="imdb.com"]:upward(.card)
+bing.com###b_content a[href*="irobot.com"]:upward(li)
+www.google.*##.g:has(a[href*="irobot.com"])
+www.google.*##a[href*="irobot.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="irobot.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="irobot.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="irobot.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="irobot.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="irobot.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="irobot.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="irobot.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="irobot.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="irobot.com"])
+kagi.com##._0_image_item[data-host_url*="irobot.com"]
+startpage.com##.w-gl__result:has(a[href*="irobot.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(irobot.com))
+search.brave.com###results a[href*="irobot.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="irobot.com"]:upward([id^="img"])
+search.brave.com###results a[href*="irobot.com"]:upward(.card)
+bing.com###b_content a[href*="mgm.com"]:upward(li)
+www.google.*##.g:has(a[href*="mgm.com"])
+www.google.*##a[href*="mgm.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="mgm.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="mgm.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="mgm.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="mgm.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="mgm.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="mgm.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="mgm.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="mgm.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="mgm.com"])
+kagi.com##._0_image_item[data-host_url*="mgm.com"]
+startpage.com##.w-gl__result:has(a[href*="mgm.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(mgm.com))
+search.brave.com###results a[href*="mgm.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="mgm.com"]:upward([id^="img"])
+search.brave.com###results a[href*="mgm.com"]:upward(.card)
+bing.com###b_content a[href*="onemedical.com"]:upward(li)
+www.google.*##.g:has(a[href*="onemedical.com"])
+www.google.*##a[href*="onemedical.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="onemedical.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="onemedical.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="onemedical.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="onemedical.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="onemedical.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="onemedical.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="onemedical.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="onemedical.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="onemedical.com"])
+kagi.com##._0_image_item[data-host_url*="onemedical.com"]
+startpage.com##.w-gl__result:has(a[href*="onemedical.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(onemedical.com))
+search.brave.com###results a[href*="onemedical.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="onemedical.com"]:upward([id^="img"])
+search.brave.com###results a[href*="onemedical.com"]:upward(.card)
+bing.com###b_content a[href*="ring.com"]:upward(li)
+www.google.*##.g:has(a[href*="ring.com"])
+www.google.*##a[href*="ring.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="ring.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="ring.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="ring.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="ring.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="ring.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="ring.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="ring.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="ring.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="ring.com"])
+kagi.com##._0_image_item[data-host_url*="ring.com"]
+startpage.com##.w-gl__result:has(a[href*="ring.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(ring.com))
+search.brave.com###results a[href*="ring.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="ring.com"]:upward([id^="img"])
+search.brave.com###results a[href*="ring.com"]:upward(.card)
+bing.com###b_content a[href*="ring.net"]:upward(li)
+www.google.*##.g:has(a[href*="ring.net"])
+www.google.*##a[href*="ring.net"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="ring.net"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="ring.net"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="ring.net"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="ring.net"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="ring.net"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="ring.net"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="ring.net"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="ring.net"])
+kagi.com##.sri-group:has(a.__sri-url[href*="ring.net"])
+kagi.com##._0_image_item[data-host_url*="ring.net"]
+startpage.com##.w-gl__result:has(a[href*="ring.net"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(ring.net))
+search.brave.com###results a[href*="ring.net"]:upward(.snippet)
+search.brave.com###img-results a[href*="ring.net"]:upward([id^="img"])
+search.brave.com###results a[href*="ring.net"]:upward(.card)
+bing.com###b_content a[href*="twitch.tv"]:upward(li)
+www.google.*##.g:has(a[href*="twitch.tv"])
+www.google.*##a[href*="twitch.tv"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="twitch.tv"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="twitch.tv"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="twitch.tv"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="twitch.tv"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="twitch.tv"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="twitch.tv"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="twitch.tv"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="twitch.tv"])
+kagi.com##.sri-group:has(a.__sri-url[href*="twitch.tv"])
+kagi.com##._0_image_item[data-host_url*="twitch.tv"]
+startpage.com##.w-gl__result:has(a[href*="twitch.tv"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(twitch.tv))
+search.brave.com###results a[href*="twitch.tv"]:upward(.snippet)
+search.brave.com###img-results a[href*="twitch.tv"]:upward([id^="img"])
+search.brave.com###results a[href*="twitch.tv"]:upward(.card)
+bing.com###b_content a[href*="veeqo.com"]:upward(li)
+www.google.*##.g:has(a[href*="veeqo.com"])
+www.google.*##a[href*="veeqo.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="veeqo.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="veeqo.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="veeqo.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="veeqo.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="veeqo.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="veeqo.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="veeqo.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="veeqo.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="veeqo.com"])
+kagi.com##._0_image_item[data-host_url*="veeqo.com"]
+startpage.com##.w-gl__result:has(a[href*="veeqo.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(veeqo.com))
+search.brave.com###results a[href*="veeqo.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="veeqo.com"]:upward([id^="img"])
+search.brave.com###results a[href*="veeqo.com"]:upward(.card)
+bing.com###b_content a[href*="watasale.com"]:upward(li)
+www.google.*##.g:has(a[href*="watasale.com"])
+www.google.*##a[href*="watasale.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="watasale.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="watasale.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="watasale.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="watasale.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="watasale.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="watasale.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="watasale.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="watasale.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="watasale.com"])
+kagi.com##._0_image_item[data-host_url*="watasale.com"]
+startpage.com##.w-gl__result:has(a[href*="watasale.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(watasale.com))
+search.brave.com###results a[href*="watasale.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="watasale.com"]:upward([id^="img"])
+search.brave.com###results a[href*="watasale.com"]:upward(.card)
+bing.com###b_content a[href*="wholefoodsmarket.com"]:upward(li)
+www.google.*##.g:has(a[href*="wholefoodsmarket.com"])
+www.google.*##a[href*="wholefoodsmarket.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="wholefoodsmarket.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="wholefoodsmarket.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="wholefoodsmarket.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="wholefoodsmarket.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="wholefoodsmarket.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="wholefoodsmarket.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="wholefoodsmarket.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="wholefoodsmarket.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="wholefoodsmarket.com"])
+kagi.com##._0_image_item[data-host_url*="wholefoodsmarket.com"]
+startpage.com##.w-gl__result:has(a[href*="wholefoodsmarket.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(wholefoodsmarket.com))
+search.brave.com###results a[href*="wholefoodsmarket.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="wholefoodsmarket.com"]:upward([id^="img"])
+search.brave.com###results a[href*="wholefoodsmarket.com"]:upward(.card)
+bing.com###b_content a[href*="woot.com"]:upward(li)
+www.google.*##.g:has(a[href*="woot.com"])
+www.google.*##a[href*="woot.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="woot.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="woot.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="woot.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="woot.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="woot.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="woot.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="woot.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="woot.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="woot.com"])
+kagi.com##._0_image_item[data-host_url*="woot.com"]
+startpage.com##.w-gl__result:has(a[href*="woot.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(woot.com))
+search.brave.com###results a[href*="woot.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="woot.com"]:upward([id^="img"])
+search.brave.com###results a[href*="woot.com"]:upward(.card)
+bing.com###b_content a[href*="zappos.com"]:upward(li)
+www.google.*##.g:has(a[href*="zappos.com"])
+www.google.*##a[href*="zappos.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="zappos.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="zappos.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="zappos.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="zappos.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="zappos.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="zappos.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="zappos.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="zappos.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="zappos.com"])
+kagi.com##._0_image_item[data-host_url*="zappos.com"]
+startpage.com##.w-gl__result:has(a[href*="zappos.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(zappos.com))
+search.brave.com###results a[href*="zappos.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="zappos.com"]:upward([id^="img"])
+search.brave.com###results a[href*="zappos.com"]:upward(.card)
+bing.com###b_content a[href*="zoox.com"]:upward(li)
+www.google.*##.g:has(a[href*="zoox.com"])
+www.google.*##a[href*="zoox.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="zoox.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="zoox.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="zoox.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="zoox.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="zoox.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="zoox.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="zoox.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="zoox.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="zoox.com"])
+kagi.com##._0_image_item[data-host_url*="zoox.com"]
+startpage.com##.w-gl__result:has(a[href*="zoox.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(zoox.com))
+search.brave.com###results a[href*="zoox.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="zoox.com"]:upward([id^="img"])
+search.brave.com###results a[href*="zoox.com"]:upward(.card)
