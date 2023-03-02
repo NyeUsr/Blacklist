@@ -8,7 +8,7 @@ Name |      Description      | Subscribe |
 <br>
 
 # Extensions
-**[/Anti-corp/](https://github.com/NyeUsr/Blacklist/tree/main/Anti-Corp)** -<br>
+**[/Anti-corp/](https://github.com/NyeUsr/Blacklist/tree/main/Anti-Corp#readme)** -<br>
 A directory of corporations for you to choose from and block, including all known subsidiaries.<br><br>
 **[/Scripts/](https://github.com/NyeUsr/Blacklist/tree/main/Scripts)** -<br>
 A directory with the scripts I use to help me maintain this project.<br><br>
