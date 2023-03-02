@@ -1,21 +1,16 @@
+@@||mtalk.google.com^
+@@||notifications-pa.googleapis.com^
+@@||android.googleapis.com^
 ||github.com^$badfilter
 ||githubusercontent.com^$badfilter
 ||githubassets.com^$badfilter
 
-||fonts.googleapis.com^$redirect=noop.txt
-||safebrowsing.googleapis.com^
 ||hyvor.com^
 ||arc.io^
-||dns.google^
 ||webspellchecker.net^
-2001:4860:4860::8844
-2001:4860:4860::8888
-8.8.8.8
-8.8.4.4
 
 mega.nz##.gallery-btn
 
-||storage.googleapis.com^$app=com.brave.browser
 *$app=com.camerasideas.trimmer
 *$app=com.catchingnow.icebox
 *$app=com.verizon.mips.services
