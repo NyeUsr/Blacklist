@@ -141,11 +141,14 @@
 ||gfx.ms^
 ||gist.new^
 ||github.blog^
+||github.co.jp^
 ||github.com^
 ||github.dev^
+||github.io^
 ||github.map.fastly.net^
 ||githubapp.com^
 ||githubassets.com^
+||githubstatus.com^
 ||githubusercontent.com^
 ||glintinc.com^
 ||hessie.net^
@@ -646,6 +649,24 @@ startpage.com##.image-container:has(div.image-quick-details span:has-text(github
 search.brave.com###results a[href*="github.blog"]:upward(.snippet)
 search.brave.com###img-results a[href*="github.blog"]:upward([id^="img"])
 search.brave.com###results a[href*="github.blog"]:upward(.card)
+bing.com###b_content a[href*="github.co.jp"]:upward(li)
+www.google.*##.g:has(a[href*="github.co.jp"])
+www.google.*##a[href*="github.co.jp"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="github.co.jp"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="github.co.jp"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="github.co.jp"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="github.co.jp"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="github.co.jp"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="github.co.jp"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="github.co.jp"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="github.co.jp"])
+kagi.com##.sri-group:has(a.__sri-url[href*="github.co.jp"])
+kagi.com##._0_image_item[data-host_url*="github.co.jp"]
+startpage.com##.w-gl__result:has(a[href*="github.co.jp"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(github.co.jp))
+search.brave.com###results a[href*="github.co.jp"]:upward(.snippet)
+search.brave.com###img-results a[href*="github.co.jp"]:upward([id^="img"])
+search.brave.com###results a[href*="github.co.jp"]:upward(.card)
 www.google.*##.g:has(a[href*="github.com"])
 www.google.*##a[href*="github.com"]:upward(1)
 duckduckgo.com##a[data-testid="result-title-a"][href*="github.com"]:upward(.nrn-react-div)
@@ -680,6 +701,60 @@ startpage.com##.image-container:has(div.image-quick-details span:has-text(github
 search.brave.com###results a[href*="github.dev"]:upward(.snippet)
 search.brave.com###img-results a[href*="github.dev"]:upward([id^="img"])
 search.brave.com###results a[href*="github.dev"]:upward(.card)
+bing.com###b_content a[href*="github.io"]:upward(li)
+www.google.*##.g:has(a[href*="github.io"])
+www.google.*##a[href*="github.io"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="github.io"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="github.io"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="github.io"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="github.io"])
+kagi.com##.sri-group:has(a.__sri-url[href*="github.io"])
+kagi.com##._0_image_item[data-host_url*="github.io"]
+startpage.com##.w-gl__result:has(a[href*="github.io"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(github.io))
+search.brave.com###results a[href*="github.io"]:upward(.snippet)
+search.brave.com###img-results a[href*="github.io"]:upward([id^="img"])
+search.brave.com###results a[href*="github.io"]:upward(.card)
+bing.com###b_content a[href*="github.io"]:upward(li)
+www.google.*##.g:has(a[href*="github.io"])
+www.google.*##a[href*="github.io"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="github.io"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="github.io"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="github.io"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="github.io"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="github.io"])
+kagi.com##.sri-group:has(a.__sri-url[href*="github.io"])
+kagi.com##._0_image_item[data-host_url*="github.io"]
+startpage.com##.w-gl__result:has(a[href*="github.io"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(github.io))
+search.brave.com###results a[href*="github.io"]:upward(.snippet)
+search.brave.com###img-results a[href*="github.io"]:upward([id^="img"])
+search.brave.com###results a[href*="github.io"]:upward(.card)
+bing.com###b_content a[href*="githubstatus.com"]:upward(li)
+www.google.*##.g:has(a[href*="githubstatus.com"])
+www.google.*##a[href*="githubstatus.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="githubstatus.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="githubstatus.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="githubstatus.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="githubstatus.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="githubstatus.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="githubstatus.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="githubstatus.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="githubstatus.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="githubstatus.com"])
+kagi.com##._0_image_item[data-host_url*="githubstatus.com"]
+startpage.com##.w-gl__result:has(a[href*="githubstatus.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(githubstatus.com))
+search.brave.com###results a[href*="githubstatus.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="githubstatus.com"]:upward([id^="img"])
+search.brave.com###results a[href*="githubstatus.com"]:upward(.card)
 www.google.*##.g:has(a[href*="githubusercontent.com"])
 www.google.*##a[href*="githubusercontent.com"]:upward(1)
 duckduckgo.com##a[data-testid="result-title-a"][href*="githubusercontent.com"]:upward(.nrn-react-div)

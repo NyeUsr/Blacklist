@@ -10,6 +10,7 @@
 8.8.8.8
 ||.goog^
 ||.google^
+||.youtube^
 ||1e100.net^
 ||abc.xyz^
 ||about.google^
@@ -27,6 +28,7 @@
 ||app-measurement.com^
 ||appspot.com^
 ||area120.com^
+||artists.youtube^
 ||autodraw.com^
 ||blog.google^
 ||blogblog.com^
@@ -65,7 +67,6 @@
 ||form.new^
 ||forms.gle^
 ||forms.new^
-||page.link^
 ||g.co^
 ||get.app^
 ||get.dev^
@@ -120,6 +121,7 @@
 ||meeting.new^
 ||nest.com^
 ||nic.google^
+||page.link^
 ||panoramio.com^
 ||pki.goog^
 ||pride.google^
@@ -191,6 +193,24 @@ startpage.com##.image-container:has(div.image-quick-details span:has-text(.googl
 search.brave.com###results a[href*=".google"]:upward(.snippet)
 search.brave.com###img-results a[href*=".google"]:upward([id^="img"])
 search.brave.com###results a[href*=".google"]:upward(.card)
+bing.com###b_content a[href*=".youtube"]:upward(li)
+www.google.*##.g:has(a[href*=".youtube"])
+www.google.*##a[href*=".youtube"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*=".youtube"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*=".youtube"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*=".youtube"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*=".youtube"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*=".youtube"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*=".youtube"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*=".youtube"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*=".youtube"])
+kagi.com##.sri-group:has(a.__sri-url[href*=".youtube"])
+kagi.com##._0_image_item[data-host_url*=".youtube"]
+startpage.com##.w-gl__result:has(a[href*=".youtube"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(.youtube))
+search.brave.com###results a[href*=".youtube"]:upward(.snippet)
+search.brave.com###img-results a[href*=".youtube"]:upward([id^="img"])
+search.brave.com###results a[href*=".youtube"]:upward(.card)
 bing.com###b_content a[href*="abc.xyz"]:upward(li)
 duckduckgo.com##a[data-testid="result-title-a"][href*="abc.xyz"]:upward(.nrn-react-div)
 duckduckgo.com##.tile-wrap a[href*="abc.xyz"]:upward(.tile)
