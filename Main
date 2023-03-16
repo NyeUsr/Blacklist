@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 65N-1563
+! Version: 66N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -926,6 +926,14 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||concernedwhichever.com^
+||stinglackingrent.com^
+||kgdvs9ov3l2aasw4nuts.com^
+||petwoodfustet.com^
+||atableofcup.com^
+||fumrafdwaapp.com^
+||limurol.com^
+||syenitetatler.tech^
 ||gpt-ai-chat.com^
 ||chatgpt-pc.com^
 ||f4235693e4.com^
@@ -7936,7 +7944,6 @@ http://twitcount.com$3p
 ||powerlinks.com^
 ||powerofsearches.com^
 ||powertracker.org^
-||powr.io^
 ||ppcmate.com^
 ||ppcprotect.com^
 ||ppmobiles.com^
@@ -12030,10 +12037,21 @@ nypost.com##.inline-module__inner:has-text(More On:)
 nypost.com##.comments-inline-cta:has-text(What do you think?)
 nationalfile.com##.jnews_inline_related_post
 nationalfile.com##[href*="http:"]
+addons.mozilla.org##.Notice-dismissible.GetFirefoxBanner
+techradar.com##.exit-intent__background.exit-intent
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+##.dl_cookieBanner_innerLax:not(html, body, button, input)
+###hs-eu-cookie-confirmation-inner:not(html, body, button, input)
+###cookie_policy:not(html, body, button, input)
+##[id*="feature_arcad"]:not(html, body, button, input)
+##.newsletter-signup:not(html, body, button, input)
+##[src*="concernedwhichever.com"]:upward(span):not(html, body, button, input)
+##[class*="cookie-banner-module"]:not(html, body, button, input)
+##[class*="cookieConsentBannerContainer-"]:not(html, body, button, input)
+##[class*="ad-slot__container"]:not(html, body, button, input)
 ##[href="https://stand-with-ukraine.pp.ua/"]
 ##[class*="-adlabel"]:not(html, body, button, input)
 ##[id*="golin-"]:not(html, body, button, input)
