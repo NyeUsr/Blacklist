@@ -97,6 +97,7 @@ $$script[wildcard="*setCookie*countVisit();*"]
 $$script[wildcard="**window.onbeforeunload*popit == true*"]
 $$script[wildcard="*navigator.plugins[i].name*screen.width*window.location.href*"]
 $$noscript[tag-content="exosrv"]
+theepochtimes.com$$script[tag-content="eet_tags"]
 
 
 ! Disabled for the time being as this breaks a fair few sites
@@ -550,8 +551,6 @@ com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###exposeMa
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.overlay-promo:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.header-ad:not(html, body, button, input)
-!+ NOT_OPTIMIZED
-com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.modal__overlay:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.-show.related-bar:not(html, body, button, input)
 !+ NOT_OPTIMIZED

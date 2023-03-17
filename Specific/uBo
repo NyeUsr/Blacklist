@@ -66,6 +66,7 @@
 *##^script:has-text(AntiAdblock)
 *##^script:has-text(adblock.html)
 *##^script:has-text(You\'re using an AdBlocker)
+theepochtimes.com##^script:has-text(eet_tags)
 !#endif
 
 !----------------------------

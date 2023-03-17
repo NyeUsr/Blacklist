@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 66N-1563
+! Version: 67N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -112,6 +112,11 @@
 ! https://github.com/nextdns/metadata/issues/988
 @@||wl.spotify.com^$1p
 
+! Anti adblock messages - these don't unblock ads
+@@||pagead2.googlesyndication.com^$domain=crast.net
+@@||js.wpadmngr.com/static/adManager.js^$domain=luscious.net
+@@||static-cdn.spot.im/production/conversation/*/ad-container-bundle.js
+
 ! These Ads are opt-in and shouldn't be blocked
 @@||ads.brave.com^
 @@||ads-serve.brave.com^
@@ -144,14 +149,8 @@
 ! Unbreak Delta Dental Login
 @@||login-wsprod.deltadental.com^$1p,script
 
-! Not ads, just trying to bait adblockers into breaking embeded content
-@@||static-cdn.spot.im/production/conversation/*/ad-container-bundle.js
-
 ! Unbreak Apps Not Loading on Roku TV
 @@||scribe.logs.roku.com^
-
-! Anti adblock message
-@@||pagead2.googlesyndication.com^$domain=crast.net
 
 ! Required for updates
 @@||data.mistat.intl.xiaomi.com^
@@ -12016,8 +12015,6 @@ audiobookbay.li##h2:has-text(AD)
 wikipedia.org##.frb-layout, [class*="frb-inline-"], [class*="frb-country"]
 reclaimthenet.org##.elementor-top-section.elementor-section:has-text(Defend free speech and individual liberty online.)
 reclaimthenet.org##.code-block:has-text(subscribe to Reclaim The Net.)
-luscious.net###modal-root
-!luscious.net#$#body { overflow: unset !important; }
 weatherbug.com##notification-footer
 enago.com###fixed-form-container
 goodreads.com##.Header:style(max-height: 8%)
@@ -12039,6 +12036,7 @@ nationalfile.com##.jnews_inline_related_post
 nationalfile.com##[href*="http:"]
 addons.mozilla.org##.Notice-dismissible.GetFirefoxBanner
 techradar.com##.exit-intent__background.exit-intent
+theepochtimes.com##.top_ad
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
@@ -12253,7 +12251,6 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ###exposeMask:not(html, body, button, input)
 ##.overlay-promo:not(html, body, button, input)
 ##.header-ad:not(html, body, button, input)
-##.modal__overlay:not(html, body, button, input)
 ##.-show.related-bar:not(html, body, button, input)
 ##.adslot:not(html, body, button, input)
 ###v2campaignmidpage:not(html, body, button, input)
@@ -12700,7 +12697,6 @@ $removeparam=affiliate_ref
 $removeparam=CLIENT_IMPRESSION
 $removeparam=page-ref
 $removeparam=browser-info
-$removeparam=referrer
 $removeparam=browserver
 $removeparam=foxref
 $removeparam=is_first_visit
