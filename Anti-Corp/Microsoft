@@ -10,6 +10,7 @@
 ||343industries.com^
 ||a-msedge.net^
 ||abc.wtf^
+||akamaiedge.net^
 ||akamaized.net^
 ||andthewinneris.biz^
 ||appcenter.ms^
@@ -237,8 +238,6 @@
 ||yigalaxy.com^
 ||za7.net^
 ||zyhcxzs.com^
-
-##.fa-linkedin
 
 ! Generated using https://letsblock.it/filters/search-results
 www.google.*##.g:has(a[href*="1drv.com"])
