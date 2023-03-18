@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 67N-1563
+! Version: 68N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -9352,7 +9352,6 @@ http://twitcount.com$3p
 ||t.freelancer.com^
 ||t.icebns.com^
 ||t.info.adobesystems.com^
-||t.paypal.com^
 ||t.poki.io^
 ||t.powerreviews.com^
 ||t.rainide.com^
@@ -11229,7 +11228,6 @@ _ads_$image,xhr
 /ads?spot_id=
 /audio-ads?
 /js/customer-tracking
-/api/logger
 /concert_ads
 /getInteractionStats
 /logappclick
@@ -11420,7 +11418,6 @@ ext.track.scripts*
 /log.asp?callback=
 /json/*/getStats
 */akam/11/
-*/tagmanager/
 /doctracking.js
 /bidbarrel-cbsnews$script
 /vhs-plugin-*-analytics.min.js
@@ -11470,7 +11467,6 @@ ext.track.scripts*
 /lib/tracking
 /atrk.js
 /VisitorIdentification.js
-/client.min.js
 /video-tracking.
 /detectmobilebrowser.js
 /__fpn.gif
@@ -12823,9 +12819,6 @@ $removeparam=c3nid
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
-
-! Test Scroll Bar Unblocking
-*##html:style(overflow-x: unset !important;)
 
 ! AdGuard Home
 ! "Relay" on school devices
