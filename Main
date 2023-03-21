@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 68N-1563
+! Version: 69N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -86,6 +86,7 @@
 @@||plugin.intuitcdn.net^$1p
 @@||windstream.com^$1p
 @@||gokinetic.com^$1p
+@@||uxfabric.intuitcdn.net^
 
 ! Lead/redirect tracking - required for usability
 @@||events.release.narrativ.com^
@@ -653,6 +654,7 @@ http://twitcount.com$3p
 ?zoneid=$popup
 !#endif
 
+||twinrdsrv.com^$popup,popunder
 ||trustyfine.com^$popup,popunder
 ||sughthroies.com^$popup,popunder
 ||dorogokupimnoutbuk.online^$popup,popunder
@@ -716,6 +718,7 @@ http://twitcount.com$3p
 ||vk.com/rtrg$3p
 
 ! Wildcard domains
+-*-affilimate.cloudfunctions.net^
 *-*-pixel-*.vc-networks.com^
 *-*covid19petition.ga^
 *-adnow.com^
@@ -925,6 +928,16 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||s.infogram.com^$ping
+||rhetoricalloss.com^
+||chat-gpt.org^
+||notix.io^
+||orchestracrab.com^
+||revampcdn.com^
+||affilimate.io^
+||goadserver.com^
+||goaserv.com^
+||goasrv.com^
 ||concernedwhichever.com^
 ||stinglackingrent.com^
 ||kgdvs9ov3l2aasw4nuts.com^
@@ -10935,7 +10948,11 @@ http://twitcount.com$3p
 ||s.yimg.com/rq/darla/$subdocument
 ||yahoo.com/f/track/tgt/imp?
 ||apis.google.com/js/client.js
+||mail.quicken.com/open.aspx
 
+/statics/px.gif
+//tracking_v*-getConfig
+/exoclick/*.html
 */*.gif?*id*$domain=~discord.com|~discordapp.com|~sex.com|~pornhub.com|~google.com|~github.com|~gitlab.com
 */data/ptm.gif/
 */advertisement/iframe/
@@ -12033,6 +12050,15 @@ nationalfile.com##[href*="http:"]
 addons.mozilla.org##.Notice-dismissible.GetFirefoxBanner
 techradar.com##.exit-intent__background.exit-intent
 theepochtimes.com##.top_ad
+amazon.com###cart-item-recs, #sc-new-upsell
+techpp.com##[id*="brxe-"] > .side-inserter:has-text(Advertisement)
+techpp.com##[class*="code-block-block"] > [class*="code-block"]:has-text(Advertisement):upward(1)
+techpp.com##.bg-white.brxe-section:nth-of-type(1)
+mint.intuit.com##.offerSection > .offerContainer
+ghacks.net##.ghacks-ad, [id*=ghacks_ad_code]
+productivityland.com##.ad-image
+kinsta.com##.app-hosting-cta, .yogurt-Paper-root:has-text(Save this article as a PDF.)
+kcci.com##.no-cream.article-content--footer, .data-id\=.cream-inline.related-embed, .embed-inner > .related-embed
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
