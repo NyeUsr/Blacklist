@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 70N-1563
+! Version: 71N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -67,6 +67,17 @@
 @@||secureinternetbank.com^$1p
 @@||midamericanenergy.com^$1p
 @@||fidelity.com^$1p
+@@||cdn.pendo.io^
+@@||data.pendo.io^
+@@||fidelity.demdex.net^
+@@||r.3gl.net^
+@@||fmrcorp.tt.omtrdc.net^
+@@||zncvgjh8lmjxbkyln-fmrpi.siteintercept.qualtrics.com^
+@@||siteintercept.qualtrics.com^
+@@||cm.everesttech.net^
+@@||mboxedge35.tt.omtrdc.net^
+@@||cdnssl.clicktale.net^
+@@||d.agkn.com^
 @@||current.com^$1p
 @@||chime.com^$1p
 @@||paymentech.net^$1p
