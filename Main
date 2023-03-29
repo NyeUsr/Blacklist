@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 69N-1563
+! Version: 70N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -928,6 +928,14 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||adsninja.ca^
+||danbo.org^
+||cleanadswebtechie.autos^
+||smoke-cattle-related-create.run^
+||clickitclick.xyz^
+||thepsusiwho.com^
+||customer-feedbacks.web.roku.com^
+||optimus.cti.roku.com^
 ||s.infogram.com^$ping
 ||rhetoricalloss.com^
 ||chat-gpt.org^
@@ -11134,7 +11142,6 @@ _ads_$image,xhr
 /identify.html
 */ip2geo/
 /ipAddress
-/js/analytics
 /geoip.php
 /click.json
 /track-view
@@ -12059,6 +12066,19 @@ ghacks.net##.ghacks-ad, [id*=ghacks_ad_code]
 productivityland.com##.ad-image
 kinsta.com##.app-hosting-cta, .yogurt-Paper-root:has-text(Save this article as a PDF.)
 kcci.com##.no-cream.article-content--footer, .data-id\=.cream-inline.related-embed, .embed-inner > .related-embed
+wired.com##.journey-template--paywall-bar, .paywall[class*="SidebarHeading"]:has-text(Related Stories):upward(1)
+washingtonpost.com###leaderboard-wrapper, .softwall-overlay, .db-ns.dn.cb:has-text(Advertisement)
+washingtonpost.com##div.article-body > .hide-for-print.mb-md:has-text(newsletter)
+kcci.com##.no-cream.article-content--footer, .data-id\=.cream-inline.related-embed, .related-embed
+nationalfile.com##h4.jeg_post_title:has-text(Related: )
+lifesitenews.com##p:has-text(RELATED: )
+investopedia.com##.mntl-leaderboard-spacer.js-rollaway-spacer
+raspberrytips.com##.ml_form
+fidelity.com##.scl-center
+docs.gradle.org##.ckcontent
+amazon.com##.sb-video-creative.sbv-video-single-product.rush-component:has-text(Sponsored):upward(2)
+amazon.com##div.s-widget-spacing-large:has-text(Sponsored)
+amazon.com###percolate-ui-ilm_div
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
@@ -12668,6 +12688,7 @@ org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ||video-ak.cdn.spotify.com.eip.akadns.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
 ||doubleclick.net/instream/ad_status.js$rewrite=abp-resource:blank-js
 ||static.ads-twitter.com/uwt.js$rewrite=abp-resource:blank-js
+/js/analytics$rewrite=abp-resource:blank-js
 */utag/$rewrite=abp-resource:blank-js
 /analytics.v2.js$rewrite=abp-resource:blank-js
 /videojs.ads.js$rewrite=abp-resource:blank-js
@@ -12832,14 +12853,29 @@ $removeparam=share_session_id
 $removeparam=from_source
 $removeparam=cjevent
 $removeparam=c3nid
-||search.brave.com^$removeparam=source
-||tradedoubler.com^$removeparam=tduid
-||adguard-dns.io^$removeparam=clid
-||qwant.com^$removeparam=client
-||amazon.com^$removeparam=keywords
-||amazon.com^$removeparam=ref
-||amazon.com^$removeparam=qid
-||amazon.com^$removeparam=sr
+search.brave.com$removeparam=source
+tradedoubler.com$removeparam=tduid
+adguard-dns.io$removeparam=clid
+qwant.com$removeparam=client
+amazon.com$removeparam=keywords
+amazon.com$removeparam=qid
+amazon.com$removeparam=sr
+amazon.com$removeparam=linkId
+amazon.com$removeparam=linkCode
+amazon.com$removeparam=tag
+amazon.com$removeparam=ref_
+amazon.com$removeparam=ref
+amazon.com$removeparam=th
+amazon.com$removeparam=psc
+amazon.com$removeparam=pd_rd_i
+amazon.com$removeparam=content-id
+amazon.com$removeparam=s
+amazon.com$removeparam=sp_csd
+amazon.com$removeparam=spLa
+amazon.com$removeparam=camp
+amazon.com$removeparam=creative
+amazon.com$removeparam=creativeASIN
+amazon.com$removeparam=/p(d|f)\_rd\_.+/
 
 ! Json Prune (uBo & AdGuard)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
@@ -12858,4 +12894,3 @@ ably-realtime.com$dnsrewrite=NOERROR;A;157.90.154.178
 p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
 ! Fix in Brave Browser when using DNS-over-HTTPS
 ||www.uscellular.com^$dnstype=AAAA
-!
