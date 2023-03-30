@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 71N-1563
+! Version: 72N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -475,6 +475,110 @@
 0.0.0.0 toresaid.com$badfilter
 ::1 toresaid.com$badfilter
 *://*.toresaid.com/*$badfilter
+127.0.0.1 dailywire.com$badfilter
+0.0.0.0 dailywire.com$badfilter
+::1 dailywire.com$badfilter
+*://*.dailywire.com/*$badfilter
+127.0.0.1 epochtimes.cz$badfilter
+0.0.0.0 epochtimes.cz$badfilter
+::1 epochtimes.cz$badfilter
+*://*.epochtimes.cz/*$badfilter
+127.0.0.1 epochtimes.com$badfilter
+0.0.0.0 epochtimes.com$badfilter
+::1 epochtimes.com$badfilter
+*://*.epochtimes.com/*$badfilter
+127.0.0.1 epochtimes.com.ua$badfilter
+0.0.0.0 epochtimes.com.ua$badfilter
+::1 epochtimes.com.ua$badfilter
+*://*.epochtimes.com.ua/*$badfilter
+127.0.0.1 epochtimes.it$badfilter
+0.0.0.0 epochtimes.it$badfilter
+::1 epochtimes.it$badfilter
+*://*.epochtimes.it/*$badfilter
+127.0.0.1 epochtimes.jp$badfilter
+0.0.0.0 epochtimes.jp$badfilter
+::1 epochtimes.jp$badfilter
+*://*.epochtimes.jp/*$badfilter
+127.0.0.1 epochtimes.fr$badfilter
+0.0.0.0 epochtimes.fr$badfilter
+::1 epochtimes.fr$badfilter
+*://*.epochtimes.fr/*$badfilter
+127.0.0.1 epochtimes.com.br$badfilter
+0.0.0.0 epochtimes.com.br$badfilter
+::1 epochtimes.com.br$badfilter
+*://*.epochtimes.com.br/*$badfilter
+127.0.0.1 epochtimes.ru$badfilter
+0.0.0.0 epochtimes.ru$badfilter
+::1 epochtimes.ru$badfilter
+*://*.epochtimes.ru/*$badfilter
+127.0.0.1 epochtimes-romania.com$badfilter
+0.0.0.0 epochtimes-romania.com$badfilter
+::1 epochtimes-romania.com$badfilter
+*://*.epochtimes-romania.com/*$badfilter
+127.0.0.1 epochtimes.se$badfilter
+0.0.0.0 epochtimes.se$badfilter
+::1 epochtimes.se$badfilter
+*://*.epochtimes.se/*$badfilter
+127.0.0.1 epochtimes.nl$badfilter
+0.0.0.0 epochtimes.nl$badfilter
+::1 epochtimes.nl$badfilter
+*://*.epochtimes.nl/*$badfilter
+127.0.0.1 epochtimes.pl$badfilter
+0.0.0.0 epochtimes.pl$badfilter
+::1 epochtimes.pl$badfilter
+*://*.epochtimes.pl/*$badfilter
+127.0.0.1 epochtimes.bg$badfilter
+0.0.0.0 epochtimes.bg$badfilter
+::1 epochtimes.bg$badfilter
+*://*.epochtimes.bg/*$badfilter
+127.0.0.1 persianepochtimes.com$badfilter
+0.0.0.0 persianepochtimes.com$badfilter
+::1 persianepochtimes.com$badfilter
+*://*.persianepochtimes.com/*$badfilter
+127.0.0.1 kr.theepochtimes.com$badfilter
+0.0.0.0 kr.theepochtimes.com$badfilter
+::1 kr.theepochtimes.com$badfilter
+*://*.kr.theepochtimes.com/*$badfilter
+127.0.0.1 epochtimestr.com$badfilter
+0.0.0.0 epochtimestr.com$badfilter
+::1 epochtimestr.com$badfilter
+*://*.epochtimestr.com/*$badfilter
+127.0.0.1 epochtimes.co.il$badfilter
+0.0.0.0 epochtimes.co.il$badfilter
+::1 epochtimes.co.il$badfilter
+*://*.epochtimes.co.il/*$badfilter
+127.0.0.1 theepochtimes.gr$badfilter
+0.0.0.0 theepochtimes.gr$badfilter
+::1 theepochtimes.gr$badfilter
+*://*.theepochtimes.gr/*$badfilter
+127.0.0.1 epochtimesviet.com$badfilter
+0.0.0.0 epochtimesviet.com$badfilter
+::1 epochtimesviet.com$badfilter
+*://*.epochtimesviet.com/*$badfilter
+127.0.0.1 subscribe.theepochtimes.com$badfilter
+0.0.0.0 subscribe.theepochtimes.com$badfilter
+::1 subscribe.theepochtimes.com$badfilter
+*://*.subscribe.theepochtimes.com/*$badfilter
+127.0.0.1 epochtimes.co.kr$badfilter
+0.0.0.0 epochtimes.co.kr$badfilter
+::1 epochtimes.co.kr$badfilter
+*://*.epochtimes.co.kr/*$badfilter
+127.0.0.1 epochtimesbusiness.it$badfilter
+0.0.0.0 epochtimesbusiness.it$badfilter
+::1 epochtimesbusiness.it$badfilter
+*://*.epochtimesbusiness.it/*$badfilter
+127.0.0.1 es.theepochtimes.com$badfilter
+0.0.0.0 es.theepochtimes.com$badfilter
+::1 es.theepochtimes.com$badfilter
+*://*.es.theepochtimes.com/*$badfilter
+127.0.0.1 kremlin.ru$badfilter
+0.0.0.0 kremlin.ru$badfilter
+::1 kremlin.ru$badfilter
+*://*.kremlin.ru/*$badfilter
+127.0.0.1 en.kremlin.ru$badfilter
+0.0.0.0 en.kremlin.ru$badfilter
+::1 en.kremlin.ru$badfilter
+*://*.en.kremlin.ru/*$badfilter
 !#endif
 ||log2.musical.ly^$badfilter
 ||ksibradio.com^$badfilter
@@ -542,6 +646,32 @@
 ||citizensforresponsiblesolar.org^$badfilter
 ||toresays.com^$badfilter
 ||toresaid.com^$badfilter
+||dailywire.com^$badfilter
+||epochtimes.cz^$badfilter
+||epochtimes.com^$badfilter
+||epochtimes.com.ua^$badfilter
+||epochtimes.it^$badfilter
+||epochtimes.jp^$badfilter
+||epochtimes.fr^$badfilter
+||epochtimes.com.br^$badfilter
+||epochtimes.ru^$badfilter
+||epochtimes-romania.com^$badfilter
+||epochtimes.se^$badfilter
+||epochtimes.nl^$badfilter
+||epochtimes.pl^$badfilter
+||epochtimes.bg^$badfilter
+||persianepochtimes.com^$badfilter
+||kr.theepochtimes.com^$badfilter
+||epochtimestr.com^$badfilter
+||epochtimes.co.il^$badfilter
+||theepochtimes.gr^$badfilter
+||epochtimesviet.com^$badfilter
+||subscribe.theepochtimes.com^$badfilter
+||epochtimes.co.kr^$badfilter
+||epochtimesbusiness.it^$badfilter
+||es.theepochtimes.com^$badfilter
+||en.kremlin.ru^$badfilter
+||kremlin.ru^$badfilter
 
 !#safari_cb_affinity
 
@@ -665,45 +795,6 @@ http://twitcount.com$3p
 ?zoneid=$popup
 !#endif
 
-||twinrdsrv.com^$popup,popunder
-||trustyfine.com^$popup,popunder
-||sughthroies.com^$popup,popunder
-||dorogokupimnoutbuk.online^$popup,popunder
-||cdsmart-dt.com^$popup,popunder
-||traffichunt.com^$popup,popunder
-||servgeorg.com^$popup,popunder
-||bravetense.com^$popup,popunder
-||awpya.com^$popup,popunder
-||voluumtlkrnarketing.com^$popup,popunder
-||kektds.com^$popup,popunder
-||onclickperformance.com^$popup,popunder
-||ozobsaib.com^$popup,popunder
-||trackints.com^$popup,popunder
-||rndskittytor.com^$popup,popunder
-||thaudray.com^$popup,popunder
-||logs.datadoghq.com^$3p
-||itnuzleafan.com^$popup,popunder
-||ip-api.com^$3p
-||dartsearch.net^$popup
-||dmca.com^$3p
-||seal.thawte.com^$3p
-||parkcircularpearl.com^$popup,popunder
-||nessainy.net^$popup,popunder
-||optnx.com^$popup,popunder
-||trafficjunky.net^$popup,popunder
-||placeholder.com^$3p
-||balaraofixes.website^$popup
-||kougloar.com^$popup
-||bipedhematin.website^$popup
-||adswelcome.xyz^$popup
-||alleviatepracticableaddicted.com^$popup,popunder
-||mybetterck.com^$popup,popunder
-||tumultmarten.com^$popup,popunder
-||nimrute.com^$popup,popunder
-||syndication.realsrv.com/splash.php?$popup,popunder
-||americascardroom.eu/ads/$popup,popunder
-%3DPOPUNDER$popup,popunder
-
 ! Heuristic-like scam/phishing protection
 /-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
 /bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$popup,popunder,domain=mail.google.com|mail.yahoo.com|outlook.com|protonmail.com|proton.me
@@ -718,15 +809,6 @@ http://twitcount.com$3p
 
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
-
-! Third-party
-||analytics.google.com^$3p
-||stand-with-ukraine.pp.ua^$3p
-||bam-x.com^$3p
-||moengage.com^$3p
-||baidu.com^$3p,ping
-||hm.baidu.com^$3p
-||vk.com/rtrg$3p
 
 ! Wildcard domains
 -*-affilimate.cloudfunctions.net^
@@ -939,6 +1021,49 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||allisrael.com^$3p
+||twinrdsrv.com^$popup,popunder
+||trustyfine.com^$popup,popunder
+||sughthroies.com^$popup,popunder
+||dorogokupimnoutbuk.online^$popup,popunder
+||cdsmart-dt.com^$popup,popunder
+||traffichunt.com^$popup,popunder
+||servgeorg.com^$popup,popunder
+||bravetense.com^$popup,popunder
+||awpya.com^$popup,popunder
+||voluumtlkrnarketing.com^$popup,popunder
+||kektds.com^$popup,popunder
+||onclickperformance.com^$popup,popunder
+||ozobsaib.com^$popup,popunder
+||trackints.com^$popup,popunder
+||rndskittytor.com^$popup,popunder
+||thaudray.com^$popup,popunder
+||logs.datadoghq.com^$3p
+||itnuzleafan.com^$popup,popunder
+||ip-api.com^$3p
+||dartsearch.net^$popup
+||dmca.com^$3p
+||seal.thawte.com^$3p
+||parkcircularpearl.com^$popup,popunder
+||nessainy.net^$popup,popunder
+||optnx.com^$popup,popunder
+||trafficjunky.net^$popup,popunder
+||placeholder.com^$3p
+||balaraofixes.website^$popup
+||kougloar.com^$popup
+||bipedhematin.website^$popup
+||adswelcome.xyz^$popup
+||alleviatepracticableaddicted.com^$popup,popunder
+||mybetterck.com^$popup,popunder
+||tumultmarten.com^$popup,popunder
+||nimrute.com^$popup,popunder
+||realsrv.com^$popup,popunder
+||analytics.google.com^$3p
+||stand-with-ukraine.pp.ua^$3p
+||bam-x.com^$3p
+||moengage.com^$3p
+||baidu.com^$3p,ping
+||hm.baidu.com^$3p
 ||adsninja.ca^
 ||danbo.org^
 ||cleanadswebtechie.autos^
@@ -10711,6 +10836,8 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||americascardroom.eu/ads/$popup,popunder
+||vk.com/rtrg$3p
 ||info.vercel.com/trk
 ||yandex.*/ads/
 ||raw.githubusercontent.com/*/StandWithUkraine/*.svg
@@ -10969,6 +11096,7 @@ http://twitcount.com$3p
 ||apis.google.com/js/client.js
 ||mail.quicken.com/open.aspx
 
+%3DPOPUNDER$popup,popunder
 /statics/px.gif
 //tracking_v*-getConfig
 /exoclick/*.html
@@ -12090,6 +12218,7 @@ docs.gradle.org##.ckcontent
 amazon.com##.sb-video-creative.sbv-video-single-product.rush-component:has-text(Sponsored):upward(2)
 amazon.com##div.s-widget-spacing-large:has-text(Sponsored)
 amazon.com###percolate-ui-ilm_div
+sciencing.com##.sticky-leaderboard-container
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)

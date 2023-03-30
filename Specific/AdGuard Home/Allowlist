@@ -6,3 +6,5 @@
 @@||shareasale-analytics.com^
 ! Self-hosted analytics
 @@||analytics.ecosia.org^
+! Might break some apps, whitelist on DNS side to allow specific unblocking
+@@||braze.com^
