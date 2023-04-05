@@ -57,25 +57,13 @@
 ||sanzaru.com^
 ||scape.io^
 ||sparkar.com^
+||tfbnw.net^
 ||wa.me^
 ||whatsapp.com^
 ||whatsapp.me^
 ||whatsapp.net^
 ||wk.pl^
 ||workplace.com^
-
-###share-to-facebook-btn
-##.btn-fb
-##.addthis_button_facebook
-##.addthis_button_instagram
-##.bi-facebook
-##.bi-instagram
-##.share-link-facebook
-##.share-item-facebook
-##.share-facebook
-##.fa-instagram
-##.fa-facebook
-##.social-icons__icon--facebook
 
 ! Generated using https://letsblock.it/filters/search-results
 bing.com###b_content a[href*="atlassolutions.com"]:upward(li)
