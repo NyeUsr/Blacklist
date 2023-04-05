@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 72N-1563
+! Version: 73N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -579,6 +579,22 @@
 0.0.0.0 en.kremlin.ru$badfilter
 ::1 en.kremlin.ru$badfilter
 *://*.en.kremlin.ru/*$badfilter
+127.0.0.1 epik.com$badfilter
+0.0.0.0 epik.com$badfilter
+::1 epik.com$badfilter
+*://*.epik.com/*$badfilter
+127.0.0.1 conservativetribune.com$badfilter
+0.0.0.0 conservativetribune.com$badfilter
+::1 conservativetribune.com$badfilter
+*://*.conservativetribune.com/*$badfilter
+127.0.0.1 nworeport.me$badfilter
+0.0.0.0 nworeport.me$badfilter
+::1 nworeport.me$badfilter
+*://*.nworeport.me/*$badfilter
+127.0.0.1 4chan.org$badfilter
+0.0.0.0 4chan.org$badfilter
+::1 4chan.org$badfilter
+*://*.4chan.org/*$badfilter
 !#endif
 ||log2.musical.ly^$badfilter
 ||ksibradio.com^$badfilter
@@ -672,6 +688,10 @@
 ||es.theepochtimes.com^$badfilter
 ||en.kremlin.ru^$badfilter
 ||kremlin.ru^$badfilter
+||epik.com^$badfilter
+||conservativetribune.com^$badfilter
+||nworeport.me^$badfilter
+||4chan.org^$badfilter
 
 !#safari_cb_affinity
 
@@ -1021,6 +1041,14 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||sphera.tools^
+||resetsrv.com^
+||resetdigital.co^
+||prebidwrapper.com^
+||cratecamera.com^
+||bushesbag.com^
+||relevant-digital.com^
+||scintillatingsilver.com^
 ||allisrael.com^$3p
 ||twinrdsrv.com^$popup,popunder
 ||trustyfine.com^$popup,popunder
@@ -12219,6 +12247,9 @@ amazon.com##.sb-video-creative.sbv-video-single-product.rush-component:has-text(
 amazon.com##div.s-widget-spacing-large:has-text(Sponsored)
 amazon.com###percolate-ui-ilm_div
 sciencing.com##.sticky-leaderboard-container
+serverspace.us##.banner-action.banner__link
+xump.com##.slide.carousel
+clutchpoints.com##.cafemedia-clutchpoints-header, .cafemedia-clutchpoints-sidebar
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
