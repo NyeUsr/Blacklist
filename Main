@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 74N-1563
+! Version: 75N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -728,7 +728,7 @@
 .tt^$3p
 .win^$3p
 .work^$3p
-.zone^$3p
+.zone^$3p,domain=~itch.io
 !#if (!adguard)
 .aaa^$popunder
 .beauty^$popunder
