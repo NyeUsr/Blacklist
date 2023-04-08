@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 75N-1563
+! Version: 76N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -876,6 +876,7 @@ http://twitcount.com$3p
 *systemerror-service*.
 *systemerrorservice*.
 *virusfound*.
+||sentry-reporter.^
 ||a*.api.bbc.co.uk^
 ||ad*.bigmir.net^
 ||ad*.nownews.com^
@@ -1044,6 +1045,14 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||localhost:$3p
+||127.0.0.1:$3p
+||log-upload-os.mihoyo.com^
+||poprush.net^
+||af-ad.co.uk^
+||bluera.com^
+||sentry.insops.net^
+||statsigapi.net^
 ||adschill.com^
 ||serve-servee.com^
 ||fleraprt.com^
@@ -11161,6 +11170,7 @@ http://twitcount.com$3p
 ||apis.google.com/js/client.js
 ||mail.quicken.com/open.aspx
 
+?sentry_key=*&sentry_version=
 %3DPOPUNDER$popup,popunder
 /statics/px.gif
 //tracking_v*-getConfig
@@ -12287,10 +12297,38 @@ sciencing.com##.sticky-leaderboard-container
 serverspace.us##.banner-action.banner__link
 xump.com##.slide.carousel
 clutchpoints.com##.cafemedia-clutchpoints-header, .cafemedia-clutchpoints-sidebar
+search.brave.com###usage-metrics, #premium-promo-wrapper, .sponsored-unit
+adguard.com##.annoyance
+whatismyipaddress.com##.warning-button-container, .call-to-action:has-text(Your private information is exposed)
+boards.4chan.org##[href*="4channel.org/advertise"]
+walmart.com##span > section:has-text(Get the app)
+apkpure.com###policy-info
+cars.com#@#a[href*="doubleclick.net"]
+autotrader.com##.padding-bottom-2.me
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+##[href*="hst2y.com/click.php"]
+##.rightrail-ad-placed:not(html, body, button, input)
+##.ezoic-autoinsert-video:not(html, body, button, input)
+##.ukraine-yellow:not(html, body, button, input)
+##.ukraine-blue:not(html, body, button, input)
+##div.adWrapper:not(html, body, button, input)
+###cmplz-cookiebanner-container:not(html, body, button, input)
+###cookiesMessage:not(html, body, button, input)
+##.sidebar_ad_fix:not(html, body, button, input)
+##.adplaceholder:not(html, body, button, input)
+##.adhesion-block:not(html, body, button, input)
+##.noticeContent.baseHtml:has-text(site uses cookies):not(html, body, button, input)
+##.cookie-warning:not(html, body, button, input)
+##.osano-cm-window:not(html, body, button, input)
+##.no-padding.cookie-bar-wrap:not(html, body, button, input)
+##.middlead:not(html, body, button, input)
+##.mobile.inline.GRVAd:not(html, body, button, input)
+##div.mobile.GRVMpuWrapper:not(html, body, button, input)
+##.display-ad:not(html, body, button, input)
+###fixedAdContainer:not(html, body, button, input)
 ##.dl_cookieBanner_innerLax:not(html, body, button, input)
 ###hs-eu-cookie-confirmation-inner:not(html, body, button, input)
 ###cookie_policy:not(html, body, button, input)

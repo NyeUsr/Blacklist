@@ -135,7 +135,46 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 
 ! Generic hiding for mobile devices using AdGuard
 !#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
-
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href*="hst2y.com/click.php"]
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.rightrail-ad-placed:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ezoic-autoinsert-video:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ukraine-yellow:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ukraine-blue:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##div.adWrapper:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###cmplz-cookiebanner-container:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###cookiesMessage:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.sidebar_ad_fix:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.adplaceholder:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.adhesion-block:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.noticeContent.baseHtml:has-text(site uses cookies):not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookie-warning:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.osano-cm-window:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.no-padding.cookie-bar-wrap:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.middlead:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.mobile.inline.GRVAd:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##div.mobile.GRVMpuWrapper:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.display-ad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###fixedAdContainer:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.dl_cookieBanner_innerLax:not(html, body, button, input)
 !+ NOT_OPTIMIZED
