@@ -5,27 +5,31 @@
 ! Expires: 1 day
 
 ||atlassolutions.com^
+||bulletin.com^
 ||cdninstagram.com^
+||connect.facebook.net.edgekey.net^
 ||crowdtangle.com^
 ||expresswifi.com^
 ||face.com^
+||facebook-web-clients.appspot.com^
 ||facebook.com^
 ||facebook.de^
 ||facebook.net^
 ||facebookblueprint.com^
 ||facebookbrand.com^
+||facebookrecruiting.com^
 ||fb.com^
 ||fb.gg^
 ||fb.me^
+||fbcdn-*.akamaihd.net^
 ||fbcdn-photos-*.*^
 ||fbcdn-profile-*.*^
 ||fbcdn-sphotos-*.*^
-||fbcdn-video-*.akamaihd.net^
-||fbcdn-vthumb-*.akamaihd.net^
 ||fbcdn.net^
 ||fbexternal-*.*^
 ||fbexternal-*.akamaihd.net^
 ||fbpigeon.com^
+||fbsbx.com.online-metrix.net^
 ||fbsbx.com^
 ||fbstatic-*.akamaihd.net^
 ||fbwat.ch^
@@ -38,6 +42,8 @@
 ||instafeed.codev.wixapps.net^
 ||instagram.com^
 ||instagram.net^
+||instagramstatic-a.akamaihd.net.edgesuite.net^
+||instagramstatic-a.akamaihd.net^
 ||internet.org^
 ||las.so^
 ||lassovideos.com^
@@ -45,12 +51,21 @@
 ||lightbox.com^
 ||m.me^
 ||mapillary.com^
+||mapwith.ai^
 ||messenger.com^
+||messengerdevelopers.com^
 ||messengerkids.com^
+||meta.com^
+||metacareers.com^
+||metaque.st^
+||novi.com^
 ||oculus.com^
+||oculusbrand.com^
 ||oculusconnect.com^
+||oculusforbusiness.com^
 ||oculusvr.com^
 ||onavo.com^
+||oversightboard.com^
 ||parseplatform.org^
 ||privatecore.com^
 ||readyatdawn.com^
@@ -63,10 +78,209 @@
 ||whatsapp.com^
 ||whatsapp.me^
 ||whatsapp.net^
+||wit.ai^
 ||wk.pl^
 ||workplace.com^
 
 ! Generated using https://letsblock.it/filters/search-results
+bing.com###b_content a[href*="meta.com"]:upward(li)
+www.google.*##.g:has(a[href*="meta.com"])
+www.google.*##a[href*="meta.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="meta.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="meta.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="meta.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="meta.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="meta.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="meta.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="meta.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="meta.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="meta.com"])
+kagi.com##._0_image_item[data-host_url*="meta.com"]
+startpage.com##.w-gl__result:has(a[href*="meta.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(meta.com))
+search.brave.com###results a[href*="meta.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="meta.com"]:upward([id^="img"])
+search.brave.com###results a[href*="meta.com"]:upward(.card)
+bing.com###b_content a[href*="oculusbrand.com"]:upward(li)
+www.google.*##.g:has(a[href*="oculusbrand.com"])
+www.google.*##a[href*="oculusbrand.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="oculusbrand.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="oculusbrand.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="oculusbrand.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="oculusbrand.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="oculusbrand.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="oculusbrand.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="oculusbrand.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="oculusbrand.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="oculusbrand.com"])
+kagi.com##._0_image_item[data-host_url*="oculusbrand.com"]
+startpage.com##.w-gl__result:has(a[href*="oculusbrand.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(oculusbrand.com))
+search.brave.com###results a[href*="oculusbrand.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="oculusbrand.com"]:upward([id^="img"])
+search.brave.com###results a[href*="oculusbrand.com"]:upward(.card)
+bing.com###b_content a[href*="oculusforbusiness.com"]:upward(li)
+www.google.*##.g:has(a[href*="oculusforbusiness.com"])
+www.google.*##a[href*="oculusforbusiness.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="oculusforbusiness.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="oculusforbusiness.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="oculusforbusiness.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="oculusforbusiness.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="oculusforbusiness.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="oculusforbusiness.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="oculusforbusiness.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="oculusforbusiness.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="oculusforbusiness.com"])
+kagi.com##._0_image_item[data-host_url*="oculusforbusiness.com"]
+startpage.com##.w-gl__result:has(a[href*="oculusforbusiness.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(oculusforbusiness.com))
+search.brave.com###results a[href*="oculusforbusiness.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="oculusforbusiness.com"]:upward([id^="img"])
+search.brave.com###results a[href*="oculusforbusiness.com"]:upward(.card)
+bing.com###b_content a[href*="mapwith.ai"]:upward(li)
+www.google.*##.g:has(a[href*="mapwith.ai"])
+www.google.*##a[href*="mapwith.ai"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="mapwith.ai"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="mapwith.ai"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="mapwith.ai"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="mapwith.ai"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="mapwith.ai"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="mapwith.ai"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="mapwith.ai"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="mapwith.ai"])
+kagi.com##.sri-group:has(a.__sri-url[href*="mapwith.ai"])
+kagi.com##._0_image_item[data-host_url*="mapwith.ai"]
+startpage.com##.w-gl__result:has(a[href*="mapwith.ai"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(mapwith.ai))
+search.brave.com###results a[href*="mapwith.ai"]:upward(.snippet)
+search.brave.com###img-results a[href*="mapwith.ai"]:upward([id^="img"])
+search.brave.com###results a[href*="mapwith.ai"]:upward(.card)
+bing.com###b_content a[href*="wit.ai"]:upward(li)
+www.google.*##.g:has(a[href*="wit.ai"])
+www.google.*##a[href*="wit.ai"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="wit.ai"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="wit.ai"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="wit.ai"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="wit.ai"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="wit.ai"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="wit.ai"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="wit.ai"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="wit.ai"])
+kagi.com##.sri-group:has(a.__sri-url[href*="wit.ai"])
+kagi.com##._0_image_item[data-host_url*="wit.ai"]
+startpage.com##.w-gl__result:has(a[href*="wit.ai"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(wit.ai))
+search.brave.com###results a[href*="wit.ai"]:upward(.snippet)
+search.brave.com###img-results a[href*="wit.ai"]:upward([id^="img"])
+search.brave.com###results a[href*="wit.ai"]:upward(.card)
+bing.com###b_content a[href*="messengerdevelopers.com"]:upward(li)
+www.google.*##.g:has(a[href*="messengerdevelopers.com"])
+www.google.*##a[href*="messengerdevelopers.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="messengerdevelopers.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="messengerdevelopers.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="messengerdevelopers.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="messengerdevelopers.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="messengerdevelopers.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="messengerdevelopers.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="messengerdevelopers.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="messengerdevelopers.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="messengerdevelopers.com"])
+kagi.com##._0_image_item[data-host_url*="messengerdevelopers.com"]
+startpage.com##.w-gl__result:has(a[href*="messengerdevelopers.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(messengerdevelopers.com))
+search.brave.com###results a[href*="messengerdevelopers.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="messengerdevelopers.com"]:upward([id^="img"])
+search.brave.com###results a[href*="messengerdevelopers.com"]:upward(.card)
+bing.com###b_content a[href*="oversightboard.com"]:upward(li)
+www.google.*##.g:has(a[href*="oversightboard.com"])
+www.google.*##a[href*="oversightboard.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="oversightboard.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="oversightboard.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="oversightboard.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="oversightboard.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="oversightboard.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="oversightboard.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="oversightboard.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="oversightboard.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="oversightboard.com"])
+kagi.com##._0_image_item[data-host_url*="oversightboard.com"]
+startpage.com##.w-gl__result:has(a[href*="oversightboard.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(oversightboard.com))
+search.brave.com###results a[href*="oversightboard.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="oversightboard.com"]:upward([id^="img"])
+search.brave.com###results a[href*="oversightboard.com"]:upward(.card)
+bing.com###b_content a[href*="bulletin.com"]:upward(li)
+www.google.*##.g:has(a[href*="bulletin.com"])
+www.google.*##a[href*="bulletin.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="bulletin.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="bulletin.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="bulletin.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="bulletin.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="bulletin.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="bulletin.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="bulletin.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="bulletin.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="bulletin.com"])
+kagi.com##._0_image_item[data-host_url*="bulletin.com"]
+startpage.com##.w-gl__result:has(a[href*="bulletin.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(bulletin.com))
+search.brave.com###results a[href*="bulletin.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="bulletin.com"]:upward([id^="img"])
+search.brave.com###results a[href*="bulletin.com"]:upward(.card)
+bing.com###b_content a[href*="metacareers.com"]:upward(li)
+www.google.*##.g:has(a[href*="metacareers.com"])
+www.google.*##a[href*="metacareers.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="metacareers.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="metacareers.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="metacareers.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="metacareers.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="metacareers.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="metacareers.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="metacareers.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="metacareers.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="metacareers.com"])
+kagi.com##._0_image_item[data-host_url*="metacareers.com"]
+startpage.com##.w-gl__result:has(a[href*="metacareers.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(metacareers.com))
+search.brave.com###results a[href*="metacareers.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="metacareers.com"]:upward([id^="img"])
+search.brave.com###results a[href*="metacareers.com"]:upward(.card)
+bing.com###b_content a[href*="metaque.st"]:upward(li)
+www.google.*##.g:has(a[href*="metaque.st"])
+www.google.*##a[href*="metaque.st"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="metaque.st"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="metaque.st"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="metaque.st"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="metaque.st"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="metaque.st"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="metaque.st"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="metaque.st"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="metaque.st"])
+kagi.com##.sri-group:has(a.__sri-url[href*="metaque.st"])
+kagi.com##._0_image_item[data-host_url*="metaque.st"]
+startpage.com##.w-gl__result:has(a[href*="metaque.st"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(metaque.st))
+search.brave.com###results a[href*="metaque.st"]:upward(.snippet)
+search.brave.com###img-results a[href*="metaque.st"]:upward([id^="img"])
+search.brave.com###results a[href*="metaque.st"]:upward(.card)
+bing.com###b_content a[href*="novi.com"]:upward(li)
+www.google.*##.g:has(a[href*="novi.com"])
+www.google.*##a[href*="novi.com"]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*="novi.com"]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*="novi.com"]:upward(.tile)
+html.duckduckgo.com##.results a.result__a[href*="novi.com"]:upward(.result)
+lite.duckduckgo.com##.result-link[href*="novi.com"]:upward(tr)
+lite.duckduckgo.com##.result-link[href*="novi.com"]:upward(tr) + tr
+lite.duckduckgo.com##.result-link[href*="novi.com"]:upward(tr) + tr + tr
+lite.duckduckgo.com##.result-link[href*="novi.com"]:upward(tr) + tr + tr + tr
+kagi.com##.search-result:has(a.__sri-url[href*="novi.com"])
+kagi.com##.sri-group:has(a.__sri-url[href*="novi.com"])
+kagi.com##._0_image_item[data-host_url*="novi.com"]
+startpage.com##.w-gl__result:has(a[href*="novi.com"])
+startpage.com##.image-container:has(div.image-quick-details span:has-text(novi.com))
+search.brave.com###results a[href*="novi.com"]:upward(.snippet)
+search.brave.com###img-results a[href*="novi.com"]:upward([id^="img"])
+search.brave.com###results a[href*="novi.com"]:upward(.card)
 bing.com###b_content a[href*="atlassolutions.com"]:upward(li)
 www.google.*##.g:has(a[href*="atlassolutions.com"])
 www.google.*##a[href*="atlassolutions.com"]:upward(1)
