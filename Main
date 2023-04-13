@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 76N-1563
+! Version: 77N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1045,6 +1045,25 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||realsrv.com^$popup,popunder
+||impactserving.com^$popup,popunder
+||wwads.cn^
+||dt-smrt.com^
+||smrt-assets.com^
+||statisticresearch.com^
+||cdtbox.rocks^
+||adwmg.com^
+||adxpremium.services^
+||apathylahuli.website^
+||digbearings.com^
+||minutemedia-prebid.com^
+||gulsachpyrexia.uno^
+||pervialinagile.com^
+||pizzasaffixt.website^
+||prplads.com^
+||pubfuture-ad.com^
+||pubfuture.com^
+||purpleads.io^
 ||localhost:$3p
 ||127.0.0.1:$3p
 ||log-upload-os.mihoyo.com^
@@ -12305,6 +12324,7 @@ walmart.com##span > section:has-text(Get the app)
 apkpure.com###policy-info
 cars.com#@#a[href*="doubleclick.net"]
 autotrader.com##.padding-bottom-2.me
+coolmathgames.com###r-modal
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
@@ -13122,6 +13142,8 @@ amazon.com$removeparam=camp
 amazon.com$removeparam=creative
 amazon.com$removeparam=creativeASIN
 amazon.com$removeparam=/p(d|f)\_rd\_.+/
+google.com/search$removeparam=sourceid
+google.com/search$removeparam=aqs
 
 ! Json Prune (uBo & AdGuard)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
