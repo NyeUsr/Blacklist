@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 77N-1563
+! Version: 78N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -205,6 +205,9 @@
 @@||video.google.com/api/stats/
 @@||youtube.com/ptracking
 @@||youtube.com/youtubei/*/log_event
+
+! Unbreak images on campingworld.com
+@@||googletagmanager.com^$domain=campingworld.com
 
 ! Unbreak testing software used by schools
 @@||kinesis.*.amazonaws.com^$domain=masteryconnect.com
@@ -1045,6 +1048,10 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||segreencolumn.com^
+||tag.rmp.rakuten.com^
+||insights.bizrate.com^
+||mountain.com^
 ||realsrv.com^$popup,popunder
 ||impactserving.com^$popup,popunder
 ||wwads.cn^
@@ -12329,6 +12336,21 @@ org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+##[class*="brn-ads"]:not(html, body, button, input)
+##[class*="ads-box--"]:not(html, body, button, input)
+##[class*="ad-placeholder__"]:not(html, body, button, input)
+##[class*="react-ads-"]:not(html, body, button, input)
+##.t-consentPrompt:not(html, body, button, input)
+###amp-user-notification1:has-text(cookies):not(html, body, button, input)
+##.cookies-notify:not(html, body, button, input)
+##[class*="right-ads"].box:not(html, body, button, input)
+##.mobile_top_advertising:not(html, body, button, input)
+##.mobile_advertising:not(html, body, button, input)
+##.mobile_advertising_content:not(html, body, button, input)
+##[class$="-im-container"]:not(html, body, button, input)
+###adsense_center:not(html, body, button, input)
+##.desk-banners > [id*="bottom-banner"] > iframe:upward(2)
+##aside > .table > [class*="1x1"]:upward(2)
 ##[href*="hst2y.com/click.php"]
 ##.rightrail-ad-placed:not(html, body, button, input)
 ##.ezoic-autoinsert-video:not(html, body, button, input)
