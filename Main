@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 78N-1563
+! Version: 79N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1048,6 +1048,9 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||adstk.io^
+||dmp.truoptik.com^
+||tpt.dotomi.com^
 ||segreencolumn.com^
 ||tag.rmp.rakuten.com^
 ||insights.bizrate.com^
@@ -12332,6 +12335,8 @@ apkpure.com###policy-info
 cars.com#@#a[href*="doubleclick.net"]
 autotrader.com##.padding-bottom-2.me
 coolmathgames.com###r-modal
+dailymail.co.uk##.watermark.billboard-container, div.watermark.mpu_puff_wrapper
+unsplash.com##[rel="sponsored"]:upward(1)
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
