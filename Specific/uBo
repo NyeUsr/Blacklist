@@ -52,7 +52,6 @@
 *##^script:has-text(trackCustClick)
 *##^script:has-text(userABMessage)
 *##^script:has-text(enableLinkTracking)
-*##^script:has-text('trackPageView')
 *##^script:has-text(preloadAds)
 *##^script:has-text(PreloadAds)
 *##^script:has-text(ExoLoader)
