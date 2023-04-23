@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 80N-1563
+! Version: 81N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1048,6 +1048,20 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||fnbauniukvi.com^
+||fpcdn.io^
+||fptls.com^
+||gloaphoo.net^
+||hhbypdoecp.com^
+||lwonclbench.com^
+||qlfqkjluvz.com^
+||cdnativepush.com^
+||chaiptut.xyz^
+||iiuvgfhqldb.xyz^
+||bonertraffic13.info^
+||qomate.xyz^
+||rtrhit.com^
+||rvmessage.cfd^
 ||splashforgodm.com^
 ||digiadzone.com^
 ||giftedhazelsecond.com^
@@ -10945,6 +10959,8 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||drtuber.com/footer_tiz.php$subdocument
+||sourcepoint.theguardian.com/index.html$subdocument
 ||americascardroom.eu/ads/$popup,popunder
 ||vk.com/rtrg$3p
 ||info.vercel.com/trk
@@ -11204,6 +11220,7 @@ http://twitcount.com$3p
 ||apis.google.com/js/client.js
 ||mail.quicken.com/open.aspx
 
+/footer_ads.php?$subdocument
 ?sentry_key=*&sentry_version=
 %3DPOPUNDER$popup,popunder
 /statics/px.gif
@@ -12343,10 +12360,43 @@ coolmathgames.com###r-modal
 dailymail.co.uk##.watermark.billboard-container, div.watermark.mpu_puff_wrapper
 unsplash.com##[rel="sponsored"]:upward(1)
 collinsdictionary.com##.dictionary_long.topslot_container
+porndoe.com##.player-right
+porndoe.com##.below-video-svg
+porndoe.com##.ng-isolate-scope.-f-banners
+pornhat.com##.bns-bl-new.bns-bl
+iceporn.com##.drt-spot-visible.drt-spot-box
+iceporn.com##.puffery
+iceporn.com##div.take_place:has-text(Live cams)
+iceporn.com###abmessage
+drtuber.com##.fh.heading:has-text(Advertisement)
+drtuber.com###spot_footer
+drtuber.com##.item_box > .container > .holder:has-text(Advertisement)
+drtuber.com##.livecams_main.container
+megatube.xxx##div.headline-breadcrumbs:has-text(ADVERTISEMENT)
+megatube.xxx##div.opt
+megatube.xxx##.headline:has-text(Recommended)
+megatube.xxx##[class*="-im-container"]
+stileproject.com##.table
+stileproject.com##.footer-margin
+theguardian.com##gu-island
+theguardian.com##line
+theguardian.com##[data-gu-name=title]
+theguardian.com##.remote-banner.site-message--banner
+foxnews.com##.sidebar-columns > div.vendor-unit
+foxnews.com##.fox-news-first.item-newsletter
+foxnews.com##.article-footer
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+##.container-aside .remove-spots:not(html, body, button, input)
+##.container-side .remove-spots:not(html, body, button, input)
+##.advertisement-box:not(html, body, button, input)
+###sponsored-ticker-scroll:not(html, body, button, input)
+##.text_adv:not(html, body, button, input)
+##.thumb_aside .remove-spots:not(html, body, button, input)
+##.ad-slot-header:not(html, body, button, input)
+##.top-banner-ad-container:not(html, body, button, input)
 ##[class*="brn-ads"]:not(html, body, button, input)
 ##[class*="ads-box--"]:not(html, body, button, input)
 ##[class*="ad-placeholder__"]:not(html, body, button, input)
