@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 81N-1563
+! Version: 82N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -220,6 +220,9 @@
 
 ! Info about Microsoft/Bing ads, not an adserver
 @@||about.ads.microsoft.com^
+
+! Unbreak login
+@@||dd.tidal.com^
 
 ! Uncategorized
 @@||auth-*.tinypass.com^
@@ -1048,6 +1051,7 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||prebid-log.getpublica.com^
 ||fnbauniukvi.com^
 ||fpcdn.io^
 ||fptls.com^
@@ -6143,11 +6147,6 @@ http://twitcount.com$3p
 ||inter1ads.com^
 ||inter.net.il^
 ||interactiveone.com^
-||intercom.com^
-||intercom.io^
-||intercomcdn.com^
-||intercom-mail-100.com^
-||intercom-mail.com^
 ||intergi.com^
 ||intergient.com^
 ||intergram.xyz^
@@ -12280,6 +12279,8 @@ _left_ads.php
 _statsonlineinfo
 
 ! This list will only cover more popular sites: it's more focused on generic hiding
+openweathermap.org##.stick-footer-panel
+tecmint.com##[id*="tecmint_right_rail"]
 google.*##.c, .commercial-unit-desktop-top, #tadsb, #tads, #rhs, #tvcap, #taw
 youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope, .ytd-in-feed-ad-layout-renderer, .vidiq-social-stats-upsell
 youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
@@ -13227,6 +13228,7 @@ amazon.com$removeparam=creativeASIN
 amazon.com$removeparam=/p(d|f)\_rd\_.+/
 google.com/search$removeparam=sourceid
 google.com/search$removeparam=aqs
+github.com$removeparam=ref
 
 ! Json Prune (uBo & AdGuard)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
