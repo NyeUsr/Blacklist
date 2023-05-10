@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 82N-1563
+! Version: 83N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1051,6 +1051,23 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||aqdoxczajah.com^
+||intelligenceadx.com^
+||smac-ad.com^
+||d8b805b9a9.com^
+||clerrrep.com^
+||mt34iofvjay.com^
+||anythinktech.com^
+||gov-static.tech^
+||winner-*-*.elb.*.amazonaws.com^
+||t.apkpure.net^
+||mraid.bigo.sg^
+||liftoff-creatives.io^
+||pv.sohu.com^
+||youngle.tech^
+||onezapp.com^
+||ip.chinaz.com^
+||gdl.bytegle.tech^
 ||prebid-log.getpublica.com^
 ||fnbauniukvi.com^
 ||fpcdn.io^
@@ -3095,7 +3112,6 @@ http://twitcount.com$3p
 ||analytics-digit-in.cdn.ampproject.org^
 ||analytics-egain.com^
 ||analytics-engine.com^
-||analytics-ingestion.production-public.tubi.io^
 ||analytics-ingress-global.bitmovin.com^
 ||analyticsinsight.b-cdn.net^
 ||analyticsjs.net^
@@ -12279,43 +12295,77 @@ _left_ads.php
 _statsonlineinfo
 
 ! This list will only cover more popular sites: it's more focused on generic hiding
+legiochristi.com###cookie
 openweathermap.org##.stick-footer-panel
 tecmint.com##[id*="tecmint_right_rail"]
-google.*##.c, .commercial-unit-desktop-top, #tadsb, #tads, #rhs, #tvcap, #taw
-youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope, .ytd-search-pyv-renderer, .ytd-promoted-video-renderer, .ytd-brand-video-shelf-renderer.style-scope, .ytd-video-masthead-ad-v3-renderer, ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope, .sparkles-light-cta.ytd-item-section-renderer.style-scope, .ytd-banner-promo-renderer.style-scope, .ytd-banner-promo-renderer-background, ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope, .sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope, .ytd-in-feed-ad-layout-renderer, .vidiq-social-stats-upsell
+google.*##.c
+google.*##.commercial-unit-desktop-top
+google.*###tadsb
+google.*###tads
+google.*###rhs
+google.*###tvcap
+google.*###taw
+youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope
+youtube.com##.ytd-search-pyv-renderer
+youtube.com##.ytd-promoted-video-renderer
+youtube.com##.ytd-brand-video-shelf-renderer.style-scope
+youtube.com##.ytd-video-masthead-ad-v3-renderer
+youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
+youtube.com##.sparkles-light-cta.ytd-item-section-renderer.style-scope
+youtube.com##.ytd-banner-promo-renderer.style-scope
+youtube.com##.ytd-banner-promo-renderer-background
+youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
+youtube.com##.sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
+youtube.com##.ytd-in-feed-ad-layout-renderer
+youtube.com##.vidiq-social-stats-upsell
 youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
 m.youtube.com###YtSparklesVisibilityIdentifier
 genius.com##.dfp_unit, [class*="Leaderboard-"]
 pubmed.ncbi.nlm.nih.gov###ncov-alert-from-server
 ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
-easybib.com##.ucf-upload-widget-modal-root, [class*="styled__ModalWrapper-sc-"]
-finance.yahoo.com##.MAST-status-ok, .LREC-status-ok
-amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal, .text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
+easybib.com##.ucf-upload-widget-modal-root
+easybib.com##[class*="styled__ModalWrapper-sc-"]
+finance.yahoo.com##.MAST-status-ok
+finance.yahoo.com##.LREC-status-ok
+amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal
+amazon.com##.text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
 techradar.com##.hawk-deal-widget-hero
 target.com##div.h-display-inline-block:has-text(sponsored)
-target.com##.h-text-center.h-margin-b-jumbo.h-margin-t-default.h-margin-h-default, #pageBodyContainer > div > h3:has-text(Featured Products)
+target.com##.h-text-center.h-margin-b-jumbo.h-margin-t-default.h-margin-h-default
+target.com###pageBodyContainer > div > h3:has-text(Featured Products)
 audiobookbay.li##[href^="/high-download"]:upward(2)
 audiobookbay.li##[href="/dl-14-days-trial"]
 audiobookbay.li##td:has-text(Secured Download:)
 audiobookbay.li##h2:has-text(AD)
-wikipedia.org##.frb-layout, [class*="frb-inline-"], [class*="frb-country"]
+wikipedia.org##.frb-layout
+wikipedia.org##[class*="frb-inline-"]
+wikipedia.org##[class*="frb-country"]
 reclaimthenet.org##.elementor-top-section.elementor-section:has-text(Defend free speech and individual liberty online.)
 reclaimthenet.org##.code-block:has-text(subscribe to Reclaim The Net.)
 weatherbug.com##notification-footer
 enago.com###fixed-form-container
 goodreads.com##.Header:style(max-height: 8%)
-science.org##.show.js-transitioned.js-sticky.pop-after-passed.pop-notification.related-content.show-recommended, .alert-donation
+science.org##.show.js-transitioned.js-sticky.pop-after-passed.pop-notification.related-content.show-recommended
+science.org##.alert-donation
 goodreads.com##img[alt*="Celebrate Black History Month"]
-pcmag.com##.zmgad-full-width, .zmgad-right-rail, .flex-shrink-0.xl\:block.hidden.upper-sidebar.container-right-rail
+pcmag.com##.zmgad-full-width
+pcmag.com##.zmgad-right-rail
+pcmag.com##.flex-shrink-0.xl\:block.hidden.upper-sidebar.container-right-rail
 w3schools.com###tryitLeaderboard
 musixmatch.com##.upselling-message
 bromite.org##.ribbon-ua
-lifesitenews.com##.art-share-nav, .lsn-petitions
+lifesitenews.com##.art-share-nav
+lifesitenews.com##.lsn-petitions
 androidauthority.com##[class*="-__2b"]:has-text(Join our most passionate readers)
-mapquest.com##div.adWrapper, .infosheet-sponsored-topics, .mq-bizLocs-container
+mapquest.com##div.adWrapper
+mapquest.com##.infosheet-sponsored-topics
+mapquest.com##.mq-bizLocs-container
 petersantilli.com##.main-header > .container-wrapper > .af-flex-container.af-container-row
 techacrobat.com##[class*="adblock"]:upward(5)
-nypost.com##.nyp-zephr-flyout--left, .nyp-zephr-flyout, .recirc--enabled.recirc--trending, .d-block-lg.d-none.billboard-overlay
+nypost.com##.nyp-zephr-flyout--left
+nypost.com##.nyp-zephr-flyout
+nypost.com##.recirc--enabled.recirc--trending
+nypost.com##.d-block-lg.d-none.billboard-overlay
 nypost.com##.inline-module__inner:has-text(More On:)
 nypost.com##.comments-inline-cta:has-text(What do you think?)
 nationalfile.com##.jnews_inline_related_post
@@ -12323,19 +12373,29 @@ nationalfile.com##[href*="http:"]
 addons.mozilla.org##.Notice-dismissible.GetFirefoxBanner
 techradar.com##.exit-intent__background.exit-intent
 theepochtimes.com##.top_ad
-amazon.com###cart-item-recs, #sc-new-upsell
+amazon.com###cart-item-recs
+amazon.com###sc-new-upsell
 techpp.com##[id*="brxe-"] > .side-inserter:has-text(Advertisement)
 techpp.com##[class*="code-block-block"] > [class*="code-block"]:has-text(Advertisement):upward(1)
 techpp.com##.bg-white.brxe-section:nth-of-type(1)
 mint.intuit.com##.offerSection > .offerContainer
-ghacks.net##.ghacks-ad, [id*=ghacks_ad_code]
+ghacks.net##.ghacks-ad
+ghacks.net##[id*=ghacks_ad_code]
 productivityland.com##.ad-image
-kinsta.com##.app-hosting-cta, .yogurt-Paper-root:has-text(Save this article as a PDF.)
-kcci.com##.no-cream.article-content--footer, .data-id\=.cream-inline.related-embed, .embed-inner > .related-embed
-wired.com##.journey-template--paywall-bar, .paywall[class*="SidebarHeading"]:has-text(Related Stories):upward(1)
-washingtonpost.com###leaderboard-wrapper, .softwall-overlay, .db-ns.dn.cb:has-text(Advertisement)
+kinsta.com##.app-hosting-cta
+kinsta.com##.yogurt-Paper-root:has-text(Save this article as a PDF.)
+kcci.com##.no-cream.article-content--footer
+kcci.com##.data-id\=.cream-inline.related-embed
+kcci.com##.embed-inner > .related-embed
+wired.com##.journey-template--paywall-bar
+wired.com##.paywall[class*="SidebarHeading"]:has-text(Related Stories):upward(1)
+washingtonpost.com###leaderboard-wrapper
+washingtonpost.com##.softwall-overlay
+washingtonpost.com##.db-ns.dn.cb:has-text(Advertisement)
 washingtonpost.com##div.article-body > .hide-for-print.mb-md:has-text(newsletter)
-kcci.com##.no-cream.article-content--footer, .data-id\=.cream-inline.related-embed, .related-embed
+kcci.com##.no-cream.article-content--footer
+kcci.com##.data-id\=.cream-inline.related-embed
+kcci.com##.related-embed
 nationalfile.com##h4.jeg_post_title:has-text(Related: )
 lifesitenews.com##p:has-text(RELATED: )
 investopedia.com##.mntl-leaderboard-spacer.js-rollaway-spacer
@@ -12348,17 +12408,22 @@ amazon.com###percolate-ui-ilm_div
 sciencing.com##.sticky-leaderboard-container
 serverspace.us##.banner-action.banner__link
 xump.com##.slide.carousel
-clutchpoints.com##.cafemedia-clutchpoints-header, .cafemedia-clutchpoints-sidebar
-search.brave.com###usage-metrics, #premium-promo-wrapper, .sponsored-unit
+clutchpoints.com##.cafemedia-clutchpoints-header
+clutchpoints.com##.cafemedia-clutchpoints-sidebar
+search.brave.com###usage-metrics
+search.brave.com###premium-promo-wrapper
+search.brave.com##.sponsored-unit
 adguard.com##.annoyance
-whatismyipaddress.com##.warning-button-container, .call-to-action:has-text(Your private information is exposed)
+whatismyipaddress.com##.warning-button-container
+whatismyipaddress.com##.call-to-action:has-text(Your private information is exposed)
 boards.4chan.org##[href*="4channel.org/advertise"]
 walmart.com##span > section:has-text(Get the app)
 apkpure.com###policy-info
 cars.com#@#a[href*="doubleclick.net"]
 autotrader.com##.padding-bottom-2.me
 coolmathgames.com###r-modal
-dailymail.co.uk##.watermark.billboard-container, div.watermark.mpu_puff_wrapper
+dailymail.co.uk##.watermark.billboard-container
+dailymail.co.uk##div.watermark.mpu_puff_wrapper
 unsplash.com##[rel="sponsored"]:upward(1)
 collinsdictionary.com##.dictionary_long.topslot_container
 porndoe.com##.player-right
