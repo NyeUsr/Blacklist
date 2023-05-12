@@ -7,6 +7,7 @@
 ||disqus.com^
 ||disqus.map.fastlylb.net^
 ||disquscdn.com^
+||commentsmodule.com^
 
 ! Generated using https://letsblock.it/filters/search-results
 bing.com###b_content a[href*="disqus.com"]:upward(li)
