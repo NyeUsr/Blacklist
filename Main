@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 83N-1563
+! Version: 84N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -831,10 +831,11 @@ http://twitcount.com$3p
 ! Randomly generated tracking urls
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
 
-! Traking scripts
+! Ad/traking scripts
 /\/collect(ion|or)?\/v[0-9]{1,2}/$3p,script
 /.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
 /^http(s)?:\/\/.+\/domain_views$/$1p
+/\/zone\/[0-9]{4,4}\/\?aff=[0-9]{4,}$/
 
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
@@ -1051,6 +1052,52 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||americascardroom.eu^$3p
+||dns.google^$3p
+||strpst.com^$3p
+||strpst.com^$3p
+||octoclick.com^$popup,popunder
+||exoclick.com^$popup,popunder
+||erosyndc.com^
+||tabookbusines.info^
+||track.livefaplove.com^
+||doughingrogue.com^
+||kkadverts.com^
+||tsiwqtng8huauw30n.com^
+||sayasdf.com^
+||highrevenuegate.com^
+||sweetadults.date^
+||plotil.com^
+||forlumineoner.com^
+||mirohqodlf.com^
+||usjbwvtqwv.com^
+||duta168.buzz^
+||thingrealtape.com^
+||impactradius-go.com^
+||d7c01d241b.com^
+||galotop1.com^
+||effectivegatetocontent.com^
+||obbliga.to^
+||eyebrowsneardual.com^
+||remedyabruptness.com^
+||sewersneaky.com^
+||variousformatscontent.com^
+||alleviatepracticableaddicted.com^
+||ambiliarcarwin.com^
+||marazma.com^
+||muzzlematrix.com^
+||testingmetriksbre.ru^
+||tracking.wpnetwork.eu^
+||watchyourvids.space^
+||tm-offers.gamingadult.com^
+||octoclick.com^
+||showmeyouradsnow.com^
+||antiadblocksystems.com^
+||hostave3.net^
+||mcpuwpsh.com^
+||rtbrennab.com^
+||nipechala.com^
+||frosty-cigarette.com^
 ||aqdoxczajah.com^
 ||intelligenceadx.com^
 ||smac-ad.com^
@@ -12294,7 +12341,13 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
-! This list will only cover more popular sites: it's more focused on generic hiding
+forbes.com##.top-ed-placeholder
+ddd-smart.net###pc_overlay
+xhamster2.com##.yfd-fdsp-a
+xhamster2.com##.rendered.horizontal.as-width-wrap.yfd-fdcams-widget
+xhamster2.com##.width-wrap.yfd-fdclipstore-bottom
+xhamster2.com##.yfd-fdcams-widget
+ground.news##.sticky.top-0.z-1000.mdd\:hidden:has-text(Get Started)
 legiochristi.com###cookie
 openweathermap.org##.stick-footer-panel
 tecmint.com##[id*="tecmint_right_rail"]
@@ -12455,6 +12508,17 @@ org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
 org,gov,info##.critical-alert-banner:has-text(COVID-19)
 ! Generic
+~myappdeals.com##[href^="https://myappdeals.com/products/"]:not(html, body, button, input)
+##.adthrive-header-1:not(html, body, button, input)
+##.adthrive-header:not(html, body, button, input)
+##.adthrive-ad:not(html, body, button, input)
+##div.pignr.opt:has-text(Advert):not(html, body, button, input)
+##[id$="-im-container"]:not(html, body, button, input)
+###ao-CookiePolicy:not(html, body, button, input)
+##[id*="-ad-portada"]:not(html, body, button, input)
+###cookie-wrapper.eu-cookies:not(html, body, button, input)
+##.ads-block-rightside:not(html, body, button, input)
+##.tac.adblock:not(html, body, button, input)
 ##.container-aside .remove-spots:not(html, body, button, input)
 ##.container-side .remove-spots:not(html, body, button, input)
 ##.advertisement-box:not(html, body, button, input)
