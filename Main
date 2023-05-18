@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 84N-1563
+! Version: 85N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -704,66 +704,67 @@
 
 !#safari_cb_affinity
 
-! Top abused TLDs
+! Top abused or likely to be abused TLDS
 
-.aaa^$3p
-.beauty^$3p
-.best^$3p
-.cam^$3p
-.click^$3p
-.fit^$3p
-.garden^$3p
-.gay^$3p
-.icu^$3p
-.joy^$3p
-.lgbt^$3p
-.lol^$3p
-.money^$3p
-.monster^$3p
-.okinawa^$3p
-.ooo^$3p
-.racing^$3p
-.rest^$3p
-.rest^$3p
-.review^$3p
-.software^$3p
-.solar^$3p
-.surf^$3p
-.surf^$csp=default-src 'self'
-.tk^$3p
-.tt^$3p
-.win^$3p
-.work^$3p
-.zone^$3p,domain=~itch.io
+.zip/^
+.mov/^$~media
+.aaa/^$3p
+.beauty/^$3p
+.best/^$3p
+.cam/^$3p
+.click/^$3p
+.fit/^$3p
+.garden/^$3p
+.gay/^$3p
+.icu/^$3p
+.joy/^$3p
+.lgbt/^$3p
+.lol/^$3p
+.money/^$3p
+.monster/^$3p
+.okinawa/^$3p
+.ooo/^$3p
+.racing/^$3p
+.rest/^$3p
+.review/^$3p
+.software/^$3p
+.solar/^$3p
+.surf/^$3p
+.tk/^$3p
+.tt/^$3p
+.win/^$3p
+.work/^$3p
+.zone/^$3p,domain=~itch.io
 !#if (!adguard)
-.aaa^$popunder
-.beauty^$popunder
-.best^$popunder
-.cam^$popunder
-.click^$popunder
-.fit^$popunder
-.garden^$popunder
-.gay^$popunder
-.icu^$popunder
-.joy^$popunder
-.lgbt^$popunder
-.lol^$popunder
-.money^$popunder
-.monster^$popunder
-.okinawa^$popunder
-.ooo^$popunder
-.racing^$popunder
-.rest^$popunder
-.rest^$popunder
-.review^$popunder
-.software^$popunder
-.solar^$popunder
-.surf^$popunder
-.tk^$popunder
-.tt^$popunder
-.win^$popunder
-.work^$popunder
-.zone^$popunder
+.zip/^$popunder
+.mov/^$popunder
+.aaa/^$popunder
+.beauty/^$popunder
+.best/^$popunder
+.cam/^$popunder
+.click/^$popunder
+.fit/^$popunder
+.garden/^$popunder
+.gay/^$popunder
+.icu/^$popunder
+.joy/^$popunder
+.lgbt/^$popunder
+.lol/^$popunder
+.money/^$popunder
+.monster/^$popunder
+.okinawa/^$popunder
+.ooo/^$popunder
+.racing/^$popunder
+.rest/^$popunder
+.review/^$popunder
+.software/^$popunder
+.solar/^$popunder
+.surf/^$popunder
+.tk/^$popunder
+.tt/^$popunder
+.win/^$popunder
+.work/^$popunder
+.zone/^$popunder
 !#endif
 
 ! Unnecessary HTTP
@@ -11281,6 +11282,7 @@ http://twitcount.com$3p
 ||yahoo.com/f/track/tgt/imp?
 ||apis.google.com/js/client.js
 ||mail.quicken.com/open.aspx
+||sex.com/images/loader.gif
 
 /footer_ads.php?$subdocument
 ?sentry_key=*&sentry_version=
@@ -12341,172 +12343,173 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
-forbes.com##.top-ed-placeholder
-ddd-smart.net###pc_overlay
-xhamster2.com##.yfd-fdsp-a
-xhamster2.com##.rendered.horizontal.as-width-wrap.yfd-fdcams-widget
-xhamster2.com##.width-wrap.yfd-fdclipstore-bottom
-xhamster2.com##.yfd-fdcams-widget
-ground.news##.sticky.top-0.z-1000.mdd\:hidden:has-text(Get Started)
-legiochristi.com###cookie
-openweathermap.org##.stick-footer-panel
-tecmint.com##[id*="tecmint_right_rail"]
-google.*##.c
-google.*##.commercial-unit-desktop-top
-google.*###tadsb
-google.*###tads
-google.*###rhs
-google.*###tvcap
-google.*###taw
-youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope
-youtube.com##.ytd-search-pyv-renderer
-youtube.com##.ytd-promoted-video-renderer
-youtube.com##.ytd-brand-video-shelf-renderer.style-scope
-youtube.com##.ytd-video-masthead-ad-v3-renderer
-youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
-youtube.com##.sparkles-light-cta.ytd-item-section-renderer.style-scope
-youtube.com##.ytd-banner-promo-renderer.style-scope
-youtube.com##.ytd-banner-promo-renderer-background
-youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
-youtube.com##.sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
-youtube.com##.ytd-in-feed-ad-layout-renderer
-youtube.com##.vidiq-social-stats-upsell
-youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
-m.youtube.com###YtSparklesVisibilityIdentifier
-genius.com##.dfp_unit, [class*="Leaderboard-"]
-pubmed.ncbi.nlm.nih.gov###ncov-alert-from-server
-ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
-easybib.com##.ucf-upload-widget-modal-root
-easybib.com##[class*="styled__ModalWrapper-sc-"]
-finance.yahoo.com##.MAST-status-ok
-finance.yahoo.com##.LREC-status-ok
-amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal
-amazon.com##.text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
-techradar.com##.hawk-deal-widget-hero
-target.com##div.h-display-inline-block:has-text(sponsored)
-target.com##.h-text-center.h-margin-b-jumbo.h-margin-t-default.h-margin-h-default
-target.com###pageBodyContainer > div > h3:has-text(Featured Products)
-audiobookbay.li##[href^="/high-download"]:upward(2)
-audiobookbay.li##[href="/dl-14-days-trial"]
-audiobookbay.li##td:has-text(Secured Download:)
-audiobookbay.li##h2:has-text(AD)
-wikipedia.org##.frb-layout
-wikipedia.org##[class*="frb-inline-"]
-wikipedia.org##[class*="frb-country"]
-reclaimthenet.org##.elementor-top-section.elementor-section:has-text(Defend free speech and individual liberty online.)
-reclaimthenet.org##.code-block:has-text(subscribe to Reclaim The Net.)
-weatherbug.com##notification-footer
-enago.com###fixed-form-container
-goodreads.com##.Header:style(max-height: 8%)
-science.org##.show.js-transitioned.js-sticky.pop-after-passed.pop-notification.related-content.show-recommended
-science.org##.alert-donation
-goodreads.com##img[alt*="Celebrate Black History Month"]
-pcmag.com##.zmgad-full-width
-pcmag.com##.zmgad-right-rail
-pcmag.com##.flex-shrink-0.xl\:block.hidden.upper-sidebar.container-right-rail
-w3schools.com###tryitLeaderboard
-musixmatch.com##.upselling-message
-bromite.org##.ribbon-ua
-lifesitenews.com##.art-share-nav
-lifesitenews.com##.lsn-petitions
-androidauthority.com##[class*="-__2b"]:has-text(Join our most passionate readers)
-mapquest.com##div.adWrapper
-mapquest.com##.infosheet-sponsored-topics
-mapquest.com##.mq-bizLocs-container
-petersantilli.com##.main-header > .container-wrapper > .af-flex-container.af-container-row
-techacrobat.com##[class*="adblock"]:upward(5)
-nypost.com##.nyp-zephr-flyout--left
-nypost.com##.nyp-zephr-flyout
-nypost.com##.recirc--enabled.recirc--trending
-nypost.com##.d-block-lg.d-none.billboard-overlay
-nypost.com##.inline-module__inner:has-text(More On:)
-nypost.com##.comments-inline-cta:has-text(What do you think?)
-nationalfile.com##.jnews_inline_related_post
-nationalfile.com##[href*="http:"]
 addons.mozilla.org##.Notice-dismissible.GetFirefoxBanner
-techradar.com##.exit-intent__background.exit-intent
-theepochtimes.com##.top_ad
+adguard.com##.annoyance
 amazon.com###cart-item-recs
-amazon.com###sc-new-upsell
-techpp.com##[id*="brxe-"] > .side-inserter:has-text(Advertisement)
-techpp.com##[class*="code-block-block"] > [class*="code-block"]:has-text(Advertisement):upward(1)
-techpp.com##.bg-white.brxe-section:nth-of-type(1)
-mint.intuit.com##.offerSection > .offerContainer
-ghacks.net##.ghacks-ad
-ghacks.net##[id*=ghacks_ad_code]
-productivityland.com##.ad-image
-kinsta.com##.app-hosting-cta
-kinsta.com##.yogurt-Paper-root:has-text(Save this article as a PDF.)
-kcci.com##.no-cream.article-content--footer
-kcci.com##.data-id\=.cream-inline.related-embed
-kcci.com##.embed-inner > .related-embed
-wired.com##.journey-template--paywall-bar
-wired.com##.paywall[class*="SidebarHeading"]:has-text(Related Stories):upward(1)
-washingtonpost.com###leaderboard-wrapper
-washingtonpost.com##.softwall-overlay
-washingtonpost.com##.db-ns.dn.cb:has-text(Advertisement)
-washingtonpost.com##div.article-body > .hide-for-print.mb-md:has-text(newsletter)
-kcci.com##.no-cream.article-content--footer
-kcci.com##.data-id\=.cream-inline.related-embed
-kcci.com##.related-embed
-nationalfile.com##h4.jeg_post_title:has-text(Related: )
-lifesitenews.com##p:has-text(RELATED: )
-investopedia.com##.mntl-leaderboard-spacer.js-rollaway-spacer
-raspberrytips.com##.ml_form
-fidelity.com##.scl-center
-docs.gradle.org##.ckcontent
-amazon.com##.sb-video-creative.sbv-video-single-product.rush-component:has-text(Sponsored):upward(2)
-amazon.com##div.s-widget-spacing-large:has-text(Sponsored)
 amazon.com###percolate-ui-ilm_div
-sciencing.com##.sticky-leaderboard-container
-serverspace.us##.banner-action.banner__link
-xump.com##.slide.carousel
+amazon.com###sc-new-upsell
+amazon.com##.aok-align-center-horizontally.aok-block.a-link-normal
+amazon.com##.sb-video-creative.sbv-video-single-product.rush-component:has-text(Sponsored):upward(2)
+amazon.com##.text\/x-dacx-safeframe.celwidget:has-text(Sponsored)
+amazon.com##div.s-widget-spacing-large:has-text(Sponsored)
+androidauthority.com##[class*="-__2b"]:has-text(Join our most passionate readers)
+apkpure.com###policy-info
+audiobookbay.li##[href="/dl-14-days-trial"]
+audiobookbay.li##[href^="/high-download"]:upward(2)
+audiobookbay.li##h2:has-text(AD)
+audiobookbay.li##td:has-text(Secured Download:)
+autotrader.com##.padding-bottom-2.me
+boards.4chan.org##[href*="4channel.org/advertise"]
+bromite.org##.ribbon-ua
+cars.com#@#a[href*="doubleclick.net"]
 clutchpoints.com##.cafemedia-clutchpoints-header
 clutchpoints.com##.cafemedia-clutchpoints-sidebar
-search.brave.com###usage-metrics
-search.brave.com###premium-promo-wrapper
-search.brave.com##.sponsored-unit
-adguard.com##.annoyance
-whatismyipaddress.com##.warning-button-container
-whatismyipaddress.com##.call-to-action:has-text(Your private information is exposed)
-boards.4chan.org##[href*="4channel.org/advertise"]
-walmart.com##span > section:has-text(Get the app)
-apkpure.com###policy-info
-cars.com#@#a[href*="doubleclick.net"]
-autotrader.com##.padding-bottom-2.me
+collinsdictionary.com##.dictionary_long.topslot_container
 coolmathgames.com###r-modal
 dailymail.co.uk##.watermark.billboard-container
 dailymail.co.uk##div.watermark.mpu_puff_wrapper
-unsplash.com##[rel="sponsored"]:upward(1)
-collinsdictionary.com##.dictionary_long.topslot_container
-porndoe.com##.player-right
-porndoe.com##.below-video-svg
-porndoe.com##.ng-isolate-scope.-f-banners
-pornhat.com##.bns-bl-new.bns-bl
+ddd-smart.net###pc_overlay
+docs.gradle.org##.ckcontent
+drtuber.com###spot_footer
+drtuber.com##.fh.heading:has-text(Advertisement)
+drtuber.com##.item_box > .container > .holder:has-text(Advertisement)
+drtuber.com##.livecams_main.container
+easybib.com##.ucf-upload-widget-modal-root
+easybib.com##[class*="styled__ModalWrapper-sc-"]
+enago.com###fixed-form-container
+fidelity.com##.scl-center
+finance.yahoo.com##.LREC-status-ok
+finance.yahoo.com##.MAST-status-ok
+forbes.com##.top-ed-placeholder
+foxnews.com##.article-footer
+foxnews.com##.fox-news-first.item-newsletter
+foxnews.com##.sidebar-columns > div.vendor-unit
+genius.com##.dfp_unit, [class*="Leaderboard-"]
+ghacks.net##.ghacks-ad
+ghacks.net##[id*=ghacks_ad_code]
+goodreads.com##.Header:style(max-height: 8%)
+goodreads.com##img[alt*="Celebrate Black History Month"]
+google.*###rhs
+google.*###tads
+google.*###tadsb
+google.*###taw
+google.*###tvcap
+google.*##.c
+google.*##.commercial-unit-desktop-top
+ground.news##.sticky.top-0.z-1000.mdd\:hidden:has-text(Get Started)
+iceporn.com###abmessage
 iceporn.com##.drt-spot-visible.drt-spot-box
 iceporn.com##.puffery
 iceporn.com##div.take_place:has-text(Live cams)
-iceporn.com###abmessage
-drtuber.com##.fh.heading:has-text(Advertisement)
-drtuber.com###spot_footer
-drtuber.com##.item_box > .container > .holder:has-text(Advertisement)
-drtuber.com##.livecams_main.container
-megatube.xxx##div.headline-breadcrumbs:has-text(ADVERTISEMENT)
-megatube.xxx##div.opt
+investopedia.com##.mntl-leaderboard-spacer.js-rollaway-spacer
+kcci.com##.data-id\=.cream-inline.related-embed
+kcci.com##.data-id\=.cream-inline.related-embed
+kcci.com##.embed-inner > .related-embed
+kcci.com##.no-cream.article-content--footer
+kcci.com##.no-cream.article-content--footer
+kcci.com##.related-embed
+kinsta.com##.app-hosting-cta
+kinsta.com##.yogurt-Paper-root:has-text(Save this article as a PDF.)
+legiochristi.com###cookie
+lifesitenews.com##.art-share-nav
+lifesitenews.com##.lsn-petitions
+lifesitenews.com##p:has-text(RELATED: )
+m.youtube.com###YtSparklesVisibilityIdentifier
+mapquest.com##.infosheet-sponsored-topics
+mapquest.com##.mq-bizLocs-container
+mapquest.com##div.adWrapper
 megatube.xxx##.headline:has-text(Recommended)
 megatube.xxx##[class*="-im-container"]
-stileproject.com##.table
-stileproject.com##.footer-margin
-theguardian.com##gu-island
-theguardian.com##line
-theguardian.com##[data-gu-name=title]
-theguardian.com##.remote-banner.site-message--banner
-foxnews.com##.sidebar-columns > div.vendor-unit
-foxnews.com##.fox-news-first.item-newsletter
-foxnews.com##.article-footer
+megatube.xxx##div.headline-breadcrumbs:has-text(ADVERTISEMENT)
+megatube.xxx##div.opt
+mint.intuit.com##.offerSection > .offerContainer
+musixmatch.com##.upselling-message
+nationalfile.com##.jnews_inline_related_post
+nationalfile.com##[href*="http:"]
+nationalfile.com##h4.jeg_post_title:has-text(Related: )
+ncbi.nlm.nih.gov##.nCoV_shutdown.ncbi-alerts
+nypost.com##.comments-inline-cta:has-text(What do you think?)
+nypost.com##.d-block-lg.d-none.billboard-overlay
+nypost.com##.inline-module__inner:has-text(More On:)
+nypost.com##.nyp-zephr-flyout
+nypost.com##.nyp-zephr-flyout--left
+nypost.com##.recirc--enabled.recirc--trending
+openweathermap.org##.stick-footer-panel
+org,gov,info##.critical-alert-banner:has-text(COVID-19)
 org,gov,info##.js-notification-banner:has-text(vaccine or booster)
 org,gov,info##.notification-banner:has-text(vaccine or booster)
-org,gov,info##.critical-alert-banner:has-text(COVID-19)
+pcmag.com##.flex-shrink-0.xl\:block.hidden.upper-sidebar.container-right-rail
+pcmag.com##.zmgad-full-width
+pcmag.com##.zmgad-right-rail
+petersantilli.com##.main-header > .container-wrapper > .af-flex-container.af-container-row
+porndoe.com##.below-video-svg
+porndoe.com##.ng-isolate-scope.-f-banners
+porndoe.com##.player-right
+pornhat.com##.bns-bl-new.bns-bl
+productivityland.com##.ad-image
+pubmed.ncbi.nlm.nih.gov###ncov-alert-from-server
+raspberrytips.com##.ml_form
+reclaimthenet.org##.code-block:has-text(subscribe to Reclaim The Net.)
+reclaimthenet.org##.elementor-top-section.elementor-section:has-text(Defend free speech and individual liberty online.)
+science.org##.alert-donation
+science.org##.show.js-transitioned.js-sticky.pop-after-passed.pop-notification.related-content.show-recommended
+sciencing.com##.sticky-leaderboard-container
+search.brave.com###premium-promo-wrapper
+search.brave.com###usage-metrics
+search.brave.com##.sponsored-unit
+serverspace.us##.banner-action.banner__link
+sex.com###newSite
+stileproject.com##.footer-margin
+stileproject.com##.table
+target.com###pageBodyContainer > div > h3:has-text(Featured Products)
+target.com##.h-text-center.h-margin-b-jumbo.h-margin-t-default.h-margin-h-default
+target.com##div.h-display-inline-block:has-text(sponsored)
+techacrobat.com##[class*="adblock"]:upward(5)
+techpp.com##.bg-white.brxe-section:nth-of-type(1)
+techpp.com##[class*="code-block-block"] > [class*="code-block"]:has-text(Advertisement):upward(1)
+techpp.com##[id*="brxe-"] > .side-inserter:has-text(Advertisement)
+techradar.com##.exit-intent__background.exit-intent
+techradar.com##.hawk-deal-widget-hero
+tecmint.com##[id*="tecmint_right_rail"]
+theepochtimes.com##.top_ad
+theguardian.com##.remote-banner.site-message--banner
+theguardian.com##[data-gu-name=title]
+theguardian.com##gu-island
+theguardian.com##line
+unsplash.com##[rel="sponsored"]:upward(1)
+w3schools.com###tryitLeaderboard
+walmart.com##span > section:has-text(Get the app)
+washingtonpost.com###leaderboard-wrapper
+washingtonpost.com##.db-ns.dn.cb:has-text(Advertisement)
+washingtonpost.com##.softwall-overlay
+washingtonpost.com##div.article-body > .hide-for-print.mb-md:has-text(newsletter)
+weatherbug.com##notification-footer
+whatismyipaddress.com##.call-to-action:has-text(Your private information is exposed)
+whatismyipaddress.com##.warning-button-container
+wikipedia.org##.frb-layout
+wikipedia.org##[class*="frb-country"]
+wikipedia.org##[class*="frb-inline-"]
+wired.com##.journey-template--paywall-bar
+wired.com##.paywall[class*="SidebarHeading"]:has-text(Related Stories):upward(1)
+xhamster2.com##.rendered.horizontal.as-width-wrap.yfd-fdcams-widget
+xhamster2.com##.width-wrap.yfd-fdclipstore-bottom
+xhamster2.com##.yfd-fdcams-widget
+xhamster2.com##.yfd-fdsp-a
+xump.com##.slide.carousel
+youtube.com###dismissible > .ytd-statement-banner-renderer.style-scope
+youtube.com##.sparkles-light-cta.ytd-item-section-renderer.style-scope
+youtube.com##.sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
+youtube.com##.vidiq-social-stats-upsell
+youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
+youtube.com##.ytd-banner-promo-renderer-background
+youtube.com##.ytd-banner-promo-renderer.style-scope
+youtube.com##.ytd-brand-video-shelf-renderer.style-scope
+youtube.com##.ytd-in-feed-ad-layout-renderer
+youtube.com##.ytd-promoted-video-renderer
+youtube.com##.ytd-search-pyv-renderer
+youtube.com##.ytd-video-masthead-ad-v3-renderer
+youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
+youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 ! Generic
 ~myappdeals.com##[href^="https://myappdeals.com/products/"]:not(html, body, button, input)
 ##.adthrive-header-1:not(html, body, button, input)
