@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 85N-1563
+! Version: 86N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1053,6 +1053,32 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||newsroom.bi^
+||analyticsengine.s3.amazonaws.com^
+||analytics.s3.amazonaws.com^
+||advertising-api-*.amazon.com^
+||click.googleanalytics.com^
+||events.reddit.com^
+||udcm.yahoo.com^
+||appmetrica.yandex.ru^
+||iot-*-logser.realme.com^
+||iot-logser.realme.com^
+||bdapi-ads.realmemobile.com^
+||bdapi-in-ads.realmemobile.com^
+||ads.oppomobile.com^
+||click.oneplus.cn^
+||metrics.mzstatic.com^
+||api-adservices.apple.com^
+||ad.xiaomi.com^
+||ad.*.xiaomi.com^
+||mistat.xiaomi.com^
+||mistat.*.xiaomi.com^
+||tracking.rus.miui.com^
+||metrics*.data.hicloud.com^
+||logservice*.hicloud.com^
+||logbak.hicloud.com^
+||analytics-api.samsunghealthcn.com^
+||analytics.pointdrive.linkedin.com^
 ||americascardroom.eu^$3p
 ||dns.google^$3p
 ||strpst.com^$3p
