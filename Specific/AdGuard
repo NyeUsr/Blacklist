@@ -82,7 +82,7 @@ $$script[tag-content="exoloader"]
 $$script[tag-content="ExoVideoSlider"]
 $$script[tag-content="exo_div"]
 $$script[tag-content="exoUrl"]
-$$script[tag-content="exoclick"]
+*,~xnxx.com$$script[tag-content="exoclick"]
 $$script[tag-content="zfgloaded"]
 $$script[tag-content="AntiAdblock"]
 $$script[tag-content="adblock.html"]
@@ -134,6 +134,16 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 
 ! Generic hiding for mobile devices using AdGuard
 !#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href*="/"]:has-text(∕)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href^="https://join.virtuallust3d.com/track/"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href^="https://join.hentaisex3d.com/track/"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href^="https://join.gameoflust2.com/track/"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href^="https://join.adultworld3d.com/track/"]:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,~myappdeals.com##[href^="https://myappdeals.com/products/"]:not(html, body, button, input)
 !+ NOT_OPTIMIZED

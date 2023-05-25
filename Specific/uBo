@@ -59,7 +59,7 @@
 *##^script:has-text(ExoVideoSlider)
 *##^script:has-text(exo_div)
 *##^script:has-text(exoUrl)
-*##^script:has-text(exoclick)
+*,~xnxx.com##^script:has-text(exoclick)
 *##^script:has-text(zfgloaded)
 *##^script:has-text(AntiAdblock)
 *##^script:has-text(adblock.html)

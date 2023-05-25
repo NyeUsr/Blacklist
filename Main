@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 86N-1563
+! Version: 87N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1053,6 +1053,11 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||pyrincelewasgild.info^
+||rdreamsofcryin.info^
+||trustyable.com^
+||dqv45r33u0ltv.cloudfront.net^
+||count.sibbo.net^
 ||newsroom.bi^
 ||analyticsengine.s3.amazonaws.com^
 ||analytics.s3.amazonaws.com^
@@ -1189,8 +1194,8 @@ http://twitcount.com$3p
 ||pubfuture-ad.com^
 ||pubfuture.com^
 ||purpleads.io^
-||localhost:$3p
-||127.0.0.1:$3p
+||localhost:$3p,domain=~mega.nz
+||127.0.0.1:$3p,domain=~mega.nz
 ||log-upload-os.mihoyo.com^
 ||poprush.net^
 ||af-ad.co.uk^
@@ -12369,6 +12374,9 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+napaonline.com##.nol-ui.CCPA
+wellandgood.com##.related-content
+amazon.com##.s-widget-container:has-text(Customers also ask)img[src="https://m.media-amazon.com/images/G/01/Lagoon/AlexaLogo.png"]:upward(3)
 addons.mozilla.org##.Notice-dismissible.GetFirefoxBanner
 adguard.com##.annoyance
 amazon.com###cart-item-recs
@@ -12537,6 +12545,11 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 ! Generic
+*##[href*="/"]:has-text(∕)
+##[href^="https://join.virtuallust3d.com/track/"]:not(html, body, button, input)
+##[href^="https://join.hentaisex3d.com/track/"]:not(html, body, button, input)
+##[href^="https://join.gameoflust2.com/track/"]:not(html, body, button, input)
+##[href^="https://join.adultworld3d.com/track/"]:not(html, body, button, input)
 ~myappdeals.com##[href^="https://myappdeals.com/products/"]:not(html, body, button, input)
 ##.adthrive-header-1:not(html, body, button, input)
 ##.adthrive-header:not(html, body, button, input)
