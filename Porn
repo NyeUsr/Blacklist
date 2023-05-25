@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 27-ER
+! Version: 28-ER
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -54,6 +54,12 @@ video.search.yahoo.com
 /^thot/$ctag=user_child
 /thot(s)?$/$ctag=user_child
 
+naked
+creampie
+p0rn
+footjob
+-nsfw
+nsfw-
 onlyfans
 jizz
 xnxx
@@ -118,6 +124,29 @@ bukkake
 barely%20legal$all
 /thots/$all
 
+||debiutext.eu^
+||anywap.xyz^
+||evilunveiled.com^
+||inessah.com^
+||tubzolina.mobi^
+||xxhdvideos.com^
+||xxxboymovie.pro^
+||corporacionbiotecnica.com^
+||tinyteenporn.net^
+||vintage-erotic.net^
+||nudevista.net^
+||pornozavr.net^
+||sexgamefun.com^
+||tinypussypics.com^
+||bikinierotica.net^
+||teen-erotica.net^
+||amateurandreal.com^
+||maturesex.fun^
+||myfreeporn.org^
+||tinynibbles.com^
+||here.xxx^
+||fantasies.com^
+||oyoh.com^
 ||lovelifetoys.com^
 ||liberator.com^
 ||lelo.com^
