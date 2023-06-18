@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 87N-1563
+! Version: 88N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1053,6 +1053,13 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||medallia.com^$3p
+||tagtracking.vibescm.com^
+||promote.genius.com^
+||whatsupp25.biz^
+||another-surprise.pro^
+||insecurekick.com^
+||counter.lifesitenews.com^
 ||pyrincelewasgild.info^
 ||rdreamsofcryin.info^
 ||trustyable.com^
@@ -7225,7 +7232,6 @@ http://twitcount.com$3p
 ||meapk.com^
 ||measuread.com^
 ||meatydime.com^
-||medallia.com^
 ||media6degrees.com^
 ||media.net^
 ||mediablam.com^
@@ -8746,7 +8752,6 @@ http://twitcount.com$3p
 ||revcontent.com^
 ||revealbot.com^
 ||revengemeantjackpot.com^
-||revenuecat.com^
 ||revenuedirect.com^
 ||revenuehits.com^
 ||revenuestripe.com^
@@ -12374,6 +12379,9 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+learnosm.org###optout-form:has-text(cookies)
+genius.com##[class*="PromoContainer"]:upward(1)
+academic.oup.com###cookie-consent-banner
 napaonline.com##.nol-ui.CCPA
 wellandgood.com##.related-content
 amazon.com##.s-widget-container:has-text(Customers also ask)img[src="https://m.media-amazon.com/images/G/01/Lagoon/AlexaLogo.png"]:upward(3)
