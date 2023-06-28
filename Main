@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 88N-1563
+! Version: 89N-1563
 ! Approximate amount of entries: 12.4K
 
 ! Resources to help you better understand filter lists --------------
@@ -1053,6 +1053,27 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||ontosocietyweary.com^
+||toothtranquilizerdeliverance.com^
+||fridaylazy.com^
+||farmmandatehaggard.com^
+||breedingperforming.com^
+||deductionkeepingbabysitter.com^
+||serving-adsserve.com^
+||amesgraduatel.xyz^
+||serve-serving.com^
+||hungryproductionsmalnutrition.com^
+||messenger-notify.xyz^
+||shouldthinkhim.com^
+||meoneinthew.com^
+||sufficedetentionhols.com^
+||windymissphantom.com^
+||predictiondexchange.com^
+||koovaubi.xyz^
+||fheefsqxuesple.xyz^
+||cleaner-updater.com^
+||goomaphy.com^
+||lpmbtrk.com^
 ||medallia.com^$3p
 ||tagtracking.vibescm.com^
 ||promote.genius.com^
