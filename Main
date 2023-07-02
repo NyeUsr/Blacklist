@@ -3,8 +3,8 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 89N-1563
-! Approximate amount of entries: 12.4K
+! Version: 90N-1563
+! Approximate amount of entries: 12.9K
 
 ! Resources to help you better understand filter lists --------------
 ! Ublock Origin Static Filter Syntax                                |
@@ -232,7 +232,6 @@
 @@||yandex.*/clck/$domain=kinopoisk.ru
 @@||api-auth-mobile.hootsuite.com^
 @@||2o7.net^$domain=totaljobs.com
-@@||inmotion-hosting.evyy.net^$image,domain=techradar.com
 @@||haberler.com^$image
 @@||api.nextdns.io/configuration/*/analytics/*$domain=my.nextdns.io
 @@||api.emsicc.com/sites/*
@@ -1053,6 +1052,12 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+.xyz$third-party,domain=watchcartoononline.bz
+||ingest.make.rvohealth.com^
+||qisaqojjmmsjo.xyz^
+||meouqlseyuuo.xyz^
+||ywmwavupixjo.com^
+||nhkvdjuvfgmpk.xyz^
 ||ontosocietyweary.com^
 ||toothtranquilizerdeliverance.com^
 ||fridaylazy.com^
@@ -5192,7 +5197,6 @@ http://twitcount.com$3p
 ||evoke-windowsservices-tas.msedge.net^
 ||evolok.net^
 ||evolveplatform.net^
-||evyy.net^
 ||ew3.io^
 ||ewayads.com^
 ||ewok.cl^
@@ -11079,6 +11083,7 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||inline.healthline.com/as/*?utm_campaign=healthline+
 ||drtuber.com/footer_tiz.php$subdocument
 ||sourcepoint.theguardian.com/index.html$subdocument
 ||americascardroom.eu/ads/$popup,popunder
@@ -11342,6 +11347,7 @@ http://twitcount.com$3p
 ||sex.com/images/loader.gif
 
 /footer_ads.php?$subdocument
+/count_view
 ?sentry_key=*&sentry_version=
 %3DPOPUNDER$popup,popunder
 /statics/px.gif
@@ -12400,6 +12406,18 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+healthline.com##[data-adbridg-ad-class]:upward(aside)
+healthline.com##hl-adsense
+healthline.com##.article-body > div[class^="css-"] > p ~ div[class]:has(> aside div[data-ad="true"])
+healthline.com##[class*="css-"] > [id*="DCMR"]:upward(1)
+reuters.com##[class*="article-body__context_widget"]:has-text(Follow)
+nih.gov##.pmc-article__disclaimer
+academic.oup.com##.fullWidth.edit-modal-banner:has-text(cookies)
+howtogeek.com##.relateditemwrap:upward(1)
+apkpure.com###policy-info
+bhphotovideo.com##[class*="chatBanner"]
+youtube.com##.yt-mealbar-promo-renderer
+youtube.com##.yt-mealbar-promo-renderer-content
 learnosm.org###optout-form:has-text(cookies)
 genius.com##[class*="PromoContainer"]:upward(1)
 academic.oup.com###cookie-consent-banner
@@ -12574,6 +12592,10 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 ! Generic
+##[class*="refinitiv-promo-bar"]:not(html, body, button, input)
+##.cookie-notice-container:not(html, body, button, input)
+##div.js-ad-slot:not(html, body, button, input)
+##.ad-box-auto:not(html, body, button, input)
 *##[href*="/"]:has-text(∕)
 ##[href^="https://join.virtuallust3d.com/track/"]:not(html, body, button, input)
 ##[href^="https://join.hentaisex3d.com/track/"]:not(html, body, button, input)
@@ -13429,6 +13451,11 @@ amazon.com$removeparam=/p(d|f)\_rd\_.+/
 google.com/search$removeparam=sourceid
 google.com/search$removeparam=aqs
 github.com$removeparam=ref
+youtube.com$removeparam=bp
+ufbdirect.com$removeparam=siteID
+ufbdirect.com$removeparam=ranMID
+ufbdirect.com$removeparam=ranEAID
+ufbdirect.com$removeparam=ranSiteID
 
 ! Json Prune (uBo & AdGuard)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)

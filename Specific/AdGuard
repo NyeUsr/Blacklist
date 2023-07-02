@@ -135,6 +135,14 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 ! Generic hiding for mobile devices using AdGuard
 !#if (adguard_app_android && adguard_app_ios && adguard_ext_android_cb)
 !+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="refinitiv-promo-bar"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookie-notice-container:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##div.js-ad-slot:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad-box-auto:not(html, body, button, input)
+!+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href*="/"]:has-text(∕)
 !+ NOT_OPTIMIZED
 com,co,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[href^="https://join.virtuallust3d.com/track/"]:not(html, body, button, input)
