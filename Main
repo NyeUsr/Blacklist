@@ -3,8 +3,8 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 90N-1563
-! Approximate amount of entries: 12.9K
+! Version: 91N-1563
+! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
 ! Ublock Origin Static Filter Syntax                                |
@@ -707,6 +707,13 @@
 
 .zip/^
 .mov/^$~media
+.bid/^$3p
+.cfd/^$3p
+.discount/^$3p
+.gdn/^$3p
+.loan/^$3p
+.loans/^$3p
+.sbs/^$3p
 .aaa/^$3p
 .beauty/^$3p
 .best/^$3p
@@ -735,6 +742,13 @@
 .work/^$3p
 .zone/^$3p,domain=~itch.io
 !#if (!adguard)
+.bid/^$popunder
+.cfd/^$popunder
+.discount/^$popunder
+.gdn/^$popunder
+.loan/^$popunder
+.loans/^$popunder
+.sbs/^$popunder
 .zip/^$popunder
 .mov/^$popunder
 .aaa/^$popunder
@@ -1052,6 +1066,9 @@ http://twitcount.com$3p
 ||yads.*.yimg.
 ||zeroredirect*.com^
 
+||merequartz.com^
+||bleachbubble.com^
+||aunsagoa.xyz^
 .xyz$third-party,domain=watchcartoononline.bz
 ||ingest.make.rvohealth.com^
 ||qisaqojjmmsjo.xyz^
@@ -12406,6 +12423,7 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+qwant.com##[data-monitoring="adsWebSerpOk"]
 healthline.com##[data-adbridg-ad-class]:upward(aside)
 healthline.com##hl-adsense
 healthline.com##.article-body > div[class^="css-"] > p ~ div[class]:has(> aside div[data-ad="true"])
