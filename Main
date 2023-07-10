@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 91N-1563
+! Version: 92N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -1065,7 +1065,28 @@ http://twitcount.com$3p
 ||y0tube.
 ||yads.*.yimg.
 ||zeroredirect*.com^
-
+||onepornlist.com^$popunder
+||ku2d3a7pa8mdi.com^$popup,popunder
+||a-ads.com^$frame
+||klclick.com^$3p
+||customeriomail.com^$3p
+||test.com^
+||subdued-illegal.pro^
+||alargeredrubygsw.info^
+||ku2d3a7pa8mdi.com^
+||lynotquitesou.info^
+||xzezapozghp.com^
+||d18t35yyry2k49.cloudfront.net^
+||d1f05vr3sjsuy7.cloudfront.net^
+||doodstream.com^
+||mnuesamwg.xyz^
+||auobxpvjej.xyz^
+||bhgmlryalkwx.xyz^
+||ltmlsehfqikh.xyz^
+||ousinouk.xyz^
+||rxcghhurloldkeu.xyz^
+||whnctvmoka.xyz^
+||jmdoceyfiilke.xyz^
 ||merequartz.com^
 ||bleachbubble.com^
 ||aunsagoa.xyz^
@@ -4680,7 +4701,6 @@ http://twitcount.com$3p
 ||curtaincows.com^
 ||customer.io^
 ||customerevents.netflix.com^
-||customeriomail.com^
 ||customerly.io^
 ||customlightworks.com^
 ||cutecushion.com^
@@ -6832,7 +6852,6 @@ http://twitcount.com$3p
 ||kitties-collection.xyz^
 ||klangoo.com^
 ||klaviyo.com^
-||klclick.com^
 ||klickly.com^
 ||klickthru.com^
 ||kline.rizon.net^
@@ -11100,6 +11119,7 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+.cloudfront.net/django.min.js
 ||inline.healthline.com/as/*?utm_campaign=healthline+
 ||drtuber.com/footer_tiz.php$subdocument
 ||sourcepoint.theguardian.com/index.html$subdocument
@@ -11765,7 +11785,7 @@ beacon*$image
 /phpstat
 /logcount.
 /logcount&
-/yahoo-dom-event
+/yahoo-dom-event$domain=~secure.ssa.gov
 /promo?uniq
 /api/*/v*/log
 /*pagespeed_beacon
@@ -12423,6 +12443,11 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+youtube.com###items > .ytd-structured-description-content-renderer.style-scope
+cnet.com##.c-avStickyVideo
+cnet.com##.c-globalNotification:has-text(Accept)
+altec.com##.rcc-panel-fixed.group.rcc-panel
+fleetsideford.net###ca-consent-root
 qwant.com##[data-monitoring="adsWebSerpOk"]
 healthline.com##[data-adbridg-ad-class]:upward(aside)
 healthline.com##hl-adsense
