@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 92N-1563
+! Version: 93N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -172,6 +172,9 @@
 
 ! CNAME *.sc.en25.com is blocked
 @@||images.edu.imaginelearning.com^
+
+! CNAME mkt*5.com is blocked
+@@||info.vercel.com^
 
 ! Just docs & status page, nothing else
 @@||docs.bugsnag.com^
@@ -854,7 +857,14 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
 
-! Wildcard domains
+||deepswap.ai^$3p
+||cloudflare-terms-of-service-abuse.com^
+||raswww.com^
+||blg-1216lb.com^
+||693f50a0.com^
+||8jp029zc.com^
+||kvncleks.com^
+||desipapa.xyz^
 -*-affilimate.cloudfunctions.net^
 *-*-pixel-*.vc-networks.com^
 *-*covid19petition.ga^
@@ -4407,8 +4417,8 @@ http://twitcount.com$3p
 ||clrstm.com^
 ||cluep.com^
 ||cluodlfare.com^
-||cmail1.com^
-||cmail20.com^
+||cmail1.com^$3p
+||cmail20.com^$3p
 ||cmg.com^
 ||cmkfotografie.de^
 ||cmp-cdn.ghostery.com^
@@ -6225,7 +6235,7 @@ http://twitcount.com$3p
 ||infosendpro.com^
 ||infosniper.net^
 ||infotop.jp^
-||infusionsoft.com^
+||infusionsoft.com^$3p
 ||ingameads.gameloft.com^
 ||ingenioustech.biz^
 ||inheritwalter.com^
@@ -8102,7 +8112,6 @@ http://twitcount.com$3p
 ||pagefair.com^
 ||pagerank10.co.uk^
 ||pageranktop.com^
-||pages08.net^
 ||pagiwp.com^
 ||paidstats.com^
 ||painfullanal.com^
@@ -12443,6 +12452,8 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+osceolaiowarealty.com##.active.data-privacy-policy:has-text(cookies)
+business.site###cookieDialog
 youtube.com###items > .ytd-structured-description-content-renderer.style-scope
 cnet.com##.c-avStickyVideo
 cnet.com##.c-globalNotification:has-text(Accept)
