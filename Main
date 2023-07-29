@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 93N-1563
+! Version: 94N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -857,6 +857,49 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
 
+||revanced.org^
+||revanced.io^
+||borwi.com^
+||ogstats.com^
+||clashroyalehackk.com^
+||clashmodehome.com^
+||cocgemsgenerator.com^
+||gemmesclashofclan.com^
+||clashofclansfreegems.com^
+||generadorgemasclashroyale.online^
+||resources4gaming.com^
+||gemsforfree.com^
+||freetikfollower.com^
+||igtok.com^
+||tikfans.bumbumapp.com^
+||gamesprofits.com^
+||essentialtoolbox.xyz^
+||breakingnewsbrief.com^
+||trk-architecto.com^
+||pushclk.com^
+||appsinnova.com^
+||pubnative.net^
+||ping.little-engine.com^
+||6677g.com^
+||ttpsdk.info^
+||everestop.io^
+||track.playsimple.games^
+||arttrk.com^
+||minkatu.com^
+||logging-api-new.mysoluto.com^
+*analyticslistener.mysoluto.com^
+||ingestion.events.asurion.com^
+||jatomayfair.life^
+||collect.analyse.lnearn.com^
+||partnerbcgame.com^
+||locooler-ageneral.com^
+||track.afrsportsbetting.com^
+||phumpauk.com^
+||clumperrucksey.life^
+||hazanuttriazo.life^
+||viewyentreat.guru^
+||bakersvetoer.com^
+||acylbirri.digital^
 ||deepswap.ai^$3p
 ||cloudflare-terms-of-service-abuse.com^
 ||raswww.com^
@@ -1289,7 +1332,7 @@ http://twitcount.com$3p
 ||faronqdkimah.com^
 ||pogothere.xyz^
 ||alargeredrubygsw.com^
-||tzegilo.com^$important
+||tzegilo.com^
 ||voyageschoolanymore.com^
 ||banquetunarmedgrater.com^
 ||whatsoeverlittle.com^
@@ -13479,6 +13522,7 @@ $removeparam=share_session_id
 $removeparam=from_source
 $removeparam=cjevent
 $removeparam=c3nid
+$removeparam=y_source
 search.brave.com$removeparam=source
 tradedoubler.com$removeparam=tduid
 adguard-dns.io$removeparam=clid
