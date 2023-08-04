@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 94N-1563
+! Version: 95N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -226,6 +226,9 @@
 
 ! Unbreak login
 @@||dd.tidal.com^
+
+! Brave blocks this for some reason - breaks fast.com
+@@||ipv4-*.oca.nflxvideo.net^
 
 ! Uncategorized
 @@||auth-*.tinypass.com^
@@ -857,6 +860,9 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
 
+||othersides.top^
+||brostraffic.com^
+||cdnloadsqgzg.web.app^
 ||revanced.org^
 ||revanced.io^
 ||borwi.com^
@@ -11171,6 +11177,7 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||ct.sendgrid.net/ls/click^$doc
 .cloudfront.net/django.min.js
 ||inline.healthline.com/as/*?utm_campaign=healthline+
 ||drtuber.com/footer_tiz.php$subdocument
@@ -11435,6 +11442,7 @@ http://twitcount.com$3p
 ||mail.quicken.com/open.aspx
 ||sex.com/images/loader.gif
 
+/extension/uninstall/$doc
 /footer_ads.php?$subdocument
 /count_view
 ?sentry_key=*&sentry_version=
@@ -12495,6 +12503,7 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+cleancarwashla.org###gdpr-cookie-message
 osceolaiowarealty.com##.active.data-privacy-policy:has-text(cookies)
 business.site###cookieDialog
 youtube.com###items > .ytd-structured-description-content-renderer.style-scope
@@ -12689,6 +12698,8 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 ! Generic
+##[href*="/te3/out.php"]:not(html, body, button, input)
+##[id*="ProSearchAd"]:not(html, body, button, input)
 ##[class*="refinitiv-promo-bar"]:not(html, body, button, input)
 ##.cookie-notice-container:not(html, body, button, input)
 ##div.js-ad-slot:not(html, body, button, input)
