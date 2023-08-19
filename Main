@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 95N-1563
+! Version: 96N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -100,6 +100,7 @@
 @@||uxfabric.intuitcdn.net^
 
 ! Lead/redirect tracking - required for usability
+@@||e.customeriomail.com^
 @@||events.release.narrativ.com^
 @@||cj.dotomi.com
 @@||tkqlhce.com^
@@ -860,6 +861,54 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
 
+||antennafutilecomplement.com^$popup,popunder
+||wxmccgdodvsqibm.com^
+||shhxyebbvy.com^
+||crownmakermacaronicism.com^
+||ebdrxqox.com^
+||hifkuhxc.com^
+||magnewscontent.org^
+||cxgicdcfou.com^
+||lifemoodmichelle.com^
+||offvmuf.com^
+||ankoftatdm.com^
+||ankoftatdm.com^$popup,popunder
+||dynssp.com^
+||imghst-de.com^
+||nxtpsh.com^
+||ujscdn.com^
+||xlirdr.com^
+||latestdatingoffers.com^
+||trafficnetwork.xyz^
+||bookingempire.co^
+||phanu-swc.com^
+||x7r3mk6ldr.com^
+||dzhjmp.com^
+||smljmp.com^
+||zeddit.com^$3p
+||hazanuttriazo.life^
+||bakersvetoer.com^
+||blunksdaler.uno^
+||viewyentreat.guru^
+||changlam*.top^
+||pvmteagghntoh.xyz^
+||saiceezu.xyz^
+||telemetry.canva.com^
+||almightypush.com^
+||push-sender.com^
+||api-push.com^
+||jucydate.com^
+||pushdrop.club^
+||leadingdealsglobal.com^
+||milfsinyourneighborhood.com^
+||lovefort.com^
+||yourlocalhookup.com^
+||arousingaffairs.com^
+||asainmelodies.com^
+||depravedgirls.com^
+||datingtopia.com^
+||bigjoynow.com^
+||push-dt.fcdn.info^
 ||othersides.top^
 ||brostraffic.com^
 ||cdnloadsqgzg.web.app^
@@ -1511,7 +1560,6 @@ http://twitcount.com$3p
 ||1ads.com^
 ||1advertising.com^
 ||1cash.net^
-||1celebs.com^
 ||1-cl0ud.com^
 ||1clickflow.com^
 ||1cloudstat.com^
@@ -11442,6 +11490,8 @@ http://twitcount.com$3p
 ||mail.quicken.com/open.aspx
 ||sex.com/images/loader.gif
 
+:*/in/$popup,popunder
+/clickadu-us-desktop/
 /extension/uninstall/$doc
 /footer_ads.php?$subdocument
 /count_view
@@ -12698,6 +12748,11 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 ! Generic
+##[href*="go.smljmp.com"]:not(html, body, button, input)
+##[href*="/smartpop/"]:not(html, body, button, input)
+##[href*="go.dzhjmp.com"]:not(html, body, button, input)
+###gpt-leaderboard-ad:not(html, body, button, input)
+##.ad_static:not(html, body, button, input)
 ##[href*="/te3/out.php"]:not(html, body, button, input)
 ##[id*="ProSearchAd"]:not(html, body, button, input)
 ##[class*="refinitiv-promo-bar"]:not(html, body, button, input)
