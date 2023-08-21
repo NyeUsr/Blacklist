@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 96N-1563
+! Version: 97N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -861,6 +861,9 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
 
+||skillfuldrop.com^
+||lhmsfliaoalfk.xyz^
+||gaupsaur.xyz^
 ||antennafutilecomplement.com^$popup,popunder
 ||wxmccgdodvsqibm.com^
 ||shhxyebbvy.com^
@@ -11225,6 +11228,7 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||d.genealogyaffiliates.com/afr.php
 ||ct.sendgrid.net/ls/click^$doc
 .cloudfront.net/django.min.js
 ||inline.healthline.com/as/*?utm_campaign=healthline+
@@ -11490,6 +11494,7 @@ http://twitcount.com$3p
 ||mail.quicken.com/open.aspx
 ||sex.com/images/loader.gif
 
+?utm_medium=Advertising$frame
 :*/in/$popup,popunder
 /clickadu-us-desktop/
 /extension/uninstall/$doc
@@ -11638,7 +11643,7 @@ _dyn.php?
 /gen_regie.php
 /hash_stat
 */rlog/$script
-/banner.html$frame
+/banner.html$frame,domain=~opencollective.com
 */activity/ad/
 /ip/ipinfo
 /ad_dict_web_test.
@@ -13625,6 +13630,11 @@ ufbdirect.com$removeparam=ranSiteID
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+
+! Fix adblock warning with ##+js (uBo & AdGuard)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
 
 ! AdGuard Home
 ! "Relay" on school devices

@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 32-ER
+! Version: 33-ER
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -17,14 +17,14 @@
 ! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
 
 ! Block some DNS servers which may be enabled by default and preventing blocking
-mozilla.cloudflare-dns.com
-chrome.cloudflare-dns.com
-dns.google.com
+||mozilla.cloudflare-dns.com^
+||chrome.cloudflare-dns.com^
+||dns.google.com^
 
 ! Restrict engines that don't support safe search at DNS level
-explicit.bing.net
-images.search.yahoo.com
-video.search.yahoo.com
+||explicit.bing.net^
+||images.search.yahoo.com^
+||video.search.yahoo.com^
 
 ! https://help.duckduckgo.com/duckduckgo-help-pages/features/safe-search/
 ||duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
