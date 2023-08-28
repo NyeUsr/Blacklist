@@ -13,5 +13,24 @@
 ||favish.com^
 ||neverbounce.com^
 ||mrf.io^
+||cloudflare-dns.com^
+||dns.google.com^
+||comments.adguard.org^
+
+||genius.com^$frame
+||mastodon.social$3p
+||t.me^$3p
+
+/cast_framework.js
+/cast_sender.js
 
 mega.nz##.gallery-btn
+
+||youtube.com^$3p,frame,redirect=click2load.html
+||youtube-nocookie.com^$3p,frame,redirect=click2load.html,domain=~qwant.com
+||docs.google.com^$3p,frame,redirect=click2load.html
+||drive.google.com^$3p,frame,redirect=click2load.html
+||open.spotify.com/embed$3p,frame,redirect=click2load.html
+||player.twitch.tv^$3p,frame,redirect=click2load.html
+||player.vimeo.com^$3p,frame,redirect=click2load.html
+?autoplayInViewPort=true$frame,redirect=click2load.html
