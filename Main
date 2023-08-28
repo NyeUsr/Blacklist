@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 97N-1563
+! Version: 98N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -251,6 +251,7 @@
 @@||content-images.p-cdn.com/images^$image
 @@||maps.gstatic.com^$image
 @@||github.com$ghide
+@@||storejobs.wal-mart.com^$ghide
 
 !#if !ext_ublock
 127.0.0.1 log2.musical.ly$badfilter
@@ -861,6 +862,29 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
 
+||mesqwrte.net^
+||tipcatscarola.com^
+||caicuptu.xyz^
+||cqhqvgwcypx.xyz^
+||ethoamee.xyz^
+||tywdchppfgds.xyz^
+||cpeaksqppnknwp.xyz^
+||durhslpj.xyz^
+||nlrbpcbrs.xyz^
+||tracker.idocdn.com^
+||ckkpjtkqjqdnyom.xyz^
+||ctiawbxvhajg.com^
+||oatchelt.com^
+||humygtpwdifrwyi.xyz^
+||xjbwpigpuspplgi.xyz^
+||wfvytrhcuyuhjo.xyz^
+||mahourup.xyz^
+||afvnevcyuke.xyz^
+||lby2kd27c.com^
+||hue3a.com^
+||magsrv.com^
+||orbsrv.com^
+||live-screencaps.vscdns.com^
 ||skillfuldrop.com^
 ||lhmsfliaoalfk.xyz^
 ||gaupsaur.xyz^
@@ -11228,6 +11252,7 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||iamcdn.net/ban.html
 ||d.genealogyaffiliates.com/afr.php
 ||ct.sendgrid.net/ls/click^$doc
 .cloudfront.net/django.min.js
@@ -11494,6 +11519,10 @@ http://twitcount.com$3p
 ||mail.quicken.com/open.aspx
 ||sex.com/images/loader.gif
 
+*/zoneload/preroll_exo/
+/load_adblock$xhr
+/QRCode_1X.png?
+$ORIGIN_PNG$
 ?utm_medium=Advertising$frame
 :*/in/$popup,popunder
 /clickadu-us-desktop/
@@ -12558,6 +12587,9 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+disntr.com##small:has-text(Advertisement)
+answersingenesis.org##.js-relatedItems.related-items
+qwant.com##[data-testid="advertiserAdsLink"]
 cleancarwashla.org###gdpr-cookie-message
 osceolaiowarealty.com##.active.data-privacy-policy:has-text(cookies)
 business.site###cookieDialog
@@ -12753,6 +12785,12 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 ! Generic
+##.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window:not(html, body, button, input)
+##.widget-cookie-banner-cookie-1.widget-cookie-banner.widget:not(html, body, button, input)
+##.module_single_ads:not(html, body, button, input)
+*##aside[class*="widget "]:has-text(Ads):not(html, body, button, input)
+##.adkiss:not(html, body, button, input)
+##[class*="tempad-inner-wrap"]:not(html, body, button, input)
 ##[href*="go.smljmp.com"]:not(html, body, button, input)
 ##[href*="/smartpop/"]:not(html, body, button, input)
 ##[href*="go.dzhjmp.com"]:not(html, body, button, input)
@@ -13621,20 +13659,23 @@ google.com/search$removeparam=sourceid
 google.com/search$removeparam=aqs
 github.com$removeparam=ref
 youtube.com$removeparam=bp
+youtube.com$removeparam=si
+youtube.com$removeparam=feature
+youtube.com$removeparam=pp
 ufbdirect.com$removeparam=siteID
 ufbdirect.com$removeparam=ranMID
 ufbdirect.com$removeparam=ranEAID
 ufbdirect.com$removeparam=ranSiteID
 
-! Json Prune (uBo & AdGuard)
+##+js (uBo & AdGuard)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
-
-! Fix adblock warning with ##+js (uBo & AdGuard)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
+player-cdn.com##+js(no-window-open-if, !abyss.to, 1)
+player-cdn.com##+js(abort-on-stack-trace, String.prototype.charAt, $0)
 
 ! AdGuard Home
 ! "Relay" on school devices
