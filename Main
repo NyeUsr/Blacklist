@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 98N-1563
+! Version: 99N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -711,7 +711,19 @@
 
 !#safari_cb_affinity
 
-! Top abused or likely to be abused TLDS
+! Unnecessary HTTP
+http://yourjavascript.com$3p
+http://gmpg.org$3p
+http://twitcount.com$3p
+
+! Harder blocking of Facebook tracking
+! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
+||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
+||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
+||facebook.net^$3p,domain=~facebook.com|~fb.com|~instagram.com
+
+! Top abused or likely to be abused TLDs
 
 .zip/^
 .mov/^$~media
@@ -749,7 +761,28 @@
 .win/^$3p
 .work/^$3p
 .zone/^$3p,domain=~itch.io
-!#if (!adguard)
+
+! Popunder AdGuard exclusions
+!#if (adguard && adguard_ext_safari)
+!#if adguard
+||bitly.com^$popunder
+||bit.ly^$popunder
+||balaraofixes.website^$popunder
+||kougloar.com^$popunder
+||bipedhematin.website^$popunder
+||adswelcome.xyz^$popunder
+||dartsearch.net^$popunder
+/out.php$popunder
+/outback.php$popunder
+/play.php$popunder
+/adServe/sa?$popunder
+/lander.php$3p,popunder
+*/api/click/$popunder
+*/track/click/$popunder
+?spot_id=*&ct=*$popunder
+?zoneid=$popup
+
+! TLDs
 .bid/^$popunder
 .cfd/^$popunder
 .discount/^$popunder
@@ -787,68 +820,11 @@
 .work/^$popunder
 .zone/^$popunder
 !#endif
-
-! Unnecessary HTTP
-http://yourjavascript.com$3p
-http://gmpg.org$3p
-http://twitcount.com$3p
-
-! Harder blocking of Facebook tracking
-! https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser (lol, who coulda guessed)
-||graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
-||b-graph.facebook.com^$domain=~facebook.com|~fb.com|~instagram.com
-||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
-||facebook.net^$3p,domain=~facebook.com|~fb.com|~instagram.com
-
-! Administrator blocked pages - hopefully prevent from loading and pinging them
-.meraki.com:*/blocked.cgi*$domain=~_Administrator_Blocked_This_Site,document
-||localhost:*/block_screen.html*$domain=~_Administrator_Blocked_This_Site,document
-||securly.com/blocked?$domain=~_Administrator_Blocked_This_Site,document
-
-! https://www.youtube.com/watch?v=-SBj0bJ_1f8
-! gurume.screenconnect.com
-! The service altogether could be considered malicious
-||screenconnect.com^
-
-! coveryourtracks.eff.org
-||trackersimulator.org^$subdocument
-||eviltracker.net^$subdocument
-||do-not-tracker.org^$subdocument
-
-! https://www.mcafee.com/blogs/other-blogs/mcafee-labs/malicious-cookie-stuffing-chrome-extensions-with-1-4-million-users/
-||langhort.com^
-!||smartredirect.de^
-!||bestbuy.7tiv.net^
-||unscart.in^
-||netflixpartyplus.com^
-||netflixparty1.com^
-||flipshope.com^
-||goscreenshotting.com^
-||autobuyapp.com^
-
-! Popunder AdGuard exclusions
-!#if (!adguard)
-||bitly.com^$popunder
-||bit.ly^$popunder
-||balaraofixes.website^$popunder
-||kougloar.com^$popunder
-||bipedhematin.website^$popunder
-||adswelcome.xyz^$popunder
-||dartsearch.net^$popunder
-/out.php$popunder
-/outback.php$popunder
-/play.php$popunder
-/adServe/sa?$popunder
-/lander.php$3p,popunder
-*/api/click/$popunder
-*/track/click/$popunder
-?spot_id=*&ct=*$popunder
-?zoneid=$popup
 !#endif
 
 ! Heuristic-like scam/phishing protection
 /-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
-/bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$popup,popunder,domain=mail.google.com|mail.yahoo.com|outlook.com|protonmail.com|proton.me
+/bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$popup,popunder
 
 ! Randomly generated tracking urls
 /[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
@@ -860,8 +836,18 @@ http://twitcount.com$3p
 /\/zone\/[0-9]{4,4}\/\?aff=[0-9]{4,}$/
 
 ! Block third-party IP addresses from connecting
-/https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p
+/https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||unscart.in^
+||netflixpartyplus.com^
+||netflixparty1.com^
+||flipshope.com^
+||goscreenshotting.com^
+||autobuyapp.com^
+||screenconnect.com^
+||trackersimulator.org^
+||eviltracker.net^
+||do-not-tracker.org^
 ||mesqwrte.net^
 ||tipcatscarola.com^
 ||caicuptu.xyz^
@@ -11426,8 +11412,6 @@ http://twitcount.com$3p
 ||ff.search.yahoo.com/gossip
 ||lilithgame.com/log
 ||livelyvideo.tv/*/logger
-||graph.facebook.com/*/activities?access_token=&event=
-||graph.facebook.com/*?fields=supports_implicit_sdk_logging
 ||brave.com/*/usage*$~document
 ||google.com/aclk
 ||static.india.com/*/images/*-banner.jpg
@@ -11444,11 +11428,9 @@ http://twitcount.com$3p
 ||bluestacks.com/*/promotions
 ||bluestacks.com/*/*_promotions
 ||weby.aaas.org/donation_banner.html$subdocument
-||facebook.com/tr
 ||vikiporn.com/js/customscript.js
 ||iubenda.com/cookie-solution/
 ||disqus.com/count
-||facebook.com/rsrc.php$3p
 ||media.altpress.com/uploads/*/*_WEB-SKIN
 ||ixl.com/liveMessage/checkIfWatched
 ||ixl.com/practice/logRenderTime
@@ -11464,10 +11446,8 @@ http://twitcount.com$3p
 ||adult-empire.com/rs.php
 ||rexxx.org/banner?
 ||linkedin.com/countserv/
-||graph.facebook.com/?id=http$3p
 ||pinterest.com/*/count.json$3p
 ||amazonaws.com/bitsound.*.
-||facebook.net/*/fbevents.js
 ||combo.staticflickr.com/*/hermes-template-photo-ad-page/
 ||pornhub.com/svvt/add?
 ||animeporn.xxx/wp-content/uploads/*/ad*.gif
@@ -11515,9 +11495,7 @@ http://twitcount.com$3p
 ||pubsub.googleapis.com/v*/projects/gopher-buddy-prod/
 ||s.yimg.com/rq/darla/$subdocument
 ||yahoo.com/f/track/tgt/imp?
-||apis.google.com/js/client.js
 ||mail.quicken.com/open.aspx
-||sex.com/images/loader.gif
 
 */zoneload/preroll_exo/
 /load_adblock$xhr
@@ -13457,6 +13435,7 @@ youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd
 ##[data-track="ad-iframe-top"]
 
 ! Rewrite in ABP syntax for better compatability
+||apis.google.com/js/client.js$rewrite=abp-resource:blank-js
 ||assetshuluimcom-a.akamaihd.net/*.mp3$rewrite=abp-resource:blank-mp3,domain=hulu.com
 ||audio-sp-sea.spotifycdn.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
 ||heads-ak-spotify-com.akamaized.net$rewrite=abp-resource:blank-mp3,domain=spotify.com
@@ -13499,6 +13478,16 @@ youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd
 /PhoenixGoogleAnalytics.min.js$rewrite=abp-resource:blank-js
 /adManager$rewrite=abp-resource:blank-js
 ~ads.$rewrite=abp-resource:blank-js
+
+##+js (uBo & AdGuard)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
+player-cdn.com##+js(no-window-open-if, !abyss.to, 1)
+player-cdn.com##+js(abort-on-stack-trace, String.prototype.charAt, $0)
 
 ! Removeparam (AdGuard & uBlock Origin)
 $removeparam=/^(u|m)tm_*/
@@ -13666,26 +13655,3 @@ ufbdirect.com$removeparam=siteID
 ufbdirect.com$removeparam=ranMID
 ufbdirect.com$removeparam=ranEAID
 ufbdirect.com$removeparam=ranSiteID
-
-##+js (uBo & AdGuard)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
-doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
-doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
-doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
-player-cdn.com##+js(no-window-open-if, !abyss.to, 1)
-player-cdn.com##+js(abort-on-stack-trace, String.prototype.charAt, $0)
-
-! AdGuard Home
-! "Relay" on school devices
-! Return with the e.foundation wifi check ip
-lsrelayaccess.com$dnsrewrite=NOERROR;A;157.90.154.178
-lsfilter.com$dnsrewrite=NOERROR;A;157.90.154.178
-lsrelay-extensions-production.s3.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
-ably.io$dnsrewrite=NOERROR;A;157.90.154.178
-relay.school$dnsrewrite=NOERROR;A;157.90.154.178
-ably-realtime.com$dnsrewrite=NOERROR;A;157.90.154.178
-p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
-! Fix in Brave Browser when using DNS-over-HTTPS
-||www.uscellular.com^$dnstype=AAAA

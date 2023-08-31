@@ -1,10 +1,20 @@
-! Whitelist
-
 ! Unblock things which commonly break TVs
 @@||theplatform.com^$ctag=device_tv
 @@||samba.tv^$ctag=device_tv
 @@||doubleclick.net^$ctag=device_tv
 @@||nativesdks.mparticle.com^$ctag=device_tv
+
+! Fix "Relay" spyware on school devices (Tested and working with AdGuard Home & AdGuard for Android)
+! Return with the e.foundation wifi check ip
+||ably.io^$badfilter
+||ably-realtime.com^$badfilter
+lsrelayaccess.com$dnsrewrite=NOERROR;A;157.90.154.178
+lsfilter.com$dnsrewrite=NOERROR;A;157.90.154.178
+lsrelay-extensions-production.s3.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
+ably.io$dnsrewrite=NOERROR;A;157.90.154.178
+relay.school$dnsrewrite=NOERROR;A;157.90.154.178
+ably-realtime.com$dnsrewrite=NOERROR;A;157.90.154.178
+p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
 
 ! HTML/script filtering
 $$amp-ad
@@ -65,7 +75,6 @@ $$script[wildcard="**window.onbeforeunload*popit == true*"]
 $$script[wildcard="*navigator.plugins[i].name*screen.width*window.location.href*"]
 $$noscript[tag-content="exosrv"]
 theepochtimes.com$$script[tag-content="eet_tags"]
-
 
 ! Block tracking cookies
 ! The cookie doesn't need to be stored for 4 months - this sets it to one
