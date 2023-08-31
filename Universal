@@ -23,6 +23,7 @@
 
 /cast_framework.js
 /cast_sender.js
+/js/commento.js
 
 mega.nz##.gallery-btn
 
@@ -34,3 +35,8 @@ mega.nz##.gallery-btn
 ||player.twitch.tv^$3p,frame,redirect=click2load.html
 ||player.vimeo.com^$3p,frame,redirect=click2load.html
 ?autoplayInViewPort=true$frame,redirect=click2load.html
+
+! Android specific
+8.8.8.8$network
+8.8.4.4$network
+*$permissions=autoplay=()
