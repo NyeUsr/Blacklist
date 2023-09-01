@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 99N-1563
+! Version: 100N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -838,6 +838,70 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||ietyofedinj89yewtburgh.com^
+||ja2n2u30a6rgyd.com^
+||madriyelowd.com^
+||oxydend2r5umarb8oreum.com^
+||bngwlt.com^
+||getallt1.com^
+||getalltraffic.com^
+||goallbest.com^
+||12ezo5v60.com^
+||2avav.club^
+||1papa.top^
+||rxeosevsso.com^
+||127d5ef6e1.com^
+||a69i.com^
+||antiadxxxspy.com^
+||c2aef8ab51.com^
+||cabnnr.com^
+||capndr.com^
+||d13babd868.com^
+||wpshsdk.com^
+||lebuxe.xyz^
+||eabids.com^
+||pemsrv.com^
+||ihzuephjxb.com^
+||gekso.xyz^
+||xfuhhuqtubu.com^
+||bawixi.xyz^
+||bestzba.com^
+||blanddish.pro^
+||mshago.com^
+||xanalytics.vip^
+||montirao.xyz^
+||abominableexhibition.com^
+||professionalswebcheck.com^
+||adxsrver.com^
+||adxserve.com^
+||bymyth.com^
+||kgfjrb711.com^
+||openingmetabound.com^
+||acmaknoxwo.com^
+||a11k.com^
+||bookmsg.com^
+||eyauknalyticafra.info^
+||gingerlynnallenclips.com^
+||liondolularhene.info^
+||nereserv.com^
+||newrtbbid.com^
+||ntvpforever.com^
+||viiigle.com^
+||1ts19.top^
+||efreecode.com^
+||siteoid.com^
+||hprofits.com^
+||spicevids.com^$3p
+||uviu.com^$3p
+||mrporngeek.com^$3p
+||2df0b2e308.com^
+||adtrace.online^
+||ea5799b6c8.com^
+||f7e5bf5ed8.com^
+||websitebanger.store^
+||dawnfilthscribble.com^
+||ifsnickshriek.com^
+||xex1.bid^
 ||unscart.in^
 ||netflixpartyplus.com^
 ||netflixparty1.com^
@@ -11497,6 +11561,7 @@ http://twitcount.com$3p
 ||yahoo.com/f/track/tgt/imp?
 ||mail.quicken.com/open.aspx
 
+/_xa/ads_
 */zoneload/preroll_exo/
 /load_adblock$xhr
 /QRCode_1X.png?
@@ -12565,6 +12630,8 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+pornhub.com##video[loop muted][src*="Blob"]:upward(2)
+pornhub.com##.clear.hd
 disntr.com##small:has-text(Advertisement)
 answersingenesis.org##.js-relatedItems.related-items
 qwant.com##[data-testid="advertiserAdsLink"]
