@@ -16,6 +16,7 @@
 ||cloudflare-dns.com^
 ||dns.google.com^
 ||comments.adguard.org^
+||fundingchoicesmessages.google.com^
 
 ||genius.com^$frame
 ||mastodon.social$3p
@@ -40,3 +41,5 @@ mega.nz##.gallery-btn
 8.8.8.8$network
 8.8.4.4$network
 *$permissions=autoplay=()
+*$app=com.verizon.mips.services
+||firebaselogging.googleapis.com^$app=dk.tacit.android.foldersync.lite
