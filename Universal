@@ -22,16 +22,16 @@
 ||mastodon.social$3p
 ||t.me^$3p
 
-*$script,domain=aporiamagazine.com
-*$script,domain=thecollector.com
-*$script,domain=christiansfortruth.com
-*$script,domain=adguard.com
-*$script,domain=inspiredtaste.net
-*$script,domain=wikipedia.org
-*$script,domain=acatholic.org
-*$script,domain=answersingenesis.org
-*$script,domain=news.sky.com
-*$script,domain=nitter.poast.org
+*$script,inline-script,domain=aporiamagazine.com
+*$script,inline-script,domain=thecollector.com
+*$script,inline-script,domain=christiansfortruth.com
+*$script,inline-script,domain=adguard.com
+*$script,inline-script,domain=inspiredtaste.net
+*$script,inline-script,domain=wikipedia.org
+*$script,inline-script,domain=acatholic.org
+*$script,inline-script,domain=answersingenesis.org
+*$script,inline-script,domain=news.sky.com
+*$script,inline-script,domain=nitter.poast.org
 
 /cast_framework.js
 /cast_sender.js
