@@ -22,6 +22,17 @@
 ||mastodon.social$3p
 ||t.me^$3p
 
+*$script,domain=aporiamagazine.com
+*$script,domain=thecollector.com
+*$script,domain=christiansfortruth.com
+*$script,domain=adguard.com
+*$script,domain=inspiredtaste.net
+*$script,domain=wikipedia.org
+*$script,domain=acatholic.org
+*$script,domain=answersingenesis.org
+*$script,domain=news.sky.com
+*$script,domain=nitter.poast.org
+
 /cast_framework.js
 /cast_sender.js
 /js/commento.js
@@ -40,6 +51,5 @@ mega.nz##.gallery-btn
 ! Android specific
 8.8.8.8$network
 8.8.4.4$network
-*$permissions=autoplay=()
 *$app=com.verizon.mips.services
 ||firebaselogging.googleapis.com^$app=dk.tacit.android.foldersync.lite
