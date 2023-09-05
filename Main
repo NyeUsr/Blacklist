@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 100N-1563
+! Version: 101N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -838,6 +838,15 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||adpilot.com^
+||ajxx98.online^
+||impolitepatience.com^
+||plarimocl.com^
+||cvastico.com^
+||mcpuwpush.com^
+||cadlsyndicate.com^
+||cadrctlnk.com^
+||bizarre100.com^
 ||ietyofedinj89yewtburgh.com^
 ||ja2n2u30a6rgyd.com^
 ||madriyelowd.com^
@@ -3174,7 +3183,6 @@ http://twitcount.com$3p
 ||adzs.nl^
 ||adzsafe.com^
 ||adzsx.pro^
-||aeis.alicdn.com^
 ||aeonad.co.kr^
 ||aerialimpacts.com^
 ||aerotags.com^
@@ -3292,7 +3300,6 @@ http://twitcount.com$3p
 ||algocashmaster.com^
 ||alhapi.com^
 ||aliadvert.ru^
-||aliapp.org^
 ||ali-crm.ru^
 ||alignclamstram.com^
 ||alive5.com^
@@ -4966,7 +4973,6 @@ http://twitcount.com$3p
 ||db1k.com^
 ||dblks.net^
 ||dbn41syzjymrk.cloudfront.net^
-||dc.services.visualstudio.com^
 ||dc.sify.com^
 ||dcf45.com^
 ||dchoc.com^
@@ -10723,7 +10729,6 @@ http://twitcount.com$3p
 ||vktarget.ru^
 ||vlc.de^
 ||vlitag.com^
-||vlscppe.microsoft.com^
 ||v-mate.mobi^
 ||vmg.nyc^
 ||vml1.s3.amazonaws.com^
@@ -11561,6 +11566,7 @@ http://twitcount.com$3p
 ||yahoo.com/f/track/tgt/imp?
 ||mail.quicken.com/open.aspx
 
+/popunder/in$popup,popunder
 /_xa/ads_
 */zoneload/preroll_exo/
 /load_adblock$xhr
