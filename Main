@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 101N-1563
+! Version: 102N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -254,6 +254,10 @@
 @@||storejobs.wal-mart.com^$ghide
 
 !#if !ext_ublock
+127.0.0.1 christiansfortruth.com$badfilter
+0.0.0.0 christiansfortruth.com$badfilter
+::1 christiansfortruth.com$badfilter
+*://*.christiansfortruth.com/*$badfilter
 127.0.0.1 log2.musical.ly$badfilter
 0.0.0.0 log2.musical.ly$badfilter
 ::1 log2.musical.ly$badfilter
@@ -612,6 +616,7 @@
 ::1 4chan.org$badfilter
 *://*.4chan.org/*$badfilter
 !#endif
+||christiansfortruth.com^$badfilter
 ||log2.musical.ly^$badfilter
 ||ksibradio.com^$badfilter
 ||theplatform.com^$badfilter
@@ -838,6 +843,24 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||xyz^$domain=comedyshow.to
+||afaiphee.xyz^
+||cjnktmhcukfdcq.xyz^
+||cnahoscfk.xyz^
+||eeawxxrwlae.xyz^
+||tkr.arc.io^
+||auvenebu.xyz^
+||bpgeylke.xyz^
+||jnkhadvvvdkgvyp.xyz^
+||ooglouth.xyz^
+||qrxwltamy.xyz^
+||vlfvbaoju.xyz^
+||xdakyafmvsd.xyz^
+||xnuuopdcy.xyz^
+||dhhuakggx.xyz^
+||lkhmkmhlqst.xyz^
+||shonooch.xyz^
+||tyhwheveeshngi.xyz^
 ||adpilot.com^
 ||ajxx98.online^
 ||impolitepatience.com^
@@ -11307,6 +11330,7 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||cdn.jsdelivr.net/npm/devtools-detector$3p
 ||iamcdn.net/ban.html
 ||d.genealogyaffiliates.com/afr.php
 ||ct.sendgrid.net/ls/click^$doc
@@ -13552,16 +13576,6 @@ youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd
 /adManager$rewrite=abp-resource:blank-js
 ~ads.$rewrite=abp-resource:blank-js
 
-##+js (uBo & AdGuard)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
-doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
-doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
-doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
-player-cdn.com##+js(no-window-open-if, !abyss.to, 1)
-player-cdn.com##+js(abort-on-stack-trace, String.prototype.charAt, $0)
-
 ! Removeparam (AdGuard & uBlock Origin)
 $removeparam=/^(u|m)tm_*/
 $removeparam=/adjust_*/
@@ -13694,6 +13708,7 @@ $removeparam=from_source
 $removeparam=cjevent
 $removeparam=c3nid
 $removeparam=y_source
+$removeparam=otppartnerid
 search.brave.com$removeparam=source
 tradedoubler.com$removeparam=tduid
 adguard-dns.io$removeparam=clid
@@ -13728,3 +13743,27 @@ ufbdirect.com$removeparam=siteID
 ufbdirect.com$removeparam=ranMID
 ufbdirect.com$removeparam=ranEAID
 ufbdirect.com$removeparam=ranSiteID
+
+! Redundancy
+
+! From uBo Privacy
+! https://github.com/uBlockOrigin/uBlock-issues/discussions/2714#discussioncomment-6396384
+!#if env_chromium
+*$permissions=browsing-topics=(),from=~localhost
+*$permissions=idle-detection=(),from=~localhost
+*$permissions=join-ad-interest-group=(),from=~localhost
+*$permissions=run-ad-auction=(),from=~localhost
+*$permissions=attribution-reporting=(),from=~localhost
+!#endif
+! https://github.com/uBlockOrigin/uBlock-issues/discussions/2714#discussioncomment-6535537
+@@||cjisonline.com^$permissions=browsing-topics=()
+
+! From various (now) unknown places
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
+doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
+player-cdn.com##+js(no-window-open-if, !abyss.to, 1)
+player-cdn.com##+js(abort-on-stack-trace, String.prototype.charAt, $0)
