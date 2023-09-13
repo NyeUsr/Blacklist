@@ -17,21 +17,20 @@
 ||dns.google.com^
 ||comments.adguard.org^
 ||fundingchoicesmessages.google.com^
+||fonts.googleapis.com^
+||fonts.gstatic.com^
+||on.aws^
+||firebaselogging.googleapis.com^
 
+||bootstrapcdn.com^$stylesheet
+||cdnjs.cloudflare.com^$stylesheet
 ||genius.com^$frame
 ||mastodon.social$3p
 ||t.me^$3p
-
-*$script,inline-script,domain=aporiamagazine.com
-*$script,inline-script,domain=thecollector.com
-*$script,inline-script,domain=christiansfortruth.com
-*$script,inline-script,domain=adguard.com
-*$script,inline-script,domain=inspiredtaste.net
-*$script,inline-script,domain=wikipedia.org
-*$script,inline-script,domain=acatholic.org
-*$script,inline-script,domain=answersingenesis.org
-*$script,inline-script,domain=news.sky.com
-*$script,inline-script,domain=nitter.poast.org
+||youtube.com^$3p
+||youtube-nocookie.com^$3p
+||docs.google.com^$3p
+||drive.google.com^$3p
 
 /cast_framework.js
 /cast_sender.js
@@ -39,17 +38,19 @@
 
 mega.nz##.gallery-btn
 
-||youtube.com^$3p,frame,redirect=click2load.html
-||youtube-nocookie.com^$3p,frame,redirect=click2load.html,domain=~qwant.com
-||docs.google.com^$3p,frame,redirect=click2load.html
-||drive.google.com^$3p,frame,redirect=click2load.html
 ||open.spotify.com/embed$3p,frame,redirect=click2load.html
 ||player.twitch.tv^$3p,frame,redirect=click2load.html
 ||player.vimeo.com^$3p,frame,redirect=click2load.html
 ?autoplayInViewPort=true$frame,redirect=click2load.html
 
 ! Android specific
+!#if !ext_ublock
+!#if (adguard_app_android)
 8.8.8.8$network
 8.8.4.4$network
 *$app=com.verizon.mips.services
-||firebaselogging.googleapis.com^$app=dk.tacit.android.foldersync.lite
+
+||google.*/recaptcha/
+||storage.googleapis.com/workbox-cdn/
+!#endif
+!#endif
