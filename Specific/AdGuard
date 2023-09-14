@@ -1,7 +1,7 @@
 ! Unblock things which commonly break TVs
 @@||theplatform.com^$ctag=device_tv
 @@||samba.tv^$ctag=device_tv
-@@||doubleclick.net^$ctag=device_tv
+@@||ad.doubleclick.net^$ctag=device_tv
 @@||nativesdks.mparticle.com^$ctag=device_tv
 
 ! Fix "Relay" spyware on school devices (Tested and working with AdGuard Home & AdGuard for Android)
@@ -89,6 +89,8 @@ youtube.com$cookie=/.+/;samesite=strict,domain=~accounts.google.com|~google.com|
 ! Can Get You Unlimited Free Answers
 brainly.com$cookie=/Zadanepl_cookie.{0,}/
 
+||app.link^$cookie
+
 ! Android specific
 !#if (adguard_app_android)
 
@@ -116,13 +118,6 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 ! Lead/redirect tracking - required for usability
 
 ! Fix Samsung SMS messages related to trade-ins and shipping
-||clickserve.dartsearch.net^$badfilter
-0.0.0.0 clickserve.dartsearch.net$badfilter
-127.0.0.1 clickserve.dartsearch.net$badfilter
-||dartsearch.net^$badfilter
-0.0.0.0 dartsearch.net$badfilter
-127.0.0.1 dartsearch.net$badfilter
-||dartsearch.net^$3p
 ||ad.doubleclick.net^$badfilter
 0.0.0.0 ad.doubleclick.net$badfilter
 127.0.0.1 ad.doubleclick.net$badfilter

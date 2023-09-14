@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 104N-1563
+! Version: 105N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -100,6 +100,7 @@
 @@||uxfabric.intuitcdn.net^
 
 ! Lead/redirect tracking - required for usability
+@@||clickserve.dartsearch.net^
 @@||e.customeriomail.com^
 @@||events.release.narrativ.com^
 @@||cj.dotomi.com
@@ -846,6 +847,16 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||apmebf.com^$3p
+||branch.io^$3p
+||avantlink.com^$3p
+||bfast.com^$3p
+||buff.ly^$3p
+||buffer.com^$3p
+||cc-dt.com^$3p
+||cj.com^$3p
+||clck.ru^$3p
+||clickdimensions.com^$3p
 ||expectthatmyeduc.info^
 ||haveredsiren.space^
 ||hoggetforfend.com^
@@ -3559,7 +3570,6 @@ http://twitcount.com$3p
 ||apkfold.com^
 ||apkforpcwindows.download^
 ||apkrey.com^
-||apmebf.com^
 ||apn.co.nz^
 ||apollo-affiliates.com^
 ||apolloprogram.com^
@@ -3738,7 +3748,6 @@ http://twitcount.com$3p
 ||av.beap.bc.yahoo.com^
 ||avandor.com^
 ||avantisvideo.com^
-||avantlink.com^
 ||avatraffic.com^
 ||avazu.cn^
 ||avazu.net^
@@ -3962,7 +3971,6 @@ http://twitcount.com$3p
 ||beyanmaan.com^
 ||beyourownaffiliate.com^
 ||beyourxfriend.com^
-||bfast.com^
 ||bfmio.com^
 ||bget.ru^
 ||bi.installcore.com^
@@ -4183,7 +4191,6 @@ http://twitcount.com$3p
 ||bradul.creatory.org^
 ||braincash.com^
 ||brainient.com^
-||branch.io^
 ||brandads.net^
 ||brandaffinity.net^
 ||brandcrumb.com^
@@ -4402,7 +4409,6 @@ http://twitcount.com$3p
 ||cbsinteractive.com^
 ||c-c.one^
 ||cc.swiftype.com^
-||cc-dt.com^
 ||ccgateway.net^
 ||c-ctrip.com^
 ||cd-down.com^
@@ -4503,7 +4509,6 @@ http://twitcount.com$3p
 ||cityadspix.com^
 ||cityspark.com^
 ||civiccomputing.com^
-||cj.com^
 ||cjmooter.com^
 ||ck.page^
 ||ckk.ai^
@@ -4549,7 +4554,6 @@ http://twitcount.com$3p
 ||clickchewer.com^
 ||click-connect.com^
 ||clickdealer.com^
-||clickdimensions.com^
 ||clickdistrict.com^
 ||clickequations.net^
 ||clicker.com^
@@ -13462,7 +13466,6 @@ youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd
 ##a[onclick="closeMyAd()"]
 ##a[href*="VpnHideMe"]
 ##a[href*="ourgoldguy.com/"]
-##a[href*="avantlink.com"]
 ##a[href*="ads.cdn.live"]
 ##a[href*="raznoeporno.info"]
 ##a[href*="?ad_provider"]
