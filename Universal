@@ -17,18 +17,12 @@
 ||dns.google.com^
 ||comments.adguard.org^
 ||fundingchoicesmessages.google.com^
-||fonts.googleapis.com^
-||fonts.gstatic.com^
 ||on.aws^
 ||firebaselogging.googleapis.com^
 
-||bootstrapcdn.com^$stylesheet
-||cdnjs.cloudflare.com^$stylesheet
 ||genius.com^$frame
 ||mastodon.social$3p
 ||t.me^$3p
-||youtube.com^$3p
-||youtube-nocookie.com^$3p
 ||docs.google.com^$3p
 ||drive.google.com^$3p
 
