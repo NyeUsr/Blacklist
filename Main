@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 105N-1563
+! Version: 106N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -99,7 +99,7 @@
 @@||gokinetic.com^$1p
 @@||uxfabric.intuitcdn.net^
 
-! Lead/redirect tracking - required for usability
+! Lead/redirect tracking required for usability
 @@||clickserve.dartsearch.net^
 @@||e.customeriomail.com^
 @@||events.release.narrativ.com^
@@ -847,6 +847,113 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||ambergift.ru^$3p
+||bit.ly^$3p
+||assignlabor.com^
+||br3azil334nutsz.com^
+||uslycoloursewo.com^
+||endream.buzz^
+||afcnuchxgo.com^
+||grefutiwhe.com^
+||wrylength.pro^
+||wasp-182b.com^
+||sumbreta.com^
+||ad-freeze.com^
+||heavenexceed.com^
+||straitssoak.com^
+||pop6.com^
+||highcpmrevenuegate.com^
+||floodeighty.com^
+||ptwmemd.com^
+||ptwmstcnt.com^
+||wmptcd.com^
+||wmptctl.com^
+||nsfwadds.com^
+||cliv2508.com^
+||amhwxrx.top^
+||imperturbableclothes.com^
+||nxt-psh.com^
+||domainanalyticsapi.com^
+||camplethora.com^
+||adsession.exacdn.com^
+||moynba.com^
+||xngqoc.com^
+||scientific-neighborhood-level-greater.run^
+||mintnav.com^
+||19d1da8898.com^
+||751685e7fa.com^
+||92d8d67482.com^
+||cousinf.com^
+||tab.name^
+||mooo.com^
+||firsthandtie.com^
+||fatalboy.pro^
+||ssooss.site^
+||best-seat.pro^
+||faintdefrost.com^
+||ginchoirblessed.com^
+||lksbnrs.com^
+||cdsbnrs.com^
+||bestcontentcost.top^
+||barryto.one^
+||guerrilla-links.com^
+||pocpoc.io^
+||smilewanted.com^
+||4dex.io^
+||script.ac^
+||pubpowerplatform.io^
+||femetrics.grammarly.io^
+||analytics.api.mywot.com^
+||sstats.adobe.com^
+||targetlr.adobe.com^
+||protect-your-phone.com^
+||belovedfrolic.com^
+||republicusefulclothe.com^
+||veildiscotacky.com^
+||cogitatenun.com^
+||watchestwenties.com^
+||crayfishshepherd.com^
+||rightlydunggive.com^
+||gloriarefreshsuspected.com^
+||myredlitly.com^
+||log1.apkomega.com^
+||log.modplaysapk.com^
+||log.happyapkdownload.com^
+||ad.cpe.dotomi.com^
+||pixfuture.com^
+||staplecups.com^
+||clothcogitate.com^
+||planning-way-taught-stepped.run^
+||nauseousonto.com^
+||intuitionguffaw.com^
+||lucrativeemotionallypromised.com^
+||installscrayfishpenal.com^
+||sunspot-toro-polaris-magik.skin^
+||newcomerbenchlilac.com^
+||alivecheery.com^
+||nowadaysgrin.com^
+||haveproceeding.com^
+||profitablecreativeformat.com^
+||rationalizedalton.com^
+||gymdeserves.com^
+||highcpmrevenuegate.com^
+||maleliteral.com^
+||stringssymptomfishing.com^
+||heartbrokenbarrellive.com^
+||advisefirmly.com^
+||leretasts.com^
+||pupspu.com^
+||nt-npltfpro.com^
+||sepyebonstrome.com^
+||tellyowingrichest.com^
+||vaikijie.net^
+||historicalcargo.com^
+||undesirableslim.com^
+||vulnerableordered.com^
+||offergate-apps-download9.com^
+||chefishoani.com^
+||amunfezanttor.com^
+||invordones.com^
 ||apmebf.com^$3p
 ||branch.io^$3p
 ||avantlink.com^$3p
@@ -8531,7 +8638,6 @@ http://twitcount.com$3p
 ||pmsrvr.com^
 ||p-n.io^
 ||pn.tnt-ea.com^
-||pndsn.com^
 ||pnstat.com^
 ||po.st^
 ||podium.com^
@@ -12669,6 +12775,14 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+wahlburgers.com##.cookie-box
+foldersync.io##.CookieConsent
+muse.jhu.edu###cookies_msg
+deepdyve.com##.gdpr-banner
+deepdyve.com###signup-banner
+semanticscholar.org##.copyright-banner
+fixya.com##.fixya_primis_container
+apkmody.com##a[href*="ldplayer.net"]
 pornhub.com##video[loop muted][src*="Blob"]:upward(2)
 pornhub.com##.clear.hd
 disntr.com##small:has-text(Advertisement)
@@ -12868,7 +12982,24 @@ youtube.com##.ytd-search-pyv-renderer
 youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
-! Generic
+
+##.cookie-consent-banner:not(html, body, button, input)
+###sponsoring-wrapper:not(html, body, button, input)
+###sponsoring-outer:not(html, body, button, input)
+###onet-ad-flat-belkagorna:not(html, body, button, input)
+##.onet-ad:not(html, body, button, input)
+##.showPlaceholderSkom.top.placeholder:not(html, body, button, input)
+###wot_leak_hook_container:not(html, body, button, input)
+###pin-wot-popup-div:not(html, body, button, input)
+##.ad-wrapper-sticky:not(html, body, button, input)
+##.adsbypubpower:not(html, body, button, input)
+##.i-amphtml-new-loader-ad-logo:not(html, body, button, input)
+##amp-ad:not(html, body, button, input)
+##.ad-border-box:not(html, body, button, input)
+##.desktop-ad.module:not(html, body, button, input)
+##.locked-footer-ad-wrapper:not(html, body, button, input)
+##.locked-footer-ad-body:not(html, body, button, input)
+##[class*="CookiesConsentContainer"]:not(html, body, button, input)
 ##.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window:not(html, body, button, input)
 ##.widget-cookie-banner-cookie-1.widget-cookie-banner.widget:not(html, body, button, input)
 ##.module_single_ads:not(html, body, button, input)

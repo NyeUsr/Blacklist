@@ -94,6 +94,8 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 ! Android specific
 !#if (adguard_app_android)
 
+||apkmody.com^$app=com.adobe.lrmobile
+
 ! Hard Facebook Blocking
 ! https://adguard.com/en/blog/one-does-not-simply-delete-facebook.html
 !+ NOT_OPTIMIZED
@@ -115,7 +117,7 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 @@||remote-data.urbanairship.com^
 @@||config.inmobi.com^
 
-! Lead/redirect tracking - required for usability
+! Lead/redirect tracking required for usability
 
 ! Fix Samsung SMS messages related to trade-ins and shipping
 ||ad.doubleclick.net^$badfilter
@@ -126,6 +128,42 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 127.0.0.1 doubleclick.net$badfilter
 ||doubleclick.net^$3p
 
+! Use generic cosmetic filters on mobile
+
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cookie-consent-banner:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###sponsoring-wrapper:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###sponsoring-outer:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###onet-ad-flat-belkagorna:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.onet-ad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.showPlaceholderSkom.top.placeholder:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###wot_leak_hook_container:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone###pin-wot-popup-div:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad-wrapper-sticky:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.adsbypubpower:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.i-amphtml-new-loader-ad-logo:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##amp-ad:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.ad-border-box:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.desktop-ad.module:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.locked-footer-ad-wrapper:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.locked-footer-ad-body:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##[class*="CookiesConsentContainer"]:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone##.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window:not(html, body, button, input)
 !+ NOT_OPTIMIZED
