@@ -1,8 +1,10 @@
 [Adblock Plus]
-! Title: NyeUsr's Anti Facebook
-! Description: Block all known connections to Facebook as well as block any subsidiaries.
+! Title: NyeUsr's Anti Meta
+! Description: Block all known connections to Meta as well as block any subsidiaries.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
+
+! The file name will stay as Facebook to prevent breakage
 
 ||atlassolutions.com^
 ||bulletin.com^
