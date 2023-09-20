@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 37-ER
+! Version: 38-ER
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -22,9 +22,14 @@
 ||dns.google.com^
 
 ! Mixed content
-||twitter.com^
-||twimg.com^
 ||redditmedia.com^
+||twitter.com/i/flow/login$doc
+||twitter.com/i/flow/signup$doc
+||cdn-apple.com^$domain=twitter.com
+||google.com^$domain=twitter.com
+||api.twitter.com/1.1/onboarding/task.json?flow_name=signup
+||api.twitter.com/1.1/onboarding/task.json?flow_name=login
+.SignupModule.$script,domain=twitter.com
 
 ! Restrict/block engines that don't support safe search
 ||explicit.bing.net^
@@ -143,6 +148,10 @@ barely%20legal$doc
 ||sexy^
 ||exposed^
 
+||fameregistry.com^
+||socialmediapornstars.com^
+||paidporn.com^
+||redbled.com^
 ||incest-porn.com^
 ||adultfilmdatabase.com^
 ||fantasy.club^
