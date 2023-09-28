@@ -8,6 +8,7 @@
 ! Return with the e.foundation wifi check ip
 ||ably.io^$badfilter
 ||ably-realtime.com^$badfilter
+@@||agent-backend-api-production.lightspeedsystems.com^
 lsrelayaccess.com$dnsrewrite=NOERROR;A;157.90.154.178
 lsfilter.com$dnsrewrite=NOERROR;A;157.90.154.178
 lsrelay-extensions-production.s3.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
@@ -116,17 +117,6 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 @@||api2.branch.io^
 @@||remote-data.urbanairship.com^
 @@||config.inmobi.com^
-
-! Lead/redirect tracking required for usability
-
-! Fix Samsung SMS messages related to trade-ins and shipping
-||ad.doubleclick.net^$badfilter
-0.0.0.0 ad.doubleclick.net$badfilter
-127.0.0.1 ad.doubleclick.net$badfilter
-||doubleclick.net^$badfilter
-0.0.0.0 doubleclick.net$badfilter
-127.0.0.1 doubleclick.net$badfilter
-||doubleclick.net^$3p
 
 ! Use generic cosmetic filters on mobile
 

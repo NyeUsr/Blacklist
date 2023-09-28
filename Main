@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 106N-1563
+! Version: 107N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -100,6 +100,8 @@
 @@||uxfabric.intuitcdn.net^
 
 ! Lead/redirect tracking required for usability
+@@||lp.sophos.com^
+@@||links.nelnet.mkt8018.com^
 @@||clickserve.dartsearch.net^
 @@||e.customeriomail.com^
 @@||events.release.narrativ.com^
@@ -174,9 +176,6 @@
 
 ! Required for updates
 @@||data.mistat.intl.xiaomi.com^
-
-! CNAME *.sc.en25.com is blocked
-@@||images.edu.imaginelearning.com^
 
 ! CNAME mkt*5.com is blocked
 @@||info.vercel.com^
@@ -831,22 +830,11 @@ http://twitcount.com$3p
 !#endif
 !#endif
 
-! Heuristic-like scam/phishing protection
-/-(amazon|usps|fedex|dhl)\.(lnk|tix)\.to/
-/bit\.ly\/[a-zA-Z0-9]{7,}#[a-zA-Z0-9]{13,}_/$popup,popunder
-
-! Randomly generated tracking urls
-/[a-z0-9]{15,15}(e997c60ac8a4ec150-)[0-9]+\.(eu-).+\.(amazonaws)./$all
-
-! Ad/traking scripts
-/\/collect(ion|or)?\/v[0-9]{1,2}/$3p,script
-/.+(tracking-|telemetry-|advert-|adverts-|advertisement).+\.(amazonaws)\..+/$all
-/^http(s)?:\/\/.+\/domain_views$/$1p
-/\/zone\/[0-9]{4,4}\/\?aff=[0-9]{4,}$/
-
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||telemetry.transcend.io^
+||intake-analytics.wikimedia.org^
 ||ambergift.ru^$3p
 ||bit.ly^$3p
 ||assignlabor.com^
@@ -5468,7 +5456,6 @@ http://twitcount.com$3p
 ||emsecure.net^
 ||emxdgt.com^
 ||emxdigital.com^
-||en25.com^
 ||enamad.ir^
 ||encurta.net^
 ||endteen.com^
