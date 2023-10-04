@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 107N-1563
+! Version: 108N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -833,6 +833,61 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||aibsgc.com^
+||wuzbhjpvsf.com^
+||zanalytics.vip^
+||premiumvertising.com^
+||acelitchi.com^
+||ezjojoy.com^
+||happymod.cool^
+||topmongo.com^
+||apkmody.io^
+||35998bf09e.com^
+||46cc46f66f.com^
+||c4024c9266.com^
+||suitablepartner.life^
+||data-jsext.com^
+||onlylocalhookup.com^
+||datingpros.top^
+||waget.shop^
+||leak0.site^
+||beakerweedjazz.com^
+||literacyneedle.com^
+||organizationwoundedvast.com^
+||ainhiseewhat.com^
+||allowflannelmob.com^
+||dubunwiseobjections.com^
+||exploredefinitely.com^
+||facilitypestilent.com^
+||hlyrecomemum.info^
+||keyimaginarycomprise.com^
+||strjuylfrjyk.site^
+||sutraf.com^
+||ztumuvofzbfe.com^
+||cwqljsecvr.com^
+||buqkrzbrucz.com^
+||web3ads.net^
+||nwwais.com^
+||fvcwqkkqmuv.com^
+||tdmrfw.com^
+||wivyiz.com^
+||wmgtr.com^
+||bigpenis.life^
+||bigpenis.life^$popup,popunder
+||bngprm.com^
+||a00s.net^
+||dahhitasltwi.com^
+||dahhitasltwi.com^$popup,popunder
+||freshenrubpan.com^
+||judicialfizzysoftball.com^
+||usetalentedpunk.com^
+||kiosked.com^
+||connect.mail.ru^$3p
+||newhand.name^
+||8n67t.com^
+||rmhumi.com^
+||chatbro.com^
+||didqwupagkk.com^
 ||telemetry.transcend.io^
 ||intake-analytics.wikimedia.org^
 ||ambergift.ru^$3p
@@ -10144,7 +10199,6 @@ http://twitcount.com$3p
 ||tamgrt.com^
 ||tangibleteam.com^
 ||tanx.com^
-||taobao.com^
 ||tapad.com^
 ||tapdaq.com^
 ||tapdaq-adverts.global.ssl.fastly.net^
@@ -11692,6 +11746,9 @@ http://twitcount.com$3p
 ||yahoo.com/f/track/tgt/imp?
 ||mail.quicken.com/open.aspx
 
+/imp.gif?ez_orig
+/wp-admin/*.exe
+/popunder.gif
 /popunder/in$popup,popunder
 /_xa/ads_
 */zoneload/preroll_exo/
@@ -12166,7 +12223,7 @@ beacon*$image
 */neverb/
 /block-detect.$script
 */api/adblocker/
-*/s/s/su*.php
+/s/s/su.php
 /clickback.js?v=
 /player_*_ads_*.
 /adEvent.do
@@ -12762,6 +12819,13 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+cira.ca##.cc_div
+loyolapress.com###iubenda-cs-banner
+youtube.com###clarify-box > .ytd-watch-flexy.style-scope
+gigabyte.com###policy-div
+quora.com##[class*="_google_ad"]:upward(.q-box)
+weatherology.com###cookieMessage
+youtube.com###masthead-ad
 wahlburgers.com##.cookie-box
 foldersync.io##.CookieConsent
 muse.jhu.edu###cookies_msg
@@ -12970,6 +13034,8 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
+##.adUnit:not(html, body, button, input)
+##.adthrive:not(html, body, button, input)
 ##.cookie-consent-banner:not(html, body, button, input)
 ###sponsoring-wrapper:not(html, body, button, input)
 ###sponsoring-outer:not(html, body, button, input)
@@ -13704,7 +13770,6 @@ youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd
 
 ! Removeparam (AdGuard & uBlock Origin)
 $removeparam=/^(u|m)tm_*/
-$removeparam=/adjust_*/
 $removeparam=/^guce_referrer(_.+)?/
 $removeparam=/^uclick(.+)?/
 $removeparam=/^__s=.+$/
