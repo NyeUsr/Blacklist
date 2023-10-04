@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 38-ER
+! Version: 39-ER
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -30,6 +30,7 @@
 ||api.twitter.com/1.1/onboarding/task.json?flow_name=signup
 ||api.twitter.com/1.1/onboarding/task.json?flow_name=login
 .SignupModule.$script,domain=twitter.com
+twitter.com##div[role="button"]:has-text(Yes, view profile)
 
 ! Restrict/block engines that don't support safe search
 ||explicit.bing.net^
@@ -148,6 +149,107 @@ barely%20legal$doc
 ||sexy^
 ||exposed^
 
+||365vids.one^
+||trannyfans.net^
+||suitablepartner.life^
+||data-jsext.com^
+||onlylocalhookup.com^
+||datingpros.top^
+||waget.shop^
+||leak0.site^
+||teenfucktory.com^
+||sexpornhat.com^
+||hdpornmax.com^
+||mybeegporn.com^
+||sexforsure.com^
+||wow-porn.tv^
+||fuckup.xxx^
+||nineteentube.com^
+||gifcandy.net^
+||crazyporn.xxx^
+||xxxshake.com^
+||4ksex.cc^
+||jizzberry.com^
+||someonesister.com^
+||javfree.sh^
+||xfantazy.com^
+||twinki.xxx^
+||thothub.is^
+||1teenpornvideos.com^
+||bobsvagene.club^
+||pornpk.me^
+||pornmaster.co^
+||prettyteenporn.website^
+||fastload.live^
+||facialporn.site^
+||thethothub.com^
+||bdsmlr.com^
+||shemales-blog.com^
+||bigpenis.life^
+||fapachi.com^
+||namethatpornstar.com^
+||camwhores.video^
+||fapeza.com^
+||faponic.com^
+||tube3.com^
+||stickofjoy.com^
+||hugeboobs.pics^
+||bigboobpix.com^
+||megaboobsgirls.com^
+||hugetitswomen.com^
+||topsexmovs.com^
+||hdsex2.com^
+||bigtitshq.com^
+||xzillame.com^
+||xozilla.xxx^
+||xtits.com^
+||doppiocdn.org^
+||doppiocdn.net^
+||inxxx.com^
+||hqpornsearch.com^
+||porn40.com^
+||visitgate.com^
+||matureclub.com^
+||nastypornvids.com^
+||xxxshame.com^
+||bemyhole.com^
+||cdn3x.com^
+||xxxdan.com^
+||shemalez.tube^
+||tubemov.com^
+||keekass.com^
+||trannygem.com^
+||shemale.taxi^
+||hqfuck.com^
+||shemale.movie^
+||xhand.com^
+||xhandfuk.com^
+||shemalesin.com^
+||oldpussy.tv^
+||epornz.com^
+||porn3.tv^
+||freecoolporn.com^
+||xgent.com^
+||hellporno.com^
+||newpornsearch.com^
+||bustybabespics.com^
+||nurxxx.xxx^
+||hotmoza.tv^
+||adultvideocdn.com^
+||cosplayporntube.com^
+||nudevista.at^
+||simply-porn.com^
+||simply-cosplay.com^
+||xxx-pic.cz^
+||wonporn.com^
+||xxxtarget.com^
+||goldtits.com^
+||x-x-x.tube^
+||bigtitsporn.pics^
+||porngifs.ca^
+||damdang.org^
+||cosplayboobies.com^
+||asianviralhub.com^
 ||fameregistry.com^
 ||socialmediapornstars.com^
 ||paidporn.com^
