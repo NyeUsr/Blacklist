@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 108N-1563
+! Version: 109N-1563
 ! Approximate amount of entries: 13K
 
 ! Resources to help you better understand filter lists --------------
@@ -833,6 +833,37 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||vidsreal.space^
+||mcpuwpsh.com^$popup,popunder
+||stripchat.com^$3p
+||cigevo.uno^
+||aycrxa.com^
+||ndmdhs.com^
+||prod.service.minerva.devices.a2z.com^
+||free.bvb9.com^
+||wholedailyjournal.com^
+||poaptoug.net^
+||forfeitsubscribe.com^
+||xyerhddmrfsqk.com^
+||ausoafab.net^
+||eedsaung.net^
+||soumehoo.net^
+||keewoach.net^
+||itskiddoan.club^
+||imoughtcallmeoc.com^
+||hivbjzmnks.com^
+||eamsauknda.com^
+||strettechoco.com^
+||quilledleesing.digital^
+||daofile.com^
+||loyeesihighlyreco.info^
+||zkcsvjucc.rheinischeskammerensemble.de^
+||ngsinspiringtga.info^
+||umoughtcallm.com^
+||ads.nextdoor.com^
+||openads.ai^
+||alphafish.top^
+||glitchtip.jgeek00.com^
 ||aibsgc.com^
 ||wuzbhjpvsf.com^
 ||zanalytics.vip^
@@ -1268,7 +1299,6 @@ http://twitcount.com$3p
 *-identity.doubledutch.me^
 *-kra2007c.net^
 *-lx.pulse.weatherbug.net^
-*-ring.msedge.net^
 *-stat.appmifile.com^
 *-stats.openhost.es^
 *-tapad.s3.amazonaws.com^
@@ -1543,8 +1573,6 @@ http://twitcount.com$3p
 ||analytics.pointdrive.linkedin.com^
 ||americascardroom.eu^$3p
 ||dns.google^$3p
-||strpst.com^$3p
-||strpst.com^$3p
 ||octoclick.com^$popup,popunder
 ||exoclick.com^$popup,popunder
 ||erosyndc.com^
@@ -5605,7 +5633,6 @@ http://twitcount.com$3p
 ||evgnet.com^
 ||evi.com^
 ||evidon.com^
-||evoke-windowsservices-tas.msedge.net^
 ||evolok.net^
 ||evolveplatform.net^
 ||ew3.io^
@@ -5810,7 +5837,6 @@ http://twitcount.com$3p
 ||fonecta.fi^
 ||fonestarz.com^
 ||foofle.com^
-||footprintdns.com^
 ||footprintpredict.com^
 ||foowafoa.com^
 ||foresee.com^
@@ -5905,7 +5931,6 @@ http://twitcount.com$3p
 ||frtyz.com^
 ||fruitfliestown.com^
 ||fruitninjagame.page.link^
-||fs.microsoft.com^
 ||fstats.xyz^
 ||ftd.agency^
 ||ftjcfx.com^
@@ -11746,6 +11771,7 @@ http://twitcount.com$3p
 ||yahoo.com/f/track/tgt/imp?
 ||mail.quicken.com/open.aspx
 
+/rass7.$script
 /imp.gif?ez_orig
 /wp-admin/*.exe
 /popunder.gif
@@ -12819,6 +12845,10 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+m.bravotube.net##.good
+m.bravotube.net##.video-player > .rel_thumbs
+m.bravotube.net##.banner-bottom
+keekass.com##div > .keep-free
 cira.ca##.cc_div
 loyolapress.com###iubenda-cs-banner
 youtube.com###clarify-box > .ytd-watch-flexy.style-scope
@@ -13034,6 +13064,18 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
+###video-sponsor-links:not(html, body, button, input)
+##.ad-support-desktop:not(html, body, button, input)
+##.exo-ad-ins-container:not(html, body, button, input)
+##.header__cookie:not(html, body, button, input)
+##.header_promo__img:not(html, body, button, input)
+##[href^="https://bongacams.com/track"]:not(html, body, button, input)
+##.spot-300x100:not(html, body, button, input)
+##.adtitle:not(html, body, button, input)
+##.footer_adv:not(html, body, button, input)
+###cookies:not(html, body, button, input)
+##[src*=".com/zone/"]:not(html, body, button, input)
+##.cookies-reminder:not(html, body, button, input)
 ##.adUnit:not(html, body, button, input)
 ##.adthrive:not(html, body, button, input)
 ##.cookie-consent-banner:not(html, body, button, input)

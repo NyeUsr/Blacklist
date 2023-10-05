@@ -121,6 +121,30 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 ! Use generic cosmetic filters on mobile
 
 !+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx###video-sponsor-links:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.ad-support-desktop:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.exo-ad-ins-container:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.header__cookie:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.header_promo__img:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[href^="https://bongacams.com/track"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.spot-300x100:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.adtitle:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.footer_adv:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx###cookies:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[src*=".com/zone/"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.cookies-reminder:not(html, body, button, input)
+!+ NOT_OPTIMIZED
 com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.adUnit:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.adthrive:not(html, body, button, input)
