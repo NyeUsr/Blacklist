@@ -3,8 +3,8 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 109N-1563
-! Approximate amount of entries: 13K
+! Version: 110N-1563
+! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists --------------
 ! Ublock Origin Static Filter Syntax                                |
@@ -833,6 +833,7 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||adconsent.samsungrs.com^
 ||vidsreal.space^
 ||mcpuwpsh.com^$popup,popunder
 ||stripchat.com^$3p
@@ -3779,7 +3780,6 @@ http://twitcount.com$3p
 ||applead.co.kr^
 ||appleads-trk.com^
 ||applesstext.com^
-||applicationinsights.microsoft.com^
 ||applied-statistics.at^
 ||applifier.com^
 ||applift.com^
@@ -12845,6 +12845,15 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+gigabyte.com###policy-div
+quora.com##[class*="_google_ad"]:upward(.q-box)
+weatherology.com###cookieMessage
+adguard-vpn.com##.annoyance
+flickr.com##.upgrade-to-pro-cta:upward(1)
+flickr.com##.flickr-view-root-view.cookie-banner-view.view
+youtube.com##.ythd-israel-support
+ground.news##.react-responsive-modal-overlay
+ground.news##.flex.md\:px-margintablet:has-text(Cookie policy)
 m.bravotube.net##.good
 m.bravotube.net##.video-player > .rel_thumbs
 m.bravotube.net##.banner-bottom
@@ -13992,9 +14001,6 @@ ufbdirect.com$removeparam=ranSiteID
 @@||cjisonline.com^$permissions=browsing-topics=()
 
 ! From various (now) unknown places
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
-youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
