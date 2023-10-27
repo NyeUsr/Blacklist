@@ -1,0 +1,10 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Reddit
+! Description: Hide all known Reddit domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.redd.it/*
+*://*.reddit.com/*
+*://*.redditmedia.com/*
+*://*.redditstatic.com/*

@@ -1,0 +1,15 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti TikTok
+! Description: Hide all known TikTok domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.bytedance.com/*
+*://*.byteoversea.com/*
+*://*.byteoversea.net/*
+*://*.ibytedtos.com/*
+*://*.musical.ly/*
+*://*.musically.ly/*
+*://*.tiktok.com/*
+*://*.tiktokcdn.com/*
+*://*.tiktokv.com/*

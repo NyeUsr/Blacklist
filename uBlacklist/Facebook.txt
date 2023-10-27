@@ -1,0 +1,72 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Meta
+! Description: Hide all known Meta domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+! The file name will stay as Facebook to prevent breakage
+
+*://*.atlassolutions.com/*
+*://*.bulletin.com/*
+*://*.cdninstagram.com/*
+*://*.crowdtangle.com/*
+*://*.expresswifi.com/*
+*://*.face.com/*
+*://*.facebook.com/*
+*://*.facebook.de/*
+*://*.facebook.net/*
+*://*.facebookblueprint.com/*
+*://*.facebookbrand.com/*
+*://*.facebookrecruiting.com/*
+*://*.fb.com/*
+*://*.fb.gg/*
+*://*.fb.me/*
+*://*.fbcdn.net/*
+*://*.fbpigeon.com/*
+*://*.fbsbx.com/*
+*://*.fbwat.ch/*
+*://*.freebasics.org/*
+*://*.getspool.com/*
+*://*.giphy.com/*
+*://*.giphy.world/*
+*://*.i.org/*
+*://*.igsonar.net/*
+*://*.instagram.com/*
+*://*.instagram.net/*
+*://*.internet.org/*
+*://*.las.so/*
+*://*.lassovideos.com/*
+*://*.libra.org/*
+*://*.lightbox.com/*
+*://*.m.me/*
+*://*.mapillary.com/*
+*://*.mapwith.ai/*
+*://*.messenger.com/*
+*://*.messengerdevelopers.com/*
+*://*.messengerkids.com/*
+*://*.meta.com/*
+*://*.metacareers.com/*
+*://*.metaque.st/*
+*://*.novi.com/*
+*://*.oculus.com/*
+*://*.oculusbrand.com/*
+*://*.oculusconnect.com/*
+*://*.oculusforbusiness.com/*
+*://*.oculusvr.com/*
+*://*.onavo.com/*
+*://*.oversightboard.com/*
+*://*.parseplatform.org/*
+*://*.privatecore.com/*
+*://*.readyatdawn.com/*
+*://*.redkix.com/*
+*://*.sanzaru.com/*
+*://*.scape.io/*
+*://*.sparkar.com/*
+*://*.tfbnw.net/*
+*://*.wa.me/*
+*://*.whatsapp.com/*
+*://*.whatsapp.me/*
+*://*.whatsapp.net/*
+*://*.wit.ai/*
+*://*.wk.pl/*
+*://*.workplace.com/*

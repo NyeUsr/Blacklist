@@ -1,0 +1,43 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Amazon
+! Description: Hide all known Amazon domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.a2z.com/*
+*://*.abebooks.com/*
+*://*.abebookscdn.com/*
+*://*.amazon-adsystem.com/*
+*://*.amazon.ca/*
+*://*.amazon.com/*
+*://*.amazon.de/*
+*://*.amazonaws.com/*
+*://*.audible.com/*
+*://*.aws.dev/*
+*://*.awsstatic.com/*
+*://*.bookdepository.com/*
+*://*.boxofficemojo.com/*
+*://*.cloudfront.net/*
+*://*.comixology.com/*
+*://*.ctfassets.net/*
+*://*.dpreview.com/*
+*://*.eero.com/*
+*://*.glowroad.com/*
+*://*.goodreads.com/*
+*://*.graphiq.com/*
+*://*.imdb.com/*
+*://*.irobot.com/*
+*://*.mgm.com/*
+*://*.onemedical.com/*
+*://*.ring.com/*
+*://*.ring.net/*
+*://*.rings.solutions/*
+*://*.siege-amazon.com/*
+*://*.ttvnw.net/*
+*://*.twitch.tv/*
+*://*.veeqo.com/*
+*://*.watasale.com/*
+*://*.wholefoodsmarket.com/*
+*://*.woot.com/*
+*://*.zappos.com/*
+*://*.zoox.com/*

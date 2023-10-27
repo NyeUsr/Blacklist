@@ -1,0 +1,16 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Twitter
+! Description: Hide all known Twitter domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.mopub.com/*
+*://*.periscope.tv/*
+*://*.pscp.tv/*
+*://*.t.co/*
+*://*.twimg.com/*
+*://*.twitter.com/*
+*://*.twitterinc.com/*
+*://*.twttr.com/*
+*://*.twtrdns.net/*
+*://*.x.com/*

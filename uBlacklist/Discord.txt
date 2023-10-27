@@ -1,0 +1,11 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Discord
+! Description: Hide all known Discord domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.discord.com/*
+*://*.discord.gg/*
+*://*.discord.media/*
+*://*.discordapp.com/*
+*://*.discordapp.net/*

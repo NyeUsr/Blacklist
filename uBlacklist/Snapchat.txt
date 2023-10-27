@@ -1,0 +1,18 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Snapchat
+! Description: Hide all known Snapchat domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.bitmoji.com/*
+*://*.feelinsonice.com/*
+*://*.sc-cdn.net/*
+*://*.sc-gw.com/*
+*://*.sc-jpl.com/*
+*://*.sc-prod.ne/*
+*://*.sc-prod.net/*
+*://*.sc-static.net/*
+*://*.snap.com/*
+*://*.snapads.com/*
+*://*.snapchat.com/*
+*://*.snapkit.com/*

@@ -1,6 +1,6 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti Samsung
-! Description: Block all known Samsung domains as well as block any subsidiaries.
+! Description: Block all known Samsung domains as well as any subsidiaries.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
@@ -85,77 +85,3 @@
 ||xn--ehqc076ccwcr30azr8a.xn--fiqs8s^
 ||xn--ehqc076ccwcr30azr8a.xn--fiqz9s^
 ||xn--ehqc076ccwcr30azr8a.xn--io0a7i^
-
-! Generated using https://letsblock.it/filters/search-results
-bing.com###b_content a[href*="samsung.cn"]:upward(li)
-www.google.*##.g:has(a[href*="samsung.cn"])
-www.google.*##a[href*="samsung.cn"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="samsung.cn"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="samsung.cn"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="samsung.cn"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="samsung.cn"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="samsung.cn"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="samsung.cn"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="samsung.cn"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="samsung.cn"])
-kagi.com##.sri-group:has(a.__sri-url[href*="samsung.cn"])
-kagi.com##._0_image_item[data-host_url*="samsung.cn"]
-startpage.com##.w-gl__result:has(a[href*="samsung.cn"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(samsung.cn))
-search.brave.com###results a[href*="samsung.cn"]:upward(.snippet)
-search.brave.com###img-results a[href*="samsung.cn"]:upward([id^="img"])
-search.brave.com###results a[href*="samsung.cn"]:upward(.card)
-bing.com###b_content a[href*="samsung.co.kr"]:upward(li)
-www.google.*##.g:has(a[href*="samsung.co.kr"])
-www.google.*##a[href*="samsung.co.kr"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="samsung.co.kr"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="samsung.co.kr"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="samsung.co.kr"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="samsung.co.kr"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="samsung.co.kr"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="samsung.co.kr"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="samsung.co.kr"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="samsung.co.kr"])
-kagi.com##.sri-group:has(a.__sri-url[href*="samsung.co.kr"])
-kagi.com##._0_image_item[data-host_url*="samsung.co.kr"]
-startpage.com##.w-gl__result:has(a[href*="samsung.co.kr"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(samsung.co.kr))
-search.brave.com###results a[href*="samsung.co.kr"]:upward(.snippet)
-search.brave.com###img-results a[href*="samsung.co.kr"]:upward([id^="img"])
-search.brave.com###results a[href*="samsung.co.kr"]:upward(.card)
-bing.com###b_content a[href*="samsung.com"]:upward(li)
-www.google.*##.g:has(a[href*="samsung.com"])
-www.google.*##a[href*="samsung.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="samsung.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="samsung.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="samsung.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="samsung.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="samsung.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="samsung.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="samsung.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="samsung.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="samsung.com"])
-kagi.com##._0_image_item[data-host_url*="samsung.com"]
-startpage.com##.w-gl__result:has(a[href*="samsung.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(samsung.com))
-search.brave.com###results a[href*="samsung.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="samsung.com"]:upward([id^="img"])
-search.brave.com###results a[href*="samsung.com"]:upward(.card)
-bing.com###b_content a[href*="samsung.net"]:upward(li)
-www.google.*##.g:has(a[href*="samsung.net"])
-www.google.*##a[href*="samsung.net"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="samsung.net"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="samsung.net"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="samsung.net"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="samsung.net"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="samsung.net"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="samsung.net"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="samsung.net"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="samsung.net"])
-kagi.com##.sri-group:has(a.__sri-url[href*="samsung.net"])
-kagi.com##._0_image_item[data-host_url*="samsung.net"]
-startpage.com##.w-gl__result:has(a[href*="samsung.net"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(samsung.net))
-search.brave.com###results a[href*="samsung.net"]:upward(.snippet)
-search.brave.com###img-results a[href*="samsung.net"]:upward([id^="img"])
-search.brave.com###results a[href*="samsung.net"]:upward(.card)

@@ -1,6 +1,6 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti Snapchat
-! Description: Block all known Snapchat domains as well as block any subsidiaries.
+! Description: Block all known Snapchat domains as well as any subsidiaries.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
@@ -27,95 +27,3 @@
 ||snapchat.com^
 ||snapkit.com^
 ||snapnet-cdn.storage.googleapis.com^
-
-! Generated using https://letsblock.it/filters/search-results
-bing.com###b_content a[href*="bitmoji.com"]:upward(li)
-www.google.*##.g:has(a[href*="bitmoji.com"])
-www.google.*##a[href*="bitmoji.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="bitmoji.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="bitmoji.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="bitmoji.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="bitmoji.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="bitmoji.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="bitmoji.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="bitmoji.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="bitmoji.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="bitmoji.com"])
-kagi.com##._0_image_item[data-host_url*="bitmoji.com"]
-startpage.com##.w-gl__result:has(a[href*="bitmoji.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(bitmoji.com))
-search.brave.com###results a[href*="bitmoji.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="bitmoji.com"]:upward([id^="img"])
-search.brave.com###results a[href*="bitmoji.com"]:upward(.card)
-bing.com###b_content a[href*="snap.com"]:upward(li)
-www.google.*##.g:has(a[href*="snap.com"])
-www.google.*##a[href*="snap.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="snap.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="snap.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="snap.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="snap.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="snap.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="snap.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="snap.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="snap.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="snap.com"])
-kagi.com##._0_image_item[data-host_url*="snap.com"]
-startpage.com##.w-gl__result:has(a[href*="snap.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(snap.com))
-search.brave.com###results a[href*="snap.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="snap.com"]:upward([id^="img"])
-search.brave.com###results a[href*="snap.com"]:upward(.card)
-bing.com###b_content a[href*="snapads.com"]:upward(li)
-www.google.*##.g:has(a[href*="snapads.com"])
-www.google.*##a[href*="snapads.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="snapads.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="snapads.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="snapads.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="snapads.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="snapads.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="snapads.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="snapads.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="snapads.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="snapads.com"])
-kagi.com##._0_image_item[data-host_url*="snapads.com"]
-startpage.com##.w-gl__result:has(a[href*="snapads.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(snapads.com))
-search.brave.com###results a[href*="snapads.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="snapads.com"]:upward([id^="img"])
-search.brave.com###results a[href*="snapads.com"]:upward(.card)
-bing.com###b_content a[href*="snapchat.com"]:upward(li)
-www.google.*##.g:has(a[href*="snapchat.com"])
-www.google.*##a[href*="snapchat.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="snapchat.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="snapchat.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="snapchat.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="snapchat.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="snapchat.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="snapchat.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="snapchat.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="snapchat.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="snapchat.com"])
-kagi.com##._0_image_item[data-host_url*="snapchat.com"]
-startpage.com##.w-gl__result:has(a[href*="snapchat.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(snapchat.com))
-search.brave.com###results a[href*="snapchat.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="snapchat.com"]:upward([id^="img"])
-search.brave.com###results a[href*="snapchat.com"]:upward(.card)
-bing.com###b_content a[href*="snapkit.com"]:upward(li)
-www.google.*##.g:has(a[href*="snapkit.com"])
-www.google.*##a[href*="snapkit.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="snapkit.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="snapkit.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="snapkit.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="snapkit.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="snapkit.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="snapkit.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="snapkit.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="snapkit.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="snapkit.com"])
-kagi.com##._0_image_item[data-host_url*="snapkit.com"]
-startpage.com##.w-gl__result:has(a[href*="snapkit.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(snapkit.com))
-search.brave.com###results a[href*="snapkit.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="snapkit.com"]:upward([id^="img"])
-search.brave.com###results a[href*="snapkit.com"]:upward(.card)

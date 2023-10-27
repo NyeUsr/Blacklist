@@ -1,0 +1,18 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Kape
+! Description: Hide all known Kape Technologies domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.ajillion.com/*
+*://*.cyberghostvpn.com/*
+*://*.definitimedia.com/*
+*://*.driveragent.com/*
+*://*.expressvpn.com/*
+*://*.intego.com/*
+*://*.privateinternetaccess.com/*
+*://*.reimageplus.com/*
+*://*.vpnmentor.com/*
+*://*.webselenese.com/*
+*://*.wizcase.com/*
+*://*.zenmate.com/*

@@ -1,0 +1,12 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Mozilla
+! Description: Hide all known Mozilla domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.firefox.com/*
+*://*.mozaws.net/*
+*://*.mozilla.com/*
+*://*.mozilla.net/*
+*://*.mozilla.org/*
+*://*.thunderbird.net/*

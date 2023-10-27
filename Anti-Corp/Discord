@@ -1,6 +1,6 @@
 [Adblock Plus]
 ! Title: NyeUsr's Anti Discord
-! Description: Block all known Discord domains as well as block any subsidiaries.
+! Description: Block all known Discord domains as well as any subsidiaries.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
@@ -9,23 +9,3 @@
 ||discord.media^
 ||discordapp.com^
 ||discordapp.net^
-
-! Generated using https://letsblock.it/filters/search-results
-bing.com###b_content a[href*="discord.com"]:upward(li)
-www.google.*##.g:has(a[href*="discord.com"])
-www.google.*##a[href*="discord.com"]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*="discord.com"]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*="discord.com"]:upward(.tile)
-html.duckduckgo.com##.results a.result__a[href*="discord.com"]:upward(.result)
-lite.duckduckgo.com##.result-link[href*="discord.com"]:upward(tr)
-lite.duckduckgo.com##.result-link[href*="discord.com"]:upward(tr) + tr
-lite.duckduckgo.com##.result-link[href*="discord.com"]:upward(tr) + tr + tr
-lite.duckduckgo.com##.result-link[href*="discord.com"]:upward(tr) + tr + tr + tr
-kagi.com##.search-result:has(a.__sri-url[href*="discord.com"])
-kagi.com##.sri-group:has(a.__sri-url[href*="discord.com"])
-kagi.com##._0_image_item[data-host_url*="discord.com"]
-startpage.com##.w-gl__result:has(a[href*="discord.com"])
-startpage.com##.image-container:has(div.image-quick-details span:has-text(discord.com))
-search.brave.com###results a[href*="discord.com"]:upward(.snippet)
-search.brave.com###img-results a[href*="discord.com"]:upward([id^="img"])
-search.brave.com###results a[href*="discord.com"]:upward(.card)

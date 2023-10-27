@@ -1,0 +1,48 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Verizon
+! Description: Hide all known Verizon domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.allourthanks.com/*
+*://*.anscorporate.com/*
+*://*.aol.com/*
+*://*.broadcloudpbx.net/*
+*://*.cdnstabletransit.com/*
+*://*.gowireless.com/*
+*://*.hum.com/*
+*://*.imsvm.com/*
+*://*.ispcapi.mcafee.com/*
+*://*.myvzw.com/*
+*://*.oath.com/*
+*://*.polargrizzly.com/*
+*://*.tccrocks.com/*
+*://*.track-n-trace.net/*
+*://*.uplynk.com/*
+*://*.verizon-services.com/*
+*://*.verizon.com/*
+*://*.verizon.digitalpromise.org/*
+*://*.verizon.inq.com/*
+*://*.verizon.llabs.io/*
+*://*.verizon.mcafee.com/*
+*://*.verizon.medallia.com/*
+*://*.verizon.net/*
+*://*.verizonbusiness.com/*
+*://*.verizondigitalmedia.com/*
+*://*.verizonenterprise.com/*
+*://*.verizonmedia.com/*
+*://*.verizononthego.com/*
+*://*.verizonsocialadvocacy.com/*
+*://*.verizonspecials.com/*
+*://*.verizonwebhost.com/*
+*://*.verizonwireless.com/*
+*://*.vzbi.com/*
+*://*.vzmessages.com/*
+*://*.vznavigator.net/*
+*://*.vzw.com/*
+*://*.vzw.net/*
+*://*.vzwdomain.com/*
+*://*.vzwebsites.com/*
+*://*.yahoo-inc.com/*
+*://*.yahoo.com/*
+*://*.yourdigitalrebatecenter.com/*

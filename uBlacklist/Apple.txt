@@ -1,0 +1,27 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Apple
+! Description: Hide all known Apple domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.aaplimg.com/*
+*://*.apple.com.cn/*
+*://*.apple.com/*
+*://*.apple.net/*
+*://*.apple.news/*
+*://*.apple.pa/*
+*://*.applecard.apple/*
+*://*.applemusic.com/*
+*://*.applimg.com/*
+*://*.beatsbydre.com/*
+*://*.cdn-apple.com/*
+*://*.darksky.net/*
+*://*.icloud-content.com/*
+*://*.icloud.com/*
+*://*.itunes-nocookie.com/*
+*://*.me.com/*
+*://*.mzstatic.com/*
+*://*.nic.beats/*
+*://*.shazam.com/*
+*://*.swift.org/*
+*://*.webkit.org/*

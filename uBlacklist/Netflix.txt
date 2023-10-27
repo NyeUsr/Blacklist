@@ -1,0 +1,16 @@
+[Adblock Plus]
+! Title: NyeUsr's Anti Netflix
+! Description: Hide all known Netflix domains as well as any subsidiaries.
+! Homepage: https://github.com/NyeUsr/Blacklist/
+! Expires: 1 day
+
+*://*.abqstudios.com/*
+*://*.dvd.com/*
+*://*.fast.com/*
+*://*.millarworld.tv/*
+*://*.netflix.co.uk/*
+*://*.netflix.com/*
+*://*.netflix.net/*
+*://*.netflixanimation.com/*
+*://*.nflxext.com/*
+*://*.storybots.com/*

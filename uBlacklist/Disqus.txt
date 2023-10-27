@@ -4,7 +4,5 @@
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
-||disqus.com^
-||disqus.map.fastlylb.net^
-||disquscdn.com^
-||commentsmodule.com^
+*://*.disqus.com/*
+*://*.commentsmodule.com/*
