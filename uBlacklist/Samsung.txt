@@ -65,6 +65,8 @@
 *://*.secb2b.com/*
 *://*.serichina.cn/*
 *://*.serichina.com/*
+*://*.samsungiotcloud.com/*
+*://*.samsungbiotcloud.com/*
 *://*.xn--ehqc076ccwch7flstb32brj4b.xn--fiqs8s/*
 *://*.xn--ehqc076ccwch7flstb32brj4b.xn--fiqz9s/*
 *://*.xn--ehqc076ccwch7flsto2yu4r.xn--fiqs8s/*
