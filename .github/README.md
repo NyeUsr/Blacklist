@@ -16,5 +16,5 @@ Regain control over your online search experience by selectively hiding websites
 A directory featuring curated lists designed for precise application, ensuring a tailored and efficient content blocking experience.<br><br>
 **[/Scripts/](https://github.com/NyeUsr/Blacklist/tree/main/Scripts)** -<br>
 Essential scripts for the purpose of project maintenance and upkeep.<br><br>
-**[/Noisy/](https://github.com/NyeUsr/Blacklist/tree/main/Noisy)**
+**[/Noisy/](https://github.com/NyeUsr/Blacklist/tree/main/Noisy)** -<br>
 A config file for use with [Noisy](https://github.com/1tayH/noisy).
