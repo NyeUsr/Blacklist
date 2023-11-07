@@ -7,10 +7,12 @@ Name |      Description      | Subscribe |
 
 <br>
 
-# Extensions
+# Directories
 **[/Anti-corp/](https://github.com/NyeUsr/Blacklist/tree/main/Anti-Corp#readme)** -<br>
-A directory of corporations for you to choose from and block, including all known subsidiaries.<br><br>
-**[/Scripts/](https://github.com/NyeUsr/Blacklist/tree/main/Scripts)** -<br>
-A directory with the scripts I use to help me maintain this project.<br><br>
+Selectively blacklist corporations and their subsidiaries, allowing you to safeguard your data from undesired entities.<br><br>
+**[/uBlacklist/](https://github.com/NyeUsr/Blacklist/tree/main/uBlacklist)** -<br>
+Regain control over your online search experience by selectively hiding websites using uBlacklist.<br><br>
 **[/Specific/](https://github.com/NyeUsr/Blacklist/tree/main/Specific)** -<br>
-A directory with lists for specific use cases or applications.
+A directory featuring curated lists designed for precise application, ensuring a tailored and efficient content blocking experience.<br><br>
+**[/Scripts/](https://github.com/NyeUsr/Blacklist/tree/main/Scripts)** -<br>
+Essential scripts for the purpose of project maintenance and upkeep.
