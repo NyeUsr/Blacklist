@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 111N-1563
+! Version: 112N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists --------------
@@ -833,6 +833,15 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||your-analytics.org^
+||stats.qwant.com^
+||telemetry.mozilla.org^
+||analytics.samsungknox.com^
+||tags.remixd.com^
+||pubwise.io^
+||marketingcloudfx.com^
+||gtm.you.com^
+||plausible.freeyourmusic.com^
 ||poloptrex.com^
 ||justtrack.io^
 ||forty-wash-pattern-sets.run^
@@ -1211,7 +1220,6 @@ http://twitcount.com$3p
 ||bakersvetoer.com^
 ||blunksdaler.uno^
 ||viewyentreat.guru^
-||changlam*.top^
 ||pvmteagghntoh.xyz^
 ||saiceezu.xyz^
 ||telemetry.canva.com^
@@ -12858,6 +12866,7 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+freeyourmusic.com##[href^="https://music.apple.com/subscribe"]:upward(.container)
 gigabyte.com###policy-div
 quora.com##[class*="_google_ad"]:upward(.q-box)
 weatherology.com###cookieMessage
@@ -13086,6 +13095,10 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
+###WIX_ADS, .WIX_ADS:not(html, body, button, input)
+###FreeStarVideoAdContainer:not(html, body, button, input)
+##[class*="AdContainer_"]:not(html, body, button, input)
+##.rhc-banner.rhc-theme-dark:has-text(cookies):not(html, body, button, input)
 ###video-sponsor-links:not(html, body, button, input)
 ##.ad-support-desktop:not(html, body, button, input)
 ##.exo-ad-ins-container:not(html, body, button, input)
@@ -13998,6 +14011,10 @@ ufbdirect.com$removeparam=siteID
 ufbdirect.com$removeparam=ranMID
 ufbdirect.com$removeparam=ranEAID
 ufbdirect.com$removeparam=ranSiteID
+bhphotovideo.com$removeparam=origSearch
+bhphotovideo.com$removeparam=sts
+appleinsider.com$removeparam=ref
+appleinsider.com$removeparam=refl
 
 ! Redundancy
 
@@ -14013,7 +14030,7 @@ ufbdirect.com$removeparam=ranSiteID
 ! https://github.com/uBlockOrigin/uBlock-issues/discussions/2714#discussioncomment-6535537
 @@||cjisonline.com^$permissions=browsing-topics=()
 
-! From various (now) unknown places
+! From various now unknown places
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, googleAd, true)
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(set-constant, xPoPAdS, false)
