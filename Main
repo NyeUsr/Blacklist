@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 112N-1563
+! Version: 113N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists --------------
@@ -833,6 +833,15 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||revive-adserver.net^
+||tags.*.greylabeldelivery.com^
+||sentry.jumptask.io^
+||t.announcekit.app^
+||collector-*.pxchk.net^
+||adservice.google.com^
+||analytics.unity3d.com^
+||matomo.ddavo.me^
+||sanity.io^$domain=thedefiant.io
 ||your-analytics.org^
 ||stats.qwant.com^
 ||telemetry.mozilla.org^
@@ -11530,6 +11539,8 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||fastforward.team/firstrun$doc
+||barisderin.com/?p=$doc
 ||cdn.jsdelivr.net/npm/devtools-detector$3p
 ||iamcdn.net/ban.html
 ||d.genealogyaffiliates.com/afr.php
@@ -12866,6 +12877,13 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+paypal.com###reactContainer__heroEngagement
+blockonomi.com##[href="/out/bc-game"]
+blockonomi.com##[href="/out/coinbase-earn"]
+blockonomi.com##[href="/out/koinly"]
+blockonomi.com##[href="/out/3commaside"]
+duckduckgo.com##li:has-text(Report Ad)
+duckduckgo.com##.products-carousel:has-text(Ads)
 freeyourmusic.com##[href^="https://music.apple.com/subscribe"]:upward(.container)
 gigabyte.com###policy-div
 quora.com##[class*="_google_ad"]:upward(.q-box)
