@@ -343,3 +343,4 @@
 *://*.youtube-nocookie.com/*
 *://*.youtube.com/*
 *://*.youtubeeducation.com/*
+*://*.widevine.com/*
