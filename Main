@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 113N-1563
+! Version: 114N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists --------------
@@ -233,6 +233,9 @@
 
 ! Brave blocks this for some reason - breaks fast.com
 @@||ipv4-*.oca.nflxvideo.net^
+
+! Breaks Google login buttons
+||accounts.google.com/gsi/$~script,badfilter
 
 ! Uncategorized
 @@||auth-*.tinypass.com^
@@ -833,6 +836,8 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||analytics.kovah.de^
+||logs.netflix.com^
 ||revive-adserver.net^
 ||tags.*.greylabeldelivery.com^
 ||sentry.jumptask.io^
@@ -11539,6 +11544,10 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||add0n.com/feedback.html$doc
+||webextension.org/feedback$doc
+||webextension.org/listing/*&type=install$doc
+||apps.jeurissen.co/*/installed$doc
 ||fastforward.team/firstrun$doc
 ||barisderin.com/?p=$doc
 ||cdn.jsdelivr.net/npm/devtools-detector$3p
@@ -12004,7 +12013,7 @@ _ads_$image,xhr
 /jump/next.php
 /identify.html
 */ip2geo/
-/ipAddress
+/ipAddress$3p
 /geoip.php$domain=~pornhat.com|~ok.xxx
 /click.json
 /track-view
@@ -12877,6 +12886,7 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+hulu.com##[data-testid^="marquee-ad"]
 paypal.com###reactContainer__heroEngagement
 blockonomi.com##[href="/out/bc-game"]
 blockonomi.com##[href="/out/coinbase-earn"]

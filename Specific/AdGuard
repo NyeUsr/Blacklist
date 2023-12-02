@@ -2,6 +2,7 @@
 @@||theplatform.com^$ctag=device_tv
 @@||samba.tv^$ctag=device_tv
 @@||ad.doubleclick.net^$ctag=device_tv
+@@||pubads.g.doubleclick.net^$ctag=device_tv
 @@||nativesdks.mparticle.com^$ctag=device_tv
 
 ! Fix "Relay" spyware on school devices (Tested and working with AdGuard Home & AdGuard for Android)
@@ -21,7 +22,6 @@ p7nvu5it0k.execute-api.*.amazonaws.com$dnsrewrite=NOERROR;A;157.90.154.178
 $$amp-ad
 $$script[tag-content="detectAdBlock1"]
 $$script[tag-content="detectAdBlockAll"]
-$$script[tag-content="exdynsrv.com"]
 $$script[tag-content="window['gtag']"]
 $$script[tag-content="juicyads.rocks"]
 $$script[tag-content=".isAdblock"]
@@ -38,7 +38,6 @@ $$script[tag-content="(clickInfo).track"]
 $$script[tag-content="TiaraTracker.getInstance()"]
 $$script[tag-content="pixelUrl"]
 $$script[tag-content="eulerian_"]
-$$script[tag-content="sendAnalytic"]
 $$script[tag-content="pixelFor"]
 $$script[tag-content="get_country"]
 $$script[tag-content="gascroll"]

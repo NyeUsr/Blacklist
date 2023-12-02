@@ -18,7 +18,6 @@
 !#if env_firefox
 *##^script:has-text(detectAdBlock1)
 *##^script:has-text(detectAdBlockAll)
-*##^script:has-text(exdynsrv.com)
 *##^script:has-text(window['gtag'])
 *##^script:has-text(juicyads.rocks)
 *##^script:has-text(.isAdblock)
@@ -35,7 +34,6 @@
 *##^script:has-text(TiaraTracker.getInstance())
 *##^script:has-text(pixelUrl)
 *##^script:has-text(eulerian_)
-*##^script:has-text(sendAnalytic)
 *##^script:has-text(pixelFor)
 *##^script:has-text(get_country)
 *##^script:has-text(gascroll)
