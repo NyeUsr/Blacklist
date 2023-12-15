@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 40-ER
+! Version: 41-ER
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -31,13 +31,17 @@
 ||api.twitter.com/1.1/onboarding/task.json?flow_name=login
 .SignupModule.$script,domain=twitter.com
 twitter.com##div[role="button"]:has-text(Yes, view profile)
+! https://www.ign.com/articles/twitch-new-sexual-content-guidelines-artistic-nudity
+||twitch.tv^
+||ttvnw.net^
+||twitchcdn.net^
 
 ! Restrict/block engines that don't support safe search
 ||explicit.bing.net^
 ||images.search.yahoo.com^
 ||video.search.yahoo.com^
 ||mojeek.com^
-||search.brave.com^
+!||search.brave.com^
 
 ! https://help.duckduckgo.com/duckduckgo-help-pages/features/safe-search/
 ||duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
@@ -53,6 +57,9 @@ twitter.com##div[role="button"]:has-text(Yes, view profile)
 ||api.qwant.com^$dnsrewrite=NOERROR;CNAME;safeapi.qwant.com
 ! https://yandex.com/support/search/schoolsearch.html#schoolsearch__hosts
 /^yandex\..{2,3}$/$ctag=device_child,dnsrewrite=NOERROR;A;213.180.193.56
+! https://community.brave.com/t/feature-request-enforcing-or-locking-safe-search-or-strict-search-in-brave-search/307897
+! Test Forcing the safe search
+||search.brave.com^$dnsrewrite=NOERROR;CNAME;safesearch.brave.com
 
 /(xnxx|xvideo|porn|-xxx|xxx-|stripper|jerkmate|javh(d|ub)|xxxvid|voyeur|nudes|fappening|sexdoll|shemale|sexon|adultproxy|hookup-girls|sexy-|-sexy|fappening|fapping|nudeceleb|leaked-sexy|sexy-leak|horny|teencum|youngteen|pornpic|xgirls|xtube|sissy).+\./$ctag=user_child
 /(cams|txxx|pornstar|pornstars|watchporn|sex)\..+/$ctag=user_child
@@ -149,6 +156,10 @@ barely%20legal$doc
 ||sexy^
 ||exposed^
 
+||sxccdn.com^
+||xbnat.com^
+||helloladyboy.com^
+||hqbang.com^
 ||bemyhole.cam^
 ||m3pd.com^
 ||manysex.com^
