@@ -63,9 +63,7 @@ youtube.com##h3.ytd-guide-section-renderer.style-scope:has-text(/(Explore|More f
 1.0.0.1$network
 *$app=com.verizon.mips.services
 *$app=chat.rocket.android
-*$app=com.google.android.gms
 @@||legiochristi.com^$app=chat.rocket.android
-@@||mtalk.google.com^$app=com.google.android.gms
 
 ||google.*/recaptcha/
 ||storage.googleapis.com/workbox-cdn/
