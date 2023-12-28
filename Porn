@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with AdBlock syntax rules.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 42-ER
+! Version: 43-ER
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
@@ -156,6 +156,7 @@ barely%20legal$doc
 ||sexy^
 ||exposed^
 
+||theporn.how^
 ||cum4k.com^
 ||thiefslut.com^
 ||scout69.com^
