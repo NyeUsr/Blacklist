@@ -40,6 +40,13 @@
 ||drive.google.com^$3p
 ||maps.google.com^$3p
 ||maps.googleapis.com^$3p
+||apple.com^$domain=genius.com
+||youtube.com^$3p
+||ytimg.com^$3p,domain=~youtube.com
+||ggpht.com^$3p,domain=~youtube.com
+||googlevideo.com^$3p,domain=~youtube.com
+||gstatic.com^$3p,domain=~youtube.com
+||googleapis.com^$3p,domain=~youtube.com
 
 /cast_framework.js
 /cast_sender.js
