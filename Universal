@@ -31,12 +31,15 @@
 ||ally.ac^
 ||clearbit.com^
 ||readspeaker.com^
+||use.typekit.net^
 
 ||genius.com^$frame
 ||mastodon.social$3p
 ||t.me^$3p
 ||docs.google.com^$3p
 ||drive.google.com^$3p
+||maps.google.com^$3p
+||maps.googleapis.com^$3p
 
 /cast_framework.js
 /cast_sender.js
