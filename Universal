@@ -45,8 +45,8 @@
 ||ytimg.com^$3p,domain=~youtube.com
 ||ggpht.com^$3p,domain=~youtube.com
 ||googlevideo.com^$3p,domain=~youtube.com
-||gstatic.com^$3p,domain=~youtube.com,~android.com
-||googleapis.com^$3p,domain=~youtube.com,~android.com
+||gstatic.com^$3p,domain=~youtube.com|~android.com
+||googleapis.com^$3p,domain=~youtube.com|~android.com
 
 ||google.*/recaptcha/
 ||gstatic.com/recaptcha/
