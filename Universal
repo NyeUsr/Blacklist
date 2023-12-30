@@ -45,8 +45,13 @@
 ||ytimg.com^$3p,domain=~youtube.com
 ||ggpht.com^$3p,domain=~youtube.com
 ||googlevideo.com^$3p,domain=~youtube.com
-||gstatic.com^$3p,domain=~youtube.com
-||googleapis.com^$3p,domain=~youtube.com
+||gstatic.com^$3p,domain=~youtube.com,~android.com
+||googleapis.com^$3p,domain=~youtube.com,~android.com
+
+||google.*/recaptcha/
+||gstatic.com/recaptcha/
+||gstatic.com*/icons/$domain=~youtube.com
+||storage.googleapis.com/workbox-cdn/
 
 /cast_framework.js
 /cast_sender.js
@@ -73,9 +78,16 @@ youtube.com##h3.ytd-guide-section-renderer.style-scope:has-text(/(Explore|More f
 1.0.0.1$network
 *$app=com.verizon.mips.services
 *$app=chat.rocket.android
+*$app=com.google.android.gsf
 @@||legiochristi.com^$app=chat.rocket.android
 
-||google.*/recaptcha/
-||storage.googleapis.com/workbox-cdn/
+||time.google.com^
+||android-context-data.googleapis.com^
+||userlocation.googleapis.com^
+||digitalassetlinks.googleapis.com^
+||samsungpositioning.com^
+||samsungdive.com^
+||pushmessage.samsung.com^
+*-pa.googleapis.com^
 !#endif
 !#endif
