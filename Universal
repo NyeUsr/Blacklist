@@ -81,6 +81,7 @@ youtube.com##h3.ytd-guide-section-renderer.style-scope:has-text(/(Explore|More f
 *$app=com.google.android.gsf
 @@||legiochristi.com^$app=chat.rocket.android
 
+@@||instantmessaging-pa.googleapis.com^$important
 ||time.google.com^
 ||android-context-data.googleapis.com^
 ||userlocation.googleapis.com^
