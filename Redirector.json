@@ -1,0 +1,572 @@
+{
+    "createdBy": "Redirector v3.5.4",
+    "createdAt": "2024-01-03T20:03:02.709Z",
+    "redirects": [
+        {
+            "description": "[CLEAN] Google Safe Search",
+            "exampleUrl": "https://www.google.com/search?q=test&sca_esv=594270025&sxsrf=AM9HkKlC7eskiolVmeyIAEjtO1aEIl62BA%3A1703789598099&source=hp&ei=HsSNZdSlAbbV5NoPxrCssAw&iflsig=AO6bgOgAAAAAZY3SLplrQlQczCxunjC-QukW3Xo9GCYn&ved=0ahUKEwjUrIzu5rKDAxW2KlkFHUYYC8YQ4dUDCAw&uact=5&oq=test&gs_lp=Egdnd3Mtd2l6IgR0ZXN0MgsQABiABBixAxiDATIFEAAYgAQyCxAAGIAEGLEDGIMBMggQABiABBixAzILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgsQLhiABBjHARivATIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgUQABiABEikFVDsD1iNEnABeACQAQCYAV6gAeYCqgEBNLgBA8gBAPgBAagCC8ICBhCzARiFBMICEBAAGAMYjwEY5QIY6gIYjAPCAhAQLhgDGI8BGOUCGOoCGIwDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBiKBRixAxiDAcICCBAuGIAEGLEDwgIFEC4YgATCAgQQABgDwgIOEAAYgAQYigUYsQMYgwHCAgsQLhiABBixAxiDAcICCBAuGLEDGIAE&sclient=gws-wiz",
+            "exampleResult": "https://www.google.com/search?q=test&safe=active",
+            "error": null,
+            "includePattern": "https://www.google.*/search?q=*&*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.google.$1/search?q=$2&safe=active",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] YouTu.be",
+            "exampleUrl": "https://youtu.be/D6LQb41Y36U?si=jjR6ZkRlzmY79NnB&t=4695",
+            "exampleResult": "https://www.youtube.com/watch?v=D6LQb41Y36U&t=4695s",
+            "error": null,
+            "includePattern": "https:\\/\\/youtu\\.be\\/([^?&]+)(?:[?&](?:[^=]+=[^&]+&)*(?:t=([^&]+)))?",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.youtube.com/watch?v=$1&t=$2s",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Bing 1",
+            "exampleUrl": "https://bing.com/",
+            "exampleResult": "https://www.bing.com/",
+            "error": null,
+            "includePattern": "https://bing.com/",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.bing.com/",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Bing Safe Search",
+            "exampleUrl": "https://www.bing.com/search?q=test&form=QBLH&sp=-1&ghc=1&lq=0&pq=test&sc=11-4&qs=n&sk=&cvid=0E0FE8ECBB724AD380B0FB45AC979B84&ghsh=0&ghacc=0&ghpl=",
+            "exampleResult": "https://www.bing.com/search?q=test&adlt=strict",
+            "error": null,
+            "includePattern": "https://www.bing.com/search?q=*&*",
+            "excludePattern": "",
+            "patternDesc": "Cleans Bing search URLs and forces safe search.",
+            "redirectUrl": "https://www.bing.com/search?q=$1&adlt=strict",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "DuckDuckGo Safe Search",
+            "exampleUrl": "https://duckduckgo.com/?hps=1&q=test&ia=web",
+            "exampleResult": "https://safe.duckduckgo.com/?q=test",
+            "error": null,
+            "includePattern": "https://duckduckgo.com/*&q=*&*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://safe.duckduckgo.com/?q=$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "Qwant Safe Search",
+            "exampleUrl": "https://www.qwant.com/?q=test&t=web",
+            "exampleResult": "https://www.qwant.com/?q=test&s=2",
+            "error": null,
+            "includePattern": "https://www.qwant.com/?q=*&*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.qwant.com/?q=$1&s=2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[DIRECT] Google Images Fixer",
+            "exampleUrl": "https://www.google.com/imgres?imgurl=https://images.squarespace-cdn.com/content/v1/5f90ff6a5f71bf45a0c0256c/1606871553343-3NUCEHB5S1N3VAEVSLGT/autism%2Bbubble.jpg&tbnid=bYDAm9KQy_i1cM&vet=1&imgrefurl=https://www.askautism.org/blog/whatisasd&docid=lgtYsoP6sbH98M&w=1704&h=1686&source=sh/x/im/m1/1",
+            "exampleResult": "https://images.squarespace-cdn.com/content/v1/5f90ff6a5f71bf45a0c0256c/1606871553343-3NUCEHB5S1N3VAEVSLGT/autism%2Bbubble.jpg",
+            "error": null,
+            "includePattern": "https://www.google.*/imgres?imgurl=*&*",
+            "excludePattern": "",
+            "patternDesc": "Go directly to the image source instead of viewing in Google search.",
+            "redirectUrl": "$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[DIRECT] Firefox Add-ons",
+            "exampleUrl": "https://prod.outgoing.prod.webservices.mozgcp.net/v1/969e05aa086ffb35d8991dfa3187063f836747499948de486ca94c5714919ae8/https%3A//github.com/NyeUsr/HTTP-Version-Indicator/",
+            "exampleResult": "https://github.com/NyeUsr/HTTP-Version-Indicator/",
+            "error": null,
+            "includePattern": "https://prod.outgoing.prod.webservices.mozgcp.net/v1/*/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$2",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[DIRECT] YouTube Outlink",
+            "exampleUrl": "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2JURGRIVEc1bnltNW5KNWljVHJ2MzNxaG5pd3xBQ3Jtc0tsckFveUpOYkJxcV9Ick0weDhGbldGTU84bHhPbVFzdUswR21uWGZOdUFnX1JpN3lZbVRlbVAtZ3I1WlNvX0NTV0Z5Yjdicmg4VEF0OXBsVXZ0NmxacU5Rb1hubU40Y2lTMGZSSDdZczJ0Qkc3azMxbw&q=https%3A%2F%2Fwww.twitch.tv%2Fblarglive&v=D6LQb41Y36U",
+            "exampleResult": "https://www.twitch.tv/blarglive",
+            "error": null,
+            "includePattern": "https://www.youtube.com/redirect?*&q=*&*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$2",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[DIRECT] Steam Outlink",
+            "exampleUrl": "https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fthomasgervraud.com%2Fpress%2Fbrotato%2F",
+            "exampleResult": "https://thomasgervraud.com/press/brotato/",
+            "error": null,
+            "includePattern": "https://steamcommunity.com/linkfilter/?u=*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[DIRECT] DuckDuckGo Link Tracker",
+            "exampleUrl": "https://duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.nytimes.com%2F2021%2F04%2F30%2Fopinion%2Fjohn%2Dmcwhorter%2Dn%2Dword%2Dunsayable.html&rut=1d91dcfd3485b3469bf98ba056abf7868ba465a7c4835a1e69f9cfb33c5d7000",
+            "exampleResult": "https://www.nytimes.com/2021/04/30/opinion/john-mcwhorter-n-word-unsayable.html",
+            "error": null,
+            "includePattern": "https://duckduckgo.com/l/?uddg=*&*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[REWRITE] Google Fonts",
+            "exampleUrl": "https://fonts.googleapis.com/css",
+            "exampleResult": "https://fonts.bunny.net/css",
+            "error": null,
+            "includePattern": "https://fonts.googleapis.com/css*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://fonts.bunny.net/css$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "font",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "object_subrequest",
+                "xmlhttprequest",
+                "history",
+                "other"
+            ]
+        },
+        {
+            "description": "[REWRITE] Google Icons",
+            "exampleUrl": "https://fonts.googleapis.com/icon",
+            "exampleResult": "https://api.fonts.coollabs.io/icon",
+            "error": null,
+            "includePattern": "https://fonts.googleapis.com/icon*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://api.fonts.coollabs.io/icon$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "font",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "object_subrequest",
+                "xmlhttprequest",
+                "history",
+                "other"
+            ]
+        },
+        {
+            "description": "[FARSIDE] Twitter",
+            "exampleUrl": "https://twitter.com/collinrugg/status/1740920771298439538",
+            "exampleResult": "https://farside.link/nitter/collinrugg/status/1740920771298439538",
+            "error": null,
+            "includePattern": "https:\\/\\/(twitter|x)\\.com\\/(.*)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://farside.link/nitter/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "font",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "object_subrequest",
+                "xmlhttprequest",
+                "history",
+                "other"
+            ]
+        },
+        {
+            "description": "[FARSIDE] Reddit",
+            "exampleUrl": "https://www.reddit.com/r/tacticalgear/comments/vsqm8y/wifes_boyfriend_said_i_could_provide_security_at/",
+            "exampleResult": "https://farside.link/libreddit/r/tacticalgear/comments/vsqm8y/wifes_boyfriend_said_i_could_provide_security_at/",
+            "error": null,
+            "includePattern": "https://www.reddit.com/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://farside.link/libreddit/$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "font",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "object_subrequest",
+                "xmlhttprequest",
+                "history",
+                "other"
+            ]
+        },
+        {
+            "description": "[FARSIDE/AUTOPLAY] YouTube Embed",
+            "exampleUrl": "https://www.youtube.com/embed/Xo0XVt23VqI?autoplay=0&mute=0&controls=1&origin=https%3A%2F%2Fwww.androidauthority.com&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1",
+            "exampleResult": "https://farside.link/invidious/embed/Xo0XVt23VqI?autoplay=0&mute=0&controls=1&playsinline=1&showinfo=0&modestbranding=1&enablejsapi=1&widgetid=1",
+            "error": null,
+            "includePattern": "https://www.youtube.com/embed/*?*",
+            "excludePattern": "*/iframe_api*|*/www-widgetapi.js*",
+            "patternDesc": "",
+            "redirectUrl": "https://farside.link/invidious/embed/$1?autoplay=0&mute=0&controls=1&playsinline=1&showinfo=0&modestbranding=1&enablejsapi=1&widgetid=1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "sub_frame",
+                "stylesheet",
+                "font",
+                "script",
+                "image",
+                "history"
+            ]
+        },
+        {
+            "description": "[BANG] !l for Lyrics 1",
+            "exampleUrl": "https://search.brave.com/search?q=%21l+vengeance+currents",
+            "exampleResult": "https://search.brave.com/goggles?q=vengeance+currents+\"lyrics\"&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FNyeUsr-s-Goggles%2Fmain%2FLyrics%2520Boost",
+            "error": null,
+            "includePattern": "https://search.brave.com/search?q=%21l+*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://search.brave.com/goggles?q=$1+\"lyrics\"&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FNyeUsr-s-Goggles%2Fmain%2FLyrics%2520Boost",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[BANG] !l for Lyrics 2",
+            "exampleUrl": "https://search.brave.com/search?q=!l+vengeance+currents",
+            "exampleResult": "https://search.brave.com/goggles?q=vengeance+currents+\"lyrics\"&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FNyeUsr-s-Goggles%2Fmain%2FLyrics%2520Boost",
+            "error": null,
+            "includePattern": "https://search.brave.com/search?q=!l+*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://search.brave.com/goggles?q=$1+\"lyrics\"&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FNyeUsr-s-Goggles%2Fmain%2FLyrics%2520Boost",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[BANG] !l for Lyrics Mobile",
+            "exampleUrl": "https://search.brave.com/search?q=!l%20vengeance%20currents",
+            "exampleResult": "https://search.brave.com/goggles?q=vengeance%20currents+\"lyrics\"&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FNyeUsr-s-Goggles%2Fmain%2FLyrics%2520Boost",
+            "error": null,
+            "includePattern": "https://search.brave.com/search?q=!l%20*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://search.brave.com/goggles?q=$1+\"lyrics\"&goggles_id=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FNyeUsr-s-Goggles%2Fmain%2FLyrics%2520Boost",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "PH Interstitial",
+            "exampleUrl": "https://www.pornhub.com/interstitial?viewkey=1734254600",
+            "exampleResult": "https://www.pornhub.com/view_video.php?viewkey=1734254600",
+            "error": null,
+            "includePattern": "https://www.pornhub.com/interstitial?viewkey=*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.pornhub.com/view_video.php?viewkey=$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Amazon",
+            "exampleUrl": "https://www.amazon.com/ref=nav_logo",
+            "exampleResult": "https://www.amazon.com",
+            "error": null,
+            "includePattern": "https://www.amazon.*/ref=nav_logo",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.amazon.$1",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Amazon 2",
+            "exampleUrl": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=edifier",
+            "exampleResult": "https://www.amazon.com/s?k=edifier",
+            "error": null,
+            "includePattern": "https://www.amazon.*/s/ref=*&field-keywords=*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.amazon.$1/s?k=$3",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Amazon 3",
+            "exampleUrl": "https://www.amazon.com/Edifier-R1280DB-Bluetooth-Bookshelf-Speakers/dp/B0719C132V/ref=sr_1_3?th=1",
+            "exampleResult": "https://www.amazon.com/Edifier-R1280DB-Bluetooth-Bookshelf-Speakers/dp/B0719C132V",
+            "error": null,
+            "includePattern": "https://www.amazon.*/*/ref=*",
+            "excludePattern": "*?url=*",
+            "patternDesc": "",
+            "redirectUrl": "https://www.amazon.$1/$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Amazon 4",
+            "exampleUrl": "https://www.amazon.com/s?k=edifier&ref=nb_sb_noss",
+            "exampleResult": "https://www.amazon.com/s?k=edifier",
+            "error": null,
+            "includePattern": "https://www.amazon.*/s?k=*&ref=*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.amazon.$1/s?k=$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Amazon 5",
+            "exampleUrl": "https://www.amazon.com/BALEINE-Christmas-Reinforced-Container-Decorations/dp/B09CD3YWH4/?_encoding=UTF8&_encoding=UTF8&ref_=dlx_gate_sd_dcl_tlt_f5bdbe4c_dt_pd_gw_unk&pd_rd_w=kahJe&content-id=amzn1.sym.26a365d6-3002-449e-bfff-1848c98a3efd&pf_rd_p=26a365d6-3002-449e-bfff-1848c98a3efd&pf_rd_r=FPHYRE27TW82MW1BCW0H&pd_rd_wg=0AS2g&pd_rd_r=a41dbff2-a7e8-4305-ac20-db0cdc39c3a7",
+            "exampleResult": "https://www.amazon.com/BALEINE-Christmas-Reinforced-Container-Decorations/dp/B09CD3YWH4/",
+            "error": null,
+            "includePattern": "https://www.amazon.*/*?_encoding*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.amazon.$1/$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "Wikipedia Localization",
+            "exampleUrl": "https://it.wikipedia.org/wiki/Mozilla_Firefox",
+            "exampleResult": "https://en.wikipedia.org/wiki/Mozilla_Firefox",
+            "error": null,
+            "includePattern": "https://*.wikipedia.org/*",
+            "excludePattern": "https://en.wikipedia.org/*",
+            "patternDesc": "",
+            "redirectUrl": "https://en.wikipedia.org/$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "[CLEAN] Google Search",
+            "exampleUrl": "https://www.google.com/search?q=test&sca_esv=594270025&sxsrf=AM9HkKlC7eskiolVmeyIAEjtO1aEIl62BA%3A1703789598099&source=hp&ei=HsSNZdSlAbbV5NoPxrCssAw&iflsig=AO6bgOgAAAAAZY3SLplrQlQczCxunjC-QukW3Xo9GCYn&ved=0ahUKEwjUrIzu5rKDAxW2KlkFHUYYC8YQ4dUDCAw&uact=5&oq=test&gs_lp=Egdnd3Mtd2l6IgR0ZXN0MgsQABiABBixAxiDATIFEAAYgAQyCxAAGIAEGLEDGIMBMggQABiABBixAzILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgsQLhiABBjHARivATIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgUQABiABEikFVDsD1iNEnABeACQAQCYAV6gAeYCqgEBNLgBA8gBAPgBAagCC8ICBhCzARiFBMICEBAAGAMYjwEY5QIY6gIYjAPCAhAQLhgDGI8BGOUCGOoCGIwDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBiKBRixAxiDAcICCBAuGIAEGLEDwgIFEC4YgATCAgQQABgDwgIOEAAYgAQYigUYsQMYgwHCAgsQLhiABBixAxiDAcICCBAuGLEDGIAE&sclient=gws-wiz",
+            "exampleResult": "https://www.google.com/search?q=test",
+            "error": null,
+            "includePattern": "https://www.google.*/search?q=*&*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.google.$1/search?q=$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "Brave Safe Search",
+            "exampleUrl": "https://search.brave.com/search?q=test",
+            "exampleResult": "https://safesearch.brave.com/search?q=test",
+            "error": null,
+            "includePattern": "https://search.brave.com/search?q=*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://safesearch.brave.com/search?q=$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        },
+        {
+            "description": "[CLEAN] Bing 2",
+            "exampleUrl": "https://www.bing.com/search?q=test&qs=HS&sk=HS1&sc=11-0&cvid=279624780D3F42E0835F6948A7271163&FORM=QBLH&sp=2&lq=0",
+            "exampleResult": "https://www.bing.com/search?q=test",
+            "error": null,
+            "includePattern": "https://www.bing.com/search?q=*&*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://www.bing.com/search?q=$1",
+            "patternType": "W",
+            "processMatches": "urlDecode",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "history"
+            ]
+        }
+    ]
+}
