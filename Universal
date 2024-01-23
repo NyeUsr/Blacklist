@@ -34,6 +34,8 @@
 ||spotify.com^
 ||twitch.tv^
 ||player.vimeo.com^
+||duck.com^
+||duckduckgo.com^
 
 ||genius.com^$frame
 ||mastodon.social$3p
@@ -60,15 +62,14 @@
 /provider.cast.js
 /comment-reply.min.js
 /js/commento.js
+?autoplayInViewPort=true$frame,redirect=click2load.html
 
 mega.nz##.gallery-btn
 watchcartoononline.bz###info > .sbox:has-text(Share)
 youtube.com###time-status:has-text(SHORTS):upward(ytd-video-renderer.ytd-item-section-renderer.style-scope)
 youtube.com##h3.ytd-guide-section-renderer.style-scope:has-text(/(Explore|More from YouTube)/):upward(ytd-guide-section-renderer.ytd-guide-renderer.style-scope)
 
-?autoplayInViewPort=true$frame,redirect=click2load.html
-
-! Android specific
+! Android Specific
 !#if !ext_ublock
 !#if (adguard_app_android)
 8.8.8.8$network
@@ -77,18 +78,7 @@ youtube.com##h3.ytd-guide-section-renderer.style-scope:has-text(/(Explore|More f
 1.0.0.1$network
 *$app=com.verizon.mips.services
 *$app=chat.rocket.android
-*$app=com.google.android.gsf
 @@||legiochristi.com^$app=chat.rocket.android
-
-@@||instantmessaging-pa.googleapis.com^$important
-@@||notifications-pa.googleapis.com^$important
-||time.google.com^
-||android-context-data.googleapis.com^
-||userlocation.googleapis.com^
-||digitalassetlinks.googleapis.com^
-||samsungpositioning.com^
-||samsungdive.com^
-||pushmessage.samsung.com^
-*-pa.googleapis.com^
+!*$app=com.google.android.gsf
 !#endif
 !#endif
