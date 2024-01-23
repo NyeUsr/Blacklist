@@ -118,7 +118,18 @@ brainly.com$cookie=/Zadanepl_cookie.{0,}/
 @@||config.inmobi.com^
 
 ! Use generic cosmetic filters on mobile
-
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[src*="a.adtng.com/"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[src*="adv.mxmcdn.net/"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[src^="https://chaturbate.com/in/?tour="]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[href*="claring-loccelkin.com"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[href^="https://s.zlinkb.com/d.php"]:not(html, body, button, input)
+!+ NOT_OPTIMIZED
+com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.cams-videos.related-videos:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx###WIX_ADS, .WIX_ADS:not(html, body, button, input)
 !+ NOT_OPTIMIZED
