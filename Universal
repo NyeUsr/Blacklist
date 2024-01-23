@@ -1,7 +1,6 @@
 ||hyvor.com^
 ||arc.io^
 ||webspellchecker.net^
-||darkreader.org^
 ||moneymade.io^
 ||safebrowsing.googleapis.com^
 ||safebrowsing.brave.com^
@@ -32,6 +31,9 @@
 ||clearbit.com^
 ||readspeaker.com^
 ||use.typekit.net^
+||spotify.com^
+||twitch.tv^
+||player.vimeo.com^
 
 ||genius.com^$frame
 ||mastodon.social$3p
@@ -64,9 +66,6 @@ watchcartoononline.bz###info > .sbox:has-text(Share)
 youtube.com###time-status:has-text(SHORTS):upward(ytd-video-renderer.ytd-item-section-renderer.style-scope)
 youtube.com##h3.ytd-guide-section-renderer.style-scope:has-text(/(Explore|More from YouTube)/):upward(ytd-guide-section-renderer.ytd-guide-renderer.style-scope)
 
-||open.spotify.com/embed$3p,frame,redirect=click2load.html
-||player.twitch.tv^$3p,frame,redirect=click2load.html
-||player.vimeo.com^$3p,frame,redirect=click2load.html
 ?autoplayInViewPort=true$frame,redirect=click2load.html
 
 ! Android specific
