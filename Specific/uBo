@@ -64,19 +64,3 @@
 *##^script:has-text(You\'re using an AdBlocker)
 theepochtimes.com##^script:has-text(eet_tags)
 !#endif
-
-!----------------------------
-! Important from uBo filters |
-!----------------------------
-||google-analytics.com/analytics.js$script,redirect=google-analytics_analytics.js:5
-||google-analytics.com/cx/api.js$script,redirect=google-analytics.com/cx/api.js:5
-||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js:5
-||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices.com/gpt.js:5
-||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices_gpt.js:5
-||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices_gpt.js:5
-||scorecardresearch.com/beacon.js$script,redirect=scorecardresearch.com/beacon.js:5
-||addthis.com/*/addthis_widget.js$script,redirect=addthis.com/addthis_widget.js
-||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js:5
-||amazon-adsystem.com/aax2/amzn_ads.js$script,redirect=amazon-adsystem.com/aax2/amzn_ads.js
-||amazon-adsystem.com/*/apstag.js$script,redirect-rule=amazon_apstag.js
-!-----------------------------
