@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 114N-1563
+! Version: 115N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists --------------
@@ -133,11 +133,8 @@
 @@||js.wpadmngr.com/static/adManager.js^$domain=luscious.net
 @@||static-cdn.spot.im/production/conversation/*/ad-container-bundle.js
 
-! These Ads are opt-in and shouldn't be blocked
-@@||ads.brave.com^
-@@||ads-serve.brave.com^
-@@||grant.rewards.brave.com^
-@@||ads-static.brave.com^
+! Unbreaks a fair few websites
+@@||*.cdn.ezoic.net^$dnstype=CNAME
 
 ! Unbreak Stripe payments
 @@||js.stripe.com/*/fingerprinted/
@@ -836,6 +833,13 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||punctuationcousinclosure.com^
+||toprevenuegate.com^
+||analyticsnew.overwolf.com^
+||tracking.overwolf.com^
+||newlog.overwolf.com^
+||mobilefuse.com^
+||tracking.shopcider.com^
 ||analytics.kovah.de^
 ||logs.netflix.com^
 ||revive-adserver.net^
@@ -4096,7 +4100,6 @@ http://twitcount.com$3p
 ||beacon.netflix.com^
 ||beacon.nuskin.com^
 ||beacon.riskified.com^
-||beacon.schneidercorp.com^
 ||beacon.securestudies.com^
 ||beacon.sina.com.cn^
 ||beacon.sinauda.com^
@@ -11544,6 +11547,8 @@ http://twitcount.com$3p
 ||zzhengre.com^
 ||zzword.com^
 
+||bitwarden.com/browser-start/$doc
+||darkreader.org/goodluck/$doc
 ||add0n.com/feedback.html$doc
 ||webextension.org/feedback$doc
 ||webextension.org/listing/*&type=install$doc
@@ -11810,6 +11815,9 @@ http://twitcount.com$3p
 ||yahoo.com/f/track/tgt/imp?
 ||mail.quicken.com/open.aspx
 
+?newinstall$doc
+/extension-install$doc
+/extension-uninstall$doc
 */cats/meow/$popup,popunder
 */cats/meow/$image,xhr
 /rass7.$script
@@ -12886,6 +12894,21 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+zerohedge.com##div[class*="Article_innerContainer"]:has([class*="PremiumBadge"])
+wunderground.com##.cdk-overlay-container
+pornwhite.com##.spot
+wankoz.com##.top-spot
+boards.4chan.org##.danbo-slot
+boards.4chan.org##body > .adl
+windowsreport.com##.mv-ad-box
+m.youtube.com##ad-slot-renderer
+m.youtube.com##.scrollable-shelf:has-text(Breaking news)
+m.youtube.com##.fresh-feeds-dismissals.rich-section-content:has-text(Shorts)
+thehackernews.com##[href*="thn.news/"]:upward(div.cf[class*="gg-"])
+thehackernews.com##div.babsi.clear.check_two
+azlyrics.com##.text-center.top-ad
+azlyrics.com##.ringtone
+azlyrics.com###azmxmbanner
 hulu.com##[data-testid^="marquee-ad"]
 paypal.com###reactContainer__heroEngagement
 blockonomi.com##[href="/out/bc-game"]
@@ -13116,13 +13139,18 @@ youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
 youtube.com##.ytd-banner-promo-renderer-background
 youtube.com##.ytd-banner-promo-renderer.style-scope
 youtube.com##.ytd-brand-video-shelf-renderer.style-scope
-youtube.com##.ytd-in-feed-ad-layout-renderer
 youtube.com##.ytd-promoted-video-renderer
 youtube.com##.ytd-search-pyv-renderer
 youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
+##[src*="a.adtng.com/"]:not(html, body, button, input)
+##[src*="adv.mxmcdn.net/"]:not(html, body, button, input)
+##[src^="https://chaturbate.com/in/?tour="]:not(html, body, button, input)
+##[href*="claring-loccelkin.com"]:not(html, body, button, input)
+##[href^="https://s.zlinkb.com/d.php"]:not(html, body, button, input)
+##.cams-videos.related-videos:not(html, body, button, input)
 ###WIX_ADS, .WIX_ADS:not(html, body, button, input)
 ###FreeStarVideoAdContainer:not(html, body, button, input)
 ##[class*="AdContainer_"]:not(html, body, button, input)
@@ -13874,6 +13902,35 @@ youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd
 ~ads.$rewrite=abp-resource:blank-js
 
 ! Removeparam (AdGuard & uBlock Origin)
+$removeparam=clickId
+$removeparam=adId
+$removeparam=partnerId
+$removeparam=partnerName
+$removeparam=partnerType
+$removeparam=adTarget
+$removeparam=adDepartment
+$removeparam=clickHeader_productLocation
+$removeparam=clickHeader_productPosition
+$removeparam=clickHeader_pageNumber
+$removeparam=header_pageViewId
+$removeparam=product_impression_id
+$removeparam=impression_id
+$removeparam=trk_vertical
+$removeparam=trk_topic
+$removeparam=trk_sectionCategory
+$removeparam=trk_pagetype
+$removeparam=trk_nldt
+$removeparam=trk_location
+$removeparam=trk_element
+$removeparam=trk_channel
+$removeparam=sku_impression_id
+$removeparam=impression_section
+$removeparam=impression_position
+$removeparam=impression_pageview_id
+$removeparam=impression_page_url
+$removeparam=impression_page_name
+$removeparam=adName
+$removeparam=irclickid
 $removeparam=/^(u|m)tm_*/
 $removeparam=/^guce_referrer(_.+)?/
 $removeparam=/^uclick(.+)?/
@@ -14005,6 +14062,14 @@ $removeparam=cjevent
 $removeparam=c3nid
 $removeparam=y_source
 $removeparam=otppartnerid
+nerdwallet.com$removeparam=mvt
+nerdwallet.com$removeparam=link_type
+nerdwallet.com$removeparam=external_application
+nerdwallet.com$removeparam=calling_deployable_name
+apps.apple.com$removeparam=mt
+apps.apple.com$removeparam=ct
+apps.apple.com$removeparam=pt
+play.google.com$removeparam=referrer
 search.brave.com$removeparam=source
 tradedoubler.com$removeparam=tduid
 adguard-dns.io$removeparam=clid
@@ -14043,20 +14108,6 @@ bhphotovideo.com$removeparam=origSearch
 bhphotovideo.com$removeparam=sts
 appleinsider.com$removeparam=ref
 appleinsider.com$removeparam=refl
-
-! Redundancy
-
-! From uBo Privacy
-! https://github.com/uBlockOrigin/uBlock-issues/discussions/2714#discussioncomment-6396384
-!#if env_chromium
-*$permissions=browsing-topics=(),from=~localhost
-*$permissions=idle-detection=(),from=~localhost
-*$permissions=join-ad-interest-group=(),from=~localhost
-*$permissions=run-ad-auction=(),from=~localhost
-*$permissions=attribution-reporting=(),from=~localhost
-!#endif
-! https://github.com/uBlockOrigin/uBlock-issues/discussions/2714#discussioncomment-6535537
-@@||cjisonline.com^$permissions=browsing-topics=()
 
 ! From various now unknown places
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
