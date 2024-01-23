@@ -13136,8 +13136,6 @@ youtube.com##.sparkles-light-cta.ytd-item-section-renderer.style-scope
 youtube.com##.sparkles-light-cta.ytd-watch-next-secondary-results-renderer.style-scope
 youtube.com##.vidiq-social-stats-upsell
 youtube.com##.ytd-ad-slot-renderer.style-scope:upward(ytd-rich-item-renderer)
-youtube.com##.ytd-banner-promo-renderer-background
-youtube.com##.ytd-banner-promo-renderer.style-scope
 youtube.com##.ytd-brand-video-shelf-renderer.style-scope
 youtube.com##.ytd-promoted-video-renderer
 youtube.com##.ytd-search-pyv-renderer
