@@ -19,7 +19,7 @@
 *##^script:has-text(detectAdBlock1)
 *##^script:has-text(detectAdBlockAll)
 *##^script:has-text(window['gtag'])
-*##^script:has-text(juicyads.rocks)
+*,~github.com##^script:has-text(juicyads.rocks)
 *##^script:has-text(.isAdblock)
 *##^script:has-text(analytics.plugins.)
 *##^script:has-text(vads.viewport_width)
