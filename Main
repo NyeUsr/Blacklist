@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 116N-1563
+! Version: 117N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists --------------
@@ -833,6 +833,7 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||welcome.adguard.com^
 ||punctuationcousinclosure.com^
 ||toprevenuegate.com^
 ||analyticsnew.overwolf.com^
@@ -14105,6 +14106,20 @@ bhphotovideo.com$removeparam=origSearch
 bhphotovideo.com$removeparam=sts
 appleinsider.com$removeparam=ref
 appleinsider.com$removeparam=refl
+glassdoor.com$removeparam=pos
+glassdoor.com$removeparam=ao
+glassdoor.com$removeparam=s
+glassdoor.com$removeparam=guid
+glassdoor.com$removeparam=src
+glassdoor.com$removeparam=t
+glassdoor.com$removeparam=vt
+glassdoor.com$removeparam=uido
+glassdoor.com$removeparam=ea
+glassdoor.com$removeparam=cs
+glassdoor.com$removeparam=cb
+glassdoor.com$removeparam=cpc
+glassdoor.com$removeparam=ctt
+glassdoor.com$removeparam=jrtk
 
 ! From various now unknown places
 doods.pro,dooood.com,dood.yt,dood.re,dood.wf,dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws##+js(acis, document.getElementsByClassName, allow adblock)
