@@ -165,6 +165,7 @@
 *://*.liveperson.com/*
 *://*.liveperson.net/*
 *://*.lynda.com/*
+*://*.microsoftedgeinsider.com/*
 *://*.makecode.com/*
 *://*.masterinsurance.org/*
 *://*.mceserv.net/*
