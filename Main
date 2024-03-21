@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 117N-1563
+! Version: 118N-1563
 ! Approximate amount of entries: 13.5K
 
 ! Resources to help you better understand filter lists --------------
@@ -833,6 +833,9 @@ http://twitcount.com$3p
 ! Block third-party IP addresses from connecting
 /https?:\/\/(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}/$3p,domain=~mega.nz|~mega.io|~192.168.1.1|~192.168.254.254|~127.0.0.1
 
+||sentry.honeygain.com^
+||gtm-server.healthline.com^
+||conduit-beacon.mtvnservices.com^
 ||welcome.adguard.com^
 ||punctuationcousinclosure.com^
 ||toprevenuegate.com^
@@ -3493,7 +3496,6 @@ http://twitcount.com$3p
 ||afraidlanguage.com^
 ||africa-newsroom.com^
 ||africawin.com^
-||afs.googleusercontent.com^
 ||afsanalytics.com^
 ||afternoon.world^
 ||agacelebir.com^
@@ -12894,6 +12896,7 @@ _right_ads.php
 _left_ads.php
 _statsonlineinfo
 
+miohentai.com##.new-ntv
 zerohedge.com##div[class*="Article_innerContainer"]:has([class*="PremiumBadge"])
 wunderground.com##.cdk-overlay-container
 pornwhite.com##.spot
@@ -13143,6 +13146,7 @@ youtube.com##.ytd-video-masthead-ad-v3-renderer
 youtube.com##ytd-compact-promoted-video-renderer.ytd-item-section-renderer.style-scope
 youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
 
+##[id*="_AD_INJECTION"]:not(html, body, button, input)
 ##[src*="a.adtng.com/"]:not(html, body, button, input)
 ##[src*="adv.mxmcdn.net/"]:not(html, body, button, input)
 ##[src^="https://chaturbate.com/in/?tour="]:not(html, body, button, input)
