@@ -4,3 +4,17 @@
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
 ! Version: 1
+
+||redditmedia.com^
+||twitter.com/i/flow/login$doc
+||twitter.com/i/flow/signup$doc
+||cdn-apple.com^$domain=twitter.com
+||google.com^$domain=twitter.com
+||api.twitter.com/1.1/onboarding/task.json?flow_name=signup
+||api.twitter.com/1.1/onboarding/task.json?flow_name=login
+.SignupModule.$script,domain=twitter.com
+twitter.com##div[role="button"]:has-text(Yes, view profile)
+! https://www.ign.com/articles/twitch-new-sexual-content-guidelines-artistic-nudity
+||twitch.tv^
+||ttvnw.net^
+||twitchcdn.net^
