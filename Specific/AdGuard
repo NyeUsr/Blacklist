@@ -230,8 +230,6 @@ com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xx
 !+ NOT_OPTIMIZED
 com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##[class*="refinitiv-promo-bar"]:not(html, body, button, input)
 !+ NOT_OPTIMIZED
-com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.cookie-notice-container:not(html, body, button, input)
-!+ NOT_OPTIMIZED
 com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##div.js-ad-slot:not(html, body, button, input)
 !+ NOT_OPTIMIZED
 com,co,ch,uk,ru,us,jp,in,hk,tv,de,cn,net,info,io,ly,me,xyz,mobi,biz,zone,porn,xxx##.ad-box-auto:not(html, body, button, input)

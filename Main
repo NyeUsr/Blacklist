@@ -3,8 +3,8 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 118N-1563
-! Approximate amount of entries: 13.5K
+! Version: 119N-1563
+! Approximate amount of entries: 14K
 
 ! Resources to help you better understand filter lists --------------
 ! Ublock Origin Static Filter Syntax                                |
@@ -62,7 +62,6 @@
 @@||synchronycredit.com^$1p
 @@||syf.com^$1p
 @@||municipalonlinepayments.com^$1p
-@@||synchronysurvey.siteintercept.qualtrics.com^$1p
 @@||b2clogin.com^$1p
 @@||secureinternetbank.com^$1p
 @@||midamericanenergy.com^$1p
@@ -72,7 +71,6 @@
 @@||fidelity.demdex.net^
 @@||r.3gl.net^
 @@||fmrcorp.tt.omtrdc.net^
-@@||zncvgjh8lmjxbkyln-fmrpi.siteintercept.qualtrics.com^
 @@||siteintercept.qualtrics.com^
 @@||cm.everesttech.net^
 @@||mboxedge35.tt.omtrdc.net^
@@ -135,6 +133,7 @@
 
 ! Unbreaks a fair few websites
 @@||*.cdn.ezoic.net^$dnstype=CNAME
+@@||*.cdn.ezoic.net^$cname
 
 ! Unbreak Stripe payments
 @@||js.stripe.com/*/fingerprinted/
@@ -175,7 +174,8 @@
 @@||data.mistat.intl.xiaomi.com^
 
 ! CNAME mkt*5.com is blocked
-@@||info.vercel.com^
+@@||mkt*5.com^$dnstype=CNAME
+@@||mkt*5.com^$cname
 
 ! Just docs & status page, nothing else
 @@||docs.bugsnag.com^
@@ -1053,7 +1053,6 @@ http://twitcount.com$3p
 ||profitablecreativeformat.com^
 ||rationalizedalton.com^
 ||gymdeserves.com^
-||highcpmrevenuegate.com^
 ||maleliteral.com^
 ||stringssymptomfishing.com^
 ||heartbrokenbarrellive.com^
@@ -1238,10 +1237,7 @@ http://twitcount.com$3p
 ||dzhjmp.com^
 ||smljmp.com^
 ||zeddit.com^$3p
-||hazanuttriazo.life^
-||bakersvetoer.com^
 ||blunksdaler.uno^
-||viewyentreat.guru^
 ||pvmteagghntoh.xyz^
 ||saiceezu.xyz^
 ||telemetry.canva.com^
@@ -1737,7 +1733,6 @@ http://twitcount.com$3p
 ||alargeredrubygsw.com^
 ||tzegilo.com^
 ||voyageschoolanymore.com^
-||banquetunarmedgrater.com^
 ||whatsoeverlittle.com^
 ||refrigeratemaimbrunette.com^
 ||hxgqqxopf.com^
@@ -1809,7 +1804,6 @@ http://twitcount.com$3p
 ||mybetterck.com^$popup,popunder
 ||tumultmarten.com^$popup,popunder
 ||nimrute.com^$popup,popunder
-||realsrv.com^$popup,popunder
 ||analytics.google.com^$3p
 ||stand-with-ukraine.pp.ua^$3p
 ||bam-x.com^$3p
@@ -9687,7 +9681,6 @@ http://twitcount.com$3p
 ||sitedataprocessing.com^
 ||siteimprove.com^
 ||siteimproveanalytics.com^
-||siteintercept.qualtrics.com^
 ||sitemaji.com^
 ||sitescout.com^
 ||sitestat.com^
@@ -11691,7 +11684,6 @@ http://twitcount.com$3p
 ||brave.com/promo/
 .cloudfront.net/?qngud=
 ||hooligapps.com/s/f.php
-||api.pinterest.com/*/count.json?callback=WPCOMSharing.
 ||i.bcicdn.com/promotions/
 ||gofundme.com/track
 .s3.amazonaws.com/domainConfig/
@@ -11826,7 +11818,6 @@ http://twitcount.com$3p
 /rass7.$script
 /imp.gif?ez_orig
 /wp-admin/*.exe
-/popunder.gif
 /popunder/in$popup,popunder
 /_xa/ads_
 */zoneload/preroll_exo/
@@ -11835,8 +11826,8 @@ http://twitcount.com$3p
 $ORIGIN_PNG$
 ?utm_medium=Advertising$frame
 :*/in/$popup,popunder
-/clickadu-us-desktop/
-/extension/uninstall/$doc
+*/clickadu-us-desktop/
+*/extension/uninstall/$doc
 /footer_ads.php?$subdocument
 /count_view
 ?sentry_key=*&sentry_version=
@@ -12317,7 +12308,6 @@ beacon*$image
 */criteo/
 /chartbeat.
 */pixeljs/
-/appstore-install-badges/
 /cmd.php?ad=*
 ext.track.scripts*
 */logcollect/
@@ -12475,7 +12465,7 @@ ext.track.scripts*
 /react-dom/cjs/react-dom.production.min.js
 /pixel-clear.gif?
 /storefront/track?
-/meks-easy-ads-widget/
+*/meks-easy-ads-widget/
 /td-ads-model-min.js
 */dnsdetect/
 /getLiveRadioAdConfig
@@ -12574,7 +12564,6 @@ ext.track.scripts*
 /adblockdetect.
 /adblockdetection.
 /anti_ab.
-/antiadblock.
 */wp-content/plugins/anti_ad_blocker/
 */adblock_detection/
 /antipubblicita.js
@@ -12649,7 +12638,7 @@ ext.track.scripts*
 /clear1x1.$image
 /promoted_content/log
 /ac/qzfl/stat.js
-/barclays-monitoring/
+*/barclays-monitoring/
 /visit.json
 */audiencenetwork/token/
 /AC_ad_*_*.$image
@@ -12734,7 +12723,7 @@ ext.track.scripts*
 /google-adblock.js
 /gm-ga.min.js
 /adoefieldlite-
-/plugins/mashsharer/$script
+*/plugins/mashsharer/$script
 /adOk?
 */adtech/
 /gravitate-event-tracking
@@ -12799,8 +12788,8 @@ ext.track.scripts*
 */linktrack/
 /marketing/mail-
 */appserve/mkt/$3p
-/email_trackers
-/email/tracking/$3p
+/email_trackers$3p
+/email/tracking$3p
 /mail/track-open
 /ads-config.min.js
 /ads-async
@@ -12887,7 +12876,6 @@ _fingerprint
 -sponsored-outbrain-
 -ad-powerinbox-inline-
 -ad-display.z-ad-
-!-analytics-$domain=~flickr.com|~github.com|~walmart.com
 videoiq-*
 tds_campaign=
 mas_jump_
@@ -12921,9 +12909,6 @@ blockonomi.com##[href="/out/3commaside"]
 duckduckgo.com##li:has-text(Report Ad)
 duckduckgo.com##.products-carousel:has-text(Ads)
 freeyourmusic.com##[href^="https://music.apple.com/subscribe"]:upward(.container)
-gigabyte.com###policy-div
-quora.com##[class*="_google_ad"]:upward(.q-box)
-weatherology.com###cookieMessage
 adguard-vpn.com##.annoyance
 flickr.com##.upgrade-to-pro-cta:upward(1)
 flickr.com##.flickr-view-root-view.cookie-banner-view.view
@@ -12971,7 +12956,6 @@ reuters.com##[class*="article-body__context_widget"]:has-text(Follow)
 nih.gov##.pmc-article__disclaimer
 academic.oup.com##.fullWidth.edit-modal-banner:has-text(cookies)
 howtogeek.com##.relateditemwrap:upward(1)
-apkpure.com###policy-info
 bhphotovideo.com##[class*="chatBanner"]
 youtube.com##.yt-mealbar-promo-renderer
 youtube.com##.yt-mealbar-promo-renderer-content
@@ -13040,10 +13024,6 @@ iceporn.com##.drt-spot-visible.drt-spot-box
 iceporn.com##.puffery
 iceporn.com##div.take_place:has-text(Live cams)
 investopedia.com##.mntl-leaderboard-spacer.js-rollaway-spacer
-kcci.com##.data-id\=.cream-inline.related-embed
-kcci.com##.data-id\=.cream-inline.related-embed
-kcci.com##.embed-inner > .related-embed
-kcci.com##.no-cream.article-content--footer
 kcci.com##.no-cream.article-content--footer
 kcci.com##.related-embed
 kinsta.com##.app-hosting-cta
@@ -13129,7 +13109,6 @@ wikipedia.org##[class*="frb-country"]
 wikipedia.org##[class*="frb-inline-"]
 wired.com##.journey-template--paywall-bar
 wired.com##.paywall[class*="SidebarHeading"]:has-text(Related Stories):upward(1)
-xhamster2.com##.rendered.horizontal.as-width-wrap.yfd-fdcams-widget
 xhamster2.com##.width-wrap.yfd-fdclipstore-bottom
 xhamster2.com##.yfd-fdcams-widget
 xhamster2.com##.yfd-fdsp-a
@@ -13624,7 +13603,6 @@ youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd
 ##.jnews-cookie-law-policy:not(html, body, button, input)
 ##.ad-zone:not(html, body, button, input)
 ##.machete_cookie_bar:not(html, body, button, input)
-##.cookie-notice-container:not(html, body, button, input)
 ###branda-cookie-notice:not(html, body, button, input)
 ##.home-bottom-ad-wrap:not(html, body, button, input)
 ##.adv > div:not(html, body, button, input)
