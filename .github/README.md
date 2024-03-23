@@ -3,7 +3,8 @@ Name |      Description      | Subscribe |
 ----- |:----------------------|---------|
 **Main** | The main list for your adblocker of choice! | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FMain&amp;title=NyeUsr's%20Main%20Blacklist) 
 **Domains** | A domain only version of the main blacklist. Good for easy importing into things such as NextDNS. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FDomains&amp;title=NyeUsr's%20Domain%20Only%20Blacklist)
-**Porn** | A simple porn blacklist. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FPorn&amp;title=NyeUsr's%20Porn%20Blacklist)
+**Porn** | A simple porn blacklist with minimal false positives. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FPorn&amp;title=NyeUsr's%20Porn%20Blacklist)
+**Mixed Content** | A mixed content blacklist. Good for use in addition to the Porn blacklist. | [Click me!](https%3A%2F%2Fsubscribe.adblockplus.org%3Flocation%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FMixed%20Content%26amp%3Btitle%3DNyeUsr%27s%20Mixed%20Content%20Blacklist)
 
 <br>
 

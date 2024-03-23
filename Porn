@@ -1,20 +1,15 @@
 [Adblock Plus]
 ! Title: NyeUsr's Porn Blacklist
-! Description: A simple porn blacklist with AdBlock syntax rules.
+! Description: A simple porn blacklist with minimal false positives.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 43-ER
+! Version: 44
 
 ! https://www.youtube.com/watch?v=Vtp31feyTfM
 ! https://www.youtube.com/watch?v=wSF82AwSDiU
 ! https://www.youtube.com/watch?v=7oFVOJf0TzY
-
-! 𝘍𝘭𝘺 𝘧𝘰𝘳𝘯𝘪𝘤𝘢𝘵𝘪𝘰𝘯. 𝘌𝘷𝘦𝘳𝘺 𝘴𝘪𝘯 𝘵𝘩𝘢𝘵 𝘢 𝘮𝘢𝘯 𝘥𝘰𝘵𝘩, 𝘪𝘴 𝘸𝘪𝘵𝘩𝘰𝘶𝘵 𝘵𝘩𝘦 𝘣𝘰𝘥𝘺; 𝘣𝘶𝘵 𝘩𝘦 𝘵𝘩𝘢𝘵 𝘤𝘰𝘮𝘮𝘪𝘵𝘵𝘦𝘵𝘩 𝘧𝘰𝘳𝘯𝘪𝘤𝘢𝘵𝘪𝘰𝘯, 𝘴𝘪𝘯𝘯𝘦𝘵𝘩 𝘢𝘨𝘢𝘪𝘯𝘴𝘵 𝘩𝘪𝘴 𝘰𝘸𝘯 𝘣𝘰𝘥𝘺.
-
-! 𝘖𝘳 𝘬𝘯𝘰𝘸 𝘺𝘰𝘶 𝘯𝘰𝘵, 𝘵𝘩𝘢𝘵 𝘺𝘰𝘶𝘳 𝘮𝘦𝘮𝘣𝘦𝘳𝘴 𝘢𝘳𝘦 𝘵𝘩𝘦 𝘵𝘦𝘮𝘱𝘭𝘦 𝘰𝘧 𝘵𝘩𝘦 𝘏𝘰𝘭𝘺 𝘎𝘩𝘰𝘴𝘵, 𝘸𝘩𝘰 𝘪𝘴 𝘪𝘯 𝘺𝘰𝘶, 𝘸𝘩𝘰𝘮 𝘺𝘰𝘶 𝘩𝘢𝘷𝘦 𝘧𝘳𝘰𝘮 𝘎𝘰𝘥; 𝘢𝘯𝘥 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘯𝘰𝘵 𝘺𝘰𝘶𝘳 𝘰𝘸𝘯?
-
-! 𝘍𝘰𝘳 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘣𝘰𝘶𝘨𝘩𝘵 𝘸𝘪𝘵𝘩 𝘢 𝘨𝘳𝘦𝘢𝘵 𝘱𝘳𝘪𝘤𝘦. 𝘎𝘭𝘰𝘳𝘪𝘧𝘺 𝘢𝘯𝘥 𝘣𝘦𝘢𝘳 𝘎𝘰𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳 𝘣𝘰𝘥𝘺.
-! - 1 𝘊𝘰𝘳𝘪𝘯𝘵𝘩𝘪𝘢𝘯𝘴 6:18-20 (𝘋𝘙𝘈)
+!
+! https://www.yourbrainonporn.com/research/
 
 ! Block some DNS servers which may be enabled by default and preventing blocking
 ||mozilla.cloudflare-dns.com^
@@ -41,7 +36,6 @@ twitter.com##div[role="button"]:has-text(Yes, view profile)
 ||images.search.yahoo.com^
 ||video.search.yahoo.com^
 ||mojeek.com^
-!||search.brave.com^
 
 ! https://help.duckduckgo.com/duckduckgo-help-pages/features/safe-search/
 ||duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
@@ -156,6 +150,12 @@ barely%20legal$doc
 ||sexy^
 ||exposed^
 
+||miohentai.com^
+||superiorcups.com^
+||cam4free.com^
+||erotik-von-nebenan.com^
+||catalinacruz.com^
+||pornestro.com^
 ||theporn.how^
 ||cum4k.com^
 ||thiefslut.com^
