@@ -3,13 +3,25 @@
 ! Description: A simple porn blacklist with minimal false positives.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 44
+! Version: 45
 
-! https://www.youtube.com/watch?v=Vtp31feyTfM
-! https://www.youtube.com/watch?v=wSF82AwSDiU
-! https://www.youtube.com/watch?v=7oFVOJf0TzY
-!
-! https://www.yourbrainonporn.com/research/
+! Resources ---------------------------------------------------------
+! How Porn Is Destroying You and Our Country                        |
+! https://www.youtube.com/watch?v=Vtp31feyTfM                       |
+!                                                                   |
+! Your Brain on Porn: How Internet porn affects the brain           |
+! https://www.youtube.com/watch?v=7oFVOJf0TzY                       |
+! https://www.yourbrainonporn.com/research/                         |
+!                                                                   |
+! The great porn experiment | Gary Wilson | TEDxGlasgow             |
+! https://www.youtube.com/watch?v=wSF82AwSDiU                       |
+!--------------------------------------------------------------------
+
+! Support/Communities -----------------------------------------------
+! https://rebootnation.org/                                         |
+!                                                                   |
+! https://nofap.com/                                                |
+!--------------------------------------------------------------------
 
 ! Block some DNS servers which may be enabled by default and preventing blocking
 ||mozilla.cloudflare-dns.com^
@@ -53,6 +65,20 @@
 /^thot/$ctag=user_child
 /thot(s)?$/$ctag=user_child
 
+! Attempt to block sites with the Restricted To Adults (RTA) label
+~www.rtalabel.org##html:has(img[alt="Restricted To Adults Image"])
+~www.rtalabel.org##html:has(img[alt="RTA Restricted To Adults"])
+~www.rtalabel.org##html:has(img[alt="RTA Labeled"])
+~www.rtalabel.org##html:has(img[alt="RTA Verified"])
+~www.rtalabel.org##html:has(img[id="RTAImage"])
+~www.rtalabel.org##html:has(a[aria-label="RTA logo"])
+~www.rtalabel.org##html:has(a[data-qa="footer_rta"])
+~www.rtalabel.org##html:has(a[href^="http://rtalabel.org"])
+~www.rtalabel.org##html:has(a[href^="http://www.rtalabel.org"])
+~www.rtalabel.org##html:has(a[href*="rtalabel.org/?content=validate"])
+~www.rtalabel.org##html:has(a[href*="asacp.org/?content=validate&ql="])
+
+! Keywords for ad/content blockers
 young-libertines$doc
 webcam-sex$doc
 porntube$doc
@@ -128,7 +154,7 @@ bukkake$doc
 barely%20legal$doc
 /thots/$doc
 
-! Block TLDs
+! Block adult TLDs
 ||porn^
 ||xxx^
 ||sex^
