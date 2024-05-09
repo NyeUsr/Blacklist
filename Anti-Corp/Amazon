@@ -4,7 +4,6 @@
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
-||amazonsilk.com^
 ||a2z.com^
 ||abebooks.com^
 ||abebookscdn.com^
@@ -13,7 +12,9 @@
 ||amazon.ca^
 ||amazon.com^
 ||amazon.de^
+||amazon.dev^
 ||amazonaws.com^
+||amazonsilk.com^
 ||audible.com^
 ||aws.dev^
 ||awsdns-*.co.uk^
@@ -27,6 +28,7 @@
 ||dpreview.com^
 ||eero-dev.myshopify.com^
 ||eero.com^
+||firetvcaptiveportal.com^
 ||glowroad.com^
 ||goodreads.com^
 ||graphiq.com^
