@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 120N-1563
+! Version: 121N-1563
 ! Approximate amount of entries: 14K
 
 ! Resources to help you better understand filter lists --------------
@@ -731,43 +731,81 @@ http://twitcount.com$3p
 ||fbcdn.net^$domain=~facebook.com|~fb.com|~instagram.com
 ||facebook.net^$3p,domain=~facebook.com|~fb.com|~instagram.com
 
-! Top abused or likely to be abused TLDs
-
-.zip/^
+! Top likely to be abused TLDs
+.bar/^$3p
+.bet/^$3p
+.bio/^$3p
+.biz/^$3p
+.boats/^$3p
+.bond/^$3p
+.boutique/^$3p
+.buzz/^$3p
+.center/^$3p
+.cf/^$3p
+.charity/^$3p
+.christmas/^$3p
+.club/^$3p
+.coupons/^$3p
+.cyou/^$3p
+.dad/^$3p
+.dance/^$3p
+.date/^$3p
+.degree/^$3p
+.digital/^$3p
+.directory/^$3p
+.esq/^$3p
+.finance/^$3p
+.fishing/^$3p
+.foo/^$3p
+.fyi/^$3p
+.ga/^$3p
+.giving/^$3p
+.gq/^$3p
+.guru/^$3p
+.hair/^$3p
+.haus/^$3p
+.homes/^$3p
+.ink/^$3p
+.kim/^$3p
+.lat/^$3p
+.life/^$3p
+.llp/^$3p
+.love/^$3p
+.ltd/^$3p
+.makeup/^$3p
+.market/^$3p
+.men/^$3p
+.mom/^$3p
+.motorcycles/^$3p
 .mov/^$~media
-.bid/^$3p
-.cfd/^$3p
-.discount/^$3p
-.gdn/^$3p
-.loan/^$3p
-.loans/^$3p
-.sbs/^$3p
-.aaa/^$3p
-.beauty/^$3p
-.best/^$3p
-.cam/^$3p
-.click/^$3p
-.fit/^$3p
-.garden/^$3p
-.gay/^$3p
-.icu/^$3p
-.joy/^$3p
-.lgbt/^$3p
-.lol/^$3p
-.money/^$3p
-.monster/^$3p
-.okinawa/^$3p
-.ooo/^$3p
-.racing/^$3p
-.rest/^$3p
-.review/^$3p
-.software/^$3p
-.solar/^$3p
-.surf/^$3p
-.tk/^$3p
-.tt/^$3p
-.win/^$3p
-.work/^$3p
+.name/^$3p
+.pet/^$3p
+.phd/^$3p
+.prof/^$3p
+.promo/^$3p
+.quest/^$3p
+.rehab/^$3p
+.rip/^$3p
+.rodeo/^$3p
+.rugby/^$3p
+.run/^$3p
+.sale/^$3p
+.sew/^$3p
+.skin/^$3p
+.sz/^$3p
+.tattoo/^$3p
+.today/^$3p
+.tokyo/^$3p
+.trade/^$3p
+.uno/^$3p
+.voto/^$3p
+.wang/^$3p
+.website/^$3p
+.wf/^$3p
+.wtf/^$3p
+.yachts/^$3p
+.you/^$3p
+.zip/^
 .zone/^$3p,domain=~itch.io
 
 ! Popunder AdGuard exclusions
@@ -10206,7 +10244,6 @@ http://twitcount.com$3p
 ||systemexplorer.net^
 ||szmg.qq.com^
 ||szn.cz^
-||t0.gstatic.com^
 ||t1.daumcdn.net^
 ||t2.hulu.com^
 ||t7strip.com^
