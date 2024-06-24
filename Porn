@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with minimal false positives.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 46
+! Version: 48N
 
 ! Resources ---------------------------------------------------------
 ! How Porn Is Destroying You and Our Country                        |
@@ -156,6 +156,9 @@ barely%20legal$all
 /thots/$all
 /nsfw$all
 /sex-simulator$all
+/ρornhuβ$all
+/pornhub.$all
+/3dporn$all
 
 ! Block adult TLDs
 ||porn^
@@ -164,6 +167,80 @@ barely%20legal$all
 ||sexy^
 ||exposed^
 
+||freepornsites.net^
+||sexualalpha.com^
+||adultvisor.com^
+||fanscribers.com^
+||thepornapp.com^
+||theporncall.com^
+||xratedapk.com^
+||zanithone.itch.io^
+||hotarupixie.itch.io^
+||roddio.itch.io^
+||helloarisu.itch.io^
+||cumbusters.itch.io^
+||ncrow.itch.io^
+||quiquersson.itch.io^
+||kintsugi-digital.itch.io^
+||hexatail.itch.io^
+||hatchet-games.itch.io^
+||iondivvy.itch.io^
+||radlord.itch.io^
+||lostlife.app^
+||lostlife.me^
+||lost-life.net^
+||lostlifeapk.com^
+||naughty-capy.itch.io^
+||oppaiman.itch.io^
+||escape-sauce.itch.io^
+||tukann.itch.io^
+||hizor-games.itch.io^
+||boredbasmati.itch.io^
+||berkili4.itch.io^
+||kagetodev.itch.io^
+||gunsmokegames.itch.io^
+||lazybloodlines.itch.io^
+||55games.itch.io^
+||cosy-creator.itch.io^
+||onioncuttingninja.itch.io^
+||naughty-fox-games.itch.io^
+||thepricelessbeam.itch.io^
+||rex-07.itch.io^
+||mrcreep-games.itch.io^
+||marlisstudio.itch.io^
+||fmx18.itch.io^
+||eroticdrop.itch.io^
+||jason-lecoeur.itch.io^
+||greebox.itch.io^
+||jorgemario.itch.io^
+||thegreys.itch.io^
+||fundigames.itch.io^
+||dipeppo.itch.io^
+||demonlad.itch.io^
+||dotxlsgames.itch.io^
+||hotvenusstudios.itch.io^
+||ninjahead.itch.io^
+||cllgames.itch.io^
+||marlisstudio.itch.io^
+||rocketwithballs.itch.io^
+||chrys-lair.itch.io^
+||lewd-project.itch.io^
+||neon-berry.itch.io^
+||ulith-dev.itch.io^
+||ruykiru.itch.io^
+||ulith-dev.itch.io^
+||dragofinder.itch.io^
+||nsfwgame.itch.io^
+||ags-001.itch.io^
+||promiscuous-life.itch.io^
+||xporn3d.net^
+||adultonlineplay.net^
+||fapdrop.com^
+||svs-games.com^
+||gamevirt.com^
+||sexfamilysim.net^
+||fortheloveofgames.net^
+||aiadultgames.net^
 ||sukebezone.com^
 ||n8ked.app^
 ||deepnude.cc^
