@@ -4,26 +4,34 @@
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 1 day
 
+||.apple^
 ||aaplimg.com^
+||apple-cloudkit.com^
 ||apple-dns.net^
+||apple-mapkit.com^
 ||apple.com.akadns.net^
 ||apple.com.cn^
 ||apple.com.edgekey.net.globalredir.akadns.net^
 ||apple.com.edgekey.net^
 ||apple.com.edgesuite.net^
 ||apple.com^
+||apple.map.fastly.net^
 ||apple.net^
 ||apple.news^
 ||apple.pa^
 ||applecard.apple^
+||appledownload.map.fastly.net^
 ||applemusic.com^
 ||applimg.com^
 ||beatsbydre.com^
+||carekit.org^
 ||cdn-apple.com.akadns.net^
 ||cdn-apple.com^
 ||darksky.net^
 ||e673.dsce9.akamaiedge.net^
 ||e6987.a.akamaiedge.net^
+||edge-itunes-apple.com.akadns.net^
+||edge.apple^
 ||ess-apple.com.akadns.net^
 ||gc-apple.com.akadns.net^
 ||gcsis-apple.com.akadns.net^
@@ -34,6 +42,7 @@
 ||itunes-apple.com.akadns.net^
 ||itunes-nocookie.com^
 ||itunes.com.edgekey.net^
+||itunes.com^
 ||ls-apple.com.akadns.net^
 ||ls2-apple.com.akadns.net^
 ||ls3-apple.com.akadns.net^
@@ -44,6 +53,7 @@
 ||nic.beats^
 ||origin-apple.com.akadns.net^
 ||push-apple.com.akadns.net^
+||safebrowsing.apple^
 ||shazam.com^
 ||swift.org^
 ||webkit.org^
