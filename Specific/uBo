@@ -1,5 +1,6 @@
 ! Remove attribute
-*##+js(ra, ping, stay)
+! Probably more efficient to just use *$ping to block connections made than attempt to manipulate DOM elements on each page load
+!*##+js(ra, ping, stay)
 *##+js(ra, real-href, stay)
 *##+js(ra, onmouseup, a[onmouseup="setRealHref(event)"], stay)
 *##+js(ra, rel, link[rel*="pingback"], stay)
@@ -64,3 +65,7 @@
 *,~github.com##^script:has-text(You\'re using an AdBlocker)
 theepochtimes.com##^script:has-text(eet_tags)
 !#endif
+
+! Test URL
+! https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2JURGRIVEc1bnltNW5KNWljVHJ2MzNxaG5pd3xBQ3Jtc0tsckFveUpOYkJxcV9Ick0weDhGbldGTU84bHhPbVFzdUswR21uWGZOdUFnX1JpN3lZbVRlbVAtZ3I1WlNvX0NTV0Z5Yjdicmg4VEF0OXBsVXZ0NmxacU5Rb1hubU40Y2lTMGZSSDdZczJ0Qkc3azMxbw&q=https%3A%2F%2Fwww.twitch.tv%2Fblarglive&v=D6LQb41Y36U
+||youtube.com/redirect$urlskip=?q -uricomponent
