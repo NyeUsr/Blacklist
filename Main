@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 125N-1563
+! Version: 126N-1563
 ! Approximate amount of entries: 14K
 
 ! Resources to help you better understand filter lists --------------
@@ -235,6 +235,13 @@
 
 ! Breaks Google login buttons
 ||accounts.google.com/gsi/$~script,badfilter
+
+! Fix login page
+indeed.com#@#^script:has-text(pixelUrl)
+
+! Breaks some login pages like the one for Kohl's
+! From uBlock filters – Cookie Notices
+www.google.com#@#+js(trusted-set-cookie, SOCS, CAISNQgQEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjQwNTE0LjA2X3AwGgJmaSADGgYIgOu0sgY, 1year, , domain, google.com)
 
 ! Uncategorized
 @@||auth-*.tinypass.com^
