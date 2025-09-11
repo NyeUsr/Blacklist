@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 126N-1563
+! Version: 127N-1563
 ! Approximate amount of entries: 14K
 
 ! Resources to help you better understand filter lists --------------
@@ -14109,9 +14109,6 @@ nerdwallet.com$removeparam=mvt
 nerdwallet.com$removeparam=link_type
 nerdwallet.com$removeparam=external_application
 nerdwallet.com$removeparam=calling_deployable_name
-apps.apple.com$removeparam=mt
-apps.apple.com$removeparam=ct
-apps.apple.com$removeparam=pt
 play.google.com$removeparam=referrer
 search.brave.com$removeparam=source
 tradedoubler.com$removeparam=tduid
