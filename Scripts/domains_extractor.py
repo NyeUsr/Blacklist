@@ -1,20 +1,18 @@
 import re
+from pathlib import Path
 
-# Define regex pattern to extract domains from line
-domain_pattern = re.compile(r"\|\|([^\$@\^/]+)\^")
+repo_root = Path(__file__).resolve().parent.parent
+input_path = repo_root / "Main"
+output_path = repo_root / "Domains"
 
-# Patterns to discard lines
-unwanted_patterns = {'@@', '\$', '^/', '/$', '[\$\@]', '\*'}
+# Extract plain blocking domains from rules like: ||example.com^
+domain_pattern = re.compile(r"^\|\|([^\$@\^/]+)\^")
 
-with open("input.txt", "r") as input_file, open("Domains", "w") as output_file:
-    # Extract domains from input file using regex pattern
+
+with input_path.open("r", encoding="utf-8") as input_file, output_path.open(
+    "w", encoding="utf-8"
+) as output_file:
     for line in input_file:
-        # Check if line contains any unwanted patterns
-        if any(re.search(pattern, line) for pattern in unwanted_patterns):
-            continue
-
-        # Extract domain from line using regex pattern
-        domain_match = domain_pattern.search(line)
+        domain_match = domain_pattern.search(line.strip())
         if domain_match:
-            domain = domain_match.group(1)
-            output_file.write(domain + "\n")
+            output_file.write(domain_match.group(1) + "\n")
