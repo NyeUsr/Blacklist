@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with minimal false positives.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 48N
+! Version: 49N
 
 ! Resources ---------------------------------------------------------
 ! How Porn Is Destroying You and Our Country                        |
@@ -29,7 +29,7 @@
 ||dns.google.com^
 
 ! Restrict/block engines that don't support safe search
-||explicit.bing.net^
+! dead 2026-05-19 ||explicit.bing.net^
 ||images.search.yahoo.com^
 ||video.search.yahoo.com^
 ||mojeek.com^
@@ -244,7 +244,7 @@ barely%20legal$all
 ||sukebezone.com^
 ||n8ked.app^
 ||deepnude.cc^
-||clothoff.io^
+! dead 2026-05-19 ||clothoff.io^
 ||dreamgf.ai^
 ||deepnude.ca^
 ||nudify.online^
@@ -252,7 +252,7 @@ barely%20legal$all
 ||pornjoy.ai^
 ||candy.ai^
 ||deepnudify.com^
-||undressing.io^
+! dead 2026-05-19 ||undressing.io^
 ||smexy.ai^
 ||onlybabes.ai^
 ||deepnudenow.com^
@@ -261,7 +261,7 @@ barely%20legal$all
 ||makenude.ai^
 ||deep-nude.co^
 ||undress.love^
-||deepsukebe.io^
+! dead 2026-05-19 ||deepsukebe.io^
 ||nudeme.net^
 ||undress.vip^
 ||nubee.ai^
@@ -270,7 +270,7 @@ barely%20legal$all
 ||pornderful.ai^
 ||gptgirlfriend.online^
 ||yimeta.ai^
-||nudify.life^
+! dead 2026-05-19 ||nudify.life^
 ||x-pictures.io^
 ||trynectar.ai^
 ||porntourist.com^
@@ -296,7 +296,7 @@ barely%20legal$all
 ||flirtflix.ai^
 ||sexpertai.com^
 ||gyrls.com^
-||pornpicture.co^
+! dead 2026-05-19 ||pornpicture.co^
 ||heart-of-the-keyforge.itch.io^
 ||buupink.itch.io^
 ||frazunk.itch.io^
@@ -359,7 +359,7 @@ barely%20legal$all
 ||sexfromrussia.com^
 ||sexwithsis.com^
 ||sxccdn.com^
-||xbnat.com^
+! dead 2026-05-19 ||xbnat.com^
 ||helloladyboy.com^
 ||hqbang.com^
 ||bemyhole.cam^
@@ -369,10 +369,10 @@ barely%20legal$all
 ||amaturetube.com^
 ||transtxxx.com^
 ||neonpussy.com^
-||fanshack.one^
+! dead 2026-05-19 ||fanshack.one^
 ||cospuri.com^
 ||japancamwhore.com^
-||fap-cosplay.com^
+! dead 2026-05-19 ||fap-cosplay.com^
 ||sukebei.nyaa.si^
 ||hornyxxx.win^
 ||pwgong.com^
@@ -381,9 +381,9 @@ barely%20legal$all
 ||hentaiporns.net^
 ||trendpornvids.com^
 ||porndaa.com^
-||porns.nz^
+! dead 2026-05-19 ||porns.nz^
 ||lovetorrent.net^
-||x-porn.fr^
+! dead 2026-05-19 ||x-porn.fr^
 ||ujizz.xxx^
 ||cloudihotgirl.com^
 ||fc2.com^
@@ -391,14 +391,14 @@ barely%20legal$all
 ||porns.zone^
 ||videovjav.com^
 ||tporn.xxx^
-||nudecosplayporn.com^
-||porn-media.com^
+! dead 2026-05-19 ||nudecosplayporn.com^
+! dead 2026-05-19 ||porn-media.com^
 ||porn-video-xxx.com^
 ||porn-images-xxx.com^
 ||yourcartoonporn.com^
-||hentaipornvids.com^
+! dead 2026-05-19 ||hentaipornvids.com^
 ||hentaiforce.net^
-||simpsonshentai.com^
+! dead 2026-05-19 ||simpsonshentai.com^
 ||nerdporn.sexy^
 ||picsninja.com^
 ||imhentai.com^
@@ -412,7 +412,7 @@ barely%20legal$all
 ||videomonstr.com^
 ||hardgif.com^
 ||171gifs.com^
-||pstargif.com^
+! dead 2026-05-19 ||pstargif.com^
 ||gifsfor.com^
 ||bestporngifs.org^
 ||analsexgifs.com^
@@ -433,10 +433,10 @@ barely%20legal$all
 ||lactation-hentai.blogspot.com^
 ||freeepornz.com^
 ||ass2ass.pro^
-||assoass.global^
+! dead 2026-05-19 ||assoass.global^
 ||assoass2.com^
 ||burnbutt.com^
-||redpornpics.com^
+! dead 2026-05-19 ||redpornpics.com^
 ||fpornvideos.com^
 ||famoustoonsporn.com^
 ||freehentaidb.com^
@@ -453,9 +453,9 @@ barely%20legal$all
 ||365vids.one^
 ||trannyfans.net^
 ||suitablepartner.life^
-||data-jsext.com^
+! dead 2026-05-19 ||data-jsext.com^
 ||onlylocalhookup.com^
-||datingpros.top^
+! dead 2026-05-19 ||datingpros.top^
 ||waget.shop^
 ||leak0.site^
 ||teenfucktory.com^
@@ -469,24 +469,24 @@ barely%20legal$all
 ||gifcandy.net^
 ||crazyporn.xxx^
 ||xxxshake.com^
-||4ksex.cc^
+! dead 2026-05-19 ||4ksex.cc^
 ||jizzberry.com^
 ||someonesister.com^
 ||javfree.sh^
 ||xfantazy.com^
 ||twinki.xxx^
 ||thothub.is^
-||1teenpornvideos.com^
+! dead 2026-05-19 ||1teenpornvideos.com^
 ||bobsvagene.club^
 ||pornpk.me^
 ||pornmaster.co^
 ||prettyteenporn.website^
-||fastload.live^
-||facialporn.site^
+! dead 2026-05-19 ||fastload.live^
+! dead 2026-05-19 ||facialporn.site^
 ||thethothub.com^
 ||bdsmlr.com^
 ||shemales-blog.com^
-||bigpenis.life^
+! dead 2026-05-19 ||bigpenis.life^
 ||fapachi.com^
 ||namethatpornstar.com^
 ||camwhores.video^
@@ -501,7 +501,7 @@ barely%20legal$all
 ||topsexmovs.com^
 ||hdsex2.com^
 ||bigtitshq.com^
-||xzillame.com^
+! dead 2026-05-19 ||xzillame.com^
 ||xozilla.xxx^
 ||xtits.com^
 ||doppiocdn.org^
@@ -524,7 +524,7 @@ barely%20legal$all
 ||hqfuck.com^
 ||shemale.movie^
 ||xhand.com^
-||xhandfuk.com^
+! dead 2026-05-19 ||xhandfuk.com^
 ||shemalesin.com^
 ||oldpussy.tv^
 ||epornz.com^
@@ -533,7 +533,7 @@ barely%20legal$all
 ||xgent.com^
 ||hellporno.com^
 ||newpornsearch.com^
-||bustybabespics.com^
+! dead 2026-05-19 ||bustybabespics.com^
 ||nurxxx.xxx^
 ||hotmoza.tv^
 ||adultvideocdn.com^
@@ -541,14 +541,14 @@ barely%20legal$all
 ||nudevista.at^
 ||simply-porn.com^
 ||simply-cosplay.com^
-||xxx-pic.cz^
+! dead 2026-05-19 ||xxx-pic.cz^
 ||wonporn.com^
-||xxxtarget.com^
+! dead 2026-05-19 ||xxxtarget.com^
 ||goldtits.com^
 ||x-x-x.tube^
 ||bigtitsporn.pics^
 ||porngifs.ca^
-||damdang.org^
+! dead 2026-05-19 ||damdang.org^
 ||cosplayboobies.com^
 ||asianviralhub.com^
 ||fameregistry.com^
@@ -626,16 +626,16 @@ barely%20legal$all
 ||bestfreetube.xxx^
 ||mobilepornmovies.com^
 ||mobileporn.cam^
-||xxx-video.casa^
-||newxxxwap.com^
-||xxxhub.casa^
-||xvideos-porn.club^
-||free-porn.casa^
+! dead 2026-05-19 ||xxx-video.casa^
+! dead 2026-05-19 ||newxxxwap.com^
+! dead 2026-05-19 ||xxxhub.casa^
+! dead 2026-05-19 ||xvideos-porn.club^
+! dead 2026-05-19 ||free-porn.casa^
 ||ivaporn.com^
 ||m4clips.com^
-||jerk-pon.com^
-||bang-movies.cc^
-||pornvideo.casa^
+! dead 2026-05-19 ||jerk-pon.com^
+! dead 2026-05-19 ||bang-movies.cc^
+! dead 2026-05-19 ||pornvideo.casa^
 ||mobifcuk.com^
 ||badjojo.com^
 ||mypornbible.com^
@@ -649,7 +649,7 @@ barely%20legal$all
 ||nastypornpics.com^
 ||devilsfilm.com^
 ||fuckingawesome.com^
-||voyeurstyle.com^
+! dead 2026-05-19 ||voyeurstyle.com^
 ||girlsoutwest.com^
 ||asiansexdiary.com^
 ||karupsha.com^
@@ -693,26 +693,26 @@ barely%20legal$all
 ||tiny4k.club^
 ||xxxi.porn^
 ||18teenporno.tv^
-||xxx3porn.com^
+! dead 2026-05-19 ||xxx3porn.com^
 ||redwap-xxx.com^
 ||pstictic.com^
 ||por88sexer.com^
 ||pornvids4k.com^
 ||fucktv.net^
 ||hdpornpictures.net^
-||xxxporns.org^
+! dead 2026-05-19 ||xxxporns.org^
 ||xvideoshd-19cdd.kxcdn.com^
 ||pornox.me^
 ||pornvideos4k.com^
-||xxxporn.movie^
+! dead 2026-05-19 ||xxxporn.movie^
 ||pornpreview.ws^
-||gaypaysite.net^
+! dead 2026-05-19 ||gaypaysite.net^
 ||bestadultsexsites.com^
 ||adultpaysite.net^
-||bestpornxxxpaysites.com^
+! dead 2026-05-19 ||bestpornxxxpaysites.com^
 ||bestadultpaysites.net^
 ||sexpaysitecentral.net^
-||pornpaysites.info^
+! dead 2026-05-19 ||pornpaysites.info^
 ||adultpaysites-menu.com^
 ||sensualgirls.org^
 ||girlsofdesire.org^
@@ -727,7 +727,7 @@ barely%20legal$all
 ||peachy18.com^
 ||kittysplanet.com^
 ||sexy-beauties.com^
-||fusker.xxx^
+! dead 2026-05-19 ||fusker.xxx^
 ||indexxx.com^
 ||eropics.to^
 ||erofullsets.net^
@@ -738,7 +738,7 @@ barely%20legal$all
 ||freeindianporn2.com^
 ||pakistaniporn2.com^
 ||pakistaniporn.tv^
-||pornxnxxvideos.com^
+! dead 2026-05-19 ||pornxnxxvideos.com^
 ||xxxhindisex.com^
 ||rajwap.xyz^
 ||rajwap.biz^
@@ -760,7 +760,7 @@ barely%20legal$all
 ||ixxx.yachts^
 ||xxxvideo.world^
 ||pornxxxtube.su^
-||pornjerk.su^
+! dead 2026-05-19 ||pornjerk.su^
 ||pornaxo.com^
 ||hentaicrack.com^
 ||mydearsex.com^
@@ -772,7 +772,7 @@ barely%20legal$all
 ||danbooru.online^
 ||alsoporn.com^
 ||tube4sex.com^
-||teenpornbank.com^
+! dead 2026-05-19 ||teenpornbank.com^
 ||cartoontube.xxx^
 ||hqporncolor.com^
 ||youx.xxx^
@@ -782,7 +782,7 @@ barely%20legal$all
 ||strandedteens.com^
 ||foxporn.me^
 ||xxxtoontube.net^
-||hentai-porn.net^
+! dead 2026-05-19 ||hentai-porn.net^
 ||valorantpornhentai.com^
 ||macydazy.com^
 ||hostinganime.com^
@@ -798,7 +798,7 @@ barely%20legal$all
 ||beemtube.com^
 ||youngpussynaked.com^
 ||pornbitter.com^
-||op-fan.com^
+! dead 2026-05-19 ||op-fan.com^
 ||sexotube2.net^
 ||hentaipimp.com^
 ||vipxnxx.com^
@@ -811,96 +811,96 @@ barely%20legal$all
 ||femaleshaved.com^
 ||gallery-of-nudes.com^
 ||clivetadds.com^
-||fuckpics.top^
+! dead 2026-05-19 ||fuckpics.top^
 !||hdpornpics.net^
-||badamateurporn.com^
+! dead 2026-05-19 ||badamateurporn.com^
 ||coedcherry.xyz^
 ||freshsperm.com^
-||fuckpics.vip^
-||got.sex^
+! dead 2026-05-19 ||fuckpics.vip^
+! dead 2026-05-19 ||got.sex^
 ||homepussypornpics.com^
 ||joygalls.com^
 ||picsxnxx.com^
-||pornopics.club^
+! dead 2026-05-19 ||pornopics.club^
 ||pornpicsleak.com^
 ||pussy4.com^
-||xnxxpicsbox.com^
+! dead 2026-05-19 ||xnxxpicsbox.com^
 ||xxx.pics^
-||mypornoxxx.com^
-||sexygirlspics.icu^
+! dead 2026-05-19 ||mypornoxxx.com^
+! dead 2026-05-19 ||sexygirlspics.icu^
 ||xpics.me^
 ||give.xxx^
 ||pin.sex^
 ||porntubedl.com^
-||tightpussy.blue^
-||xnxxthumb.com^
+! dead 2026-05-19 ||tightpussy.blue^
+! dead 2026-05-19 ||xnxxthumb.com^
 ||ipussy.net^
 ||gay4.net^
 ||nakedgirls.world^
-||leakfreeporn.com^
-||xxx.vote^
-||hootdatings.life^
+! dead 2026-05-19 ||leakfreeporn.com^
+! dead 2026-05-19 ||xxx.vote^
+! dead 2026-05-19 ||hootdatings.life^
 ||fap.plus^
 ||xnxxx.world^
 ||xnxx.town^
 ||ticxxx.com^
 ||imake.porn^
-||gayporn18.net^
+! dead 2026-05-19 ||gayporn18.net^
 ||fuckdy.com^
-||4sexy.net^
-||xxxpicsporn.com^
+! dead 2026-05-19 ||4sexy.net^
+! dead 2026-05-19 ||xxxpicsporn.com^
 ||nude4.com^
-||sexypussy.tv^
-||freesexpics.wtf^
-||wikileakporn.com^
+! dead 2026-05-19 ||sexypussy.tv^
+! dead 2026-05-19 ||freesexpics.wtf^
+! dead 2026-05-19 ||wikileakporn.com^
 ||sexyleaks.net^
 ||sexywhitepussy.com^
 ||amateurscrush.com^
 ||findnudeporn.com^
 ||hotgirlspics.pro^
-||sexygirlpics.net^
+! dead 2026-05-19 ||sexygirlpics.net^
 ||weleaked.com^
-||pornpicsxxx.net^
+! dead 2026-05-19 ||pornpicsxxx.net^
 ||okthot.com^
-||nakedpics.wtf^
-||hdleakxxx.com^
+! dead 2026-05-19 ||nakedpics.wtf^
+! dead 2026-05-19 ||hdleakxxx.com^
 ||xxnx.team^
-||xvideoz.pics^
+! dead 2026-05-19 ||xvideoz.pics^
 ||nudegirls.wiki^
 ||dlporn.net^
 ||leaked.fans^
 ||nakedgirls.exposed^
 ||pornbado.com^
 ||darknaija.com^
-||nudepussy.wiki^
+! dead 2026-05-19 ||nudepussy.wiki^
 ||hotteenpussy.net^
-||nakedgirls.icu^
-||pornpicsex.com^
-||tok.xxx^
-||hardcoreporn.space^
-||gopornload.com^
+! dead 2026-05-19 ||nakedgirls.icu^
+! dead 2026-05-19 ||pornpicsex.com^
+! dead 2026-05-19 ||tok.xxx^
+! dead 2026-05-19 ||hardcoreporn.space^
+! dead 2026-05-19 ||gopornload.com^
 ||keezmovies.com^
-||perfectpornmodels.com^
-||nakedpussy.club^
-||tokfuck.com^
-||mrpornpics.com^
+! dead 2026-05-19 ||perfectpornmodels.com^
+! dead 2026-05-19 ||nakedpussy.club^
+! dead 2026-05-19 ||tokfuck.com^
+! dead 2026-05-19 ||mrpornpics.com^
 ||pornpics.network^
 ||clubnsfw.com^
-||nudepussy.blue^
+! dead 2026-05-19 ||nudepussy.blue^
 ||hqthot.com^
-||nudegirls.quest^
+! dead 2026-05-19 ||nudegirls.quest^
 ||sexynudes24.com^
-||bestpornpictures.me^
-||starxxxpics.com^
+! dead 2026-05-19 ||bestpornpictures.me^
+! dead 2026-05-19 ||starxxxpics.com^
 ||hdpornpics.net^
-||pornpics.plus^
-||sexywhitepussy.net^
-||8porno.net^
-||pub.xxx^
+! dead 2026-05-19 ||pornpics.plus^
+! dead 2026-05-19 ||sexywhitepussy.net^
+! dead 2026-05-19 ||8porno.net^
+! dead 2026-05-19 ||pub.xxx^
 ||allofteens.com^
-||xxxphotos.best^
-||nudewomen.rocks^
-||xxx24.tv^
+! dead 2026-05-19 ||xxxphotos.best^
+! dead 2026-05-19 ||nudewomen.rocks^
+! dead 2026-05-19 ||xxx24.tv^
 ||pornpics.casa^
 ||leakporn.net^
 ||pussy.surf^
@@ -921,11 +921,11 @@ barely%20legal$all
 ||xxxadd.com^
 ||a3ion.com^
 ||camstreams.tv^
-||camtrends.com^
+! dead 2026-05-19 ||camtrends.com^
 ||chatwhores.com^
 ||onlybestporn.com^
 ||pornscn.com^
-||trustmycam.com^
+! dead 2026-05-19 ||trustmycam.com^
 ||web2sex.com^
 ||xvideos-xxxx.com^
 ||spicy.porn^
@@ -947,19 +947,19 @@ barely%20legal$all
 ||oldyoungfuck.net^
 ||rapetube.tv^
 ||teen-porn.biz^
-||funteensex.com^
+! dead 2026-05-19 ||funteensex.com^
 ||pornica.eu^
-||narchist.com^
+! dead 2026-05-19 ||narchist.com^
 ||hd-ok.com^
 ||bigassnude.com^
-||hdbfvideo.net^
-||redwapxxxx.com^
+! dead 2026-05-19 ||hdbfvideo.net^
+! dead 2026-05-19 ||redwapxxxx.com^
 ||purlive.com^
-||backbook.me^
+! dead 2026-05-19 ||backbook.me^
 ||bluetechproject.eu^
 ||pornium.net^
 ||morefunforyou.com^
-||fullxxxindian.com^
+! dead 2026-05-19 ||fullxxxindian.com^
 ||gethotpornmovies.com^
 ||4kfuckmovies.com^
 ||xnxxhd.tv^
@@ -968,53 +968,53 @@ barely%20legal$all
 ||hotxxxmvs.com^
 ||unlockpornmovies.com^
 ||sexmoviesbox.com^
-||sosexvideo.com^
-||pussysexmovies.pro^
-||fullretrosex.com^
+! dead 2026-05-19 ||sosexvideo.com^
+! dead 2026-05-19 ||pussysexmovies.pro^
+! dead 2026-05-19 ||fullretrosex.com^
 ||strongxxxpics.com^
-||fireretroporn.com^
-||cdnjk.com^
+! dead 2026-05-19 ||fireretroporn.com^
+! dead 2026-05-19 ||cdnjk.com^
 ||pornjk.com^
-||xxxfucktube.pro^
+! dead 2026-05-19 ||xxxfucktube.pro^
 ||nudevista.club^
-||slimteenporn.com^
+! dead 2026-05-19 ||slimteenporn.com^
 ||nv7s.com^
 ||agaysex.com^
 ||pornhvd.com^
 ||ladylana.com^
-||youngtube.me^
+! dead 2026-05-19 ||youngtube.me^
 ||xpornplease.com^
 ||cdngangsta.com^
 ||vintagetube.pro^
 ||wildvintageporn.com^
 ||vintagepornworld.com^
 ||xvintagesex.com^
-||onpornhub.com^
+! dead 2026-05-19 ||onpornhub.com^
 ||kilolesbians.com^
 ||castingporntrends.com^
 ||hdmomxxx.pro^
 ||pornanswer.com^
 ||nextlesbianporn.com^
-||retrocock.com^
-||ohlalafilms.com^
-||maxasiantube.com^
-||hdredtubeporns.com^
-||hornystrapongirls.com^
-||abusedbigdick.com^
+! dead 2026-05-19 ||retrocock.com^
+! dead 2026-05-19 ||ohlalafilms.com^
+! dead 2026-05-19 ||maxasiantube.com^
+! dead 2026-05-19 ||hdredtubeporns.com^
+! dead 2026-05-19 ||hornystrapongirls.com^
+! dead 2026-05-19 ||abusedbigdick.com^
 ||antiadxxxspy.com^
-||oxmilf.com^
-||sexhd.porn^
+! dead 2026-05-19 ||oxmilf.com^
+! dead 2026-05-19 ||sexhd.porn^
 ||myhottits.com^
 ||myvideos.club^
 ||pipporn.com^
 ||pornroh.com^
 ||prettyass.org^
 ||girlsbutts.org^
-||youpornox.com^
-||hayporno.com^
+! dead 2026-05-19 ||youpornox.com^
+! dead 2026-05-19 ||hayporno.com^
 ||ediporn.com^
-||tubekiwi.com^
-||paydayxxx3.com^
+! dead 2026-05-19 ||tubekiwi.com^
+! dead 2026-05-19 ||paydayxxx3.com^
 ||kompozvideos.com^
 ||hhporns.com^
 ||sexsite.info^
@@ -1022,7 +1022,7 @@ barely%20legal$all
 ||porndike.com^
 ||rudefly.com^
 ||goxxxvids.com^
-||sex18tube.com^
+! dead 2026-05-19 ||sex18tube.com^
 ||evexxx.com^
 ||xxxnd.com^
 ||hellporn.pro^
@@ -1030,18 +1030,18 @@ barely%20legal$all
 ||vidxporn.com^
 ||trendyporn.com^
 ||largeporntube8.com^
-||teenpornlist.net^
+! dead 2026-05-19 ||teenpornlist.net^
 ||stripchat.ooo^
-||dirtytinder.org^
+! dead 2026-05-19 ||dirtytinder.org^
 ||18closeup.net^
 ||zorroporn.pro^
-||homemadexvideos.com^
+! dead 2026-05-19 ||homemadexvideos.com^
 ||aporn24.com^
-||fuckamateurtube.com^
+! dead 2026-05-19 ||fuckamateurtube.com^
 ||usagidesigns.net^
-||studyhall.space^
-||ecosiawatch.org^
-||nubepornogratis.org^
+! dead 2026-05-19 ||studyhall.space^
+! dead 2026-05-19 ||ecosiawatch.org^
+! dead 2026-05-19 ||nubepornogratis.org^
 ||besuconas.com^
 ||xanalytics.vip^
 ||cinepornogratis.com^
@@ -1049,28 +1049,28 @@ barely%20legal$all
 ||bingoporno.com^
 ||pornogratisdiario.com^
 ||marcelinha.com^
-||hdgratisporno.com^
-||wetebonytube.com^
+! dead 2026-05-19 ||hdgratisporno.com^
+! dead 2026-05-19 ||wetebonytube.com^
 ||youngpornzilla.com^
 ||teenpornass.com^
 ||noteenporn.com^
-||donakedgirls.com^
+! dead 2026-05-19 ||donakedgirls.com^
 ||okyoungporn.com^
 ||zuckerporno.com^
 ||movcdn.com^
-||cdnmovies.com^
-||bonbonporno.com^
-||jizzteenporn.com^
-||silverlesbians.com^
-||nolesbianporn.com^
+! dead 2026-05-19 ||cdnmovies.com^
+! dead 2026-05-19 ||bonbonporno.com^
+! dead 2026-05-19 ||jizzteenporn.com^
+! dead 2026-05-19 ||silverlesbians.com^
+! dead 2026-05-19 ||nolesbianporn.com^
 ||trueyoungsex.com^
 ||nudegirlsclips.com^
-||sexylesbiantube.com^
+! dead 2026-05-19 ||sexylesbiantube.com^
 ||1milf.com^
 ||freundinsex.com^
 ||moreyoungporn.com^
 ||teenpornway.com^
-||teensextits.com^
+! dead 2026-05-19 ||teensextits.com^
 ||nevid.us^
 ||xhamster20.desi^
 ||cityheaven.net^
@@ -1153,7 +1153,7 @@ barely%20legal$all
 ||lovefort.com^
 ||yourlocalhookup.com^
 ||arousingaffairs.com^
-||asainmelodies.com^
+! dead 2026-05-19 ||asainmelodies.com^
 ||depravedgirls.com^
 ||datingtopia.com^
 ||jucydate.com^
@@ -1161,20 +1161,20 @@ barely%20legal$all
 ||brutalxhd.com^
 ||teenfidelity.com^
 ||mommyperv.com^
-||uenos.comapatecoman.gob.mx^
+! dead 2026-05-19 ||uenos.comapatecoman.gob.mx^
 ||nublies-porn.com^
 ||imhentai.xxx^
 ||imhentai.asia^
 ||imhentai.me^
 ||nhentaihaven.org^
 ||hentaihaven.io^
-||young-asian-tubes.com^
+! dead 2026-05-19 ||young-asian-tubes.com^
 ||pornobis.net^
-||dickies-pants.info^
+! dead 2026-05-19 ||dickies-pants.info^
 ||amandahot.com^
-||nudeskins.net^
-||judymerylkaplan.com^
-||gayfuckass.com^
+! dead 2026-05-19 ||nudeskins.net^
+! dead 2026-05-19 ||judymerylkaplan.com^
+! dead 2026-05-19 ||gayfuckass.com^
 ||bloglag.com^
 ||gigixo.com^
 ||miyuhot.com^
@@ -1182,41 +1182,41 @@ barely%20legal$all
 ||hotnatalia.com^
 ||hardhentaiporn.com^
 ||xxxgig.top^
-||xxoomap.com^
-||videosporno.one^
+! dead 2026-05-19 ||xxoomap.com^
+! dead 2026-05-19 ||videosporno.one^
 ||tubemilf.me^
 ||sexyoung.pro^
-||red-tube.pro^
+! dead 2026-05-19 ||red-tube.pro^
 ||pornoglo.top^
 ||xmom.tv^
 ||vr-porn.tv^
 ||sexlist.tv^
 ||porn18.tv^
 ||pornmaniac.tv^
-||nudevideos.link^
+! dead 2026-05-19 ||nudevideos.link^
 ||nudephotography.me^
 ||chineseporn.tube^
 ||xhamsterlive.site^
 ||xxxmovies.pro^
 ||teentube.pro^
-||alfateenporn.com^
+! dead 2026-05-19 ||alfateenporn.com^
 ||bestsexyblog.com^
 ||cdnloadsqgzg.web.app^
 ||candidteens.top^
 ||sexycandidteens.top^
 ||icomsex.top^
-||lolipops.top^
-||candyisland.top^
+! dead 2026-05-19 ||lolipops.top^
+! dead 2026-05-19 ||candyisland.top^
 ||10chan.top^
 ||littleloving.top^
 ||lolibitch.top^
 ||secretlove.top^
-||candypussy.top^
+! dead 2026-05-19 ||candypussy.top^
 ||hotsecret.top^
 ||leslybunny.top^
 ||brokenpussyx.top^
 ||jimperial.top^
-||blackdaddy.top^
+! dead 2026-05-19 ||blackdaddy.top^
 ||ahtops.com^
 ||xxxbit.com^
 ||bunnyhouse.top^
@@ -1225,12 +1225,12 @@ barely%20legal$all
 ||bodyxxx.top^
 ||liliboxx.top^
 ||sweetbody.top^
-||galeryfantasi.top^
+! dead 2026-05-19 ||galeryfantasi.top^
 ||teens4ever.top^
 ||teenstream.top^
 ||young-xxx.net^
 ||streamcandid.com^
-||upskirt.top^
+! dead 2026-05-19 ||upskirt.top^
 ||creepshots.top^
 ||cgforum.win^
 ||pornxp.com^
@@ -1281,7 +1281,7 @@ barely%20legal$all
 ||tikporntok.com^
 ||tt8teen.com^
 ||iwantu.app^
-||tiktok18.tv^
+! dead 2026-05-19 ||tiktok18.tv^
 ||fap.bar^
 ||porn-app.com^
 ||nsfwswipe.com^
@@ -1295,7 +1295,7 @@ barely%20legal$all
 ||thefappening.plus^
 ||nudogram.com^
 ||cfake.com^
-||celebrityrevealer.com^
+! dead 2026-05-19 ||celebrityrevealer.com^
 ||porndeepfake.net^
 ||savitahd.net^
 ||celebritysex.co^
@@ -1311,7 +1311,7 @@ barely%20legal$all
 ||007zeed.com^
 ||nicehairyvagina.com^
 ||00101001.com^
-||xxxv.mobi^
+! dead 2026-05-19 ||xxxv.mobi^
 ||desixnxxvideos.com^
 ||media-pole.com^
 ||joyporn.me^
@@ -1323,9 +1323,9 @@ barely%20legal$all
 ||proxypaige.xxx^
 ||sexfetish.net^
 ||truckofporn.com^
-||servaporno.com^
+! dead 2026-05-19 ||servaporno.com^
 ||pornowatch.net^
-||yourhdporn.video^
+! dead 2026-05-19 ||yourhdporn.video^
 ||vcmdiawe.com^
 ||escortbadgirl.com^
 ||xxxhosts.com^
@@ -1333,11 +1333,11 @@ barely%20legal$all
 ||latinaabuse.com^
 ||pornditos.com^
 ||culioneros.com^
-||rushporn.xxx^
+! dead 2026-05-19 ||rushporn.xxx^
 ||sexmex.xxx^
 ||mamacitaz.com^
 ||veporn.com^
-||goodporn.to^
+! dead 2026-05-19 ||goodporn.to^
 ||severeporn.com^
 ||xkeezmovies.com^
 ||fullxxxmovies.net^
@@ -1345,7 +1345,7 @@ barely%20legal$all
 ||ccmiocw.com^
 ||camwhores.tv^
 ||porn4tube.org^
-||hdpornmobilex.com^
+! dead 2026-05-19 ||hdpornmobilex.com^
 ||pornchu.com^
 ||umkaporn.mobi^
 ||firsttimeauditions-girls.com^
@@ -1360,7 +1360,7 @@ barely%20legal$all
 ||fukando.mobi^
 ||pornproxy.app^
 ||pussyboy.net^
-||mohanalakshmi.com^
+! dead 2026-05-19 ||mohanalakshmi.com^
 ||bigassporntrends.com^
 ||pornhubx.net^
 ||myadultvideo.net^
@@ -1379,13 +1379,13 @@ barely%20legal$all
 ||dipnude.com^
 ||dogfart.com^
 ||dogfartmegapass.com^
-||debiutext.eu^
+! dead 2026-05-19 ||debiutext.eu^
 ||anywap.xyz^
 ||evilunveiled.com^
 ||inessah.com^
 ||tubzolina.mobi^
 ||xxhdvideos.com^
-||xxxboymovie.pro^
+! dead 2026-05-19 ||xxxboymovie.pro^
 ||corporacionbiotecnica.com^
 ||tinyteenporn.net^
 ||vintage-erotic.net^
@@ -1393,7 +1393,7 @@ barely%20legal$all
 ||pornozavr.net^
 ||sexgamefun.com^
 ||tinypussypics.com^
-||bikinierotica.net^
+! dead 2026-05-19 ||bikinierotica.net^
 ||teen-erotica.net^
 ||amateurandreal.com^
 ||maturesex.fun^
@@ -1413,7 +1413,7 @@ barely%20legal$all
 ||lovense.com^
 ||libporn.com^
 ||a1gardenproducts.com^
-||howtobuyavibrator.com^
+! dead 2026-05-19 ||howtobuyavibrator.com^
 ||makepocketpussy.com^
 ||fakepussies.org^
 ||vibesyndicate.com^
@@ -1437,12 +1437,12 @@ barely%20legal$all
 ||xnxx-cdn.com^
 ||melodyporn.com^
 ||milkamour.com^
-||livefaplove.com^
+! dead 2026-05-19 ||livefaplove.com^
 ||sexindrag.com^
 ||tubepornanal.com^
 ||xtcdn.com^
 ||pornochatik.com^
-||overtaction.org^
+! dead 2026-05-19 ||overtaction.org^
 ||mvideos.pro^
 ||hotmoza.mobi^
 ||pornomik.com^
@@ -1455,25 +1455,25 @@ barely%20legal$all
 ||bukkakepornhd.com^
 ||xxxijmp.com^
 ||xomass.com^
-||candbee.com^
+! dead 2026-05-19 ||candbee.com^
 ||xxxps.net^
 ||postrickland.com^
 ||liebelib.net^
 ||gayfuror.com^
 ||bfporntube.com^
 ||bostonrobmariano.com^
-||poptartssucktoasted.com^
+! dead 2026-05-19 ||poptartssucktoasted.com^
 ||xxxdata.net^
 ||xxlnow.com^
-||rapemance.com^
+! dead 2026-05-19 ||rapemance.com^
 ||babeporn.org^
 ||anthracitecoalregion.com^
-||greedyforporn.com^
+! dead 2026-05-19 ||greedyforporn.com^
 ||rapeoclock.com^
 ||xxxwap.mobi^
-||adamrosephotography.com^
+! dead 2026-05-19 ||adamrosephotography.com^
 ||pornharbour.net^
-||jerkguru.net^
+! dead 2026-05-19 ||jerkguru.net^
 ||moocrh.com^
 ||hdgayvideos.com^
 ||heavyfetish.com^
@@ -1486,18 +1486,18 @@ barely%20legal$all
 ||darknessporn.com^
 ||thescreams.net^
 ||rapeporn.pro^
-||rapesexvideos.net^
+! dead 2026-05-19 ||rapesexvideos.net^
 ||rapeporn.mobi^
 ||xhpingcdn.com^
 ||xhamster3.com^
 ||hardsexvids.com^
 ||mobporno.org^
-||fulbe-whs.com^
+! dead 2026-05-19 ||fulbe-whs.com^
 ||liebelib.mobi^
 ||dadsofdestiny.net^
 ||prncdn.com^
 ||beegvideoshd.net^
-||techmazic.com^
+! dead 2026-05-19 ||techmazic.com^
 ||ohxxx.net^
 ||watchhindiporn2.com^
 ||wildgayporn.com^
@@ -1507,7 +1507,7 @@ barely%20legal$all
 ||yespornpls.me^
 ||manytubeporn.mobi^
 ||nesaporn.mobi^
-||porn-rape.com^
+! dead 2026-05-19 ||porn-rape.com^
 ||k2s.cc^
 ||k2sxxx.com^
 ||phcdnpr.com^
@@ -1527,7 +1527,7 @@ barely%20legal$all
 ||cdnjs.stream^
 ||xvideos-cdn.com^
 ||vivaclix.com^
-||ascat.porn^
+! dead 2026-05-19 ||ascat.porn^
 ||dtiserv.com^
 ||sakurajav.com^
 ||d2pass.com^
@@ -1563,7 +1563,7 @@ barely%20legal$all
 ||yumegumi.net^
 ||adultmango.com^
 ||mytaboo.net^
-||xnxxx.red^
+! dead 2026-05-19 ||xnxxx.red^
 ||hd-tube-porn.com^
 ||hot-sex-tube.com^
 ||fuckteen.xxx^
@@ -1585,7 +1585,7 @@ barely%20legal$all
 ||posthentai.com^
 ||infinitehentai.com^
 ||hentaibros.com^
-||hentai-manga.porn^
+! dead 2026-05-19 ||hentai-manga.porn^
 ||kimochi.info^
 ||pixazsexy.com^
 ||undertow.club^
@@ -1595,32 +1595,32 @@ barely%20legal$all
 ||91pron.com.es^
 ||sexygirlspics.com^
 ||mainmovs.com^
-||xxxgirlteens.com^
+! dead 2026-05-19 ||xxxgirlteens.com^
 ||xxporns.com^
 ||cendresetsang-lefilm.com^
 ||vxxxcdn.net^
 ||malaywap.net^
-||stripinggirls.com^
+! dead 2026-05-19 ||stripinggirls.com^
 ||bokeptube.net^
 ||moviespornov.com^
 ||pornroth.mobi^
 ||ebonytoday.com^
 ||xxxwww.mobi^
 ||vidioxxx.net^
-||psdtohtmlhint.com^
+! dead 2026-05-19 ||psdtohtmlhint.com^
 ||streamate.icfcdn.com^
 ||livebootycall.com^
 ||mp4porn.mobi^
-||8407kb.com^
-||thelivecamgirl.com^
+! dead 2026-05-19 ||8407kb.com^
+! dead 2026-05-19 ||thelivecamgirl.com^
 ||wnude.com^
 ||sexnakedwomen.com^
 ||alohatube.xyz^
 ||playgaytube.com^
-||onlinepharmacyrt.com^
+! dead 2026-05-19 ||onlinepharmacyrt.com^
 ||pirkparduok.eu^
 ||bustygirls4u.com^
-||xliveshows.com^
+! dead 2026-05-19 ||xliveshows.com^
 ||gay-bareback.biz^
 ||gaygalls.net^
 ||threesomeporntrends.com^
@@ -1634,7 +1634,7 @@ barely%20legal$all
 ||babecock.xyz^
 ||flixurbate.com^
 ||tiktits.com^
-||myfetishcafe.com^
+! dead 2026-05-19 ||myfetishcafe.com^
 ||instakink.com^
 ||hoterika.com^
 ||hotblognetwork.com^
@@ -1651,17 +1651,17 @@ barely%20legal$all
 ||youjizz.bond^
 ||adultdeepfakes.com^
 ||pornmega.com^
-||pornhdvideo.net^
+! dead 2026-05-19 ||pornhdvideo.net^
 ||sissythings.com^
 ||podbean.com^
 ||sissyhypnosis.club^
-||sissy24.com^
+! dead 2026-05-19 ||sissy24.com^
 ||see.xxx^
 ||bondagesexporn.com^
-||bdsmtube.video^
+! dead 2026-05-19 ||bdsmtube.video^
 ||hotbdsmvideos.com^
 ||extremebdsmtube.com^
-||bdsmbondage.net^
+! dead 2026-05-19 ||bdsmbondage.net^
 ||fuckandcdn.com^
 ||bdsm.one^
 ||tubezaur.com^
@@ -1675,13 +1675,13 @@ barely%20legal$all
 ||hairylivechat.com^
 ||russianschat.com^
 ||movieshark.com^
-||homemadeinterracialsex.com^
-||hairysex.pro^
-||sexhairyclips.com^
+! dead 2026-05-19 ||homemadeinterracialsex.com^
+! dead 2026-05-19 ||hairysex.pro^
+! dead 2026-05-19 ||sexhairyclips.com^
 ||getteenbabes.com^
 ||friendshipmale.com^
-||needfulerasemidland.com^
-||lesbianporncave.com^
+! dead 2026-05-19 ||needfulerasemidland.com^
+! dead 2026-05-19 ||lesbianporncave.com^
 ||hottestpornclips.com^
 ||porneporn.com^
 ||pinkclips.mobi^
@@ -1692,32 +1692,32 @@ barely%20legal$all
 ||airsextube.com^
 ||freelifetimepornsites.com^
 ||retrotubesporn.com^
-||hairy-amateurs.com^
+! dead 2026-05-19 ||hairy-amateurs.com^
 ||virexy-porn.com^
 ||best-porn.org^
 ||tubepornnow.com^
-||malamute-selawikriver.com^
+! dead 2026-05-19 ||malamute-selawikriver.com^
 ||mxtub.com^
 ||jizzertube.com^
 ||brazilianvideochat.com^
 ||jasminslive.com^
-||johnscyclecenter.com^
+! dead 2026-05-19 ||johnscyclecenter.com^
 ||celebskin.net^
 ||amustangranch.com^
 ||hotbabeslive.com^
-||livefuckchat.com^
+! dead 2026-05-19 ||livefuckchat.com^
 ||bigboobvixens.com^
-||porneng.com^
+! dead 2026-05-19 ||porneng.com^
 ||xgifer.com^
 ||alisextube.com^
-||mrsworkinggirl.com^
+! dead 2026-05-19 ||mrsworkinggirl.com^
 ||nudevietnam.com^
 ||clipshemales.com^
 ||leakshemale.com^
 ||glamourhound.com^
 ||anacams.com^
 ||shemaleleaks.com^
-||faphp.top^
+! dead 2026-05-19 ||faphp.top^
 ||nakedmom.pro^
 ||xxxmovie.pro^
 ||young-pussy.net^
@@ -1732,11 +1732,11 @@ barely%20legal$all
 ||dailyhotgirls.net^
 ||otherleak.com^
 ||pornoeggs.com^
-||hotteensnude.net^
-||xxxpics2.com^
+! dead 2026-05-19 ||hotteensnude.net^
+! dead 2026-05-19 ||xxxpics2.com^
 ||tgdetroit.com^
-||pussynaked.me^
-||a-escort.info^
+! dead 2026-05-19 ||pussynaked.me^
+! dead 2026-05-19 ||a-escort.info^
 ||nudeinfo.com^
 ||onlyfucks.com^
 ||camleaks.net^
@@ -1744,39 +1744,39 @@ barely%20legal$all
 ||nudewomen.me^
 ||pornebony.me^
 ||chatboxsex.com^
-||teensfreesex.com^
+! dead 2026-05-19 ||teensfreesex.com^
 ||xxxlibz.net^
-||tubeporn8.com^
+! dead 2026-05-19 ||tubeporn8.com^
 ||naked-girls.me^
 ||pornsite123.com^
 ||hq-jav.com^
 ||tgsex.com^
 ||pornmd.biz^
-||thenudelive.com^
+! dead 2026-05-19 ||thenudelive.com^
 ||webcamfucker.com^
 ||webcamempire.net^
 ||betterteensex.com^
-||freshcoffeestains.com^
+! dead 2026-05-19 ||freshcoffeestains.com^
 ||pornflip.com^
 ||tgpersonals.com^
-||mypornohub.org^
-||gotasiansex.com^
+! dead 2026-05-19 ||mypornohub.org^
+! dead 2026-05-19 ||gotasiansex.com^
 ||ohoporn.com^
 ||xstarshub.com^
 ||thebussybandit.com^
-||pornface.net^
+! dead 2026-05-19 ||pornface.net^
 ||apornwebsite.com^
 ||myfreeblack.com^
 ||pornmovie69.net^
 ||discretxxx.com^
-||theperfectshemales.com^
+! dead 2026-05-19 ||theperfectshemales.com^
 ||happy-porn.pro^
 ||superporn.com^
 ||new-porn.video^
 ||pornglee.com^
-||xxxclips.su^
-||analporn.cc^
-||xmilfporn.cc^
+! dead 2026-05-19 ||xxxclips.su^
+! dead 2026-05-19 ||analporn.cc^
+! dead 2026-05-19 ||xmilfporn.cc^
 ||top-xxx-tube.com^
 ||hot-porn.pro^
 ||maxiporn.com^
@@ -1789,16 +1789,16 @@ barely%20legal$all
 ||cartoonporn.pro^
 ||hentaikai.com^
 ||bestpornstars.xxx^
-||hentaistar.info^
+! dead 2026-05-19 ||hentaistar.info^
 ||hentai2read.us^
-||fullhentai.net^
+! dead 2026-05-19 ||fullhentai.net^
 ||vnxnxx.co^
 ||hentaistream.me^
 ||hentai.tv^
 ||hentaidude.tv^
-||freeonlyfansleaks.xyz^
+! dead 2026-05-19 ||freeonlyfansleaks.xyz^
 ||thefappening.pro^
-||leakednude.org^
+! dead 2026-05-19 ||leakednude.org^
 ||prothots.com^
 ||leakedthots.com^
 ||clbjmp.com^
@@ -1807,28 +1807,28 @@ barely%20legal$all
 ||onlyfan.xyz^
 ||celebsunmasked.com^
 ||internetchicks.com^
-||exnakedpics.com^
+! dead 2026-05-19 ||exnakedpics.com^
 ||fapfappy.com^
 ||fapomania.com^
 ||ezfansleak.net^
 ||bitchesgirls.com^
-||nudegirls.space^
+! dead 2026-05-19 ||nudegirls.space^
 ||leaknudes.com^
 ||onlyleaksxxx.com^
 ||whoreshub.online^
 ||onlyleaks.fun^
 ||leakeddiaries.com^
-||meganudes.net^
+! dead 2026-05-19 ||meganudes.net^
 ||leakednudes.co^
 ||nudes18.fun^
 ||thothub.su^
 ||thothub.org^
-||cambro.tv^
+! dead 2026-05-19 ||cambro.tv^
 ||leakedpie.com^
 ||fapdungeon.com^
 ||thotfox.com^
 ||thotslife.com^
-||thotvids.com^
+! dead 2026-05-19 ||thotvids.com^
 ||nudethot.com^
 ||thotnude.com^
 ||gotanynudes.com^
@@ -1844,7 +1844,7 @@ barely%20legal$all
 ||nsfwmonster.io^
 ||porn-stalker.de^
 ||totallynsfw.com^
-||xvideo.cfd^
+! dead 2026-05-19 ||xvideo.cfd^
 ||gifhq.com^
 ||nsfw.sex^
 ||videotxxx.com^
@@ -1888,9 +1888,9 @@ barely%20legal$all
 ||kichduc.cc^
 ||littleasians.com^
 ||javquick.com^
-||asianhotties.net^
+! dead 2026-05-19 ||asianhotties.net^
 ||jezebelcams.com^
-||indsex.in^
+! dead 2026-05-19 ||indsex.in^
 ||asianal.xyz^
 ||stepfamilyporn.xyz^
 ||realbbc.xyz^
@@ -1900,7 +1900,7 @@ barely%20legal$all
 ||romanticlesbian.com^
 ||nsfcollege.com^
 ||pornhubf.com^
-||xxsex30.com^
+! dead 2026-05-19 ||xxsex30.com^
 ||xhub.tv^
 ||towheaddeepthroat.com^
 ||milfromantic.com^
@@ -1910,7 +1910,7 @@ barely%20legal$all
 ||milfgloryhole.xyz^
 ||homemade-clips.com^
 ||leakslove.com^
-||hardsexymilfs.com^
+! dead 2026-05-19 ||hardsexymilfs.com^
 ||dreamcam.com^
 ||sexysexdoll.com^
 ||allpornimages.com^
@@ -1923,7 +1923,7 @@ barely%20legal$all
 ||tubemoca.xyz^
 ||avsanpuru.com^
 ||premiumbukkake.com^
-||bukkake.link^
+! dead 2026-05-19 ||bukkake.link^
 ||pleasurebabe.com^
 ||milfslesbian.com^
 ||canardcoquin.com^
@@ -1940,8 +1940,8 @@ barely%20legal$all
 ||escortbook.com^
 ||fucktube4k.com^
 ||jerkdude.com^
-||neswangay.com^
-||xalarabs.com^
+! dead 2026-05-19 ||neswangay.com^
+! dead 2026-05-19 ||xalarabs.com^
 ||coomeet.me^
 ||videochat-dating-video.com^
 ||amasens.com^
@@ -1951,11 +1951,11 @@ barely%20legal$all
 ||sexywifelover.com^
 ||bioporno.com^
 ||belle-chaudasse.com^
-||grosseins8.com^
-||freepornofilms.com^
+! dead 2026-05-19 ||grosseins8.com^
+! dead 2026-05-19 ||freepornofilms.com^
 ||hentaicomics18.xyz^
 ||amateurxx.org^
-||adulter.club^
+! dead 2026-05-19 ||adulter.club^
 ||francaises-coquines.com^
 ||pussyprime.com^
 ||alexiasecret.com^
@@ -1963,20 +1963,20 @@ barely%20legal$all
 ||misslea.com^
 ||ninalamiss.com^
 ||chezjulia.fr^
-||ax.xxx^
+! dead 2026-05-19 ||ax.xxx^
 ||sexsexe1.com^
-||fattypalace.com^
+! dead 2026-05-19 ||fattypalace.com^
 ||scatbb.com^
 ||datingpartner.com^
-||erotikks.org^
+! dead 2026-05-19 ||erotikks.org^
 ||sex-for-work.com^
 ||nakedpictures.org^
 ||donsnaughtymodels.com^
 ||donsfreeporn.com^
 ||pumpherhole.com^
-||sheplaysalone.com^
+! dead 2026-05-19 ||sheplaysalone.com^
 ||amateurpornpics8.com^
-||nudematurewomenpics.com^
+! dead 2026-05-19 ||nudematurewomenpics.com^
 ||30plusandhot.com^
 ||bigtitsanhotchicks.com^
 ||hotbabesinstockings.com^
@@ -1989,19 +1989,19 @@ barely%20legal$all
 ||icuminside.com^
 ||tittykings.com^
 ||lezvids.com^
-||kylespornguide.com^
+! dead 2026-05-19 ||kylespornguide.com^
 ||amaporn.com^
 ||ixiporn.com^
 ||xnxxxvideos.net^
 ||youpornxvideos.net^
 ||tubesweet.xyz^
 ||xx-xvideos.com^
-||xx-yespornplease.com^
+! dead 2026-05-19 ||xx-yespornplease.com^
 ||xx-pornhub.com^
 ||mytopporns.com^
 ||xxxstreams.tv^
 ||xplay.me^
-||clapfap.com^
+! dead 2026-05-19 ||clapfap.com^
 ||shemale6.com^
 ||red-head-porn.com^
 ||phimsexheo.com^
@@ -2033,13 +2033,13 @@ barely%20legal$all
 ||topadultoffers.com^
 ||xxxfile.org^
 ||nakedcelebrities.site^
-||novinhasdowhatsap.tk^
+! dead 2026-05-19 ||novinhasdowhatsap.tk^
 ||celebsporno.com^
 ||throatlust.com^
 ||xxxdaily.org^
 ||bangdirlist.com^
 ||lepornofrais.com^
-||perfectjizz.com^
+! dead 2026-05-19 ||perfectjizz.com^
 ||sincdn.com^
 ||besttitstube.com^
 ||scharferporno.com^
@@ -2066,7 +2066,7 @@ barely%20legal$all
 ||buypenispump.com^
 ||mymasturbators.com^
 ||joylovedolls.com^
-||awinters.xxx^
+! dead 2026-05-19 ||awinters.xxx^
 ||yourdailygirls.com^
 ||imageweb.ws^
 ||yoloselfie.com^
@@ -2093,8 +2093,8 @@ barely%20legal$all
 ||arabsex1.com^
 ||pornxpert.com^
 ||pornmeka.com^
-||toestotits.com^
-||javzz.cc^
+! dead 2026-05-19 ||toestotits.com^
+! dead 2026-05-19 ||javzz.cc^
 ||bestporntv.com^
 ||pornxnow.me^
 ||18abused.com^
@@ -2105,38 +2105,38 @@ barely%20legal$all
 ||in35.com^
 ||kainpopoy.com^
 ||porn-cosplay.com^
-||fapadult.com^
+! dead 2026-05-19 ||fapadult.com^
 ||latinosexe.com^
 ||pornvideoshd.online^
 ||yoosexy.com^
 ||indianporn365.net^
-||skinnyfuckfuck.com^
+! dead 2026-05-19 ||skinnyfuckfuck.com^
 ||xxxbolivianas.com^
 ||xxxpapa.com^
-||stillfucking.com^
+! dead 2026-05-19 ||stillfucking.com^
 ||sexmilfs.org^
 ||playxporn.com^
-||latinatube.net^
+! dead 2026-05-19 ||latinatube.net^
 ||maturemilfvideos.com^
 ||latinasamateur.com^
 ||jinporn.com^
-||porn24hrs.com^
-||bestsquirtingporn.com^
+! dead 2026-05-19 ||porn24hrs.com^
+! dead 2026-05-19 ||bestsquirtingporn.com^
 ||desixxx.in^
 ||pornpatrons.com^
-||alltopporn.com^
+! dead 2026-05-19 ||alltopporn.com^
 ||sluttyrat.com^
 ||sexyozi.com^
 ||pornmindcontrol.com^
 ||hentairock.com^
 ||impregnationporn.com^
-||allxhentai.com^
+! dead 2026-05-19 ||allxhentai.com^
 ||caiunowhats.com.br^
 ||nudesnaweb.com.br^
 ||pornobrasil.org^
 ||hardcoresex.me^
 ||glavmatures.com^
-||hellagoodporn.com^
+! dead 2026-05-19 ||hellagoodporn.com^
 ||fuckteen18.com^
 ||camslutshows.com^
 ||hornybutt.com^
@@ -2144,18 +2144,18 @@ barely%20legal$all
 ||xfrenchies.com^
 ||jmom.xyz^
 ||pornopie.com^
-||sexlist.co.uk^
-||bestlingerieporn.video^
+! dead 2026-05-19 ||sexlist.co.uk^
+! dead 2026-05-19 ||bestlingerieporn.video^
 ||faperoni.com^
 ||pornxstream.com^
 ||porngem.com^
 ||bjswallow.com^
 ||anal.media^
 ||redheadfuck.com^
-||amateurpornhours.com^
+! dead 2026-05-19 ||amateurpornhours.com^
 ||collegesexvid.com^
-||pornforwomentube.com^
-||collegegirlhd.com^
+! dead 2026-05-19 ||pornforwomentube.com^
+! dead 2026-05-19 ||collegegirlhd.com^
 ||mrdeepfakes.com^
 ||finepov.com^
 ||videosputas.xxx^
@@ -2193,7 +2193,7 @@ barely%20legal$all
 ||porntitan.com^
 ||livemediahost.com^
 ||slutload.com^
-||exotic-malawi.com^
+! dead 2026-05-19 ||exotic-malawi.com^
 ||exoticbotswana.com^
 ||exoticalgeria.com^
 ||exoticbenin.com^
@@ -2262,14 +2262,14 @@ barely%20legal$all
 ||pornbits.net^
 ||cheggit.me^
 ||bootytape.com^
-||pornbay.org^
+! dead 2026-05-19 ||pornbay.org^
 ||pornleech.io^
 ||uploadhouse.com^
 ||pimpandhost.com^
 ||imgtaxi.com^
 ||dumppix.com^
 ||imgtornado.com^
-||xercams.com^
+! dead 2026-05-19 ||xercams.com^
 ||coolchatfriends.com^
 ||royaldressedladies.com^
 ||rdl-free.s3.*.amazonaws.com^
@@ -2291,18 +2291,18 @@ barely%20legal$all
 ||ashleyrnadison.com^
 ||cougarlife.com^
 ||loverevenue.com^
-||plus18ads.com^
+! dead 2026-05-19 ||plus18ads.com^
 ||casualhookup.com^
 ||tranny.com^
 ||ladyboycrush.com^
-||taboofamily.tube^
+! dead 2026-05-19 ||taboofamily.tube^
 ||playsexgames.xxx^
 ||3dxchat.com^
 ||bigbangempire.com^
 ||hotcandyland.com^
 ||gamcoree.com^
 ||adultsexgame.biz^
-||bigtopsites.com^
+! dead 2026-05-19 ||bigtopsites.com^
 ||top100sexgames.com^
 ||topadultgames.biz^
 ||topcartoonsites.com^
@@ -2345,8 +2345,8 @@ barely%20legal$all
 ||hentaipornography.com^
 ||hentaipassport.com^
 ||enjoy3dporn.com^
-||vulcanhentai.org^
-||jizz.xxx^
+! dead 2026-05-19 ||vulcanhentai.org^
+! dead 2026-05-19 ||jizz.xxx^
 ||blowjobqueens.net^
 ||shemalehd.net^
 ||teenpornb.com^
@@ -2359,7 +2359,7 @@ barely%20legal$all
 ||aulaporn.com^
 ||premiumpornlist.com^
 ||toppornguide.com^
-||sitiporno.org^
+! dead 2026-05-19 ||sitiporno.org^
 ||paidpornguide.com^
 ||quickiepage.com^
 ||unegeekette.com^
@@ -2380,7 +2380,7 @@ barely%20legal$all
 ||indiansexxxtube.com^
 ||sextube.desi^
 ||indianpornvideos2.com^
-||indianporn247.com^
+! dead 2026-05-19 ||indianporn247.com^
 ||indianhiddencams.com^
 ||nangiphotos.com^
 ||indiansgetfucked.com^
@@ -2388,7 +2388,7 @@ barely%20legal$all
 ||8muses.xxx^
 ||18comix.org^
 ||xyzcomics.com^
-||shentai.org^
+! dead 2026-05-19 ||shentai.org^
 ||welcomix.com^
 ||vercomics.xxx^
 ||ver-comics-porno.com^
@@ -2410,7 +2410,7 @@ barely%20legal$all
 ||tazzgay.com^
 ||pornsheriff.com^
 ||hornygods.com^
-||exxxtragay.com^
+! dead 2026-05-19 ||exxxtragay.com^
 ||mancollector.net^
 ||boycollector.net^
 ||lgbtq.games^
@@ -2443,8 +2443,8 @@ barely%20legal$all
 ||duckgay.com^
 ||ashemaletv.com^
 ||coolsexnew.com^
-||hentai-k.com^
-||star-wars-hentai.com^
+! dead 2026-05-19 ||hentai-k.com^
+! dead 2026-05-19 ||star-wars-hentai.com^
 ||cloudisexy.com^
 ||picsegg.com^
 ||fucknstein.com^
@@ -2455,13 +2455,13 @@ barely%20legal$all
 ||porn-starwars.com^
 ||libliebe.net^
 ||justporno.tv^
-||hentaistreaming.tv^
+! dead 2026-05-19 ||hentaistreaming.tv^
 ||toocartoons.com^
 ||comicsporn.me^
 ||ahsoka-tano-porn.tumblr.com^
 ||hentaidesires.com^
 ||xxxadultphoto.com^
-||semsiotaws.3m.com^
+! dead 2026-05-19 ||semsiotaws.3m.com^
 ||sexmutant.com^
 ||bootyoftheday.co^
 ||hnntube.com^
@@ -2479,7 +2479,7 @@ barely%20legal$all
 ||fullnetworkaccess.com^
 ||x-art.com^
 ||inthecrack.com^
-||teensinnature.com^
+! dead 2026-05-19 ||teensinnature.com^
 ||nudebeach4u.com^
 ||outdoorjp.com^
 ||88square.com^
@@ -2493,7 +2493,7 @@ barely%20legal$all
 ||actoferotica.com^
 ||nubilesunscripted.com^
 ||seemygf.com^
-||asshandlers.com^
+! dead 2026-05-19 ||asshandlers.com^
 ||japaneseflashers.com^
 ||nudebeachdreams.com^
 ||goddessnudes.com^
@@ -2507,7 +2507,7 @@ barely%20legal$all
 ||mplstudios.com^
 ||supertop-100.com^
 ||mofosex.net^
-||gigaporn.org^
+! dead 2026-05-19 ||gigaporn.org^
 ||1nudistbeach.com^
 ||wildnudism.com^
 ||voyeur-russian.com^
@@ -2516,7 +2516,7 @@ barely%20legal$all
 ||nudesquad.com^
 ||porngatherer.com^
 ||newpornreport.com^
-||troyxxx.com^
+! dead 2026-05-19 ||troyxxx.com^
 ||pornresource.com^
 ||pornsites.cc^
 ||pawgqueen.com^
@@ -2558,15 +2558,15 @@ barely%20legal$all
 ||transangelsnetwork.com^
 ||dump.xxx^
 ||kutjeporno.com^
-||loveamateurfacials.com^
+! dead 2026-05-19 ||loveamateurfacials.com^
 ||fapit.cc^
 ||easysexporn.com^
 ||xxx-bitch.com^
 ||fetischfilme.org^
 ||letmejerk.fun^
-||ahswingerporno.com^
+! dead 2026-05-19 ||ahswingerporno.com^
 ||porn4free.cc^
-||amateurhousewifefuck.com^
+! dead 2026-05-19 ||amateurhousewifefuck.com^
 ||japandolls.blog.2nt.com^
 ||joi-cei.com^
 ||ohpornovideo.com^
@@ -2576,7 +2576,7 @@ barely%20legal$all
 ||girlcollector.net^
 ||ohsesso.com^
 ||youngamateursporn.com^
-||private-sex-tapes.com^
+! dead 2026-05-19 ||private-sex-tapes.com^
 ||bigcocker.com^
 ||nudebeachpussy.com^
 ||xvideosmega.com^
@@ -2590,7 +2590,7 @@ barely%20legal$all
 ||nudismpure.com^
 ||moviesteen.eu^
 ||hdsextube.tv^
-||homefuck.org^
+! dead 2026-05-19 ||homefuck.org^
 ||nudeliveshow.com^
 ||datingsextapes.com^
 ||seemewank.com^
@@ -2605,8 +2605,8 @@ barely%20legal$all
 ||onstreams.net^
 ||epicomg.com^
 ||depfilepornvideos.com^
-||xxxstream.me^
-||xopenload.me^
+! dead 2026-05-19 ||xxxstream.me^
+! dead 2026-05-19 ||xopenload.me^
 ||bananamovies.org^
 ||losporn.org^
 ||freeomovie.info^
@@ -2629,7 +2629,7 @@ barely%20legal$all
 ||eroprn.com^
 ||vidsmature.com^
 ||cmature.com^
-||mature-chicks.com^
+! dead 2026-05-19 ||mature-chicks.com^
 ||maturetube.icu^
 ||cambb.xxx^
 ||fappercams.com^
@@ -2639,7 +2639,7 @@ barely%20legal$all
 ||steamygamer.com^
 ||beeg.porn^
 ||borwap.xxx^
-||tubecup.xxx^
+! dead 2026-05-19 ||tubecup.xxx^
 ||hothdsex.xxx^
 ||porno8.net^
 ||tube18.sexy^
@@ -2661,13 +2661,13 @@ barely%20legal$all
 ||homedoporn.com^
 ||extremeporntube.tv^
 ||youpornfm.com^
-||dads-banging-teens.com^
+! dead 2026-05-19 ||dads-banging-teens.com^
 ||xxxhomefuck.com^
-||sexyteens.link^
+! dead 2026-05-19 ||sexyteens.link^
 ||teen-porn-videos.com^
 ||artoferotica.info^
 ||realnovice.com^
-||adult-home-videos.com^
+! dead 2026-05-19 ||adult-home-videos.com^
 ||littleteenporn.com^
 ||nudistplay.com^
 ||losttube.com^
@@ -2688,12 +2688,12 @@ barely%20legal$all
 ||porntm.net^
 ||scrolller.com^
 ||bestpornstars.tv^
-||homepornmovies.net^
+! dead 2026-05-19 ||homepornmovies.net^
 ||hotmovs.net^
 ||hot-hardcore-tube.xyz^
 ||fapvid.net^
 ||gofucker.net^
-||nakednakedpics.com^
+! dead 2026-05-19 ||nakednakedpics.com^
 ||jav.ink^
 ||cartoonsexfantazy.com^
 ||rule34hentai.com^
@@ -2745,7 +2745,7 @@ barely%20legal$all
 ||toplist18.com^
 ||mypornfox.com^
 ||mafia-linkz.to^
-||freeknotfreak.com^
+! dead 2026-05-19 ||freeknotfreak.com^
 ||xd03.net^
 ||tazzporn.com^
 ||boredjumbo.com^
@@ -2759,18 +2759,18 @@ barely%20legal$all
 ||bestporn24.com^
 ||femdom365.net^
 ||lechepussy.com^
-||tna2web.com^
+! dead 2026-05-19 ||tna2web.com^
 ||perved.org^
 ||hd-xxx.me^
 ||booru.eu^
-||pornchil.com^
+! dead 2026-05-19 ||pornchil.com^
 ||sexei.net^
 ||safefreepornsites.com^
-||familyfucktube.com^
+! dead 2026-05-19 ||familyfucktube.com^
 ||hotporncloud.com^
 ||pure-mature.org^
-||sexy-nude-girls.info^
-||uscene.net^
+! dead 2026-05-19 ||sexy-nude-girls.info^
+! dead 2026-05-19 ||uscene.net^
 ||toplist.raidrush.ws^
 ||sukkisukki.com^
 ||porncrash.com^
@@ -2798,7 +2798,7 @@ barely%20legal$all
 ||onlyhomemadeanal.com^
 ||truebeachporn.com^
 ||hotcumporn.com^
-||24porn.club^
+! dead 2026-05-19 ||24porn.club^
 ||firstanalvideos.com^
 ||hotgirlclub.com^
 ||24porn.pro^
@@ -2822,7 +2822,7 @@ barely%20legal$all
 ||elog-ch.com^
 ||85tube.com^
 ||freepornfull.com^
-||ac-pink.net^
+! dead 2026-05-19 ||ac-pink.net^
 ||adult-gazou.me^
 ||magamagan.com^
 ||mandou.info^
@@ -2856,8 +2856,8 @@ barely%20legal$all
 ||xxnxx-porn.com^
 ||roloflix.com^
 ||free-wap-porn.com^
-||vip-xxxx.com^
-||free-porn-fap.com^
+! dead 2026-05-19 ||vip-xxxx.com^
+! dead 2026-05-19 ||free-porn-fap.com^
 ||newxnxn.com^
 ||xvideos-fuck.com^
 ||hot-xnxx-videos.com^
@@ -2865,28 +2865,28 @@ barely%20legal$all
 ||bokepvidz.com^
 ||xxxcaine.com^
 ||fuck-xxx-movies.com^
-||xnxxed.com^
+! dead 2026-05-19 ||xnxxed.com^
 ||xxx-fap.com^
-||youxxxxporn.com^
-||xmoviesxvideos.com^
+! dead 2026-05-19 ||youxxxxporn.com^
+! dead 2026-05-19 ||xmoviesxvideos.com^
 ||xvxxtube.com^
 ||xnxx18.pro^
 ||adultepic.com^
 ||anyxxx.pro^
 ||tube-sex-videos.com^
-||pornxvideos.win^
+! dead 2026-05-19 ||pornxvideos.win^
 ||fap-xxx.com^
-||xvideos-fap.com^
+! dead 2026-05-19 ||xvideos-fap.com^
 ||xxxweb.info^
 ||xxxner.com^
 ||jerkorama.com^
 ||jerk-porn.com^
 ||freexxx.win^
-||only-xxx-porn.com^
-||xxx-porn.info^
+! dead 2026-05-19 ||only-xxx-porn.com^
+! dead 2026-05-19 ||xxx-porn.info^
 ||xnxx-sex-videos.com^
 ||fapmovz.com^
-||only-xxx.com^
+! dead 2026-05-19 ||only-xxx.com^
 ||xxx2023.com^
 ||wowyoungporn.com^
 ||inaporn.com^
@@ -2900,19 +2900,19 @@ barely%20legal$all
 ||beegnow.com^
 ||hdhole.com^
 ||indecentvideos.com^
-||kindteensex.com^
+! dead 2026-05-19 ||kindteensex.com^
 ||thecandidbay.com^
 ||omg-teens.com^
 ||healthydomainc.com^
-||3dhentaihaven.com^
+! dead 2026-05-19 ||3dhentaihaven.com^
 ||acompanhantes-curitiba.com^
 ||acompanhantesagora.com.br^
 ||acompanhanteslisboa.net^
 ||acompanhantesnaweb.com.br^
-||acompanhantesrs.com.br^
+! dead 2026-05-19 ||acompanhantesrs.com.br^
 ||acsexdolls.com^
 ||agregadordelink.com.br^
-||agrupalinks.com^
+! dead 2026-05-19 ||agrupalinks.com^
 ||amadorasafada.com^
 ||amadorasreais.com^
 ||amateure-xtreme.com^
@@ -2920,12 +2920,12 @@ barely%20legal$all
 ||analpornosex.com^
 ||angoporn.net^
 ||ass-sexe.com^
-||assistirxvideos.com^
+! dead 2026-05-19 ||assistirxvideos.com^
 ||atoananet.com.br^
 ||beautifulandbusty.com^
 ||bedpage.com^
 ||bellacia.com.br^
-||bigtitgoth.com^
+! dead 2026-05-19 ||bigtitgoth.com^
 ||bigtitsmodelsdirectory.com^
 ||bizarroporno.com^
 ||bizarropornos.com^
@@ -2937,17 +2937,17 @@ barely%20legal$all
 ||o-r-g-a-s-m-o-s.tumblr.com^
 ||camsparty.com^
 ||casadosnudes.com^
-||casalexibido69.com^
+! dead 2026-05-19 ||casalexibido69.com^
 ||cruel-furies.com^
 ||cumgloryhole.com^
 ||danovinha.com^
-||deolhonamala.com^
+! dead 2026-05-19 ||deolhonamala.com^
 ||dezyred.com^
 ||dirtylivesex.net^
 ||efagion.com^
 ||elitepassion.club^
 ||eporno.com.br^
-||fetlife-video.it^
+! dead 2026-05-19 ||fetlife-video.it^
 ||flagras.blog.br^
 ||fotosdemulheresnuas.net^
 ||fuccunt.com^
@@ -2959,13 +2959,13 @@ barely%20legal$all
 ||girlswallowed.com^
 ||gloryhole.com^
 ||gloryholey.com^
-||gostosaeatoladinha.gq^
+! dead 2026-05-19 ||gostosaeatoladinha.gq^
 ||gostosastube.net^
 ||gpvicio.com.br^
 ||graias.com^
-||grupoputaria.com^
+! dead 2026-05-19 ||grupoputaria.com^
 ||hentaibros.net^
-||hentaicomics.net.br^
+! dead 2026-05-19 ||hentaicomics.net.br^
 ||hotbrazil.app.br^
 ||hottestfilms.com^
 ||hxdoll.com^
@@ -2984,26 +2984,26 @@ barely%20legal$all
 ||maduras10.org^
 ||manialinks.com^
 ||metenela.com^
-||modellinudo.net^
+! dead 2026-05-19 ||modellinudo.net^
 ||momsteachsex.com^
-||morenasafada.com.br^
+! dead 2026-05-19 ||morenasafada.com.br^
 ||myfamilypies.com^
 ||nabocadosapo.com^
 ||nangivideo.com^
 ||newhdxxx.com^
 ||novinhashd.com.br^
-||novinhassafadasxxx.online^
+! dead 2026-05-19 ||novinhassafadasxxx.online^
 ||oudoll.com^
 ||outdoorporn.space^
 ||photoacompanhantes.com^
 ||porn24horas.com^
 ||pornexpress.net^
-||porngrouplink.com^
+! dead 2026-05-19 ||porngrouplink.com^
 ||pornoamador.blog^
 ||pornobrasil.blog.br^
 ||pornobrasileiro.xyz^
 ||pornocafajeste.com^
-||pornogayhomo.fr^
+! dead 2026-05-19 ||pornogayhomo.fr^
 ||pornogratis5k.com^
 ||pornohd.com.br^
 ||pornolgbt.com.br^
@@ -3023,10 +3023,10 @@ barely%20legal$all
 ||redtube.blog^
 ||safada.net^
 ||safadastube.com^
-||safadinhasdejoinville.com^
+! dead 2026-05-19 ||safadinhasdejoinville.com^
 ||santtas.com^
 ||seuvideoporno.com^
-||sexdollspornhub.com^
+! dead 2026-05-19 ||sexdollspornhub.com^
 ||sexgamesclub.com^
 ||sexogratis.blog^
 ||sexolandia.org^
@@ -3037,7 +3037,7 @@ barely%20legal$all
 ||sexxxlife.com^
 ||sexylady-brasil.com^
 ||sexyvideosporno.com^
-||sisterstepmom-incest.xyz^
+! dead 2026-05-19 ||sisterstepmom-incest.xyz^
 ||siteadulto.com^
 ||sobeldades.com.br^
 ||sotemnovinhas.com^
@@ -3046,20 +3046,20 @@ barely%20legal$all
 ||sweetscouples.com^
 ||teenager247.com^
 ||teensloveanal.com^
-||tettediferro.net^
+! dead 2026-05-19 ||tettediferro.net^
 ||themodels.com.br^
 ||trikepatrol.com^
 ||tubent.com^
 ||tudanovinha.com^
-||unbonporno.fr^
-||unebonnemilf.fr^
+! dead 2026-05-19 ||unbonporno.fr^
+! dead 2026-05-19 ||unebonnemilf.fr^
 ||universitariasclub.com.br^
-||vazoudozap.com^
+! dead 2026-05-19 ||vazoudozap.com^
 ||video-onlyfans.it^
 ||videodesexo.blog^
 ||videomaniaco.com^
 ||videoporno.tv^
-||videoporno2fellation.fr^
+! dead 2026-05-19 ||videoporno2fellation.fr^
 ||videosdesexo.br.com^
 ||videosexo.blog.br^
 ||vipsecret.com.br^
@@ -3069,8 +3069,8 @@ barely%20legal$all
 ||xanimu.com^
 ||xgloryhole.com^
 ||xhamster.blog.br^
-||xnxx.blog.br^
-||xnxxteenager.com^
+! dead 2026-05-19 ||xnxx.blog.br^
+! dead 2026-05-19 ||xnxxteenager.com^
 ||xnxxxhamster.site^
 ||xporno.pt^
 ||xvideo.blog^
@@ -3086,7 +3086,7 @@ barely%20legal$all
 ||xvideosmorena.com.br^
 ||xvideosputinhas.com.br^
 ||xvideosrei.com^
-||xvideostube.com.br^
+! dead 2026-05-19 ||xvideostube.com.br^
 ||xvideosweb.net^
 ||xvideosws.com^
 ||xvidios.blog^
@@ -3097,8 +3097,8 @@ barely%20legal$all
 ||xxxvideos.blog^
 ||xxxxvideo.uno^
 ||xyzteens.com^
-||zoofilia.adult^
-||zoofilia.gratis^
+! dead 2026-05-19 ||zoofilia.adult^
+! dead 2026-05-19 ||zoofilia.gratis^
 ||japanhardcoremovies.com^
 ||javcube.com^
 ||javhtml5.com^
@@ -3133,26 +3133,26 @@ barely%20legal$all
 ||javtsunami.com^
 ||sextb.net^
 ||pornstargold.com^
-||avidolpics.com^
+! dead 2026-05-19 ||avidolpics.com^
 ||javteens.com^
 ||xvideos3.com^
 ||javopen.co^
 ||kissjav.li^
 ||xxxwow.net^
-||jav.fm^
+! dead 2026-05-19 ||jav.fm^
 ||javfm.me^
 ||javkiss.me^
 ||javhotgirl.com^
-||jp3x.me^
-||jp3x.net^
+! dead 2026-05-19 ||jp3x.me^
+! dead 2026-05-19 ||jp3x.net^
 ||hotjavmovies.com^
 ||mypornhere.com^
-||javtc.fun^
-||javmec.me^
+! dead 2026-05-19 ||javtc.fun^
+! dead 2026-05-19 ||javmec.me^
 ||javsex.vip^
-||pornmoviesfull.com^
+! dead 2026-05-19 ||pornmoviesfull.com^
 ||bpornvideos.com^
-||tubex.lol^
+! dead 2026-05-19 ||tubex.lol^
 ||hotjav.tv^
 ||javxxx.me^
 ||missav.com^
@@ -3180,7 +3180,7 @@ barely%20legal$all
 ||metart.network^
 ||gate.cc^
 ||ancensored.com^
-||ancensoredcloud2.xyz^
+! dead 2026-05-19 ||ancensoredcloud2.xyz^
 ||aisan-porn.org^
 ||247asiansex.com^
 ||liveasianfuck.com^
@@ -3217,13 +3217,13 @@ barely%20legal$all
 ||hentaiera.com^
 ||hentaienvy.com^
 ||megacomixadult.com^
-||ejocurimario.net^
-||danielsfunny.com^
+! dead 2026-05-19 ||ejocurimario.net^
+! dead 2026-05-19 ||danielsfunny.com^
 ||latinogaypridepdx.com^
 ||freelancewritercharley.com^
 ||foodienfabulous.com^
 ||phoenix-basketball.com^
-||40mostinspiring.com^
+! dead 2026-05-19 ||40mostinspiring.com^
 ||expateducator.com^
 ||batemansbaywritersfestival.com^
 ||trahkino.cc^
@@ -3234,7 +3234,7 @@ barely%20legal$all
 ||eggporncomics.com^
 ||hentairox.com^
 ||gotofap.net^
-||gotofap.tk^
+! dead 2026-05-19 ||gotofap.tk^
 ||xv-videos1.com^
 ||youporn.red^
 ||manytoon.com^
@@ -3257,7 +3257,7 @@ barely%20legal$all
 ||hentaiblue.com^
 ||mult34.com^
 ||donpornovideos.com^
-||txxx.pics^
+! dead 2026-05-19 ||txxx.pics^
 ||videos-xxx-gratuit.com^
 ||adultcomic.uk^
 ||hanime.mobi^
@@ -3270,21 +3270,21 @@ barely%20legal$all
 ||tinhduc.org^
 ||hentairider.com^
 ||xnxx2.info^
-||rule34porn.net^
+! dead 2026-05-19 ||rule34porn.net^
 ||hot-cartoon.com^
 ||pheonix.money^
 ||xvdeos1.com^
 ||cartoon-sex.tv^
 ||xvideos98.xxx^
 ||hotiexsexy.com^
-||porn-porn-porn.net^
-||xxx-pic.cz^
+! dead 2026-05-19 ||porn-porn-porn.net^
+! dead 2026-05-19 ||xxx-pic.cz^
 ||videoleak.me^
 ||zzsex.de^
 ||bokepxsex.com^
 ||anybunny.org^
-||jav-guru.it^
-||hot-datings.life^
+! dead 2026-05-19 ||jav-guru.it^
+! dead 2026-05-19 ||hot-datings.life^
 ||xvideos5.com^
 ||pussyspace.net^
 ||nunuporn.com^
@@ -3293,16 +3293,16 @@ barely%20legal$all
 ||closedmyvideo.com^
 ||hotstar.to^
 ||adultproxy.org^
-||fap18.fun^
+! dead 2026-05-19 ||fap18.fun^
 ||cloudyxgirl.com^
-||xxxpress.cc^
+! dead 2026-05-19 ||xxxpress.cc^
 ||livecams-tv.com^
-||xxx-com.cfd^
-||porn-sex-video.me^
+! dead 2026-05-19 ||xxx-com.cfd^
+! dead 2026-05-19 ||porn-sex-video.me^
 ||thepornlinks.com^
 ||bestjavporn.com^
 ||pornbl.com^
-||javsts.com^
+! dead 2026-05-19 ||javsts.com^
 ||jav.guru^
 ||ijavhd.com^
 ||javdragon.com^
@@ -3313,9 +3313,9 @@ barely%20legal$all
 ||playporngames.com^
 ||wankgames.com^
 ||adultgames.games^
-||porngamesfree.cc^
+! dead 2026-05-19 ||porngamesfree.cc^
 ||porngameshd.com^
-||playpornogames.com^
+! dead 2026-05-19 ||playpornogames.com^
 ||bestporngames.com^
 ||gamesofdesire.com^
 ||lewdclips.com^
@@ -3333,25 +3333,25 @@ barely%20legal$all
 ||xxxgames.biz^
 ||3dx-games.com^
 ||funny-games.biz^
-||mobibooby.com^
+! dead 2026-05-19 ||mobibooby.com^
 ||androidmo.me^
 ||fap-nation.com^
 ||sexflashgame.org^
-||freeporn.game^
+! dead 2026-05-19 ||freeporn.game^
 ||porngames.adult^
 ||bestfreesexgames.com^
 ||arianeb.com^
 ||anybunny.tv^
 ||porno-apk.com^
 ||pornova.org^
-||playporngames.xxx^
+! dead 2026-05-19 ||playporngames.xxx^
 ||mikandicams.com^
-||playsexygame.com^
+! dead 2026-05-19 ||playsexygame.com^
 ||2games.com^
-||freeadult.games^
+! dead 2026-05-19 ||freeadult.games^
 ||xxxonlinegames.com^
-||gameratoutprix.net^
-||porngamesfree.club^
+! dead 2026-05-19 ||gameratoutprix.net^
+! dead 2026-05-19 ||porngamesfree.club^
 ||world-hentai.com^
 ||clitgames.com^
 ||adultgamecity.com^
@@ -3726,7 +3726,7 @@ barely%20legal$all
 ||subscribestar.adult^
 ||hqporner.com^
 ||sexxxx.love^
-||xxxporn.love^
+! dead 2026-05-19 ||xxxporn.love^
 ||sexyxxx.ooo^
 ||videosxxx.site^
 ||sexyporn.ooo^
@@ -3734,11 +3734,11 @@ barely%20legal$all
 ||qep.me^
 ||porrn.tv^
 ||pornxxx.fun^
-||pornvideos.fans^
+! dead 2026-05-19 ||pornvideos.fans^
 ||pornmovies.site^
 ||pornjke.com^
 ||pornhd.cc^
-||jerkoff.fans^
+! dead 2026-05-19 ||jerkoff.fans^
 ||hdporn.love^
 ||freesexvideos.tv^
 ||freepornvideos.site^
@@ -3763,7 +3763,7 @@ barely%20legal$all
 ||sexchat.bar^
 ||livesex.run^
 ||livesexcams.rocks^
-||livecamsex.show^
+! dead 2026-05-19 ||livecamsex.show^
 ||sexcam.run^
 ||livesexcams.cafe^
 ||livesex.bar^
@@ -3807,7 +3807,7 @@ barely%20legal$all
 ||thothub.to^
 ||mature.nl^
 ||tandahousewives.com^
-||bigbootypics.me^
+! dead 2026-05-19 ||bigbootypics.me^
 ||bootypics.me^
 ||bigasspics.me^
 ||familycuckolds.com^
@@ -3862,11 +3862,11 @@ barely%20legal$all
 ||indiantube.porn^
 ||teluguporn.tv^
 ||teluguporn.cc^
-||tamilporn.site^
+! dead 2026-05-19 ||tamilporn.site^
 ||tamilporn.tv^
-||indianpornvideos.ooo^
-||indianpornvideos.fun^
-||indianpornvideos.love^
+! dead 2026-05-19 ||indianpornvideos.ooo^
+! dead 2026-05-19 ||indianpornvideos.fun^
+! dead 2026-05-19 ||indianpornvideos.love^
 ||desipornvideos.tv^
 ||desipornvideos.cc^
 ||desipornvideos.site^
@@ -3908,48 +3908,48 @@ barely%20legal$all
 ||dickflash.com^
 ||oneclickchicks.com^
 ||camcaps.net^
-||musclegirls.pro^
+! dead 2026-05-19 ||musclegirls.pro^
 ||girlswithmuscle.pro^
-||thefitgirls.pro^
-||pururin.io^
+! dead 2026-05-19 ||thefitgirls.pro^
+! dead 2026-05-19 ||pururin.io^
 ||coozeporn.com^
 ||pornmovies.name^
-||hugetitsgifs.com^
+! dead 2026-05-19 ||hugetitsgifs.com^
 ||perfecttitsgifs.com^
-||flashingtitsgifs.com^
-||assfuckgif.com^
-||titsgifs.com^
-||analsexgif.com^
-||bigboobsgifs.com^
+! dead 2026-05-19 ||flashingtitsgifs.com^
+! dead 2026-05-19 ||assfuckgif.com^
+! dead 2026-05-19 ||titsgifs.com^
+! dead 2026-05-19 ||analsexgif.com^
+! dead 2026-05-19 ||bigboobsgifs.com^
 ||analporngif.com^
 ||bestlesbiansexgifs.com^
-||bestbdsmgifs.com^
-||doggystylegifs.com^
-||handjobgifs.com^
-||cumshotgifs.com^
-||deepthroatgifs.com^
-||oralsexgifs.com^
+! dead 2026-05-19 ||bestbdsmgifs.com^
+! dead 2026-05-19 ||doggystylegifs.com^
+! dead 2026-05-19 ||handjobgifs.com^
+! dead 2026-05-19 ||cumshotgifs.com^
+! dead 2026-05-19 ||deepthroatgifs.com^
+! dead 2026-05-19 ||oralsexgifs.com^
 ||spankinggifs.com^
 ||boobsgifs.com^
 ||bigtitsgifs.com^
 ||creampiegifs.com^
 ||sexgifs.tv^
-||porngifs.site^
+! dead 2026-05-19 ||porngifs.site^
 ||porngifs.tv^
 ||bigbootyporn.site^
 ||bigassporn.love^
-||bigassporn.site^
+! dead 2026-05-19 ||bigassporn.site^
 ||bigbootytube.xxx^
 ||bigbootyporn.tv^
 ||culonasxxx.cc^
 ||pornoculonas.cc^
 ||chubbyporn.ooo^
-||bbwporn.fans^
+! dead 2026-05-19 ||bbwporn.fans^
 ||bbwporn.love^
 ||bbwtube.porn^
 ||hugetits.me^
-||bigtits.bar^
-||bigboobs.love^
+! dead 2026-05-19 ||bigtits.bar^
+! dead 2026-05-19 ||bigboobs.love^
 ||bigtitstube.xxx^
 ||bigtitsporn.xxx^
 ||tetasgrandes.tv^
@@ -3999,7 +3999,7 @@ barely%20legal$all
 ||nudecollect.com^
 ||watchmynudes.com^
 ||maudsuicide.tumblr.com^
-||redbust.com^
+! dead 2026-05-19 ||redbust.com^
 ||cumception.com^
 ||heinleincontest.info^
 ||rabbitsfun.com^
@@ -4011,12 +4011,12 @@ barely%20legal$all
 ||itsgemmaedwards.com^
 ||cherrynudes.com^
 ||cloobezgirl.com^
-||the-urbn.com^
+! dead 2026-05-19 ||the-urbn.com^
 ||suicidegirlsandhopefuls.tumblr.com^
 ||wankgod.com^
 ||sexdicted.com^
-||misty-morning.net^
-||ditnhau.org^
+! dead 2026-05-19 ||misty-morning.net^
+! dead 2026-05-19 ||ditnhau.org^
 ||thelordofporn.com^
 ||thepornmap.com^
 ||weknowporn.com^
@@ -4025,7 +4025,7 @@ barely%20legal$all
 ||manplay.com^
 ||smoothgayporn.com^
 ||xxxtubelove.com^
-||bigarabcock.com^
+! dead 2026-05-19 ||bigarabcock.com^
 ||ifl-porn.com^
 ||thepornlist.com^
 ||pornplanner.com^
@@ -4772,22 +4772,22 @@ barely%20legal$all
 ||pornboss.me^
 ||bikespumps.info^
 ||asianxxxmovs.com^
-||classymomsex.com^
-||cosplaycutegirls.com^
-||e3regenesis.com^
-||freeporngays.com^
+! dead 2026-05-19 ||classymomsex.com^
+! dead 2026-05-19 ||cosplaycutegirls.com^
+! dead 2026-05-19 ||e3regenesis.com^
+! dead 2026-05-19 ||freeporngays.com^
 ||longblacksex.com^
 ||nudemomxxx.com^
 ||restrainedmen.com^
 ||blackpornfilms.com^
 ||hentaixxxmovies.com^
 ||keyretrosex.com^
-||mybbwporn.com^
+! dead 2026-05-19 ||mybbwporn.com^
 ||nakedindianporn.com^
 ||nakedxxxlesbians.com^
 ||wellsextube.com^
-||xxxasstube.com^
-||xxxblackteens.com^
+! dead 2026-05-19 ||xxxasstube.com^
+! dead 2026-05-19 ||xxxblackteens.com^
 ||xxxnudeceleb.com^
 ||pornpichunter.net^
 ||amazingvintagesex.com^
@@ -4798,19 +4798,19 @@ barely%20legal$all
 ||goldlesbiantube.com^
 ||shinyjapaneseporn.com^
 ||blackxxxclips.com^
-||deepasiansex.com^
+! dead 2026-05-19 ||deepasiansex.com^
 ||ebonyxxxfuck.com^
-||fantasticyoungporn.com^
+! dead 2026-05-19 ||fantasticyoungporn.com^
 ||gaysexjoy.com^
-||niceblacksex.com^
-||sexebonytube.com^
-||sexyoungmovies.com^
+! dead 2026-05-19 ||niceblacksex.com^
+! dead 2026-05-19 ||sexebonytube.com^
+! dead 2026-05-19 ||sexyoungmovies.com^
 ||xxxvoyeurtube.com^
 ||forhertube.com^
 ||youporn.com^
 ||colliderporn.com^
 ||freeporn.works^
-||freepornvideos.su^
+! dead 2026-05-19 ||freepornvideos.su^
 ||xvideos2.com^
 ||freeporno.xxx^
 ||perfectgirls.net^
@@ -4819,139 +4819,139 @@ barely%20legal$all
 ||ufreeporn.org^
 ||bigtitslove.com^
 ||gyprn.com^
-||oasixxx.com^
+! dead 2026-05-19 ||oasixxx.com^
 ||privatepornfilms.com^
-||sexmaxfree.com^
-||sexyfatgirls.net^
+! dead 2026-05-19 ||sexmaxfree.com^
+! dead 2026-05-19 ||sexyfatgirls.net^
 ||xxxvariety.com^
-||candymikkey.com^
-||arurura.com^
-||bikinilover.me^
+! dead 2026-05-19 ||candymikkey.com^
+! dead 2026-05-19 ||arurura.com^
+! dead 2026-05-19 ||bikinilover.me^
 ||bongacams.com^
 ||bzebza.com^
-||recordedprivate.com^
-||celebsexfake.com^
-||forfunanal.com^
-||lefreecams.com^
-||hardsex.me^
+! dead 2026-05-19 ||recordedprivate.com^
+! dead 2026-05-19 ||celebsexfake.com^
+! dead 2026-05-19 ||forfunanal.com^
+! dead 2026-05-19 ||lefreecams.com^
+! dead 2026-05-19 ||hardsex.me^
 ||hdxxxtube.online^
 ||javynow.com^
-||annieswaff.com^
-||antonellavalentt.com^
-||lahawkeyes.com^
-||camilavillalobos.com^
-||asswoman.com^
-||cassiemaven.com^
-||porn7gifs.com^
+! dead 2026-05-19 ||annieswaff.com^
+! dead 2026-05-19 ||antonellavalentt.com^
+! dead 2026-05-19 ||lahawkeyes.com^
+! dead 2026-05-19 ||camilavillalobos.com^
+! dead 2026-05-19 ||asswoman.com^
+! dead 2026-05-19 ||cassiemaven.com^
+! dead 2026-05-19 ||porn7gifs.com^
 ||porndata888.com^
-||meteo123.net^
-||sexybabeworld.org^
+! dead 2026-05-19 ||meteo123.net^
+! dead 2026-05-19 ||sexybabeworld.org^
 ||myseostats.com^
 ||busyindia.com^
 ||chatabte.com^
 ||collegeporn.net^
 ||delhidialogue.org^
-||the2live.com^
+! dead 2026-05-19 ||the2live.com^
 ||inhumanity.com^
-||awmcj.net^
-||jamestraffic.com^
-||maletubeporn.com^
+! dead 2026-05-19 ||awmcj.net^
+! dead 2026-05-19 ||jamestraffic.com^
+! dead 2026-05-19 ||maletubeporn.com^
 ||4celeb.net^
-||4milf.net^
+! dead 2026-05-19 ||4milf.net^
 ||aewm-traffic.com^
-||aracrew.net^
-||barenakedcelebs.com^
-||bigblackass.tv^
-||black24sex.com^
-||black4lesbians.com^
-||black4pussy.com^
-||blackafroporn.com^
-||blackboobstube.net^
+! dead 2026-05-19 ||aracrew.net^
+! dead 2026-05-19 ||barenakedcelebs.com^
+! dead 2026-05-19 ||bigblackass.tv^
+! dead 2026-05-19 ||black24sex.com^
+! dead 2026-05-19 ||black4lesbians.com^
+! dead 2026-05-19 ||black4pussy.com^
+! dead 2026-05-19 ||blackafroporn.com^
+! dead 2026-05-19 ||blackboobstube.net^
 ||blackcholly.com^
 ||blackfree.tv^
 ||blacknakedgirl.com^
-||blackpornweb.com^
-||blackpussyfilm.com^
+! dead 2026-05-19 ||blackpornweb.com^
+! dead 2026-05-19 ||blackpussyfilm.com^
 ||blacksexmix.com^
-||blacksexsite.net^
-||blackstarlet.com^
-||blackteenstube.net^
-||bustyblackporn.com^
-||celeb-porn.us^
-||celeb4nude.com^
+! dead 2026-05-19 ||blacksexsite.net^
+! dead 2026-05-19 ||blackstarlet.com^
+! dead 2026-05-19 ||blackteenstube.net^
+! dead 2026-05-19 ||bustyblackporn.com^
+! dead 2026-05-19 ||celeb-porn.us^
+! dead 2026-05-19 ||celeb4nude.com^
 ||celebmatrix.com^
-||celebnetwork.biz^
+! dead 2026-05-19 ||celebnetwork.biz^
 ||celebritiespost.com^
-||celebrityhorny.com^
-||celebritypornarchive.net^
-||celebsbiz.com^
+! dead 2026-05-19 ||celebrityhorny.com^
+! dead 2026-05-19 ||celebritypornarchive.net^
+! dead 2026-05-19 ||celebsbiz.com^
 ||celebsempire.com^
 ||celebsexnews.com^
-||desktopcelebrita.com^
-||divinecelebs.com^
+! dead 2026-05-19 ||desktopcelebrita.com^
+! dead 2026-05-19 ||divinecelebs.com^
 ||doctor-traffic.com^
 ||ebony6.com^
 ||ebonypornmix.com^
-||ebonywomenporn.com^
+! dead 2026-05-19 ||ebonywomenporn.com^
 ||fuckedblackgirls.com^
-||gay24sex.com^
-||gay3sex.com^
-||gay4tube.net^
-||gayfame.com^
-||gayporn4.com^
+! dead 2026-05-19 ||gay24sex.com^
+! dead 2026-05-19 ||gay3sex.com^
+! dead 2026-05-19 ||gay4tube.net^
+! dead 2026-05-19 ||gayfame.com^
+! dead 2026-05-19 ||gayporn4.com^
 ||gaytape.com^
 ||ghettopearls.com^
-||girlsaged.com^
-||girlsnudes.net^
+! dead 2026-05-19 ||girlsaged.com^
+! dead 2026-05-19 ||girlsnudes.net^
 ||hassex.net^
-||lesbiansblack.net^
-||lesbiansfree.net^
-||lesbiansgalleries.org^
-||lesbiansvideo.net^
+! dead 2026-05-19 ||lesbiansblack.net^
+! dead 2026-05-19 ||lesbiansfree.net^
+! dead 2026-05-19 ||lesbiansgalleries.org^
+! dead 2026-05-19 ||lesbiansvideo.net^
 ||mature4.net^
-||mature4porn.net^
-||maturetubemix.com^
-||miroznetwork.com^
-||mom4tube.com^
+! dead 2026-05-19 ||mature4porn.net^
+! dead 2026-05-19 ||maturetubemix.com^
+! dead 2026-05-19 ||miroznetwork.com^
+! dead 2026-05-19 ||mom4tube.com^
 ||momspost.com^
-||momspussies.com^
-||nakedcelebstube.net^
-||nakedmoms.xxx^
-||nudeactressporn.com^
+! dead 2026-05-19 ||momspussies.com^
+! dead 2026-05-19 ||nakedcelebstube.net^
+! dead 2026-05-19 ||nakedmoms.xxx^
+! dead 2026-05-19 ||nudeactressporn.com^
 ||nudehot.net^
-||nudemilfhub.com^
-||nudeyoungphotos.com^
-||olderwomanvideo.com^
-||oldretroporn.com^
-||pornafro.com^
-||pornmature.xxx^
+! dead 2026-05-19 ||nudemilfhub.com^
+! dead 2026-05-19 ||nudeyoungphotos.com^
+! dead 2026-05-19 ||olderwomanvideo.com^
+! dead 2026-05-19 ||oldretroporn.com^
+! dead 2026-05-19 ||pornafro.com^
+! dead 2026-05-19 ||pornmature.xxx^
 ||pornmaturevideo.com^
-||pornvintagexxx.com^
+! dead 2026-05-19 ||pornvintagexxx.com^
 ||reviewofcelebs.com^
-||richandnaked.com^
+! dead 2026-05-19 ||richandnaked.com^
 ||teenfap.net^
-||thecelebporn.net^
-||thecelebstapes.com^
-||themaleporn.com^
+! dead 2026-05-19 ||thecelebporn.net^
+! dead 2026-05-19 ||thecelebstapes.com^
+! dead 2026-05-19 ||themaleporn.com^
 ||trafficholder.com^
 ||tubeblackporn.com^
 ||vaalnetwork.com^
 ||viewmature.com^
 ||vintage4porn.com^
-||vintage4tube.com^
+! dead 2026-05-19 ||vintage4tube.com^
 ||vintagejizz.com^
-||youngnakedgirl.org^
-||youngteennude.net^
+! dead 2026-05-19 ||youngnakedgirl.org^
+! dead 2026-05-19 ||youngteennude.net^
 ||yourblacks.com^
-||yourceleb.net^
-||yournudecelebrities.com^
-||youngnude.xxx^
+! dead 2026-05-19 ||yourceleb.net^
+! dead 2026-05-19 ||yournudecelebrities.com^
+! dead 2026-05-19 ||youngnude.xxx^
 ||4porn.asia^
 ||hentai.as^
 ||pornhentai.net^
 ||tube18.biz^
 ||sexxx.su^
-||xmature.su^
+! dead 2026-05-19 ||xmature.su^
 ||adultxxxvideos.net^
 ||erosexer.com^
 ||wildhardsex.com^
@@ -4966,16 +4966,16 @@ barely%20legal$all
 ||hotpornphotos.com^
 ||viewgals.com^
 ||youngblowjob.net^
-||tubsexer.info^
+! dead 2026-05-19 ||tubsexer.info^
 ||nakedteengirls.org^
 ||teennudegirls.com^
 ||nudexxxpictures.com^
 ||alexaporn.com^
 ||happy-porn.com^
-||cherryguys.pro^
-||gayfuckgay.info^
+! dead 2026-05-19 ||cherryguys.pro^
+! dead 2026-05-19 ||gayfuckgay.info^
 ||pornxxxhd.cc^
-||asian-porn-videos.com^
+! dead 2026-05-19 ||asian-porn-videos.com^
 ||hdjav.su^
 ||xxxporn.me^
 ||daftporn.com^
@@ -4996,34 +4996,34 @@ barely%20legal$all
 ||videoprikoly.org^
 ||fucktubeclub.com^
 ||xxntube.com^
-||hdasianfilms.com^
-||porniporn.com^
-||ajapaneseporn.com^
+! dead 2026-05-19 ||hdasianfilms.com^
+! dead 2026-05-19 ||porniporn.com^
+! dead 2026-05-19 ||ajapaneseporn.com^
 ||saucypictures.com^
 ||neococoastore.com^
 ||nudegirlsvideo.com^
-||pervertedguidance.com^
+! dead 2026-05-19 ||pervertedguidance.com^
 ||babes-and-stuff.com^
-||holyfogkc.com^
-||swimsuitmodelscalendar.com^
-||ucdlark.com^
+! dead 2026-05-19 ||holyfogkc.com^
+! dead 2026-05-19 ||swimsuitmodelscalendar.com^
+! dead 2026-05-19 ||ucdlark.com^
 ||datingtipsgay.telrock.net^
 ||hotebonyclips.com^
 ||tgpteam.com^
 ||megeno.mobi^
-||xxxhdporno.gay^
-||gayasses.com^
+! dead 2026-05-19 ||xxxhdporno.gay^
+! dead 2026-05-19 ||gayasses.com^
 ||germanychats.com^
 ||youbigtitsporn.com^
 ||xxxstargallery.com^
 ||modelsfreecams.com^
-||stopchasingskinny.com^
+! dead 2026-05-19 ||stopchasingskinny.com^
 ||xstrap.org^
-||yourhealthykangenwater.com^
-||asiangirlsmovies.com^
+! dead 2026-05-19 ||yourhealthykangenwater.com^
+! dead 2026-05-19 ||asiangirlsmovies.com^
 ||stripvidz.net^
-||tonsofporn.net^
-||welovepantyhose.com^
+! dead 2026-05-19 ||tonsofporn.net^
+! dead 2026-05-19 ||welovepantyhose.com^
 ||passionvidz.com^
 ||gaming-porn.com^
 ||animeporngif.com^
@@ -5032,51 +5032,51 @@ barely%20legal$all
 ||xxxrec.com^
 ||femdomtraining.ca^
 ||visitromagna.net^
-||robert-klingenfus.com^
+! dead 2026-05-19 ||robert-klingenfus.com^
 ||isteenporn.com^
-||pixelplaygroundmedia.com^
+! dead 2026-05-19 ||pixelplaygroundmedia.com^
 ||pornclipsonline.net^
 ||stripcdn.com^
-||yakuzafight.eu^
-||eroticchennaiescort.com^
+! dead 2026-05-19 ||yakuzafight.eu^
+! dead 2026-05-19 ||eroticchennaiescort.com^
 ||babeoftheday.net^
 ||xxxhdtubefree.com^
-||asianpornsushi.com^
-||xxxize.com^
+! dead 2026-05-19 ||asianpornsushi.com^
+! dead 2026-05-19 ||xxxize.com^
 ||istanbulshemale1.com^
-||trueshemaleporn.com^
+! dead 2026-05-19 ||trueshemaleporn.com^
 ||venividicomedi.eu^
-||studentfucktube.com^
+! dead 2026-05-19 ||studentfucktube.com^
 ||creampiefuq.com^
 ||girlontopporn.com^
-||romantische-geschenke.eu^
+! dead 2026-05-19 ||romantische-geschenke.eu^
 ||beegxlxxporn.com^
-||101xxxx.com^
+! dead 2026-05-19 ||101xxxx.com^
 ||flirt.com^
 ||madyouporn.com^
 ||launchporn.com^
 ||resourcesxxx.com^
-||freeporn777.xyz^
-||fuzzporn.com^
-||pornofavorite.com^
-||sexyassnude.com^
+! dead 2026-05-19 ||freeporn777.xyz^
+! dead 2026-05-19 ||fuzzporn.com^
+! dead 2026-05-19 ||pornofavorite.com^
+! dead 2026-05-19 ||sexyassnude.com^
 ||abbwporn.com^
 ||golden-hour.com^
-||blacknaughty.com^
+! dead 2026-05-19 ||blacknaughty.com^
 ||golf-birdie.eu^
 ||find-me-sex.com^
 ||redir2fuck.com^
-||lezsexmovies.com^
+! dead 2026-05-19 ||lezsexmovies.com^
 ||homemadepornhq.com^
 ||wardsixforpaul.com^
-||pussy-media.com^
+! dead 2026-05-19 ||pussy-media.com^
 ||mumuporn.mobi^
 ||asianpornpics.com^
 ||japaneseslurp.com^
 ||pimproll.com^
 ||bigpornotits.com^
-||largeorbig.com^
-||chat-69.xyz^
+! dead 2026-05-19 ||largeorbig.com^
+! dead 2026-05-19 ||chat-69.xyz^
 ||biqle.ru^
 ||gelbooru.com^
 ||rule34.xxx^
@@ -5084,35 +5084,35 @@ barely%20legal$all
 ||8muses.com^
 ||hentai-foundry.com^
 ||blueporn.mobi^
-||xnxxv.mobi^
+! dead 2026-05-19 ||xnxxv.mobi^
 ||sexwomenchat.com^
 ||sumoporn.mobi^
-||fotospornolatino.com^
+! dead 2026-05-19 ||fotospornolatino.com^
 ||twofinechaps.com^
 ||analporntrends.com^
-||pornus.org^
+! dead 2026-05-19 ||pornus.org^
 ||xpool.net^
 ||fukvids.com^
 ||collectionofporn.mobi^
 ||firetube.mobi^
-||handjobpornhd.com^
-||1bengaliporn.com^
+! dead 2026-05-19 ||handjobpornhd.com^
+! dead 2026-05-19 ||1bengaliporn.com^
 ||tubepatrolporn.com^
 ||nuporn.mobi^
-||gratispornogirls.com^
+! dead 2026-05-19 ||gratispornogirls.com^
 ||moreporn.org^
 ||likeporn.mobi^
 ||bestxxxzone.com^
 ||sex18xxx.com^
 ||mygfpornvideos.com^
-||porn88.top^
-||sex4k.icu^
-||pornorodeo.com^
+! dead 2026-05-19 ||porn88.top^
+! dead 2026-05-19 ||sex4k.icu^
+! dead 2026-05-19 ||pornorodeo.com^
 ||konachan.com^
 ||allthefallen.moe^
 ||loliclubscorp.com^
 ||hentai-cosplays.com^
-||tuyetnhan.com^
+! dead 2026-05-19 ||tuyetnhan.com^
 ||porn.biz^
 ||freedirtygame.com^
 ||onlyfans.com^
@@ -5134,7 +5134,7 @@ barely%20legal$all
 ||xxxarabgirls.com^
 ||xsanp69.com^
 ||thefappeningstars.com^
-||picture-porn.com^
+! dead 2026-05-19 ||picture-porn.com^
 ||celxxx.com^
 ||xvideos.online^
 ||addictedtocelebrities.com^
@@ -5149,77 +5149,77 @@ barely%20legal$all
 ||thisisnude.com^
 ||sexdug.com^
 ||porngrounds.com^
-||sexclipx.com^
-||bofbporn.com^
+! dead 2026-05-19 ||sexclipx.com^
+! dead 2026-05-19 ||bofbporn.com^
 ||fotorgia.com^
 ||fuckble.com^
 ||sexynudestars.com^
 ||xxk.mobi^
 ||fetlifeblog.com^
-||scuw.org^
-||thehotstars.com^
+! dead 2026-05-19 ||scuw.org^
+! dead 2026-05-19 ||thehotstars.com^
 ||fappeninghd.com^
 ||xnudecelebrities.com^
 ||upicsz.com^
 ||gayhub.mobi^
 ||iloopit.net^
-||fappingxxx.com^
+! dead 2026-05-19 ||fappingxxx.com^
 ||boobpedia.com^
 ||onlylesbiantube.com^
 ||porn300.com^
 ||taboozoo.com^
 ||jacksonunityfestival.org^
-||kleinerhase-stempelnase.com^
+! dead 2026-05-19 ||kleinerhase-stempelnase.com^
 ||innatcrestedbutte.com^
 ||leakpornpics.com^
 ||xblognetwork.com^
 ||celebrityleakednudes.com^
 ||selfiedump.com^
 ||famousinternetgirlsgalleries.com^
-||100pussy.com^
-||fappening100.com^
+! dead 2026-05-19 ||100pussy.com^
+! dead 2026-05-19 ||fappening100.com^
 ||asiantiktokgirl.com^
 ||youngteenpussy.com^
-||fappingnow.com^
+! dead 2026-05-19 ||fappingnow.com^
 ||cutefans.win^
 ||onlyfansleaks.tv^
-||pulsedating.top^
+! dead 2026-05-19 ||pulsedating.top^
 ||displayadtech.com^
 ||banquetunarmedgrater.com^
-||iicsxxkdcy.com^
-||inadequateinadmissibleoblige.com^
-||plainmarshyaltered.com^
-||pornpic.biz^
-||leakedindiancelebs.com^
+! dead 2026-05-19 ||iicsxxkdcy.com^
+! dead 2026-05-19 ||inadequateinadmissibleoblige.com^
+! dead 2026-05-19 ||plainmarshyaltered.com^
+! dead 2026-05-19 ||pornpic.biz^
+! dead 2026-05-19 ||leakedindiancelebs.com^
 ||porn-party.com^
 ||ohfree.net^
 ||kikibobo.com^
-||pichunterz.com^
+! dead 2026-05-19 ||pichunterz.com^
 ||topsexymodels.net^
-||thegirle.com^
+! dead 2026-05-19 ||thegirle.com^
 ||slutmesh.com^
 ||faps.club^
 ||dupose.com^
-||iconporn.com^
+! dead 2026-05-19 ||iconporn.com^
 ||fapopedia.net^
 ||indianlust.mobi^
-||nudeporn.org^
+! dead 2026-05-19 ||nudeporn.org^
 ||nude-pics.org^
 ||nudeof.com^
 ||platinumleaks.com^
 ||fansteek.com^
 ||findhername.net^
 ||leakhub.vip^
-||lucyjaynecaravans.com^
+! dead 2026-05-19 ||lucyjaynecaravans.com^
 ||smutty.com^
-||johnkiunga.com^
+! dead 2026-05-19 ||johnkiunga.com^
 ||imagefapusercontent.com^
 ||funbags.com^
 ||fap.to^
 ||fantasti.cc^
-||sexynudesreview.com^
-||sexclips.pro^
-||cumonprintedpics.com^
+! dead 2026-05-19 ||sexynudesreview.com^
+! dead 2026-05-19 ||sexclips.pro^
+! dead 2026-05-19 ||cumonprintedpics.com^
 ||theslutbay.com^
 ||onlyfaps.club^
 ||leakstorage.com^
@@ -5229,10 +5229,10 @@ barely%20legal$all
 ||allnudeasians.com^
 ||milfsex.watch^
 ||qmature.com^
-||older-women-movies.com^
+! dead 2026-05-19 ||older-women-movies.com^
 ||older-women-videos.com^
 ||teen-fucks.net^
-||older-wives.com^
+! dead 2026-05-19 ||older-wives.com^
 ||yngoldtube.com^
 ||xxxporn.tube^
 ||mom4.me^
@@ -5241,7 +5241,7 @@ barely%20legal$all
 ||iwant2cum.com^
 ||pussy-worship.com^
 ||forcedincest.net^
-||thepornabc.com^
+! dead 2026-05-19 ||thepornabc.com^
 ||incestyou.com^
 ||teensyoung.com^
 ||young-incest.com^
@@ -5256,22 +5256,22 @@ barely%20legal$all
 ||pornsites.xxx^
 ||onlinestars.net^
 ||sexy-photos.net^
-||sexyasianbeauties.com^
+! dead 2026-05-19 ||sexyasianbeauties.com^
 ||nudejapanesebeauties.com^
 ||nudeasianwomenphotos.com^
 ||sexasianorgy.com^
-||hornypornvideos.com^
+! dead 2026-05-19 ||hornypornvideos.com^
 ||nudeasians.pics^
-||pornsites.tips^
+! dead 2026-05-19 ||pornsites.tips^
 ||matureporn.watch^
 ||japansex.pics^
 ||eastbabes.com^
 ||asianbabepics.com^
-||asianporn.photos^
-||nudeasianphotos.com^
+! dead 2026-05-19 ||asianporn.photos^
+! dead 2026-05-19 ||nudeasianphotos.com^
 ||8freeporn.com^
-||petiteteenmovs.pro^
-||sopornmovies.com^
+! dead 2026-05-19 ||petiteteenmovs.pro^
+! dead 2026-05-19 ||sopornmovies.com^
 ||4tunaporn.com^
 ||givemeyoung.com^
 ||mylust.com^
@@ -5289,7 +5289,7 @@ barely%20legal$all
 ||lbfmaddiction.com^
 ||thaigirlswild.com^
 ||asiannewpics.com^
-||newsexgirlspics.com^
+! dead 2026-05-19 ||newsexgirlspics.com^
 ||sexynude.pics^
 ||sexmovies.tube^
 ||asiansex.pics^
@@ -5318,7 +5318,7 @@ barely%20legal$all
 ||hegreartnudes.com^
 ||erocurves.com^
 ||cumngo.co^
-||bbilcampanile.com^
+! dead 2026-05-19 ||bbilcampanile.com^
 ||pornhd.vip^
 ||images-dnxlive.com^
 ||chathostess.com^
@@ -5337,24 +5337,24 @@ barely%20legal$all
 ||girlsdoingporn.net^
 ||bravosex.mobi^
 ||elporno.mobi^
-||howtoinspain.com^
+! dead 2026-05-19 ||howtoinspain.com^
 ||agapornigames.com^
 ||alohatube8.com^
 ||homefilmplace.com^
 ||xh.video^
-||pornographyporn.com^
+! dead 2026-05-19 ||pornographyporn.com^
 ||pornolt.com^
-||teenxxxpost.com^
+! dead 2026-05-19 ||teenxxxpost.com^
 ||bitchjustmove.com^
-||michaelkorsshopbop.com^
-||chapterbag.com^
+! dead 2026-05-19 ||michaelkorsshopbop.com^
+! dead 2026-05-19 ||chapterbag.com^
 ||youporn-n.com^
-||tagin-store.com^
+! dead 2026-05-19 ||tagin-store.com^
 ||sanluisobispounitarianuniversalists.org^
-||xxxgrip.com^
+! dead 2026-05-19 ||xxxgrip.com^
 ||dunato.mobi^
 ||freshfromthequarry.com^
-||beverlyhillsscreenplaycontest.com^
+! dead 2026-05-19 ||beverlyhillsscreenplaycontest.com^
 ||chickiporn.com^
 ||porn669.com^
 ||xxxindianfilms.pro^
@@ -5372,16 +5372,16 @@ barely%20legal$all
 ||fetishlusts.com^
 ||liveeroticwebcams.com^
 ||desixnxx.mobi^
-||18yotube.pro^
-||xxxnxx.tv^
-||xnxx-videos.cc^
-||xxxpornvideos.cc^
+! dead 2026-05-19 ||18yotube.pro^
+! dead 2026-05-19 ||xxxnxx.tv^
+! dead 2026-05-19 ||xnxx-videos.cc^
+! dead 2026-05-19 ||xxxpornvideos.cc^
 ||sextube.su^
 ||hotmommy.su^
-||pornfreetube.net^
+! dead 2026-05-19 ||pornfreetube.net^
 ||1porn.su^
 ||chineseporn.su^
-||hotsextube.su^
+! dead 2026-05-19 ||hotsextube.su^
 ||free-x-videos.com^
 ||pornmovstube.net^
 ||monaporn.mobi^
@@ -5440,7 +5440,7 @@ barely%20legal$all
 ||familysexmassage.com^
 ||porn4k.to^
 ||kinkclassic.com^
-||recklessinmiami.com^
+! dead 2026-05-19 ||recklessinmiami.com^
 ||thescattube.com^
 ||ballbustingtube.com^
 ||domporn.net^
@@ -5479,7 +5479,7 @@ barely%20legal$all
 ||czechav.com^
 ||sdc.com^
 ||hunt4k.com^
-||asstr.org^
+! dead 2026-05-19 ||asstr.org^
 ||amateursexstart.nl^
 ||hentaitube.tv^
 ||dirtyflix.com^
@@ -5504,7 +5504,7 @@ barely%20legal$all
 ||bukkake.xxx^
 ||mysexgames.com^
 ||furrygirl.com^
-||mastani-girls.club^
+! dead 2026-05-19 ||mastani-girls.club^
 ||only3xvr.com^
 ||fliporno.net^
 ||heavy-r.com^
@@ -5535,7 +5535,7 @@ barely%20legal$all
 ||teasepov.com^
 ||jessicajaymesxxx.com^
 ||realitydudesnetwork.com^
-||classicgayporn.tv^
+! dead 2026-05-19 ||classicgayporn.tv^
 ||splatbukkake.xxx^
 ||radicaljizzlam.com^
 ||wifespov.com^
@@ -5600,7 +5600,7 @@ barely%20legal$all
 ||eroticastory.ca^
 ||footfraternityfilms.com^
 ||filthyfamily.com^
-||slymasseur.com^
+! dead 2026-05-19 ||slymasseur.com^
 ||adultgames.com^
 ||poopeelife.com^
 ||pornpetite.com^
@@ -5610,7 +5610,7 @@ barely%20legal$all
 ||dinotube.com^
 ||gaypornsky.com^
 ||cfnm18.com^
-||overtheporn.com^
+! dead 2026-05-19 ||overtheporn.com^
 ||hitomi.la^
 ||deviantclip.com^
 ||scaterotica.com^
@@ -5681,7 +5681,7 @@ barely%20legal$all
 ||pure-bbw.com^
 ||erotichdworld.com^
 ||czechvrfetish.com^
-||firstpetite.com^
+! dead 2026-05-19 ||firstpetite.com^
 ||vrlatina.com^
 ||porndig.com^
 ||sexualdisgrace.com^
@@ -5706,7 +5706,7 @@ barely%20legal$all
 ||mansbest.com^
 ||mywetpussycams.com^
 ||bbcparadise.com^
-||thegaybay.com^
+! dead 2026-05-19 ||thegaybay.com^
 ||pornrips.org^
 ||hentai-moon.com^
 ||genuinesin.com^
@@ -5794,14 +5794,14 @@ barely%20legal$all
 ||kinkvr.com^
 ||hornydreambabez.com^
 ||royalcams.com^
-||gaytopcams.com^
+! dead 2026-05-19 ||gaytopcams.com^
 ||tsvirtuallovers.com^
-||myarchives.net^
+! dead 2026-05-19 ||myarchives.net^
 ||4kpornsites.com^
 ||aishikaroy.com^
 ||blackgodz.com^
 ||girlcore.com^
-||freexxxdownloads.com^
+! dead 2026-05-19 ||freexxxdownloads.com^
 ||bangaloreescortsagency.org^
 ||analteenangels.com^
 ||fistflush.com^
@@ -5814,7 +5814,7 @@ barely%20legal$all
 ||69games.xxx^
 ||cockdude.com^
 ||rawporn.org^
-||haremlatino.com^
+! dead 2026-05-19 ||haremlatino.com^
 ||nubiles-porn.com^
 ||clubseventeen.com^
 ||ladsfeet.com^
@@ -5825,7 +5825,7 @@ barely%20legal$all
 ||bruceandmorgan.net^
 ||cuckold-chastity-belt-stories.com^
 ||exposedlatinas.com^
-||youngheaven.com^
+! dead 2026-05-19 ||youngheaven.com^
 ||pornfetishforum.com^
 ||doujinreader.com^
 ||perverttube.com^
@@ -5876,7 +5876,7 @@ barely%20legal$all
 ||assoass.com^
 ||spicyandventures.com^
 ||slutinspection.com^
-||hardcoreincest.net^
+! dead 2026-05-19 ||hardcoreincest.net^
 ||zweiporn.com^
 ||fat-girls-porn.com^
 ||ts-castingcouch.com^
@@ -5934,7 +5934,7 @@ barely%20legal$all
 ||50plusmilfs.com^
 ||webhams.com^
 ||hentaibedta.com^
-||milfpornograph.com^
+! dead 2026-05-19 ||milfpornograph.com^
 ||youngpornvideos.com^
 ||finishhim.com^
 ||xecce.com^
@@ -5955,7 +5955,7 @@ barely%20legal$all
 ||castingbitch.com^
 ||uralesbian.com^
 ||reachporn.com^
-||hentaimania.xyz^
+! dead 2026-05-19 ||hentaimania.xyz^
 ||istripper.com^
 ||tokyomotion.net^
 ||gayhoopla.com^
@@ -5986,7 +5986,7 @@ barely%20legal$all
 ||pornlandvideos.com^
 ||madame-ellen.com^
 ||scathot.com^
-||cuckoldvideos.xxx^
+! dead 2026-05-19 ||cuckoldvideos.xxx^
 ||arrechote.com^
 ||legalporno.com^
 ||hpjav.tv^
@@ -6007,7 +6007,7 @@ barely%20legal$all
 ||legsjapan.com^
 ||analporn.pics^
 ||realitylovers.com^
-||hentaikisa.net^
+! dead 2026-05-19 ||hentaikisa.net^
 ||interraced.com^
 ||subbyhubby.com^
 ||cuckoldest.com^
@@ -6023,7 +6023,7 @@ barely%20legal$all
 ||cumclinic.com^
 ||gapeland.com^
 ||peeandblow.com^
-||diapersexvideos.com^
+! dead 2026-05-19 ||diapersexvideos.com^
 ||hairypussyporno.com^
 ||defloration.com^
 ||darkegy.xyz^
@@ -6036,7 +6036,7 @@ barely%20legal$all
 ||join.staghomme.com^
 ||spermmania.com^
 ||hentai-share.com^
-||analstimulation.com^
+! dead 2026-05-19 ||analstimulation.com^
 ||escortfinderuk.co.uk^
 ||famedigital.com^
 ||simranali.com^
@@ -6073,7 +6073,7 @@ barely%20legal$all
 ||hentaistream.com^
 ||hiddenvoyeurspy.com^
 ||bestpornreviews.net^
-||hey.xxx^
+! dead 2026-05-19 ||hey.xxx^
 ||assylum.com^
 ||boafoda.com^
 ||myfreevrporn.com^
@@ -6121,7 +6121,7 @@ barely%20legal$all
 ||herlimit.com^
 ||comdotgame.com^
 ||analbbc.com^
-||hentaifap.org^
+! dead 2026-05-19 ||hentaifap.org^
 ||latestjav.com^
 ||sakuralive.com^
 ||transbella.com^
@@ -6139,9 +6139,9 @@ barely%20legal$all
 ||nurumassage.com^
 ||cuckold.pro^
 ||yesfather.com^
-||cuckoldspace.net^
+! dead 2026-05-19 ||cuckoldspace.net^
 ||pussysaga.com^
-||blacktrannynow.com^
+! dead 2026-05-19 ||blacktrannynow.com^
 ||hentaivr.net^
 ||thenewgirlspooping.com^
 ||puremature.com^
@@ -6170,7 +6170,7 @@ barely%20legal$all
 ||familyporner.com^
 ||hentaifox.com^
 ||dogfartnetwork.com^
-||jacquieetmicheltv.tv^
+! dead 2026-05-19 ||jacquieetmicheltv.tv^
 ||absoluporn.com^
 ||pornav.net^
 ||cuckoldmarriage.info^
@@ -6258,9 +6258,9 @@ barely%20legal$all
 ||missax.com^
 ||dontbreakme.com^
 ||teenyblack.com^
-||makemytripmood.club^
+! dead 2026-05-19 ||makemytripmood.club^
 ||bicollegefucks.com^
-||escortserviceinmanali.com^
+! dead 2026-05-19 ||escortserviceinmanali.com^
 ||wpwmax.com^
 ||anyshemale.com^
 ||helplessteens.com^
@@ -6305,7 +6305,7 @@ barely%20legal$all
 ||rawattack.com^
 ||puritanas.com^
 ||mustjav.com^
-||bejav.net^
+! dead 2026-05-19 ||bejav.net^
 ||massagesins.com^
 ||schoolpov.com^
 ||sexandsubmission.com^
@@ -6327,7 +6327,7 @@ barely%20legal$all
 ||xxxymovies.com^
 ||footfetishporno.com^
 ||swallowbay.com^
-||bdsm-files.com^
+! dead 2026-05-19 ||bdsm-files.com^
 ||vagina.nl^
 ||fapservice.com^
 ||bestpornstardb.com^
@@ -6341,7 +6341,7 @@ barely%20legal$all
 ||slackholes.com^
 ||blackforwife.com^
 ||interracialblowbang.com^
-||escortservicesinalwar.in^
+! dead 2026-05-19 ||escortservicesinalwar.in^
 ||elephantlist.com^
 ||afrilov.com^
 ||handjobhub.com^
@@ -6353,7 +6353,7 @@ barely%20legal$all
 ||sexgangsters.com^
 ||thepornlist.net^
 ||shemalefuckfest.com^
-||manga.adult^
+! dead 2026-05-19 ||manga.adult^
 ||wetpussygames.com^
 ||bangbus.com^
 ||spankjizz.com^
@@ -6390,7 +6390,7 @@ barely%20legal$all
 ||povperverts.net^
 ||hentaihere.com^
 ||thehun.net^
-||tiny8teen.com^
+! dead 2026-05-19 ||tiny8teen.com^
 ||vrconk.com^
 ||amateurcalientes.com^
 ||extremebukkake.com^
@@ -6402,7 +6402,7 @@ barely%20legal$all
 ||bestpornmenu.com^
 ||pornoplekje.nl^
 ||adameve.com^
-||amateur-cougar.com^
+! dead 2026-05-19 ||amateur-cougar.com^
 ||strokies.com^
 ||smplace.com^
 ||hairyundies.com^
@@ -6509,7 +6509,7 @@ barely%20legal$all
 ||oyeloca.com^
 ||petite18.com^
 ||echangenudes.com^
-||pooalexa.com^
+! dead 2026-05-19 ||pooalexa.com^
 ||freebdsmxxx.org^
 ||cuckhunter.com^
 ||myvintageporn.com^
@@ -6552,9 +6552,9 @@ barely%20legal$all
 ||dyked.com^
 ||xdir.vip^
 ||javpics.org^
-||hentaizip.com^
+! dead 2026-05-19 ||hentaizip.com^
 ||arabygirls.com^
-||thebootybasement.com^
+! dead 2026-05-19 ||thebootybasement.com^
 ||eros.com^
 ||join.jalifstudio.com^
 ||lechetube.com^
@@ -6583,7 +6583,7 @@ barely%20legal$all
 ||hidefporn.ws^
 ||bisexualmantube.com^
 ||bbwbaker.com^
-||animephile.com^
+! dead 2026-05-19 ||animephile.com^
 ||transfeet.com^
 ||japanlust.com^
 ||seemyporn.com^
@@ -6626,7 +6626,7 @@ barely%20legal$all
 ||darkroomvr.com^
 ||dirtyonline.com^
 ||lustex.net^
-||hentaiwatching.com^
+! dead 2026-05-19 ||hentaiwatching.com^
 ||hairyav.com^
 ||dirtyshack.com^
 ||twinkloads.com^
@@ -6693,7 +6693,7 @@ barely%20legal$all
 ||3dhentaix.com^
 ||mofosnetwork.com^
 ||ineed2pee.com^
-||adultbaby.xxx^
+! dead 2026-05-19 ||adultbaby.xxx^
 ||homemadehoes.com^
 ||stripchatarab.com^
 ||legsultra.com^
@@ -6726,10 +6726,10 @@ barely%20legal$all
 ||honestpornreviews.com^
 ||desipapa.com^
 ||zhentube.com^
-||aflamsexalarab.com^
+! dead 2026-05-19 ||aflamsexalarab.com^
 ||groobygirls.com^
 ||superbe.com^
-||pornleech.ch^
+! dead 2026-05-19 ||pornleech.ch^
 ||deeper.com^
 ||devicebondage.com^
 ||rohinicallgirlsagency.com^
@@ -6749,7 +6749,7 @@ barely%20legal$all
 ||theleakbay.com^
 ||vintagemags.org^
 ||thepornblender.com^
-||watchjavonline.com^
+! dead 2026-05-19 ||watchjavonline.com^
 ||hentairules.com^
 ||publicdisgrace.com^
 ||stmackenzies.com^
@@ -6769,14 +6769,14 @@ barely%20legal$all
 ||myfirstpublic.com^
 ||fanaken.com^
 ||americabukkakelive.com^
-||femdom365.com^
+! dead 2026-05-19 ||femdom365.com^
 ||literotica.com^
 ||blackpayback.com^
 ||thevalkyrie.com^
 ||negrisuperdotati.net^
 ||theporntoplist.com^
 ||seksmet.nl^
-||amateurvoyeurforum.com^
+! dead 2026-05-19 ||amateurvoyeurforum.com^
 ||fling.com^
 ||area51.to^
 ||trueamateurs.com^
@@ -6784,7 +6784,7 @@ barely%20legal$all
 ||exxxtra.net^
 ||al3ably.com^
 ||amateurcfnm.com^
-||allpussynow.com^
+! dead 2026-05-19 ||allpussynow.com^
 ||planetsuzy.org^
 ||mompornonly.com^
 ||hanime.tv^
@@ -6830,7 +6830,7 @@ barely%20legal$all
 ||naughtydiapergirls.com^
 ||whynotbi.com^
 ||submissivecuckolds.com^
-||porninvr.net^
+! dead 2026-05-19 ||porninvr.net^
 ||gotporn.com^
 ||momsbangteens.com^
 ||indiankinkygirls.com^
@@ -6873,7 +6873,7 @@ barely%20legal$all
 ||cuckoldsforum.com^
 ||my18pass.com^
 ||pervclips.com^
-||tbplcam.com^
+! dead 2026-05-19 ||tbplcam.com^
 ||bimbolive.com^
 ||vivpsn.com^
 ||vivatube.com^
@@ -6908,7 +6908,7 @@ barely%20legal$all
 ||cartoonpornvideos.com^
 ||verhentai.top^
 ||freeanimehentai.net^
-||hentaidude.com^
+! dead 2026-05-19 ||hentaidude.com^
 ||nhentai.net^
 ||ttcache.com^
 ||ixxx.com^
@@ -6922,11 +6922,11 @@ barely%20legal$all
 ||thedevs.cyou^
 ||nonktube.com^
 ||luxuretv.com^
-||kawaii-porn.com^
+! dead 2026-05-19 ||kawaii-porn.com^
 ||nudostar.com^
-||fappinghd.com^
+! dead 2026-05-19 ||fappinghd.com^
 ||snapchatleak.com^
-||javhdbest.com^
+! dead 2026-05-19 ||javhdbest.com^
 ||girl102.com^
 ||fappedia.com^
 ||epornlink.com^
@@ -6940,7 +6940,7 @@ barely%20legal$all
 ||sexoro.com^
 ||sexdolltube.com^
 ||adultwebmasters.org^
-||twerk.porn^
+! dead 2026-05-19 ||twerk.porn^
 ||xvideos.es^
 ||hotntubes.com^
 ||pornsos.com^
@@ -6963,9 +6963,9 @@ barely%20legal$all
 ||privatehomeclips.com^
 ||pornzog.com^
 ||myzpics.com^
-||voyeurxxxsex.com^
+! dead 2026-05-19 ||voyeurxxxsex.com^
 ||celebxxx.pw^
-||famousnudes.cc^
+! dead 2026-05-19 ||famousnudes.cc^
 ||tits-guru.com^
 ||xhopencdn.com^
 ||xhamster.desi^
@@ -7070,7 +7070,7 @@ barely%20legal$all
 ||thelittleslush.com^
 ||xxxbios.com^
 ||erohut.com^
-||amp3.co^
+! dead 2026-05-19 ||amp3.co^
 ||rdtcdn.com^
 ||redtube.com^
 ||brattysis.com^
