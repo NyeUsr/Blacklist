@@ -460,7 +460,6 @@ monitor*.returnpath.net
 offerit-track-lb-*.*.elb.amazonaws.com
 p7nvu5it0k.execute-api.*.amazonaws.com
 ping*.tnt-ea.com
-ping.*.microsoft.com
 piwik-*.apple.com
 qcomgeo*.com
 reklama.*.ru
@@ -503,7 +502,6 @@ ku2d3a7pa8mdi.com
 a-ads.com
 klclick.com
 customeriomail.com
-test.com
 alargeredrubygsw.info
 ku2d3a7pa8mdi.com
 lynotquitesou.info
@@ -2504,7 +2502,6 @@ auditedmedia.com
 audrte.com
 augur.io
 augustash.com
-aus5.mozilla.org
 austindragfest.org
 auth1.opendns.com
 authbill.com

@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 130N-1563
+! Version: 131N-1563
 
 ! Resources to help you better understand filter lists --------------
 ! Ublock Origin Static Filter Syntax                                |
@@ -1539,7 +1539,6 @@ http://twitcount.com$3p
 ||offerit-track-lb-*.*.elb.amazonaws.com^
 ||p7nvu5it0k.execute-api.*.amazonaws.com^
 ||ping*.tnt-ea.com^
-||ping.*.microsoft.com^
 ||piwik-*.apple.com^
 ||propellerad.
 ||qcomgeo*.com^
@@ -1591,7 +1590,6 @@ http://twitcount.com$3p
 ||a-ads.com^$frame
 ||klclick.com^$3p
 ||customeriomail.com^$3p
-||test.com^
 ! dead 2026-05-19 ||subdued-illegal.pro^
 ||alargeredrubygsw.info^
 ||ku2d3a7pa8mdi.com^
@@ -4009,7 +4007,6 @@ http://twitcount.com$3p
 ||audrte.com^
 ||augur.io^
 ||augustash.com^
-||aus5.mozilla.org^
 ||austindragfest.org^
 ||auth1.opendns.com^
 ||authbill.com^
