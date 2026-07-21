@@ -7,25 +7,14 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 
-from PyFunceble.checker.availability.domain import DomainAvailabilityChecker
+from PyFunceble import DomainAvailabilityChecker
 
 DEFAULT_FILES = ["Main", "Mixed Content", "Porn"]
-#DEFAULT_DIRS = ["Anti-Corp"] - Don't use with Anti-Corp, many of the domains show as dead when they are not.
 RULE_RE = re.compile(r"^\|\|([^\^/\$\s]+)\^")
 DEAD_RE = re.compile(r"^!\s*dead\s+(\d{4}-\d{2}-\d{2})\s+(.+)$")
+VERSION_RE = re.compile(r"^(! Version: )(\d+)(N(?:-\d+)?)?$")
 DOMAIN_LABEL_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$")
 AUTO_WORKERS = min(64, max(8, (os.cpu_count() or 4) * 5))
-
-
-def get_default_files(repo):
-    files = list(DEFAULT_FILES)
-    for dirname in DEFAULT_DIRS:
-        files.extend(
-            path.relative_to(repo).as_posix()
-            for path in sorted((repo / dirname).iterdir())
-            if path.is_file()
-        )
-    return files
 
 
 def is_literal_domain(domain):
@@ -78,6 +67,18 @@ def months_ago(n):
 
     day = min(today.day, calendar.monthrange(year, month)[1])
     return date(year, month, day)
+
+
+def bump_version(lines):
+    for i, line in enumerate(lines):
+        content = line.rstrip("\r\n")
+        match = VERSION_RE.match(content)
+        if match:
+            ending = line[len(content) :]
+            suffix = match.group(3) or ""
+            lines[i] = f"{match.group(1)}{int(match.group(2)) + 1}{suffix}{ending}"
+            return
+    raise ValueError("missing supported version header")
 
 
 def check_one(domain):
@@ -146,6 +147,8 @@ def process_file(path, workers=AUTO_WORKERS, dry_run=False):
 
     bad = {d for d, s in statuses.items() if s == "ERROR"}
 
+    if len(bad) == len(domains):
+        raise RuntimeError("all domain checks failed")
     if bad:
         print(f"{len(bad)} had check errors (left untouched)")
 
@@ -192,6 +195,7 @@ def process_file(path, workers=AUTO_WORKERS, dry_run=False):
         return len(domains), commented, restored, removed
 
     new_lines = [line for line in new_lines if line is not None]
+    bump_version(new_lines)
     path.write_text("".join(new_lines), encoding="utf-8")
     print(f"saved ({len(lines)} -> {len(new_lines)})")
 
@@ -205,7 +209,7 @@ def main():
     args = p.parse_args()
 
     repo = Path(__file__).resolve().parent.parent
-    files = args.files if args.files is not None else get_default_files(repo)
+    files = args.files if args.files is not None else DEFAULT_FILES
 
     total_checked = 0
     total_commented = 0
