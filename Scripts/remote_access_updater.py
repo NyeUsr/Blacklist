@@ -73,7 +73,6 @@ def minimize(domains):
 def extract(data):
     values = []
     for tool in data:
-        values.append(tool.get("Details", {}).get("Website", ""))
         for artifact in tool.get("Artifacts", {}).get("Network", []):
             values.extend(artifact.get("Domains", []))
     normalized = [domain for value in values if (domain := normalize(value))]
@@ -92,7 +91,7 @@ def version():
 def render(domains, current_version):
     header = f"""[Adblock Plus]
 ! Title: NyeUsr's Remote Access Blacklist
-! Description: Blocks websites and network domains associated with remote access tools tracked by LOLRMM.
+! Description: Blocks network domains associated with remote access tools tracked by LOLRMM.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
 ! Version: {current_version}
@@ -111,6 +110,14 @@ def self_check():
     assert normalize("https://WWW.Example.com/path") == "example.com"
     assert normalize("relay-[a-f0-9]{8}.net.example.com:443") == "relay-*.net.example.com"
     assert normalize(f"{'a' * 64}.example.com") is None
+    assert extract(
+        [
+            {
+                "Details": {"Website": "https://www.apple.com/remotedesktop/"},
+                "Artifacts": {"Network": [{"Domains": ["relay.example.com"]}]},
+            }
+        ]
+    ) == (["relay.example.com"], 0)
     assert VERSION_RE.sub("", render(["example.com"], 1)) == VERSION_RE.sub(
         "", render(["example.com"], 2)
     )
