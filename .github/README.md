@@ -5,7 +5,7 @@ Name |      Description      | Subscribe |
 **Domains** | A domain only version of the main blacklist. Good for easy importing into things such as NextDNS. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FDomains&amp;title=NyeUsr's%20Domain%20Only%20Blacklist)
 **Porn** | A simple porn blacklist with minimal false positives. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FPorn&amp;title=NyeUsr's%20Porn%20Blacklist)
 **Mixed Content** | A mixed content blacklist. Good for use in addition to the Porn blacklist. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FMixed%2520Content&amp;title=NyeUsr's%20Mixed%20Content%20Blacklist)
-**Remote Access** | An aggressive list of remote access tool websites and network domains sourced from [LOLRMM](https://lolrmm.io/). May block legitimate remote administration tools and shared vendor sites. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FRemote%2520Access&amp;title=NyeUsr's%20Remote%20Access%20Blacklist)
+**Remote Access** | A manually curated list of domains used by interactive remote access and support tools. | [Click me!](https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FNyeUsr%2FBlacklist%2Fmain%2FRemote%2520Access&amp;title=NyeUsr's%20Remote%20Access%20Blacklist)
 
 <br>
 
