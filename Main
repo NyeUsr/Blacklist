@@ -3,7 +3,7 @@
 ! Description: An adblock list which blocks ads, trackers, malware, fake sites, and other online annoyances.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 139N-1563
+! Version: 140N-1563
 
 ! Resources to help you better understand filter lists --------------
 ! Ublock Origin Static Filter Syntax                                |
@@ -683,7 +683,7 @@ www.google.com#@#+js(trusted-set-cookie, SOCS, CAISNQgQEitib3FfaWRlbnRpdHlmcm9ud
 ||lifesitenews.com^$badfilter
 ||gab.com^$badfilter
 ||gabpay.live^$badfilter
-||dailystormer.in^$badfilter
+! dead 2026-09-27 ||dailystormer.in^$badfilter
 ! dead 2026-05-19 ||freespeech.group^$badfilter
 ||ar15.com^$badfilter
 ||www.ar15.com^$badfilter
@@ -955,9 +955,9 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||poaptoug.net^
 ! dead 2026-05-19 ||forfeitsubscribe.com^
 ! dead 2026-05-19 ||xyerhddmrfsqk.com^
-||ausoafab.net^
+! dead 2026-09-27 ||ausoafab.net^
 ! dead 2026-05-19 ||eedsaung.net^
-||soumehoo.net^
+! dead 2026-09-27 ||soumehoo.net^
 ||keewoach.net^
 ||itskiddoan.club^
 ! dead 2026-05-19 ||imoughtcallmeoc.com^
@@ -1079,7 +1079,7 @@ http://twitcount.com$3p
 ||lksbnrs.com^
 ||cdsbnrs.com^
 ||bestcontentcost.top^
-||barryto.one^
+! dead 2026-09-27 ||barryto.one^
 ||guerrilla-links.com^
 ||pocpoc.io^
 ||smilewanted.com^
@@ -1129,7 +1129,7 @@ http://twitcount.com$3p
 ||nt-npltfpro.com^
 ||sepyebonstrome.com^
 ! dead 2026-05-19 ||tellyowingrichest.com^
-||vaikijie.net^
+! dead 2026-09-27 ||vaikijie.net^
 ! dead 2026-08-02 ||historicalcargo.com^
 ! dead 2026-05-19 ||undesirableslim.com^
 ! dead 2026-05-19 ||vulnerableordered.com^
@@ -1193,14 +1193,14 @@ http://twitcount.com$3p
 ||rxeosevsso.com^
 ! dead 2026-05-19 ||127d5ef6e1.com^
 ||a69i.com^
-! dead 2026-09-20 ||antiadxxxspy.com^
+||antiadxxxspy.com^
 ! dead 2026-05-19 ||c2aef8ab51.com^
 ||cabnnr.com^
 ||capndr.com^
 ! dead 2026-05-19 ||d13babd868.com^
 ||wpshsdk.com^
 ||lebuxe.xyz^
-! dead 2026-09-20 ||eabids.com^
+||eabids.com^
 ||pemsrv.com^
 ! dead 2026-05-19 ||ihzuephjxb.com^
 ||gekso.xyz^
@@ -1321,7 +1321,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||asainmelodies.com^
 ||depravedgirls.com^
 ||datingtopia.com^
-! dead 2026-08-23 ||bigjoynow.com^
+||bigjoynow.com^
 ||push-dt.fcdn.info^
 ! dead 2026-05-19 ||othersides.top^
 ! dead 2026-08-02 ||brostraffic.com^
@@ -1687,7 +1687,7 @@ http://twitcount.com$3p
 ||sayasdf.com^
 ||highrevenuegate.com^
 ! dead 2026-08-23 ||sweetadults.date^
-||plotil.com^
+! dead 2026-09-27 ||plotil.com^
 ||forlumineoner.com^
 ! dead 2026-05-19 ||mirohqodlf.com^
 ||usjbwvtqwv.com^
@@ -1724,7 +1724,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||d8b805b9a9.com^
 ||clerrrep.com^
 ||mt34iofvjay.com^
-! dead 2026-09-20 ||anythinktech.com^
+||anythinktech.com^
 ||gov-static.tech^
 ||winner-*-*.elb.*.amazonaws.com^
 ||t.apkpure.net^
@@ -1739,7 +1739,7 @@ http://twitcount.com$3p
 ||fnbauniukvi.com^
 ||fpcdn.io^
 ||fptls.com^
-||gloaphoo.net^
+! dead 2026-09-27 ||gloaphoo.net^
 ||hhbypdoecp.com^
 ||lwonclbench.com^
 ||qlfqkjluvz.com^
@@ -1759,7 +1759,7 @@ http://twitcount.com$3p
 ||adstk.io^
 ||dmp.truoptik.com^
 ||tpt.dotomi.com^
-! dead 2026-09-20 ||segreencolumn.com^
+||segreencolumn.com^
 ||tag.rmp.rakuten.com^
 ||insights.bizrate.com^
 ||mountain.com^
@@ -1785,7 +1785,7 @@ http://twitcount.com$3p
 ||localhost:$3p,domain=~mega.nz
 ||127.0.0.1:$3p,domain=~mega.nz
 ||log-upload-os.mihoyo.com^
-||poprush.net^
+! dead 2026-09-27 ||poprush.net^
 ||af-ad.co.uk^
 ||bluera.com^
 ||sentry.insops.net^
@@ -1857,7 +1857,7 @@ http://twitcount.com$3p
 ||dmca.com^$3p
 ! dead 2026-05-19 ||seal.thawte.com^$3p
 ! dead 2026-05-19 ||parkcircularpearl.com^$popup,popunder
-||nessainy.net^$popup,popunder
+! dead 2026-09-27 ||nessainy.net^$popup,popunder
 ||optnx.com^$popup,popunder
 ||trafficjunky.net^$popup,popunder
 ||placeholder.com^$3p
@@ -1925,7 +1925,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||cdsmart-dt.com^
 ! dead 2026-05-19 ||prosecutionsocktrap.com^
 ||txzaazmdhtw.com^
-! dead 2026-05-19 ||1redird.com^
+||1redird.com^
 ||yqmxfz.com^
 ! dead 2026-05-19 ||fchay.top^
 ||epilepsy-brain-mind2014.eu^
@@ -2029,7 +2029,7 @@ http://twitcount.com$3p
 ||03vologda.ru^
 ! dead 2026-05-19 ||3vuemarketing.com^
 ||04.static.xsf.ximxim.com^
-||4affiliate.net^
+! dead 2026-09-27 ||4affiliate.net^
 ||4c.9oo91e.com^
 ||4chan-ads.org^
 ||4dsply.com^
@@ -2213,7 +2213,7 @@ http://twitcount.com$3p
 ||0472js.com^
 ||0511zfhl.com^
 ||0512dn.com^
-||0512px.net^
+! dead 2026-09-27 ||0512px.net^
 ||0512s.com^
 ! dead 2026-05-19 ||0516bm.com^
 ||0517.org^
@@ -2248,7 +2248,7 @@ http://twitcount.com$3p
 ||911.cc^
 ||0914.global.ssl.fastly.net^
 ||941adu.com^
-! dead 2026-08-30 ||1000click.ir^
+||1000click.ir^
 ||1000mercis.com^
 ||1010data.com^
 ||1100ad.com^
@@ -2367,7 +2367,7 @@ http://twitcount.com$3p
 ||ac.duckduckgo.com^
 ! dead 2026-05-19 ||acasys88.cn^
 ||acceleration.biz^
-||accengage.net^
+! dead 2026-09-27 ||accengage.net^
 ||acceptableads.com^
 ||acc-hd.de^
 ||accutracking.com^
@@ -2441,7 +2441,7 @@ http://twitcount.com$3p
 ||ad4push.com^
 ||ad4screen.com^
 ||ad5.eu^
-! dead 2026-09-20 ||ad6media.fr^
+||ad6media.fr^
 ||ad7.biz^
 ||ad8.cc^
 ||ad20.net^
@@ -2524,7 +2524,7 @@ http://twitcount.com$3p
 ||adagiobanner.s3.amazonaws.com^
 ||adality.com^
 ||adality.de^
-! dead 2026-09-20 ||adalliance.io^
+||adalliance.io^
 ||adalyser.com^
 ||adamatic.co^
 ||adap.tv^
@@ -2548,13 +2548,13 @@ http://twitcount.com$3p
 ||adbetclickin.pink^
 ||adbetnet.com^
 ! dead 2026-05-19 ||adbidgo.com^
-! dead 2026-09-20 ||adbitty.com^
+||adbitty.com^
 ||adblade.com^
 ||adblock.fr^
 ||adblockanalytics.com^
 ! dead 2026-05-19 ||adblock-analytics.io^
 ||adblockdetector.com^
-||ad-blocker.org^
+! dead 2026-09-27 ||ad-blocker.org^
 ||adblock-listefr.com^
 ! dead 2026-05-19 ||adblockmetrics.ru^
 ! dead 2026-05-19 ||adblocksosal.ru^
@@ -2578,7 +2578,7 @@ http://twitcount.com$3p
 ||adbroker.de^
 ||adbull.me^
 ||adbunker.com^
-||adbureau.net^
+! dead 2026-09-27 ||adbureau.net^
 ||adbutler.com^
 ||adbutler.costco.com^
 ||adbutler-tachyon.com^
@@ -2652,7 +2652,7 @@ http://twitcount.com$3p
 ! dead 2026-09-20 ||addurl.nu^
 ||adeanalysis.com^
 ||adecn.com^
-||adecorp.co.kr^
+! dead 2026-09-27 ||adecorp.co.kr^
 ||adeimptrck.com^
 ||adelement.com^
 ||adelphic.com^
@@ -2806,7 +2806,7 @@ http://twitcount.com$3p
 ||adlure.net^
 ||ad-m.asia^
 ||adm.shinobi.jp^
-||admagnet.net^
+! dead 2026-09-27 ||admagnet.net^
 ||admailtiser.com^
 ||adman.gr^
 ||adman.otenet.gr^
@@ -2819,7 +2819,7 @@ http://twitcount.com$3p
 ||admarketplace.net^
 ||admarvel.com^
 ||admaster.com.cn^
-||admaster.net^
+! dead 2026-09-27 ||admaster.net^
 ||admathhd.com^
 ||admatic.com.tr^
 ||ad-maven.com^
@@ -2924,13 +2924,13 @@ http://twitcount.com$3p
 ||ad-pay.de^
 ||adpays.net^
 ||adpearance.com^
-||adpenguin.biz^
+! dead 2026-09-27 ||adpenguin.biz^
 ||adpepper.dk^
 ||adpepper.nl^
 ||adperiscope.com^
 ||adperium.com^
 ||adpia.vn^
-||adpile.net^
+! dead 2026-09-27 ||adpile.net^
 ||adpinnacle.com^
 ||adplace.co.kr^
 ||adplan-ds.com^
@@ -3061,7 +3061,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||ads.elitetrader.com^
 ||ads.ellmountgaming.com^
 ||ads.elpais.com.uy^
-||ads.epltalk.com^
+! dead 2026-09-27 ||ads.epltalk.com^
 ! dead 2026-05-19 ||ads.erasuper.com^
 ||ads.eurogrand.com^
 ||ads.euroslots.com^
@@ -3138,7 +3138,7 @@ http://twitcount.com$3p
 ||ads.newgrounds.com^
 ||ads.newmedia.cz^
 ||ads.newsint.co.uk^
-! dead 2026-09-13 ||ads.nj.com^
+||ads.nj.com^
 ||ads.nola.com^
 ||ads.nordichardware.com^
 ||ads.nordichardware.se^
@@ -3151,9 +3151,9 @@ http://twitcount.com$3p
 ||ads.olx.com^
 ||ads.oneplace.com^
 ||ads.optusnet.com.au^
-! dead 2026-09-13 ||ads.outpersonals.com^
+||ads.outpersonals.com^
 ||ads.partystars.bg^
-! dead 2026-09-13 ||ads.passion.com^
+||ads.passion.com^
 ! dead 2026-05-19 ||ads.p-cdn.com^
 ! dead 2026-05-19 ||ads.p-cdn.us^
 ||ads.periodistadigital.com^
@@ -3196,7 +3196,7 @@ http://twitcount.com$3p
 ||adsafety.net^
 ||adsage.com^
 ! dead 2026-05-19 ||adsage.us^
-! dead 2026-09-20 ||adsales.snidigital.com^
+||adsales.snidigital.com^
 ||adsame.com^
 ||adsanityplugin.com^
 ||adsansar.com^
@@ -3503,7 +3503,7 @@ http://twitcount.com$3p
 ||adzs.nl^
 ||adzsafe.com^
 ! dead 2026-08-30 ||adzsx.pro^
-||aeonad.co.kr^
+! dead 2026-09-27 ||aeonad.co.kr^
 ||aerialimpacts.com^
 ||aerotags.com^
 ||aerserv.com^
@@ -3713,7 +3713,7 @@ http://twitcount.com$3p
 ||analytics.distributednews.com^
 ! dead 2026-05-19 ||analytics.dwebsite.com^
 ||analytics.ecosia.org^
-! dead 2026-09-13 ||analytics.ext.go-tellm.com^
+||analytics.ext.go-tellm.com^
 ||analytics.facebook.com^
 ||analytics.feeder.co^
 ||analytics.ff.avast.com^
@@ -3759,7 +3759,7 @@ http://twitcount.com$3p
 ||analytics.trovit.com^
 ||analytics.twitter.com^
 ||analytics.usa.gov^
-! dead 2026-09-20 ||analytics.valuepotion.com^
+||analytics.valuepotion.com^
 ||analytics.videoshowglobalserver.com^
 ||analytics.vuukle.com^
 ||analytics.webdunia.com^
@@ -3804,7 +3804,7 @@ http://twitcount.com$3p
 ||anonymous-net.com^
 ||ans3.tiscali.nl^
 ||anstrex.com^
-! dead 2026-09-20 ||answerscloud.com^
+||answerscloud.com^
 ||answersstatus.pagescdn.com^
 ||antburape.club^
 ||anthill.vn^
@@ -4179,7 +4179,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||bedrapiona.com^
 ||bedsberry.com^
 ! dead 2026-05-19 ||bedsbreath.com^
-||beead.co.uk^
+! dead 2026-09-27 ||beead.co.uk^
 ||bee-ads.com^
 ||beeketing.com^
 ||beemray.com^
@@ -4319,7 +4319,7 @@ http://twitcount.com$3p
 ||bitdefendermyanmar.com^
 ||bitdefenderonline.com^
 ! dead 2026-05-19 ||bitly-bot.com^
-! dead 2026-09-20 ||bitlytics.id^
+||bitlytics.id^
 ||bitrix24.com^
 ||bitrix24.ru^
 ||bitrix.info^
@@ -4327,7 +4327,7 @@ http://twitcount.com$3p
 ||bitsonthewire.com^
 ||bitterstrawberry.com^
 ||bitvisitor.com^
-! dead 2026-09-20 ||bixel.io^
+||bixel.io^
 ||biz142.inmotionhosting.com^
 ||biz260.inmotionhosting.com^
 ||biz.world.waze.com^
@@ -4341,7 +4341,7 @@ http://twitcount.com$3p
 ||bizzclick.com^
 ||bj1110.online^
 ||bkrtx.com^
-! dead 2026-09-20 ||bl-1.com^
+||bl-1.com^
 ||blaaaa12.googlecode.com^
 ||black77854.com^
 ||black-ca623.firebaseio.com^
@@ -4355,7 +4355,7 @@ http://twitcount.com$3p
 ||blasze.com^
 ||blasze.tk^
 ||blazinglink.com^
-! dead 2026-09-20 ||bldrdoc.gov^
+||bldrdoc.gov^
 ||blindferret.com^
 ||blindferret.media^
 ||blis.com^
@@ -4367,7 +4367,7 @@ http://twitcount.com$3p
 ||blogads.com^
 ||blogergadgets.googlecode.com^
 ||bloggannonser.no^
-! dead 2026-09-20 ||blogherads.com^
+||blogherads.com^
 ||blog-hits.com^
 ||bloodhound.spotify.com^
 ! dead 2026-05-19 ||bloxtraffic.com^
@@ -4381,7 +4381,7 @@ http://twitcount.com$3p
 ||bluemongoose.com^
 ||blueparrot.media^
 ||blueseek.com^
-! dead 2026-09-20 ||blueserving.com^
+||blueserving.com^
 ||blueshiftmail.com^
 ||bluesq.com^
 ! dead 2026-08-02 ||bluestreak.com^
@@ -4412,7 +4412,7 @@ http://twitcount.com$3p
 ||boards2go.com^
 ! dead 2026-05-19 ||boayipids.com^
 ||bob.dmpxs.com^
-||bodaybo.net^
+! dead 2026-09-27 ||bodaybo.net^
 ||bodelen.com^
 ||boffinsoft.com^
 ||boffoadsfeeds.com^
@@ -4465,7 +4465,7 @@ http://twitcount.com$3p
 ||bradul.creatory.org^
 ||braincash.com^
 ||brainient.com^
-||brandads.net^
+! dead 2026-09-27 ||brandads.net^
 ||brandaffinity.net^
 ||brandcrumb.com^
 ||brand-display.com^
@@ -4568,7 +4568,7 @@ http://twitcount.com$3p
 ||bulletproofsoft.com^
 ||bullion.media^
 ||bullionyield.com^
-||bullseye-media.net^
+! dead 2026-09-27 ||bullseye-media.net^
 ! dead 2026-05-19 ||bullseye-network.com^
 ||bumerang.hurriyet.com.tr^
 ||bumq.com^
@@ -4775,7 +4775,7 @@ http://twitcount.com$3p
 ||chubao.cn^
 ||chunkycactus.com^
 ||cifrasoft.com^
-||ciksolre.net^
+! dead 2026-09-27 ||ciksolre.net^
 ! dead 2026-05-19 ||cinemahd.info^
 ||circularhub.com^
 ||cirrusinsight.com^
@@ -4853,7 +4853,7 @@ http://twitcount.com$3p
 ||clicksagent.com^
 ||clicksco.com^
 ||clicksegypt.net^
-||clickshield.net^
+! dead 2026-09-27 ||clickshield.net^
 ||clicksocean.com^
 ||clicksor.com^
 ||clicksor.net^
@@ -4897,7 +4897,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||cloisteredcord.com^
 ||clongcom.com^
 ||cloudflareinsights.com^
-! dead 2026-09-13 ||cloudfrale.com^
+||cloudfrale.com^
 ||cloudfront-labs.amazonaws.com^
 ||cloudmobi.net^
 ||cloudservices.roku.com^
@@ -4913,8 +4913,8 @@ http://twitcount.com$3p
 ||cmkfotografie.de^
 ! dead 2026-05-19 ||cmp-cdn.ghostery.com^
 ||cmpv2.pcworld.com^
-! dead 2026-09-20 ||cmvrclicks000.com^
-||cnetcontentsolutions.com^
+||cmvrclicks000.com^
+! dead 2026-09-27 ||cnetcontentsolutions.com^
 ||cnevids.com^
 ||cnstrc.com^
 ||cnt.iceporn.com^
@@ -4926,7 +4926,7 @@ http://twitcount.com$3p
 ||coatfood.com^
 ||cobalten.com^
 ||cockrates.com^
-! dead 2026-09-13 ||cocolog-nifty.com^
+||cocolog-nifty.com^
 ||coconut.rocks^
 ||coconuts.boy.jp^
 ! dead 2026-05-19 ||coctisingudg.info^
@@ -4940,7 +4940,7 @@ http://twitcount.com$3p
 ||coinimp.net^
 ||coinmedia.co^
 ||coinnebula.com^
-||coinpirate.cf^
+! dead 2026-09-27 ||coinpirate.cf^
 ||cointracking.info^
 ||cointraffic.io^
 ||coinverti.com^
@@ -4987,7 +4987,7 @@ http://twitcount.com$3p
 ||complex.com^
 ! dead 2026-05-19 ||com-promotions.us^
 ||comscore.com^
-! dead 2026-09-20 ||comscoreresearch.com^
+||comscoreresearch.com^
 ! dead 2026-05-19 ||concernedcondition.com^
 ||concert.io^
 ||conde.io^
@@ -5019,7 +5019,7 @@ http://twitcount.com$3p
 ||contactimpact.de^
 ||contactmonkey.com^
 ||contadorgratis.es^
-! dead 2026-09-20 ||contaxe.com^
+||contaxe.com^
 ||content.ad^
 ||content.bitsontherun.com^
 ||contentabc.com^
@@ -5125,7 +5125,7 @@ http://twitcount.com$3p
 ||cpy-crack.com^
 ||cqcounter.com^
 ||cquotient.com^
-||crabbychin.com^
+! dead 2026-09-27 ||crabbychin.com^
 ! dead 2026-05-19 ||crabrave.pw^
 ! dead 2026-05-19 ||craigsfuckbook.com^
 ||crakmedia.com^
@@ -5391,7 +5391,7 @@ http://twitcount.com$3p
 ||discordresolver.c99.nl^
 ||discreetfield.com^
 ||discreetfinding.com^
-||discuz.gtimg.cn^
+! dead 2026-09-27 ||discuz.gtimg.cn^
 ! dead 2026-05-19 ||dispensablestranger.com^
 ||display.io^
 ||displaycontentprofit.com^
@@ -5495,7 +5495,7 @@ http://twitcount.com$3p
 ! dead 2026-08-09 ||dragzebra.com^
 ! dead 2026-05-19 ||dramaticcondition.com^
 ||draper.popcap.com^
-! dead 2026-09-13 ||dratio.com^
+||dratio.com^
 ||dreamlinux.com.br^
 ||dreamlinux.net^
 ||dreamwiz.com^
@@ -5515,7 +5515,7 @@ http://twitcount.com$3p
 ||dt07.net^
 ||dtag.de^
 ||dtag.net^
-! dead 2026-09-13 ||dtignite.com^
+||dtignite.com^
 ||dtprofit.com^
 ||dtxngr.com^
 ||du1k.com^
@@ -5527,10 +5527,10 @@ http://twitcount.com$3p
 ||durationmedia.net^
 ! dead 2026-05-19 ||dvanced.club^
 ||dw7nrwnn2bkh1.cloudfront.net^
-||dwatngkas.xyz^
+! dead 2026-09-27 ||dwatngkas.xyz^
 ||dwetwdstom1020.com^
 ||dwin1.com^
-! dead 2026-09-20 ||dwin2.com^
+||dwin2.com^
 ! dead 2026-05-19 ||dy.bild.de^
 ! dead 2026-05-19 ||dycej.com^
 ||dynad.net^
@@ -5563,7 +5563,7 @@ http://twitcount.com$3p
 ||easypcoptimizer.com^
 ||easysexnearyou.com.s3-website-us-west-1.amazonaws.com^
 ! dead 2026-08-02 ||easy-sexxx.com^
-! dead 2026-09-20 ||easyspeedtest.co^
+||easyspeedtest.co^
 ||easytomessage.com^
 ! dead 2026-07-26 ||eatsidebicep.com^
 ||ebis.ne.jp^
@@ -5587,7 +5587,7 @@ http://twitcount.com$3p
 ||edgescape.abc.net.au^
 ||edigitalsurvey.com^
 ||edisin.net^
-! dead 2026-09-20 ||edkay.com^
+||edkay.com^
 ||edugram.com^
 ||edvfwlacluo.com^
 ||edw.edmunds.com^
@@ -5609,7 +5609,7 @@ http://twitcount.com$3p
 ||elasticad.net^
 ||elasticchange.com^
 ! dead 2026-05-19 ||elderlyscissors.com^
-||elephantdata.net^
+! dead 2026-09-27 ||elephantdata.net^
 ! dead 2026-05-19 ||elephantqueue.com^
 ||elev.io^
 ||elfsight.com^
@@ -5788,7 +5788,7 @@ http://twitcount.com$3p
 ||eyeviewads.com^
 ||eyeviewdigital.com^
 ||ezanga.com^
-||ezec.co.uk^
+! dead 2026-09-27 ||ezec.co.uk^
 ||ezmob.com^
 ||ezodn.com^
 ||ezoic.com^
@@ -5926,7 +5926,7 @@ http://twitcount.com$3p
 ||flytraff.com^
 ||fmpub.net^
 ! dead 2026-05-19 ||fnacgbik9v14.com^
-||foapsovi.net^
+! dead 2026-09-27 ||foapsovi.net^
 ||focas.jp^
 ! dead 2026-05-19 ||folcher-cri.com^
 ||fonecta.fi^
@@ -6013,7 +6013,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||freychang.fun^
 ||friendbuy.com^
 ||friendfeed.com^
-! dead 2026-09-20 ||friendlyduck.com^
+||friendlyduck.com^
 ||friends2follow.com^
 ||frigchat.com^
 ||frivol-ads.com^
@@ -6028,8 +6028,8 @@ http://twitcount.com$3p
 ||fruitninjagame.page.link^
 ||fstats.xyz^
 ||ftd.agency^
-! dead 2026-09-20 ||ftjcfx.com^
-! dead 2026-09-20 ||ftrans03.com^
+||ftjcfx.com^
+||ftrans03.com^
 ||fttcj.com^
 ||ftv-smp.ntp-fireos.com^
 ||fuckadblock.sitexw.fr^
@@ -6061,7 +6061,7 @@ http://twitcount.com$3p
 ! dead 2026-08-02 ||fwwgo.com^
 ! dead 2026-05-19 ||fxmonetize.com^
 ||fyber.com^
-! dead 2026-09-20 ||g2afse.com^
+||g2afse.com^
 ||g2crowd.com^
 ||g2insights-cdn.azureedge.net^
 ||g4mz.com^
@@ -6086,7 +6086,7 @@ http://twitcount.com$3p
 ||gamingadult.biz^
 ! dead 2026-05-19 ||gaming-at-my.best^
 ||gamingfun.me^
-||gamingstone.com^
+! dead 2026-09-27 ||gamingstone.com^
 ||gammae.com^
 ||gammamaximum.com^
 ||gammastats.com^
@@ -6098,14 +6098,14 @@ http://twitcount.com$3p
 ||gapscult.com^
 ||garry.windscribe.com^
 ||gartnerdigitalmarkets.com^
-! dead 2026-09-20 ||gatag.it^
+||gatag.it^
 ||gatewayinterface.com^
 ||gaug.es^
 ||gazo.space^
 ||gb.lgrecommends.lgappstv.com^
 ||gb.lgtvsdp.com^
 ||gb.rdx2.lgtvsdp.com^
-! dead 2026-09-20 ||gblcdn.com^
+||gblcdn.com^
 ||gbooking.ru^
 ||gbqofs.io^
 ||gbucket.ch^
@@ -6328,7 +6328,7 @@ http://twitcount.com$3p
 ||gramombird.com^
 ! dead 2026-05-19 ||grandioseguide.com^
 ! dead 2026-08-02 ||granitemedia.com^
-||grantgame.com^
+! dead 2026-09-27 ||grantgame.com^
 ||grapeshot.co.uk^
 ! dead 2026-05-19 ||graphenedigitalanalytics.in^
 ! dead 2026-07-26 ||graphigostream.prd.dlive.tv^
@@ -6391,7 +6391,7 @@ http://twitcount.com$3p
 ||gyazo.nl^
 ||h5.sinaimg.cn^
 ! dead 2026-05-19 ||hackedgirlpasswords.com^
-||hackersgroup.net^
+! dead 2026-09-27 ||hackersgroup.net^
 ||had.su^
 ||had.wf^
 ||hammer-corp.com^
@@ -6480,7 +6480,7 @@ http://twitcount.com$3p
 ||hitwebes.chosun.com^
 ||hlserve.com^
 ||hnyny.com^
-||hockeyapp.net^
+! dead 2026-09-27 ||hockeyapp.net^
 ||hola.org^
 ||holaspark.com^
 ||holid.io^
@@ -6578,7 +6578,7 @@ http://twitcount.com$3p
 ||hystericalcloth.com^
 ||i2.myapkcdn.in^
 ! dead 2026-09-13 ||i4rsrcj6.top^
-! dead 2026-09-13 ||i18n-pglstatp.com^
+||i18n-pglstatp.com^
 ||i.bigmir.net^
 ||i.frg.im^
 ||ia.media-imdb.com^
@@ -6593,7 +6593,7 @@ http://twitcount.com$3p
 ||ib-backend.appspot.com^
 ||ibclick.stream^
 ||ibdcd.com^
-! dead 2026-09-13 ||ib-ibi.com^
+||ib-ibi.com^
 ||ibillboard.com^
 ||ibsys.com^
 ||icerocket.com^
@@ -6626,7 +6626,7 @@ http://twitcount.com$3p
 ||ie8eamus.com^
 ||iecvlist.microsoft.com^
 ||ieonline.microsoft.com^
-! dead 2026-09-20 ||ieonlinews.microsoft.com^
+||ieonlinews.microsoft.com^
 ||iesnare.com^
 ! dead 2026-05-19 ||ieuhd.com^
 ||ifcard.com^
@@ -6635,10 +6635,10 @@ http://twitcount.com$3p
 ||igg-games.xyz^
 ||igg-gamestorrent.com^
 ||ignitionone.com^
-! dead 2026-09-20 ||igodigital.com^
+||igodigital.com^
 ||igoogle.com^
 ||ihsmarkit.com^
-! dead 2026-09-20 ||iigggames.com^
+||iigggames.com^
 ||ijinshan.com^
 ||iknowwhatyoudownload.com^
 ||ikwyd.com^
@@ -6658,7 +6658,7 @@ http://twitcount.com$3p
 ||imageshare.best^
 ||imagevenue.com^
 ||imarketsmart.com^
-! dead 2026-09-20 ||imdserve.com^
+||imdserve.com^
 ||imedia.cz^
 ||img.gg^
 ||imganalytics.com^
@@ -6780,7 +6780,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||instantresp.com^
 ||instartlogic.com^
 ||instateens.net^
-||instawhore.net^
+! dead 2026-09-27 ||instawhore.net^
 ||insticator.com^
 ||instiengage.com^
 ||instinctiveads.com^
@@ -6890,7 +6890,7 @@ http://twitcount.com$3p
 ||is-a-dead.link^
 ||isboost.co.jp^
 ||isearch-net.com^
-! dead 2026-09-20 ||isitelab.io^
+||isitelab.io^
 ||islay.tech^
 ! dead 2026-09-13 ||ismatlab.com^
 ||isnssdk.com^
@@ -6910,7 +6910,7 @@ http://twitcount.com$3p
 ||itsup.com^
 ||its-up.com^
 ||itvnet.lv^
-||ivwbox.de^
+! dead 2026-09-27 ||ivwbox.de^
 ||ivykiosk.com^
 ! dead 2026-05-19 ||iwant.lt^
 ||iwanttodeliver.com^
@@ -7241,17 +7241,17 @@ http://twitcount.com$3p
 ||kba.ch^
 ||kbcleaning.ca^
 ||kbkperm.ru^
-! dead 2026-09-20 ||kbmg.com^
+||kbmg.com^
 ||kbmindia.com^
-! dead 2026-05-19 ||kbnbusinesssolutions.com^
+||kbnbusinesssolutions.com^
 ||kbnetworkz.s3.amazonaws.com^
-||kbta.kr^
+! dead 2026-09-27 ||kbta.kr^
 ||kbthai.com^
 ||kbzdxt.com^
 ||kc316.com^
 ||kc.adv.br^
 ||kc.xmlsearch.miva.com^
-||kccec.com.kw^
+! dead 2026-09-27 ||kccec.com.kw^
 ||kchaxton.com^
 ||k-cheats.com^
 ||kci-groupe.com^
@@ -7297,12 +7297,12 @@ http://twitcount.com$3p
 ||keets.com^
 ||keeva.com.ph^
 ||keginverness.com^
-! dead 2026-09-20 ||kehojaterveys.com^
+||kehojaterveys.com^
 ||kehovaszer.hu^
 ! dead 2026-05-19 ||keilaparius.com^
 ||keimolankaiku.fi^
 ! dead 2026-05-19 ||keiro.accessdeka.com^
-! dead 2026-09-20 ||kejet.com^
+||kejet.com^
 ||keksia.com^
 ||kekuko.com^
 ||kelberdesigner.com^
@@ -7357,7 +7357,7 @@ http://twitcount.com$3p
 ||kochava.com^
 ||kodand.wildapricot.org^
 ||kokoc.com^
-||kontagent.net^
+! dead 2026-09-27 ||kontagent.net^
 ||kontakt.io^
 ||kontera.com^
 ! dead 2026-05-19 ||koocoofy.com^
@@ -7798,19 +7798,19 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||mediahits.club^
 ! dead 2026-05-19 ||mediahouse.inc^
 ||mediaiqdigital.com^
-! dead 2026-09-20 ||medialink.mobi^
+||medialink.mobi^
 ||medialytics.com^
 ||medialytics.io^
 ||mediamarketstream.com^
 ||media-match.com^
 ||mediamath.com^
 ||medianet.com^
-! dead 2026-05-19 ||mediaoaktree.com^
+||mediaoaktree.com^
 ||mediaplex.com^
 ||media-rep.com^
 ||mediarithmics.com^
 ||mediation-tracking.prd.mz.internal.unity3d.com^
-! dead 2026-09-20 ||mediator.imgsmail.ru^
+||mediator.imgsmail.ru^
 ||mediatradecraft-com.videoplayerhub.com^
 ||mediatraffic.com.ua^
 ||mediav.com^
@@ -7847,7 +7847,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||mentxviewsi.one^
 ! dead 2026-05-19 ||meowpushnot.com^
 ||mepodownload.mediatek.com^
-! dead 2026-09-20 ||merchantapp.com^
+||merchantapp.com^
 ||meredith.com^
 ||mergeagency.com^
 ||meryjane.pro^
@@ -7907,7 +7907,7 @@ http://twitcount.com$3p
 ||microad.co.jp^
 ||microad.jp^
 ||microad.tw^
-! dead 2026-09-20 ||microadinc.com^
+||microadinc.com^
 ||microsoft-hohm.com^
 ! dead 2026-05-19 ||midgetincidentally.com^
 ||milffinder.com^
@@ -8179,7 +8179,7 @@ http://twitcount.com$3p
 ||nativeroll.tv^
 ||nativesubscribe.pro^
 ||nativex.com^
-! dead 2026-09-20 ||native-x.io^
+||native-x.io^
 ||nativo.com^
 ! dead 2026-05-19 ||naucaish.net^
 ||naughtysearch.xyz^
@@ -8198,7 +8198,7 @@ http://twitcount.com$3p
 ! dead 2026-08-02 ||neatab.com^
 ! dead 2026-05-19 ||neboley.site^
 ! dead 2026-05-19 ||necessarywax.com^
-||nedstat.net^
+! dead 2026-09-27 ||nedstat.net^
 ! dead 2026-08-02 ||need2find.com^
 ||neg.bg^
 ||negishim.com^
@@ -8213,8 +8213,8 @@ http://twitcount.com$3p
 ||nerohut.com^
 ||nervoussummer.com^
 ||neskaties.lv^
-||nessainy.net^
-||netcpms.com^
+! dead 2026-09-27 ||nessainy.net^
+! dead 2026-09-27 ||netcpms.com^
 ||netinfo.bg^
 ||netinfocompany.bg^
 ||netizen.co^
@@ -8222,7 +8222,7 @@ http://twitcount.com$3p
 ||netlink.vn^
 ||netminers.dk^
 ||netmng.com^
-||netprotector.co.in^
+! dead 2026-09-27 ||netprotector.co.in^
 ||netserv19.com^
 ||netsprint.eu^
 ||networkadvertising.org^
@@ -8411,7 +8411,7 @@ http://twitcount.com$3p
 ||ofpoison.com^
 ! dead 2026-05-19 ||ofyouope.club^
 ||ogeri.ru^
-! dead 2026-09-20 ||oghub.io^
+||oghub.io^
 ||ogoogle.com^
 ||ogt.jp^
 ||ogtrk.net^
@@ -8424,7 +8424,7 @@ http://twitcount.com$3p
 ||okcimg.com^
 ||oko.uk^
 ||oktopost.com^
-! dead 2026-09-20 ||ol.epicgames.com^
+||ol.epicgames.com^
 ||olark.com^
 ||olspsystem.com^
 ||olymptrade.com^
@@ -8441,7 +8441,7 @@ http://twitcount.com$3p
 ||omniture-ssl.walmart.com^
 ||omnivirt.com^
 ||omtrdc.net^
-! dead 2026-09-20 ||onap.io^
+||onap.io^
 ||onaudience.com^
 ||onavo.com^
 ! dead 2026-05-19 ||onbigcock.com^
@@ -8514,7 +8514,7 @@ http://twitcount.com$3p
 ||opiniac.com^
 ||opinionstage.com^
 ||opmnstr.com^
-! dead 2026-09-13 ||opolen.com.br^
+||opolen.com.br^
 ||opoxv.com^
 ||opsen.dolphin-browser.com^
 ! dead 2026-08-02 ||opstag.com^
@@ -8836,7 +8836,7 @@ http://twitcount.com$3p
 ||popnc.com^
 ||popplunder.com^
 ||popsite.net^
-||popunder.ru^
+! dead 2026-09-27 ||popunder.ru^
 ||popupclick.ru^
 ||popupmaker.com^
 ! dead 2026-05-19 ||popxxx.net^
@@ -8879,7 +8879,7 @@ http://twitcount.com$3p
 ||ppmobiles.com^
 ! dead 2026-05-19 ||ppndr.net^
 ||pps-log.op-mobile.opera.com^
-! dead 2026-09-20 ||pqe.io^
+||pqe.io^
 ||praetox.com^
 ||pr-bh.ybp.yahoo.com^
 ||prd-collector-anon.playbuzz.com^
@@ -8994,10 +8994,10 @@ http://twitcount.com$3p
 ||ps3cfw.com^
 ! dead 2026-08-02 ||pseepsie.com^
 ||pslweb.org^
-! dead 2026-09-20 ||pstatp.com^
-! dead 2026-09-20 ||pstreetex.com^
+||pstatp.com^
+||pstreetex.com^
 ||pstreetma.com^
-||ptauxofi.net^
+! dead 2026-09-27 ||ptauxofi.net^
 ||ptawe.com^
 ||ptgncdn.com^
 ! dead 2026-08-09 ||ptoushoa.com^
@@ -9007,7 +9007,7 @@ http://twitcount.com$3p
 ||pub.network^
 ||pub.softonic.com^
 ||pub.weatherbug.com^
-! dead 2026-09-13 ||pubclk.com^
+||pubclk.com^
 ||pubexchange.com^
 ||pubgalaxy.com^
 ||pubguru.com^
@@ -9081,7 +9081,7 @@ http://twitcount.com$3p
 ||q1connect.com^
 ! dead 2026-05-19 ||q4i.co^
 ||q8ntfhfngm.com^
-! dead 2026-09-20 ||q20jqurls0y7gk8.info^
+||q20jqurls0y7gk8.info^
 ||q.blueswan.io^
 ||qadabra.com^
 ||qbk1.com^
@@ -9093,7 +9093,7 @@ http://twitcount.com$3p
 ||qchannel03.cn^
 ||qc-static.coccoc.com^
 ||qfind.net^
-! dead 2026-09-20 ||qihucdn.com^
+||qihucdn.com^
 ||qingdaonews.com^
 ||qingstor.com^
 ||qip.ru^
@@ -9168,7 +9168,7 @@ http://twitcount.com$3p
 ||raygun.io^
 ||rayjump.com^
 ||rbl.ms^
-||rbnt.org^
+! dead 2026-09-27 ||rbnt.org^
 ||rbrxg.com^
 ||rb-typeahead.appspot.com^
 ||rcm.amazon.com^
@@ -9189,7 +9189,7 @@ http://twitcount.com$3p
 ||readpeak.com^
 ||readymoon.com^
 ||realbig.media^
-||realclick.co.kr^
+! dead 2026-09-27 ||realclick.co.kr^
 ||realify.com^
 ||realperson.de^
 ||realsrv.com^
@@ -9456,7 +9456,7 @@ http://twitcount.com$3p
 ||salesmanago.pl^
 ||salesrep.ai^
 ||salmonads.com^
-||saltarsmart.biz^
+! dead 2026-09-27 ||saltarsmart.biz^
 ||saltworld.net^
 ||salty1.com^
 ||salutationcheerlessdemote.com^
@@ -9468,7 +9468,7 @@ http://twitcount.com$3p
 ||samizdat-graphql.nytimes.com^
 ||samplicio.us^
 ||samsungacr.com^
-||samsungadhub.com^
+! dead 2026-09-27 ||samsungadhub.com^
 ||samsungads.com^
 ! dead 2026-05-19 ||samtrg.com^
 ! dead 2026-05-19 ||sanalytics.sprint.com^
@@ -9494,7 +9494,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||saysidewalk.com^
 ||sbaffiliates.com^
 ||sbc.com^
-! dead 2026-09-20 ||sbgsodufuosmmvsdf.info^
+||sbgsodufuosmmvsdf.info^
 ||sbs-jp-ad.com^
 ||sc.cdnma.com^
 ! dead 2026-05-19 ||sc.smardroid.com^
@@ -9505,11 +9505,11 @@ http://twitcount.com$3p
 ||scarcesign.com^
 ! dead 2026-05-19 ||scarcestream.com^
 ||scarfsmash.com^
-! dead 2026-09-20 ||scenepass.com^
+||scenepass.com^
 ||scfsdvc.com^
 ||scgraph.facebook.com^
 ||schibsted.com^
-! dead 2026-09-20 ||schibsted.io^
+||schibsted.io^
 ||schnittberichte.com^
 ! dead 2026-05-19 ||science-media-group.com^
 ||scintillatingscissors.com^
@@ -9542,7 +9542,7 @@ http://twitcount.com$3p
 ||searchcapitol.com^
 ||searchconverternet.com^
 ||searchconverterz.com^
-! dead 2026-09-20 ||searchdimension.com^
+||searchdimension.com^
 ||searchflings.com^
 ! dead 2026-08-02 ||searchformsonline.com^
 ||searchguide.windstream.net^
@@ -9552,7 +9552,7 @@ http://twitcount.com$3p
 ||search-log.tapatalk.com^
 ||searchmagnified.com^
 ||searchmarketing.com^
-! dead 2026-09-20 ||searchmarquis.com^
+||searchmarquis.com^
 ||searchnu.com^
 ||searchpowerapp.com^
 ||searchult.com^
@@ -9572,7 +9572,7 @@ http://twitcount.com$3p
 ||securemetrics.apple.com^
 ||secureprivacy.ai^
 ! dead 2026-08-02 ||securesaferoute.com^
-||securesurf.biz^
+! dead 2026-09-27 ||securesurf.biz^
 ||secure-track1.com^
 ! dead 2026-05-19 ||secure-vtrack.com^
 ||securitetotale.com^
@@ -9622,14 +9622,14 @@ http://twitcount.com$3p
 ||seo-monster.ru^
 ! dead 2026-05-19 ||separatesilver.com^
 ||sersh.com^
-! dead 2026-09-20 ||serv.markets.com^
+||serv.markets.com^
 ||servboost.tech^
 ||servebom.com^
 ||servecounterstrike.com^
 ||servecvr.com^
 ||servedby.ammoland.com^
 ||servedbyadbutler.com^
-! dead 2026-09-20 ||servedby-buysellads.com^
+||servedby-buysellads.com^
 ||servenobid.com^
 ||server088.com^
 ||serverable.com^
@@ -9676,7 +9676,7 @@ http://twitcount.com$3p
 ||shapelcounset.xyz^
 ||shareaholic.com^
 ||shareaholic.net^
-||sharedid.org^
+! dead 2026-09-27 ||sharedid.org^
 ||sharefreeall.com^
 ||sharelive.net^
 ||sharethis.com^
@@ -9702,7 +9702,7 @@ http://twitcount.com$3p
 ||shop.pe^
 ||shop.zalo.me^
 ||shopifytrack.com^
-! dead 2026-09-13 ||shoptarget.com.br^
+||shoptarget.com.br^
 ||shortpixel.ai^
 ||shoutout.wix.com^
 ||showsteel.com^
@@ -9779,7 +9779,7 @@ http://twitcount.com$3p
 ||slotslights.com^
 ||smaato.com^
 ||smaato.net^
-||smaclick.com^
+! dead 2026-09-27 ||smaclick.com^
 ||smadex.com^
 ||small.chat^
 ||smart2cnjuh34jb.com^
@@ -9968,7 +9968,7 @@ http://twitcount.com$3p
 ||spypush.com^
 ||spysherrif-anti-spyware.apponic.com^
 ||spywarenuker.com^
-||spywareonline.org^
+! dead 2026-09-27 ||spywareonline.org^
 ||squadata.net^
 ! dead 2026-05-19 ||squirrelhands.com^
 ||srchassist.com^
@@ -10011,7 +10011,7 @@ http://twitcount.com$3p
 ||startxchange.com^
 ||stat24.com^
 ||stat24.meta.ua^
-||stat360.net^
+! dead 2026-09-27 ||stat360.net^
 ||stat.adskiller.me^
 ||stat.adultium.com^
 ||stat.alibaba.com^
@@ -10082,7 +10082,7 @@ http://twitcount.com$3p
 ||stats.gc.apple.com^
 ||stats.ghostery.net^
 ||stats.glb.paypal.com^
-! dead 2026-09-20 ||stats.heyoya.com^
+||stats.heyoya.com^
 ||stats.hyperinzerce.cz^
 ||stats.ibtimes.co.uk^
 ! dead 2026-05-19 ||stats.jamwtds.co^
@@ -10159,7 +10159,7 @@ http://twitcount.com$3p
 ||streamadblock.net^
 ||streamads.yahoo.com^
 ! dead 2026-07-26 ||streamstats.prd.dlive.tv^
-! dead 2026-09-20 ||streetmetrics.io^
+||streetmetrics.io^
 ! dead 2026-05-19 ||strick-stain.com^
 ||strikeadcdn.s3.amazonaws.com^
 ! dead 2026-08-09 ||strivesidewalk.com^
@@ -10167,7 +10167,7 @@ http://twitcount.com$3p
 ||stronginfo24.com^
 ||strpjmp.com^
 ||studads.com^
-! dead 2026-09-20 ||studiostack.com^
+||studiostack.com^
 ||stumbleupon.com^
 ||stupendoussleet.com^
 ! dead 2026-05-19 ||stupidwebtools.com^
@@ -10260,7 +10260,7 @@ http://twitcount.com$3p
 ||syndication.twimg.com^
 ||syndication.twitter.com^
 ||syndicpop.com^
-||syndn.net^
+! dead 2026-09-27 ||syndn.net^
 ||synerise.com^
 ||syntecx.org^
 ||sypexgeo.net^
@@ -10671,7 +10671,7 @@ http://twitcount.com$3p
 ||traffictrade.pro^
 ||traffictunes.com^
 ||trafficundercontrol.com^
-||trafficv2.com^
+! dead 2026-09-27 ||trafficv2.com^
 ||trafficwave.net^
 ! dead 2026-05-19 ||traffikx.info^
 ||trafforsrv.com^
@@ -10706,7 +10706,7 @@ http://twitcount.com$3p
 ||trialfire.com^
 ||tribalfusion.com^
 ||tribdss.com^
-! dead 2026-09-20 ||tribl.io^
+||tribl.io^
 ! dead 2026-08-02 ||triblio.com^
 ! dead 2026-05-19 ||trickycelery.com^
 ||triggeredmail.appspot.com^
@@ -10719,7 +10719,7 @@ http://twitcount.com$3p
 ||trk.pinterest.com^
 ||trk.tracksys55.com^
 ! dead 2026-05-19 ||trk.vidible.tv^
-! dead 2026-09-20 ||trk-indexmobi.com^
+||trk-indexmobi.com^
 ||trkn.us^
 ||trks.us^
 ||trktnc.com^
@@ -10766,11 +10766,11 @@ http://twitcount.com$3p
 ||tubeplus.me^
 ||tubetoolkit.com^
 ||tune.com^
-! dead 2026-09-20 ||tunefindforfans.com^
+||tunefindforfans.com^
 ||tunicalabs.com^
 ||tunnl.com^
 ||turbosex.io^
-! dead 2026-09-20 ||turn.com^
+||turn.com^
 ||turngrind.com^
 ||tutanota.io^
 ||tv3.lt^
@@ -10937,7 +10937,7 @@ http://twitcount.com$3p
 ||veinteractive.com^
 ||velocitycdn.com^
 ||velti.com^
-! dead 2026-08-02 ||venetrigni.com^
+||venetrigni.com^
 ||vercel-insights.com^
 ! dead 2026-05-19 ||verified-extensions.com^
 ||verifycaptcha.com^
@@ -11243,7 +11243,7 @@ http://twitcount.com$3p
 ||wixlabs-hcounter.appspot.com^
 ||wizaly.com^
 ! dead 2026-05-19 ||wlrtrack.live^
-! dead 2026-09-20 ||wmcdp.io^
+||wmcdp.io^
 ||wn.nr^
 ! dead 2026-05-19 ||wnpladv.com^
 ! dead 2026-05-19 ||woodmountain.icu^
@@ -11263,8 +11263,8 @@ http://twitcount.com$3p
 ||wp.gl^
 ||wpa.qq.com^
 ||wpadkigwiazd.pl^
-! dead 2026-09-20 ||wpadmngr.com^
-! dead 2026-09-20 ||wpnjs.com^
+||wpadmngr.com^
+||wpnjs.com^
 ||wpnsrv.com^
 ||wpu.sh^
 ||wpush.org^
@@ -11311,11 +11311,11 @@ http://twitcount.com$3p
 ||xandr.com^
 ||xaxis.com^
 ! dead 2026-05-19 ||xbc8fsvo5w75wwx8.pro^
-! dead 2026-09-20 ||xboxab.com^
+||xboxab.com^
 ||xcamgirls.me^
 ||xchange.ro^
 ||xclick24.com^
-! dead 2026-08-23 ||xclicks.net^
+||xclicks.net^
 ! dead 2026-05-19 ||xclofrfa.com^
 ||xdrig.com^
 ||xdronehd.com^
@@ -11447,7 +11447,7 @@ http://twitcount.com$3p
 ! dead 2026-05-19 ||youjizzhidef.com^
 ||youmi.net^
 ||youngestpetite.com^
-||youngkitties.com^
+! dead 2026-09-27 ||youngkitties.com^
 ! dead 2026-05-19 ||youngmarble.com^
 ||youngnudism.eu^
 ||youngnudists.xyz^
