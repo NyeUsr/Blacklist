@@ -3,7 +3,7 @@
 ! Description: A simple porn blacklist with minimal false positives.
 ! Homepage: https://github.com/NyeUsr/Blacklist/
 ! Expires: 8 hours
-! Version: 61N
+! Version: 62N
 
 ! Resources ---------------------------------------------------------
 ! How Porn Is Destroying You and Our Country                        |
@@ -363,7 +363,7 @@ barely%20legal$all
 ||helloladyboy.com^
 ||hqbang.com^
 ||bemyhole.cam^
-||m3pd.com^
+! dead 2026-10-25 ||m3pd.com^
 ||manysex.com^
 ||homemade.xxx^
 ||amaturetube.com^
@@ -385,7 +385,7 @@ barely%20legal$all
 ||lovetorrent.net^
 ! dead 2026-05-19 ||x-porn.fr^
 ||ujizz.xxx^
-! dead 2026-09-20 ||cloudihotgirl.com^
+||cloudihotgirl.com^
 ||fc2.com^
 ||fc2hub.com^
 ! dead 2026-10-11 ||porns.zone^
@@ -394,7 +394,7 @@ barely%20legal$all
 ! dead 2026-05-19 ||nudecosplayporn.com^
 ! dead 2026-05-19 ||porn-media.com^
 ||porn-video-xxx.com^
-||porn-images-xxx.com^
+! dead 2026-10-25 ||porn-images-xxx.com^
 ||yourcartoonporn.com^
 ! dead 2026-05-19 ||hentaipornvids.com^
 ||hentaiforce.net^
@@ -1164,7 +1164,7 @@ barely%20legal$all
 ! dead 2026-05-19 ||uenos.comapatecoman.gob.mx^
 ||nublies-porn.com^
 ||imhentai.xxx^
-! dead 2026-10-04 ||imhentai.asia^
+||imhentai.asia^
 ||imhentai.me^
 ||nhentaihaven.org^
 ||hentaihaven.io^
@@ -1259,7 +1259,7 @@ barely%20legal$all
 ||tonicporn.com^
 ||letsjerk.cc^
 ||loveindiansex.com^
-||femdomxxx.net^
+! dead 2026-10-25 ||femdomxxx.net^
 ||fans-here.com^
 ||xcamy.com^
 ||forumaco.dosugcloud.eu^
@@ -1341,7 +1341,7 @@ barely%20legal$all
 ||severeporn.com^
 ||xkeezmovies.com^
 ||fullxxxmovies.net^
-||yourfreeporn.tv^
+! dead 2026-10-25 ||yourfreeporn.tv^
 ||ccmiocw.com^
 ||camwhores.tv^
 ! dead 2026-08-02 ||porn4tube.org^
@@ -1462,7 +1462,7 @@ barely%20legal$all
 ||gayfuror.com^
 ||bfporntube.com^
 ||bostonrobmariano.com^
-||poptartssucktoasted.com^
+! dead 2026-10-25 ||poptartssucktoasted.com^
 ||xxxdata.net^
 ||xxlnow.com^
 ! dead 2026-05-19 ||rapemance.com^
@@ -1498,7 +1498,7 @@ barely%20legal$all
 ||prncdn.com^
 ||beegvideoshd.net^
 ! dead 2026-05-19 ||techmazic.com^
-||ohxxx.net^
+! dead 2026-10-25 ||ohxxx.net^
 ||watchhindiporn2.com^
 ||wildgayporn.com^
 ||teacherporntrends.com^
@@ -1591,14 +1591,14 @@ barely%20legal$all
 ||undertow.club^
 ||pornsearchengine.com^
 ||chinaporn.com.es^
-! dead 2026-09-13 ||yumxxx.com^
-! dead 2026-10-11 ||91pron.com.es^
+||yumxxx.com^
+||91pron.com.es^
 ||sexygirlspics.com^
 ||mainmovs.com^
 ! dead 2026-05-19 ||xxxgirlteens.com^
 ||xxporns.com^
 ||cendresetsang-lefilm.com^
-||vxxxcdn.net^
+! dead 2026-10-25 ||vxxxcdn.net^
 ! dead 2026-09-27 ||malaywap.net^
 ! dead 2026-05-19 ||stripinggirls.com^
 ||bokeptube.net^
@@ -1627,7 +1627,7 @@ barely%20legal$all
 ! dead 2026-10-18 ||geraldciolek.pro^
 ||luckystardvd.com^
 ||pornhubxxl.com^
-||nastypregnant.com^
+! dead 2026-10-25 ||nastypregnant.com^
 ||mobilebokep.com^
 ||blautube.com^
 ||sexiframe.com^
@@ -1778,7 +1778,7 @@ barely%20legal$all
 ||analporn.cc^
 ! dead 2026-05-19 ||xmilfporn.cc^
 ||top-xxx-tube.com^
-||hot-porn.pro^
+! dead 2026-10-25 ||hot-porn.pro^
 ||maxiporn.com^
 ||daughter-porn.com^
 ||bestandfree.com^
@@ -1812,11 +1812,11 @@ barely%20legal$all
 ||fapomania.com^
 ||ezfansleak.net^
 ||bitchesgirls.com^
-! dead 2026-05-19 ||nudegirls.space^
+||nudegirls.space^
 ||leaknudes.com^
 ! dead 2026-08-30 ||onlyleaksxxx.com^
 ||whoreshub.online^
-||onlyleaks.fun^
+! dead 2026-10-25 ||onlyleaks.fun^
 ||leakeddiaries.com^
 ! dead 2026-05-19 ||meganudes.net^
 ||leakednudes.co^
@@ -2003,8 +2003,8 @@ barely%20legal$all
 ||xplay.me^
 ||clapfap.com^
 ||shemale6.com^
-! dead 2026-09-20 ||red-head-porn.com^
-||phimsexheo.com^
+||red-head-porn.com^
+! dead 2026-10-25 ||phimsexheo.com^
 ||freecams.com^
 ||youpeg.com^
 ||babesboobsbikinis.com^
@@ -2454,7 +2454,7 @@ barely%20legal$all
 ||tubegora.com^
 ||porn-starwars.com^
 ! dead 2026-08-23 ||libliebe.net^
-||justporno.tv^
+! dead 2026-10-25 ||justporno.tv^
 ! dead 2026-05-19 ||hentaistreaming.tv^
 ||toocartoons.com^
 ||comicsporn.me^
@@ -2906,7 +2906,7 @@ barely%20legal$all
 ! dead 2026-09-27 ||healthydomainc.com^
 ! dead 2026-05-19 ||3dhentaihaven.com^
 ! dead 2026-07-26 ||acompanhantes-curitiba.com^
-||acompanhantesagora.com.br^
+! dead 2026-10-25 ||acompanhantesagora.com.br^
 ! dead 2026-10-11 ||acompanhanteslisboa.net^
 ||acompanhantesnaweb.com.br^
 ! dead 2026-05-19 ||acompanhantesrs.com.br^
@@ -3061,7 +3061,7 @@ barely%20legal$all
 ||videoporno.tv^
 ! dead 2026-05-19 ||videoporno2fellation.fr^
 ||videosdesexo.br.com^
-||videosexo.blog.br^
+! dead 2026-10-25 ||videosexo.blog.br^
 ||vipsecret.com.br^
 ||vipteresina.com^
 ||watchjavpornonline.com^
@@ -3236,7 +3236,7 @@ barely%20legal$all
 ||gotofap.net^
 ! dead 2026-05-19 ||gotofap.tk^
 ||xv-videos1.com^
-! dead 2026-09-13 ||youporn.red^
+||youporn.red^
 ||manytoon.com^
 ||hentaicomicsfree.com^
 ||teenspirithentai.com^
@@ -3800,7 +3800,7 @@ barely%20legal$all
 ||nsfw247.to^
 ||influencersgonewild.com^
 ||dirtyship.com^
-! dead 2026-10-18 ||dirtyship.net^
+||dirtyship.net^
 ||porntn.com^
 ||famousinternetgirls.com^
 ||hotscope.tv^
@@ -4797,7 +4797,7 @@ barely%20legal$all
 ||elizabethcalimente.com^
 ||goldlesbiantube.com^
 ||shinyjapaneseporn.com^
-||blackxxxclips.com^
+! dead 2026-10-25 ||blackxxxclips.com^
 ! dead 2026-05-19 ||deepasiansex.com^
 ||ebonyxxxfuck.com^
 ! dead 2026-05-19 ||fantasticyoungporn.com^
@@ -4900,7 +4900,7 @@ barely%20legal$all
 ! dead 2026-05-19 ||gayfame.com^
 ! dead 2026-05-19 ||gayporn4.com^
 ||gaytape.com^
-! dead 2026-10-18 ||ghettopearls.com^
+||ghettopearls.com^
 ! dead 2026-05-19 ||girlsaged.com^
 ! dead 2026-05-19 ||girlsnudes.net^
 ! dead 2026-09-27 ||hassex.net^
@@ -4953,7 +4953,7 @@ barely%20legal$all
 ||sexxx.su^
 ! dead 2026-05-19 ||xmature.su^
 ||adultxxxvideos.net^
-! dead 2026-09-13 ||erosexer.com^
+||erosexer.com^
 ||wildhardsex.com^
 ||xvideo.run^
 ||adulttrade.net^
@@ -4992,7 +4992,7 @@ barely%20legal$all
 ||ipornpics.com^
 ||pornpics.de^
 ||gayguyspics.telrock.org^
-||pornogirlfriend.com^
+! dead 2026-10-25 ||pornogirlfriend.com^
 ||videoprikoly.org^
 ||fucktubeclub.com^
 ||xxntube.com^
@@ -5181,7 +5181,7 @@ barely%20legal$all
 ||asiantiktokgirl.com^
 ||youngteenpussy.com^
 ! dead 2026-05-19 ||fappingnow.com^
-||cutefans.win^
+! dead 2026-10-25 ||cutefans.win^
 ||onlyfansleaks.tv^
 ||pulsedating.top^
 ||displayadtech.com^
@@ -5308,7 +5308,7 @@ barely%20legal$all
 ||zbporn.tv^
 ||zbporn.com^
 ||sexoasis.com^
-! dead 2026-10-18 ||naiadsystems.com^
+||naiadsystems.com^
 ||xcdnpro.com^
 ||skyprivate.com^
 ||camshq.info^
@@ -5334,7 +5334,7 @@ barely%20legal$all
 ||gaypornium.com^
 ||18nakedboys.com^
 ||diablotube.mobi^
-! dead 2026-10-18 ||girlsdoingporn.net^
+||girlsdoingporn.net^
 ||bravosex.mobi^
 ||elporno.mobi^
 ! dead 2026-05-19 ||howtoinspain.com^
@@ -5356,7 +5356,7 @@ barely%20legal$all
 ||freshfromthequarry.com^
 ! dead 2026-05-19 ||beverlyhillsscreenplaycontest.com^
 ||chickiporn.com^
-||porn669.com^
+! dead 2026-10-25 ||porn669.com^
 ||xxxindianfilms.pro^
 ||yougotporn.com^
 ||xxxbs.com^
@@ -5653,7 +5653,7 @@ barely%20legal$all
 ||fuskator.com^
 ||pornbox.com^
 ||onesiterip.com^
-||tktube.com^
+! dead 2026-10-25 ||tktube.com^
 ||hornybitches.org^
 ||pornozot.com^
 ||collectionofbestporn.com^
@@ -6441,7 +6441,7 @@ barely%20legal$all
 ||povav.com^
 ||cuckoldinterracialwife.com^
 ||pornbaker.com^
-! dead 2026-10-18 ||banglocals.com^
+||banglocals.com^
 ||kingextre.com^
 ||coedcherry.com^
 ||incezt.cc^
@@ -6588,7 +6588,7 @@ barely%20legal$all
 ||japanlust.com^
 ||seemyporn.com^
 ||public-sex-porn.com^
-||frankfurtsexstories.com^
+! dead 2026-10-25 ||frankfurtsexstories.com^
 ||sexecherche.com^
 ||bdsm365.biz^
 ||cowmm.com^
@@ -6882,7 +6882,7 @@ barely%20legal$all
 ||ent-cdn.com^
 ||stileproject.com^
 ||pornrabbit.com^
-||vptpsn.com^
+! dead 2026-10-25 ||vptpsn.com^
 ||viptube.com^
 ||nvdst.com^
 ||nvdlc.com^
@@ -6982,7 +6982,7 @@ barely%20legal$all
 ||sex.com^
 ||porn.com^
 ||phncdn.com^
-||ypncdn.com^
+! dead 2026-10-25 ||ypncdn.com^
 ||youjizz.com^
 ||red-tube.video^
 ||chaturbate.com^
@@ -7067,7 +7067,7 @@ barely%20legal$all
 ||runporn.com^
 ||fuqqt.com^
 ||ebaumsworld.com^
-||thelittleslush.com^
+! dead 2026-10-25 ||thelittleslush.com^
 ||xxxbios.com^
 ||erohut.com^
 ! dead 2026-05-19 ||amp3.co^
